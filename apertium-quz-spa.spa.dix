@@ -79752,21 +79752,16 @@ http://buscon.rae.es/draeI/
     <e lm="dormir"><i>d</i><par n="d/ormir__vblex"/></e>
     <e lm="hablar"><i>habl</i><par n="abandon/ar__vblex"/></e>
     <e lm="hablar"><p><l>hábl</l><r>habl</r></p><par n="abandón/ar__vblex"/></e>  
-    <e lm="hacer calor" a="Pato"><i>h</i><par n="h/acer__vblex"/>
-      <p><l><b/>calor</l><r><g><b/>calor</g></r></p></e>    
-    <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/>
-      <p><l><b/>frío</l><r><g><b/>frío</g></r></p></e>
+    <e lm="hacer calor" a="Pato"><i>h</i><par n="h/acer__vblex"/><p><l><b/>calor</l><r><g><b/>calor</g></r></p></e>    
+    <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/><p><l><b/>frío</l><r><g><b/>frío</g></r></p></e>
     <e lm="jugar"><i>ju</i><par n="ju/gar__vblex"/></e>
     <e lm="reír"><i>r</i><par n="sonr/eír__vblex"/></e>
     <e lm="sentar"><i>s</i><par n="rev/entar__vblex"/></e>
-    <e lm="ser hora de" a="eleka"><par n="/ser__vbser"/>
-      <p><l><b/>hora<b/>de</l><r><g><b/>hora<b/>de</g></r></p></e>
+    <e lm="ser hora de" a="eleka"><par n="/ser__vbser"/><p><l><b/>hora<b/>de</l><r><g><b/>hora<b/>de</g></r></p></e>
     <e lm="terminar"><i>termin</i><par n="abandon/ar__vblex"/></e>
     <e lm="terminar"><p><l>termín</l><r>termin</r></p><par n="abandón/ar__vblex"/></e>
-    <e lm="tratar de" a="Pato"><i>trat</i><par n="abandon/ar__vblex"/>
-      <p><l><b/>de</l><r><g><b/>de</g></r></p></e>
-    <e lm="tratar de" a="Pato"><i>trát</i><par n="abandón/ar__vblex"/>
-      <p><l><b/>de</l><r><g><b/>de</g></r></p></e>
+    <e lm="tratar de" a="Pato"><i>trat</i><par n="abandon/ar__vblex"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
+    <e lm="tratar de" a="Pato"><i>trát</i><par n="abandón/ar__vblex"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
     
     
     
