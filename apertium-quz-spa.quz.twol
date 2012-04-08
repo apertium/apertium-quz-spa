@@ -1,0 +1,99 @@
+!!!  Q U E C H U A . twol
+
+
+
+Alphabet
+
+A Á B C D E É F G H I Í J K L M N Ñ O Ó P Q R S T U Ú V W X Y Z
+a á b c d e é f g h i í j k l m n ñ o ó p q r s t u ú v w x y z
+
+lla y yki n nchis yku nkichis nku yuq nti sti nka nta npa
+
+%{ni%}:0 %{bK%}:0 %{bQ%}:0 %{bU%}:0 %{U%}:a %{pa%}:q %>:0
+
+%' ;
+
+
+! para -ni   psát s mezerami, sety
+! pokud input a output jsou stejné, stačí jeden, jinak se musí napsat :
+
+
+! něco na -mi > -n, -si > -s a možná -cha > -chá    %{mi%}:n   %{si%}:s
+! něco na mi + á > má, ri + ´ > rí, etc.
+! genitiv q/pa
+! tal vez algo para -ku + -kuna, o en .lexc (N-Flex-POS(obl)) o en .t1x
+
+! něco na sipas + lla + yuq > sipas-ni-lla-yuq
+
+! něco na přidání přízvuku (asi když je na konci slova, přidej přízvuk)
+
+! nějaká pravidla na mu + pu > mpu
+
+! seznam sufixů, které mohou způsobit změnu U > a
+
+!     %':%’         ! nahradit rovný apostrof za kulatý
+!     %´:%’         ! nahradit čárku za kulatý apostrof
+
+
+! možná nějaká pravidla pro opravu pravopisu m > n, auto > awtu etc.
+! achka > askha > ashka - nebo definovat ve slovníku
+
+
+
+
+!  %{%}  %<%>    - ke zkopírování
+
+
+
+Sets
+
+
+Cons =  A B C D F G H J K L M N Ñ P Q R S T V W X Y Z
+        a b c d f g h j k l m n ñ p q r s t v w x y z
+        %{bK%} %{bQ%} ;
+
+        
+        
+Voc =   A E I O U Á É Í Ó Ú a e i o u á é í ó ú
+        %{U%} %{bU%} %{ni%} ;
+        
+        
+        
+VocAcent =  Á É Í Ó Ú á é í ó ú ;      ! para hispanismos: José-mi
+
+
+
+VocNoAcent =  A E I O U a e i o u 
+              %{U%} %{bU%} %{ni%} ;
+
+NiSuf = y yki n nchis yku nkichis nku
+        yuq nti sti nka nta npa ;          ! sufijos que toman -ni
+
+
+! sufijos que causan el cambio U > a en otros sufijos
+
+
+
+Definitions
+
+NillaSuf = [ lla & NiSuf ] ;
+
+
+
+
+Rules
+
+"Inserción de -ni"
+
+%{ni%}:0 <=> [ ~:Cons | ~:VocAcent ] _ [ NiSuf | NillaSuf ] ;
+
+"Genitivo"
+
+%{pa%}:q <=> [ ~:Cons | ~:VocAcent ] _ ;
+
+
+! input char = C:     output char = :C    např NI yuq: y: yki: n:
+
+! Word boundaries .#. are understood to occur at the beginning and at the end of the lexical level of each string. Thus, the rules may refer to the beginning and the end of each word by writing .#. as the first or the last item in a context. These implicit boundaries are not written in the entries of HfstLexC? lexicons. Note thet .#. doesn't refer to any specific symbol in HfstLexc lexicons. It signifies the absolute beginning and end of a string. You can declare your own word boundaries in HfstLexc and HfstTwolc? (e.g. #), but these are just symbols.
+
+
