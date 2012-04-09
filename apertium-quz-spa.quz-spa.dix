@@ -5,6 +5,7 @@
     <sdef n="np"       c="Nombre propio"/>
     <sdef n="adj"      c="Adjetivo"/>
     <sdef n="ant"      c="Antróponimo"/>
+
     <sdef n="f"        c="Feminino"/>
     <sdef n="m"        c="Masculino"/>
 
