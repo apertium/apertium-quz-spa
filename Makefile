@@ -1,10 +1,10 @@
-
 LANG1=quz
+LANG2=spa
 BASENAME=apertium-quz-spa
 PREFIX1=quz-spa
 PREFIX2=spa-quz
 
-all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).autobil.bin
+all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).rlx.bin $(PREFIX1).autobil.bin $(PREFIX1).mode
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -25,3 +25,10 @@ $(PREFIX1).automorf.hfst: .deps/$(LANG1).hfst
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@
+
+$(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
+	cg-comp $< $@
+
+$(PREFIX1).mode: modes.xml
+	apertium-validate-modes $<
+	apertium-gen-modes $<

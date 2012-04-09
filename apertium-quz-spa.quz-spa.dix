@@ -10,6 +10,16 @@
 
     <sdef n="ND"       c="Número por determinar"/>
     <sdef n="GD"       c="Género por determinar"/>
+
+    <sdef n="apos" />
+    <sdef n="guio" />
+    <sdef n="sent" />
+    <sdef n="lpar" />
+    <sdef n="rpar" />
+    <sdef n="lquot" />
+    <sdef n="rquot" />
+    <sdef n="cm" />
+
   </sdefs>
   <pardefs>
     <pardef n="N">
@@ -20,9 +30,29 @@
     </pardef>
   </pardefs>
   <section id="main" type="standard">
+    <!-- SECCIÓN: Sustantivos -->
+    <e><p><l>muya<s n="n"/></l><r>jardín<s n="n"/><s n="m"/></r></p><par n="N"/></e>
     <e><p><l>sipas<s n="n"/></l><r>chico<s n="n"/><s n="f"/></r></p><par n="N"/></e>
     <e><p><l>yana<s n="n"/></l><r>negro<s n="adj"/></r></p><par n="N-A"/></e>
     <e><p><l>ñawi<s n="n"/></l><r>ojo<s n="n"/><s n="f"/></r></p><par n="N"/></e>
     <e><p><l>ñuñu<s n="n"/></l><r>teta<s n="n"/><s n="f"/></r></p><par n="N"/></e>
+
+    <!-- SECCIÓN: Punctuación -->
+
+    <e c=""><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
+    <e c=""><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
+    <e c=""><p><l>)<s n="rpar"/></l><r>)<s n="rpar"/></r></p></e>
+    <e c=""><p><l>]<s n="rpar"/></l><r>]<s n="rpar"/></r></p></e>
+    <e c=""><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
+    <e c=""><p><l>—<s n="guio"/></l><r>—<s n="guio"/></r></p></e>
+    <e c=""><p><l>«<s n="lquot"/></l><r>«<s n="lquot"/></r></p></e>
+    <e c=""><p><l>“<s n="lquot"/></l><r>“<s n="lquot"/></r></p></e>
+    <e c=""><p><l>»<s n="rquot"/></l><r>»<s n="rquot"/></r></p></e>
+    <e c=""><p><l>”<s n="rquot"/></l><r>”<s n="rquot"/></r></p></e>
+    <e c=""><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
+    <e c=""><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
+    <e c=""><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+
+
   </section>
 </dictionary>
