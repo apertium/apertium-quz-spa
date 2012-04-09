@@ -1,11 +1,7 @@
 !!!  Q U E C H U A . lexc
 ! Autor: Pato
 
-
-
-
 Multichar_Symbols
-
 
 %<n%>         ! nombre
 %<v%>         ! verbo
@@ -26,7 +22,6 @@ Multichar_Symbols
 
 %<xrel%>      ! relativo -n (allin, hatunnin, sapa killan, chawpin); en turco <rel> = -spa
 ! <honorífico><voc>:%>%{ni%}ll{a}y # ; + tayta + y > taytáy! (ver N-Flex)
-
 
 %<sg%>        ! singular - tal vez no usar, sólo <ND>
 %<pl%>        ! plural
@@ -75,24 +70,20 @@ Multichar_Symbols
 
 %>            ! Morpheme boundary
 
-
-
-
-
-
-
-
-
 LEXICON Root
 
 Nouns ;
 Verbs ;
 
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!                    M O R P H O T A C T I C S
 
+
+!!!!!!!!!!!!!  Clíticos
+
+LEXICON CLIT-Indep
+
+# ;
 
 !!!!!!!!!!!!!  Derivación nominal
 
@@ -104,8 +95,6 @@ LEXICON N-Der
 ! sufijo niraq Clit ; ? (o caso desp. de niraq?)
 %<pond%>:sapa N-Der-POSS ;
 N-Der-POSS ;
- 
-
 
 LEXICON N-Der-POSS
 
@@ -118,10 +107,6 @@ LEXICON N-Der-DIM
 
 %<dim%>:cha N-Flex ;
 N-Flex ;
-
-
-
-
 
 !!!!!!!!!!!!!!!  Flexión nominal
 
@@ -225,16 +210,16 @@ N-Flex-LIM-CASO ;
 
 LEXICON N-Flex-CASO-LIM
 
-%<ter%>:kama N-Flex-CASO-lla ;
+%<ter%>:%>kama N-Flex-CASO-lla ;
 ! %<prox%>%<ter%>:niqkama  N-Flex-CASO-lla ; ! ni-lla-q-kama??? niq-kama-lla???
-%<csal%>:rayku N-Flex-CASO-lla ;
+%<csal%>:%>rayku N-Flex-CASO-lla ;
 %<dis%>:%>%{ni%}nka N-Flex-CASO-lla ;
 ! sin otra continuación - sólo estos casos toman -lla después
 
 
 LEXICON N-Flex-CASO-lla
 
-%<lim%>:lla N-Flex-PostCaso ;
+%<lim%>:%>lla N-Flex-PostCaso ;
 N-Flex-PostCaso ;
 
 ! combinaciones: rayku(lla)wan, rayku(lla)pi, rayku(lla)paq
@@ -254,17 +239,16 @@ N-Flex-lla-CASO ;
 LEXICON N-Flex-lla-CASO
 
 ! %<gen2%>:%>%{pa%} N-Flex-PostCaso ;   ! <gen><gen2> = de + <art> + de +
-%<ben%>:paq N-Flex-PostCaso ;
-%<acc%>:ta N-Flex-PostCaso ;
-%<dat%>:man N-Flex-PostCaso ;
-%<abl%>:manta N-Flex-PostCaso ;
-%<loc%>:pi N-Flex-PostCaso ;
-%<ins%>:wan N-Flex-PostCaso ;
-%<conjcoo%>:puwan N-Flex-PostCaso ;     ! como conjunción "y", "con"
-%<conjcoo%>:piwan N-Flex-PostCaso ;
+%<ben%>:%>paq N-Flex-PostCaso ;
+%<acc%>:%>ta N-Flex-PostCaso ;
+%<dat%>:%>man N-Flex-PostCaso ;
+%<abl%>:%>manta N-Flex-PostCaso ;
+%<loc%>:%>pi N-Flex-PostCaso ;
+%<ins%>:%>wan N-Flex-PostCaso ;
+%<conjcoo%>:%>puwan N-Flex-PostCaso ;     ! como conjunción "y", "con"
+%<conjcoo%>:%>piwan N-Flex-PostCaso ;
 %<per%>:%>%{ni%}nta N-Flex-PostCaso ;   ! - ojo, tb. pos3-acc (<per> con ciertos verbos: mov., mirar, etc.)
 %<lim%>%<per%>:%>%{ni%}llanta N-Flex-PostCaso ;  ! - ojo, tb. lim-pos3-acc
-
 
 ! <posic> - posicional
 ! ni-(lla)-npa                      ! - ojo, tb. pos3-gen
@@ -276,20 +260,15 @@ LEXICON N-Flex-lla-CASO
 
 ! sin otra continuación - por el nominativo en N-Flex-LIM-CASO
 
-
-
-
 LEXICON N-Flex-PostCaso
 
 ! poner otros símbolos para que no se machaque con <nom> (u otro caso)
 ! kama - <ter>×<distrib> - otro significado, distributivo: "todos así" o sin trad.
 ! kamalla
 
-%<conjcoo%>:wan CLIT-Indep ;       ! <ins>×<cnjcoo> - coordinación "y", "con"
-
-%<n%>: CLIT-Indep ;         ! Clit-
-
-
+%+%<cnjcoo%>:%>wan CLIT-Indep ;       ! <ins>×<cnjcoo> - coordinación "y", "con"
+!%+%<n%>: CLIT-Indep ;         ! Clit-
+CLIT-Indep ;
 
 !!!!!!!!!!!!!  Derivación verbal
 
@@ -297,24 +276,8 @@ LEXICON V-Der
 
 CLIT-Indep ;
 
-
-
-!!!!!!!!!!!!!  Clíticos
-
-LEXICON CLIT-Indep
-
-# ;
-
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!                    L E X I C O N
-
-
-
-
-
-
 
 LEXICON Nouns
 
@@ -335,22 +298,8 @@ ruwa V-Der ;            ! hacer
 puri V-Der ;            ! caminar
 
 
-
 ! LEXICON Punctuation
 
 ! Položka ;
 
 ! tečky, čárky, otazníky, pomlčky, závorky apod.
-
-
-
-
-
-
-
-
-
-
-
-END
-
