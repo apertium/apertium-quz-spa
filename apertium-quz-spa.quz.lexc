@@ -49,6 +49,16 @@ Multichar_Symbols
 
 %<recip%>     ! interactivo (reciprocativo) -pura
 
+%<sent%>           ! Sentence marker
+%<guio%>           ! Hyphen
+%<cm%>             ! Comma
+%<apos%>           ! Apostrophe
+%<rquot%>          ! Quote marker (right hand side) 
+%<lquot%>          ! Quote marker (left hand side) 
+%<rpar%>           ! Parenthetical marker (right hand side) 
+%<lpar%>           ! Parenthetical marker (left hand side) 
+
+
 %{m%}         ! Evidencial (-mi)
 %{i%}         ! Evidencial
 %>            ! Morpheme boundary
@@ -58,6 +68,7 @@ LEXICON Root
 Nouns ; 
 ProperNouns ;
 Verbs ;
+Punctuation ; 
 
 LEXICON CLIT
 
@@ -135,4 +146,30 @@ LEXICON Verbs
 
 ruwa:ruwa V-TV ; ! "hacer"
 puri:puri V-IV ; ! "caminar"
+
+
+LEXICON Punctuation
+
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+\%<sent%>:\ # ;
+/%<sent%>:/ # ;
 
