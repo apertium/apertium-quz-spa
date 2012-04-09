@@ -4,7 +4,7 @@ BASENAME=apertium-quz-spa
 PREFIX1=quz-spa
 PREFIX2=spa-quz
 
-all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst
+all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).autobil.bin
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -22,3 +22,6 @@ $(PREFIX2).autogen.hfst: .deps/$(LANG1).hfst
 $(PREFIX1).automorf.hfst: .deps/$(LANG1).hfst
 	hfst-invert $< | hfst-fst2fst -O -o $@
 
+$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $<
+	lt-comp lr $< $@

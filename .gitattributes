@@ -1,5 +1,6 @@
 * text=auto !eol
 /Makefile -text
+/apertium-quz-spa.quz-spa.dix -text
 /apertium-quz-spa.quz.lexc -text
 /apertium-quz-spa.quz.twol -text
 /apertium-quz-spa.spa.dix -text svneol=unset#application/xml

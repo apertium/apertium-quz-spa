@@ -1,0 +1,28 @@
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="n"        c="Nombre"/>
+    <sdef n="np"       c="Nombre propio"/>
+    <sdef n="adj"      c="Adjetivo"/>
+    <sdef n="ant"      c="Antróponimo"/>
+    <sdef n="f"        c="Feminino"/>
+    <sdef n="m"        c="Masculino"/>
+
+    <sdef n="ND"       c="Número por determinar"/>
+    <sdef n="GD"       c="Género por determinar"/>
+  </sdefs>
+  <pardefs>
+    <pardef n="N">
+      <e><p><l></l><r><s n="ND"/></r></p></e>
+    </pardef>
+    <pardef n="N-A">
+      <e><p><l></l><r><s n="GD"/><s n="ND"/></r></p></e>
+    </pardef>
+  </pardefs>
+  <section id="main" type="standard">
+    <e><p><l>sipas<s n="n"/></l><r>chico<s n="n"/><s n="f"/></r></p><par n="N"/></e>
+    <e><p><l>yana<s n="n"/></l><r>negro<s n="adj"/></r></p><par n="N-A"/></e>
+    <e><p><l>ñawi<s n="n"/></l><r>ojo<s n="n"/><s n="f"/></r></p><par n="N"/></e>
+    <e><p><l>ñuñu<s n="n"/></l><r>teta<s n="n"/><s n="f"/></r></p><par n="N"/></e>
+  </section>
+</dictionary>
