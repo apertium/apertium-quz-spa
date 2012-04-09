@@ -7,7 +7,7 @@ Alphabet
 A Á B C D E É F G H I Í J K L M N Ñ O Ó P Q R S T U Ú V W X Y Z
 a á b c d e é f g h i í j k l m n ñ o ó p q r s t u ú v w x y z
 
-lla y yki n nchis yku nkichis nku yuq nti sti nka nta npa
+%{m%}:m %{i%}:i
 
 %{ni%}:0 %{bK%}:0 %{bQ%}:0 %{bU%}:0 %{U%}:a %{pa%}:q %>:0
 
@@ -82,6 +82,13 @@ NillaSuf = [ lla & NiSuf ] ;
 
 
 Rules
+
+"Alternación del evidencial (1)"
+%{m%}:n <=> :Voc %>: _ ; 
+
+"Alternación del evidencial (2)"
+%{i%}:0 <=> :Voc %>: :n _ ; 
+
 
 "Inserción de -ni"
 
