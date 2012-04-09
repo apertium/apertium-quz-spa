@@ -5713,7 +5713,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
         </p>
       </e>
     </pardef>
-    <pardef n="consigo__prn"><!-- no referido en el diccionario - error en "sg" -> sí va para sí__prn -->
+    <pardef n="consigo__prn"><!-- no referido en el diccionario - error en "sg" -> sí va para sí__prn (Pato) -->
       <e>
         <p>
           <l/>
@@ -79374,6 +79374,31 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
         </p>
       </e>
     </pardef>
+    
+    <!-- paradigmas introducidos por Pato -->
+    
+    <pardef n="contde__det">
+      <e r="LR">
+        <p>
+          <l>de</l>
+          <r>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r>
+        </p>
+      </e>
+      <e r="RL">
+        <p>
+          <l><a/>de</l>
+          <r>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>del</l>
+          <r>de<s n="det"/><s n="qnt"/><s n="m"/><s n="sg"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r>
+        </p>
+      </e>
+    </pardef>
+    
+    
   </pardefs>
   
   
@@ -79404,6 +79429,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <e lm="otro"><i>otr</i><par n="ciert/o__det"/></e>
     <e lm="otro"><i>otr</i><par n="algun/o__prn"/></e>
     <e lm="uno"><i>un</i><par n="un/o__prn"/></e>
+    <e lm="un poco de"><i>un<b/>poco<b/></i><par n="contde__det"/></e>
     
     <!-- determinantes y pronombres, etc., que pasan como sufijos o acompañados por ellos -->
     <e lm="ambos"><i>amb</i><par n="vari/os__det"/></e>
@@ -79584,6 +79610,7 @@ http://buscon.rae.es/draeI/
     <e lm="probablemente"><i>probablemente</i><par n="ahora__adv"/></e>
     <e lm="rápidamente"><i>rápidamente</i><par n="ahora__adv"/></e>
     <e lm="siempre"><i>siempre</i><par n="ahora__adv"/></e>
+    <e lm="un poco"><i>un<b/>poco</i><par n="ahora__adv"/></e>
     
     
     <!-- NUMERALES -->
@@ -79642,6 +79669,7 @@ http://buscon.rae.es/draeI/
     <e lm="niño"><i>niñ</i><par n="abogad/o__n"/></e>
     <e lm="ojo"><i>ojo</i><par n="abismo__n"/></e>
     <e lm="perro"><i>perr</i><par n="abogad/o__n"/></e>
+    <e lm="pregunta"><i>pregunta</i><par n="abeja__n"/></e>
     <e lm="respuesta"><i>respuesta</i><par n="abeja__n"/></e>
     <e lm="ruido"><i>ruido</i><par n="abismo__n"/></e>
     <e lm="silla"><i>silla</i><par n="abeja__n"/></e>
@@ -79752,22 +79780,26 @@ http://buscon.rae.es/draeI/
     <e lm="dormir"><i>d</i><par n="d/ormir__vblex"/></e>
     <e lm="hablar"><i>habl</i><par n="abandon/ar__vblex"/></e>
     <e lm="hablar"><p><l>hábl</l><r>habl</r></p><par n="abandón/ar__vblex"/></e>  
-    <e lm="hacer calor" a="Pato"><i>h</i><par n="h/acer__vblex"/><p><l><b/>calor</l><r><g><b/>calor</g></r></p></e>    
-    <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/><p><l><b/>frío</l><r><g><b/>frío</g></r></p></e>
+    <e lm="hacer calor" a="Pato"><i>h</i><par n="h/acer__vblex"/>
+      <p><l><b/>calor</l><r><g><b/>calor</g></r></p></e>    
+    <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/>
+      <p><l><b/>frío</l><r><g><b/>frío</g></r></p></e>
     <e lm="jugar"><i>ju</i><par n="ju/gar__vblex"/></e>
     <e lm="reír"><i>r</i><par n="sonr/eír__vblex"/></e>
     <e lm="sentar"><i>s</i><par n="rev/entar__vblex"/></e>
-    <e lm="ser hora de" a="eleka"><par n="/ser__vbser"/><p><l><b/>hora<b/>de</l><r><g><b/>hora<b/>de</g></r></p></e>
+    <e lm="ser hora de" a="eleka"><par n="/ser__vbser"/>
+      <p><l><b/>hora<b/>de</l><r><g><b/>hora<b/>de</g></r></p></e>
     <e lm="terminar"><i>termin</i><par n="abandon/ar__vblex"/></e>
     <e lm="terminar"><p><l>termín</l><r>termin</r></p><par n="abandón/ar__vblex"/></e>
-    <e lm="tratar de" a="Pato"><i>trat</i><par n="abandon/ar__vblex"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
-    <e lm="tratar de" a="Pato"><i>trát</i><par n="abandón/ar__vblex"/><p><l><b/>de</l><r><g><b/>de</g></r></p></e>
+    <e lm="tratar de" a="Pato"><i>trat</i><par n="abandon/ar__vblex"/>
+      <p><l><b/>de</l><r><g><b/>de</g></r></p></e>
+    <e lm="tratar de" a="Pato"><i>trát</i><par n="abandón/ar__vblex"/>
+      <p><l><b/>de</l><r><g><b/>de</g></r></p></e>
     
     
     
-    
+  </section>  
 
-  </section>
   <section id="regexp" type="standard">   
     <e>      <par n="emails"/>    </e>
     <e>      <par n="urls"/>    </e>
@@ -79783,7 +79815,7 @@ http://buscon.rae.es/draeI/
     <e>      <par n="numeros"/>    </e>
     <e>      <par n="separa"/>    </e>
     <e>      <par n="coma"/>    </e>
-    <e>      <par n="cometa"/>    </e>
+    <e>      <par n="cometa"/>    </e> <!-- = apostrof -->
     <e>      <par n="paresq"/>    </e>
     <e>      <par n="pardret"/>    </e>
     <e>      <par n="separ"/>    </e>
