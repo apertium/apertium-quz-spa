@@ -2,3 +2,4 @@
 /apertium-quz-spa.quz.lexc -text
 /apertium-quz-spa.quz.twol -text
 /apertium-quz-spa.spa.dix -text svneol=unset#application/xml
+/cuento-quz.txt -text
