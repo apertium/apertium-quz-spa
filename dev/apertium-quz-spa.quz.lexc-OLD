@@ -1,0 +1,305 @@
+Multichar_Symbols
+
+%<n%>         ! nombre
+%<v%>         ! verbo
+
+%<pond%>      ! ponderativo -sapa
+%<poss%>      ! posesivo -yuq
+%<dim%>       ! diminutivo -cha (y otros?)
+
+%<incl%>      ! inclusivo -nti-
+
+%<px1sg%>     ! posesivo 1a persona singular
+%<px2sg%>     ! posesivo 2a persona singular
+%<px3sg%>     ! posesivo 3a persona singular
+%<px1in%>     ! posesivo 1a persona inclusiva (yo + tú)
+%<px1ex%>     ! posesivo 1a persona exclusiva (yo + él (no tú))
+%<px2pl%>     ! posesivo 2a persona plural
+%<px3pl%>     ! posesivo 3a persona plural
+
+%<xrel%>      ! relativo -n (allin, hatunnin, sapa killan, chawpin); en turco <rel> = -spa
+! <honorífico><voc>:%>%{ni%}ll{a}y # ; + tayta + y > taytáy! (ver N-Flex)
+
+%<sg%>        ! singular - tal vez no usar, sólo <ND>
+%<pl%>        ! plural
+%<ND%>        ! ND número no definido
+! talvez ND sólo en t1x, u otra cadena para plural explícito desde N-Flex-POS Obl/PL
+
+%<inter%>     ! interactivo (reciprocativo) -pura
+
+%<nom%>       ! nominativo (nada)
+%<gen%>       ! genitivo -q/pa
+! %<gen2%>    ! segundo genitivo: <gen><gen2> = de + <art> + de +
+%<ben%>       ! benefactivo -paq
+%<acc%>       ! acusativo -ta
+%<dat%>       ! dativo - ilativo -man
+%<ter%>       ! terminativo (limitativo) -kama
+%<per%>       ! perlativo -nta
+%<abl%>       ! ablativo -manta
+%<loc%>       ! locativo -pi
+%<ins%>       ! instrumental (comitativo) -wan (-puwan, -piwan: ver tb. <conjcoo>)
+%<csl%>       ! causal (causativo) -rayku ( × <caus> causativo, sufijo verbal)
+%<dis%>       ! distributivo -nka
+%<prox%>      ! prosimativo -niq
+%<posic%>     ! posicional -npa
+%<cmpr%>      ! comparativo -hina (<=> partícula hina???) (× <comp> = gradación)
+%<sim%>       ! similativo -niraq, -niray
+
+%<cnjcoo%>   ! -wan, -piwan, -puwan como conjunción "y", "con"
+
+
+! verbales
+
+%<caus%>      ! causativo -chi
+%<bn%>        ! benefactivo -pu (aplicativo?)
+
+
+! clíticos
+%<lim%>       ! limitativo -lla
+
+
+%{ni%}        ! -ni delante ciertos sufijos desp. de consonante
+%{bK%}        ! "k" que puede desaparecer: -yku > -yu
+%{bQ%}        ! "q" que puede desaparecer: -rqu > -ru
+%{bU%}        ! "u" que desaparece delante de -mu (mu + pu > mpu)
+%{U%}         ! U que puede cambiar en "a": -yku > -yka
+
+%{pa%}        ! genitivo: -pa, -q (-qpa, -paq)
+
+%>            ! Morpheme boundary
+
+LEXICON Root
+
+!Nouns ;
+!Verbs ;
+Blah ; 
+
+LEXICON Blah 
+
+foo:foo # ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                    M O R P H O T A C T I C S
+
+
+!!!!!!!!!!!!!  Clíticos
+
+!LEXICON CLIT-Indep
+!
+!# ;
+!
+!LEXICON N-Flex-PostCaso
+!
+!! poner otros símbolos para que no se machaque con <nom> (u otro caso)
+!! kama - <ter>×<distrib> - otro significado, distributivo: "todos así" o sin trad.
+!! kamalla
+!
+!%+%<cnjcoo%>:%>wan CLIT-Indep ;       ! <ins>×<cnjcoo> - coordinación "y", "con"
+!!%+%<n%>: CLIT-Indep ;         ! Clit-
+!CLIT-Indep ;
+!
+!LEXICON N-Flex-CASO-lla
+!
+!%<lim%>:%>lla N-Flex-PostCaso ;
+!N-Flex-PostCaso ;
+!
+!! combinaciones: rayku(lla)wan, rayku(lla)pi, rayku(lla)paq
+!
+!LEXICON N-Flex-LIM-CASO
+!
+!%<lim%>%<nom%>:lla N-Flex-PostCaso ;
+!%<lim%>:lla N-Flex-lla-CASO ;
+!%<nom%>: N-Flex-PostCaso ;
+!N-Flex-lla-CASO ;
+!
+!LEXICON N-Flex-lla-CASO
+!
+!! %<gen2%>:%>%{pa%} N-Flex-PostCaso ;   ! <gen><gen2> = de + <art> + de +
+!%<ben%>:%>paq N-Flex-PostCaso ;
+!%<acc%>:%>ta N-Flex-PostCaso ;
+!%<dat%>:%>man N-Flex-PostCaso ;
+!%<abl%>:%>manta N-Flex-PostCaso ;
+!%<loc%>:%>pi N-Flex-PostCaso ;
+!%<ins%>:%>wan N-Flex-PostCaso ;
+!%<conjcoo%>:%>puwan N-Flex-PostCaso ;     ! como conjunción "y", "con"
+!%<conjcoo%>:%>piwan N-Flex-PostCaso ;
+!%<per%>:%>%{ni%}nta N-Flex-PostCaso ;   ! - ojo, tb. pos3-acc (<per> con ciertos verbos: mov., mirar, etc.)
+!%<lim%>%<per%>:%>%{ni%}llanta N-Flex-PostCaso ;  ! - ojo, tb. lim-pos3-acc
+!
+!! <posic> - posicional
+!! ni-(lla)-npa                      ! - ojo, tb. pos3-gen
+!! ni-(lla)-npa-manta
+!
+!! <prox> - proximativo -niq (-ni-lla-q????)
+!! -niq-ni-(lla)-nta                     - diccionario ?
+!! -(lla)-niq + manta, -man, -pi, -ta    - diccionario ?
+!
+!! sin otra continuación - por el nominativo en N-Flex-LIM-CASO
+!
+!
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!  Derivación nominal
+!
+!
+!LEXICON N-Der
+!
+!! sufijos verbalizadores (ya, cha, naya, raya) V-Der ;
+!! otros sufijos (qi, iru, lliku, atc.) N-Der-DIM ;
+!! sufijo niraq Clit ; ? (o caso desp. de niraq?)
+!%<pond%>:sapa N-Der-POSS ;
+!N-Der-POSS ;
+!
+!LEXICON N-Der-POSS
+!
+!%<poss%>:%>%{ni%}yuq N-Der-DIM ;               ! ni-yuq
+!%<lim%>%<poss%>:%>%{ni%}llayuq N-Der-DIM ;     ! ni-lla-yuq?
+!N-Der-DIM ;
+!
+!
+!LEXICON N-Der-DIM
+!
+!%<dim%>:cha N-Flex ;
+!N-Flex ;
+!
+!!!!!!!!!!!!!!!!  Flexión nominal
+!
+!
+!LEXICON N-Flex
+!
+!%<incl%>:%>%{ni%}nti N-Flex-POSincl ;
+!%<incl%>:%>%{ni%}sti N-Flex-POSincl ;   ! sólo algunos temas, asi do slovníku nannintin, paqariN/Stin
+!! <honorífico><voc><n>:%>%{ni%}ll{a}y # ; + tayta + y > taytáy!   - dát %> před {A}?
+!N-Flex-POSlim ;
+!
+!
+!
+!LEXICON N-Flex-POSincl            ! -> posesivo obligatorio y sin -ni
+!
+!%<lim%>:lla N-Flex-POSobl ;
+!N-Flex-POSobl ;
+!
+!
+!
+!LEXICON N-Flex-POSlim             ! -> posesivo no obligatorio con -ni
+!
+!%<lim%>:%>%{ni%}lla N-Flex-POSobl ;     ! ojo si no puede haber *-lla-lla
+!N-Flex-POS ;
+!
+!
+!
+!LEXICON N-Flex-POSobl             ! Posesivo obligatorio después del inclusivo -nti, -nilla
+!
+!%<px1sg%>:y N-Flex-PL ;
+!%<px2sg%>:yki N-Flex-PL ;
+!%<px3sg%>:n N-Flex-PL ;
+!%<px1in%>:nchis N-Flex-PL ;
+!%<px2pl%>:ykichis N-Flex-PL ;
+!
+!! %<xrel%>:n N-Flex-PL ;                ! -n relativo?
+!
+!%<px1ex%>:yku N-Flex-Inter ;            ! no puede seguir plural -kuna, tal vez en .twol
+!%<px3pl%>:nku N-Flex-Inter ;
+!
+!! sin otra continuación - posesivo obligatorio después de {ni} separado del posesivo
+!
+!
+!LEXICON N-Flex-POS
+!
+!%<px1sg%>:%>%{ni%}y N-Flex-PL ;
+!%<px2sg%>:%>%{ni%}yki N-Flex-PL ;
+!%<px3sg%>:%>%{ni%}n N-Flex-PL ;
+!%<px1in%>:%>%{ni%}nchis N-Flex-PL ;
+!%<px2pl%>:%>%{ni%}ykichis N-Flex-PL ;
+!
+!! %<xrel%>:%>%{ni%}n N-Flex-PL ;          ! relativo?
+!
+!%<px1ex%>:%>%{ni%}yku N-Flex-Inter ;      ! no puede sueguir plural -kuna, tal vez en .twol
+!%<px3pl%>:%>%{ni%}nku N-Flex-Inter ;
+!
+!N-Flex-PL ;
+!
+!
+!
+!
+!LEXICON N-Flex-PL
+!
+!%<pl%>:kuna N-Flex-Inter ;
+!! %<ND%>: N-Flex-Inter ;          ! se puede así?
+!N-Flex-Inter ;
+!
+!
+!
+!
+!LEXICON N-Flex-Inter
+!
+!%<inter%>:pura N-Flex-CASO-Gen ;                  ! <pl>, si todavía no está
+!N-Flex-CASO-Gen ;
+!
+!
+!
+!
+!
+!!!!!!!!!!!!  Flexión nominal - caso
+!
+!
+!LEXICON N-Flex-CASO-Gen
+!
+!! -lla-q                          = muy improbable
+!! -paq, -qpa                      -  genitivo reforzado
+!%<gen%>:%>%{pa%} N-Flex-CASO ;
+!N-Flex-CASO ;
+!
+!
+!
+!
+!LEXICON N-Flex-CASO
+!
+!! -hina como sufijo <cmpr>, similativo <sim> -niraq/y
+!N-Flex-CASO-LIM ;
+!N-Flex-LIM-CASO ;
+!
+!
+!
+!
+!LEXICON N-Flex-CASO-LIM
+!
+!%<ter%>:%>kama N-Flex-CASO-lla ;
+!! %<prox%>%<ter%>:niqkama  N-Flex-CASO-lla ; ! ni-lla-q-kama??? niq-kama-lla???
+!%<csal%>:%>rayku N-Flex-CASO-lla ;
+!%<dis%>:%>%{ni%}nka N-Flex-CASO-lla ;
+!! sin otra continuación - sólo estos casos toman -lla después
+!
+!!!!!!!!!!!!!!  Derivación verbal
+!
+!LEXICON V-Der
+!
+!CLIT-Indep ;
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                    L E X I C O N
+!
+!LEXICON Nouns
+!
+!wasi N-Der ;
+!muya N-Der ;
+!sipas N-Der ;
+!yawar N-Der ;
+!
+!
+!! Lexicon Nouns-Proper    ! Nprop - der -cha > N-Flex
+!José N-Der ;
+!Jaime N-Der ;
+!María N-Der ;
+!
+!LEXICON Verbs
+!
+!ruwa V-Der ;            ! hacer
+!puri V-Der ;            ! caminar
+!
+!
+!! LEXICON Punctuation
+!
+!! Položka ;
+!
+!! tečky, čárky, otazníky, pomlčky, závorky apod.
