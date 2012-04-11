@@ -5415,11 +5415,11 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
         </p>
       </e>
     </pardef>
-    <pardef n="qué__prn">
+    <pardef n="qué__prn"><!-- modificado (Pato), era <m><sg> -->
       <e>
         <p>
           <l/>
-          <r><s n="prn"/><s n="itg"/><s n="m"/><s n="sg"/></r>
+          <r><s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r>
         </p>
       </e>
     </pardef>
@@ -5819,7 +5819,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
       <e>
         <p>
           <l/>
-          <r><s n="prn"/><s n="tn"/><s n="m"/><s n="sp"/></r>
+          <r><s n="prn"/><s n="tn"/><s n="nt"/></r>
         </p>
       </e>
     </pardef>
@@ -79377,6 +79377,112 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     
     <!-- paradigmas introducidos por Pato -->
     
+    <pardef n="/prfuerte__prn"> <!-- pronombres personales tónicos/fuertes, incl. mí, ti, sí -->
+      <!--Un solo paradigma para los pronombres personales fuertes -->
+      <e>
+        <p>
+          <l>yo</l>
+          <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tú</l>
+          <r>tú<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>él</l>
+          <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ella</l>
+          <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ello</l>
+          <r>ello<s n="prn"/><s n="tn"/><s n="p3"/><s n="nt"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>usted</l>
+          <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ustedes</l>
+          <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>nosotros</l>
+          <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>nosotras</l>
+          <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>vosotros</l>
+          <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>vosotras</l>
+          <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ellos</l>
+          <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ellas</l>
+          <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mí</l>
+          <r>mí<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ti</l>
+          <r>ti<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>tí</l>
+          <r>ti<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>sí</l>
+          <r>sí<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r>
+        </p>
+      </e>
+    </pardef>
+    
     <pardef n="contde__det">
       <e r="LR">
         <p>
@@ -79421,6 +79527,8 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <e lm="ese"><i>es</i><par n="es/e__det"/></e>
     <e lm="aquel"><i>aquel</i><par n="aquel__det"/></e>
     
+    <e lm="algo" a="Pato"><i>algo</i><par n="bien__preadv"/></e>
+    <e lm="algo" a="Pato"><i>algo</i><par n="menos__det"/></e>
     <e lm="muy"><i>muy</i><par n="bien__preadv"/></e>
     <e lm="más"><i>más</i><par n="bien__preadv"/></e>
     <e lm="más"><i>más</i><par n="menos__det"/></e>
@@ -79429,7 +79537,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <e lm="otro"><i>otr</i><par n="ciert/o__det"/></e>
     <e lm="otro"><i>otr</i><par n="algun/o__prn"/></e>
     <e lm="uno"><i>un</i><par n="un/o__prn"/></e>
-    <e lm="un poco de"><i>un<b/>poco<b/></i><par n="contde__det"/></e>
+    <e lm="un poco de" a="Pato"><i>un<b/>poco<b/></i><par n="contde__det"/></e>
     
     <!-- determinantes y pronombres, etc., que pasan como sufijos o acompañados por ellos -->
     <e lm="ambos"><i>amb</i><par n="vari/os__det"/></e>
@@ -79476,14 +79584,25 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     
     <!-- PRONMBRES PERSONALES -->
     
-    <!-- si no son tónicos, generalmente pasan como sufijos o acompañados por ellos -->
+    <!-- si no son tónicos, generalmente pasan como sufijos o acompañados por ellos -->    
+    <!-- <e lm="pronombres personales fuertes"><i/><par n="prfuerte__prn"/></e> -->
+    <!-- pronombres enclíticos - en paradigmas tipo S__cantándome y otros S__ -->
     
-    <e lm="pronombres personales fuertes"><i/><par n="prfuerte__prn"/></e> <!-- incluye usted -->
-    <e lm="pronombres personales átonos"><i/><par n="prpro__prn"/></e> <!-- sin "se" reflexivo -->
+    <e lm="pronombres personales proclíticos"><i/><par n="prpro__prn"/></e> <!-- sin "se" reflexivo -->
     
+    <e lm="yo"><i/><par n="/prfuerte__prn"/></e>
+    <e lm="tú"><i/><par n="/prfuerte__prn"/></e>
+    <e lm="él"><i/><par n="/prfuerte__prn"/></e>
+    <e lm="usted"><i/><par n="/prfuerte__prn"/></e>
+    <e lm="nosotros"><i/><par n="/prfuerte__prn"/></e>
+    <e lm="vosotros"><i/><par n="/prfuerte__prn"/></e>
+    <e lm="ello"><i/><par n="/prfuerte__prn"/></e>
+    
+    <!--
+    <e lm="ello"><i>ello</i><par n="aquello__prn"/></e>
     <e lm="mí"><i>mí</i><par n="conmigo__prn"/></e>
     <e lm="ti"><i>ti</i><par n="contigo__prn"/></e>
-    <e lm="sí"><i>sí</i><par n="sí__prn"/></e> <!-- consigo__prn tiene el error de marcarlo como "sg" -->
+    <e lm="sí"><i>sí</i><par n="sí__prn"/></e> --> <!-- consigo__prn tiene el error de marcarlo como "sg" -->    
     
     <e lm="conmigo"><p><l>conmigo</l>
       <r>con<s n="pr"/><j/>mí<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -79492,35 +79611,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <e lm="consigo" a="Pato"><p><l>consigo</l>
       <r>con<s n="pr"/><j/>sí<s n="prn"/><s n="tn"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>
     
-    <e lm="ello"><i>ello</i><par n="aquello__prn"/></e>
-    <e lm="lo"><i>lo</i><par n="lo__prn"/></e> <!-- neutro (para distinguir de "lo" pron. masculino átono -->
     
-    <e lm="se"><i>se</i><par n="se__prn"/></e> <!-- duplicado con la entrada que sigue -->
-    <e lm="se"><p><l>se</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>    
-    
-    <e lm="se la" r="LR" c="MG: revisar reflexiu a següents pronoms"><p><l>se<b/>la</l>
-      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/>
-      <j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
-    <e lm="se las" r="LR"><p><l>se<b/>las</l>
-      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/>
-      <j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
-    <e lm="se lo" r="LR"><p><l>se<b/>lo</l>
-      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/>
-      <j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
-    <e lm="se los" r="LR"><p><l>se<b/>los</l>
-      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/>
-      <j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-    <!-- se le, se les - como dos lemas -->  
-    
-    <!-- incluido en febles - sólo para trad. es -> en
-    <e lm="el" r="RL"><p><l>el</l><r>el<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-    <e lm="el" r="RL"><p><l>los</l><r>el<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
-    <e lm="la" r="RL"><p><l>la</l><r>la<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
-    <e lm="la" r="RL"><p><l>las</l><r>la<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
-     -->
-     
-     
-     
     <!--                               poner "vos" en sus dos sentidos
     
     vos. (Del lat. vos).
@@ -79532,6 +79623,34 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
 http://buscon.rae.es/draeI/
 
                   -->
+    
+   
+    
+    <e lm="lo"><i>lo</i><par n="lo__prn"/></e> <!-- neutro (para distinguir de "lo" pron. masculino átono -->
+    
+    <e lm="se"><i>se</i><par n="se__prn"/></e> <!-- duplicado con la entrada que sigue --> <!--
+    <e lm="se"><p><l>se</l><r>se<s n="prn"/><s n="pro"/><s n="ref"/><s n="p3"/><s n="mf"/><s n="sp"/></r></p></e>   -->  
+    
+    <!-- REVISAR -->
+    <e lm="se la" r="LR" c="MG: revisar reflexiu a següents pronoms"><p><l>se<b/>la</l>
+      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/><j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="se las" r="LR"><p><l>se<b/>las</l>
+      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/><j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
+    <e lm="se lo" r="LR"><p><l>se<b/>lo</l>
+      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/><j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="se los" r="LR"><p><l>se<b/>los</l>
+      <r>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="mf"/><s n="sp"/><j/>prpers<s n="prn"/><s n="pro"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+    <!-- se le, se les - como dos lemas -->  
+    
+    <!-- incluido en pronombres átonos - sólo para trad. es -> en
+    <e lm="el" r="RL"><p><l>el</l><r>el<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+    <e lm="el" r="RL"><p><l>los</l><r>el<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+    <e lm="la" r="RL"><p><l>la</l><r>la<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
+    <e lm="la" r="RL"><p><l>las</l><r>la<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+     -->
+     
+     
+     
     
     
     <!-- PREPOSICIONES -->
@@ -79609,6 +79728,7 @@ http://buscon.rae.es/draeI/
     <e lm="poco"><i>poco</i><par n="ahora__adv"/></e>
     <e lm="probablemente"><i>probablemente</i><par n="ahora__adv"/></e>
     <e lm="rápidamente"><i>rápidamente</i><par n="ahora__adv"/></e>
+    <e lm="sí"><i>sí</i><par n="ahora__adv"/></e>
     <e lm="siempre"><i>siempre</i><par n="ahora__adv"/></e>
     <e lm="un poco"><i>un<b/>poco</i><par n="ahora__adv"/></e>
     
@@ -79664,6 +79784,7 @@ http://buscon.rae.es/draeI/
     <e lm="jardín"><i>jard</i><par n="bot/ín__n"/></e>
     <e lm="juego"><i>juego</i><par n="abismo__n"/></e>
     <e lm="madre"><i>madre</i><par n="abeja__n"/></e>
+    <e lm="mama"><i>mama</i><par n="abeja__n"/></e>
     <e lm="mano"><i>mano</i><par n="abeja__n"/></e>
     <e lm="mesa"><i>mesa</i><par n="abeja__n"/></e>
     <e lm="niño"><i>niñ</i><par n="abogad/o__n"/></e>
@@ -79672,8 +79793,10 @@ http://buscon.rae.es/draeI/
     <e lm="pregunta"><i>pregunta</i><par n="abeja__n"/></e>
     <e lm="respuesta"><i>respuesta</i><par n="abeja__n"/></e>
     <e lm="ruido"><i>ruido</i><par n="abismo__n"/></e>
+    <e lm="sangre"><i>sangre</i><par n="abeja__n"/></e>
     <e lm="silla"><i>silla</i><par n="abeja__n"/></e>
     <e lm="sonido"><i>sonido</i><par n="abismo__n"/></e>
+    <e lm="teta"><i>teta</i><par n="abeja__n"/></e>
     <e lm="ventana"><i>ventana</i><par n="abeja__n"/></e>
     <e lm="vez"><i>ve</i><par n="actri/z__n"/></e>
     <e lm="viejo" a="Pato"><i>viej</i><par n="abogad/o__n"/></e>
@@ -79681,9 +79804,10 @@ http://buscon.rae.es/draeI/
     
     <!-- NOMBRES PROPIOS -->
     
+    <e lm="Daniele"><i>Daniele</i><par n="Jaime__np"/></e>
     <e lm="Jaime"><i>Jaime</i><par n="Jaime__np"/></e>
     <e lm="José"><i>José</i><par n="Jaime__np"/></e>
-    <e lm="María"><i>María</i><par n="María__np"/></e>    
+    <e lm="María"><i>María</i><par n="María__np"/></e>
     
     
     <!-- ADJETIVOS -->
@@ -79694,7 +79818,8 @@ http://buscon.rae.es/draeI/
     <e lm="frío"><i>frí</i><par n="abstract/o__adj"/></e>
     <e lm="gran"><i>gran</i><par n="gran__adj"/></e>
     <e lm="grande"><i>grande</i><par n="abundante__adj"/></e>
-    <e lm="junto"><i>junt</i><par n="absolut/o__adj"/></e> 
+    <e lm="junto"><i>junt</i><par n="absolut/o__adj"/></e>
+    <e lm="negro"><i>negr</i><par n="abstract/o__adj"/></e>
     <e lm="pequeño"><i>pequeñ</i><par n="abstract/o__adj"/></e>
     <e lm="viejo"><i>viej</i><par n="abstract/o__adj"/></e>
     
