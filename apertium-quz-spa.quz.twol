@@ -52,8 +52,8 @@ Rules
 %{M%}:n <=> :VocNoAcent %>: _ ;
 
 "Alternación del evidencial (2)"
-%{bI%}:0 <=> :VocNoAcent %>: :n _ ;
-! qué pasará con -ni? :VocNoAcent %>: (?? %{n%}: ) _ [ :y | :y :k :i | :n ]  (nebo: _ %<px1%>: | etc. )
+%{bI%}:0 <=> :VocNoAcent %>: ( :n | :s ) _ ;
+
 
 "Alternación del genitivo (1)"
 %{P%}:q <=> :VocNoAcent %>: _ ;
@@ -61,8 +61,9 @@ Rules
 "Alternación del genitivo (2)"
 %{bA%}:0 <=> :VocNoAcent %>: :q _ ;
 
+
 "Alternación de posesivos y otros sufijos (-ni/-) (1)"
-%{bN%}:0 <=> :VocNoAcent %>: _ %{bnI%}: ( :l :l :a ) [ :y | :y :k :i | :n ] ;
+%{bN%}:0 <=> :VocNoAcent %>: _ %{bnI%}: ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;
 
 "Alternación de posesivos y otros sufijos (-ni/-) (2)"
-%{bnI%}:0 <=> :VocNoAcent %>: %{bN%}: _ ( :l :l :a ) [ :y | :y :k :i | :n ] ;
+%{bnI%}:0 <=> :VocNoAcent %>: %{bN%}: _ ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;
