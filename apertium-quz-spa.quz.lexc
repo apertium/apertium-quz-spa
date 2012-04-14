@@ -112,9 +112,13 @@ Multichar_Symbols
 %<bn%>        ! benefactivo -pu (aplicativo?)
 %<rec%>       ! recíproco (-na + -ku / -chi / -pu)
 
+%<pres%>      ! presente
 %<past%       ! pasado -rqa
 %<cond%>      ! condicional
 %<evid%>      ! pasado evidencial -sqa
+%<imp%>       ! imperativo
+
+%<inf%>       ! infinitivo -y
 
 
 ! clíticos
@@ -344,6 +348,7 @@ CLIT-lla ;
 !!!! FLEXIÓN VERBAL
 
 LEXICON V-PERS
+! tal vez poner algo para que no salgan las formas "reflexivas"
 
 ! objeto 3a persona
 %<p1%>%<sg%>%<po3sp%>@D.wa@:%>ni@D.wa@ CLIT-Indep ;
@@ -370,17 +375,31 @@ LEXICON V-PERS
 %<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-Indep ;
 %<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-Indep ;
 
+LEXICON V-IMP
+%<imp%>%<p2%>%<sg%>%<po3sp%>@D.wa@:%>y@D.wa@ CLIT-Indep ;
+%<imp%>%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>y@R.wa.pres@ CLIT-Indep ;
+
+LEXICON V-Nom
+! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
+N-FLEX-lla-Caso ;
+N-FLEX-Caso-lla ;
+
+LEXICON V-INF
+%<inf%>%<po3sp%>@D.wa@:%>y@D.wa@ V-Nom ;
+%<inf%>%<po2sp%>@D.wa@:%>y@D.wa@ V-Nom ;
+%<inf%>%<po1sp%>@R.wa.pres@:%>y@R.wa.pres@ V-Nom ;
 
 LEXICON V-TMSub
 %<pres%>: V-PERS ;
 %<past%>:%>rqa V-PERS ;
 ! %<evid%>:%>sqa ! sin -n 3suj. poner @P.sqa.pres@
-! -su-spa, -spa-su, -su-qti poner @P.su.pres@
-!! -y, -na-su (-su-na), -su-sqa, -sqa-su, -su-q
 ! FUT
-! IMP
+V-IMP ;
 ! HAB
 ! COND
+! -su-spa, -spa-su, -su-qti poner @P.su.pres@
+V-INF ;
+!! -na-su (-su-na), -su-sqa, -sqa-su, -su-q
 
 LEXICON V-LIM
 %<lim%>:lla V-TMSub ;
