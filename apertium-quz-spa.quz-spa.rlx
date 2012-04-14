@@ -1,0 +1,16 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" ;
+SOFT-DELIMITERS = "<,>" ;
+
+SETS
+
+LIST N = n ; 
+LIST Prop = (np ant) ; 
+
+LIST Gen = gen ; 
+LIST Acc = acc ; 
+
+SECTION
+
+SELECT N ;
+    ## 
+

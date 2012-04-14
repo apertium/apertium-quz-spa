@@ -1,6 +1,7 @@
 * text=auto !eol
 /Makefile -text
 /apertium-quz-spa.quz-spa.dix -text
+/apertium-quz-spa.quz-spa.rlx -text
 /apertium-quz-spa.quz-spa.t1x -text
 /apertium-quz-spa.quz-spa.t2x -text
 /apertium-quz-spa.quz-spa.t3x -text
@@ -9,3 +10,4 @@
 /apertium-quz-spa.spa.dix -text svneol=unset#application/xml
 dev/apertium-quz-spa.quz.lexc-OLD -text
 dev/cuento.quz.txt -text
+/modes.xml -text

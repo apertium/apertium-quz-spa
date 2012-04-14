@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <mode name="quz-spa" install="yes">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-quz-spa.quz-spa.t1x"/>
+        <file name="quz-spa.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-quz-spa.quz-spa.t2x"/>
+        <file name="quz-spa.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-quz-spa.quz-spa.t3x"/>
+        <file name="quz-spa.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="quz-spa.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-debug" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-quz-spa.quz-spa.t1x"/>
+        <file name="quz-spa.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-quz-spa.quz-spa.t2x"/>
+        <file name="quz-spa.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-quz-spa.quz-spa.t3x"/>
+        <file name="quz-spa.t3x.bin"/>
+      </program>
+      <program name="lt-proc -d">
+        <file name="quz-spa.autogen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+
+
+  <mode name="quz-spa-twol">
+    <pipeline>
+      <program name="hfst-strings2fst -S"/>
+      <program name="hfst-compose-intersect">
+        <file name=".deps/quz-spa.twol.hfst"/>
+      </program>
+      <program name="hfst-fst2strings"/>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-morph">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-lexc">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name=".deps/quz-spa.lexc.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-gener">
+    <pipeline>
+      <program name="hfst-proc -g">
+        <file name="quz-spa.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-disam">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-biltrans">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-chunker">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-quz-spa.quz-spa.t1x"/>
+        <file name="quz-spa.t1x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="quz-spa-interchunk">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-quz-spa.quz-spa.t1x"/>
+        <file name="quz-spa.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-quz-spa.quz-spa.t2x"/>
+        <file name="quz-spa.t2x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+  <mode name="quz-spa-postchunk">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-quz-spa.quz-spa.t1x"/>
+        <file name="quz-spa.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-quz-spa.quz-spa.t2x"/>
+        <file name="quz-spa.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-quz-spa.quz-spa.t3x"/>
+        <file name="quz-spa.t3x.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+
+</modes>
