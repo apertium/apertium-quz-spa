@@ -4,7 +4,8 @@ BASENAME=apertium-quz-spa
 PREFIX1=quz-spa
 PREFIX2=spa-quz
 
-all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).rlx.bin $(PREFIX1).autobil.bin $(PREFIX1).mode
+all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).rlx.bin $(PREFIX1).autobil.bin $(PREFIX1).mode \
+	$(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -32,6 +33,18 @@ $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 
 $(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
 	cg-comp $< $@
+
+$(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
+	apertium-validate-transfer $<
+	apertium-preprocess-transfer $< $@
+
+$(PREFIX1).t2x.bin: $(BASENAME).$(PREFIX1).t2x
+	apertium-validate-interchunk $<
+	apertium-preprocess-transfer $< $@
+
+$(PREFIX1).t3x.bin: $(BASENAME).$(PREFIX1).t3x
+	apertium-validate-postchunk $<
+	apertium-preprocess-transfer $< $@
 
 $(PREFIX1).mode: modes.xml
 	apertium-validate-modes $<
