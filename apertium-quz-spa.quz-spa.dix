@@ -229,7 +229,7 @@
     <e><p><l>imamanta<s n="adv"/><s n="itg"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
     <e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
-    <e r="LR"><p><l>mapichus<s n="adv"/><s n="itg"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
+    <e r="LR"><p><l>maypichus<s n="adv"/><s n="itg"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maytachus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maymanchus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maymantachus<s n="adv"/><s n="itg"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
@@ -248,7 +248,7 @@
     <!-- SECCIÓN: Adverbios temporales -->
     <e><p><l>chay<b/>pacha<s n="adv"/><s n="temp"/></l><r>entonces<s n="adv"/></r></p></e>
     <e><p><l>kunan<s n="adv"/><s n="temp"/></l><r>ahora<s n="adv"/></r></p></e>
-    <e><p><l>kunan<b/>p’unchay<s n="adv"/><s n="temp"/></l><r>hoy<s n="adv"/></r></p></e>
+    <e><p><l>kunan<b/>p'unchay<s n="adv"/><s n="temp"/></l><r>hoy<s n="adv"/></r></p></e>
     <e><p><l>qaynunchay<s n="adv"/><s n="temp"/></l><r>ayer<s n="adv"/></r></p></e>
     <e><p><l>sapa<b/>kuti<s n="adv"/><s n="temp"/></l><r>siempre<s n="adv"/></r></p></e>
 
@@ -320,11 +320,11 @@
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>hatun<s n="adj"/></l><r>grande<s n="adj"/><s n="mf"/></r></p></e>
-    <e><p><l>huch’uy<s n="adj"/></l><r>pequeño<s n="adj"/></r></p></e>
+    <e><p><l>huch'uy<s n="adj"/></l><r>pequeño<s n="adj"/></r></p></e>
     <e><p><l>kusisqa<s n="adj"/></l><r>feliz<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>machu<s n="adj"/></l><r>viejo<s n="adj"/></r></p></e>
     <e r="LR"><p><l>paya<s n="adj"/><s n="f"/></l><r>viejo<s n="adj"/></r></p></e>
-    <e><p><l>q’uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
+    <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>agradable<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
 
@@ -348,11 +348,11 @@
     <e><p><l>ñawi<s n="n"/></l><r>ojo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ñuñu<s n="n"/></l><r>mama<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>ñuñu<s n="n"/></l><r>teta<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>p’isqu<s n="n"/></l><r>ave<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>p'isqu<s n="n"/></l><r>ave<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>gente<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>sach’a<s n="n"/></l><r>árbol<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sach'a<s n="n"/></l><r>árbol<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>uma<s n="n"/></l><r>cabeza<s n="n"/><s n="f"/></r></p></e>
@@ -388,68 +388,69 @@
     
     <!-- SECCIÓN: Verbos modales, auxiliares, & sim. -->
     
-    <e r="RL"><p><l>ka<s n="vbex"/></l><r>hay<s n="vblex"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
-    <e><p><l>ka<s n="vbcop"/></l><r>ser<s n="vbser"/></r></p></e>
-    <e><p><l><g>pachaña<b/></g>ka<s n="vbcop"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
-    <e><p><l>muna<s n="vbmod"/></l><r>querer<s n="vbmod"/></r></p></e>
+    <e r="RL"><p><l>kay<s n="vbex"/></l><r>hay<s n="vblex"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
+    <e><p><l>kay<s n="vbcop"/></l><r>ser<s n="vbser"/></r></p></e>
+    <e><p><l><g>pachaña<b/></g>kay<s n="vbcop"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
+    <e><p><l>munay<s n="vbmod"/></l><r>querer<s n="vbmod"/></r></p></e>
     
 
 
     <!-- SECCIÓN: Verbos de movimiento -->
     <!-- porque de esto dependerá el caso que en español tienen la misma forma para ubicación y mov. -->
     
-    <e><p><l>achhuyku<s n="vblex"/><s n="vm"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
-    <e><p><l>hamu<s n="vblex"/><s n="vm"/></l><r>venir<s n="vblex"/></r></p></e>
-    <e><p><l>phawa<s n="vblex"/><s n="vm"/></l><r>correr<s n="vblex"/></r></p></e>
-    <e><p><l>puri<s n="vblex"/><s n="vm"/></l><r>caminar<s n="vblex"/></r></p></e>
-    <e><p><l>ri<s n="vblex"/><s n="vm"/></l><r>ir<s n="vblex"/></r></p></e>
-    <e><p><l>ripu<s n="vblex"/><s n="vm"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>achhuykuy<s n="vblex"/><s n="vm"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>hamuy<s n="vblex"/><s n="vm"/></l><r>venir<s n="vblex"/></r></p></e>
+    <e><p><l>phaway<s n="vblex"/><s n="vm"/></l><r>correr<s n="vblex"/></r></p></e>
+    <e><p><l>puriy<s n="vblex"/><s n="vm"/></l><r>caminar<s n="vblex"/></r></p></e>
+    <e><p><l>riy<s n="vblex"/><s n="vm"/></l><r>ir<s n="vblex"/></r></p></e>
+    <e><p><l>ripuy<s n="vblex"/><s n="vm"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
 
     
     
     <!-- SECCIÓN: Verbos "transitivos" en español (que requieren de un complemento) -->
     <!-- revisar, toda la vaina esa... -->
     
-    <e r="RL"><p><l>ati<s n="vblex"/></l><r>lograr<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>kapu<s n="vblex"/></l><r>tener<s n="vblex"/></r></p></e>
-    <e><p><l>kutichi<s n="vblex"/></l><r>contestar<s n="vblex"/></r></p></e>
-    <e><p><l>maskha<s n="vblex"/></l><r>buscar<s n="vblex"/></r></p></e>
-    <e><p><l>millp’u<s n="vblex"/></l><r>tomar<s n="vblex"/></r></p></e>
-    <e><p><l>muna<s n="vblex"/></l><r>querer<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>munaku<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>
-    <e><p><l><g>sinchita<b/></g>munaku<s n="vblex"/></l><r>encantar<s n="vblex"/></r></p></e>
-    <e><p><l>paka<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
-    <e><p><l>qhawa<s n="vblex"/></l><r>mirar<s n="vblex"/></r></p></e>
-    <e><p><l>qhawayku<s n="vblex"/></l><r>observar<s n="vblex"/></r></p></e>
-    <e><p><l>quchiku<s n="vblex"/></l><r>obtener<s n="vblex"/></r></p></e>
-    <e><p><l>riku<s n="vblex"/></l><r>ver<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>rura<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
-    <e><p><l>ruwa<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
-    <e><p><l>tapu<s n="vblex"/></l><r>preguntar<s n="vblex"/></r></p></e>
-    <e><p><l>tari<s n="vblex"/></l><r>encontrar<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>uyari<s n="vblex"/></l><r>escuchar<s n="vblex"/></r></p></e>
-    <e><p><l>uyari<s n="vblex"/></l><r>oír<s n="vblex"/></r></p></e>
-    <e><p><l>yacha<s n="vblex"/></l><r>saber<s n="vblex"/></r></p></e>
-    <e><p><l>yupa<s n="vblex"/></l><r>contar<s n="vblex"/></r></p></e> <!-- 1, 2, 3... -->
-    <e><p><l>yuya<s n="vblex"/></l><r>pensar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>atiy<s n="vblex"/></l><r>lograr<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>kapuy<s n="vblex"/></l><r>tener<s n="vblex"/></r></p></e>
+    <e><p><l>kutichiy<s n="vblex"/></l><r>contestar<s n="vblex"/></r></p></e>
+    <e><p><l>maskhay<s n="vblex"/></l><r>buscar<s n="vblex"/></r></p></e>
+    <e><p><l>millp'uy<s n="vblex"/></l><r>tomar<s n="vblex"/></r></p></e>
+    <e><p><l>munay<s n="vblex"/></l><r>querer<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>munakuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>
+    <e><p><l><g>sinchita<b/></g>munakuy<s n="vblex"/></l><r>encantar<s n="vblex"/></r></p></e>
+    <e><p><l>pakay<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
+    <e><p><l>qhaway<s n="vblex"/></l><r>mirar<s n="vblex"/></r></p></e>
+    <e><p><l>qhawaykuy<s n="vblex"/></l><r>observar<s n="vblex"/></r></p></e>
+    <e><p><l>quchikuy<s n="vblex"/></l><r>obtener<s n="vblex"/></r></p></e>
+    <e><p><l>rikuy<s n="vblex"/></l><r>ver<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>ruray<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
+    <e><p><l>ruway<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
+    <e><p><l>tapuy<s n="vblex"/></l><r>preguntar<s n="vblex"/></r></p></e>
+    <e><p><l>tariy<s n="vblex"/></l><r>encontrar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>uyariy<s n="vblex"/></l><r>escuchar<s n="vblex"/></r></p></e>
+    <e><p><l>uyariy<s n="vblex"/></l><r>oír<s n="vblex"/></r></p></e>
+    <e><p><l>yachay<s n="vblex"/></l><r>saber<s n="vblex"/></r></p></e>
+    <e><p><l>yupay<s n="vblex"/></l><r>contar<s n="vblex"/></r></p></e> <!-- 1, 2, 3... -->
+    <e><p><l>yuyay<s n="vblex"/></l><r>pensar<s n="vblex"/></r></p></e>
 
     
     
     <!-- SECCIÓN: Verbos "intransitivos" en español y otros -->
     
-    <e><p><l>asi<s n="vblex"/></l><r>reír<s n="vblex"/></r></p></e>
-    <e><p><l>ati<s n="vblex"/></l><r>poder<s n="vbmod"/></r></p></e>
-    <e><p><l>chirimu<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>
-    <e><p><l>kasha<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
-    <e><p><l>mikhu<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
-    <e><p><l>munapaya<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
-    <e><p><l>ni<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
-    <e><p><l>puklla<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
-    <e><p><l>puñu<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>
-    <e><p><l>rima<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
-    <e><p><l>ruphamu<s n="vblex"/></l><r>hacer<g><b/>calor</g><s n="vblex"/></r></p></e>
-    <e><p><l>tiyari<s n="vblex"/></l><r>sentar<s n="vblex"/></r></p></e>
-    <e><p><l>tuku<s n="vblex"/></l><r>terminar<s n="vblex"/></r></p></e>
+    <e><p><l>asiy<s n="vblex"/></l><r>reír<s n="vblex"/></r></p></e>
+    <e><p><l>atiy<s n="vblex"/></l><r>poder<s n="vbmod"/></r></p></e>
+    <e><p><l>chirimuy<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>    
+    <e><p><l>imanay<s n="vblex"/></l><r><g>qué<b/></g>hacer<s n="vblex"/></r></p></e>
+    <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
+    <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
+    <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
+    <e><p><l>niy<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
+    <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
+    <e><p><l>puñuy<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
+    <e><p><l>ruphamuy<s n="vblex"/></l><r>hacer<g><b/>calor</g><s n="vblex"/></r></p></e>
+    <e><p><l>tiyariy<s n="vblex"/></l><r>sentar<s n="vblex"/></r></p></e>
+    <e><p><l>tukuy<s n="vblex"/></l><r>terminar<s n="vblex"/></r></p></e>
 
     
 

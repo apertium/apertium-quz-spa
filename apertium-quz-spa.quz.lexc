@@ -191,6 +191,7 @@ Multichar_Symbols
 LEXICON Root
 
 Nombres ;
+NombresGenero ;
 NombresPropios ;
 Adjetivos ;
 AdjetivosGenero ;
@@ -199,6 +200,7 @@ PronombresPersonales ;
 PronombresDemItg ;
 Preadjetivos ;
 Adverbios ;
+AdverbiosInvariables ;
 Adverbios-Itg ;
 Adverbios-Subst ;
 Adverbios-Temp ;
@@ -478,6 +480,10 @@ LEXICON ADJ
 LEXICON ADJ-DEM
 %<adj%>%<dem%>: # ;
 
+LEXICON ADJ-DET
+! invariables, en posición atributiva
+%<adj%>: # ;
+
 LEXICON ADJ-M
 %<adj%>: ADJ-DER ;
 
@@ -504,10 +510,25 @@ LEXICON NUM
 ! puede tomar inclusivo, posesivo, caso...
 
 LEXICON ADV
+%<adv%>: CLIT-puni ;
+
+LEXICON ADV-lla
 %<adv%>: CLIT-lla ;
+
+LEXICON ADV-taq
+%<adv%>: CLIT-taq ;
+
+LEXICON ADV-Invar
+%<adv%>: # ;
 
 LEXICON ADV-Itg
 %<adv%>%<itg%>: N-FLEX-Caso ;
+
+LEXICON ADV-Itg-Invar
+%<adv%>%<itg%>: # ;
+
+LEXICON ADV-Itg-Clit
+%<adv%>%<itg%>: CLIT-puni ;
 
 LEXICON ADV-Subst
 %<adv%>%<subst%>: N-FLEX-Caso ;
@@ -518,8 +539,14 @@ LEXICON ADV-Temp
 LEXICON CONJ-Adv
 %<cnjadv%>: # ;
 
+LEXICON CONJ-Adv-Final
+%<cnjadv%>: CLIT-Final ;
+
 LEXICON CONJ-Coord
 %<cnjcoo%>: # ;
+
+LEXICON CONJ-Coord-Final
+%<cnjcoo%>: CLIT-Final ;
 
 LEXICON Interj
 %<ij%>: # ;
@@ -546,13 +573,49 @@ LEXICON V-VM
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!                    L E X I C O N   R A Í C E S
 
+LEXICON NombresGenero
+wayna:wayna N-M ;   ! "joven, chico"
+sipas:sipas N-F ; ! "joven, chica"
+machu:machu N-M ; ! "viejo"
+paya:paya N-F ; ! "vieja"
+tayta:tayta N-M ; ! "padre, señor"
+mama:mama N-F ; ! "madre, señora"
+tura:tura N-M ; ! "hermano de mujer"
+wayqi:wayqi N-M ; ! "hermano de hombre"
+ñaña:ñaña N-F ; ! "hermana de mujer"
+pana:pana N-F ; ! "hermana de hombre"
+
 
 LEXICON Nombres
 
-wasi:wasi N ;
-muya:muya N ;
-sipas:sipas N-F ;
-yawar:yawar N ;
+alqu:alqu N ;     ! "perro"
+animal:animal N ; ! "animal"
+bulla:bulla N ;     ! "ruido"
+chiri:chiri N ; ! "frío"
+clima:clima N ; ! "clima"
+irqi:irqi N ; ! "niño"
+kuti:kuti N ; ! "vez"
+kutichiku:kutichiku N ; ! "respuesta"
+maki:maki N ; ! "mano"
+mesa:mesa N ; ! "mesa"
+michi:michi N ; ! "gato"
+muya:muya N ; ! "jardín"
+ñawi:ñawi N ; ! "ojo"
+ñuñu:ñuñu N ; ! "mama"
+ñuñu:ñuñu N ; ! "teta"
+p'isqu:p'isqu N ; ! "ave"
+pukllay:pukllay N ; ! "juego"
+qhawana:qhawana N ; ! "ventana"
+runa:runa N ; ! "gente"
+sach'a:sach'a N ; ! "árbol"
+tapusqa:tapusqa N ; ! "pregunta"
+tiyana:tiyana N ; ! "silla"
+uma:uma N ; ! "cabeza"
+unu:unu N ; ! "agua"
+uyarikuy:uyarikuy N ; ! "sonido"
+wasi:wasi N ; ! "casa"
+wata:wata N ; ! "año"
+yawar:yawar N ; ! "sangre"
 
 
 LEXICON NombresPropios
@@ -562,86 +625,258 @@ Jaime NP-ANT-M ;
 María NP-ANT-F ;
 Daniele NP-ANT-F ;
 
+
+
+
+LEXICON AdjetivosGenero
+machu ADJ-M ;         ! "viejo"
+paya ADJ-F ;          ! "vieja"
+wayna:wayna ADJ-M ;   ! "joven"
+sipas:sipas ADJ-F ;   ! "joven"
+
+
 LEXICON Adjetivos
 kay ADJ-DEM ;     ! este, aquí, etc.
 chay ADJ-DEM ;    ! ese, ahí, etc.
 haqay ADJ-DEM ;   ! aquel, allí, etc.
-yana ADJ ;      ! negro
-hatun ADJ ;    ! grande
 
-LEXICON AdjetivosGenero
-machu ADJ-M ;     ! "viejo"
-paya ADJ-F ;    ! "vieja"
+nuqanchispa:nuqanchispa ADJ-DET ; ! "nuestro"
+nuqaq:nuqaq ADJ-DET ; ! "mío"
+nuqaqpa:nuqaqpa ADJ-DET ; ! "mío"
+nuqaykuq:nuqaykuq ADJ-DET ; ! "nuestro"
+nuqaykuqpa:nuqaykuqpa ADJ-DET ; ! "nuestro"
+ñuqanchispa:ñuqanchispa ADJ-DET ; ! "nuestro"
+ñuqaq:ñuqaq ADJ-DET ; ! "mío"
+ñuqaqpa:ñuqaqpa ADJ-DET ; ! "mío"
+ñuqaykuq:ñuqaykuq ADJ-DET ; ! "nuestro"
+ñuqaykuqpa:ñuqaykuqpa ADJ-DET ; ! "nuestro"
+paykunaq:paykunaq ADJ-DET ; ! "suyo (pl.)"
+paykunaqpa:paykunaqpa ADJ-DET ; ! "suyo (pl.)"
+paypa:paypa ADJ-DET ; ! "suyo"
+qankunaq:qankunaq ADJ-DET ; ! "vuestro"
+qankunaqpa:qankunaqpa ADJ-DET ; ! "vuestro"
+qanpa:qanpa ADJ-DET ; ! "tuyo"
+
+ima:ima ADJ-DET ; ! "qué"
+pi:pi ADJ-DET ; ! "qué"
+as:as ADJ-DET ; ! "un poco de"
+askha:askha ADJ-DET ; ! "mucho"
+huq:huq ADJ-DET ; ! "otro"
+pisi:pisi ADJ-DET ; ! "poco"
+iskaynin:iskaynin ADJ-DET ; ! "ambos"
+
+chiri:chiri ADJ ; ! "frío"
+hatun:hatun ADJ ; ! "grande"
+huch'uy:huch'uy ADJ ; ! "pequeño"
+kusisqa:kusisqa ADJ ; ! "feliz"
+q'uñi:q'uñi ADJ ; ! "cálido"
+sumaq:sumaq ADJ ; ! "agradable"
+yana:yana ADJ ; ! "negro"
+
+
+
 
 LEXICON Postposiciones
-chinpa Postp ;        ! frente a, en frente de
+chinpa:chinpa Postp ; ! "en frente de, frente a"
+niq:niq Postp ; ! "cerca de"
+qhipa:qhipa Postp ; ! "detrás de"
+ukhu:ukhu Postp ; ! "dentro de"
+uran:uran Postp ; ! "bajo"
+
 
 LEXICON Preadjetivos
-sinchi Preadj ;           ! muy, fuerte
+as:as Preadj ; ! "algo, un poco"
+aswan:aswan Preadj ; ! "más"
+sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
+
+
+
 
 LEXICON PronombresDemItg
 !! + gen, pos, dim itg = N-DER
-chay PronDem ;        ! ese
-ima PronItg ;          ! qué
-%<prn%>%<itg%>piqpa:piqpa N-FLEX-Caso ;    ! de quién, cuyo
+kay:kay PronDem ; ! "este, esto"
+chay:chay PronDem ; ! "ese, eso, ello"
+haqay:haqay PronDem ; ! "aquel, aquello"
+ima:ima PronItg ; ! "qué"
+pi:pi PronItg ; ! "quién"
+%<prn%>%<itg%>piqpa:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
+
 
 LEXICON PronombresPersonales
 !! + gen, pos, gen, dem; sg = N-DER, pl = N-FLEX-Inter
 %<prn%>%<p3%>pay:pay N-DER-Dem ;            ! él
 %<prn%>%<p3%>%<pl%>paykuna:paykuna N-FLEX-Inter ;      ! ellos
 
+nuqa:nuqa N-DER-Dem ; ! "yo"
+ñuqa:ñuqa N-DER-Dem ; ! "yo"
+qan:qan N-DER-Dem ; ! "tú, usted"
+personayki:personayki N-DER-Dem ; ! "usted"
+pay:pay N-DER-Dem ; ! "él"
+nuqayku:nuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
+ñuqayku:ñuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
+nuqanchis:nuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
+ñuqanchis:ñuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
+qankuna:qankuna N-FLEX-Inter ; ! "vosotros, ustedes"
+personaykichis:personaykichis N-FLEX-Inter ; ! "ustedes"
+paykuna:paykuna N-FLEX-Inter ; ! "ellos"
 
 LEXICON Pronombres
 !! + gen, pos, gen, dem N-FLEX-Inter
-iskayninku PRON ;     ! los dos, ambos
+huknin:huknin PRON ; ! "otro"
+iskayninku:iskayninku PRON ; ! "los dos, ambos"
+
+
 
 LEXICON Numerales
-huk NUM ;         ! uno
+huk:huk NUM ; ! "uno"
+iskay:iskay NUM ; ! "dos"
+kinsa:kinsa NUM ; ! "tres"
+tawa:tawa NUM ; ! "cuatro"
+pisqa:pisqa NUM ; ! "cinco"
+suqta:suqta NUM ; ! "seis"
+qanchis:qanchis NUM ; ! "siete"
+pusaq:pusaq NUM ; ! "ocho"
+isqun:isqun NUM ; ! "nueve"
+chunka:chunka NUM ; ! "diez"
+
+
 
 LEXICON Adverbios-Itg
 !! se portan generalmente como los substantivos, pero toman el clítico correspondiente en preguntas, negaciones y si son indefinidos, no toman el diminutivo
-may ADV-Itg ;       ! "dónde"
+may:may ADV-Itg ;       ! "dónde"
 
 LEXICON Adverbios-Subst
 !! se portan como nombres
-chay ADV-Subst ;    ! ese/aquí
+chay:chay ADV-Subst ;   ! "ahí"
+haqay:haqay ADV-Subst ; ! "allí"
+hawa:hawa ADV-Subst ;   ! "afuera"
+hina:hina ADV-Subst ;   ! "así"
+kay:kay ADV-Subst ;     ! "aquí"
+
 
 LEXICON Adverbios-Temp
 !! se portan como nombres, pero no toman el locativo
-kunan ADV-Temp ;    ! ahora
 ! habrá que restringir los casos
+chay pacha:chay pacha ADV-Temp ;        ! "entonces"
+kunan:kunan ADV-Temp ;                  ! "ahora"
+kunan% p'unchay:kunan% p'unchay ADV-Temp ; ! "hoy"
+qaynunchay:qaynunchay ADV-Temp ;        ! "ayer"
+sapa kuti:sapa kuti ADV-Temp ;          ! "siempre"
+
+LEXICON AdverbiosInvariables
+maypichus:maypichus ADV-Itg-Invar ;         ! "donde"
+maymanchus:maymanchus ADV-Itg-Invar ;       ! "a donde"
+maymantachus:maymantachus ADV-Itg-Invar ;   ! "de donde"
+maytachus:maytachus ADV-Itg-Invar ;         ! "a donde"
 
 LEXICON Adverbios
 !! los que toman sólo los clíticos
-allinta ADV ;       ! bien
-mana:mana ADV ;     ! no
+imamanta:imamanta ADV-Itg-Clit ;   ! "por qué"
+
+alli% allillanta:alli% allillanta ADV ; ! "con atención"
+allillamanta:allillamanta ADV ; ! "lentamente"
+allinta:allinta ADV ; ! "bien"
+anchata:anchata ADV ; ! "mucho"
+arí:arí ADV-Invar ; ! "sí"
+asllata:asllata ADV ; ! "un poco"
+aswanta:aswanta ADV ; ! "más"
+chayman:chayman ADV ; ! "hacia ahí"
+chaymanta:chaymanta ADV ; ! "deahí"
+chaymanta:chaymanta ADV ; ! "luego"
+chaypi:chaypi ADV ; ! "ahí"
+haqayman:haqayman ADV ; ! "hacia allí"
+haqaymanta:haqaymanta ADV ; ! "de allí"
+haqaypi:haqaypi ADV ; ! "allí"
+hawapi:hawapi ADV ; ! "afuera"
+hayk'aqpis:hayk'aqpis ADV-taq ; ! "alguna vez / nunca"
+hukmanta:hukmanta ADV ; ! "otra vez"
+ichapas:ichapas ADV-taq ; ! "probablemente"
+kayllapi:kayllapi ADV ; ! "cerca"
+kayman:kayman ADV ; ! "hacia aquí"
+kaymanta:kaymanta ADV ; ! "de aquí"
+kaypi:kaypi ADV ; ! "aquí"
+kuska:kuska ADV-lla ; ! "junto"
+mana:mana ADV ; ! "no"
+muyuyninpi:muyuyninpi ADV ; ! "alrededor"
+ña:ña ADV ; ! "ya"
+pisillata:pisillata ADV ; ! "poco"
+qhipamanta:qhipamanta ADV ; ! "de atrás"
+tukuy% hinantinpi:tukuy% hinantinpi ADV ; ! "en todas partes"
+usqhaylla:usqhaylla ADV ; ! "rápidamente"
+
+
+
 
 LEXICON Interjeciones
 alaláw Interj ;      ! Qué frío!
 
 LEXICON Conjunciones
-chay CONJ-Adv ;
-hinaspa CONJ-Adv ;
+chay CONJ-Adv-Final ;
+hinaspa CONJ-Adv-Final ;
 kanpis CONJ-Adv ;
 icha CONJ-Coord ;
 ichaqa CONJ-Coord ;
-ima CONJ-Coord ;
-!! hay que restringir la combinación con los clíticos
+ima CONJ-Coord-Final ;
+
+
+
 
 LEXICON Verbos
-kay:ka V-COP ;
-kay:ka V-EX ;
-munay:muna V-MOD ;
+kay:ka V-COP ;        ! "ser, estar"
+kay:ka V-EX ;         ! "ser, haber, existir"
+kapuy:kapu V-EX ;     ! "tener"
+munay:muna V-MOD ;    ! "querer"
+pachaña% kay:pachaña% ka V-EX   ! "ser hora de"
 
 
 LEXICON VerbosTrans
-rikuy:riku V-TV ;            ! ver
+imanay:imana V-VT     ! "qué hacer" (verbo interrogativo)
+atiy:ati V-TV ; ! "lograr"
+kutichiy:kutichi V-TV ; ! "contestar"
+maskhay:maskha V-TV ; ! "buscar"
+mikhuy:mikhu V-TV ; ! "comer"
+millp'uy:millp'u V-TV ; ! "tomar"
+munay:muna V-TV ; ! "querer"
+munakuy:munaku V-TV ; ! "gustar"          - poner %{U%}
+sinchita% munakuy:sinchita% munaku V-TV ; ! "encantar"  - poner %{U%}
+niy:ni V-TV ; ! "decir"
+pakay:paka V-TV ; ! "esconder"
+qhaway:qhawa V-TV ; ! "mirar"
+qhawaykuy:qhawayku V-TV ; ! "observar"    - poner %{U%}
+quchikuy:quchiku V-TV ; ! "obtener"       - poner %{U%}
+rikuy:riku V-TV ; ! "ver"
+ruray:rura V-TV ; ! "hacer"
+ruway:ruwa V-TV ; ! "hacer"
+tapuy:tapu V-TV ; ! "preguntar"
+tariy:tari V-TV ; ! "encontrar"
+uyariy:uyari V-TV ; ! "oír, escuchar"
+yachay:yacha V-TV ; ! "saber, aprender"
+yupay:yupa V-TV ; ! "contar (dinero, números)"
+yuyay:yuya V-TV ; ! "pensar"
+
 
 LEXICON VerbosIntrans
-pukllay:puklla V-IV ;
+asiy:asi V-IV ; ! "reír"
+atiy:ati V-IV ; ! "poder"
+chirimuy:chirimu V-IV ; ! "hacer frío"
+kashay:kasha V-IV ; ! "estar"
+munapayay:munapaya V-IV ; ! "tratar de"
+pukllay:puklla V-IV ; ! "jugar"
+puñuy:puñu V-IV ; ! "dormir"
+rimay:rima V-IV ; ! "hablar"
+ruphamuy:ruphamu V-IV ; ! "hacer calor"     - poner %{bU%}
+tiyariy:tiyari V-IV ; ! "sentar"
+tukuy:tuku V-IV ; ! "terminar"
+
 
 LEXICON VerbosMov
-puriy:puri V-VM ;            ! caminar
+achhuykuy:achhuyku V-VM ; ! "acercarse"  - poner %{U%}
+hamuy:hamu V-VM ; ! "venir"              - poner %{bU%}
+phaway:phawa V-VM ; ! "correr"
+puriy:puri V-VM ; ! "caminar"
+riy:ri V-VM ; ! "ir"
+ripuy:ripu V-VM ; ! "irse"
+
 
 
 
