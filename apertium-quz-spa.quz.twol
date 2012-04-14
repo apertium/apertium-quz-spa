@@ -63,7 +63,7 @@ Rules
 
 
 "Alternación de posesivos y otros sufijos (-ni/-) (1)"
-%{bN%}:0 <=> :VocNoAcent %>: _ %{bnI%}: ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;
+%{bN%}:0 <=> :VocNoAcent %>: _ ; ! %{bnI%}: ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;
 
 "Alternación de posesivos y otros sufijos (-ni/-) (2)"
-%{bnI%}:0 <=> :VocNoAcent %>: %{bN%}: _ ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;
+%{bnI%}:0 <=> :VocNoAcent %>: %{bN%}: _ ; ! ( ( %>: ) :l :l :a ) ( %>: ) [ :y | :n ] ;

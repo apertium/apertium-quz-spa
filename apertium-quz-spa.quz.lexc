@@ -1,5 +1,5 @@
 !!!  Q U E C H U A . lexc
-! Autor: Pato
+
 
 
 
@@ -43,6 +43,7 @@ Multichar_Symbols
 
 %<sg%>        ! singular - tal vez no usar, sólo <ND>
 %<pl%>        ! plural
+%<sp%>        ! singular/plural - con <p3> (3sp>2pl, 3sp>1in, 3sp>1ex)
 %<ND%>        ! ND número no definido
 ! talvez ND sólo en t1x, u otra cadena para plural explícito desde N-Flex-POS Obl/PL
 
@@ -94,12 +95,26 @@ Multichar_Symbols
 %<p1%>        ! primera persona
 %<p2%>        ! segunda persona
 %<p3%>        ! tercera persona
-%<p1in%>
-%<p1ex%>
-! persona objeto
+%<p1in%>      ! primera persona plural inclusiva (yo + tú)
+%<p1ex%>      ! primera persona plural exclusiva (yo + él (no tú))
 
+%<po1sg%>     ! primera persona singular objeto
+%<po1in%>     ! primera persona plural inclusiva objeto
+%<po1ex%>     ! primera persona plural exclusiva objeto
+%<po1sp%>     ! persona persona singular/plural objeto (sólo 1sg o 1ex)
+%<po2sg%>     ! segunda persona singular objeto
+%<po2pl%>     ! segunda persona plural objeto
+%<po2sp%>     ! segunda persona singular/plural objeto
+%<po3sp%>     ! tercera persona singular/plural objeto
+
+%<cont%>      ! progresivo (continuativo) -sha
 %<caus%>      ! causativo -chi
 %<bn%>        ! benefactivo -pu (aplicativo?)
+%<rec%>       ! recíproco (-na + -ku / -chi / -pu)
+
+%<past%       ! pasado -rqa
+%<cond%>      ! condicional
+%<evid%>      ! pasado evidencial -sqa
 
 
 ! clíticos
@@ -139,12 +154,16 @@ Multichar_Symbols
 
 ! FLAG DIACRITICS
 
-@P.lim.pres@
-@D.lim@
+@P.lim.pres@      ! para controlar que el limitativo salga sólo una vez (en la primera posición)
+@D.lim@           ! aunque eso probablemente no aparecerá en quechua y traduciendo del esp. se controlará por reglas
 
+@P.gen.pres@      ! para controlar que no salga <gen><nom>
+@D.gen@
+@R.gen.pres@
 
-
-
+@P.wa.pres@       ! para controlar la persona del sujeto en la forma -wa-nchis (3>12)
+@D.wa@
+@R.wa.pres@
 
 
 
@@ -152,17 +171,25 @@ Multichar_Symbols
 LEXICON Root
 
 Nombres ;
-Verbos ;
 NombresPropios ;
 Adjetivos ;
 AdjetivosGenero ;
 Pronombres ;
+PronombresPersonales ;
+PronombresDemItg ;
 Preadjetivos ;
 Adverbios ;
+Adverbios-Itg ;
+Adverbios-Subst ;
+Adverbios-Temp ;
 Numerales ;
 Postposiciones ;
 Conjunciones ;
 Interjeciones ;
+Verbos ;
+VerbosTrans ;
+VerbosIntrans ;
+VerbosMov ;
 Puntuación ;
 
 
@@ -195,7 +222,8 @@ CLIT-Indep ;
 !!!! FLEXIÓN NOMINAL
 
 LEXICON N-POSTcaso-kama
-! kama, kama-lla
+! kama - <ter>×<distrib> - otro significado, distributivo: "todos así" o sin trad.
+! kama-lla
 CLIT-Indep ;
 
 LEXICON N-POSTcaso-wan
@@ -214,15 +242,18 @@ N-POSTcaso-kama ;
 
 LEXICON N-FLEX-Caso-lla
 %<ter%>:%>kama N-lla-POSTcaso ;
-!! %<prox%>%<ter%>:niqkama  N-lla-POSTcaso ; ! ni-lla-q-kama??? niq-kama-lla???
-! %<csal%>:rayku N-lla-POSTcaso ;
+!! %<prox%>%<ter%>:%>niqkama  N-lla-POSTcaso ; ! ni-lla-q-kama??? niq-kama-lla???
+! %<csal%>:%>rayku N-lla-POSTcaso ;
 !! %<dis%>:%>%{bN%}%{bnI%}nka N-lla-POSTcaso ;
-! sin otra continuación - sólo estos casos toman -lla después
+!! sin otra continuación - sólo estos casos toman -lla después
+!! combinaciones: rayku(lla)wan, rayku(lla)pi, rayku(lla)paq
 
 
 LEXICON N-FLEX-lla-Caso
+%<nom%>@D.gen@:@D.gen@ N-POSTcaso ;
+@R.gen.pres@:@R.gen.pres@ N-POSTcaso ;
 !! %<gen%>:%>%{P%}%{bA%} ! segundo genitivo
-! %<acc%>:%>ta N-POSTcaso ;
+%<acc%>:%>ta N-POSTcaso ;
 ! %<ben%>:%>paq N-POSTcaso ;
 ! %<dat%>:%>man N-POSTcaso ;
 ! %<abl%>:%>manta N-POSTcaso ;
@@ -237,38 +268,51 @@ LEXICON N-FLEX-lla-Caso
 !! -(lla)-niq + manta, -man, -pi, -ta    - diccionario ?
 
 LEXICON N-FLEX-Caso
-%<lim%>:%>%{bN%}%{bnI%}lla N-FLEX-lla-Caso ;
+%<lim%>:%>lla N-FLEX-lla-Caso ;
 %<lim%>%<per%>:%>%{bN%}%{bnI%}lla%>nta N-POSTcaso ;
 %<per%>:%>%{bN%}%{bnI%}nta N-POSTcaso ;   ! - ojo, tb. pos3-acc (<per> con ciertos verbos: mov., mirar, etc.)
 N-FLEX-lla-Caso ;
 N-FLEX-Caso-lla ;
 
 LEXICON N-FLEX-Gen
-%<gen%>:%>%{P%}%{bA%} N-FLEX-Caso ;
+%<gen%>@P.gen.pres@:%>%{P%}%{bA%}@P.gen.pres@ N-FLEX-Caso ;
 N-FLEX-Caso ;
+! poner algo para que salga -lla-q, y no -q-lla
 
-! error - sipas-pa-ninta, -kuna-ninta, sipas-nillayki-ninta, -pa-ninta, wasi-ninta
-
-LEXICON N-FLEX-Recip-Nom
-%<inter%>:%>pura CLIT-Indep ;
-%<inter%>%<lim%>:%>pura%>lla CLIT-Indep ;
+LEXICON N-FLEX-Inter
+! %<inter%>:%>pura CLIT-Indep ;
+! %<inter%>%<lim%>:%>pura%>lla CLIT-Indep ;
 !! %<inter%>%<lim%>%<acc%>:%>purallata CLIT-Indep ;
 !! %<inter%>%<acc%>:%>purata CLIT-Indep ; ! (acciones recíprocas)
 !! %<inter%>%<ins%>:%>purawan CLIT-Indep ; !(("entre" uno por otro (cambiar, etc.))
 !! revisar, poner de otra manera
-%<nom%>: N-POSTcaso-kama ;
-%<nom%>%<lim%>:%>lla N-POSTcaso-wan ;
 N-FLEX-Gen ;
 
+! - BORRAR %<nom%>: N-POSTcaso-kama ;
+! - BORRAR %<nom%>%<lim%>:%>lla N-POSTcaso-wan ;
+
 LEXICON N-FLEX-Plural
-%<pl%>:%>kuna N-FLEX-Recip-Nom ;
-N-FLEX-Recip-Nom ;
+! %<pl%>:%>kuna N-FLEX-Inter ;
+N-FLEX-Inter ;
 
 LEXICON N-FLEX-POS
-%<px1sg%>:%>%{bN%}%{bnI%}y N-FLEX-Plural ;
-%<lim%>%<px1sg%>@D.lim@:%>%{bN%}%{bnI%}lla%>y@D.lim@ N-FLEX-Plural ;
-%<px2sg%>:%>%{bN%}%{bnI%}yki N-FLEX-Plural ;
-%<lim%>%<px2sg%>@D.lim@:%>%{bN%}%{bnI%}lla%>yki@D.lim@ N-FLEX-Plural ;
+! %<px1sg%>:%>%{bN%}%{bnI%}y N-FLEX-Plural ;
+! %<lim%>%<px1sg%>@D.lim@:%>%{bN%}%{bnI%}lla%>y@D.lim@ N-FLEX-Plural ;
+! %<px2sg%>:%>%{bN%}%{bnI%}yki N-FLEX-Plural ;
+! %<lim%>%<px2sg%>@D.lim@:%>%{bN%}%{bnI%}lla%>yki@D.lim@ N-FLEX-Plural ;
+! %<px3sg%>:%>%{bN%}%{bnI%}n N-FLEX-Plural ;
+! %<lim%>%<px3sg%>@D.lim@:%>%{bN%}%{bnI%}lla%>n@D.lim@ N-FLEX-Plural ;
+%<px1in%>:%>%{bN%}%{bnI%}nchis N-FLEX-Plural ;
+%<lim%>%<px1in%>@D.lim@:%>%{bN%}%{bnI%}lla%>nchis@D.lim@ N-FLEX-Plural ;
+! %<px2pl%>:%>%{bN%}%{bnI%}ykichis N-FLEX-Plural ;
+! %<lim%>%<px2pl%>@D.lim@:%>%{bN%}%{bnI%}lla%>ykichis@D.lim@ N-FLEX-Plural ;
+!!! %<xrel%>:%>%{bN%}%{bnI%}n N-Flex-PL ;                ! -n relativo?
+
+! %<px1ex%>:%>%{bN%}%{bnI%}yku N-FLEX-Plural ;
+! %<lim%>%<px1ex%>@D.lim@:%>%{bN%}%{bnI%}lla%>yku@D.lim@ N-FLEX-Inter ;
+%<px3pl%>:%>%{bN%}%{bnI%}nku N-FLEX-Plural ;
+%<lim%>%<px3pl%>@D.lim@:%>%{bN%}%{bnI%}lla%>nku@D.lim@ N-FLEX-Inter ;
+
 N-FLEX-Plural ;
 
 LEXICON N-FLEX-Incl
@@ -299,13 +343,59 @@ CLIT-lla ;
 
 !!!! FLEXIÓN VERBAL
 
-LEXICON V-FLEX
-%<p1%>%<sg%>:%>ni CLIT-Indep ;
-%<p2%>%<sg%>:%>nki CLIT-Indep ;
-%<p3%>%<sg%>:%>n CLIT-Indep ;
+LEXICON V-PERS
+
+! objeto 3a persona
+%<p1%>%<sg%>%<po3sp%>@D.wa@:%>ni@D.wa@ CLIT-Indep ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-Indep ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@:%>n@D.wa@ CLIT-Indep ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>nchis@D.wa@ CLIT-Indep ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>yku@D.wa@ CLIT-Indep ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@R.wa.pres@ CLIT-Indep ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>nku@D.wa@ CLIT-Indep ;
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>nki@R.wa.pres@ CLIT-Indep ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>nkiku@R.wa.pres@ CLIT-Indep ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>nkichis@R.wa.pres@ CLIT-Indep ;
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>n@R.wa.pres@ CLIT-Indep ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>nchis@R.wa.pres@ CLIT-Indep ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>nku@R.wa.pres@ CLIT-Indep ;
+
+! objeto 2a persona
+%<p1%>%<sg%>%<po2sg%>:%>yki CLIT-Indep ;
+%<p1%>%<sg%>%<po2pl%>:%>ykichis CLIT-Indep ;   ! podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>:%>ykiku CLIT-Indep ;
+%<p3%>%<sg%>%<po2sg%>:%>sunki CLIT-Indep ;
+%<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-Indep ;
+%<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-Indep ;
+
+
+LEXICON V-TMSub
+%<pres%>: V-PERS ;
+%<past%>:%>rqa V-PERS ;
+! %<evid%>:%>sqa ! sin -n 3suj. poner @P.sqa.pres@
+! -su-spa, -spa-su, -su-qti poner @P.su.pres@
+!! -y, -na-su (-su-na), -su-sqa, -sqa-su, -su-q
+! FUT
+! IMP
+! HAB
+! COND
+
+LEXICON V-LIM
+%<lim%>:lla V-TMSub ;
+V-TMSub ;
+
+
+LEXICON V-Progr
+@P.wa.pres@:%>wa@P.wa.pres@ V-LIM ;
+%<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
+%<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;
+%<cont%>:sha V-LIM ;
+V-LIM ;
 
 LEXICON V-DER
-V-FLEX ;
+V-Progr ;
 
 
 
@@ -316,8 +406,8 @@ LEXICON N
 %<n%>: N-DER ;
 ! %<n%>%<GD%>: N-DER ;
 
-! LEXICON N-M
-! %<n%>%<m%>: N-DER ;
+LEXICON N-M
+%<n%>%<m%>: N-DER ;
 
 LEXICON N-F
  %<n%>%<f%>: N-DER ;
@@ -341,67 +431,171 @@ LEXICON ADJ-M
 LEXICON ADJ-F
 %<adj%>: ADJ-DER ;
 
+LEXICON Postp
+%<postp%>: N-FLEX-Caso ;
+
+LEXICON Preadj
+%<preadj%>: N-FLEX-Caso ;
+
+LEXICON PRON
+%<prn%>: N-FLEX-Inter ;
+
+LEXICON PronDem
+%<prn%>%<dem%>: N-DER ;
+
+LEXICON PronItg
+%<prn%>%<itg%>: N-DER ;
+
 LEXICON NUM
 %<num%>: CLIT-lla ;
 ! puede tomar inclusivo, posesivo, caso...
 
-LEXICON VBlex
-%<vblex%>: V-DER ;
+LEXICON ADV
+%<adv%>: CLIT-lla ;
+
+LEXICON ADV-Itg
+%<adv%>%<itg%>: N-FLEX-Caso ;
+
+LEXICON ADV-Subst
+%<adv%>%<subst%>: N-FLEX-Caso ;
+
+LEXICON ADV-Temp
+%<adv%>%<temp%>: N-FLEX-Caso ;   ! por ahora así nomás (podrá salir con locativo)
+
+LEXICON CONJ-Adv
+%<cnjadv%>: # ;
+
+LEXICON CONJ-Coord
+%<cnjcoo%>: # ;
+
+LEXICON Interj
+%<ij%>: # ;
+
+LEXICON V-COP
+%<vbcop%>: V-DER ;
+
+LEXICON V-EX
+%<vbex%>: V-DER ;
+
+LEXICON V-MOD
+%<vbmod%>: V-DER ;
+
+LEXICON V-IV
+%<vblex%>%<iv%>: V-DER ;
+
+LEXICON V-TV
+%<vblex%>%<tv%>: V-DER ;
+
+LEXICON V-VM
+%<vblex%>%<vm%>: V-DER ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!                    L E X I C O N
+!!                    L E X I C O N   R A Í C E S
 
 
 LEXICON Nombres
 
-wasi:wasi N ;
+! wasi:wasi N ;
 ! muya N ;
-sipas:sipas N-F ;
+! sipas:sipas N-F ;
 ! yawar N ;
 
 
 LEXICON NombresPropios
 
-José:José NP-ANT-M ;
+! José:José NP-ANT-M ;
 ! Jaime NP-ANT-M ;
 ! María NP-ANT-F ;
-Daniele NP-ANT-F ;
+! Daniele NP-ANT-F ;
 
 LEXICON Adjetivos
 ! kay ADJ-DEM ;     ! este, aquí, etc.
-chay ADJ-DEM ;    ! ese, ahí, etc.
+! chay ADJ-DEM ;    ! ese, ahí, etc.
 ! haqay ADJ-DEM ;   ! aquel, allí, etc.
 ! yana ADJ ;      ! negro
-hatun ADJ ;    ! grande
+! hatun ADJ ;    ! grande
 
 LEXICON AdjetivosGenero
 ! machu ADJ-M ;     ! "viejo"
-paya ADJ-F ;    ! "vieja"
+! paya ADJ-F ;    ! "vieja"
+
+LEXICON Postposiciones
+! chinpa Postp ;        ! frente a, en frente de
+
+LEXICON Preadjetivos
+! sinchi Preadj ;           ! muy, fuerte
+
+LEXICON PronombresDemItg
+!! + gen, pos, dim itg = N-DER
+! chay PronDem ;        ! ese
+! ima PronItg ;          ! qué
+! %<prn%>%<itg%>piqpa:piqpa N-FLEX-Caso ;    ! de quién, cuyo
+
+LEXICON PronombresPersonales
+!! + gen, pos, gen, dem; sg = N-DER, pl = N-FLEX-Inter
+! %<prn%>%<p3%>pay:pay N-DER-Dem ;            ! él
+! %<prn%>%<p3%>%<pl%>paykuna:paykuna N-FLEX-Inter ;      ! ellos
+
+
+LEXICON Pronombres
+!! + gen, pos, gen, dem N-FLEX-Inter
+! iskayninku PRON ;     ! los dos, ambos
 
 LEXICON Numerales
-huk NUM ;         ! uno
+! huk NUM ;         ! uno
+
+LEXICON Adverbios-Itg
+!! se portan generalmente como los substantivos, pero toman el clítico correspondiente en preguntas, negaciones y si son indefinidos, no toman el diminutivo
+! may ADV-Itg ;       ! "dónde"
+
+LEXICON Adverbios-Subst
+!! se portan como nombres
+! chay ADV-Subst ;    ! ese/aquí
+
+LEXICON Adverbios-Temp
+!! se portan como nombres, pero no toman el locativo
+! kunan ADV-Temp ;    ! ahora
+! habrá que restringir los casos
+
+LEXICON Adverbios
+!! los que toman sólo los clíticos
+! allinta ADV ;       ! bien
+
+LEXICON Interjeciones
+alaláw Interj ;      ! Qué frío!
+
+LEXICON Conjunciones
+chay CONJ-Adv ;
+hinaspa CONJ-Adv ;
+kanpis CONJ-Adv ;
+icha CONJ-Coord ;
+ichaqa CONJ-Coord ;
+ima CONJ-Coord ;
+!! hay que restringir la combinación con los clíticos
 
 LEXICON Verbos
+! kay:ka V-COP ;
+! kay:ka V-EX ;
+! munay:muna V-MOD ;
 
-! ruway:ruwa VBlex ;            ! hacer
-puriy:puri VBlex ;            ! caminar
 
+LEXICON VerbosTrans
+rikuy:riku V-TV ;            ! ver
 
+LEXICON VerbosIntrans
+! pukllay:puklla V-IV ;
 
-! LEXICON Pronombres
-! LEXICON Preadjetivos
-! LEXICON Adverbios
-! LEXICON Numerales
-! LEXICON Postposiciones
-! LEXICON Conjunciones
-! LEXICON Interjeciones
+LEXICON VerbosMov
+! puriy:puri V-VM ;            ! caminar
+
 
 
 LEXICON Puntuación
 
 
 ! exkl ! = +yá! en vez de sent
-! qst! = +chu?
+! %<qst%>! ? = +chu? en vez de sent
 
 .%<sent%>:. # ;
 ..%<sent%>:.. # ;
@@ -440,31 +634,8 @@ END
 ! %<px1in%>:nchis N-Flex-PL ;
 ! %<px2pl%>:ykichis N-Flex-PL ;
 
-! %<xrel%>:n N-Flex-PL ;                ! -n relativo?
-
-! %<px1ex%>:yku N-Flex-Inter ;            ! no puede seguir plural -kuna, tal vez en .twol
-! %<px3pl%>:nku N-Flex-Inter ;
-
-! sin otra continuación - posesivo obligatorio después de {ni} separado del posesivo
 
 
 
 
-! LEXICON N-Flex-CASO-lla
-! %<lim%>:lla N-Flex-PostCaso ;
-! N-Flex-PostCaso ;
-! combinaciones: rayku(lla)wan, rayku(lla)pi, rayku(lla)paq
 
-! LEXICON N-Flex-LIM-CASO
-! %<lim%>%<nom%>:lla N-Flex-PostCaso ;
-! %<lim%>:lla N-Flex-lla-CASO ;
-! %<nom%>: N-Flex-PostCaso ;
-! N-Flex-lla-CASO ;
-
-
-
-! LEXICON N-Flex-PostCaso
-
-! poner otros símbolos para que no se machaque con <nom> (u otro caso)
-! kama - <ter>×<distrib> - otro significado, distributivo: "todos así" o sin trad.
-! kamalla
