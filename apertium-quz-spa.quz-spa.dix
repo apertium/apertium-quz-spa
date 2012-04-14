@@ -13,7 +13,7 @@
     <sdef n="detnt"    c="Determinante neutro"/>
     <sdef n="num"      c="Numeral"/>
     <sdef n="pr"       c="Preposición"/>
-    <sdef n="postp"    c="Postposición"/>
+    <sdef n="post"    c="Postposición"/>
     <sdef n="preadv"   c="Preadverbio"/>
     <sdef n="preadj"   c="Preadjetivo"/>
     <sdef n="predet"   c="Preterminante"/>
@@ -137,12 +137,12 @@
 
     
     <!-- SECCIÓN: Posposiciones, preposiciones -->
-    <e r="RL"><p><l>chinpa<s n="postp"/></l><r>en<b/>frente<b/>de<s n="pr"/></r></p></e>
-    <e><p><l>chinpa<s n="postp"/></l><r>frente<b/>a<s n="pr"/></r></p></e>
-    <e><p><l>niq<s n="postp"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
-    <e><p><l>qhipa<s n="postp"/></l><r>detrás<b/>de<s n="pr"/></r></p></e>
-    <e><p><l>ukhu<s n="postp"/></l><r>dentro<b/>de<s n="pr"/></r></p></e>
-    <e><p><l>uran<s n="postp"/></l><r>bajo<s n="pr"/></r></p></e>
+    <e r="RL"><p><l>chinpa<s n="post"/></l><r>en<b/>frente<b/>de<s n="pr"/></r></p></e>
+    <e><p><l>chinpa<s n="post"/></l><r>frente<b/>a<s n="pr"/></r></p></e>
+    <e><p><l>niq<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
+    <e><p><l>qhipa<s n="post"/></l><r>detrás<b/>de<s n="pr"/></r></p></e>
+    <e><p><l>ukhu<s n="post"/></l><r>dentro<b/>de<s n="pr"/></r></p></e>
+    <e><p><l>uran<s n="post"/></l><r>bajo<s n="pr"/></r></p></e>
 
     
     <!-- SECCIÓN: Preadjetivos, preadverbios -->

@@ -15,7 +15,7 @@ Multichar_Symbols
 %<preadj%>    ! preadjetivo
 %<adv%>       ! adverbio
 %<num%>       ! numeral
-%<postp%>     ! posposición
+%<post%>     ! posposición
 %<cnjcoo%>    ! -wan, -piwan, -puwan como conjunción "y", "con"
 %<cnjadv%>    ! conjunción adverbial
 %<ij%>        ! interjeción
@@ -491,7 +491,7 @@ LEXICON ADJ-F
 %<adj%>: ADJ-DER ;
 
 LEXICON Postp
-%<postp%>: N-FLEX-Caso ;
+%<post%>: N-FLEX-Caso ;
 
 LEXICON Preadj
 %<preadj%>: N-FLEX-Caso ;
