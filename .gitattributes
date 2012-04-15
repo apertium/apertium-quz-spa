@@ -9,5 +9,6 @@
 /apertium-quz-spa.quz.twol -text
 /apertium-quz-spa.spa.dix -text svneol=unset#application/xml
 dev/apertium-quz-spa.quz.lexc-OLD -text
+dev/cuento.quz-var.txt -text
 dev/cuento.quz.txt -text
 /modes.xml -text
