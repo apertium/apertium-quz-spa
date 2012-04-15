@@ -141,6 +141,7 @@ Multichar_Symbols
 %<cnj%>         ! conjetural -chá
 %<enf%>         ! enfático -yá
 %<dub%>         ! dubitativo -chus
+%<excl%>        ! exclamativo (ari, á o acento)
 
 ! interrogativo
 
@@ -241,6 +242,7 @@ CLIT-Final ;
 
 LEXICON CLIT-taq
 %+taq%<contr%>:%>taq # ;
+%+taq%<contr%>%<excl%>:%>táq # ;
 CLIT-chu ;
 
 LEXICON CLIT-pas
@@ -360,15 +362,15 @@ LEXICON N-FLEX-Incl
 %<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Caso ;
 N-FLEX-POS ;
 
-LEXICON N-DER-Dem
+LEXICON N-DER-Dim
 %<dim%>:%>cha N-FLEX-Incl ;
 N-FLEX-Incl ;
 
 
 LEXICON N-DER
-%<poss%>:%>%{bN%}%{bnI%}yuq N-DER-Dem ;
-%<lim%>%<poss%>@P.lim.pres@:%>%{bN%}%{bnI%}llayuq@P.lim.pres@ N-DER-Dem ;
-N-DER-Dem ;
+%<poss%>:%>%{bN%}%{bnI%}yuq N-DER-Dim ;
+%<lim%>%<poss%>@P.lim.pres@:%>%{bN%}%{bnI%}llayuq@P.lim.pres@ N-DER-Dim ;
+N-DER-Dim ;
 
 
 LEXICON ADJ-PL
@@ -621,24 +623,24 @@ yawar:yawar N ; ! "sangre"
 LEXICON NombresPropios
 
 José:José NP-ANT-M ;
-Jaime NP-ANT-M ;
-María NP-ANT-F ;
-Daniele NP-ANT-F ;
+Jaime:Jaime NP-ANT-M ;
+María:María NP-ANT-F ;
+Daniele:Daniele NP-ANT-F ;
 
 
 
 
 LEXICON AdjetivosGenero
-machu ADJ-M ;         ! "viejo"
-paya ADJ-F ;          ! "vieja"
+machu:machu ADJ-M ;         ! "viejo"
+paya:paya ADJ-F ;          ! "vieja"
 wayna:wayna ADJ-M ;   ! "joven"
 sipas:sipas ADJ-F ;   ! "joven"
 
 
 LEXICON Adjetivos
-kay ADJ-DEM ;     ! este, aquí, etc.
-chay ADJ-DEM ;    ! ese, ahí, etc.
-haqay ADJ-DEM ;   ! aquel, allí, etc.
+kay:kay ADJ-DEM ;     ! este, aquí, etc.
+chay:chay ADJ-DEM ;    ! ese, ahí, etc.
+haqay:haqay ADJ-DEM ;   ! aquel, allí, etc.
 
 nuqanchispa:nuqanchispa ADJ-DET ; ! "nuestro"
 nuqaq:nuqaq ADJ-DET ; ! "mío"
@@ -704,21 +706,18 @@ piqpa%<prn%>%<itg%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
 
 LEXICON PronombresPersonales
 !! + gen, pos, gen, dem; sg = N-DER, pl = N-FLEX-Inter
-%<prn%>%<p3%>pay:pay N-DER-Dem ;            ! él
-%<prn%>%<p3%>%<pl%>paykuna:paykuna N-FLEX-Inter ;      ! ellos
-
-nuqa:nuqa N-DER-Dem ; ! "yo"
-ñuqa:ñuqa N-DER-Dem ; ! "yo"
-qan:qan N-DER-Dem ; ! "tú, usted"
-personayki:personayki N-DER-Dem ; ! "usted"
-pay:pay N-DER-Dem ; ! "él"
-nuqayku:nuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
-ñuqayku:ñuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
-nuqanchis:nuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
-ñuqanchis:ñuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
-qankuna:qankuna N-FLEX-Inter ; ! "vosotros, ustedes"
-personaykichis:personaykichis N-FLEX-Inter ; ! "ustedes"
-paykuna:paykuna N-FLEX-Inter ; ! "ellos"
+nuqa%<prn%>%<p1%>%<sg%>:nuqa N-DER-Dim ; ! "yo"
+ñuqa%<prn%>%<p1%>%<sg%>:ñuqa N-DER-Dim ; ! "yo"
+qan%<prn%>%<p2%>%<sg%>:qan N-DER-Dim ; ! "tú, usted"
+personayki%<prn%>%<p2%>%<sg%>:personayki N-DER-Dim ; ! "usted"
+pay%<prn%>%<p3%>%<sg%>:pay N-DER-Dim ; ! "él"
+nuqayku%<prn%>%<p1%>%<pl%>:nuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
+ñuqayku%<prn%>%<p1%>%<pl%>:ñuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
+nuqanchis%<prn%>%<p1%>%<pl%>:nuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
+ñuqanchis%<prn%>%<p1%>%<pl%>:ñuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
+qankuna%<prn%>%<p2%>%<pl%>:qankuna N-FLEX-Inter ; ! "vosotros, ustedes"
+personaykichis%<prn%>%<p2%>%<pl%>:personaykichis N-FLEX-Inter ; ! "ustedes"
+paykuna%<prn%>%<p3%>%<pl%>:paykuna N-FLEX-Inter ; ! "ellos"
 
 LEXICON Pronombres
 !! + gen, pos, gen, dem N-FLEX-Inter
@@ -757,11 +756,11 @@ kay:kay ADV-Subst ;     ! "aquí"
 LEXICON Adverbios-Temp
 !! se portan como nombres, pero no toman el locativo
 ! habrá que restringir los casos
-chay pacha:chay pacha ADV-Temp ;        ! "entonces"
+chay% pacha:chay% pacha ADV-Temp ;        ! "entonces"
 kunan:kunan ADV-Temp ;                  ! "ahora"
 kunan% p%'unchay:kunan% p%'unchay ADV-Temp ; ! "hoy"
 qaynunchay:qaynunchay ADV-Temp ;        ! "ayer"
-sapa kuti:sapa kuti ADV-Temp ;          ! "siempre"
+sapa% kuti:sapa% kuti ADV-Temp ;          ! "siempre"
 
 LEXICON AdverbiosInvariables
 maypichus:maypichus ADV-Itg-Invar ;         ! "donde"
@@ -808,15 +807,15 @@ usqhaylla:usqhaylla ADV ; ! "rápidamente"
 
 
 LEXICON Interjeciones
-alaláw Interj ;      ! Qué frío!
+alaláw:alaláw Interj ;      ! "Qué frío!"
 
 LEXICON Conjunciones
-chay CONJ-Adv-Final ;
-hinaspa CONJ-Adv-Final ;
-kanpis CONJ-Adv ;
-icha CONJ-Coord ;
-ichaqa CONJ-Coord ;
-ima CONJ-Coord-Final ;
+chay:chay CONJ-Adv-Final ;    ! "así que"
+hinaspa:hinaspa CONJ-Adv-Final ;    ! "entonces"
+kanpis:kanpis CONJ-Adv ;            ! "aunque"
+icha:icha CONJ-Coord ;              ! "o"
+ichaqa:ichaqa CONJ-Coord ;          ! "pero"
+ima:ima CONJ-Coord-Final ;          ! "y"
 
 
 
@@ -826,11 +825,11 @@ kay:ka V-COP ;        ! "ser, estar"
 kay:ka V-EX ;         ! "ser, haber, existir"
 kapuy:kapu V-EX ;     ! "tener"
 munay:muna V-MOD ;    ! "querer"
-pachaña% kay:pachaña% ka V-EX   ! "ser hora de"
+pachaña% kay:pachaña% ka V-EX ;   ! "ser hora de"
 
 
 LEXICON VerbosTrans
-imanay:imana V-VT     ! "qué hacer" (verbo interrogativo)
+imanay:imana V-TV ;    ! "qué hacer" (verbo interrogativo)
 atiy:ati V-TV ; ! "lograr"
 kutichiy:kutichi V-TV ; ! "contestar"
 maskhay:maskha V-TV ; ! "buscar"
@@ -912,19 +911,3 @@ LEXICON Puntuación
 
 
 END
-
-
-! END!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-! %<px1sg%>:y N-Flex-PL ;
-! %<px2sg%>:yki N-Flex-PL ;
-! %<px3sg%>:n N-Flex-PL ;
-! %<px1in%>:nchis N-Flex-PL ;
-! %<px2pl%>:ykichis N-Flex-PL ;
-
-
-
-
-
-
