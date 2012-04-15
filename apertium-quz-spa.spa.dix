@@ -173,7 +173,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     </pardef>
     <pardef n="separa">
       <e>
-        <re>[.\?;:!]</re>
+        <re>[.\?;:!]+</re>
         <p>
           <l/>
           <r><s n="sent"/></r>
