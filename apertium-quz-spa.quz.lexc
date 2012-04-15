@@ -161,6 +161,7 @@ Multichar_Symbols
 
 %'            ! apóstrofe de las consnantes glotalizadas (p', t', ch', k', q')
 %>            ! Morpheme boundary
+% 
 
 
 ! Puntuación

@@ -57,6 +57,8 @@
     <sdef n="subst"    c="Substantival (adverbio)"/>
     <sdef n="temp"     c="Temporal (adverbio)"/>
     
+    <sdef n="loc"      c="Locativo"/>
+
     <sdef n="tn"       c="Tónico"/>
     <sdef n="enc"      c="Enclítico"/>
     <sdef n="pro"      c="Proclítico"/>
@@ -233,7 +235,8 @@
     <e><p><l>piqpa<s n="prn"/><s n="itg"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
     <e><p><l>imamanta<s n="adv"/><s n="itg"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
-    <e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+<!--    <e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>-->
+    <e><p><l>may<s n="adv"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
     <e r="LR"><p><l>maypichus<s n="adv"/><s n="itg"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maytachus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maymanchus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
