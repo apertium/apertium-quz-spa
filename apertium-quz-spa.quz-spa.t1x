@@ -2,17 +2,69 @@
 <!-- -*- nxml -*- -->
 <transfer default="chunk">
   <section-def-cats>
+  
     <def-cat n="nom">
       <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
     </def-cat>
+    
+    <def-cat n="adj">
+      <cat-item tags="adj.*"/>
+    </def-cat>
+    
+    <def-cat n="verb">
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="vbex.*"/>
+      <cat-item tags="vbcop.*"/>
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="vbmod.*"/>
+      <cat-item tags="vbaux.*"/>
+    </def-cat>
+    
+    
+    
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
-  </section-def-cats>
+    
+  </section-def-cats>  
   <section-def-attrs>
+  
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+      <attr-item tags="np"/>
     </def-attr>
+    
+    <def-attr n="a_adj">
+      <attr-item tags="adj"/>
+    </def-attr>
+    
+    <def-attr n="a_verb">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vbex"/>
+      <attr-item tags="vbcop"/>
+      <attr-item tags="vblex"/>
+      <attr-item tags="vbmod"/>
+      <attr-item tags="vbaux"/>
+      <attr-item tags="vbser"/>
+      <attr-item tags="vbhaver"/>
+    </def-attr>
+    
+    <def-attr n="gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+    
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+    
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
@@ -21,13 +73,69 @@
       <attr-item tags="loc"/>
       <attr-item tags="ins"/>
       <attr-item tags="abl"/>
+      <attr-item tags="ben"/>
+      <attr-item tags="ter"/>
+      <attr-item tags="per"/>
+      <attr-item tags="csal"/>
+      <attr-item tags="dis"/>
     </def-attr>
-
+    
+    <def-attr n="temps">
+      <attr-item tags="past"/>
+      <attr-item tags="pri"/>
+      <attr-item tags="prs"/>
+      <attr-item tags="pii"/>
+      <attr-item tags="pis"/>
+      <attr-item tags="ifi"/>
+      <attr-item tags="fti"/>
+      <attr-item tags="fts"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="cni"/>
+    </def-attr>
+    
+    <def-attr n="aspect">
+      <attr-item tags="cont"/>
+      <!-- <attr-item tags="sufijo-rqu"/> -->
+    </def-attr>
+    
+    <def-attr n="pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="p1in"/>
+      <attr-item tags="p1ex"/>
+    </def-attr>
+    
+    <def-attr n="pers_obj">
+      <attr-item tags="po1sg"/>
+      <attr-item tags="po1in"/>
+      <attr-item tags="po1ex"/>
+      <attr-item tags="po1sp"/>
+      <attr-item tags="po2sg"/>
+      <attr-item tags="po2pl"/>
+      <attr-item tags="po2sp"/>
+      <attr-item tags="po3sp"/>
+    </def-attr>
+    
+    <def-attr n="pers_pos">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px1in"/>
+      <attr-item tags="px1ex"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px3pl"/>
+    </def-attr>
+    
+    
   </section-def-attrs>
+  
   <section-def-vars>
     <def-var n="number"/>
     <def-var n="current_verb"/>
   </section-def-vars>
+  
+  
   <section-def-macros>
     <def-macro n="test" npar="1">
           <let>
@@ -55,6 +163,69 @@
         </out>
       </action>
     </rule>
+    
+<rule comment="verbos_general">
+<pattern>
+  <pattern-item n="verb"/>
+</pattern>
+<action>
+<choose>
+<when>
+<test>
+  <and>
+    <equal>
+      <clip pos="1" side="sl" part="temps"/>
+      <lit-tag v="past"/>
+    </equal>
+    <not>
+      <equal>
+        <clip pos="1" side="sl" part="aspect"/>
+        <lit-tag v="cont"/>
+      </equal>
+    </not>
+  </and>
+</test>
+<let>
+  <clip pos="1" side="tl" part="temps"/>
+  <lit-tag v="ifi"/>
+</let>
+</when>
+<when>
+<test>
+  <and>
+    <equal>
+      <clip pos="1" side="sl" part="temps"/>
+      <lit-tag v="past"/>
+    </equal>
+    <equal>
+      <clip pos="1" side="sl" part="aspect"/>
+      <lit-tag v="cont"/>
+    </equal>
+  </and>
+</test>
+<let>
+  <clip pos="1" side="tl" part="temps"/>
+  <lit-tag v="pii"/>
+</let>
+</when>
+</choose>
+<out>
+<chunk name="verbo">
+		<tags><tag><lit-tag v="V"/></tag></tags>
+  <lu>
+    <clip pos="1" side="tl" part="lemh"/>
+    <clip pos="1" side="tl" part="a_verb"/>
+    <clip pos="1" side="tl" part="temps"/>
+    <clip pos="1" side="tl" part="pers"/>
+    <clip pos="1" side="tl" part="gen"/>
+    <clip pos="1" side="tl" part="nbr"/>
+    <clip pos="1" side="tl" part="lemq"/>
+  </lu>
+</chunk>
+</out>
+</action>
+</rule>
+  
 
   </section-rules>
 </transfer>

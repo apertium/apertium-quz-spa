@@ -112,7 +112,7 @@ Multichar_Symbols
 %<bn%>        ! benefactivo -pu (aplicativo?)
 %<rec%>       ! recíproco (-na + -ku / -chi / -pu)
 
-%<pres%>      ! presente
+%<pri%>       ! presente
 %<past%       ! pasado -rqa
 %<cond%>      ! condicional
 %<evid%>      ! pasado evidencial -sqa
@@ -426,7 +426,7 @@ LEXICON V-INF
 %<inf%>%<po1sp%>@R.wa.pres@:%>y@R.wa.pres@ V-Nom ;
 
 LEXICON V-TMSub
-%<pres%>: V-PERS ;
+%<pri%>: V-PERS ;
 %<past%>:%>rqa V-PERS ;
 ! %<evid%>:%>sqa ! sin -n 3suj. poner @P.sqa.pres@
 ! FUT
@@ -865,7 +865,7 @@ pukllay:puklla V-IV ; ! "jugar"
 puñuy:puñu V-IV ; ! "dormir"
 rimay:rima V-IV ; ! "hablar"
 ruphamuy:ruphamu V-IV ; ! "hacer calor"     - poner %{bU%}
-tiyariy:tiyari V-IV ; ! "sentar"
+tiyay:tiya V-IV ; ! "sentar"
 tukuy:tuku V-IV ; ! "terminar"
 
 
