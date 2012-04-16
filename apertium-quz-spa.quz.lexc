@@ -494,7 +494,7 @@ LEXICON ADJ-F
 %<adj%>: ADJ-DER ;
 
 LEXICON Postp
-%<post%>: N-FLEX-Caso ;
+%<post%>: N-FLEX-POS ;
 
 LEXICON Preadj
 %<preadj%>: N-FLEX-Caso ;
@@ -581,12 +581,18 @@ wayna:wayna N-M ;   ! "joven, chico"
 sipas:sipas N-F ; ! "joven, chica"
 machu:machu N-M ; ! "viejo"
 paya:paya N-F ; ! "vieja"
+qhari:qhari N-M ;   ! "hombre"
+warmi:warmi N-F ; ! "mujer"
 tayta:tayta N-M ; ! "padre, señor"
 mama:mama N-F ; ! "madre, señora"
 tura:tura N-M ; ! "hermano de mujer"
 wayqi:wayqi N-M ; ! "hermano de hombre"
 ñaña:ñaña N-F ; ! "hermana de mujer"
 pana:pana N-F ; ! "hermana de hombre"
+qhari% wawa:qhari% wawa N-M ;   ! "hijo (de su madre), bebé"
+warmi% wawa:warmi% wawa N-F ; ! "hija (de su madre), bebé"
+qhari% irqi:qhari% irqi N-M ;   ! "niño"
+warmi% irqi:warmi% irqi N-F ; ! "niña"
 
 
 LEXICON Nombres
@@ -636,6 +642,8 @@ machu:machu ADJ-M ;         ! "viejo"
 paya:paya ADJ-F ;          ! "vieja"
 wayna:wayna ADJ-M ;   ! "joven"
 sipas:sipas ADJ-F ;   ! "joven"
+qhari:qhari ADJ ;   ! "macho, masculino, hombre"
+warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 
 
 LEXICON Adjetivos
@@ -668,6 +676,7 @@ huq:huq ADJ-DET ; ! "otro"
 pisi:pisi ADJ-DET ; ! "poco"
 iskaynin:iskaynin ADJ-DET ; ! "ambos"
 
+allin:bueno ADJ ;   ! "bueno"
 chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
@@ -681,13 +690,15 @@ yana:yana ADJ ; ! "negro"
 
 LEXICON Postposiciones
 chinpa:chinpa Postp ; ! "en frente de, frente a"
-niq:niq Postp ; ! "cerca de"
+niq%<post%>:niq N-FLEX-Caso ; ! "cerca de"
 qhipa:qhipa Postp ; ! "detrás de"
+sispa:sispa Postp ;   ! "cerca de"
 ukhu:ukhu Postp ; ! "dentro de"
 uran:uran Postp ; ! "bajo"
 
 
 LEXICON Preadjetivos
+ancha:ancha Preadj ; ! "muy, mucho"
 as:as Preadj ; ! "algo, un poco"
 aswan:aswan Preadj ; ! "más"
 sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
@@ -797,6 +808,7 @@ kaymanta:kaymanta ADV ; ! "de aquí"
 kaypi:kaypi ADV ; ! "aquí"
 kuska:kuska ADV-lla ; ! "junto"
 mana:mana ADV ; ! "no"
+manapuni%<adv%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
 muyuyninpi:muyuyninpi ADV ; ! "alrededor"
 ña:ña ADV ; ! "ya"
 pisillata:pisillata ADV ; ! "poco"
@@ -838,6 +850,7 @@ mikhuy:mikhu V-TV ; ! "comer"
 millp'uy:millp'u V-TV ; ! "tomar"
 munay:muna V-TV ; ! "querer"
 munakuy:munaku V-TV ; ! "gustar"          - poner %{U%}
+munaykuy:munayku V-TV ; ! "gustar, querer, amar"          - poner %{U%}
 sinchita% munakuy:sinchita% munaku V-TV ; ! "encantar"  - poner %{U%}
 niy:ni V-TV ; ! "decir"
 pakay:paka V-TV ; ! "esconder"
@@ -849,6 +862,9 @@ ruray:rura V-TV ; ! "hacer"
 ruway:ruwa V-TV ; ! "hacer"
 tapuy:tapu V-TV ; ! "preguntar"
 tariy:tari V-TV ; ! "encontrar"
+ukyay:ukya V-TV ;   ! "beber"
+upiy:upi V-TV ;     ! "tomar sopa, sorber"
+upyay:upya V-TV ;   ! "beber"
 uyariy:uyari V-TV ; ! "oír, escuchar"
 yachay:yacha V-TV ; ! "saber, aprender"
 yupay:yupa V-TV ; ! "contar (dinero, números)"
@@ -859,9 +875,11 @@ LEXICON VerbosIntrans
 asiy:asi V-IV ; ! "reír"
 atiy:ati V-IV ; ! "poder"
 chirimuy:chirimu V-IV ; ! "hacer frío"
+hinay:hina V-IV ;     ! "hacer así"
 kashay:kasha V-IV ; ! "estar"
 munapayay:munapaya V-IV ; ! "tratar de"
 pukllay:puklla V-IV ; ! "jugar"
+pukllakuy:puklla V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"
 rimay:rima V-IV ; ! "hablar"
 ruphamuy:ruphamu V-IV ; ! "hacer calor"     - poner %{bU%}

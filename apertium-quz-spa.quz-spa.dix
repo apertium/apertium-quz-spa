@@ -141,17 +141,19 @@
     <!-- SECCIÓN: Posposiciones, preposiciones -->
     <e r="RL"><p><l>chinpa<s n="post"/></l><r>en<b/>frente<b/>de<s n="pr"/></r></p></e>
     <e><p><l>chinpa<s n="post"/></l><r>frente<b/>a<s n="pr"/></r></p></e>
-    <e><p><l>niq<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
+    <e r="LR"><p><l>niq<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
     <e><p><l>qhipa<s n="post"/></l><r>detrás<b/>de<s n="pr"/></r></p></e>
+    <e><p><l>sispa<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
     <e><p><l>ukhu<s n="post"/></l><r>dentro<b/>de<s n="pr"/></r></p></e>
     <e><p><l>uran<s n="post"/></l><r>bajo<s n="pr"/></r></p></e>
 
     
     <!-- SECCIÓN: Preadjetivos, preadverbios -->
     <e r="RL"><p><l>as<s n="preadj"/></l><r>algo<s n="preadv"/></r></p></e>
+    <e><p><l>ancha<s n="preadj"/></l><r>muy<s n="preadv"/></r></p></e>
     <e><p><l>as<s n="preadj"/></l><r>algo<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>aswan<s n="preadj"/></l><r>más<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>sinchi<s n="preadj"/></l><r>muy<s n="preadv"/></r></p></e>
+    <e><p><l>sinchi<s n="preadj"/></l><r>fuertemente<s n="preadv"/></r></p></e>
     
     
     <!-- SECCIÓN: Numerales -->
@@ -291,6 +293,7 @@
     <e><p><l>ichapas<s n="adv"/></l><r>probablemente<s n="adv"/></r></p></e>
     <e><p><l>kuska<s n="adv"/></l><r>junto<s n="adj"/></r></p></e>
     <e><p><l>mana<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
+    <e><p><l>manapuni<s n="adv"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
     <e><p><l>pisillata<s n="adv"/></l><r>poco<s n="adv"/></r></p></e>
     <e><p><l>usqhaylla<s n="adv"/></l><r>rápidamente<s n="adv"/></r></p></e>
 
@@ -324,7 +327,7 @@
     <e><p><l>askha<s n="adj"/></l><r>mucho<s n="det"/><s n="qnt"/></r></p></e>
     <e><p><l>pisi<s n="adj"/></l><r>poco<s n="det"/><s n="qnt"/></r></p></e>
 
-
+    <e><p><l>allin<s n="adj"/></l><r>bueno<s n="adj"/></r></p></e>
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>hatun<s n="adj"/></l><r>grande<s n="adj"/><s n="mf"/></r></p></e>
@@ -332,6 +335,8 @@
     <e><p><l>kusisqa<s n="adj"/></l><r>feliz<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>machu<s n="adj"/></l><r>viejo<s n="adj"/></r></p></e>
     <e r="LR"><p><l>paya<s n="adj"/><s n="f"/></l><r>viejo<s n="adj"/></r></p></e>
+    <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
+    <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
     <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>agradable<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
@@ -383,6 +388,13 @@
     <e r="LR"><p><l>tura<s n="n"/><s n="m"/></l><r>hermano<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>pana<s n="n"/><s n="f"/></l><r>hermano<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>ñaña<s n="n"/><s n="f"/></l><r>hermano<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>qhari<b/>irqi<s n="n"/><s n="m"/></l><r>niño<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>warmi<b/>irqi<s n="n"/><s n="f"/></l><r>niño<s n="n"/><s n="f"/></r></p></e>    
+    <e r="LR"><p><l>qhari<b/>wawa<s n="n"/><s n="m"/></l><r>hijo<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>warmi<b/>wawa<s n="n"/><s n="f"/></l><r>hijo<s n="n"/><s n="f"/></r></p></e>    
+    <e><p><l>qhari<s n="n"/><s n="m"/></l><r>hombre<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>warmi<s n="n"/><s n="f"/></l><r>mujer<s n="n"/><s n="f"/></r></p></e>
+    
 
     
     <!-- SECCIÓN: Sustantivos propios -->
@@ -398,7 +410,7 @@
     
     <e r="RL"><p><l>kay<s n="vbex"/></l><r>hay<s n="vblex"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
     <e><p><l>kay<s n="vbcop"/></l><r>ser<s n="vbser"/></r></p></e>
-    <e><p><l><g>pachaña<b/></g>kay<s n="vbcop"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
+    <e><p><l><g>pachaña<b/></g>kay<s n="vbex"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
     <e><p><l>munay<s n="vbmod"/></l><r>querer<s n="vbmod"/></r></p></e>
     
 
@@ -424,7 +436,8 @@
     <e><p><l>maskhay<s n="vblex"/></l><r>buscar<s n="vblex"/></r></p></e>
     <e><p><l>millp'uy<s n="vblex"/></l><r>tomar<s n="vblex"/></r></p></e>
     <e><p><l>munay<s n="vblex"/></l><r>querer<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>munakuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>munakuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>    
+    <e r="LR"><p><l>munaykuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>
     <e><p><l><g>sinchita<b/></g>munakuy<s n="vblex"/></l><r>encantar<s n="vblex"/></r></p></e>
     <e><p><l>pakay<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
     <e><p><l>qhaway<s n="vblex"/></l><r>mirar<s n="vblex"/></r></p></e>
@@ -449,16 +462,20 @@
     <e><p><l>atiy<s n="vblex"/></l><r>poder<s n="vbmod"/></r></p></e>
     <e><p><l>chirimuy<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>    
     <e><p><l>imanay<s n="vblex"/></l><r><g>qué<b/></g>hacer<s n="vblex"/></r></p></e>
+    <e><p><l>hinay<s n="vblex"/></l><r>hacer<s n="vblex"/><g><b/>así</g></r></p></e>
     <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
     <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
     <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
     <e><p><l>niy<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
-    <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
+    <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>    
+    <e r="LR"><p><l>pukllakuy<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
     <e><p><l>puñuy<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>
     <e><p><l>rimay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
     <e><p><l>ruphamuy<s n="vblex"/></l><r>hacer<g><b/>calor</g><s n="vblex"/></r></p></e>
     <e><p><l>tiyay<s n="vblex"/></l><r>sentar<s n="vblex"/></r></p></e>
     <e><p><l>tukuy<s n="vblex"/></l><r>terminar<s n="vblex"/></r></p></e>
+    <e><p><l>ukyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>upyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
 
     
 

@@ -79716,8 +79716,10 @@ http://buscon.rae.es/draeI/
     <e lm="cerca"><i>cerca</i><par n="ahora__adv"/></e>
     <e lm="con atención"><i>con<b/>atención</i><par n="ahora__adv"/></e>
     <e lm="de atrás"><i>de<b/>atrás</i><par n="ahora__adv"/></e>
+    <e lm="de ninguna manera"><i>de<b/>ninguna<b/>manera</i><par n="ahora__adv"/></e>
     <e lm="en todas partes"><i>en<b/>todas<b/>partes</i><par n="ahora__adv"/></e>
     <e lm="entonces"><i>entonces</i><par n="ahora__adv"/></e>
+    <e lm="fuertemente"><i>fuertemente</i><par n="ahora__adv"/></e>
     <e lm="hoy"><i>hoy</i><par n="ahora__adv"/></e>
     <e lm="lentamente"><i>lentamente</i><par n="ahora__adv"/></e>
     <e lm="luego"><i>luego</i><par n="ahora__adv"/></e>
@@ -79781,12 +79783,15 @@ http://buscon.rae.es/draeI/
     <e lm="gato"><i>gat</i><par n="abogad/o__n"/></e>
     <e lm="gente"><i>gente</i><par n="abeja__n"/></e>
     <e lm="hermano"><i>herman</i><par n="abogad/o__n"/></e>
+    <e lm="hijo"><i>hij</i><par n="abogad/o__n"/></e>
+    <e lm="hombre"><i>hombre</i><par n="abismo__n"/></e>
     <e lm="jardín"><i>jard</i><par n="bot/ín__n"/></e>
     <e lm="juego"><i>juego</i><par n="abismo__n"/></e>
     <e lm="madre"><i>madre</i><par n="abeja__n"/></e>
     <e lm="mama"><i>mama</i><par n="abeja__n"/></e>
     <e lm="mano"><i>mano</i><par n="abeja__n"/></e>
     <e lm="mesa"><i>mesa</i><par n="abeja__n"/></e>
+    <e lm="mujer"><i>mujer</i><par n="accesibilidad__n"/></e>
     <e lm="niño"><i>niñ</i><par n="abogad/o__n"/></e>
     <e lm="ojo"><i>ojo</i><par n="abismo__n"/></e>
     <e lm="perro"><i>perr</i><par n="abogad/o__n"/></e>
@@ -79813,12 +79818,15 @@ http://buscon.rae.es/draeI/
     <!-- ADJETIVOS -->
     
     <e lm="agradable"><i>agradable</i><par n="abundante__adj"/></e>
+    <e lm="bueno"><i>buen</i><par n="abstract/o__adj"/></e>
     <e lm="cálido"><i>cálid</i><par n="absolut/o__adj"/></e>
     <e lm="feliz"><i>feli</i><par n="atro/z__adj"/></e>
     <e lm="frío"><i>frí</i><par n="abstract/o__adj"/></e>
     <e lm="gran"><i>gran</i><par n="gran__adj"/></e>
     <e lm="grande"><i>grande</i><par n="abundante__adj"/></e>
+    <e lm="hembra"><i>hembra</i><par n="multimedia__adj"/></e>
     <e lm="junto"><i>junt</i><par n="absolut/o__adj"/></e>
+    <e lm="macho" a="greenbreen"><i>macho</i><par n="abundante__adj"/></e>
     <e lm="negro"><i>negr</i><par n="abstract/o__adj"/></e>
     <e lm="pequeño"><i>pequeñ</i><par n="abstract/o__adj"/></e>
     <e lm="viejo"><i>viej</i><par n="abstract/o__adj"/></e>
@@ -79863,6 +79871,7 @@ http://buscon.rae.es/draeI/
     
     <!-- verbos marcados como transitivos (tv) (por los clíticos si no hay objeto lexical) -->
     
+    <e lm="beber"><i>beb</i><par n="vend/er__vblex"/></e>
     <e lm="buscar"><i>bus</i><par n="ata/car__vblex"/></e>
     <e lm="buscar"><p><l>bús</l><r>bus</r></p><par n="atá/car__vblex"/></e>
     <e lm="comer"><i>com</i><par n="vend/er__vblex"/></e>
@@ -79904,7 +79913,8 @@ http://buscon.rae.es/draeI/
     
     <e lm="dormir"><i>d</i><par n="d/ormir__vblex"/></e>
     <e lm="hablar"><i>habl</i><par n="abandon/ar__vblex"/></e>
-    <e lm="hablar"><p><l>hábl</l><r>habl</r></p><par n="abandón/ar__vblex"/></e>  
+    <e lm="hablar"><p><l>hábl</l><r>habl</r></p><par n="abandón/ar__vblex"/></e>
+    <e lm="hacer así"><i>h</i><par n="h/acer__vblex"/><p><l><b/>así</l><r><b/>así</r></p></e>
     <e lm="hacer calor" a="Pato"><i>h</i><par n="h/acer__vblex"/>
       <p><l><b/>calor</l><r><g><b/>calor</g></r></p></e>    
     <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/>
@@ -79913,7 +79923,7 @@ http://buscon.rae.es/draeI/
     <e lm="qué hacer" a="Pato"><i><g>qué<b/></g>h</i><par n="h/acer__vblex"/></e>
     <e lm="reír"><i>r</i><par n="sonr/eír__vblex"/></e>
     <e lm="sentar"><i>s</i><par n="rev/entar__vblex"/></e>
-    <e lm="ser hora de" a="eleka"><par n="/ser__vbser"/>
+    <e lm="ser hora de" a="eleka"><i/><par n="/ser__vbser"/>
       <p><l><b/>hora<b/>de</l><r><g><b/>hora<b/>de</g></r></p></e>
     <e lm="terminar"><i>termin</i><par n="abandon/ar__vblex"/></e>
     <e lm="terminar"><p><l>termín</l><r>termin</r></p><par n="abandón/ar__vblex"/></e>
