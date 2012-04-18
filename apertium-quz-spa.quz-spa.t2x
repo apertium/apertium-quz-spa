@@ -240,7 +240,6 @@
 </action>
 </rule>
 
-<!--    
 <rule comment="N-caso > PR N">
 <pattern>
 	<pattern-item n="SN"/>
@@ -285,7 +284,7 @@
 	</chunk>
 </out>
 </action>
-</rule> -->
+</rule>
 
 </section-rules>
 </interchunk>
