@@ -6,41 +6,172 @@
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    <def-cat n="SV">
+      <cat-item tags="SV"/>
+      <cat-item tags="SV.*"/>
+    </def-cat>
+    <def-cat n="SP">
+      <cat-item tags="SP"/>
+      <cat-item tags="SP.*"/>
+    </def-cat>
     <def-cat n="SENT">
       <cat-item tags="SENT"/>
     </def-cat>
   </section-def-cats>
-  <section-def-attrs>
+  
+<section-def-attrs>
+  
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
       <attr-item tags="sp"/>
       <attr-item tags="ND"/>
     </def-attr>
+    
+    <def-attr n="gen">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="GD"/>
+    </def-attr>
+    
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
       <attr-item tags="dat"/>
       <attr-item tags="gen"/>
-      <attr-item tags="ins"/>
       <attr-item tags="loc"/>
+      <attr-item tags="ins"/>
       <attr-item tags="abl"/>
+      <attr-item tags="ben"/>
+      <attr-item tags="ter"/>
+      <attr-item tags="per"/>
+      <attr-item tags="csal"/>
+      <attr-item tags="dis"/>
+      <attr-item tags="incl"/>
     </def-attr>
-  </section-def-attrs>
+    
+    <def-attr n="pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="p1in"/>
+      <attr-item tags="p1ex"/>
+    </def-attr>
+    
+    <def-attr n="pers_obj">
+      <attr-item tags="po1sg"/>
+      <attr-item tags="po1in"/>
+      <attr-item tags="po1ex"/>
+      <attr-item tags="po1sp"/>
+      <attr-item tags="po2sg"/>
+      <attr-item tags="po2pl"/>
+      <attr-item tags="po2sp"/>
+      <attr-item tags="po3sp"/>
+    </def-attr>
+    
+    <def-attr n="pers_pos">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px1in"/>
+      <attr-item tags="px1ex"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px3pl"/>
+    </def-attr>
+    
+</section-def-attrs>
+  
   <section-def-vars>
     <def-var n="number"/>
     <def-var n="POST"/>
+    <def-var n="prepos"/>
   </section-def-vars>
+  
+  
   <section-def-macros>
+  
     <def-macro n="test1" npar="1">
       <let>
         <var n="POST"/>
         <lit v=""/>
       </let>
     </def-macro>
+  
+  
+<def-macro n="caso-pr" npar="1">
+<let><var n="prepos"/><lit v="^"/></let>
+<choose><when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="abl"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="desde"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="loc"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="en"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="ter"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="hasta"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="dat"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="hacia"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="per"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="por"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="ben"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="para"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="ins"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="con"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="incl"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="con"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="gen"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="de"/></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="acc"/>
+	</equal></test>
+	<let><var n="prepos"/><lit v="a"/></let>
+</when> </choose>
+<append n="prepos"><lit-tag v="pr"/><lit v="$"/></append>
+</def-macro>
+  
+  
   </section-def-macros>
+  
+  
   <section-rules>
-    <rule comment="REGLA: SN">
+  
+<!--    <rule comment="REGLA: SN">
       <pattern>
         <pattern-item n="SN"/>
       </pattern>
@@ -53,7 +184,109 @@
           </chunk>
         </out>
       </action>
-    </rule>
-  </section-rules>
+    </rule> -->
+    
+<rule comment="SN SP > SP SN">
+<pattern>
+	<pattern-item n="SN"/>
+	<pattern-item n="SP"/>
+</pattern>
+<action>
+<choose>
+<when><test><and>
+	<not><equal>
+		<clip pos="2" part="a_cas"/><lit-tag v="nom"/>
+	</equal></not>
+	<not><equal>
+		<clip pos="2" part="a_cas"/><lit-tag v="loc"/>
+	</equal></not>
+</and></test>
+<call-macro n="caso-pr"><with-param pos="2"/></call-macro>
+<out>
+	<chunk>
+		<lit v="prep"/>
+		<lit-tag v="SP"/>
+		<lit-tag v="pr"/>
+		<lit v="{^"/>
+		<var n="prepos"/>
+		<lit v="}"/>
+	</chunk><b pos="1"/>
+</out>
+</when></choose>
+<out>
+	<chunk>
+		<clip pos="2" part="lem"/>
+		<clip pos="2" part="tags"/>
+		<clip pos="2" part="chcontent"/>
+	</chunk><b pos="1"/>
+	<chunk>
+		<lit v="art"/>
+		<lit-tag v="DET"/>
+		<clip pos="1" part="gen"/>
+		<clip pos="1" part="a_nbr"/>
+		<lit v="{^el"/>
+		<lit-tag v="det"/>
+		<lit-tag v="def"/>
+		<lit-tag v="2"/>
+		<lit-tag v="3"/>
+		<lit v="$}"/>
+	</chunk><b pos="1"/>
+	<chunk>
+		<clip pos="1" part="lem"/>
+		<clip pos="1" part="tags"/>
+		<clip pos="1" part="chcontent"/>
+	</chunk>
+</out>
+</action>
+</rule>
+
+<!--    
+<rule comment="N-caso > PR N">
+<pattern>
+	<pattern-item n="SN"/>
+</pattern>
+<action>
+<choose>
+<when><test>
+	<not><equal>
+		<clip pos="1" part="a_cas"/><lit-tag v="nom"/>
+	</equal></not>
+</test>
+<call-macro n="caso-pr"><with-param pos="1"/></call-macro>
+<out>
+	<chunk>
+		<lit v="prep"/>
+		<lit-tag v="SP"/>
+		<lit-tag v="pr"/>
+		<lit v="{^"/>
+		<var n="prepos"/>
+		<lit v="}"/>
+	</chunk><b pos="1"/>
+</out>
+</when></choose>
+
+<out>
+	<chunk>
+		<lit v="art"/>
+		<lit-tag v="DET"/>
+		<clip pos="1" part="gen"/>
+		<clip pos="1" part="a_nbr"/>
+		<lit v="{^el"/>
+		<lit-tag v="det"/>
+		<lit-tag v="def"/>
+		<lit-tag v="2"/>
+		<lit-tag v="3"/>
+		<lit v="$}"/>
+	</chunk> <b pos="1"/>
+	<chunk>
+		<clip pos="1" part="lem"/>
+		<clip pos="1" part="tags"/>
+		<clip pos="1" part="chcontent"/>
+	</chunk>
+</out>
+</action>
+</rule> -->
+
+</section-rules>
 </interchunk>
 

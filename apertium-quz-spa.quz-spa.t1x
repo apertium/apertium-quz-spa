@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- -*- nxml -*- -->
 <transfer default="chunk">
-  <section-def-cats>
+<section-def-cats>
   
+    <def-cat n="all">
+      <cat-item tags="*"/>
+    </def-cat>
+      
+    <def-cat n="af">
+      <cat-item tags="af"/>
+    </def-cat>
+    
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
     </def-cat>
     
+    <def-cat n="np-ant">
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
+    
+    <def-cat n="np-ant-ins">
+      <cat-item tags="np.ant.*.ins"/>
+      <cat-item tags="np.ant.*.ins.*"/>
+    </def-cat>
+    
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
+      <cat-item tags="adj"/>
     </def-cat>
     
     <def-cat n="verb">
@@ -21,6 +39,10 @@
       <cat-item tags="vbaux.*"/>
     </def-cat>
     
+    <def-cat n="post">
+      <cat-item tags="post.*"/>
+      <cat-item tags="post"/>
+    </def-cat>    
     
     
     <def-cat n="sent">
@@ -28,11 +50,12 @@
     </def-cat>
     
   </section-def-cats>  
-  <section-def-attrs>
+<section-def-attrs>
   
     <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
+      <attr-item tags="np.ant"/>
     </def-attr>
     
     <def-attr n="a_adj">
@@ -78,6 +101,7 @@
       <attr-item tags="per"/>
       <attr-item tags="csal"/>
       <attr-item tags="dis"/>
+      <attr-item tags="incl"/>
     </def-attr>
     
     <def-attr n="temps">
@@ -127,24 +151,109 @@
       <attr-item tags="px3pl"/>
     </def-attr>
     
+    <def-attr n="a_post">
+      <attr-item tags="post"/>
+    </def-attr>
     
-  </section-def-attrs>
+    <def-attr n="a_pr">
+      <attr-item tags="pr"/>
+    </def-attr>
+    
+</section-def-attrs>
   
-  <section-def-vars>
-    <def-var n="number"/>
+<section-def-vars>
+    <def-var n="numero"/>
+    <def-var n="genero"/>
+    <def-var n="caso"/>
     <def-var n="current_verb"/>
-  </section-def-vars>
+</section-def-vars>
   
   
-  <section-def-macros>
+<section-def-macros>
+
     <def-macro n="test" npar="1">
           <let>
-            <var n="number"/>
+            <var n="numero"/>
             <lit v=""/>
           </let>
     </def-macro>
-  </section-def-macros>
-  <section-rules>
+    
+<def-macro n="quita-nom" npar="1">
+<!-- quita la etiqueta <nom> y deja las de otros casos -->
+<choose>
+	<when>
+		<test><equal>
+			<clip pos="1" side="sl" part="a_cas"/>
+			<lit-tag v="nom"/>
+		</equal></test>
+		<let>
+			<var n="caso"/>
+			<lit v=""/>
+		</let>
+	</when>
+	<otherwise>
+		<let>
+			<var n="caso"/>
+			<clip pos="1" side="sl" part="a_cas"/>
+		</let>
+	</otherwise>
+</choose>
+</def-macro>
+
+<def-macro n="pon-sg" npar="1">
+<!-- pone la etiqueta de <sg> si no hay etiqueta de numero -->
+<choose>
+	<when>
+		<test><not><equal>
+			<clip pos="1" side="tl" part="nbr"/>
+			<lit-tag v="pl"/>
+		</equal></not></test>
+		<let>
+			<var n="numero"/>
+			<lit-tag v="sg"/>
+		</let>
+	</when>
+	<otherwise>
+		<let>
+			<var n="numero"/>
+			<clip pos="1" side="tl" part="nbr"/>
+		</let>
+	</otherwise>
+</choose>
+</def-macro>
+
+<def-macro n="pon-m" npar="1">
+<!-- pone la etiqueta de <m> si no hay etiqueta de genero -->
+<choose>
+	<when>
+		<test><or>
+			<equal>
+				<clip pos="1" side="tl" part="gen"/>
+				<lit-tag v="mf"/>
+			</equal>
+			<equal>
+				<clip pos="1" side="tl" part="gen"/>
+				<lit-tag v="f"/>
+			</equal>
+		</or></test>
+		<let>
+			<var n="genero"/>
+			<clip pos="1" side="tl" part="gen"/>
+		</let>
+	</when>
+	<otherwise>
+		<let>
+			<var n="genero"/>
+			<lit-tag v="m"/>
+		</let>
+	</otherwise>
+</choose>
+</def-macro>
+
+    
+</section-def-macros>
+  
+<section-rules>
 
     <rule comment="REGLA: SENT">
       <pattern>
@@ -163,8 +272,200 @@
         </out>
       </action>
     </rule>
-    
-<rule comment="verbos_general">
+
+
+
+<rule comment="NOMBRE">
+<pattern>
+	<pattern-item n="nom"/>
+</pattern>
+<action>
+<call-macro n="pon-sg"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<out>
+<chunk name="nombre" case="caseFirstWord">
+		<tags>
+			<tag><lit-tag v="SN"/></tag>
+			<tag><clip pos="1" side="tl" part="gen"/></tag>
+			<tag><var n="numero"/></tag>
+			<tag><var n="caso"/></tag>
+		</tags>
+	<lu>
+		<clip pos="1" side="tl" part="lemh"/>
+		<clip pos="1" side="tl" part="a_nom"/>
+		<clip pos="1" side="tl" part="gen" link-to="2"/>
+		<lit-tag v="3"/>
+		<var n="caso"/>
+		<clip pos="1" side="tl" part="lemq"/>
+	</lu>
+</chunk>
+</out>
+</action>
+</rule>
+
+
+<rule comment="NOMBRE PROPIO ANT">
+<pattern>
+	<pattern-item n="np-ant"/>
+</pattern>
+<action>
+<call-macro n="pon-sg"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<out>
+<chunk name="NPant" case="caseFirstWord">
+		<tags>
+			<tag><lit-tag v="SN"/></tag>
+			<tag><clip pos="1" side="tl" part="gen"/></tag>
+			<tag><var n="numero"/></tag>
+			<tag><var n="caso"/></tag>
+		</tags>
+	<lu>
+		<clip pos="1" side="tl" part="lemh"/>
+		<clip pos="1" side="tl" part="a_nom"/>
+		<clip pos="1" side="tl" part="gen" link-to="2"/>
+		<lit-tag v="3"/>
+		<var n="caso"/>
+		<clip pos="1" side="tl" part="lemq"/>
+	</lu>
+</chunk>
+</out>
+</action>
+</rule>
+
+<rule comment="NPant-wan+af+NPant-wan">
+<pattern>
+	<pattern-item n="np-ant-ins"/>
+	<pattern-item n="af"/>
+	<pattern-item n="np-ant-ins"/>
+</pattern>
+<action>
+<call-macro n="pon-sg"><with-param pos="1"/></call-macro>
+<call-macro n="pon-sg"><with-param pos="3"/></call-macro><!-- cambiar pa palabra -->
+<choose>
+	<when>
+		<test><and>
+			<equal><clip pos="1" side="sl" part="a_cas"/>
+				<lit-tag v="ins"/></equal> <!-- no funciona: poner algo -->
+			<equal>
+			<clip pos="3" side="sl" part="a_cas"/>
+			<lit-tag v="ins"/></equal>
+		</and></test>
+		<out>
+		<chunk name="NPant_NPant" case="caseFirstWord">
+				<tags><tag><lit-tag v="SN"/></tag></tags>
+			<lu>
+				<clip pos="1" side="tl" part="lemh"/>
+				<clip pos="1" side="tl" part="a_nom"/>
+				<clip pos="1" side="tl" part="gen"/>
+				<var n="numero"/>
+				<clip pos="1" side="tl" part="lemq"/>
+			</lu>
+			<b pos="1"/>
+			<lu>
+				<lit v="y"/>
+				<lit-tag v="cnjcoo"/>
+			</lu>
+				<b pos="1"/>
+			<lu>
+				<b pos="1"/>
+				<clip pos="3" side="tl" part="lemh"/>
+				<clip pos="3" side="tl" part="a_nom"/>
+				<clip pos="3" side="tl" part="gen"/>
+				<var n="numero"/>
+				<clip pos="3" side="tl" part="lemq"/>
+			</lu>
+		</chunk>
+		</out>
+	</when>
+	<otherwise>
+	<out>
+		<chunk name="NPant_NPant" case="caseFirstWord">
+				<tags><tag><lit-tag v="SN"/></tag></tags>
+			<lu>
+				<clip pos="1" side="tl" part="lemh"/>
+				<clip pos="1" side="tl" part="a_nom"/>
+				<clip pos="1" side="tl" part="gen"/>
+				<var n="numero"/>
+				<clip pos="1" side="tl" part="a_cas"/>
+				<clip pos="1" side="tl" part="lemq"/>
+			</lu>
+			<lu>
+				<b pos="1"/>
+				<clip pos="3" side="tl" part="lemh"/>
+				<clip pos="3" side="tl" part="a_nom"/>
+				<clip pos="3" side="tl" part="gen"/>
+				<var n="numero"/>
+				<clip pos="3" side="tl" part="a_cas"/>
+				<clip pos="3" side="tl" part="lemq"/>
+			</lu>
+		</chunk>
+		</out>
+		</otherwise>
+</choose>
+</action>
+</rule>
+
+<rule comment="ADJ N">
+<pattern>
+	<pattern-item n="adj"/>
+	<pattern-item n="nom"/>
+</pattern>
+<action>
+<call-macro n="pon-sg"><with-param pos="2"/></call-macro>
+<call-macro n="pon-m"><with-param pos="2"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="2"/></call-macro>
+<out>
+<chunk name="adj-n" case="caseFirstWord">
+		<tags>
+			<tag><lit-tag v="SN"/></tag>
+			<tag><var n="genero"/></tag>
+			<tag><var n="numero"/></tag>
+			<tag><var n="caso"/></tag>
+		</tags>
+	<lu><get-case-from pos ="1">
+		<clip pos="2" side="tl" part="lemh"/>
+		</get-case-from>
+		<clip pos="2" side="tl" part="a_nom"/>
+		<var n="genero"/>
+		<var n="numero"/>
+		<var n="caso"/>
+	</lu>
+	<b pos="1"/>
+	<lu><get-case-from pos ="2">
+		<clip pos="1" side="tl" part="lemh"/>
+		</get-case-from>
+		<clip pos="1" side="tl" part="a_adj"/>
+		<var n="genero"/>
+		<var n="numero"/>
+	</lu>
+</chunk>
+</out>
+</action>
+</rule>
+
+<rule comment="POSTPOSICION">
+<pattern>
+	<pattern-item n="post"/>
+</pattern>
+<action>
+<out>
+<chunk name="postp" case="caseFirstWord">
+		<tags>
+			<tag><lit-tag v="SP"/></tag>
+			<tag><clip pos="1" side="sl" part="a_cas"/></tag>
+			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
+		</tags>
+	<lu>
+		<clip pos="1" side="tl" part="lem"/>
+		<clip pos="1" side="tl" part="a_pr"/>
+	</lu>
+</chunk>
+</out>
+</action>
+</rule>  
+
+  
+<rule comment="VERBO">
 <pattern>
   <pattern-item n="verb"/>
 </pattern>
@@ -210,8 +511,8 @@
 </when>
 </choose>
 <out>
-<chunk name="verbo">
-		<tags><tag><lit-tag v="V"/></tag></tags>
+<chunk name="verbo" case="caseFirstWord">
+		<tags><tag><lit-tag v="SV"/></tag></tags>
   <lu>
     <clip pos="1" side="tl" part="lemh"/>
     <clip pos="1" side="tl" part="a_verb"/>
@@ -225,6 +526,7 @@
 </out>
 </action>
 </rule>
- 
+   
+
   </section-rules>
 </transfer>
