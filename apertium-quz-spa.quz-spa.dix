@@ -237,8 +237,8 @@
     <e><p><l>piqpa<s n="prn"/><s n="itg"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
     <e><p><l>imamanta<s n="adv"/><s n="itg"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
-<!--    <e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>-->
-    <e><p><l>may<s n="adv"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+    <e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+    <e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
     <e r="LR"><p><l>maypichus<s n="adv"/><s n="itg"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maytachus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maymanchus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
@@ -467,6 +467,7 @@
     <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
     <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
     <e><p><l>niy<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
+    <e><p><l>pakakuy<s n="vblex"/></l><r>esconderse<s n="vblex"/><s n="pron"/></r></p></e>
     <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>    
     <e r="LR"><p><l>pukllakuy<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
     <e><p><l>puñuy<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>

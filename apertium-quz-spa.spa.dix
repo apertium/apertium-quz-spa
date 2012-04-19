@@ -2921,7 +2921,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
           <r>el<s n="det"/><s n="def"/><s n="f"/><s n="pl"/></r>
         </p>
       </e>
-      <e r="LR">
+      <e>
         <p>
           <l>la</l>
           <r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r>
@@ -79521,7 +79521,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <e lm="nuestro"><i>nuestr</i><par n="mí/o__adj"/></e>
     <e lm="vuestro"><i>vuestr</i><par n="mí/o__adj"/></e>    
         
-    <e lm="el"><par n="/el__det"/></e>
+    <e lm="el"><i/><par n="/el__det"/></e>
     <e lm="uno"><i>un</i><par n="un/o__det"/></e>
     <e lm="este"><i>est</i><par n="es/e__det"/></e>
     <e lm="ese"><i>es</i><par n="es/e__det"/></e>
@@ -79912,6 +79912,8 @@ http://buscon.rae.es/draeI/
     <!-- otros verbos (intransitivos, etc.) (para que no salgan con los clíticos de 3a objeto) -->
     
     <e lm="dormir"><i>d</i><par n="d/ormir__vblex"/></e>
+    <e lm="esconderse"><i>escond</i><par n="vend/erse__vblex"/></e>
+    <e lm="esconderse"><p><l>escónd</l><r>escond</r></p><par n="vénd/erse__vblex"/></e>
     <e lm="hablar"><i>habl</i><par n="abandon/ar__vblex"/></e>
     <e lm="hablar"><p><l>hábl</l><r>habl</r></p><par n="abandón/ar__vblex"/></e>
     <e lm="hacer así"><i>h</i><par n="h/acer__vblex"/><p><l><b/>así</l><r><b/>así</r></p></e>

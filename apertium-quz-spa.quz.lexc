@@ -441,7 +441,7 @@ V-INF ;
 !! -na-su (-su-na), -su-sqa, -sqa-su, -su-q
 
 LEXICON V-LIM
-%<lim%>:lla V-TMSub ;
+%<lim%>:%>lla V-TMSub ;
 V-TMSub ;
 
 
@@ -449,7 +449,7 @@ LEXICON V-Progr
 @P.wa.pres@:%>wa@P.wa.pres@ V-LIM ;
 %<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
 %<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;
-%<cont%>:sha V-LIM ;
+%<cont%>:%>sha V-LIM ;
 V-LIM ;
 
 LEXICON V-DER
@@ -878,8 +878,9 @@ chirimuy:chirimu V-IV ; ! "hacer frío"
 hinay:hina V-IV ;     ! "hacer así"
 kashay:kasha V-IV ; ! "estar"
 munapayay:munapaya V-IV ; ! "tratar de"
+pakakuy:paka V-IV   ! "esconderse"
 pukllay:puklla V-IV ; ! "jugar"
-pukllakuy:puklla V-IV ; ! "jugar (con gusto)"
+pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"
 rimay:rima V-IV ; ! "hablar"
 ruphamuy:ruphamu V-IV ; ! "hacer calor"     - poner %{bU%}
