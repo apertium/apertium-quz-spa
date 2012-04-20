@@ -28,6 +28,10 @@
       <program name="lt-proc $1">
         <file name="quz-spa.autogen.bin"/>
       </program>
+      <program name="lt-proc -p">
+        <file name="quz-spa.autopgen.bin"/>
+      </program>
+
     </pipeline>
   </mode>
 

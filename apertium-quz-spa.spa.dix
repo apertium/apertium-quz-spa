@@ -91,6 +91,8 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <sdef n="cm"           c="Comma"/>
     <sdef n="lpar"         c="Left parenthesis"/>
     <sdef n="rpar"         c="Right parenthesis"/>
+    <sdef n="lquot"        c="Left quotenthesis"/>
+    <sdef n="rquot"        c="Right quotenthesis"/>
     <sdef n="lquest"       c="Left question mark"/>
     <sdef n="web"          c="URL address"/>
     <sdef n="apos"         c="Apostrophe"/>
@@ -173,7 +175,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     </pardef>
     <pardef n="separa">
       <e>
-        <re>[.\?;:!]+</re>
+        <re>[.\?;:!"]+</re>
         <p>
           <l/>
           <r><s n="sent"/></r>

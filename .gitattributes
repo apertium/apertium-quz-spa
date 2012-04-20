@@ -1,5 +1,6 @@
 * text=auto !eol
 /Makefile -text
+/apertium-quz-spa.post-spa.dix -text
 /apertium-quz-spa.quz-spa.dix -text
 /apertium-quz-spa.quz-spa.rlx -text
 /apertium-quz-spa.quz-spa.t1x -text

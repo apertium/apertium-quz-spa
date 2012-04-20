@@ -92,6 +92,7 @@
 
     <sdef n="af"       c=""/>
     <sdef n="topi"     c=""/>
+    <sdef n="qst"     c=""/>
     
 
     <sdef n="apos" />
@@ -128,6 +129,7 @@
     
     <e><p><l>mi<s n="af"/></l>    <r></r></p></e>
     <e><p><l>qa<s n="topi"/></l>    <r></r></p></e>
+    <e><p><l>chu<s n="qst"/></l>    <r></r></p></e>
     
     <!-- SECCIÓN: Conjunciones, relativos -->
     <e><p><l>chay<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e>
