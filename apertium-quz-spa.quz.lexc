@@ -436,9 +436,11 @@ LEXICON V-TMSub
 V-IMP ;
 ! HAB
 ! COND
+%<ger%>:%>spa CLIT-puni ;  ! provisional, hay que poner las personas
 ! -su-spa, -spa-su, -su-qti poner @P.su.pres@
 V-INF ;
 !! -na-su (-su-na), -su-sqa, -sqa-su, -su-q
+! poner las formas que toman -lla después en otro lexicon
 
 LEXICON V-LIM
 %<lim%>:%>lla V-TMSub ;
@@ -878,7 +880,7 @@ chirimuy:chirimu V-IV ; ! "hacer frío"
 hinay:hina V-IV ;     ! "hacer así"
 kashay:kasha V-IV ; ! "estar"
 munapayay:munapaya V-IV ; ! "tratar de"
-pakakuy:paka V-IV   ! "esconderse"
+pakakuy:pakaku V-IV ;  ! "esconderse"
 pukllay:puklla V-IV ; ! "jugar"
 pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"

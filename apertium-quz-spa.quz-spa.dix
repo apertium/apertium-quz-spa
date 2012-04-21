@@ -93,7 +93,6 @@
     <sdef n="af"       c=""/>
     <sdef n="topi"     c=""/>
     <sdef n="qst"     c=""/>
-    
 
     <sdef n="apos" />
     <sdef n="guio" />
@@ -155,7 +154,7 @@
     <e><p><l>ancha<s n="preadj"/></l><r>muy<s n="preadv"/></r></p></e>
     <e><p><l>as<s n="preadj"/></l><r>algo<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>aswan<s n="preadj"/></l><r>más<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>sinchi<s n="preadj"/></l><r>fuertemente<s n="preadv"/></r></p></e>
+    <e><p><l>sinchi<s n="preadj"/></l><r>fuertemente<s n="adv"/></r></p></e>
     
     
     <!-- SECCIÓN: Numerales -->
@@ -196,7 +195,7 @@
       
     <e><p><l>pay<s n="prn"/><s n="p3"/><s n="sg"/></l>
       <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
-    <e><p><l>paykuna<s n="prn"/><s n="p3"/><s n="pl"/></l>
+    <e r="RL"><p><l>paykuna<s n="prn"/><s n="p3"/><s n="pl"/></l>
       <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
     
     <e r="RL"><p><l>qan<s n="prn"/><s n="p2"/><s n="sg"/></l>

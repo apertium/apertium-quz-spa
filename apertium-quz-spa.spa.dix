@@ -79924,7 +79924,9 @@ http://buscon.rae.es/draeI/
     <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/>
       <p><l><b/>frío</l><r><g><b/>frío</g></r></p></e>
     <e lm="jugar"><i>ju</i><par n="ju/gar__vblex"/></e>
-    <e lm="qué hacer" a="Pato"><i><g>qué<b/></g>h</i><par n="h/acer__vblex"/></e>
+    <!-- <e lm="qué hacer" a="Pato"><i><g>qué<b/></g>h</i><par n="h/acer__vblex"/></e> -->
+    <e lm="qué hacer" a="Pato"><p><l><g>qué<b/></g></l><r><g>qué<b/></g></r></p>
+      <i>h</i><par n="h/acer__vblex"/></e>
     <e lm="reír"><i>r</i><par n="sonr/eír__vblex"/></e>
     <e lm="sentar"><i>s</i><par n="rev/entar__vblex"/></e>
     <e lm="ser hora de" a="eleka"><i/><par n="/ser__vbser"/>

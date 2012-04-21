@@ -62,6 +62,11 @@
       <cat-item tags="adv.*"/>
     </def-cat>
     
+    <def-cat n="preadj">
+      <cat-item tags="preadj"/>
+      <cat-item tags="preadj.*"/>
+    </def-cat>
+    
     <def-cat n="sent">
       <cat-item tags="sent"/> <!-- poner ! y ?, si se pone aparte -->
     </def-cat>
@@ -228,6 +233,13 @@
       <attr-item tags="adv.temp"/>
     </def-attr>
     
+    <def-attr n="a_preadv">
+      <attr-item tags="preadv"/>
+      <attr-item tags="adv"/> <!--
+      <attr-item tags="det.qnt.mf.sp"/> - se pondrán etiquetas de caso y género por variables --> 
+      <attr-item tags="det.qnt"/>
+    </def-attr>
+    
 </section-def-attrs>
   
 <section-def-vars>
@@ -280,8 +292,31 @@
 </choose>
 </def-macro>
 
+<def-macro n="quita-acc" npar="1">
+<!-- quita la etiqueta <acc> y deja las de otros casos -->
+<choose>
+	<when>
+		<test><equal>
+			<clip pos="1" side="sl" part="cas"/>
+			<lit-tag v="acc"/>
+		</equal></test>
+		<let>
+			<var n="caso"/>
+			<lit v=""/>
+		</let>
+	</when>
+	<otherwise>
+		<let>
+			<var n="caso"/>
+			<clip pos="1" side="sl" part="cas"/>
+		</let>
+	</otherwise>
+</choose>
+</def-macro>
+
 <def-macro n="pon-sg" npar="1">
 <!-- pone la etiqueta de <sg> si no hay etiqueta de numero -->
+<let><var n="numero"/><lit v=""/></let>
 <choose>
 	<when>
 		<test><not><or>
@@ -314,6 +349,7 @@
 
 <def-macro n="pon-m" npar="1">
 <!-- pone la etiqueta de <m> si no hay etiqueta de genero -->
+<let><var n="genero"/><lit v=""/></let>
 <choose>
 	<when>
 		<test><or>
@@ -991,7 +1027,66 @@
 </chunk>
 </out>
 </action>
-</rule>  
+</rule>
+
+<rule comment="PREADJ - PREADV, DET.QNT">
+<pattern>
+	<pattern-item n="preadj"/>
+</pattern>
+<action>
+<let><var n="caso"/><lit v=""/></let>
+<call-macro n="firstWord">
+  <with-param pos="1"/></call-macro>
+<call-macro n="quita-nom">
+  <with-param pos="1"/></call-macro>
+<call-macro n="quita-acc">
+  <with-param pos="1"/></call-macro>
+<choose>
+  <when>
+    <test><equal>
+      <clip pos="1" side="tl" part="a_preadv"/>
+      <lit-tag v="preadv"/>
+    </equal></test>
+    <out>
+    <chunk name="preadj" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="PREADJ"/></tag>
+        <tag><clip pos="1" side="tl" part="a_preadv"/></tag>
+        <tag><var n="caso"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_preadv"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
+  <otherwise>
+    <call-macro n="pon-m">
+      <with-param pos="1"/></call-macro>
+    <call-macro n="pon-sg">
+      <with-param pos="1"/></call-macro>
+    <out>
+    <chunk name="det" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="DET"/></tag>
+        <tag><clip pos="1" side="tl" part="a_preadv"/></tag>
+        <tag><var n="genero"/></tag>
+        <tag><var n="numero"/></tag>
+        <tag><var n="caso"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_preadv"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </otherwise>
+</choose>
+</action>
+</rule>
  
 <rule comment="VERBO">
 <pattern>
