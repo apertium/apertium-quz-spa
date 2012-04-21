@@ -96,6 +96,7 @@
     
     <def-attr n="a_verb">
       <attr-item tags="vblex"/>
+      <attr-item tags="vblex.pron"/>
       <attr-item tags="vbex"/>
       <attr-item tags="vbcop"/>
       <attr-item tags="vblex"/>
@@ -169,6 +170,7 @@
       <attr-item tags="imp"/>
       <attr-item tags="cni"/>
       <attr-item tags="ger"/>
+      <attr-item tags="inf"/>
     </def-attr>
     
     <def-attr n="aspect">
@@ -391,6 +393,78 @@
 </choose>
 </def-macro>
 
+<def-macro n="pon-GD-ND" npar="1">
+<!-- pone GD y/o ND a la palabra si no tiene nada -->
+<choose>
+	<when>
+	  <test><equal> <!-- si no tiene número -->
+	      <clip pos="1" side="tl" part="a_num"/>
+	      <lit v=""/>
+    </equal></test>
+	  <choose>
+	    <when>
+	      <test><equal> <!-- si tampoco tiene género -->
+          <clip pos="1" side="tl" part="gen"/>
+          <lit v=""/>
+        </equal></test>
+	      <let>
+          <var n="palabra"/>
+          <clip pos="1" side="tl" part="lemh"/>
+	      </let>
+	      <append n="palabra">
+          <clip pos="1" side="tl" part="tags"/>
+          <lit-tag v="GD"/>
+          <lit-tag v="ND"/>
+          <clip pos="1" side="tl" part="lemq"/>
+	      </append>
+	      <let>
+          <clip pos="1" side="tl" part="whole"/>
+          <var n="palabra"/>
+	      </let>
+	    </when>
+	    <when>
+	      <test><equal> <!-- si sólo le falta número -->
+          <clip pos="1" side="tl" part="nbr"/>
+          <lit v=""/>
+        </equal></test>
+	      <let>
+          <var n="palabra"/>
+          <clip pos="1" side="tl" part="lemh"/>
+	      </let>
+	      <append n="palabra">
+          <clip pos="1" side="tl" part="tags"/>
+          <lit-tag v="ND"/>
+          <clip pos="1" side="tl" part="lemq"/>
+	      </append>
+	      <let>
+          <clip pos="1" side="tl" part="whole"/>
+          <var n="palabra"/>
+	      </let>
+	    </when>
+	  </choose>
+	</when>
+  <when>
+    <test><equal> <!-- si sólo le falta género -->
+      <clip pos="1" side="tl" part="gen"/>
+      <lit v=""/>
+    </equal></test>
+    <let>
+      <var n="palabra"/>
+      <clip pos="1" side="tl" part="lemh"/>
+    </let>
+    <append n="palabra">
+      <clip pos="1" side="tl" part="tags"/>
+      <lit-tag v="GD"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </append>
+    <let>
+      <clip pos="1" side="tl" part="whole"/>
+      <var n="palabra"/>
+    </let>
+  </when>
+</choose>
+</def-macro>
+
 <def-macro n="f_concord2" npar="2">
 <!-- 1 = main parameter (typically noun); 2 = secondary parameter (typically adj or det) -->
 <let>
@@ -401,6 +475,76 @@
 	<var n="nbr_chunk"/>
 	<lit v=""/>
 </let>
+
+<!-- poner GD y/o ND a la palabra pos=1 -->
+<choose>
+	<when>
+	  <test><equal> <!-- si no tiene número -->
+	      <clip pos="1" side="tl" part="a_num"/>
+	      <lit v=""/>
+    </equal></test>
+	  <choose>
+	    <when>
+	      <test><equal> <!-- si tampoco tiene género -->
+          <clip pos="1" side="tl" part="gen"/>
+          <lit v=""/>
+        </equal></test>
+	      <let>
+          <var n="palabra"/>
+          <clip pos="1" side="tl" part="lemh"/>
+	      </let>
+	      <append n="palabra">
+          <clip pos="1" side="tl" part="tags"/>
+          <lit-tag v="GD"/>
+          <lit-tag v="ND"/>
+          <clip pos="1" side="tl" part="lemq"/>
+	      </append>
+	      <let>
+          <clip pos="1" side="tl" part="whole"/>
+          <var n="palabra"/>
+	      </let>
+	    </when>
+	    <when>
+	      <test><equal> <!-- si sólo le falta número -->
+          <clip pos="1" side="tl" part="nbr"/>
+          <lit v=""/>
+        </equal></test>
+	      <let>
+          <var n="palabra"/>
+          <clip pos="1" side="tl" part="lemh"/>
+	      </let>
+	      <append n="palabra">
+          <clip pos="1" side="tl" part="tags"/>
+          <lit-tag v="ND"/>
+          <clip pos="1" side="tl" part="lemq"/>
+	      </append>
+	      <let>
+          <clip pos="1" side="tl" part="whole"/>
+          <var n="palabra"/>
+	      </let>
+	    </when>
+	  </choose>
+	</when>
+  <when>
+    <test><equal> <!-- si sólo le falta género -->
+      <clip pos="1" side="tl" part="gen"/>
+      <lit v=""/>
+    </equal></test>
+    <let>
+      <var n="palabra"/>
+      <clip pos="1" side="tl" part="lemh"/>
+    </let>
+    <append n="palabra">
+      <clip pos="1" side="tl" part="tags"/>
+      <lit-tag v="GD"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </append>
+    <let>
+      <clip pos="1" side="tl" part="whole"/>
+      <var n="palabra"/>
+    </let>
+  </when>
+</choose>
 
 <!-- poner GD y/o ND a la palabra pos=2 (excepte números?) -->
 <choose>

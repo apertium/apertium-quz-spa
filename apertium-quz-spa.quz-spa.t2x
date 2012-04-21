@@ -269,7 +269,7 @@
 <action>
 <let><var n="prepos"/><lit v=""/></let>
 <call-macro n="quita-GD-ND"><with-param pos="1"/></call-macro>
-<out>
+<out><!-- caso -->
   <chunk>
     <clip pos="1" part="lem"/>
     <clip pos="1" part="tags"/>
