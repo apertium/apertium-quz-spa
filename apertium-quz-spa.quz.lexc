@@ -724,14 +724,14 @@ nuqa%<prn%>%<p1%>%<sg%>:nuqa N-DER-Dim ; ! "yo"
 ñuqa%<prn%>%<p1%>%<sg%>:ñuqa N-DER-Dim ; ! "yo"
 qan%<prn%>%<p2%>%<sg%>:qan N-DER-Dim ; ! "tú, usted"
 personayki%<prn%>%<p2%>%<sg%>:personayki N-DER-Dim ; ! "usted"
-pay%<prn%>%<p3%>%<sg%>:pay N-DER-Dim ; ! "él"
+pay%<prn%>%<p3%>:pay N-DER-Dim ; ! "él"
 nuqayku%<prn%>%<p1%>%<pl%>:nuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
 ñuqayku%<prn%>%<p1%>%<pl%>:ñuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
 nuqanchis%<prn%>%<p1%>%<pl%>:nuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
 ñuqanchis%<prn%>%<p1%>%<pl%>:ñuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
 qankuna%<prn%>%<p2%>%<pl%>:qankuna N-FLEX-Inter ; ! "vosotros, ustedes"
 personaykichis%<prn%>%<p2%>%<pl%>:personaykichis N-FLEX-Inter ; ! "ustedes"
-paykuna%<prn%>%<p3%>%<pl%>:paykuna N-FLEX-Inter ; ! "ellos"
+! paykuna%<prn%>%<p3%>%<pl%>:paykuna N-FLEX-Inter ; ! "ellos"
 
 LEXICON Pronombres
 !! + gen, pos, gen, dem N-FLEX-Inter
@@ -888,6 +888,7 @@ rimay:rima V-IV ; ! "hablar"
 ruphamuy:ruphamu V-IV ; ! "hacer calor"     - poner %{bU%}
 tiyay:tiya V-IV ; ! "sentar"
 tukuy:tuku V-IV ; ! "terminar"
+uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
 
 
 LEXICON VerbosMov

@@ -75930,6 +75930,474 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
         <par n="S__cantándo"/>
       </e>
     </pardef>
+    
+    <pardef n="o/írse__vblex">
+      <e>
+        <p>
+          <l>iríamos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="cni"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iría</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="cni"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iríais</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="cni"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>irías</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="cni"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>irían</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="cni"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iría</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="cni"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iremos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fti"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iré</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fti"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iréis</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fti"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>irás</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fti"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>irán</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fti"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>irá</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fti"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yéremos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fts"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yere</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fts"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yereis</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fts"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yeres</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fts"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yeren</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fts"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yere</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="fts"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yendo</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ger"/></r>
+        </p>
+        <par n="S__cantándo"/>
+      </e>
+      <e>
+        <p>
+          <l>yéndo</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ger"/><j/></r>
+        </p>
+        <par n="S__cantándo"/>
+      </e>
+      <e>
+        <p>
+          <l>ímos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ifi"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>í</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ifi"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ísteis</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ifi"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iste</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ifi"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yeron</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ifi"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yó</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="ifi"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igamos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igámo</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p1"/><s n="pl"/><j/></r>
+        </p>
+        <par n="S__cantémo"/>
+      </e>
+      <e>
+        <p>
+          <l>igámos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p1"/><s n="pl"/><j/></r>
+        </p>
+        <par n="S__cantémos"/>
+      </e>
+      <e>
+        <p>
+          <l>íd</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>í</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p2"/><s n="pl"/><j/></r>
+        </p>
+        <par n="S__oí"/>
+      </e>
+      <e>
+        <p>
+          <l>íd</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p2"/><s n="pl"/><j/></r>
+        </p>
+        <par n="S__cantad"/>
+      </e>
+      <e>
+        <p>
+          <l>íd</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p2"/><s n="pl"/><j/></r>
+        </p>
+        <par n="S__cantád"/>
+      </e>
+      <e>
+        <p>
+          <l>ye</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igan</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iga</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ír</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="inf"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ír</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="inf"/><j/></r>
+        </p>
+        <par n="S__cantándo"/>
+      </e>
+      <e>
+        <p>
+          <l>íamos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pii"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ía</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pii"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>íais</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pii"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ías</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pii"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ían</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pii"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ía</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pii"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yéramos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yésemos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yera</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yese</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yerais</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yeseis</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yeras</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yeses</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yeran</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yesen</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yera</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e r="LR">
+        <p>
+          <l>yese</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pis"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ídas</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pp"/><s n="f"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ída</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pp"/><s n="f"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ídos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pp"/><s n="m"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ído</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pp"/><s n="m"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ímos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pri"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igo</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pri"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ís</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pri"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yes</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pri"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>yen</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pri"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ye</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="pri"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igamos</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="prs"/><s n="p1"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iga</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="prs"/><s n="p1"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igáis</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="prs"/><s n="p2"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igas</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="prs"/><s n="p2"/><s n="sg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>igan</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="prs"/><s n="p3"/><s n="pl"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iga</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="prs"/><s n="p3"/><s n="sg"/></r>
+        </p>
+      </e>
+    </pardef>
+    <pardef n="ó/írse__vblex">
+      <e>
+        <p>
+          <l>ye</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p2"/><s n="sg"/><j/></r>
+        </p>
+        <par n="S__cánta"/>
+      </e>
+      <e>
+        <p>
+          <l>igan</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p3"/><s n="pl"/><j/></r>
+        </p>
+        <par n="S__cantándo"/>
+      </e>
+      <e>
+        <p>
+          <l>iga</l>
+          <r>írse<s n="vblex"/><s n="pron"/><s n="imp"/><s n="p3"/><s n="sg"/><j/></r>
+        </p>
+        <par n="S__cantándo"/>
+      </e>
+    </pardef>
+    
+    
     <pardef n="h/aber_que__vbmod">
       <e>
         <p>
@@ -79924,6 +80392,8 @@ http://buscon.rae.es/draeI/
     <e lm="hacer frío" a="Pato"><i>h</i><par n="h/acer__vblex"/>
       <p><l><b/>frío</l><r><g><b/>frío</g></r></p></e>
     <e lm="jugar"><i>ju</i><par n="ju/gar__vblex"/></e>
+    <e lm="oírse"><i>o</i><par n="o/írse__vblex"/></e>
+    <e lm="oírse"><p><l>ó</l><r>o</r></p><par n="ó/írse__vblex"/></e>
     <!-- <e lm="qué hacer" a="Pato"><i><g>qué<b/></g>h</i><par n="h/acer__vblex"/></e> -->
     <e lm="qué hacer" a="Pato"><p><l><g>qué<b/></g></l><r><g>qué<b/></g></r></p>
       <i>h</i><par n="h/acer__vblex"/></e>

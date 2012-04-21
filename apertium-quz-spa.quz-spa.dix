@@ -193,10 +193,12 @@
     <e><p><l>qankuna<s n="prn"/><s n="p2"/><s n="pl"/></l>
       <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>
       
-    <e><p><l>pay<s n="prn"/><s n="p3"/><s n="sg"/></l>
-      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/><s n="sg"/></r></p></e>
+    <e><p><l>pay<s n="prn"/><s n="p3"/></l>
+      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/></r></p></e>
     <e r="RL"><p><l>paykuna<s n="prn"/><s n="p3"/><s n="pl"/></l>
-      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/><s n="pl"/></r></p></e>
+      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>paykuna<s n="prn"/><s n="p3"/><s n="pl"/></l>
+      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
     
     <e r="RL"><p><l>qan<s n="prn"/><s n="p2"/><s n="sg"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
@@ -478,6 +480,7 @@
     <e><p><l>tukuy<s n="vblex"/></l><r>terminar<s n="vblex"/></r></p></e>
     <e><p><l>ukyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>upyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
+    <e><p><l>uyarichikuy<s n="vblex"/></l><r>oírse<s n="vblex"/><s n="pron"/></r></p></e>
 
     
 
