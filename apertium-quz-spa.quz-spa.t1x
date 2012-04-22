@@ -11,6 +11,10 @@
       <cat-item tags="af"/>
     </def-cat>
     
+    <def-cat n="pers">
+      <cat-item tags="prn.pers.*"/>
+    </def-cat>
+     
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="n"/>       <!--
@@ -78,6 +82,13 @@
   </section-def-cats>  
 <section-def-attrs>
   
+    <def-attr n="a_prn">
+      <attr-item tags="prn"/>
+      <attr-item tags="prn.pers"/>
+      <attr-item tags="prn.dem"/>
+      <attr-item tags="prn.tn"/>
+    </def-attr>
+    
     <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
@@ -178,7 +189,7 @@
       <!-- <attr-item tags="sufijo-rqu"/> -->
     </def-attr>
     
-    <def-attr n="pers">
+    <def-attr n="a_pers">
       <attr-item tags="p1"/>
       <attr-item tags="p2"/>
       <attr-item tags="p3"/>
@@ -927,6 +938,40 @@
 
 
 
+<rule comment="PRONOMBRE PERSONAL">
+<pattern>
+	<pattern-item n="pers"/>
+</pattern>
+<action>
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<out>
+<chunk name="pron" case="caseFirstWord">
+		<tags>
+			<tag><lit-tag v="SN"/></tag>
+			<tag><var n="caso"/></tag>
+			<tag><clip pos="1" side="tl" part="a_pers"/></tag>
+			<tag><clip pos="1" side="tl" part="gen"/></tag>
+			<tag><clip pos="1" side="tl" part="nbr"/></tag>
+			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
+		</tags>
+	<lu>
+		<clip pos="1" side="tl" part="lemh"/>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<!-- <clip pos="1" side="tl" part="gen" link-to="2"/>
+		<clip pos="1" side="tl" part="nbr" link-to="3"/> -->
+    <lit-tag v="3"/>
+    <lit-tag v="4"/>
+    <lit-tag v="5"/>
+		<!-- <var n="caso"/> -->
+		<clip pos="1" side="tl" part="lemq"/>
+	</lu>
+</chunk>
+</out>
+</action>
+</rule>
+
 <rule comment="NOMBRE">
 <pattern>
 	<pattern-item n="nom"/>
@@ -1531,7 +1576,7 @@
     <clip pos="1" side="tl" part="lemh"/>
     <clip pos="1" side="tl" part="a_verb"/>
     <clip pos="1" side="tl" part="temps"/>
-    <clip pos="1" side="tl" part="pers"/>
+    <clip pos="1" side="tl" part="a_pers"/>
     <clip pos="1" side="tl" part="gen"/>
     <clip pos="1" side="tl" part="nbr"/>
     <clip pos="1" side="tl" part="lemq"/>

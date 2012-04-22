@@ -22,6 +22,7 @@ Multichar_Symbols
 
 %<itg%>       ! interrogativo (pronombre, adverbio)
 %<dem%>       ! demostrativo (pronombre, adjetivo)
+%<pers%>      ! personal (pronombre)
 %<subst%>     ! substantival (adverbio: toma casos)
 %<temp%>      ! temporal (adverbio: no toma -pi <loc>)
 
@@ -253,7 +254,7 @@ CLIT-taq ;
 
 
 LEXICON CLIT-raq-na
-%+raq%<cnt%>:%>raq CLIT-pas ;
+%+raq%<enc%>:%>raq CLIT-pas ;
 %+ña%<dcnt%>:%>ña CLIT-pas ;
 ! %<adt%>%<cnt%>:%>pas%>raq CLIT-taq ;
 CLIT-pas ;
@@ -724,7 +725,7 @@ nuqa%<prn%>%<p1%>%<sg%>:nuqa N-DER-Dim ; ! "yo"
 ñuqa%<prn%>%<p1%>%<sg%>:ñuqa N-DER-Dim ; ! "yo"
 qan%<prn%>%<p2%>%<sg%>:qan N-DER-Dim ; ! "tú, usted"
 personayki%<prn%>%<p2%>%<sg%>:personayki N-DER-Dim ; ! "usted"
-pay%<prn%>%<p3%>:pay N-DER-Dim ; ! "él"
+pay%<prn%>%<pers%>%<p3%>:pay N-DER-Dim ; ! "él"
 nuqayku%<prn%>%<p1%>%<pl%>:nuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
 ñuqayku%<prn%>%<p1%>%<pl%>:ñuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
 nuqanchis%<prn%>%<p1%>%<pl%>:nuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
