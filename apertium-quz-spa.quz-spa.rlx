@@ -4,6 +4,7 @@ SOFT-DELIMITERS = "<,>" ;
 SETS
 
 LIST N = n ; 
+LIST A = adj ;
 LIST Prop = (np ant) ; 
 
 LIST Gen = gen ; 
@@ -11,6 +12,5 @@ LIST Acc = acc ;
 
 SECTION
 
-SELECT N ;
-    ## 
-
+SELECT A IF (-1 A) (1C N);
+    ## Jaimeqa usqhaylla phawashan hatun machu sach'aman, Maríamantan pakakushan.
