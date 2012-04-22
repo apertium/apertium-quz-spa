@@ -232,6 +232,7 @@
       <attr-item tags="adv.subst"/>
       <attr-item tags="adv.temp"/>
       <attr-item tags="rel.adv"/>
+      <attr-item tags="adj"/>
     </def-attr>
     
     <def-attr n="a_adv-q">
@@ -398,7 +399,7 @@
 <choose>
 	<when>
 	  <test><equal> <!-- si no tiene número -->
-	      <clip pos="1" side="tl" part="a_num"/>
+	      <clip pos="1" side="tl" part="nbr"/>
 	      <lit v=""/>
     </equal></test>
 	  <choose>
@@ -480,7 +481,7 @@
 <choose>
 	<when>
 	  <test><equal> <!-- si no tiene número -->
-	      <clip pos="1" side="tl" part="a_num"/>
+	      <clip pos="1" side="tl" part="nbr"/>
 	      <lit v=""/>
     </equal></test>
 	  <choose>
@@ -550,7 +551,7 @@
 <choose>
 	<when>
 	  <test><equal> <!-- si no tiene número -->
-	      <clip pos="2" side="tl" part="a_num"/>
+	      <clip pos="2" side="tl" part="nbr"/>
 	      <lit v=""/>
     </equal></test>
 	  <choose>
@@ -932,15 +933,14 @@
 </pattern>
 <action>
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
-<call-macro n="pon-sg"><with-param pos="1"/></call-macro>
-<call-macro n="pon-m"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
 <call-macro n="quita-nom"><with-param pos="1"/></call-macro>
 <out>
 <chunk name="nombre" case="caseFirstWord">
 		<tags>
 			<tag><lit-tag v="SN"/></tag>
-			<tag><var n="genero"/></tag>
-			<tag><var n="numero"/></tag>
+			<tag><clip pos="1" side="tl" part="gen"/></tag>
+			<tag><clip pos="1" side="tl" part="nbr"/></tag>
 			<tag><var n="caso"/></tag>
 			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
 		</tags>
@@ -1060,6 +1060,38 @@
 		</out>
 		</otherwise>
 </choose>
+</action>
+</rule>
+
+<rule comment="ADJETIVO">
+<pattern>
+	<pattern-item n="adj"/>
+</pattern>
+<action>
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<out>
+<chunk name="adjetivo" case="caseFirstWord">
+		<tags>
+			<tag><lit-tag v="SA"/></tag>
+			<tag><clip pos="1" side="tl" part="gen"/></tag>
+			<tag><clip pos="1" side="tl" part="nbr"/></tag>
+			<tag><var n="caso"/></tag>
+			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
+		</tags>
+	<lu>
+		<clip pos="1" side="tl" part="lemh"/>
+		<clip pos="1" side="tl" part="a_adj"/>
+		<!-- <clip pos="1" side="tl" part="gen" link-to="2"/>
+		<clip pos="1" side="tl" part="nbr" link-to="3"/> -->
+    <lit-tag v="2"/>
+    <lit-tag v="3"/>
+		<!-- <var n="caso"/> -->
+		<clip pos="1" side="tl" part="lemq"/>
+	</lu>
+</chunk>
+</out>
 </action>
 </rule>
 
@@ -1214,21 +1246,54 @@
   <with-param pos="1"/></call-macro> <!--
 <call-macro n="quita-nom">
   <with-param pos="1"/></call-macro> -->
-<out>
-<chunk name="adv" case="caseFirstWord">
-		<tags>
-			<tag><lit-tag v="ADV"/></tag>
-			<tag><var n="caso"/></tag>
-			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
-			<tag><clip pos="1" side="sl" part="a_adv-q"/></tag>
+<choose>
+<when>
+  <test><equal>
+    <clip pos="1" side="tl" part="a_adv"/>
+    <clip pos="1" side="tl" part="a_adj"/>
+  </equal></test>
+  <call-macro n="quita-nom">
+    <with-param pos="1"/></call-macro>
+  <out>
+  <chunk name="adjetivo" case="caseFirstWord">
+    <tags>
+        <tag><lit-tag v="SA"/></tag>
+        <tag><clip pos="1" side="tl" part="gen"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><var n="caso"/></tag>
+        <tag><clip pos="1" side="sl" part="pers_pos"/></tag>
+      </tags>
+    <lu>
+      <clip pos="1" side="tl" part="lemh"/>
+      <clip pos="1" side="tl" part="a_adj"/>
+      <!-- <clip pos="1" side="tl" part="gen" link-to="2"/>
+      <clip pos="1" side="tl" part="nbr" link-to="3"/> -->
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <!-- <var n="caso"/> -->
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</when>
+<otherwise>  
+  <out>
+  <chunk name="adv" case="caseFirstWord">
+    <tags>
+        <tag><lit-tag v="ADV"/></tag>
+        <tag><var n="caso"/></tag>
+        <tag><clip pos="1" side="sl" part="pers_pos"/></tag>
+        <tag><clip pos="1" side="sl" part="a_adv-q"/></tag>
 		</tags>
-	<lu>
-		<clip pos="1" side="tl" part="lemh"/>
-		<clip pos="1" side="tl" part="a_adv"/>
-		<clip pos="1" side="tl" part="lemq"/>
-	</lu>
-</chunk>
-</out>
+    <lu>
+      <clip pos="1" side="tl" part="lemh"/>
+      <clip pos="1" side="tl" part="a_adv"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</otherwise>
+</choose>
 </action>
 </rule>
 

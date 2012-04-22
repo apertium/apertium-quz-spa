@@ -8,6 +8,11 @@
       <cat-item tags="SN.*"/>
     </def-cat>
     
+    <def-cat n="SA">
+      <cat-item tags="SA"/>
+      <cat-item tags="SA.*"/>
+    </def-cat>
+    
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item tags="SV.*"/>
@@ -213,6 +218,37 @@
 <def-macro n="quita-GD-ND" npar="1"> <!-- por ahora -->
 <choose>
   <when>
+    <test>
+      <equal>
+        <clip pos="1" part="gen"/>
+        <lit-tag v="GD"/>
+	    </equal>
+    </test>
+	  <let>
+	    <clip pos="1" part="gen"/>
+	    <lit-tag v="m"/>
+	  </let>
+	</when>
+</choose>
+<choose>
+  <when>
+    <test>
+      <equal>
+        <clip pos="1" part="nbr"/>
+        <lit-tag v="ND"/>
+	    </equal>
+	  </test>
+	  <let>
+	    <clip pos="1" part="nbr"/>
+	    <lit-tag v="sg"/>
+	  </let>
+	</when>
+</choose>
+</def-macro>
+
+<!-- <def-macro n="quita-GD-ND" npar="1">
+<choose>
+  <when>
     <test><not><or>
       <equal>
         <clip pos="1" part="gen"/>
@@ -255,8 +291,8 @@
 	  </let>
 	</when>
 </choose>
-</def-macro>
-  
+</def-macro> -->
+ 
   </section-def-macros>
   
   
@@ -278,7 +314,24 @@
 </out>
 </action>
 </rule>
-    
+
+<rule comment="REGLA: SA">
+<pattern>
+  <pattern-item n="SA"/>
+</pattern>
+<action>
+<let><var n="prepos"/><lit v=""/></let>
+<call-macro n="quita-GD-ND"><with-param pos="1"/></call-macro>
+<out><!-- caso -->
+  <chunk>
+    <clip pos="1" part="lem"/>
+    <clip pos="1" part="tags"/>
+    <clip pos="1" part="chcontent"/>
+  </chunk>
+</out>
+</action>
+</rule>
+
 <rule comment="SN SP > SP SN">
 <pattern>
 	<pattern-item n="SN"/>
