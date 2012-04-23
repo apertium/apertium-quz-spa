@@ -60,6 +60,7 @@
     
     <sdef n="loc"      c="Locativo"/>
     
+    <sdef n="pers"     c="Personal"/>
     <sdef n="tn"       c="Tónico"/>
     <sdef n="enc"      c="Enclítico"/>
     <sdef n="pro"      c="Proclítico"/>
