@@ -466,7 +466,7 @@
     <e><p><l>asiy<s n="vblex"/></l><r>reír<s n="vblex"/></r></p></e>
     <e><p><l>atiy<s n="vblex"/></l><r>poder<s n="vbmod"/></r></p></e>
     <e><p><l>chirimuy<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>    
-    <e><p><l>imanay<s n="vblex"/></l><r><g>qué<b/></g>hacer<s n="vblex"/></r></p></e>
+    <e><p><l>imanay<s n="vblex"/></l><r>qué<b/>hacer<s n="vblex"/></r></p></e>
     <e><p><l>hinay<s n="vblex"/></l><r>hacer<s n="vblex"/><g><b/>así</g></r></p></e>
     <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
     <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
@@ -501,6 +501,8 @@
     <e c=""><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
     <e c=""><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
     <e c=""><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+
+<e>       <re>%?[0-9]+([.,][0-9]+)*[.,]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
 
 
   </section>

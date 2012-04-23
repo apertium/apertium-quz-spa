@@ -59,8 +59,6 @@ $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@
 
-
-
 $(PREFIX1).mode: modes.xml
 	apertium-validate-modes $<
 	apertium-gen-modes $<
