@@ -1631,7 +1631,6 @@
 <choose>
 	<when>
 		<test><and>
-      <or>
         <not><equal>
           <clip pos="1" side="sl" part="cas"/>
           <lit-tag v="nom"/>
@@ -1640,17 +1639,6 @@
           <clip pos="1" side="sl" part="cas"/>
           <lit v=""/>
         </equal></not>
-      </or>
-      <or>
-        <equal caseless="yes">
-          <clip pos="1" side="tl" part="lem"/>
-          <lit v="yo"/>
-        </equal>
-        <equal caseless="yes">
-          <clip pos="1" side="tl" part="lem"/>
-          <lit v="tú"/>
-        </equal>
-      </or>
     </and></test>
     <choose>
       <when>
@@ -1665,7 +1653,7 @@
           </equal>
         </and></test>
         <let>
-          <clip pos="1" side="tl" part="lem"/>
+          <clip pos="1" side="tl" part="lemh"/>
           <lit v="mí"/>
         </let>
       </when>
@@ -1681,31 +1669,13 @@
           </equal>
         </and></test>
         <let>
-          <clip pos="1" side="tl" part="lem"/>
+          <clip pos="1" side="tl" part="lemh"/>
           <lit v="ti"/>
         </let>
-      </when></choose>
-      <out>
-        <chunk name="prn-pers" case="caseFirstWord">
-          <tags>
-              <tag><lit-tag v="SPRN-pers"/></tag>
-              <tag><clip pos="1" side="tl" part="pers"/></tag>
-              <tag><clip pos="1" side="tl" part="gen"/></tag>
-              <tag><clip pos="1" side="tl" part="nbr"/></tag>
-              <tag><var n="caso"/></tag>
-          </tags>
-          <lu>
-            <clip pos="1" side="tl" part="lemh"/>
-            <lit-tag v="prn.tn"/>
-            <lit-tag v="2"/>
-            <lit-tag v="3"/>
-            <lit-tag v="4"/>
-            <clip pos="1" side="tl" part="lemq"/>
-          </lu>
-        </chunk>
-      </out>  
-</when>
-<otherwise>
+      </when>
+    </choose>
+  </when>
+</choose>
 <out>
 <chunk name="prn-pers" case="caseFirstWord">
 		<tags>
@@ -1714,23 +1684,18 @@
 			<tag><clip pos="1" side="tl" part="gen"/></tag>
 			<tag><clip pos="1" side="tl" part="nbr"/></tag>
 			<tag><var n="caso"/></tag>
-			<!-- <tag><clip pos="1" side="sl" part="pers_pos"/></tag> 99,9 % sem. incompatible -->
+			<!-- <tag><clip pos="1" side="sl" part="pers_pos"/></tag> refuerzo nuqa(lla)y -->
 		</tags>
 	<lu>
 		<clip pos="1" side="tl" part="lemh"/>
-		<clip pos="1" side="tl" part="a_prn-pers"/>
-		<!-- <clip pos="1" side="tl" part="gen" link-to="2"/>
-		<clip pos="1" side="tl" part="nbr" link-to="3"/> -->
+    <lit-tag v="prn.tn"/>
     <lit-tag v="2"/>
     <lit-tag v="3"/>
     <lit-tag v="4"/>
-		<!-- <var n="caso"/> -->
 		<clip pos="1" side="tl" part="lemq"/>
 	</lu>
 </chunk>
 </out>
-</otherwise>
-</choose>
 </action>
 </rule>
  
