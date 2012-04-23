@@ -12,4 +12,5 @@
 dev/apertium-quz-spa.quz.lexc-OLD -text
 dev/cuento.quz-var.txt -text
 dev/cuento.quz.txt -text
+dev/udhr.quz.txt -text
 /modes.xml -text
