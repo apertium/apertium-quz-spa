@@ -349,6 +349,19 @@
         </p>
 	<par n="caracter_general"/>
       </e>
+      <e>
+        <p>
+          <l><a/>con<b/>sí<b/></l>
+          <r>consigo<b/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l><a/>con<b/>sí</l>
+          <r>consigo</r>
+        </p>
+	<par n="caracter_general"/>
+      </e>
 
   </section>
 

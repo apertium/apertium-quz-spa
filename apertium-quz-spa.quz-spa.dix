@@ -13,7 +13,7 @@
     <sdef n="detnt"    c="Determinante neutro"/>
     <sdef n="num"      c="Numeral"/>
     <sdef n="pr"       c="Preposición"/>
-    <sdef n="post"    c="Postposición"/>
+    <sdef n="post"     c="Postposición"/>
     <sdef n="preadv"   c="Preadverbio"/>
     <sdef n="preadj"   c="Preadjetivo"/>
     <sdef n="predet"   c="Preterminante"/>
@@ -44,10 +44,10 @@
     <sdef n="sp"       c="Singular/plural"/>
     <sdef n="ND"       c="Número por determinar"/>  
     
+    <sdef n="pers"     c="Personal (pronombre)"/>
     <sdef n="def"      c="Definido"/>
     <sdef n="ind"      c="Indefinido"/>
     <sdef n="dem"      c="Demostrativo"/>
-    <sdef n="pers"     c="Personal"/>
     <sdef n="itg"      c="Interrogativo"/>
     <sdef n="qnt"      c="Cuantitativo"/>
     <sdef n="pos"      c="Posesivo"/>
@@ -59,7 +59,8 @@
     <sdef n="temp"     c="Temporal (adverbio)"/>
     
     <sdef n="loc"      c="Locativo"/>
-
+    
+    <sdef n="pers"     c="Personal"/>
     <sdef n="tn"       c="Tónico"/>
     <sdef n="enc"      c="Enclítico"/>
     <sdef n="pro"      c="Proclítico"/>
@@ -130,7 +131,7 @@
     <e><p><l>mi<s n="af"/></l>    <r></r></p></e>
     <e><p><l>qa<s n="topi"/></l>    <r></r></p></e>
     <e><p><l>chu<s n="qst"/></l>    <r></r></p></e>
-    <e><p><l>raq<s n="enc"/></l>    <r></r></p></e>
+    <!-- <e><p><l>raq<s n="enc"/></l>    <r></r></p></e> -->
     
     <!-- SECCIÓN: Conjunciones, relativos -->
     <e><p><l>chay<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e>
@@ -176,39 +177,39 @@
 
     <!-- SECCIÓN: Pronombres personales -->
     
-    <e><p><l>ñuqa<s n="prn"/><s n="p1"/><s n="sg"/></l>
+    <e><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l>
       <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>nuqa<s n="prn"/><s n="p1"/><s n="sg"/></l>
+    <e r="LR"><p><l>nuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l>
       <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
       
-    <e><p><l>ñuqayku<s n="prn"/><s n="p1"/><s n="pl"/></l>
+    <e><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>nuqayku<s n="prn"/><s n="p1"/><s n="pl"/></l>
+    <e r="LR"><p><l>nuqayku<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>ñuqanchis<s n="prn"/><s n="p1in"/><s n="pl"/></l>
+    <e r="LR"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>nuqanchis<s n="prn"/><s n="p1in"/><s n="pl"/></l>
+    <e r="LR"><p><l>nuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
       
-    <e><p><l>qan<s n="prn"/><s n="p2"/><s n="sg"/></l>
+    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/></l>
       <r>tú<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e><p><l>qankuna<s n="prn"/><s n="p2"/><s n="pl"/></l>
+    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
       <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>
       
     <e><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l>
       <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/></r></p></e>
-    <e r="RL"><p><l>paykuna<s n="prn"/><s n="p3"/><s n="pl"/></l>
+    <e r="RL"><p><l>paykuna<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l>
       <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>paykuna<s n="prn"/><s n="p3"/><s n="pl"/></l>
+    <e r="RL"><p><l>paykuna<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l>
       <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
     
-    <e r="RL"><p><l>qan<s n="prn"/><s n="p2"/><s n="sg"/></l>
+    <e r="RL"><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="RL"><p><l>qankuna<s n="prn"/><s n="p2"/><s n="pl"/></l>
+    <e r="RL"><p><l>qankuna<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>  
-    <e r="LR"><p><l>personayki<s n="prn"/><s n="p2"/><s n="sg"/></l>
+    <e r="LR"><p><l>personayki<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e r="LR"><p><l>personaykichis<s n="prn"/><s n="p2"/><s n="pl"/></l>
+    <e r="LR"><p><l>personaykichis<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
     
