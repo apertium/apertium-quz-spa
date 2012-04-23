@@ -44,7 +44,6 @@
     <sdef n="sp"       c="Singular/plural"/>
     <sdef n="ND"       c="Número por determinar"/>  
     
-    <sdef n="pers"     c="Personal (pronombre)"/>
     <sdef n="def"      c="Definido"/>
     <sdef n="ind"      c="Indefinido"/>
     <sdef n="dem"      c="Demostrativo"/>
