@@ -13,6 +13,9 @@
       <program name="lt-proc -b">
         <file name="quz-spa.autobil.bin"/>
       </program>
+      <program name="apertium-lrx-proc">
+        <file name="quz-spa.lrx.bin"/>
+      </program>
       <program name="apertium-transfer -b">
         <file name="apertium-quz-spa.quz-spa.t1x"/>
         <file name="quz-spa.t1x.bin"/>
@@ -129,6 +132,25 @@
     </pipeline>
   </mode>
 
+  <mode name="quz-spa-lex">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="quz-spa.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -n -1">
+        <file name="quz-spa.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="quz-spa.lrx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
   <mode name="quz-spa-chunker">
     <pipeline>
       <program name="hfst-proc -w">
@@ -140,6 +162,9 @@
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="quz-spa.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-quz-spa.quz-spa.t1x"/>
@@ -159,6 +184,9 @@
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="quz-spa.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-quz-spa.quz-spa.t1x"/>
@@ -183,6 +211,9 @@
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="quz-spa.autobil.bin"/>
+      </program>
+      <program name="apertium-lrx-proc">
+        <file name="quz-spa.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
         <file name="apertium-quz-spa.quz-spa.t1x"/>

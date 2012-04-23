@@ -6,7 +6,7 @@ PREFIX2=spa-quz
 
 all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).rlx.bin $(PREFIX1).autobil.bin $(PREFIX1).mode \
 	$(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).autogen.bin $(PREFIX2).automorf.bin \
-	$(PREFIX1).autopgen.bin
+	$(PREFIX1).autopgen.bin $(PREFIX1).lrx.bin
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -58,6 +58,9 @@ $(PREFIX2).automorf.bin: $(BASENAME).$(LANG2).dix
 $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@
+
+$(PREFIX1).lrx.bin: $(BASENAME).$(PREFIX1).lrx
+	apertium-lrx-comp $< $@
 
 $(PREFIX1).mode: modes.xml
 	apertium-validate-modes $<
