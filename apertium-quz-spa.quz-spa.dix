@@ -248,6 +248,8 @@
     <e r="LR"><p><l>maytachus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maymanchus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     <e r="LR"><p><l>maymantachus<s n="adv"/><s n="itg"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
+    
+    <e><p><l>hayk'aq<s n="adv"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
 
 
 
@@ -266,6 +268,7 @@
     <e><p><l>kunan<b/>p'unchay<s n="adv"/><s n="temp"/></l><r>hoy<s n="adv"/></r></p></e>
     <e><p><l>qaynunchay<s n="adv"/><s n="temp"/></l><r>ayer<s n="adv"/></r></p></e>
     <e><p><l>sapa<b/>kuti<s n="adv"/><s n="temp"/></l><r>siempre<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>hayk'aqpis<s n="adv"/></l><r>nunca<s n="adv"/></r></p></e>
 
     
     <!-- SECCIÓN: Adverbios otros -->
@@ -280,7 +283,7 @@
     <e><p><l>haqayman<s n="adv"/></l><r>hacia<b/>allí<s n="adv"/></r></p></e>
     <e><p><l>haqaymanta<s n="adv"/></l><r>de<b/>allí<s n="adv"/></r></p></e>
     <e r="LR"><p><l>haqaypi<s n="adv"/></l><r>allí<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>hawapi<s n="adv"/></l><r>afuera<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>hawapi<s n="adv"/></l><r>afuera<s n="adv"/></r></p></e>  
     <e><p><l>muyuyninpi<s n="adv"/></l><r>alrededor<s n="adv"/></r></p></e>
     <e><p><l>qhipamanta<s n="adv"/></l><r>de<b/>atrás<s n="adv"/></r></p></e>
     <e><p><l>tukuy<b/>hinantinpi<s n="adv"/></l><r>en<b/>todas<b/>partes<s n="adv"/></r></p></e>

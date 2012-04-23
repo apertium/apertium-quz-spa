@@ -80037,6 +80037,7 @@ This is a modified version of the file apertium-en-es.es.dix with reduced dictio
     <e lm="dónde"><i>dónde</i><par n="dónde__adv"/></e>
     <e lm="por qué"><i>por<b/>qué</i><par n="adónde__adv"/></e>
     <e lm="de quién"><i>de<b/>quién</i><par n="cuál__prn"/></e>
+    <e lm="cuándo"><i>cuándo</i><par n="adónde__adv"/></e>
     
     
     <!-- DEMOSTRATIVOS -->
