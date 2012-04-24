@@ -373,9 +373,7 @@
 </and></test>
 <call-macro n="caso-pr"><with-param pos="2"/></call-macro>
 <out>
-	<chunk>
-		<var n="prepos"/>
-	</chunk><b/>
+	<var n="prepos"/><b/>
 </out>
 </when>
 </choose>
@@ -488,9 +486,7 @@
         </and></test>
         <call-macro n="caso-pr"><with-param pos="1"/></call-macro>
         <out>
-          <chunk>
-            <var n="prepos"/>
-            </chunk><b/>
+          <var n="prepos"/><b/>
         </out>
       </when>
     </choose>

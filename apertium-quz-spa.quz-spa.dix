@@ -91,9 +91,20 @@
     <sdef n="cni"      c="Condicional"/>
     <sdef n="imp"      c="Imperativo"/>
 
-    <sdef n="af"       c=""/>
-    <sdef n="topi"     c=""/>
-    <sdef n="qst"     c=""/>
+    <sdef n="af"		    c="afirmativo -mi"/>
+    <sdef n="rep"			  c=" reportativo -si"/>
+    <sdef n="cnj"				c="conjetural -chá"/>
+    <sdef n="enf"				c="enfático -yá"/>
+    <sdef n="dub"				c="dubitativo -chus"/>
+    <sdef n="rnd"				c="reanudador -ri"/>
+    <sdef n="topi"			c="tópico -qa"/>
+    <sdef n="qst"				c="interrogativo/negativo -chu"/>
+    <sdef n="contr"			c="contrastivo -taq"/>
+    <sdef n="adt"				c="aditivo -pas"/>
+    <sdef n="cnti"			c="continuativo -raq"/>
+    <sdef n="dcnt"			c="discontinuativo -ña"/>
+    <sdef n="dfnt"			c="definitivo -puni"/>
+    <sdef n="lim"				c="limitativo -lla"/>
 
     <sdef n="apos" />
     <sdef n="guio" />
@@ -127,10 +138,22 @@
     
   <section id="main" type="standard">
     
-    <e><p><l>mi<s n="af"/></l>    <r></r></p></e>
-    <e><p><l>qa<s n="topi"/></l>    <r></r></p></e>
-    <e><p><l>chu<s n="qst"/></l>    <r></r></p></e>
-    <!-- <e><p><l>raq<s n="enc"/></l>    <r></r></p></e> -->
+    <!-- SECCIÓN: Clíticos -->
+    
+    <e><p><l>mi<s n="af"/></l><r></r></p></e>
+    <e><p><l>si<s n="rep"/></l><r>dizque<s n="adv"/></r></p></e>
+    <e><p><l>chá<s n="cnj"/></l><r>tal<b/>vez<s n="adv"/></r></p></e>
+    <e><p><l>yá<s n="enf"/></l><r></r></p></e>
+    <e><p><l>chus<s n="dub"/></l><r></r></p></e>
+    <e><p><l>ri<s n="rnd"/></l><r>y<s n="cnjcoo"/></r></p></e>
+    <e><p><l>qa<s n="topi"/></l><r></r></p></e>
+    <e><p><l>chu<s n="qst"/></l><r></r></p></e>
+    <e><p><l>taq<s n="contr"/></l><r></r></p></e> <!-- y<s n="cnjcoo"/> -->
+    <e><p><l>pas<s n="adt"/></l><r>también<s n="adv"/></r></p></e>
+    <e><p><l>raq<s n="cnti"/></l><r>todavía<s n="adv"/></r></p></e>
+    <e><p><l>ña<s n="dcnt"/></l><r>ya<s n="adv"/></r></p></e>
+    <e><p><l>puni<s n="dfnt"/></l><r>siempre<s n="adv"/></r></p></e>
+    <!-- <e><p><l>lla<s n="lim"/></l><r>sólo<s n="adv"/></r></p></e> -->
     
     <!-- SECCIÓN: Conjunciones, relativos -->
     <e><p><l>chay<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e>
@@ -302,6 +325,7 @@
     <e><p><l>kuska<s n="adv"/></l><r>junto<s n="adj"/><s n="GD"/><s n="pl"/></r></p></e>
     <e><p><l>mana<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
     <e><p><l>manapuni<s n="adv"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
+    <e><p><l>ña<s n="adv"/></l><r>ya<s n="adv"/></r></p></e>
     <e><p><l>pisillata<s n="adv"/></l><r>poco<s n="adv"/></r></p></e>
     <e><p><l>usqhaylla<s n="adv"/></l><r>rápidamente<s n="adv"/></r></p></e>
 

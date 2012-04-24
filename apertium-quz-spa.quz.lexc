@@ -129,8 +129,8 @@ Multichar_Symbols
 
 ! clíticos
 %<lim%>         ! limitativo -lla
-%<dfn%>         ! definitivo -puni
-%<enc%>         ! continuativo -raq
+%<dfnt%>         ! definitivo -puni
+%<cnti%>         ! continuativo -raq
 ! %<cnt%>         ! continuativo -raq
 %<dcnt%>        ! discontinuativo -ña
 %<adt%>         ! aditivo -pas, -pis
@@ -256,9 +256,9 @@ CLIT-taq ;
 
 LEXICON CLIT-raq-na
 ! %+raq%<cnt%>:%>raq CLIT-pas ;
-%+raq%<enc%>:%>raq CLIT-pas ;
+%+raq%<cnti%>:%>raq CLIT-pas ;
 %+ña%<dcnt%>:%>ña CLIT-pas ;
-! %<adt%>%<enc%>:%>pas%>raq CLIT-taq ;
+! %<adt%>%<cnti%>:%>pas%>raq CLIT-taq ;
 CLIT-pas ;
 
 LEXICON CLIT-puni

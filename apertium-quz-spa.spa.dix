@@ -80169,10 +80169,16 @@ http://buscon.rae.es/draeI/
     <!-- adverbios sin lema o acompañados por sufijos -->
     
     <e r="LR" lm="aún"><i>aún</i><par n="ahora__adv"/></e>
+    <e lm="dizque"><i>dizque</i><par n="ahora__adv"/></e>
     <e lm="donde"><i>donde</i><par n="adonde__rel"/></e>
     <e lm="nada"><i>nada</i><par n="ahora__adv"/></e>
     <e lm="nunca"><i>nunca</i><par n="ahora__adv"/></e>
+    <e lm="sólo"><i>sólo</i><par n="ahora__adv"/></e>
+    <e lm="tal vez" a="greenbreen"><i>tal<b/>vez</i><par n="ahora__adv"/></e>
+    <e r="LR" lm="talvez" a="greenbreen"><i>talvez</i><par n="ahora__adv"/></e>
     <e lm="también"><i>también</i><par n="ahora__adv"/></e>
+    <e lm="tampoco"><i>tampoco</i><par n="ahora__adv"/></e>
+    <e lm="todavía"><i>todavía</i><par n="ahora__adv"/></e>
     <e lm="ya"><i>ya</i><par n="ahora__adv"/></e>
     
     
