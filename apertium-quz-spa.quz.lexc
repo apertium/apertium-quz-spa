@@ -228,41 +228,41 @@ Puntuación ;
 !!                   C L Í T I C O S
 
 LEXICON CLIT-Final
-%+qa%<topi%>:%>qa # ;
-%+ri%<rnd%>:%>ri # ;
-! %+ri%<rnd%>:%>rí # ;
-%+mi%<af%>:%>%{M%}%{bI%} # ;
-%+si%<rep%>:%>s%{bI%} # ;
-%+chá%<cnj%>:%>chá # ;
-%+yá%<enf%>:%>yá # ;
-%+chus%<dub%>:%>chus # ;
+%<topi%>:%>qa # ;
+%<rnd%>:%>ri # ;
+! %<rnd%>:%>rí # ;
+%<af%>:%>%{M%}%{bI%} # ;
+%<rep%>:%>s%{bI%} # ;
+%<cnj%>:%>chá # ;
+%<enf%>:%>yá # ;
+%<dub%>:%>chus # ;
 !! má, sá, mari, sari, chari, yari, ari, chusmi, chusuna, chuqa(ya), taqri, churi
 # ; 
 
 LEXICON CLIT-chu
-%+chu%<qst%>:%>chu # ;
+%<qst%>:%>chu # ;
 CLIT-Final ;
 
 LEXICON CLIT-taq
-%+taq%<contr%>:%>taq # ;
-%+taq%<contr%>%<excl%>:%>táq # ;
+%<contr%>:%>taq # ;
+%<contr%>%<excl%>:%>táq # ;
 CLIT-chu ;
 
 LEXICON CLIT-pas
-%+pas%<adt%>:%>pas CLIT-taq ;
-! %+pas%<adt%>:%>pis CLIT-taq ;
+%<adt%>:%>pas CLIT-taq ;
+! %<adt%>:%>pis CLIT-taq ;
 CLIT-taq ;
 
 
 LEXICON CLIT-raq-na
-! %+raq%<cnt%>:%>raq CLIT-pas ;
-%+raq%<cnti%>:%>raq CLIT-pas ;
-%+ña%<dcnt%>:%>ña CLIT-pas ;
+! %<cnt%>:%>raq CLIT-pas ;
+%<cnti%>:%>raq CLIT-pas ;
+%<dcnt%>:%>ña CLIT-pas ;
 ! %<adt%>%<cnti%>:%>pas%>raq CLIT-taq ;
 CLIT-pas ;
 
 LEXICON CLIT-puni
-%+puni%<dfnt%>:%>puni CLIT-raq-na ;
+%<dfnt%>:%>puni CLIT-raq-na ;
 CLIT-raq-na ;
 
 LEXICON CLIT-lla
@@ -278,7 +278,7 @@ LEXICON N-POSTcaso-kama
 CLIT-puni ;
 
 LEXICON N-POSTcaso-wan
-%+wan%<cnjcoo%>:%>wan CLIT-puni ;
+%<cnjcoo%>:%>wan CLIT-puni ;
 !! %<cnjcoo%>:%>puwan N-POSTcaso ;     ! como conjunción "y", "con"
 !! %<cnjcoo%>:%>piwan N-POSTcaso ;
 CLIT-puni ;

@@ -1085,23 +1085,22 @@
 </action>
 </rule>
 
-<rule comment="ANT-wan +af +ANT-wan"> <!-- otherwise = sin -wan -->
+<rule comment="ANT-wan +ANT-wan"> <!-- otherwise = sin -wan -->
 <pattern>
 	<pattern-item n="np-ant-ins"/>
-	<pattern-item n="af"/>
 	<pattern-item n="np-ant-ins"/>
 </pattern>
 <action>
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
 <call-macro n="pon-sg"><with-param pos="1"/></call-macro>
-<call-macro n="pon-sg"><with-param pos="3"/></call-macro>
+<call-macro n="pon-sg"><with-param pos="2"/></call-macro>
 <choose>
 	<when>
 		<test><and>
 			<equal><clip pos="1" side="sl" part="cas"/>
 				<lit-tag v="ins"/></equal> <!-- no funciona: poner algo -->
 			<equal>
-			<clip pos="3" side="sl" part="cas"/>
+			<clip pos="2" side="sl" part="cas"/>
 			<lit-tag v="ins"/></equal>
 		</and></test>
 		<out>
@@ -1122,11 +1121,11 @@
 				<b pos="1"/>
 			<lu>
 				<b pos="1"/>
-				<clip pos="3" side="tl" part="lemh"/>
-				<clip pos="3" side="tl" part="a_nom"/>
-				<clip pos="3" side="tl" part="gen"/>
+				<clip pos="2" side="tl" part="lemh"/>
+				<clip pos="2" side="tl" part="a_nom"/>
+				<clip pos="2" side="tl" part="gen"/>
 				<var n="numero"/>
-				<clip pos="3" side="tl" part="lemq"/>
+				<clip pos="2" side="tl" part="lemq"/>
 			</lu>
 		</chunk>
 		</out>
@@ -1145,12 +1144,12 @@
 			</lu>
 			<lu>
 				<b pos="1"/>
-				<clip pos="3" side="tl" part="lemh"/>
-				<clip pos="3" side="tl" part="a_nom"/>
-				<clip pos="3" side="tl" part="gen"/>
+				<clip pos="2" side="tl" part="lemh"/>
+				<clip pos="2" side="tl" part="a_nom"/>
+				<clip pos="2" side="tl" part="gen"/>
 				<var n="numero"/>
-				<clip pos="3" side="tl" part="cas"/>
-				<clip pos="3" side="tl" part="lemq"/>
+				<clip pos="2" side="tl" part="cas"/>
+				<clip pos="2" side="tl" part="lemq"/>
 			</lu>
 		</chunk>
 		</out>
