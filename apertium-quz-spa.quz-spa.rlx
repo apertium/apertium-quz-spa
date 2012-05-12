@@ -6,11 +6,20 @@ SETS
 LIST N = n ; 
 LIST A = adj ;
 LIST Prop = (np ant) ; 
+LIST Vmov = vm ;
 
 LIST Gen = gen ; 
 LIST Acc = acc ; 
+LIST Per = per ;
+LIST P3acc = (px3sg acc) ;
+
 
 SECTION
 
 SELECT A IF (-1 A) (1C N);
     ## Jaimeqa usqhaylla phawashan hatun machu sach'aman, Maríamantan pakakushan.
+
+REMOVE Per IF (NOT *0 Vmov) (0 P3acc) ;
+		## Mamanta rikun.
+		
+## REMOVE Per IF (0 Prop) ;
