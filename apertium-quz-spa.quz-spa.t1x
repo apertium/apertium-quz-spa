@@ -281,6 +281,7 @@
     <def-var n="numero"/>
     <def-var n="genero"/>
     <def-var n="caso"/>
+    <def-var n="posesivo"/>
     <def-var n="palabra"/>
     <def-var n="current_verb"/>
     <def-var n="gen_chunk"/>
@@ -937,6 +938,66 @@
 </choose>
 </def-macro>
 
+<def-macro n="adj-pos" npar="1">
+<let><var n="posesivo"/><lit v=""/></let>
+<choose><when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px1sg"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="mío"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="mf"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px2sg"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="tuyo"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="mf"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px3sg"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="suyo"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="mf"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px3pl"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="suyo"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="mf"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px1in"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="nuestro"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="2"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px1ex"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="nuestro"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="2"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+<when>
+	<test><equal>
+		<clip pos="1" side="sl" part="pers_pos"/><lit-tag v="px2pl"/>
+	</equal></test>
+	<let><var n="posesivo"/><concat>
+		<lit v="vuestro"/><lit-tag v="det"/><lit-tag v="pos"/><lit-tag v="2"/><lit-tag v="3"/>
+	</concat></let>
+</when>
+</choose>
+</def-macro>
 
 <def-macro n="firstWord" npar="1" c="modified by mginesti 11/nov/10">
 <choose>
@@ -1032,6 +1093,7 @@
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
 <call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
 <call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <out>
 <chunk name="nombre" case="caseFirstWord">
 		<tags>
@@ -1041,6 +1103,7 @@
 			<tag><var n="caso"/></tag>
 			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
 		</tags>
+		<lu><var n="posesivo"/></lu><b/>
 	<lu>
 		<clip pos="1" side="tl" part="lemh"/>
 		<clip pos="1" side="tl" part="a_nom"/>
@@ -1248,7 +1311,7 @@
 </when>
 <otherwise>
   <out>
-  <chunk name="adj-n" case="caseFirstWord">
+  <chunk name="n-adj" case="caseFirstWord">
       <tags>
         <tag><lit-tag v="SN"/></tag>
         <tag><var n="gen_chunk"/></tag>
