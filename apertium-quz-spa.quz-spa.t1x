@@ -1229,6 +1229,7 @@
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
 <call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
 <call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <out>
 <chunk name="adjetivo" case="caseFirstWord">
 		<tags>
@@ -1238,6 +1239,7 @@
 			<tag><var n="caso"/></tag>
 			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
 		</tags>
+	<lu><var n="posesivo"/></lu><b/>
 	<lu>
 		<clip pos="1" side="tl" part="lemh"/>
 		<clip pos="1" side="tl" part="a_adj"/>
@@ -1267,6 +1269,7 @@
 <call-macro n="pon-m"><with-param pos="2"/></call-macro> -->
 <call-macro n="quita-nom">
   <with-param pos="2"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <choose>
 <when>
   <test><equal>
@@ -1282,6 +1285,7 @@
         <tag><var n="caso"/></tag>
         <tag><clip pos="2" side="sl" part="pers_pos"/></tag>
       </tags>
+		<lu><var n="posesivo"/></lu><b/>
     <lu><get-case-from pos ="1">
       <clip pos="1" side="tl" part="lemh"/></get-case-from>
       <clip pos="1" side="tl" part="a_adj"/>
@@ -1319,6 +1323,7 @@
         <tag><var n="caso"/></tag>
         <tag><clip pos="2" side="sl" part="pers_pos"/></tag>
       </tags>
+		<lu><var n="posesivo"/></lu><b/>
     <lu><get-case-from pos ="1">
       <clip pos="2" side="tl" part="lemh"/></get-case-from>		
       <clip pos="2" side="tl" part="a_nom"/>
@@ -1368,6 +1373,7 @@
 <call-macro n="pon-m"><with-param pos="2"/></call-macro> -->
 <call-macro n="quita-nom">
   <with-param pos="3"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <choose>
 <when>
   <test><equal>
@@ -1383,6 +1389,7 @@
         <tag><var n="caso"/></tag>
         <tag><clip pos="3" side="sl" part="pers_pos"/></tag>
       </tags>
+		<lu><var n="posesivo"/></lu><b/>
     <lu><get-case-from pos ="1">
       <clip pos="1" side="tl" part="lemh"/></get-case-from>
       <clip pos="1" side="tl" part="a_adj"/>
@@ -1430,6 +1437,7 @@
         <tag><var n="caso"/></tag>
         <tag><clip pos="2" side="sl" part="pers_pos"/></tag>
       </tags>
+		<lu><var n="posesivo"/></lu><b/>
     <lu><get-case-from pos ="1">
       <clip pos="3" side="tl" part="lemh"/></get-case-from>		
       <clip pos="3" side="tl" part="a_nom"/>
