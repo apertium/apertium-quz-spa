@@ -7,6 +7,11 @@
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+		
+    <def-cat n="SNant">
+      <cat-item tags="SNant"/>
+      <cat-item tags="SNant.*"/>
+    </def-cat>
     
     <def-cat n="SA">
       <cat-item tags="SA"/>
@@ -334,6 +339,26 @@
 </action>
 </rule>
 
+<rule comment="REGLA: SN-antropónimo">
+<pattern>
+  <pattern-item n="SNant"/>
+</pattern>
+<action>
+<let><var n="prepos"/><lit v=""/></let>
+<call-macro n="quita-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="caso-pr"><with-param pos="1"/></call-macro>
+<out><!-- caso -->
+  <var n="prepos"/>
+  <chunk>
+    <clip pos="1" part="lem"/>
+    <clip pos="1" part="tags"/>
+    <clip pos="1" part="chcontent"/>
+  </chunk>
+</out>
+<let><var n="prepos"/><lit v=""/></let>
+</action>
+</rule>
+
 <rule comment="REGLA: SA">
 <pattern>
   <pattern-item n="SA"/>
@@ -373,7 +398,7 @@
 </and></test>
 <call-macro n="caso-pr"><with-param pos="2"/></call-macro>
 <out>
-	<var n="prepos"/><b/>
+	<var n="prepos"/>
 </out>
 </when>
 </choose>
@@ -383,18 +408,27 @@
 		<clip pos="2" part="tags"/>
 		<clip pos="2" part="chcontent"/>
 	</chunk><b/>
-	<chunk>
-		<lit v="art"/>
-		<lit-tag v="DET"/>
-		<clip pos="1" part="gen"/>
-		<clip pos="1" part="nbr"/>
-		<lit v="{^el"/>
-		<lit-tag v="det"/>
-		<lit-tag v="def"/>
-		<lit-tag v="2"/>
-		<lit-tag v="3"/>
-		<lit v="$}"/>
-	</chunk><b/>
+</out>
+<choose><when>
+	<test><equal>
+		<clip pos="1" part="pers_pos"/><lit v=""/>
+	</equal></test>
+	<out>
+		<chunk>
+			<lit v="art"/>
+			<lit-tag v="DET"/>
+			<clip pos="1" part="gen"/>
+			<clip pos="1" part="nbr"/>
+			<lit v="{^el"/>
+			<lit-tag v="det"/>
+			<lit-tag v="def"/>
+			<lit-tag v="2"/>
+			<lit-tag v="3"/>
+			<lit v="$}"/>
+		</chunk><b/>
+	</out>
+</when></choose>
+<out>
 	<chunk>
 		<clip pos="1" part="lem"/>
 		<clip pos="1" part="tags"/>
@@ -486,7 +520,7 @@
         </and></test>
         <call-macro n="caso-pr"><with-param pos="1"/></call-macro>
         <out>
-          <var n="prepos"/><b/>
+          <var n="prepos"/>
         </out>
       </when>
     </choose>
