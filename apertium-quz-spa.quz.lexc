@@ -1,6 +1,6 @@
 !!!  Q U E C H U A . lexc
 
-
+!! la última revisión antes de modificar las clases de palabra, etc.
 
 
 
@@ -114,7 +114,7 @@ Multichar_Symbols
 %<rec%>       ! recíproco (-na + -ku / -chi / -pu)
 
 %<pri%>       ! presente
-%<past%       ! pasado -rqa
+%<past%>       ! pasado -rqa
 %<cond%>      ! condicional
 %<evid%>      ! pasado evidencial -sqa
 %<imp%>       ! imperativo
@@ -856,7 +856,7 @@ atiy:ati V-TV ; ! "lograr"
 kutichiy:kutichi V-TV ; ! "contestar"
 maskhay:maskha V-TV ; ! "buscar"
 mikhuy:mikhu V-TV ; ! "comer"
-millp'uy:millp'u V-TV ; ! "tomar"
+millp%'uy:millp%'u V-TV ; ! "tomar"
 munay:muna V-TV ; ! "querer"
 munakuy:munaku V-TV ; ! "gustar"          - poner %{U%}
 munaykuy:munayku V-TV ; ! "gustar, querer, amar"          - poner %{U%}
