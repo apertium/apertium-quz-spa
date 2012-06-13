@@ -31,6 +31,8 @@
     <sdef n="tv"       c="Verbo transitivo"/>
     <sdef n="iv"       c="Verbo intransitivo"/>
     <sdef n="vm"       c="Verbo de movimiento"/>
+    <sdef n="vcm"      c="Verbo de comunicación"/>
+    <sdef n="vimp"     c="Verbo impersonal"/>
     <sdef n="pron"     c="Verbo pronominal (reflexivo)"/>
 
     <sdef n="f"        c="Feminino"/>

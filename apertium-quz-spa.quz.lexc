@@ -36,6 +36,8 @@ Multichar_Symbols
 %<tv%>        ! verbo transitivo
 %<iv%>        ! verbo intransitivo
 %<vm%>        ! verbo de movimiento
+%<vcm%>     ! verbo de comuncación (decir, preguntar)
+%<vimp%>    ! verbo impersonal (llover, dar ganas)
 
 ! género, número
 %<m%>         ! masculino
@@ -216,6 +218,8 @@ Verbos ;
 VerbosTrans ;
 VerbosIntrans ;
 VerbosMov ;
+VerbosCom ;
+VerbosImpers ;
 Puntuación ;
 
 
@@ -581,6 +585,12 @@ LEXICON V-TV
 LEXICON V-VM
 %<vblex%>%<vm%>: V-DER ;
 
+LEXICON V-COM
+%<vblex%>%<vcm%>: V-DER ;
+
+LEXICON V-IMPERS
+%<vblex%>%<vimp%>: V-DER ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!                    L E X I C O N   R A Í C E S
@@ -855,26 +865,26 @@ pachaña% kay:pachaña% ka V-EX ;   ! "ser hora de"
 
 
 LEXICON VerbosTrans
-imanay:imana V-TV ;    ! "qué hacer" (verbo interrogativo)
 atiy:ati V-TV ; ! "lograr"
-kutichiy:kutichi V-TV ; ! "contestar"
+hinay:hina V-TV ;     ! "hacer así"
 maskhay:maskha V-TV ; ! "buscar"
 mikhuy:mikhu V-TV ; ! "comer"
 millp%'uy:millp%'u V-TV ; ! "tomar"
 munay:muna V-TV ; ! "querer"
+munapayay:munapaya V-TV ; ! "tratar de"
 munakuy:munaku V-TV ; ! "gustar"          - poner %{U%}
 munaykuy:munayku V-TV ; ! "gustar, querer, amar"          - poner %{U%}
 sinchita% munakuy:sinchita% munaku V-TV ; ! "encantar"  - poner %{U%}
-niy:ni V-TV ; ! "decir"
 pakay:paka V-TV ; ! "esconder"
 qhaway:qhawa V-TV ; ! "mirar"
 qhawaykuy:qhawayku V-TV ; ! "observar"    - poner %{U%}
 quchikuy:quchiku V-TV ; ! "obtener"       - poner %{U%}
 rikuy:riku V-TV ; ! "ver"
+rimay:rima V-TV ; ! "hablar"
 ruray:rura V-TV ; ! "hacer"
 ruway:ruwa V-TV ; ! "hacer"
-tapuy:tapu V-TV ; ! "preguntar"
 tariy:tari V-TV ; ! "encontrar"
+tukuy:tuku V-TV ; ! "terminar" (también IV)
 ukyay:ukya V-TV ;   ! "beber"
 upiy:upi V-TV ;     ! "tomar sopa, sorber"
 upyay:upya V-TV ;   ! "beber"
@@ -885,20 +895,15 @@ yuyay:yuya V-TV ; ! "pensar"
 
 
 LEXICON VerbosIntrans
+imanay:imana V-IV ;    ! "qué hacer" (verbo interrogativo)
 asiy:asi V-IV ; ! "reír"
-atiy:ati V-IV ; ! "poder"
-chirimuy:chirimu V-IV ; ! "hacer frío"
-hinay:hina V-IV ;     ! "hacer así"
+atiy:ati V-IV ; ! "poder" - BORRAR
 kashay:kasha V-IV ; ! "estar"
-munapayay:munapaya V-IV ; ! "tratar de"
 pakakuy:pakaku V-IV ;  ! "esconderse"
 pukllay:puklla V-IV ; ! "jugar"
 pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"
-rimay:rima V-IV ; ! "hablar"
-ruphamuy:ruphamu V-IV ; ! "hacer calor"     - poner %{bU%}
 tiyay:tiya V-IV ; ! "sentar"
-tukuy:tuku V-IV ; ! "terminar"
 uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
 
 
@@ -909,6 +914,17 @@ phaway:phawa V-VM ; ! "correr"
 puriy:puri V-VM ; ! "caminar"
 riy:ri V-VM ; ! "ir"
 ripuy:ripu V-VM ; ! "irse"
+
+
+LEXICON VerbosCom
+kutichiy:kutichi V-COM ; ! "contestar"
+niy:ni V-COM ; ! "decir"
+tapuy:tapu V-COM ; ! "preguntar"
+
+
+LEXICON VerbosImpers
+chirimuy:chirimu V-IMPERS ; ! "hacer frío"
+ruphamuy:ruphamu V-IMPERS ; ! "hacer calor"     - poner %{bU%}
 
 
 
