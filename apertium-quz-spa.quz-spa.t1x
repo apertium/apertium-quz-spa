@@ -245,7 +245,7 @@
       <attr-item tags="adj"/>
     </def-attr>
     
-    <def-attr n="a_adv-q">
+    <def-attr n="a_adv-q">		<!-- ver cambios en lexc -->
       <attr-item tags="adv.itg"/>
       <attr-item tags="adv.subst"/>
       <attr-item tags="adv.temp"/>

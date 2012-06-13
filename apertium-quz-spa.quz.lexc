@@ -204,8 +204,8 @@ PronombresPersonales ;
 PronombresDemItg ;
 Preadjetivos ;
 Adverbios ;
-AdverbiosInvariables ;
-Adverbios-Itg ;
+! AdverbiosInvariables ; - maypichus
+! Adverbios-Itg ; - may adv > may prn
 Adverbios-Subst ;
 Adverbios-Temp ;
 Numerales ;
@@ -533,11 +533,11 @@ LEXICON ADV-taq
 LEXICON ADV-Invar
 %<adv%>: # ;
 
-LEXICON ADV-Itg
-%<adv%>%<itg%>: N-FLEX-Caso ;
+! LEXICON ADV-Itg
+! %<adv%>%<itg%>: N-FLEX-Caso ;
 
-LEXICON ADV-Itg-Invar
-%<adv%>%<itg%>: # ;
+! LEXICON ADV-Itg-Invar
+! %<adv%>%<itg%>: # ;
 
 LEXICON ADV-Itg-Clit
 %<adv%>%<itg%>: CLIT-puni ;
@@ -723,6 +723,8 @@ haqay:haqay PronDem ; ! "aquel, aquello"
 ima:ima PronItg ; ! "qué"
 pi:pi PronItg ; ! "quién"
 piqpa%<prn%>%<itg%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
+hayk%'a:hayk%'a PronItg ;	! "cuánto", gen "cuándo"
+may:may PronItg ;       ! "dónde"
 
 
 LEXICON PronombresPersonales
@@ -761,9 +763,10 @@ chunka:chunka NUM ; ! "diez"
 
 
 
-LEXICON Adverbios-Itg
+! LEXICON Adverbios-Itg
 !! se portan generalmente como los substantivos, pero toman el clítico correspondiente en preguntas, negaciones y si son indefinidos, no toman el diminutivo
-may:may ADV-Itg ;       ! "dónde"
+!! may como prn-itg
+
 
 LEXICON Adverbios-Subst
 !! se portan como nombres
@@ -783,11 +786,12 @@ kunan% p%'unchay:kunan% p%'unchay ADV-Temp ; ! "hoy"
 qaynunchay:qaynunchay ADV-Temp ;        ! "ayer"
 sapa% kuti:sapa% kuti ADV-Temp ;          ! "siempre"
 
-LEXICON AdverbiosInvariables
-maypichus:maypichus ADV-Itg-Invar ;         ! "donde"
-maymanchus:maymanchus ADV-Itg-Invar ;       ! "a donde"
-maymantachus:maymantachus ADV-Itg-Invar ;   ! "de donde"
-maytachus:maytachus ADV-Itg-Invar ;         ! "a donde"
+! LEXICON AdverbiosInvariables
+!!! borrado - sólo derivaciones de may prn-itg
+! maypichus:maypichus ADV-Itg-Invar ;         ! "donde"
+! maymanchus:maymanchus ADV-Itg-Invar ;       ! "a donde"
+! maymantachus:maymantachus ADV-Itg-Invar ;   ! "de donde"
+! maytachus:maytachus ADV-Itg-Invar ;         ! "a donde"
 
 LEXICON Adverbios
 !! los que toman sólo los clíticos

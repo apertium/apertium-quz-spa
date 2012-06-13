@@ -57,7 +57,20 @@
     <sdef n="subst"    c="Substantival (adverbio)"/>
     <sdef n="temp"     c="Temporal (adverbio)"/>
     
-    <sdef n="loc"      c="Locativo"/>
+    <sdef n="nom"       c="Nominativo (nada)" />
+    <sdef n="gen"       c="Genitivo (-q/pa)" />
+    <sdef n="ben"       c="Benefactivo (-paq)" />
+    <sdef n="acc"       c="Acusativo (-ta)" />
+    <sdef n="dat"       c="Dativo (ilativo) (-man)" />
+    <sdef n="ter"       c="Terminativo (limitativo) (-kama)" />
+    <sdef n="per"       c="Perlativo (-nta)" />
+    <sdef n="abl"       c="Ablativo (-manta)" />
+    <sdef n="loc"       c="Locativo (-pi)" />   <!-- (loc en ES es Location - cambiar?) -->
+    <sdef n="ins"       c="Instrumental (comitativo) (-wan)" />
+    <sdef n="csal"      c="Causal (causativo) (-rayku)" />
+    <sdef n="dis"       c="Distributivo (-nka)" />
+    <sdef n="prox"      c="Proximativo (-niq)"/>
+    <sdef n="posic"     c="Posicional (-npa)" />
     
     <sdef n="pers"     c="Personal"/>
     <sdef n="tn"       c="Tónico"/>
@@ -138,7 +151,7 @@
     
   <section id="main" type="standard">
     
-    <!-- SECCIÓN: Clíticos -->
+    <!-- SECCIÓN: Clíticos -->		<!-- borrar - son sufijos -->
     
     <e><p><l>mi<s n="af"/></l><r></r></p></e>
     <e><p><l>si<s n="rep"/></l><r>dizque<s n="adv"/></r></p></e>
@@ -265,14 +278,15 @@
     <e><p><l>piqpa<s n="prn"/><s n="itg"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
     <e><p><l>imamanta<s n="adv"/><s n="itg"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
-    <e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
-    <e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
-    <e r="LR"><p><l>maypichus<s n="adv"/><s n="itg"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
-    <e r="LR"><p><l>maytachus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
-    <e r="LR"><p><l>maymanchus<s n="adv"/><s n="itg"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
-    <e r="LR"><p><l>maymantachus<s n="adv"/><s n="itg"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
+    <e><p><l>may<s n="prn"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+    <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+    <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/><s n="dub"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
+    <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="acc"/><s n="dub"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
+    <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>a<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
+    <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="abl"/><s n="dub"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
     
-    <e><p><l>hayk'aq<s n="adv"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
+    <e><p><l>hayk'a<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
+    <e><p><l>hayk'a<s n="prn"/><s n="itg"/></l><r>cuánto<s n="prn"/><s n="itg"/></r></p></e>
 
 
 
