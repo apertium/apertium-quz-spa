@@ -1707,6 +1707,7 @@
 </action>
 </rule>
 
+<!-- poner una regla para cambiar p1in y p1ex por p1 (pl) -->
 <rule comment="PRONOMBRE PERSONAL">
 <pattern>
 	<pattern-item n="prn-pers"/>
@@ -1787,6 +1788,7 @@
 </action>
 </rule>
  
+<!-- poner una regla para cambiar p1in y p1ex por p1 (pl) -->
 <rule comment="VERBO">
 <pattern>
   <pattern-item n="verb"/>

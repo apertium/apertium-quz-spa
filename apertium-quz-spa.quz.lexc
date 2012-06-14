@@ -341,9 +341,15 @@ LEXICON N-FLEX-Inter
 !! revisar, poner de otra manera
 N-FLEX-Gen ;
 
-LEXICON N-FLEX-Plural
-%<pl%>:%>kuna N-FLEX-Inter ;
+LEXICON N-FLEX-Incl
+! se excluye con los posesivos, pero para no complicarlo, lo dejamos
+%<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Inter ;
+%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Inter ;
 N-FLEX-Inter ;
+
+LEXICON N-FLEX-Plural
+%<pl%>:%>kuna N-FLEX-Incl ;
+N-FLEX-Incl ;
 
 LEXICON N-FLEX-POS
 %<px1sg%>:%>%{bN%}%{bnI%}y N-FLEX-Plural ;
@@ -358,21 +364,17 @@ LEXICON N-FLEX-POS
 %<lim%>%<px2pl%>@D.lim@:%>%{bN%}%{bnI%}lla%>ykichis@D.lim@ N-FLEX-Plural ;
 !!! %<xrel%>:%>%{bN%}%{bnI%}n N-Flex-PL ;                ! -n relativo?
 
-%<px1ex%>:%>%{bN%}%{bnI%}yku N-FLEX-Plural ;
-%<lim%>%<px1ex%>@D.lim@:%>%{bN%}%{bnI%}lla%>yku@D.lim@ N-FLEX-Inter ;
-%<px3pl%>:%>%{bN%}%{bnI%}nku N-FLEX-Plural ;
-%<lim%>%<px3pl%>@D.lim@:%>%{bN%}%{bnI%}lla%>nku@D.lim@ N-FLEX-Inter ;
+%<px1ex%>:%>%{bN%}%{bnI%}yku N-FLEX-Incl ;
+%<lim%>%<px1ex%>@D.lim@:%>%{bN%}%{bnI%}lla%>yku@D.lim@ N-FLEX-Incl ;
+%<px3pl%>:%>%{bN%}%{bnI%}nku N-FLEX-Incl ;
+%<lim%>%<px3pl%>@D.lim@:%>%{bN%}%{bnI%}lla%>nku@D.lim@ N-FLEX-Incl ;
 
 N-FLEX-Plural ;
 
-LEXICON N-FLEX-Incl
-%<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Caso ;
-%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Caso ;
-N-FLEX-POS ;
 
 LEXICON N-DER-Dim
-%<dim%>:%>cha N-FLEX-Incl ;
-N-FLEX-Incl ;
+%<dim%>:%>cha N-FLEX-POS ;
+N-FLEX-POS ;
 
 
 LEXICON N-DER
@@ -573,8 +575,8 @@ LEXICON V-COP
 LEXICON V-EX
 %<vbex%>: V-DER ;
 
-LEXICON V-MOD
-%<vbmod%>: V-DER ;
+! LEXICON V-MOD
+! %<vbmod%>: V-DER ;
 
 LEXICON V-IV
 %<vblex%>%<iv%>: V-DER ;
@@ -738,19 +740,61 @@ may:may PronItg ;       ! "dónde"
 
 
 LEXICON PronombresPersonales
-!! + gen, pos, gen, dem; sg = N-DER, pl = N-FLEX-Inter
-nuqa%<prn%>%<pers%>%<p1%>%<sg%>:nuqa N-DER-Dim ; ! "yo"
-ñuqa%<prn%>%<pers%>%<p1%>%<sg%>:ñuqa N-DER-Dim ; ! "yo"
-qan%<prn%>%<pers%>%<p2%>:qan N-DER-Dim ; ! "tú, usted"
-personayki%<prn%>%<pers%>%<p2%>%<sg%>:personayki N-DER-Dim ; ! "usted"
-pay%<prn%>%<pers%>%<p3%>:pay N-DER-Dim ; ! "él"
-nuqayku%<prn%>%<pers%>%<p1%>%<pl%>:nuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
-ñuqayku%<prn%>%<pers%>%<p1%>%<pl%>:ñuqayku N-FLEX-Inter ; ! "nosotros (ex.)"
-nuqanchis%<prn%>%<pers%>%<p1%>%<pl%>:nuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
-ñuqanchis%<prn%>%<pers%>%<p1%>%<pl%>:ñuqanchis N-FLEX-Inter ; ! "nosotros (in.)"
-qankuna%<prn%>%<pers%>%<p2%>%<pl%>:qankuna N-FLEX-Inter ; ! "vosotros, ustedes"
+!! dado que hay sufijos que vienen antes de la marca del plural
+!! y que se quiere tener la etiqueta del plural antes de otras
+!! se han tenido que poner todas las formas posibles (con diminutivo y limitativo)
+
+! a estos no los puede seguir el inclusivo -ntin
+personayki%<prn%>%<pers%>%<p2%>%<sg%>:personayki N-FLEX-Inter ; ! "usted"
+personayki%<prn%>%<pers%>%<p2%>%<sg%>%<dim%>:personallayki N-FLEX-Inter ; ! "usted"
+personayki%<prn%>%<pers%>%<p2%>%<sg%>%<lim%>:personachayki N-FLEX-Inter ; ! "usted"
+personayki%<prn%>%<pers%>%<p2%>%<sg%>%<dim%>%<lim%>:personachallayki N-FLEX-Inter ; ! "usted"
 personaykichis%<prn%>%<pers%>%<p2%>%<pl%>:personaykichis N-FLEX-Inter ; ! "ustedes"
-! paykuna%<prn%>%<p3%>%<pl%>:paykuna N-FLEX-Inter ; ! "ellos"
+personaykichis%<prn%>%<pers%>%<p2%>%<pl%>%<dim%>:personachaykichis N-FLEX-Inter ; ! "ustedes"
+personaykichis%<prn%>%<pers%>%<p2%>%<pl%>%<lim%>:personallaykichis N-FLEX-Inter ; ! "ustedes"
+personaykichis%<prn%>%<pers%>%<p2%>%<pl%>%<dim%>%<lim%>:personachallaykichis N-FLEX-Inter ; ! "ustedes"
+
+! a estos los puede seguir el inclusivo -ntin, el limitativo sigue al plural
+! es posible que el diminutivo venga después del plural
+qan%<prn%>%<pers%>%<p2%>%<sg%>:qan N-FLEX-Incl ; ! "tú, usted"
+qan%<prn%>%<pers%>%<p2%>%<sg%>%<dim%>:qancha N-FLEX-Incl ; ! "tú, usted"
+qan%<prn%>%<pers%>%<p2%>%<pl%>:qankuna N-FLEX-Incl ; ! "vosotros, ustedes"
+qan%<prn%>%<pers%>%<p2%>%<pl%>%<dim%>:qanchakuna N-FLEX-Incl ; ! "vosotros, ustedes"
+pay%<prn%>%<pers%>%<p3%>%<sg%>:pay N-FLEX-Incl ; ! "él"
+pay%<prn%>%<pers%>%<p3%>%<sg%>%<dim%>:paycha N-FLEX-Incl ; ! "él"
+pay%<prn%>%<pers%>%<p3%>%<pl%>:paykuna N-FLEX-Incl ; ! "ellos"
+pay%<prn%>%<pers%>%<p3%>%<pl%>%<dim%>:paychakuna N-FLEX-Incl ; ! "ellos"
+
+! aquí además del diminutivo y del limitativo intervienen las marcas de plural incl/excl
+! porque después de las dos formas de la raíz se sigue de la misma manera,
+! se sigue en un lexicon de continuación (se tendrán que poner sólo la mitad de formas)
+nuqa:nuqa PronombresPersonales-Nuqa ; ! "yo/nosotros"
+ñuqa:ñuqa PronombresPersonales-Nuqa ; ! "yo/nosotros"
+
+LEXICON PronombresPersonales-Nuqa
+! la forma nuqallay (y nuqay?) es idiomática
+! la cuestión es si después de las formas con posesivo puede seguir el inclusivo -ntin
+
+%<prn%>%<pers%>%<p1%>%<sg%>: N-FLEX-Incl ; ! nuqa "yo"
+%<prn%>%<pers%>%<p1%>%<sg%>%<dim%>:cha N-FLEX-Incl ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<lim%>:lla N-FLEX-Incl ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<dim%>%<lim%>:challa N-FLEX-Incl ;
+
+y%<prn%>%<pers%>%<p1%>%<sg%>:y N-FLEX-Inter ; ! nuqay "yo" (idiomático)
+y%<prn%>%<pers%>%<p1%>%<sg%>%<dim%>:chay N-FLEX-Inter ;
+y%<prn%>%<pers%>%<p1%>%<sg%>%<lim%>:llay N-FLEX-Inter ;
+y%<prn%>%<pers%>%<p1%>%<sg%>%<dim%>%<lim%>:challay N-FLEX-Inter ;
+
+nchis%<prn%>%<pers%>%<p1in%>%<pl%>:nchis N-FLEX-Inter ; ! nuqanchis "nosotros" (inclusivo)
+nchis%<prn%>%<pers%>%<p1in%>%<pl%>%<dim%>:chanchis N-FLEX-Inter ;
+nchis%<prn%>%<pers%>%<p1in%>%<pl%>%<lim%>:llanchis N-FLEX-Inter ;
+nchis%<prn%>%<pers%>%<p1in%>%<pl%>%<dim%>%<lim%>:challanchis N-FLEX-Inter ;
+
+yku%<prn%>%<pers%>%<p1ex%>%<pl%>:yku N-FLEX-Inter ; ! nuqayku "nosotros" (exclusivo)
+yku%<prn%>%<pers%>%<p1ex%>%<pl%>%<dim%>:chayku N-FLEX-Inter ;
+yku%<prn%>%<pers%>%<p1ex%>%<pl%>%<lim%>:llayku N-FLEX-Inter ;
+yku%<prn%>%<pers%>%<p1ex%>%<pl%>%<dim%>%<lim%>:challayku N-FLEX-Inter ;
+
 
 LEXICON Pronombres
 !! + gen, pos, gen, dem N-FLEX-Inter
@@ -860,7 +904,7 @@ LEXICON Verbos
 kay:ka V-COP ;        ! "ser, estar"
 kay:ka V-EX ;         ! "ser, haber, existir"
 kapuy:kapu V-EX ;     ! "tener"
-munay:muna V-MOD ;    ! "querer"
+! munay:muna V-MOD ;    ! "querer"
 pachaña% kay:pachaña% ka V-EX ;   ! "ser hora de"
 
 

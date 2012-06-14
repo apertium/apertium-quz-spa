@@ -213,37 +213,62 @@
 
 
     <!-- SECCIÓN: Pronombres personales -->
+    <!--
+     explicación de las restricciones:
+     formas básicas: para la 1a persona, las formas con ñ
+                     para nosotros, la forma exclusiva (se puede cambiar por una regla)
+                     para usted, qan (= tú)
+     además LR pasan con GD, RL con el género correspondiente -->
     
     <e><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l>
       <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>nuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l>
       <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>ñuqay<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l>
+      <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e r="LR"><p><l>nuqay<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l>
+      <r>yo<s n="prn"/><s n="tn"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
       
-    <e><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l>
+    <e r="LR"><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
-    <e r="LR"><p><l>nuqayku<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l>
+    <e r="LR"><p><l>nuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/></l>
+      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/></l>
+      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e>
+      
     <e r="LR"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
     <e r="LR"><p><l>nuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
-      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
+      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e> <!-- 
+    <e r="RL"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
+      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
+      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e> -->
       
-    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/></l>
+    <e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l>
+      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/></r></p></e> 
+    <e r="RL"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l>
+      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l>
+      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/></r></p></e>
+      
+    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l>
       <r>tú<s n="prn"/><s n="tn"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
-    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
-      <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>
       
-    <e><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l>
-      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/></r></p></e>
-    <e r="RL"><p><l>paykuna<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l>
-      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="m"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>paykuna<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l>
-      <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="f"/><s n="pl"/></r></p></e>
-    
+    <e r="LR"><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
+      <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="GD"/><s n="pl"/></r></p></e>  
+    <e r="RL"><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
+      <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="m"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
+      <r>vosotros<s n="prn"/><s n="tn"/><s n="p2"/><s n="f"/><s n="pl"/></r></p></e>  
+      
     <e r="RL"><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="RL"><p><l>qankuna<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
-      <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>  
+      <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
+      
     <e r="LR"><p><l>personayki<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l>
       <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="sg"/></r></p></e>
     <e r="LR"><p><l>personaykichis<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
@@ -461,7 +486,7 @@
     <e r="RL"><p><l>kay<s n="vbex"/></l><r>hay<s n="vblex"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
     <e><p><l>kay<s n="vbcop"/></l><r>ser<s n="vbser"/></r></p></e>
     <e><p><l><g>pachaña<b/></g>kay<s n="vbex"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
-    <e><p><l>munay<s n="vbmod"/></l><r>querer<s n="vbmod"/></r></p></e>
+    <e r="RL"><p><l>munay<s n="vblex"/></l><r>querer<s n="vbmod"/></r></p></e>
     
 
 
