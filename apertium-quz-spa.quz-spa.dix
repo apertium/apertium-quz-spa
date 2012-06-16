@@ -241,11 +241,7 @@
     <e r="LR"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
       <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
     <e r="LR"><p><l>nuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
-      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e> <!-- 
-    <e r="RL"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
-      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="m"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/></l>
-      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="f"/><s n="pl"/></r></p></e> -->
+      <r>nosotros<s n="prn"/><s n="tn"/><s n="p1"/><s n="GD"/><s n="pl"/></r></p></e>
       
     <e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/></l>
       <r>él<s n="prn"/><s n="tn"/><s n="p3"/><s n="GD"/></r></p></e> 
@@ -287,6 +283,10 @@
     <e><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquel<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquello<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquél<s n="prn"/><s n="tn"/></r></p></e>
+    <e r="RL"><p><l>kay<s n="prn"/><s n="dem"/></l><r>este<s n="det"/><s n="dem"/></r></p></e>
+    <e r="RL"><p><l>chay<s n="prn"/><s n="dem"/></l><r>ese<s n="det"/><s n="dem"/></r></p></e>
+    <e r="RL"><p><l>haqay<s n="prn"/><s n="dem"/></l><r>aquel<s n="det"/><s n="dem"/></r></p></e>
+
 
     
     <!-- SECCIÓN: Pronombres -->
@@ -299,9 +299,9 @@
     
     <!-- SECCIÓN: Interrogativos - pronombres, adverbios -->
     <e><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>ima<s n="adj"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e r="RL"><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>pi<s n="adj"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>piqpa<s n="prn"/><s n="itg"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
     <e><p><l>imamanta<s n="adv"/><s n="itg"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
@@ -373,27 +373,40 @@
    
     
     <!-- SECCIÓN: Adjetivos, determinantes -->
-    
-    <e><p><l>kay<s n="adj"/><s n="dem"/></l><r>este<s n="det"/><s n="dem"/></r></p></e>
-    <e><p><l>chay<s n="adj"/><s n="dem"/></l><r>ese<s n="det"/><s n="dem"/></r></p></e>
-    <e><p><l>haqay<s n="adj"/><s n="dem"/></l><r>aquel<s n="det"/><s n="dem"/></r></p></e>
-
-    <e><p><l>ñuqaq<s n="adj"/></l><r>mío<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>nuqaq<s n="adj"/></l><r>mío<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>nuqaqpa<s n="adj"/></l><r>mío<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>ñuqaqpa<s n="adj"/></l><r>mío<s n="adj"/><s n="pos"/></r></p></e>
-    <e><p><l>ñuqaykuq<s n="adj"/></l><r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>ñuqaykuqpa<s n="adj"/></l><r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>nuqaykuqpa<s n="adj"/></l><r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>nuqaykuq<s n="adj"/></l><r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>ñuqanchispa<s n="adj"/></l><r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>nuqanchispa<s n="adj"/></l><r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e><p><l>qanpa<s n="adj"/></l><r>tuyo<s n="adj"/><s n="pos"/></r></p></e>
-    <e><p><l>qankunaq<s n="adj"/></l><r>vuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>qankunaqpa<s n="adj"/></l><r>vuestro<s n="adj"/><s n="pos"/></r></p></e>
-    <e><p><l>paypa<s n="adj"/></l><r>suyo<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>paykunaq<s n="adj"/></l><r>suyo<s n="adj"/><s n="pos"/></r></p></e>
-    <e r="LR"><p><l>paykunaqpa<s n="adj"/></l><r>suyo<s n="adj"/><s n="pos"/></r></p></e>
+        
+    <!-- las formas con doble genitivo = -q-pa, probablemente se va a cambiar (gen.gen2) -->
+    <e><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l>
+      <r>mío<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>nuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l>
+      <r>mío<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>nuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/><s n="gen"/></l>
+      <r>mío<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/><s n="gen"/></l>
+      <r>mío<s n="adj"/><s n="pos"/></r></p></e>
+    <e><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/><s n="gen"/></l>
+      <r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>ñuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/><s n="gen"/><s n="gen"/></l>
+      <r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>nuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/><s n="gen"/><s n="gen"/></l>
+      <r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>nuqayku<s n="prn"/><s n="pers"/><s n="p1ex"/><s n="pl"/><s n="gen"/></l>
+      <r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>ñuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/><s n="gen"/></l>
+      <r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>nuqanchis<s n="prn"/><s n="pers"/><s n="p1in"/><s n="pl"/><s n="gen"/></l>
+      <r>nuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l>
+      <r>tuyo<s n="adj"/><s n="pos"/></r></p></e>
+    <e><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="gen"/></l>
+      <r>vuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>qan<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="gen"/><s n="gen"/></l>
+      <r>vuestro<s n="adj"/><s n="pos"/></r></p></e>
+    <e><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l>
+      <r>suyo<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/></l>
+      <r>suyo<s n="adj"/><s n="pos"/></r></p></e>
+    <e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/><s n="gen"/></l>
+      <r>suyo<s n="adj"/><s n="pos"/></r></p></e>
 
 
     <e><p><l>as<s n="adj"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>

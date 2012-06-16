@@ -9,6 +9,7 @@
 /apertium-quz-spa.quz-spa.t3x -text
 /apertium-quz-spa.quz.lexc -text
 /apertium-quz-spa.quz.twol -text
+/apertium-quz-spa.spa-quz.lrx -text
 /apertium-quz-spa.spa.dix -text svneol=unset#application/xml
 dev/apertium-quz-spa.quz.lexc-OLD -text
 dev/cuento.quz-var.txt -text

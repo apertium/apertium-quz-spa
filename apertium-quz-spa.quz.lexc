@@ -206,8 +206,6 @@ PronombresPersonales ;
 PronombresDemItg ;
 Preadjetivos ;
 Adverbios ;
-! AdverbiosInvariables ; - maypichus
-! Adverbios-Itg ; - may adv > may prn
 Adverbios-Subst ;
 Adverbios-Temp ;
 Numerales ;
@@ -390,7 +388,6 @@ LEXICON ADJ-PL
 LEXICON ADJ-DER
 %<dim%>:%>cha ADJ-PL ;
 ADJ-PL ;
-CLIT-lla ;
 
 
 !!!! FLEXIÓN VERBAL
@@ -491,13 +488,6 @@ LEXICON NP-ANT-F
 LEXICON ADJ
 %<adj%>: ADJ-DER ;
 
-LEXICON ADJ-DEM
-%<adj%>%<dem%>: # ;
-
-LEXICON ADJ-DET
-! invariables, en posición atributiva
-%<adj%>: # ;
-
 LEXICON ADJ-M
 %<adj%>: ADJ-DER ;
 
@@ -538,12 +528,6 @@ LEXICON ADV-taq
 
 LEXICON ADV-Invar
 %<adv%>: # ;
-
-! LEXICON ADV-Itg
-! %<adv%>%<itg%>: N-FLEX-Caso ;
-
-! LEXICON ADV-Itg-Invar
-! %<adv%>%<itg%>: # ;
 
 LEXICON ADV-Itg-Clit
 %<adv%>%<itg%>: CLIT-puni ;
@@ -668,34 +652,6 @@ warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 
 
 LEXICON Adjetivos
-kay:kay ADJ-DEM ;     ! este, aquí, etc.
-chay:chay ADJ-DEM ;    ! ese, ahí, etc.
-haqay:haqay ADJ-DEM ;   ! aquel, allí, etc.
-
-nuqanchispa:nuqanchispa ADJ-DET ; ! "nuestro"
-nuqaq:nuqaq ADJ-DET ; ! "mío"
-nuqaqpa:nuqaqpa ADJ-DET ; ! "mío"
-nuqaykuq:nuqaykuq ADJ-DET ; ! "nuestro"
-nuqaykuqpa:nuqaykuqpa ADJ-DET ; ! "nuestro"
-ñuqanchispa:ñuqanchispa ADJ-DET ; ! "nuestro"
-ñuqaq:ñuqaq ADJ-DET ; ! "mío"
-ñuqaqpa:ñuqaqpa ADJ-DET ; ! "mío"
-ñuqaykuq:ñuqaykuq ADJ-DET ; ! "nuestro"
-ñuqaykuqpa:ñuqaykuqpa ADJ-DET ; ! "nuestro"
-paykunaq:paykunaq ADJ-DET ; ! "suyo (pl.)"
-paykunaqpa:paykunaqpa ADJ-DET ; ! "suyo (pl.)"
-paypa:paypa ADJ-DET ; ! "suyo"
-qankunaq:qankunaq ADJ-DET ; ! "vuestro"
-qankunaqpa:qankunaqpa ADJ-DET ; ! "vuestro"
-qanpa:qanpa ADJ-DET ; ! "tuyo"
-
-ima:ima ADJ-DET ; ! "qué"
-pi:pi ADJ-DET ; ! "qué"
-as:as ADJ-DET ; ! "un poco de"
-askha:askha ADJ-DET ; ! "mucho"
-huq:huq ADJ-DET ; ! "otro"
-pisi:pisi ADJ-DET ; ! "poco"
-iskaynin:iskaynin ADJ-DET ; ! "ambos"
 
 allin:bueno ADJ ;   ! "bueno"
 chiri:chiri ADJ ; ! "frío"
@@ -724,7 +680,11 @@ as:as Preadj ; ! "algo, un poco"
 aswan:aswan Preadj ; ! "más"
 sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
 
-
+! as:as ADJ-DET ; ! "un poco de"
+! askha:askha ADJ-DET ; ! "mucho"
+! huq:huq ADJ-DET ; ! "otro"
+! pisi:pisi ADJ-DET ; ! "poco"
+! iskaynin:iskaynin ADJ-DET ; ! "ambos"
 
 
 LEXICON PronombresDemItg
@@ -816,12 +776,6 @@ isqun:isqun NUM ; ! "nueve"
 chunka:chunka NUM ; ! "diez"
 
 
-
-! LEXICON Adverbios-Itg
-!! se portan generalmente como los substantivos, pero toman el clítico correspondiente en preguntas, negaciones y si son indefinidos, no toman el diminutivo
-!! may como prn-itg
-
-
 LEXICON Adverbios-Subst
 !! se portan como nombres
 chay:chay ADV-Subst ;   ! "ahí"
@@ -840,12 +794,7 @@ kunan% p%'unchay:kunan% p%'unchay ADV-Temp ; ! "hoy"
 qaynunchay:qaynunchay ADV-Temp ;        ! "ayer"
 sapa% kuti:sapa% kuti ADV-Temp ;          ! "siempre"
 
-! LEXICON AdverbiosInvariables
-!!! borrado - sólo derivaciones de may prn-itg
-! maypichus:maypichus ADV-Itg-Invar ;         ! "donde"
-! maymanchus:maymanchus ADV-Itg-Invar ;       ! "a donde"
-! maymantachus:maymantachus ADV-Itg-Invar ;   ! "de donde"
-! maytachus:maytachus ADV-Itg-Invar ;         ! "a donde"
+
 
 LEXICON Adverbios
 !! los que toman sólo los clíticos
