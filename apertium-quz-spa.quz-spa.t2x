@@ -120,6 +120,7 @@
     <def-attr n="a_adv-q">
       <attr-item tags="adv.itg"/>
       <attr-item tags="adv.subst"/>
+      <attr-item tags="adv.subst.dem"/>
       <attr-item tags="adv.temp"/>
     </def-attr>
     
@@ -494,6 +495,9 @@
       </equal>
       <equal>
         <clip pos="1" part="a_adv-q"/><lit-tag v="adv.subst"/>
+      </equal>
+      <equal>
+        <clip pos="1" part="a_adv-q"/><lit-tag v="adv.subst.dem"/>
       </equal>
       <equal>
         <clip pos="1" part="a_adv-q"/><lit-tag v="adv.temp"/>

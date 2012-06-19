@@ -13,6 +13,7 @@ LIST Acc = acc ;
 LIST Per = per ;
 LIST P3acc = (px3sg acc) ;
 
+## animados = np, madre, padre, n-genero, pay, etc.
 
 SECTION
 
@@ -23,3 +24,7 @@ REMOVE Per IF (NOT *0 Vmov) (0 P3acc) ;
 		## Mamanta rikun.
 		
 ## REMOVE Per IF (0 Prop) ;
+
+
+## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
+## algo para quitar gen.nom

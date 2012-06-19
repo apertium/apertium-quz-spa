@@ -106,20 +106,21 @@
     <sdef n="cni"      c="Condicional"/>
     <sdef n="imp"      c="Imperativo"/>
 
-    <sdef n="af"		    c="afirmativo -mi"/>
-    <sdef n="rep"			  c=" reportativo -si"/>
-    <sdef n="cnj"				c="conjetural -chá"/>
-    <sdef n="enf"				c="enfático -yá"/>
-    <sdef n="dub"				c="dubitativo -chus"/>
-    <sdef n="rnd"				c="reanudador -ri"/>
-    <sdef n="topi"			c="tópico -qa"/>
-    <sdef n="qst"				c="interrogativo/negativo -chu"/>
-    <sdef n="contr"			c="contrastivo -taq"/>
-    <sdef n="adt"				c="aditivo -pas"/>
-    <sdef n="cnti"			c="continuativo -raq"/>
-    <sdef n="dcnt"			c="discontinuativo -ña"/>
-    <sdef n="dfnt"			c="definitivo -puni"/>
-    <sdef n="lim"				c="limitativo -lla"/>
+    <sdef n="af"        c="afirmativo -mi"/>
+    <sdef n="rep"       c=" reportativo -si"/>
+    <sdef n="cnj"       c="conjetural -chá"/>
+    <sdef n="enf"       c="enfático -yá"/>
+    <sdef n="dub"       c="dubitativo -chus"/>
+    <sdef n="rnd"       c="reanudador -ri"/>
+    <sdef n="topi"      c="tópico -qa"/>
+    <sdef n="qst"       c="interrogativo/negativo -chu"/>
+    <sdef n="contr"     c="contrastivo -taq"/>
+    <sdef n="adt"       c="aditivo -pas"/>
+    <sdef n="cnti"      c="continuativo -raq"/>
+    <sdef n="dcnt"      c="discontinuativo -ña"/>
+    <sdef n="dfnt"      c="definitivo -puni"/>
+    <sdef n="lim"       c="limitativo -lla"/>
+    <sdef n="dim"       c="diminutivo -cha"/>
 
     <sdef n="apos" />
     <sdef n="guio" />
@@ -171,11 +172,11 @@
     <!-- <e><p><l>lla<s n="lim"/></l><r>sólo<s n="adv"/></r></p></e> -->
     
     <!-- SECCIÓN: Conjunciones, relativos -->
-    <e><p><l>chay<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e>
+    <e><p><l>chaymi<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e> <!-- talvez será necesario quitar -mi: != más evid -->
     <e><p><l>hinaspa<s n="cnjadv"/></l> <r>entonces<s n="cnjadv"/></r></p></e>
     <e><p><l>kanpis<s n="cnjadv"/></l>  <r>aunque<s n="cnjadv"/></r></p></e>
     <e><p><l>icha<s n="cnjcoo"/></l>    <r>o<s n="cnjcoo"/></r></p></e>
-    <e><p><l>ichaqa<s n="cnjcoo"/></l>  <r>pero<s n="cnjcoo"/></r></p></e>
+    <e><p><l>icha<s n="cnjcoo"/><s n="topi"/></l>  <r>pero<s n="cnjcoo"/></r></p></e>
     <e><p><l>ima<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>    
 
     
@@ -301,9 +302,9 @@
     <e><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
     <e r="RL"><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-    <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>piqpa<s n="prn"/><s n="itg"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-    <e><p><l>imamanta<s n="adv"/><s n="itg"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
+    <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e> <!--
+    <e><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e> -->
+    <e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
     <e><p><l>may<s n="prn"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
     <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
@@ -319,9 +320,26 @@
 
     
     <!-- SECCIÓN: Adverbios substantivales -->
-    <e><p><l>kay<s n="adv"/><s n="subst"/></l><r>aquí<s n="adv"/></r></p></e>
-    <e><p><l>chay<s n="adv"/><s n="subst"/></l><r>ahí<s n="adv"/></r></p></e>
-    <e><p><l>haqay<s n="adv"/><s n="subst"/></l><r>allí<s n="adv"/></r></p></e>
+    
+    <e><p><l>kay<s n="adv"/><s n="subst"/><s n="dem"/></l><r>aquí<s n="adv"/></r></p></e>
+    <e><p><l>chay<s n="adv"/><s n="subst"/><s n="dem"/></l><r>ahí<s n="adv"/></r></p></e>
+    <e><p><l>haqay<s n="adv"/><s n="subst"/><s n="dem"/></l><r>allí<s n="adv"/></r></p></e>
+    <e><p><l>kay<s n="adv"/><s n="subst"/><s n="dem"/><s n="lim"/></l><r>cerca<s n="adv"/></r></p></e>
+    <e><p><l>kay<s n="adv"/><s n="subst"/><s n="dem"/><s n="dim"/><s n="lim"/></l><r>cerca<s n="adv"/></r></p></e>
+    
+    <!-- tratar las formas en la transferencia
+    <e><p><l>kayllapi<s n="adv"/></l><r>cerca<s n="adv"/></r></p></e>
+    <e><p><l>kayman<s n="adv"/></l><r>hacia<b/>aquí<s n="adv"/></r></p></e>
+    <e><p><l>kaymanta<s n="adv"/></l><r>de<b/>aquí<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>kaypi<s n="adv"/></l><r>aquí<s n="adv"/></r></p></e>
+    <e><p><l>chayman<s n="adv"/></l><r>hacia<b/>ahí<s n="adv"/></r></p></e>
+    <e><p><l>chaymanta<s n="adv"/></l><r>de<b/>ahí<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>chaypi<s n="adv"/></l><r>ahí<s n="adv"/></r></p></e>
+    <e><p><l>haqayman<s n="adv"/></l><r>hacia<b/>allí<s n="adv"/></r></p></e>
+    <e><p><l>haqaymanta<s n="adv"/></l><r>de<b/>allí<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>haqaypi<s n="adv"/></l><r>allí<s n="adv"/></r></p></e>
+    -->
+    
     <e><p><l>hina<s n="adv"/><s n="subst"/></l><r>así<s n="adv"/></r></p></e>
     <e><p><l>hawa<s n="adv"/><s n="subst"/></l><r>afuera<s n="adv"/></r></p></e>
 
@@ -336,17 +354,7 @@
 
     
     <!-- SECCIÓN: Adverbios otros -->
-    
-    <e><p><l>kayllapi<s n="adv"/></l><r>cerca<s n="adv"/></r></p></e>
-    <e><p><l>kayman<s n="adv"/></l><r>hacia<b/>aquí<s n="adv"/></r></p></e>
-    <e><p><l>kaymanta<s n="adv"/></l><r>de<b/>aquí<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>kaypi<s n="adv"/></l><r>aquí<s n="adv"/></r></p></e>
-    <e><p><l>chayman<s n="adv"/></l><r>hacia<b/>ahí<s n="adv"/></r></p></e>
-    <e><p><l>chaymanta<s n="adv"/></l><r>de<b/>ahí<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>chaypi<s n="adv"/></l><r>ahí<s n="adv"/></r></p></e>
-    <e><p><l>haqayman<s n="adv"/></l><r>hacia<b/>allí<s n="adv"/></r></p></e>
-    <e><p><l>haqaymanta<s n="adv"/></l><r>de<b/>allí<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>haqaypi<s n="adv"/></l><r>allí<s n="adv"/></r></p></e>
+        
     <e r="LR"><p><l>hawapi<s n="adv"/></l><r>afuera<s n="adv"/></r></p></e>  
     <e><p><l>muyuyninpi<s n="adv"/></l><r>alrededor<s n="adv"/></r></p></e>
     <e><p><l>qhipamanta<s n="adv"/></l><r>de<b/>atrás<s n="adv"/></r></p></e>

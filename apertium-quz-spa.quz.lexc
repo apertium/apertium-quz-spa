@@ -509,8 +509,7 @@ LEXICON PronDem
 LEXICON PronItg
 %<prn%>%<itg%>: N-DER ;
 
-LEXICON DIGITLEX  ! sólo para numeros en cifra
- 
+LEXICON DIGITLEX  ! sólo para numeros en cifra 
 %<num%>: CLIT-lla ; 
 
 LEXICON NUM
@@ -529,11 +528,11 @@ LEXICON ADV-taq
 LEXICON ADV-Invar
 %<adv%>: # ;
 
-LEXICON ADV-Itg-Clit
-%<adv%>%<itg%>: CLIT-puni ;
-
 LEXICON ADV-Subst
-%<adv%>%<subst%>: N-FLEX-Caso ;
+%<adv%>%<subst%>: N-DER ;
+
+LEXICON ADV-Subst-Dem
+%<adv%>%<subst%>%<dem%>: N-DER ;
 
 LEXICON ADV-Temp
 %<adv%>%<temp%>: N-FLEX-Caso ;   ! por ahora así nomás (podrá salir con locativo)
@@ -653,7 +652,7 @@ warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 
 LEXICON Adjetivos
 
-allin:bueno ADJ ;   ! "bueno"
+allin:allin ADJ ;   ! "bueno"
 chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
@@ -684,7 +683,6 @@ sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
 ! askha:askha ADJ-DET ; ! "mucho"
 ! huq:huq ADJ-DET ; ! "otro"
 ! pisi:pisi ADJ-DET ; ! "poco"
-! iskaynin:iskaynin ADJ-DET ; ! "ambos"
 
 
 LEXICON PronombresDemItg
@@ -692,10 +690,11 @@ LEXICON PronombresDemItg
 kay:kay PronDem ; ! "este, esto"
 chay:chay PronDem ; ! "ese, eso, ello"
 haqay:haqay PronDem ; ! "aquel, aquello"
+
 ima:ima PronItg ; ! "qué"
 pi:pi PronItg ; ! "quién"
-piqpa%<prn%>%<itg%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
-hayk%'a:hayk%'a PronItg ;	! "cuánto", gen "cuándo"
+pi%<prn%>%<itg%>%<gen%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
+hayk%'a:hayk%'a PronItg ;	! "cuánto", genitivo = "cuándo"
 may:may PronItg ;       ! "dónde"
 
 
@@ -758,8 +757,11 @@ yku%<prn%>%<pers%>%<p1ex%>%<pl%>%<dim%>%<lim%>:challayku N-FLEX-Inter ;
 
 LEXICON Pronombres
 !! + gen, pos, gen, dem N-FLEX-Inter
+
+! poner como numerales, pasar los numerales a un lex. de posesivos
 huknin:huknin PRON ; ! "otro"
 iskayninku:iskayninku PRON ; ! "los dos, ambos"
+! iskaynin:iskaynin ADJ-DET ; ! "ambos"
 
 
 
@@ -778,11 +780,12 @@ chunka:chunka NUM ; ! "diez"
 
 LEXICON Adverbios-Subst
 !! se portan como nombres
-chay:chay ADV-Subst ;   ! "ahí"
-haqay:haqay ADV-Subst ; ! "allí"
+kay:kay ADV-Subst-Dem ;     ! "aquí"
+chay:chay ADV-Subst-Dem ;   ! "ahí"
+haqay:haqay ADV-Subst-Dem ; ! "allí"
+
 hawa:hawa ADV-Subst ;   ! "afuera"
 hina:hina ADV-Subst ;   ! "así"
-kay:kay ADV-Subst ;     ! "aquí"
 
 
 LEXICON Adverbios-Temp
@@ -798,54 +801,45 @@ sapa% kuti:sapa% kuti ADV-Temp ;          ! "siempre"
 
 LEXICON Adverbios
 !! los que toman sólo los clíticos
-imamanta:imamanta ADV-Itg-Clit ;   ! "por qué"
 
 alli% allillanta:alli% allillanta ADV ; ! "con atención"
 allillamanta:allillamanta ADV ; ! "lentamente"
-allinta:allinta ADV ; ! "bien"
-anchata:anchata ADV ; ! "mucho"
 arí:arí ADV-Invar ; ! "sí"
-asllata:asllata ADV ; ! "un poco"
 aswanta:aswanta ADV ; ! "más"
-chayman:chayman ADV ; ! "hacia ahí"
-chaymanta:chaymanta ADV ; ! "deahí"
-chaymanta:chaymanta ADV ; ! "luego"
-chaypi:chaypi ADV ; ! "ahí"
-haqayman:haqayman ADV ; ! "hacia allí"
-haqaymanta:haqaymanta ADV ; ! "de allí"
-haqaypi:haqaypi ADV ; ! "allí"
-hawapi:hawapi ADV ; ! "afuera"
-hayk%'aqpis:hayk%'aqpis ADV-taq ; ! "alguna vez / nunca"
-hukmanta:hukmanta ADV ; ! "otra vez"
-ichapas:ichapas ADV-taq ; ! "probablemente"
-kayllapi:kayllapi ADV ; ! "cerca"
-kayman:kayman ADV ; ! "hacia aquí"
-kaymanta:kaymanta ADV ; ! "de aquí"
-kaypi:kaypi ADV ; ! "aquí"
 kuska:kuska ADV-lla ; ! "junto"
 mana:mana ADV ; ! "no"
 manapuni%<adv%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
-muyuyninpi:muyuyninpi ADV ; ! "alrededor"
 ña:ña ADV ; ! "ya"
-pisillata:pisillata ADV ; ! "poco"
-qhipamanta:qhipamanta ADV ; ! "de atrás"
 tukuy% hinantinpi:tukuy% hinantinpi ADV ; ! "en todas partes"
 usqhaylla:usqhaylla ADV ; ! "rápidamente"
 
+allinta:allinta ADV ; ! "bien"
 
+anchata:anchata ADV ; ! "mucho"
+asllata:asllata ADV ; ! "un poco"
+pisillata:pisillata ADV ; ! "poco"
+
+hawapi:hawapi ADV ; ! "afuera"
+muyuyninpi:muyuyninpi ADV ; ! "alrededor"
+qhipamanta:qhipamanta ADV ; ! "de atrás"
+
+hayk%'aqpis:hayk%'aqpis ADV-taq ; ! "alguna vez / nunca"
+hukmanta:hukmanta ADV ; ! "otra vez"
+ichapas:ichapas ADV-taq ; ! "probablemente"
+
+
+
+LEXICON Conjunciones
+chaymi%<cnjadv%>:chaymi # ;    ! "así que" - talvez será necesario quitar -mi: no puede haber más que un evid
+hinaspa:hinaspa CONJ-Adv-Final ;    ! "entonces"
+kanpis:kanpis CONJ-Adv ;            ! "aunque"
+icha:icha CONJ-Coord ;              ! "o"
+icha%<cnjcoo%>%<topi%>:ichaqa # ;          ! "pero"
+ima:ima CONJ-Coord-Final ;          ! "y"
 
 
 LEXICON Interjeciones
 alaláw:alaláw Interj ;      ! "Qué frío!"
-
-LEXICON Conjunciones
-chay:chay CONJ-Adv-Final ;    ! "así que"
-hinaspa:hinaspa CONJ-Adv-Final ;    ! "entonces"
-kanpis:kanpis CONJ-Adv ;            ! "aunque"
-icha:icha CONJ-Coord ;              ! "o"
-ichaqa:ichaqa CONJ-Coord ;          ! "pero"
-ima:ima CONJ-Coord-Final ;          ! "y"
-
 
 
 
