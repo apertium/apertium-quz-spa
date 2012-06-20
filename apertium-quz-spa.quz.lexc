@@ -246,7 +246,7 @@ LEXICON CLIT-chu
 CLIT-Final ;
 
 LEXICON CLIT-taq
-%<contr%>:%>taq # ;
+%<contr%>:%>taq CLIT-chu # ;
 %<contr%>%<excl%>:%>táq # ;
 CLIT-chu ;
 
@@ -649,6 +649,8 @@ sipas:sipas ADJ-F ;   ! "joven"
 qhari:qhari ADJ ;   ! "macho, masculino, hombre"
 warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 
+! nombres de lugar/tiempo donde -ntin = todo: hinantin, mundontin, tiqsimuyuntin, p'unchaynintin, pachantin... - en lista en trasferencia
+! hisp'anismos nom + plural en -s, -es, adj + m/f -o/a + pl -s, -es
 
 LEXICON Adjetivos
 
