@@ -107,6 +107,7 @@
     <sdef n="imp"      c="Imperativo"/>
     
     <sdef n="caus"      c="Causativo"/>
+    <sdef n="refl"      c="Reflexivo"/>
 
     <sdef n="af"        c="afirmativo -mi"/>
     <sdef n="rep"       c="reportativo -si"/>

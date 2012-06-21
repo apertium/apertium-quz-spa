@@ -114,7 +114,7 @@ Multichar_Symbols
 %<caus%>      ! causativo -chi
 %<bn%>        ! benefactivo -pu (aplicativo?)
 %<rec%>       ! recíproco (-na + -ku / -chi / -pu)
-%<ref%>         ! reflexivo -ku
+%<refl%>         ! reflexivo -ku
 
 %<pri%>       ! presente
 %<past%>       ! pasado -rqa
@@ -462,7 +462,7 @@ LEXICON V-Progr
 V-LIM ;
 
 LEXICON V-DER
-%<ref%>:ku V-Progr ;
+%<refl%>:ku V-Progr ;        ! !!!! reflexivo = pronombre :-(
 %<caus%>:chi V-Progr ;
 %<caus%>%<ref%>:chiku V-Progr ;
 V-Progr ;
