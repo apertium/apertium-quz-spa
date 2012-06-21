@@ -105,9 +105,11 @@
     <sdef n="fts"      c="Futuro de subjuntivo"/>
     <sdef n="cni"      c="Condicional"/>
     <sdef n="imp"      c="Imperativo"/>
+    
+    <sdef n="caus"      c="Causativo"/>
 
     <sdef n="af"        c="afirmativo -mi"/>
-    <sdef n="rep"       c=" reportativo -si"/>
+    <sdef n="rep"       c="reportativo -si"/>
     <sdef n="cnj"       c="conjetural -chá"/>
     <sdef n="enf"       c="enfático -yá"/>
     <sdef n="dub"       c="dubitativo -chus"/>
@@ -475,6 +477,7 @@
     <e><p><l>chiri<s n="n"/></l><r>frío<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>clima<s n="n"/></l><r>clima<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>irqi<s n="n"/></l><r>niño<s n="n"/></r></p></e>
+    <e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kuti<s n="n"/></l><r>vez<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kutichiku<s n="n"/></l><r>respuesta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>maki<s n="n"/></l><r>mano<s n="n"/><s n="f"/></r></p></e>
@@ -557,6 +560,7 @@
     
     <e><p><l>achhuykuy<s n="vblex"/><s n="vm"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
     <e><p><l>hamuy<s n="vblex"/><s n="vm"/></l><r>venir<s n="vblex"/></r></p></e>
+    <e><p><l>haykuy<s n="vblex"/><s n="vm"/></l><r>entrar<s n="vblex"/></r></p></e>
     <e><p><l>phaway<s n="vblex"/><s n="vm"/></l><r>correr<s n="vblex"/></r></p></e>
     <e><p><l>puriy<s n="vblex"/><s n="vm"/></l><r>caminar<s n="vblex"/></r></p></e>
     <e><p><l>riy<s n="vblex"/><s n="vm"/></l><r>ir<s n="vblex"/></r></p></e>
@@ -569,7 +573,12 @@
     <!-- SECCIÓN: Verbos "transitivos" en español (que requieren de un complemento) -->
     <!-- revisar, toda la vaina esa... -->
     
+    <e><p><l>akllay<s n="vblex"/></l><r>elegir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>akllay<s n="vblex"/><s n="tv"/><s n="ref"/></l><r>elegir<s n="vblex"/><s n="tv"/></r></p></e>
     <e r="RL"><p><l>atiy<s n="vblex"/></l><r>lograr<s n="vblex"/></r></p></e>
+    <e><p><l>churay<s n="vblex"/></l><r>poner<s n="vblex"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/></l><r>crear<s n="vblex"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/></l><r>ordenar<s n="vblex"/><s n="tv"/></r></p></e>
     <e r="LR"><p><l>kapuy<s n="vblex"/></l><r>tener<s n="vblex"/></r></p></e>
     <e><p><l>kutichiy<s n="vblex"/></l><r>contestar<s n="vblex"/></r></p></e>
     <e><p><l>maskhay<s n="vblex"/></l><r>buscar<s n="vblex"/></r></p></e>
@@ -605,6 +614,7 @@
     <e><p><l>imanay<s n="vblex"/></l><r>qué<b/>hacer<s n="vblex"/></r></p></e>
     <e><p><l>hinay<s n="vblex"/></l><r>hacer<s n="vblex"/><g><b/>así</g></r></p></e>
     <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
+    <e><p><l>kawsay<s n="vblex"/></l><r>vivir<s n="vblex"/></r></p></e>
     <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
     <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
     <e><p><l>pakakuy<s n="vblex"/></l><r>esconderse<s n="vblex"/><s n="pron"/></r></p></e>

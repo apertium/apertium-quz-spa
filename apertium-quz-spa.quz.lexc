@@ -114,6 +114,7 @@ Multichar_Symbols
 %<caus%>      ! causativo -chi
 %<bn%>        ! benefactivo -pu (aplicativo?)
 %<rec%>       ! recíproco (-na + -ku / -chi / -pu)
+%<ref%>         ! reflexivo -ku
 
 %<pri%>       ! presente
 %<past%>       ! pasado -rqa
@@ -461,6 +462,9 @@ LEXICON V-Progr
 V-LIM ;
 
 LEXICON V-DER
+%<ref%>:ku V-Progr ;
+%<caus%>:chi V-Progr ;
+%<caus%>%<ref%>:chiku V-Progr ;
 V-Progr ;
 
 
@@ -607,6 +611,7 @@ bulla:bulla N ;     ! "ruido"
 chiri:chiri N ; ! "frío"
 clima:clima N ; ! "clima"
 irqi:irqi N ; ! "niño"
+kawsay:kawsay N ;   ! vida
 kuti:kuti N ; ! "vez"
 kutichiku:kutichiku N ; ! "respuesta"
 maki:maki N ; ! "mano"
@@ -855,7 +860,10 @@ pachaña% kay:pachaña% ka V-EX ;   ! "ser hora de"
 
 LEXICON VerbosTrans
 atiy:ati V-TV ; ! "lograr"
+akllay:aklla V-TV ; ! "elegir"
+churay:chura V-TV ; ! "poner"
 hinay:hina V-TV ;     ! "hacer así"
+kamay:kama V-TV ;       ! "crear"
 maskhay:maskha V-TV ; ! "buscar"
 mikhuy:mikhu V-TV ; ! "comer"
 millp%'uy:millp%'u V-TV ; ! "tomar"
@@ -888,6 +896,7 @@ imanay:imana V-IV ;    ! "qué hacer" (verbo interrogativo)
 asiy:asi V-IV ; ! "reír"
 atiy:ati V-IV ; ! "poder" - BORRAR
 kashay:kasha V-IV ; ! "estar"
+kawsay:kawsa V-IV ;     ! vivir
 pakakuy:pakaku V-IV ;  ! "esconderse"
 pukllay:puklla V-IV ; ! "jugar"
 pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
@@ -899,6 +908,7 @@ uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
 LEXICON VerbosMov
 achhuykuy:achhuyku V-VM ; ! "acercarse"  - poner %{U%}
 hamuy:hamu V-VM ; ! "venir"              - poner %{bU%}
+haykuy:hayku V-VM ; ! "entrar"
 phaway:phawa V-VM ; ! "correr"
 puriy:puri V-VM ; ! "caminar"
 riy:ri V-VM ; ! "ir"
