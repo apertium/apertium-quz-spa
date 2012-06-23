@@ -93,7 +93,8 @@
     <sdef n="px2pl"    c="Segunda persona plural posesiva"/>
     <sdef n="px3pl"    c="Tercera persona plural posesiva"/>
     
-    <sdef n="pp"       c="Participio"/>
+    <sdef n="pp"       c="Participio pasado (-sqa/-do)"/>
+    <sdef n="pf"       c="Participio futuro (-na)"/>
     <sdef n="inf"      c="Infinitivo"/>
     <sdef n="ger"      c="Gerundio"/>
     <sdef n="pri"      c="Presente de indicativo"/>
@@ -108,6 +109,7 @@
     
     <sdef n="caus"      c="Causativo"/>
     <sdef n="refl"      c="Reflexivo"/>
+    <sdef n="rec"       c="Recíproco"/>
 
     <sdef n="af"        c="afirmativo -mi"/>
     <sdef n="rep"       c="reportativo -si"/>
@@ -456,11 +458,15 @@
     <e><p><l>huch'uy<s n="adj"/></l><r>pequeño<s n="adj"/></r></p></e>
     <e><p><l>kusisqa<s n="adj"/></l><r>feliz<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>machu<s n="adj"/></l><r>viejo<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>paya<s n="adj"/><s n="f"/></l><r>viejo<s n="adj"/></r></p></e>
+    <e><p><l>qispi<s n="vblex"/><s n="iv"/><s n="pp"/></l><r>libre<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>wakcha<s n="adj"/></l><r>pobre<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>qhapaq<s n="adj"/></l><r>rico<s n="adj"/></r></p></e>
     <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
     <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
     <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>agradable<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>wakcha<s n="adj"/></l><r>pobre<s n="adj"/><s n="mf"/></r></p></e>
+    <e r="RL"><p><l>wakcha<s n="n"/></l><r>huérfano<s n="adj"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
 
     </section>
@@ -491,15 +497,19 @@
     <e><p><l>p'isqu<s n="n"/></l><r>ave<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>gente<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>runa<s n="n"/></l><r>hombre<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>persona<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>humano<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>runamasi<s n="n"/></l><r>prójimo<s n="n"/></r></p></e>
     <e><p><l>sach'a<s n="n"/></l><r>árbol<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>uma<s n="n"/></l><r>cabeza<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unu<s n="n"/></l><r>agua<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>uyarikuy<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>wakcha<s n="n"/></l><r>huérfano<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>wasi<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wata<s n="n"/></l><r>año<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>yawar<s n="n"/></l><r>sangre<s n="n"/><s n="f"/></r></p></e>
@@ -589,10 +599,17 @@
     <e r="LR"><p><l>munaykuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>
     <e><p><l><g>sinchita<b/></g>munakuy<s n="vblex"/></l><r>encantar<s n="vblex"/></r></p></e>
     <e><p><l>pakay<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
+    <e><p><l>qispiy<s n="vblex"/><s n="caus"/></l><r>librar<s n="vblex"/></r></p></e>
+    <e><p><l>quy<s n="vblex"/></l><r>dar<s n="vblex"/></r></p></e>
     <e><p><l>qhaway<s n="vblex"/></l><r>mirar<s n="vblex"/></r></p></e>
     <e><p><l>qhawaykuy<s n="vblex"/></l><r>observar<s n="vblex"/></r></p></e>
     <e><p><l>quchikuy<s n="vblex"/></l><r>obtener<s n="vblex"/></r></p></e>
+    <e><p><l>respetay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>rispitay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
     <e><p><l>rikuy<s n="vblex"/></l><r>ver<s n="vblex"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/></l><r>acordar<s n="vblex"/></r></p></e>
+    <e><p><l>riqsiy<s n="vblex"/></l><r>conocer<s n="vblex"/></r></p></e>
+    <e><p><l>riqsiy<s n="vblex"/></l><r>reconocer<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>ruray<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
     <e><p><l>ruway<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
     <e><p><l>tapuy<s n="vblex"/></l><r>preguntar<s n="vblex"/></r></p></e>
@@ -622,6 +639,7 @@
     <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>    
     <e r="LR"><p><l>pukllakuy<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
     <e><p><l>puñuy<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>
+    <e><p><l>qispiy<s n="vblex"/></l><r>librar<s n="vblex"/><s n="pron"/></r></p></e>
     <e><p><l>rimay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
     <e><p><l>ruphamuy<s n="vblex"/></l><r>hacer<g><b/>calor</g><s n="vblex"/></r></p></e>
     <e><p><l>tiyay<s n="vblex"/></l><r>sentar<s n="vblex"/></r></p></e>

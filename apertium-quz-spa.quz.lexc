@@ -253,7 +253,7 @@ CLIT-chu ;
 
 LEXICON CLIT-pas
 %<adt%>:%>pas CLIT-taq ;
-! %<adt%>:%>pis CLIT-taq ;
+%<adt%>:%>pis CLIT-taq ;
 CLIT-taq ;
 
 
@@ -427,6 +427,8 @@ LEXICON V-IMP
 
 LEXICON V-Nom
 ! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
+%<pp%>:sqa N-FLEX-Caso ;
+%<pf%>:na N-FLEX-Caso ;
 N-FLEX-lla-Caso ;
 N-FLEX-Caso-lla ;
 
@@ -465,6 +467,7 @@ LEXICON V-DER
 %<refl%>:ku V-Progr ;        ! !!!! reflexivo = pronombre :-(
 %<caus%>:chi V-Progr ;
 %<caus%>%<ref%>:chiku V-Progr ;
+%<rec%>:naku V-Progr ; 
 V-Progr ;
 
 
@@ -625,12 +628,14 @@ p%'isqu:p%'isqu N ; ! "ave"
 pukllay:pukllay N ; ! "juego"
 qhawana:qhawana N ; ! "ventana"
 runa:runa N ; ! "gente"
+runamasi:runamasi N ;       ! prójimo
 sach%'a:sach%'a N ; ! "árbol"
 tapusqa:tapusqa N ; ! "pregunta"
 tiyana:tiyana N ; ! "silla"
 uma:uma N ; ! "cabeza"
 unu:unu N ; ! "agua"
 uyarikuy:uyarikuy N ; ! "sonido"
+wakcha:wakcha N ;       ! huérfano, pobre
 wasi:wasi N ; ! "casa"
 wata:wata N ; ! "año"
 yawar:yawar N ; ! "sangre"
@@ -664,8 +669,10 @@ chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
 kusisqa:kusisqa ADJ ; ! "feliz"
+qhapaq:qhapaq ADJ ;     ! rico
 q%'uñi:q%'uñi ADJ ; ! "cálido"
 sumaq:sumaq ADJ ; ! "agradable"
+wakcha:wakcha ADJ ; ! pobre, huérfano
 yana:yana ADJ ; ! "negro"
 
 
@@ -785,6 +792,7 @@ isqun:isqun NUM ; ! "nueve"
 chunka:chunka NUM ; ! "diez"
 
 
+
 LEXICON Adverbios-Subst
 !! se portan como nombres
 kay:kay ADV-Subst-Dem ;     ! "aquí"
@@ -875,9 +883,13 @@ sinchita% munakuy:sinchita% munaku V-TV ; ! "encantar"  - poner %{U%}
 pakay:paka V-TV ; ! "esconder"
 qhaway:qhawa V-TV ; ! "mirar"
 qhawaykuy:qhawayku V-TV ; ! "observar"    - poner %{U%}
+quy:qu V-TV ;       ! dar
 quchikuy:quchiku V-TV ; ! "obtener"       - poner %{U%}
+respetay:respeta V-TV ;     ! respetar
+rispitay:rispita V-TV ;     ! respetar
 rikuy:riku V-TV ; ! "ver"
 rimay:rima V-TV ; ! "hablar"
+riqsiy:riqsi V-TV ;     ! conocer, reconocer
 ruray:rura V-TV ; ! "hacer"
 ruway:ruwa V-TV ; ! "hacer"
 tariy:tari V-TV ; ! "encontrar"
@@ -901,6 +913,7 @@ pakakuy:pakaku V-IV ;  ! "esconderse"
 pukllay:puklla V-IV ; ! "jugar"
 pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"
+qispiy:qispi V-IV ;        " ! librarse
 tiyay:tiya V-IV ; ! "sentar"
 uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
 
@@ -925,7 +938,7 @@ LEXICON VerbosImpers
 chirimuy:chirimu V-IMPERS ; ! "hacer frío"
 ruphamuy:ruphamu V-IMPERS ; ! "hacer calor"     - poner %{bU%}
 
-
+! LEXICON VerbosRecibirDar
 
 
 LEXICON Puntuación
