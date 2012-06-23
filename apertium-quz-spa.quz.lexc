@@ -626,19 +626,27 @@ muya:muya N ; ! "jardín"
 ñuñu:ñuñu N ; ! "teta"
 p%'isqu:p%'isqu N ; ! "ave"
 pukllay:pukllay N ; ! "juego"
+qilqa:qilqa N ;     ! texto, escrito
 qhawana:qhawana N ; ! "ventana"
 runa:runa N ; ! "gente"
 runamasi:runamasi N ;       ! prójimo
 sach%'a:sach%'a N ; ! "árbol"
+simi:simi N ;       ! boca, lengua
+sunqu:sunqu N ;     ! corazón
+suyu:suyu N ;       ! país
 tapusqa:tapusqa N ; ! "pregunta"
 tiyana:tiyana N ; ! "silla"
+tukukuy:tukukuy N ;     ! fin
 uma:uma N ; ! "cabeza"
 unu:unu N ; ! "agua"
 uyarikuy:uyarikuy N ; ! "sonido"
 wakcha:wakcha N ;       ! huérfano, pobre
 wasi:wasi N ; ! "casa"
 wata:wata N ; ! "año"
+wawa:wawa N ;       ! niño, hijo
+yarqay:yarqay N ;       ! hambre
 yawar:yawar N ; ! "sangre"
+yuyay:yuyay N ;     ! opinión
 
 
 LEXICON NombresPropios
@@ -672,8 +680,10 @@ kusisqa:kusisqa ADJ ; ! "feliz"
 qhapaq:qhapaq ADJ ;     ! rico
 q%'uñi:q%'uñi ADJ ; ! "cálido"
 sumaq:sumaq ADJ ; ! "agradable"
+tukuy:tukuy ADJ ;      ! todo, entero         - cambiar lex, categoría
 wakcha:wakcha ADJ ; ! pobre, huérfano
 yana:yana ADJ ; ! "negro"
+yuraq:yuraq ADJ ;       ! blanco
 
 
 
@@ -776,6 +786,7 @@ LEXICON Pronombres
 huknin:huknin PRON ; ! "otro"
 iskayninku:iskayninku PRON ; ! "los dos, ambos"
 ! iskaynin:iskaynin ADJ-DET ; ! "ambos"
+tukuy:tukuy PRON ;      ! todo, entero         - cambiar lex, categoría
 
 
 
@@ -892,13 +903,17 @@ rimay:rima V-TV ; ! "hablar"
 riqsiy:riqsi V-TV ;     ! conocer, reconocer
 ruray:rura V-TV ; ! "hacer"
 ruway:ruwa V-TV ; ! "hacer"
+saruy:saru V-TV ;       ! pisar
+sarunchay:saruncha V-TV ;   ! pisar, pisotear
 tariy:tari V-TV ; ! "encontrar"
+taripay:taripa V-TV ;       ! alcanzar, encontrar
 tukuy:tuku V-TV ; ! "terminar" (también IV)
 ukyay:ukya V-TV ;   ! "beber"
 upiy:upi V-TV ;     ! "tomar sopa, sorber"
 upyay:upya V-TV ;   ! "beber"
 uyariy:uyari V-TV ; ! "oír, escuchar"
 yachay:yacha V-TV ; ! "saber, aprender"
+yanapay:yanapa V-TV ;       ! ayudar
 yupay:yupa V-TV ; ! "contar (dinero, números)"
 yuyay:yuya V-TV ; ! "pensar"
 
@@ -913,7 +928,7 @@ pakakuy:pakaku V-IV ;  ! "esconderse"
 pukllay:puklla V-IV ; ! "jugar"
 pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"
-qispiy:qispi V-IV ;        " ! librarse
+qispiy:qispi V-IV ;        ! librarse
 tiyay:tiya V-IV ; ! "sentar"
 uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
 
