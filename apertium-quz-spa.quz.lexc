@@ -429,6 +429,7 @@ LEXICON V-Nom
 ! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
 %<pp%>:sqa N-FLEX-Caso ;
 %<pf%>:na N-FLEX-Caso ;
+%<ag%>:q N-FLEX-POS ;
 N-FLEX-lla-Caso ;
 N-FLEX-Caso-lla ;
 
@@ -611,10 +612,12 @@ LEXICON Nombres
 alqu:alqu N ;     ! "perro"
 animal:animal N ; ! "animal"
 bulla:bulla N ;     ! "ruido"
+chanin:chanin N ;       ! precio
 chiri:chiri N ; ! "frío"
 clima:clima N ; ! "clima"
 hucha:hucha N ;     ! pecado, culpa
 irqi:irqi N ; ! "niño"
+kamachi:kamachi N ;     ! decreto, ley
 kawsay:kawsay N ;   ! vida
 kuti:kuti N ; ! "vez"
 kutichiku:kutichiku N ; ! "respuesta"
@@ -622,12 +625,17 @@ llaqta:llaqta N ;       ! ciudad, pueblo (=gente)
 maki:maki N ; ! "mano"
 mesa:mesa N ; ! "mesa"
 michi:michi N ; ! "gato"
+misti:misti N ;     ! mestizo
+muchuy% wasi:muchuy% wasi N ;   ! cárcel
 muya:muya N ; ! "jardín"
 ñan:ñan N ;     ! camino
 ñawi:ñawi N ; ! "ojo"
 ñuñu:ñuñu N ; ! "mama"
 ñuñu:ñuñu N ; ! "teta"
+pacha:pacha N ;         ! mundo, universo
+p%'acha:p%'acha N ;     ! ropa
 p%'isqu:p%'isqu N ; ! "ave"
+p%'unchay:p%'unchay N ;     ! día   ----- adv-subst
 pukllay:pukllay N ; ! "juego"
 qilqa:qilqa N ;     ! texto, escrito
 qhawana:qhawana N ; ! "ventana"
@@ -638,6 +646,7 @@ runas% simi:suna% simi N ;  ! quechua
 sach%'a:sach%'a N ; ! "árbol"
 simi:simi N ;       ! boca, lengua
 sunqu:sunqu N ;     ! corazón
+suti:suti N ;       ! nombre
 suyu:suyu N ;       ! país
 tapusqa:tapusqa N ; ! "pregunta"
 tiyana:tiyana N ; ! "silla"
@@ -662,7 +671,10 @@ José:José NP-ANT-M ;
 Jaime:Jaime NP-ANT-M ;
 María:María NP-ANT-F ;
 Daniele:Daniele NP-ANT-F ;
-
+Huñunakusqa% Nacionkuna%<np%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
+Huñunakusqa% Llaqtakuna%<np%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
+Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
+Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
 
 
 
@@ -685,8 +697,11 @@ hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
 kusi:kusi ADJ ;         ! alegre, feliz
 kusisqa:kusisqa ADJ ; ! "feliz"
+millay:millay ADJ ;     ! feo, malo
+musuq:musuq ADJ ;       ! nuevo
 ñawpaq:ñawpaq ADJ ;     ! primero, antiguo
 ñawpa:ñawpa ADJ ;       ! antiguo, anterior
+qasi:qasi ADJ ;         ! tranquilo
 qhapaq:qhapaq ADJ ;     ! rico
 q%'uñi:q%'uñi ADJ ; ! "cálido"
 sumaq:sumaq ADJ ; ! "agradable"
@@ -892,6 +907,8 @@ atiy:ati V-TV ; ! "lograr"
 akllay:aklla V-TV ; ! "elegir"
 churay:chura V-TV ; ! "poner"
 hinay:hina V-TV ;     ! "hacer así"
+hunt%'ay:hunt%'a V-TV ;     ! llenar
+huñuy:huñu V-TV ;           ! juntar, unir
 kamay:kama V-TV ;       ! "crear"
 llank%'ay:llank%'a V-TV ;   ! trabajar
 maskhay:maskha V-TV ; ! "buscar"
@@ -923,6 +940,7 @@ ukyay:ukya V-TV ;   ! "beber"
 upiy:upi V-TV ;     ! "tomar sopa, sorber"
 upyay:upya V-TV ;   ! "beber"
 uyariy:uyari V-TV ; ! "oír, escuchar"
+wisq%'ay:wisq%'a V-TV ;     ! cerrar
 yachay:yacha V-TV ; ! "saber, aprender"
 yanapay:yanapa V-TV ;       ! ayudar
 yupay:yupa V-TV ; ! "contar (dinero, números)"
@@ -943,6 +961,7 @@ puñuy:puñu V-IV ; ! "dormir"
 qispiy:qispi V-IV ;        ! librarse
 tiyay:tiya V-IV ; ! "sentar"
 uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
+yanay:yana V-IV ;       ! servir
 
 
 LEXICON VerbosMov
