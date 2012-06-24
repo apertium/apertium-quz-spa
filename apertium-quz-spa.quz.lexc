@@ -613,14 +613,17 @@ animal:animal N ; ! "animal"
 bulla:bulla N ;     ! "ruido"
 chiri:chiri N ; ! "frío"
 clima:clima N ; ! "clima"
+hucha:hucha N ;     ! pecado, culpa
 irqi:irqi N ; ! "niño"
 kawsay:kawsay N ;   ! vida
 kuti:kuti N ; ! "vez"
 kutichiku:kutichiku N ; ! "respuesta"
+llaqta:llaqta N ;       ! ciudad, pueblo (=gente)
 maki:maki N ; ! "mano"
 mesa:mesa N ; ! "mesa"
 michi:michi N ; ! "gato"
 muya:muya N ; ! "jardín"
+ñan:ñan N ;     ! camino
 ñawi:ñawi N ; ! "ojo"
 ñuñu:ñuñu N ; ! "mama"
 ñuñu:ñuñu N ; ! "teta"
@@ -630,6 +633,8 @@ qilqa:qilqa N ;     ! texto, escrito
 qhawana:qhawana N ; ! "ventana"
 runa:runa N ; ! "gente"
 runamasi:runamasi N ;       ! prójimo
+runasimi:runasimi N ;       ! quechua (lengua)
+runas% simi:suna% simi N ;  ! quechua
 sach%'a:sach%'a N ; ! "árbol"
 simi:simi N ;       ! boca, lengua
 sunqu:sunqu N ;     ! corazón
@@ -644,6 +649,8 @@ wakcha:wakcha N ;       ! huérfano, pobre
 wasi:wasi N ; ! "casa"
 wata:wata N ; ! "año"
 wawa:wawa N ;       ! niño, hijo
+yachaywasi:yachaywasi N ;   ! escuela
+yachay% wasi:yachay% wasi N ;   ! escuela
 yarqay:yarqay N ;       ! hambre
 yawar:yawar N ; ! "sangre"
 yuyay:yuyay N ;     ! opinión
@@ -676,7 +683,10 @@ allin:allin ADJ ;   ! "bueno"
 chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
+kusi:kusi ADJ ;         ! alegre, feliz
 kusisqa:kusisqa ADJ ; ! "feliz"
+ñawpaq:ñawpaq ADJ ;     ! primero, antiguo
+ñawpa:ñawpa ADJ ;       ! antiguo, anterior
 qhapaq:qhapaq ADJ ;     ! rico
 q%'uñi:q%'uñi ADJ ; ! "cálido"
 sumaq:sumaq ADJ ; ! "agradable"
@@ -883,6 +893,7 @@ akllay:aklla V-TV ; ! "elegir"
 churay:chura V-TV ; ! "poner"
 hinay:hina V-TV ;     ! "hacer así"
 kamay:kama V-TV ;       ! "crear"
+llank%'ay:llank%'a V-TV ;   ! trabajar
 maskhay:maskha V-TV ; ! "buscar"
 mikhuy:mikhu V-TV ; ! "comer"
 millp%'uy:millp%'u V-TV ; ! "tomar"
@@ -925,6 +936,7 @@ atiy:ati V-IV ; ! "poder" - BORRAR
 kashay:kasha V-IV ; ! "estar"
 kawsay:kawsa V-IV ;     ! vivir
 pakakuy:pakaku V-IV ;  ! "esconderse"
+paqariy:paqari V-IV ;       ! nacer
 pukllay:puklla V-IV ; ! "jugar"
 pukllakuy:pukllaku V-IV ; ! "jugar (con gusto)"
 puñuy:puñu V-IV ; ! "dormir"
@@ -935,6 +947,7 @@ uyarichikuy:uyarichiku V-IV ; ! "dejarse oír, escuchar, oírse, escucharse"
 
 LEXICON VerbosMov
 achhuykuy:achhuyku V-VM ; ! "acercarse"  - poner %{U%}
+chayay:chaya V-VM ;     ! llegar
 hamuy:hamu V-VM ; ! "venir"              - poner %{bU%}
 haykuy:hayku V-VM ; ! "entrar"
 phaway:phawa V-VM ; ! "correr"
