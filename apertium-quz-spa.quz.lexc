@@ -6,6 +6,23 @@
 
 Multichar_Symbols
 
+! escaped symbols
+%'            ! apóstrofe de las consnantes glotalizadas (p', t', ch', k', q')
+%>            ! Morpheme boundary
+% 
+
+! morfofonémica
+%{M%}         ! m/n en evidencial (-mi/-n) (M + bI)
+%{P%}         ! p/q en genitivo (-pa/-q) (P + bA)
+%{bA%}        ! buffer A (en genitivo)
+%{bI%}         ! buffer I (en evidenciales)
+%{bnI%}         ! buffer I (en -ni)
+%{bN%}        ! buffer N en-ni delante ciertos sufijos desp. de consonante (N + bI)
+%{bK%}        ! buffer "k" que puede desaparecer: -yku > -yu
+%{bQ%}        ! buffer "q" que puede desaparecer: -rqu > -ru
+%{bU%}        ! buffer "u" que desaparece delante de -mu (mu + pu > mpu)
+%{U%}         ! U que puede cambiar en "a": -yku > -yka
+
 ! clases de palabra, subtipos
 %<n%>         ! nombre
 %<np%>        ! nombre propio
@@ -149,24 +166,6 @@ Multichar_Symbols
 %<excl%>        ! exclamativo (ari, á o acento)
 
 ! interrogativo
-
-
-%{M%}         ! m/n en evidencial (-mi/-n) (M + bI)
-%{P%}         ! p/q en genitivo (-pa/-q) (P + bA)
-%{bA%}        ! buffer A (en genitivo)
-%{bI%}         ! buffer I (en evidenciales)
-%{bnI%}         ! buffer I (en -ni)
-%{bN%}        ! buffer N en-ni delante ciertos sufijos desp. de consonante (N + bI)
-%{bK%}        ! buffer "k" que puede desaparecer: -yku > -yu
-%{bQ%}        ! buffer "q" que puede desaparecer: -rqu > -ru
-%{bU%}        ! buffer "u" que desaparece delante de -mu (mu + pu > mpu)
-%{U%}         ! U que puede cambiar en "a": -yku > -yka
-
-      ! genitivo: -pa, -q (-qpa, -paq)
-
-%'            ! apóstrofe de las consnantes glotalizadas (p', t', ch', k', q')
-%>            ! Morpheme boundary
-% 
 
 
 ! Puntuación

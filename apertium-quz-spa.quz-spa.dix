@@ -235,6 +235,8 @@
 
     </section>
     
+    <!-- SECCIÓN: Pronombres -->
+    
     <section id="PRONOMBRES_PERSONALES" type="standard">
     <!-- SECCIÓN: Pronombres personales -->
     <!--
@@ -317,7 +319,6 @@
     </section>
     
     <section id="PRONOMBRES" type="standard">
-    <!-- SECCIÓN: Pronombres -->
     
     <e><p><l>huknin<s n="prn"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
     <e><p><l>huq<s n="adj"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
@@ -346,6 +347,8 @@
     <e><p><l>hayk'a<s n="prn"/><s n="itg"/></l><r>cuánto<s n="prn"/><s n="itg"/></r></p></e>
 
     </section>
+    
+    <!-- SECCIÓN: Adverbios -->
     
     <section id="ADVERBIOS_SUSTANTIVALES" type="standard">
     <!-- SECCIÓN: Adverbios substantivales -->
@@ -414,9 +417,10 @@
    
     </section>
     
-    <section id="ADJETIVOS__DETERMINANTES" type="standard">
-    <!-- SECCIÓN: Adjetivos, determinantes -->
-        
+    <!-- SECCIÓN: Adjetivos -->
+    
+    <section id="ADJETIVOS__POSESIVOS" type="standard">
+    
     <!-- las formas con doble genitivo = -q-pa, probablemente se va a cambiar (gen.gen2) -->
     <e><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l>
       <r>mío<s n="adj"/><s n="pos"/></r></p></e>
@@ -450,8 +454,11 @@
       <r>suyo<s n="adj"/><s n="pos"/></r></p></e>
     <e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/><s n="gen"/></l>
       <r>suyo<s n="adj"/><s n="pos"/></r></p></e>
-
-
+    
+    </section>  
+    
+    <section id="ADJETIVOS__DETERMINANTES" type="standard">
+    
     <e><p><l>as<s n="adj"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>askha<s n="adj"/></l><r>mucho<s n="det"/><s n="qnt"/></r></p></e>
     <e><p><l>pisi<s n="adj"/></l><r>poco<s n="det"/><s n="qnt"/></r></p></e>
@@ -459,18 +466,11 @@
     <e><p><l>tukuy<s n="adj"/></l><r>entero<s n="adj"/></r></p></e>
 
     <e><p><l>allin<s n="adj"/></l><r>bueno<s n="adj"/></r></p></e>
-    <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>universal<s n="adj"/></r></p></e>
-    <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>mundial<s n="adj"/></r></p></e>
-    <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>de<b/>todo<b/>el<b/>mundo<s n="adj"/></r></p></e>
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>hatun<s n="adj"/></l><r>grande<s n="adj"/><s n="mf"/></r></p></e>
-    <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>culpable<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>huch'uy<s n="adj"/></l><r>pequeño<s n="adj"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>gobernante<s n="adj"/><s n="mf"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/></l><r>gobernante<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>kusi<s n="adj"/></l><r>feliz<s n="adj"/><s n="mf"/></r></p></e>
-    <e><p><l>kusisqa<s n="adj"/></l><r>alegre<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>machu<s n="adj"/></l><r>viejo<s n="adj"/></r></p></e>
     <e><p><l>mana<b/>allin<s n="adj"/></l><r>malo<s n="adj"/></r></p></e>
     <e><p><l>musuq<s n="adj"/></l><r>nuevo<s n="adj"/></r></p></e>
@@ -479,7 +479,6 @@
     <e><p><l>ñawpa<s n="adj"/></l><r>antiguo<s n="adj"/></r></p></e>
     <e><p><l>ñawpaq<s n="adj"/></l><r>primero<s n="adj"/></r></p></e>
     <e><p><l>qasi<s n="adj"/></l><r>tranquilo<s n="adj"/></r></p></e>
-    <e><p><l>qispi<s n="vblex"/><s n="iv"/><s n="pp"/></l><r>libre<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>qhapaq<s n="adj"/></l><r>rico<s n="adj"/></r></p></e>
     <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
     <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
@@ -487,53 +486,49 @@
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
     <e><p><l>wakcha<s n="adj"/></l><r>pobre<s n="adj"/><s n="mf"/></r></p></e>
     <e r="RL"><p><l>wakcha<s n="n"/></l><r>huérfano<s n="adj"/></r></p></e>
-    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="adj"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
     <e><p><l>yuraq<s n="adj"/></l><r>blanco<s n="adj"/></r></p></e>
 
     </section>
     
-    <section id="ADJETIVOS_HISPANISMOS" type="standard">
-    <e><p><l>libre<s n="adj"/></l><r>libre<s n="adj"/></r></p></e>
+    <section id="ADJETIVOS_DERIVADOS" type="standard">    
+    
+    <e><p><l>kusisqa<s n="adj"/></l><r>alegre<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>universal<s n="adj"/></r></p></e>
+    <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>mundial<s n="adj"/></r></p></e>
+    <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>de<b/>todo<b/>el<b/>mundo<s n="adj"/></r></p></e>
+    <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>culpable<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>gobernante<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/></l><r>gobernante<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>qispi<s n="vblex"/><s n="iv"/><s n="pp"/></l><r>libre<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="adj"/></r></p></e>
+    <e><p><l>yuyay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>razonable<s n="adj"/><s n="mf"/></r></p></e>
+    
     </section>
     
-    <section id="SUSTANTIVOS" type="standard">
+    <section id="ADJETIVOS_HISPANISMOS" type="standard">
+      
+    <e><p><l>libre<s n="adj"/></l><r>libre<s n="adj"/></r></p></e>
+    
+    </section>
+    
     <!-- SECCIÓN: Sustantivos -->
     
+    <section id="SUSTANTIVOS" type="standard">
+    
     <e><p><l>alqu<s n="n"/></l><r>perro<s n="n"/></r></p></e>
-    <e><p><l>animal<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>bulla<s n="n"/></l><r>ruido<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chanin<s n="n"/></l><r>precio<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chiri<s n="n"/></l><r>frío<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>clima<s n="n"/></l><r>clima<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>hucha<s n="n"/></l><r>pecado<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>hucha<s n="n"/></l><r>culpa<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>pecador<s n="n"/></r></p></e>
-    <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>culpable<s n="n"/><s n="mf"/></r></p></e>
-    <e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>reunión<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>asociación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>irqi<s n="n"/></l><r>niño<s n="n"/></r></p></e>
     <e><p><l>kamachi<s n="n"/></l><r>ley<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kamachi<s n="n"/></l><r>decreto<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>jefe<s n="n"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/></l><r>jefe<s n="n"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>gobernante<s n="n"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/></l><r>gobernante<s n="n"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/><s n="pl"/></l><r>gobierno<s n="n"/><s n="sg"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/><s n="pl"/></l><r>autoridad<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/><s n="pl"/></l><r>gobierno<s n="n"/><s n="sg"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/><s n="pl"/></l><r>autoridad<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>régimen<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>regla<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>decreto<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>organización<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kuti<s n="n"/></l><r>vez<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kutichiku<s n="n"/></l><r>respuesta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>llaqta<s n="n"/></l><r>pueblo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>llaqta<s n="n"/></l><r>ciudad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>maki<s n="n"/></l><r>mano<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>mesa<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>michi<s n="n"/></l><r>gato<s n="n"/></r></p></e>
     <e><p><l>misti<s n="n"/></l><r>mestizo<s n="n"/></r></p></e>
     <e><p><l>muchuy<b/>wasi<s n="n"/></l><r>cárcel<s n="n"/><s n="f"/></r></p></e>
@@ -543,18 +538,16 @@
     <e><p><l>ñuñu<s n="n"/></l><r>mama<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>ñuñu<s n="n"/></l><r>teta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pacha<s n="n"/></l><r>mundo<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>p'acha<s n="n"/></l><r>ropa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>p'isqu<s n="n"/></l><r>ave<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>p'unchay<s n="n"/></l><r>día<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qilqa<s n="n"/></l><r>texto<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>gente<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>hombre<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>persona<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>humano<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>runamasi<s n="n"/></l><r>prójimo<s n="n"/></r></p></e>
+    <e><p><l>runa<b/>masi<s n="n"/></l><r>prójimo<s n="n"/></r></p></e>
     <e><p><l>runasimi<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>runa<b/>simi<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>sach'a<s n="n"/></l><r>árbol<s n="n"/><s n="m"/></r></p></e>
@@ -563,29 +556,18 @@
     <e><p><l>simi<s n="n"/></l><r>idioma<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>sunqu<s n="n"/></l><r>corazón<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>suti<s n="n"/></l><r>nombre<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
     <e><p><l>suyu<s n="n"/></l><r>país<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>tukukuy<s n="n"/></l><r>fin<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>uma<s n="n"/></l><r>cabeza<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unu<s n="n"/></l><r>agua<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>uyarikuy<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>wakcha<s n="n"/></l><r>huérfano<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>wasi<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wawa<s n="n"/></l><r>niño<s n="n"/></r></p></e>
     <e><p><l>wawa<s n="n"/></l><r>hijo<s n="n"/></r></p></e>
     <e><p><l>wata<s n="n"/></l><r>año<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>saber<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>conocimiento<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="n"/></r></p></e>
     <e r="LR"><p><l>yachaywasi<s n="n"/></l><r>escuela<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>yachay<b/>wasi<s n="n"/></l><r>escuela<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>yarqay<s n="n"/></l><r>hambre<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>yawar<s n="n"/></l><r>sangre<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>yuyay<s n="n"/></l><r>opinión<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>yuyay<s n="n"/></l><r>razón<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>yuyay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>razonable<s n="n"/></r></p></e>
 
     
     <e><p><l>ahina<s n="n"/></l><r>ejemplo<s n="n"/><s n="m"/></r></p></e>
@@ -683,7 +665,41 @@
     <e><p><l>t'ira<s n="n"/></l><r>mellizo<s n="n"/></r></p></e>
     <e><p><l>wispa<s n="n"/></l><r>gemelo<s n="n"/></r></p></e>
 
-
+    </section>
+    
+    <section id="SUSTANTIVOS_DERIVADOS" type="standard">
+    
+    <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>pecador<s n="n"/></r></p></e>
+    <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>culpable<s n="n"/><s n="mf"/></r></p></e>
+    <e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>reunión<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>asociación<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>jefe<s n="n"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/></l><r>jefe<s n="n"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>gobernante<s n="n"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/></l><r>gobernante<s n="n"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/><s n="pl"/></l><r>gobierno<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/><s n="pl"/></l><r>autoridad<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/><s n="pl"/></l><r>gobierno<s n="n"/><s n="sg"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="ag"/><s n="pl"/></l><r>autoridad<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>régimen<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>regla<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>decreto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>organización<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
+    <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tukukuy<s n="n"/></l><r>fin<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uyarikuy<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>saber<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>conocimiento<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="n"/></r></p></e>
+    <e><p><l>yuyay<s n="n"/></l><r>opinión<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>yuyay<s n="n"/></l><r>razón<s n="n"/><s n="f"/></r></p></e>    
+      
     </section>
     
     <section id="SUSTANTIVOS_CON_GENERO" type="standard">
@@ -731,8 +747,16 @@
     </section>
     
     <section id="NOMBRES_HISPANISMOS" type="standard">
+      
+    <e><p><l>animal<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>bulla<s n="n"/></l><r>ruido<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>colegio<s n="n"/><s n="f"/></l><r>colegio<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>clima<s n="n"/></l><r>clima<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>mesa<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
+    
     </section>
+    
+    <!-- SECCIÓN: Verbos -->
     
     <section id="VERBOS" type="standard">
     <!-- SECCIÓN: Verbos modales, auxiliares, & sim. -->
@@ -757,7 +781,6 @@
     <e><p><l>puriy<s n="vblex"/><s n="vm"/></l><r>caminar<s n="vblex"/></r></p></e>
     <e><p><l>riy<s n="vblex"/><s n="vm"/></l><r>ir<s n="vblex"/></r></p></e>
     <e><p><l>ripuy<s n="vblex"/><s n="vm"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
-
     
     </section>
     
@@ -811,7 +834,6 @@
     <e><p><l>yanapay<s n="vblex"/></l><r>ayudar<s n="vblex"/></r></p></e>
     <e><p><l>yupay<s n="vblex"/></l><r>contar<s n="vblex"/></r></p></e> <!-- 1, 2, 3... -->
     <e><p><l>yuyay<s n="vblex"/></l><r>pensar<s n="vblex"/></r></p></e>
-
     
     </section>
     
