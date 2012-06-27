@@ -605,6 +605,12 @@ qhari% wawa:qhari% wawa N-M ;   ! "hijo (de su madre), bebé"
 warmi% wawa:warmi% wawa N-F ; ! "hija (de su madre), bebé"
 qhari% irqi:qhari% irqi N-M ;   ! "niño"
 warmi% irqi:warmi% irqi N-F ; ! "niña"
+anpullu:anpullu N-F ;     ! bisnieta
+apucha:apucha N-M ;       ! abuelo
+apuchi:apuchi N-M ;       ! tatarabuelo
+aqi:aqi N-F ;     ! suegra
+awalla:awalla N-F ;       ! gemela
+wispalla:wispalla N-F ;       ! gemela
 
 
 LEXICON Nombres
@@ -663,6 +669,87 @@ yachay% wasi:yachay% wasi N ;   ! escuela
 yarqay:yarqay N ;       ! hambre
 yawar:yawar N ; ! "sangre"
 yuyay:yuyay N ;     ! opinión
+
+ahina:ahina N ;     ! ejemplo
+achachilla:achachilla N ;       ! milagro
+achala:achala N ;       ! adorno
+achalayki:achalayki N ;     ! lujo
+achiwa:achiwa N ;       ! parasol
+achuma% qhiwillu:achuma% qhiwillu N ;       ! cactus
+aka:aka N ;     ! caca
+aka% k%'uchu:aka% k%'uchu N ;       ! letrina
+aka% siki:aka% siki N ;     ! culo de mierda
+akana% wasi:akana% wasi N ;     ! baño
+akawara:akawara N ;     ! pañal
+akilla:akilla N ;       ! vaso
+akulli:akulli N ;       ! masticada
+akulliy% hora:akulliy% hora N ;     ! merienda
+akupana:akupana N ;     ! arrebol
+allachu:allachu N ;     ! azada
+allin% ch%'itikay:allin% ch%'itikay N ;     ! vivacidad
+allin% ruway:allin% ruway N ;       ! beneficio
+allin% supay:allin% supay N ;       ! ángel bueno
+allin% yuyay:allin% yuyay N ;       ! conciencia
+almilla:almilla N ;     ! almilla
+alqa:alqa N ;       ! fallo
+amawta:amawta N ;       ! maestro
+ana:ana N ;     ! lunar
+añaka:añaka N ;     ! golosina
+ankalli:ankalli N ;     ! rebelión
+antawara:antawara N ;       ! arrebol
+anti% unquy:anti% unquy N ;     ! paludismo
+antuta:antuta N ;       ! arco
+apachita:apachita N ;       ! apacheta
+apu:apu N ;     ! señor
+apu% kay:apu% kay N ;       ! majestad
+apu% suntur% tiyana:apu% suntur% tiyana N ;     ! anfiteatro
+apuskachay:apuskachay N ;       ! orgullo
+apuski:apuski N ;       ! antepasado
+aqha:aqha N ;       ! chicha
+aqha% wasi:aqha% wasi N ;       ! chichería
+aqtu:aqtu N ;       ! vómito
+aquraki:aquraki N ;     ! desgracia
+aquyraki:aquyraki N ;       ! desgracia
+aranwa:aranwa N ;       ! teatro
+aranway:aranway N ;     ! teatro
+arawa:arawa N ;     ! horca
+aricha:aricha N ;       ! prostituta
+arma:arma N ;       ! baño
+arwi:arwi N ;       ! enredo
+asnapa:asnapa N ;       ! hierba
+aswa:aswa N ;       ! chicha
+ataw:ataw N ;       ! fortuna
+ataw:ataw N ;       ! ventura
+awa:awa N ;     ! tela
+awarank%'u:awarank%'u N ;       ! telar
+awkilla:awkilla N ;     ! bisabuela
+awkillu:awkillu N ;     ! bisabuelo
+awqa:awqa N ;       ! enemigo
+awqalli:awqalli N ;     ! guerrero
+aya:aya N ;     ! cadáver
+aya% marka:aya% marka N ;       ! cementerio
+aya% p%'acha:aya% p%'acha N ;       ! mortaja
+aya% p%'anpana:aya% p%'anpana N ;       ! cementerio
+aya% taki:aya% taki N ;     ! canción funeraria
+aya% wasi:aya% wasi N ;     ! tumba
+ayarachi:ayarachi N ;       ! música funeraria
+ayarichi:ayarichi N ;       ! música funeraria
+aycha:aycha N ;     ! carne
+aycha% wasi:aycha% wasi N ;     ! carnicería
+ayka:ayka N ;       ! diarrea
+ayllu:ayllu N ;     ! familia, comunidad, tribu
+ayllu% kawsay:ayllu% kawsay N ;     ! tradición
+ayllu% suti:ayllu% suti N ;     ! apellido
+ayma:ayma N ;       ! procesión
+ayni:ayni N ;       ! trabajo comunal
+ayñi:ayñi N ;       ! incompatibilidad
+ayu:ayu N ;     ! adúltero
+hamawt%'a:hamawt%'a N ;     ! maestro
+kuri:kuri N ;       ! mellizo
+larq%'i:larq%'i N ;     ! mellizo
+mara:mara N ;       ! madera
+t%'ira:t%'ira N ;       ! mellizo
+wispa:wispa N ;     ! gemelo
 
 
 LEXICON NombresPropios
