@@ -198,9 +198,11 @@ LEXICON Root
 
 Nombres ;
 NombresGenero ;
+NombresDerivados ;
 NombresPropios ;
 Adjetivos ;
 AdjetivosGenero ;
+AdjetivosDerivados ;
 Pronombres ;
 PronombresPersonales ;
 PronombresDemItg ;
@@ -610,77 +612,33 @@ apuchi:apuchi N-M ;       ! tatarabuelo
 aqi:aqi N-F ;     ! suegra
 awalla:awalla N-F ;       ! gemela
 wispalla:wispalla N-F ;       ! gemela
+achachi:achachi N-M ;     ! "anciano"
+aqu:aqu N-F ;     ! "suegra"
+hatucha:hatucha N-F ;     ! "abuela"
+churi:churi N-M ;     ! "hijo"
+imilla:imilla N-F ;       ! "chica"
+inka:inka N-M ;       ! "rey"
+ipa:ipa N-F ;     ! "tía"
 
 
 LEXICON Nombres
 
-alqu:alqu N ;     ! "perro"
-animal:animal N ; ! "animal"
-bulla:bulla N ;     ! "ruido"
-chanin:chanin N ;       ! precio
-chiri:chiri N ; ! "frío"
-clima:clima N ; ! "clima"
-hucha:hucha N ;     ! pecado, culpa
-irqi:irqi N ; ! "niño"
-kamachi:kamachi N ;     ! decreto, ley
-kawsay:kawsay N ;   ! vida
-kuti:kuti N ; ! "vez"
-kutichiku:kutichiku N ; ! "respuesta"
-llaqta:llaqta N ;       ! ciudad, pueblo (=gente)
-maki:maki N ; ! "mano"
-mesa:mesa N ; ! "mesa"
-michi:michi N ; ! "gato"
-misti:misti N ;     ! mestizo
-muchuy% wasi:muchuy% wasi N ;   ! cárcel
-muya:muya N ; ! "jardín"
-ñan:ñan N ;     ! camino
-ñawi:ñawi N ; ! "ojo"
-ñuñu:ñuñu N ; ! "mama"
-ñuñu:ñuñu N ; ! "teta"
-pacha:pacha N ;         ! mundo, universo
-p%'acha:p%'acha N ;     ! ropa
-p%'isqu:p%'isqu N ; ! "ave"
-p%'unchay:p%'unchay N ;     ! día   ----- adv-subst
-pukllay:pukllay N ; ! "juego"
-qilqa:qilqa N ;     ! texto, escrito
-qhawana:qhawana N ; ! "ventana"
-runa:runa N ; ! "gente"
-runamasi:runamasi N ;       ! prójimo
-runasimi:runasimi N ;       ! quechua (lengua)
-runas% simi:suna% simi N ;  ! quechua
-sach%'a:sach%'a N ; ! "árbol"
-simi:simi N ;       ! boca, lengua
-sunqu:sunqu N ;     ! corazón
-suti:suti N ;       ! nombre
-suyu:suyu N ;       ! país
-tapusqa:tapusqa N ; ! "pregunta"
-tiyana:tiyana N ; ! "silla"
-tukukuy:tukukuy N ;     ! fin
-uma:uma N ; ! "cabeza"
-unu:unu N ; ! "agua"
-uyarikuy:uyarikuy N ; ! "sonido"
-wakcha:wakcha N ;       ! huérfano, pobre
-wasi:wasi N ; ! "casa"
-wata:wata N ; ! "año"
-wawa:wawa N ;       ! niño, hijo
-yachaywasi:yachaywasi N ;   ! escuela
-yachay% wasi:yachay% wasi N ;   ! escuela
-yarqay:yarqay N ;       ! hambre
-yawar:yawar N ; ! "sangre"
-yuyay:yuyay N ;     ! opinión
-
-ahina:ahina N ;     ! ejemplo
 achachilla:achachilla N ;       ! milagro
 achala:achala N ;       ! adorno
 achalayki:achalayki N ;     ! lujo
 achiwa:achiwa N ;       ! parasol
 achuma% qhiwillu:achuma% qhiwillu N ;       ! cactus
-aka:aka N ;     ! caca
+ahina:ahina N ;     ! ejemplo
+aka% k%'iski:aka% k%'iski N ;       ! "estreñimiento"
 aka% k%'uchu:aka% k%'uchu N ;       ! letrina
 aka% siki:aka% siki N ;     ! culo de mierda
+aka:aka N ;     ! caca
 akana% wasi:akana% wasi N ;     ! baño
+akapana:akapana N ;     ! "arrebol"
+akatanqa:akatanqa N ;       ! "escarabajo bolero"
 akawara:akawara N ;     ! pañal
 akilla:akilla N ;       ! vaso
+akllu:akllu N ;     ! "dislalia"
 akulli:akulli N ;       ! masticada
 akulliy% hora:akulliy% hora N ;     ! merienda
 akupana:akupana N ;     ! arrebol
@@ -689,24 +647,36 @@ allin% ch%'itikay:allin% ch%'itikay N ;     ! vivacidad
 allin% ruway:allin% ruway N ;       ! beneficio
 allin% supay:allin% supay N ;       ! ángel bueno
 allin% yuyay:allin% yuyay N ;       ! conciencia
+allpa:allpa N ;     ! "tierra"
+allpaqa:allpaqa N ;     ! "alpaca"
 almilla:almilla N ;     ! almilla
 alqa:alqa N ;       ! fallo
+alqu% unquy:alqu% unquy N ;     ! "rabia"
+alqu:alqu N ;       ! "perro"
+alqu:alqu N ;     ! "perro"
 amawta:amawta N ;       ! maestro
 ana:ana N ;     ! lunar
-añaka:añaka N ;     ! golosina
+animal:animal N ; ! "animal"
+anka:anka N ;       ! "águila"
 ankalli:ankalli N ;     ! rebelión
+anta:anta N ;       ! "cobre"
 antawara:antawara N ;       ! arrebol
 anti% unquy:anti% unquy N ;     ! paludismo
+anti:anti N ;       ! "este, oriente"
 antuta:antuta N ;       ! arco
 apachita:apachita N ;       ! apacheta
-apu:apu N ;     ! señor
+api:api N ;     ! "mazamorra"
+apichu:apichu N ;       ! "batata, camote"
 apu% kay:apu% kay N ;       ! majestad
 apu% suntur% tiyana:apu% suntur% tiyana N ;     ! anfiteatro
+apu:apu N ;     ! "apu"
+apu:apu N ;     ! señor
 apuskachay:apuskachay N ;       ! orgullo
 apuski:apuski N ;       ! antepasado
-aqha:aqha N ;       ! chicha
 aqha% wasi:aqha% wasi N ;       ! chichería
+aqha:aqha N ;       ! chicha
 aqtu:aqtu N ;       ! vómito
+aqu:aqu N ;     ! "arena"
 aquraki:aquraki N ;     ! desgracia
 aquyraki:aquyraki N ;       ! desgracia
 aranwa:aranwa N ;       ! teatro
@@ -718,37 +688,196 @@ arwi:arwi N ;       ! enredo
 asnapa:asnapa N ;       ! hierba
 aswa:aswa N ;       ! chicha
 ataw:ataw N ;       ! fortuna
-ataw:ataw N ;       ! ventura
+atuq:atuq N ;       ! "zorro"
 awa:awa N ;     ! tela
 awarank%'u:awarank%'u N ;       ! telar
+awki:awki N ;       ! "anciano, príncipe, auqui"
 awkilla:awkilla N ;     ! bisabuela
 awkillu:awkillu N ;     ! bisabuelo
 awqa:awqa N ;       ! enemigo
 awqalli:awqalli N ;     ! guerrero
-aya:aya N ;     ! cadáver
 aya% marka:aya% marka N ;       ! cementerio
 aya% p%'acha:aya% p%'acha N ;       ! mortaja
 aya% p%'anpana:aya% p%'anpana N ;       ! cementerio
 aya% taki:aya% taki N ;     ! canción funeraria
 aya% wasi:aya% wasi N ;     ! tumba
+aya:aya N ;     ! cadáver
 ayarachi:ayarachi N ;       ! música funeraria
 ayarichi:ayarichi N ;       ! música funeraria
-aycha:aycha N ;     ! carne
 aycha% wasi:aycha% wasi N ;     ! carnicería
+aycha:aycha N ;     ! carne
 ayka:ayka N ;       ! diarrea
-ayllu:ayllu N ;     ! familia, comunidad, tribu
 ayllu% kawsay:ayllu% kawsay N ;     ! tradición
 ayllu% suti:ayllu% suti N ;     ! apellido
+ayllu:ayllu N ;     ! familia, comunidad, tribu
 ayma:ayma N ;       ! procesión
 ayni:ayni N ;       ! trabajo comunal
-ayñi:ayñi N ;       ! incompatibilidad
 ayu:ayu N ;     ! adúltero
+ayñi:ayñi N ;       ! incompatibilidad
+añaka:añaka N ;     ! golosina
+bulla:bulla N ;     ! "ruido"
+ch%'aki:ch%'aki N ;     ! "sed"
+ch%'alla:ch%'alla N ;       ! "brindis"
+ch%'apu:ch%'apu N ;     ! "barba"
+ch%'aqlla:ch%'aqlla N ;     ! "bofetada"
+ch%'arki:ch%'arki N ;       ! "cecina"
+ch%'aska:ch%'aska N ;       ! "lucero"
+ch%'ayña:ch%'ayña N ;       ! "jilguero"
+ch%'in:ch%'in N ;       ! "silencio"
+ch%'isi% mikhuy:ch%'isi% mikhuy N ;     ! "cena"
+ch%'isi:ch%'isi N ;     ! "tarde"
+ch%'isin% ch%'aska:ch%'isin% ch%'aska N ;       ! "lucero de la tarde"
+ch%'iya:ch%'iya N ;     ! "liendre"
+ch%'uklla:ch%'uklla N ;     ! "cabaña, choza"
+ch%'ullu:ch%'ullu N ;       ! "gorra"
+ch%'unchu:ch%'unchu N ;     ! "indígena"
+ch%'unchul:ch%'unchul N ;       ! "intestino, tripa"
+ch%'uru:ch%'uru N ;     ! "caracol"
+ch%'usi:ch%'usi N ;     ! "lechuza"
+ch%'usiq:ch%'usiq N ;       ! "lechuza"
+ch%'usiqa:ch%'usiqa N ;     ! "lechuza"
+ch%'uspa:ch%'uspa N ;       ! "bolsa"
+ch%'uspi:ch%'uspi N ;       ! "mosca"
+ch%'uñu:ch%'uñu N ;     ! "chuño, papa seca"
+chaka% tullu:chaka% tullu N ;       ! "fémur"
+chaka:chaka N ;     ! "muslo, pierna", "puente"
+chakana:chakana N ;     ! "peldaño, escalera"
+chakata:chakata N ;     ! "cruz"
+chaki% kunka:chaki% kunka N ;       ! "tobillo"
+chaki% taklla:chaki% taklla N ;     ! "arado de pie, tirapié"
+chaki:chaki N ;     ! "pata, pie"
+chakra% llank%'aq:chakra% llank%'aq N ;     ! "agricultor, campesino"
+chakra% runa:chakra% runa N ;       ! "campesino"
+chakra:chakra N ;       ! "campo"
+chakra:chakra N ;       ! "sementera"
+challwa:challwa N ;     ! "pescado, pez"
+chani:chani N ;     ! "valor"
+chanin:chanin N ;       ! "precio, valor"
+chanin:chanin N ;       ! precio
+chanka:chanka N ;       ! "muslo, pierna"
+chapi:chapi N ;     ! "estaño"
+charapa:charapa N ;     ! "tortuga"
+chaski% wasi:chaski% wasi N ;       ! "correo"
+chikchi:chikchi N ;     ! "granizo"
+china:china N ;     ! "hembra"
+chincha:chincha N ;     ! "norte"
+chiqa:chiqa N ;     ! "verdad"
+chiqaq:chiqaq N ;       ! "verdad"
+chirapa:chirapa N ;     ! "garúa, llovizna"
+chiri:chiri N ; ! "frío"
+chiwchi:chiwchi N ;     ! "pollo"
+chukcha:chukcha N ;     ! "cabello"
+chukchu:chukchu N ;     ! "malaria"
+chupa:chupa N ;     ! "cola, rabo"
+chupi:chupi N ;     ! "sopa"
+chupullu:chupullu N ;       ! "tataranieto, bisnieto"
+chuqi:chuqi N ;     ! "metal, oro"
+chuqllu:chuqllu N ;     ! "choclo, amzorca de míz"
+chuwa:chuwa N ;     ! "plato"
+clima:clima N ; ! "clima"
+Dios:Dios N ;       ! "Dios"
+Dyus:Dyus N ;       ! "Dios"
+hallp%'a% q%'usñi:hallp%'a% q%'usñi N ;     ! "polvo"
+hallp%'a:hallp%'a N ;       ! "tierra"
+hallp%'aqa:hallp%'aqa N ;       ! "alpaca"
 hamawt%'a:hamawt%'a N ;     ! maestro
+hampiyuq% wasi:hampiyuq% wasi N ;       ! "farmacia"
+hanan% pacha:hanan% pacha N ;       ! "cielo"
+hanaq% pacha:hanaq% pacha N ;       ! "cielo"
+hanaqpacha:hanaqpacha N ;       ! "cielo"
+hank%'a:hank%'a N ;     ! "tostado"
+hanp%'ara:hanp%'ara N ;     ! "mesa"
+hanp%'atu:hanp%'atu N ;     ! "rana, sapo"
+hanpi% kamayuq:hanpi% kamayuq N ;       ! "médico"
+hanpi:hanpi N ;     ! "medicamento"
+hanpi:hanpi N ;     ! "medicina"
+hanpiri:hanpiri N ;     ! "curandero"
+harawi% yachay:harawi% yachay N ;       ! "literatura"
+harawi:harawi N ;       ! "poema, poesía"
+hatun% yachay% wasi:hatun% yachay% wasi N ;     ! "universidad"
+haway:haway N ;     ! "nieto"
+hawkay% mit%'a:hawkay% mit%'a N ;       ! "otoño"
+hawkay% pata:hawkay% pata N ;       ! "plaza"
+hawkay:hawkay N ;       ! "otoño"
+haylli:haylli N ;       ! "himno"
+hayt%'a:hayt%'a N ;     ! "puntapié"
+hik%'i:hik%'i N ;       ! "hipo"
+hirq%'i:hirq%'i N ;     ! "niño"
+hisp%'a:hisp%'a N ;     ! "orina"
+hisp%'ay% p%'uru:hisp%'ay% p%'uru N ;       ! "vejiga"
+hucha:hucha N ;     ! "crimen, delito, culpa, pecado"
+hucha:hucha N ;     ! pecado, culpa
+huk%'ucha:huk%'ucha N ;     ! "ratón"
+humint%'a:humint%'a N ;     ! "tamal"
+hunp%'i:hunp%'i N ;     ! "sudor"
+ichhu:ichhu N ;     ! "paja"
+illapa:illapa N ;       ! "rayo, relámpago"
+imasmari:imasmari N ;       ! "adivinanza"
+inchis:inchis N ;       ! "cacahuate, maní"
+inka:inka N ;       ! "inca"
+inkill:inkill N ;       ! "jardín"
+inti% wañuy:inti% wañuy N ;     ! "eclipse del sol"
+inti:inti N ;       ! "sol"
+irqi:irqi N ;       ! "niño"
+irqi:irqi N ; ! "niño"
+ispa:ispa N ;       ! "orina"
+kamachi:kamachi N ;     ! decreto, ley
 kuri:kuri N ;       ! mellizo
+kuti:kuti N ; ! "vez"
+kutichiku:kutichiku N ; ! "respuesta"
 larq%'i:larq%'i N ;     ! mellizo
+llaqta:llaqta N ;       ! ciudad, pueblo (=gente)
+maki:maki N ; ! "mano"
 mara:mara N ;       ! madera
+mesa:mesa N ; ! "mesa"
+michi:michi N ; ! "gato"
+misti:misti N ;     ! mestizo
+muchuy% wasi:muchuy% wasi N ;   ! cárcel
+muya:muya N ; ! "jardín"
+ñan:ñan N ;     ! camino
+ñawi:ñawi N ; ! "ojo"
+ñuñu:ñuñu N ; ! "mama"
+ñuñu:ñuñu N ; ! "teta"
+p%'acha:p%'acha N ;     ! ropa
+p%'isqu:p%'isqu N ; ! "ave"
+p%'unchay:p%'unchay N ;     ! día   ----- adv-subst
+pacha:pacha N ;         ! mundo, universo
+qilqa:qilqa N ;     ! texto, escrito
+runa:runa N ; ! "gente"
+runamasi:runamasi N ;       ! prójimo
+runas% simi:suna% simi N ;  ! quechua
+runasimi:runasimi N ;       ! quechua (lengua)
+sach%'a:sach%'a N ; ! "árbol"
+simi:simi N ;       ! boca, lengua
+sunqu:sunqu N ;     ! corazón
+suti:suti N ;       ! nombre
+suyu:suyu N ;       ! país
 t%'ira:t%'ira N ;       ! mellizo
+uma:uma N ; ! "cabeza"
+unu:unu N ; ! "agua"
+wakcha:wakcha N ;       ! huérfano, pobre
+wasi:wasi N ; ! "casa"
+wata:wata N ; ! "año"
+wawa:wawa N ;       ! niño, hijo
 wispa:wispa N ;     ! gemelo
+yachay% wasi:yachay% wasi N ;   ! escuela
+yachaywasi:yachaywasi N ;   ! escuela
+yarawi:yarawi N ;       ! "poema"
+yawar:yawar N ; ! "sangre"
+Yus:Yus N ;     ! "Dios"
+
+
+LEXICON NombresDerivados
+
+kawsay:kawsay N ;   ! vida
+pukllay:pukllay N ; ! "juego"
+qhawana:qhawana N ; ! "ventana"
+tapusqa:tapusqa N ; ! "pregunta"
+tiyana:tiyana N ; ! "silla"
+tukukuy:tukukuy N ;     ! fin
+uyarikuy:uyarikuy N ; ! "sonido"
+yarqay:yarqay N ;       ! hambre
+yuyay:yuyay N ;     ! opinión
 
 
 LEXICON NombresPropios
@@ -782,7 +911,6 @@ chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
 kusi:kusi ADJ ;         ! alegre, feliz
-kusisqa:kusisqa ADJ ; ! "feliz"
 millay:millay ADJ ;     ! feo, malo
 musuq:musuq ADJ ;       ! nuevo
 ñawpaq:ñawpaq ADJ ;     ! primero, antiguo
@@ -797,6 +925,8 @@ yana:yana ADJ ; ! "negro"
 yuraq:yuraq ADJ ;       ! blanco
 
 
+LEXICON AdjetivosDerivados
+kusisqa:kusisqa ADJ ; ! "feliz"
 
 
 LEXICON Postposiciones
