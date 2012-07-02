@@ -591,46 +591,50 @@ LEXICON V-IMPERS
 !!                    L E X I C O N   R A Í C E S
 
 LEXICON NombresGenero
-wayna:wayna N-M ;   ! "joven, chico"
-sipas:sipas N-F ; ! "joven, chica"
-machu:machu N-M ; ! "viejo"
-paya:paya N-F ; ! "vieja"
-qhari:qhari N-M ;   ! "hombre"
-warmi:warmi N-F ; ! "mujer"
-tayta:tayta N-M ; ! "padre, señor"
-mama:mama N-F ; ! "madre, señora"
-tura:tura N-M ; ! "hermano de mujer"
-wayqi:wayqi N-M ; ! "hermano de hombre"
-ñaña:ñaña N-F ; ! "hermana de mujer"
-pana:pana N-F ; ! "hermana de hombre"
+wayna:wayna N-M ;       ! "joven, chico"
+sipas:sipas N-F ;       ! "joven, chica"
+machu:machu N-M ;       ! "viejo"
+paya:paya N-F ;         ! "vieja"
+qhari:qhari N-M ;       ! "hombre"
+warmi:warmi N-F ;       ! "mujer"
+tayta:tayta N-M ;       ! "padre, señor"
+mama:mama N-F ;         ! "madre, señora"
+tura:tura N-M ;         ! "hermano de mujer"
+wayqi:wayqi N-M ;       ! "hermano de hombre"
+ñaña:ñaña N-F ;         ! "hermana de mujer"
+pana:pana N-F ;         ! "hermana de hombre"
+pani:pani N-F ;         ! "hermana de hombre"
 qhari% wawa:qhari% wawa N-M ;   ! "hijo (de su madre), bebé"
-warmi% wawa:warmi% wawa N-F ; ! "hija (de su madre), bebé"
+warmi% wawa:warmi% wawa N-F ;   ! "hija (de su madre), bebé"
 qhari% irqi:qhari% irqi N-M ;   ! "niño"
-warmi% irqi:warmi% irqi N-F ; ! "niña"
-anpullu:anpullu N-F ;     ! bisnieta
-apucha:apucha N-M ;       ! abuelo
-apuchi:apuchi N-M ;       ! tatarabuelo
-aqi:aqi N-F ;     ! suegra
-awalla:awalla N-F ;       ! gemela
-wispalla:wispalla N-F ;       ! gemela
-achachi:achachi N-M ;     ! "anciano"
-aqu:aqu N-F ;     ! "suegra"
-hatucha:hatucha N-F ;     ! "abuela"
-churi:churi N-M ;     ! "hijo"
-imilla:imilla N-F ;       ! "chica"
-inka:inka N-M ;       ! "rey"
-ipa:ipa N-F ;     ! "tía"
-kaka:kaka N-M ;     ! "tío, suegro"
-kaku:kaku N-M ;     ! "tío"
+warmi% irqi:warmi% irqi N-F ;   ! "niña"
+anpullu:anpullu N-F ;   ! bisnieta
+apucha:apucha N-M ;     ! abuelo
+apuchi:apuchi N-M ;     ! tatarabuelo
+aqi:aqi N-F ;           ! suegra
+awalla:awalla N-F ;     ! gemela
+wispalla:wispalla N-F ; ! gemela
+achachi:achachi N-M ;   ! "anciano"
+aqu:aqu N-F ;           ! "suegra"
+hatucha:hatucha N-F ;   ! "abuela"
+churi:churi N-M ;       ! "hijo"
+imilla:imilla N-F ;     ! "chica"
+inka:inka N-M ;         ! "rey"
+ipa:ipa N-F ;           ! "tía"
+kaka:kaka N-M ;         ! "tío, suegro"
+kaku:kaku N-M ;         ! "tío"
 kisma:kisma N-F ;       ! "suegra"
-kiwachi:kiwachi N-F ;       ! "suegra"
+kiwachi:kiwachi N-F ;   ! "suegra"
 kiwas:kiwas N-M ;       ! "suegro"
 kuncha:kuncha N-M ;     ! "sobrino"
-machula:machula N-M ;       ! "abuelo"
-maqt%'a:maqt%'a N-M ;       ! "adolescente, mozo"
-masa:masa N-M ;     ! "cuñado"
+machula:machula N-M ;   ! "abuelo"
+maqt%'a:maqt%'a N-M ;   ! "adolescente, mozo"
+masa:masa N-M ;         ! "cuñado"
 masani:masani N-M ;     ! "cuñado"
 quncha:quncha N-M ;     ! "sobrino"
+p%'asña:p%'asña N-F ;   ! "moza, adolescente"
+palla:palla N-F ;       ! "señora"
+
 
 
 LEXICON Nombres
@@ -727,7 +731,9 @@ ayni:ayni N ;       ! trabajo comunal
 ayu:ayu N ;     ! adúltero
 ayñi:ayñi N ;       ! incompatibilidad
 añaka:añaka N ;     ! golosina
+
 bulla:bulla N ;     ! "ruido"
+
 ch%'aki:ch%'aki N ;     ! "sed"
 ch%'alla:ch%'alla N ;       ! "brindis"
 ch%'apu:ch%'apu N ;     ! "barba"
@@ -786,9 +792,11 @@ chupullu:chupullu N ;       ! "tataranieto, bisnieto"
 chuqi:chuqi N ;     ! "metal, oro"
 chuqllu:chuqllu N ;     ! "choclo, amzorca de míz"
 chuwa:chuwa N ;     ! "plato"
+
 clima:clima N ; ! "clima"
 Dios:Dios N ;       ! "Dios"
 Dyus:Dyus N ;       ! "Dios"
+
 hallp%'a% q%'usñi:hallp%'a% q%'usñi N ;     ! "polvo"
 hallp%'a:hallp%'a N ;       ! "tierra"
 hallp%'aqa:hallp%'aqa N ;       ! "alpaca"
@@ -822,6 +830,7 @@ hucha:hucha N ;     ! pecado, culpa
 huk%'ucha:huk%'ucha N ;     ! "ratón"
 humint%'a:humint%'a N ;     ! "tamal"
 hunp%'i:hunp%'i N ;     ! "sudor"
+
 ichhu:ichhu N ;     ! "paja"
 illapa:illapa N ;       ! "rayo, relámpago"
 imasmari:imasmari N ;       ! "adivinanza"
@@ -833,6 +842,7 @@ inti:inti N ;       ! "sol"
 irqi:irqi N ;       ! "niño"
 irqi:irqi N ; ! "niño"
 ispa:ispa N ;       ! "orina"
+
 k%'ancha:k%'ancha N ;       ! "brillo"
 k%'anka:k%'anka N ;     ! "gallo"
 k%'aspi:k%'aspi N ;     ! "palo, barra"
@@ -892,6 +902,7 @@ kusma:kusma N ;     ! "camisa"
 kuti:kuti N ;       ! "vez, ocasión"
 kutichiku:kutichiku N ; ! "respuesta"
 kututu:kututu N ;       ! "cobaya, cuy macho"
+
 lachiwa:lachiwa N ;     ! "abeja, aispa, miel"
 lachiwana:lachiwana N ;     ! "panal, colmena, abeja"
 lanpa:lanpa N ;     ! "pala, azada"
@@ -915,6 +926,7 @@ lliqthi% unquy:lliqthi% unquy N ;       ! "lepra"
 llulla:llulla N ;       ! "mentira"
 lluychu:lluychu N ;     ! "ciervo"
 luychu:luychu N ;       ! "ciervo"
+
 mach%'aqway:mach%'aqway N ;     ! "serpiente"
 mach%'ay:mach%'ay N ;       ! "cueva"
 mak%'a:mak%'a N ;       ! "antebrazo"
@@ -982,8 +994,10 @@ muyu% muyu:muyu% muyu N ;       ! "esfera"
 muyuq% wayra:muyuq% wayra N ;       ! "torbellino"
 muyuqi:muyuqi N ;       ! "espiral"
 muyuqin:muyuqin N ;     ! "duodeno"
+
 nina:nina N ;       ! "fuego"
 nuna:nuna N ;       ! "alma, ánima, espíritu"
+
 ñan:ñan N ;     ! camino
 ñaqch%'a:ñaqch%'a N ;       ! "peine"
 ñat%'i:ñat%'i N ;       ! "entraña"
@@ -997,11 +1011,74 @@ nuna:nuna N ;       ! "alma, ánima, espíritu"
 ñusqhun:ñusqhun N ;     ! "cerebro, seso"
 ñust%'a:ñust%'a N ;     ! "princesa"
 
-
 p%'acha:p%'acha N ;     ! ropa
+p%'aqucha:p%'aqucha N ;     ! "alpaca"
 p%'isqu:p%'isqu N ; ! "ave"
+p%'uku:p%'uku N ;       ! "plato"
 p%'unchay:p%'unchay N ;     ! día   ----- adv-subst
-pacha:pacha N ;         ! mundo, universo
+p%'uru:p%'uru N ;       ! "vejiga"
+p%'uyñu:p%'uyñu N ;     ! "cántaro"
+pacha:pacha N ;         ! "tiempo, espacio, mundo, universo"
+pacha% kuyuy:pacha% kuyuy N ;       ! "terremoto"
+pacha% manka:pacha% manka N ;       ! "pachamanca"
+pacha% phuyu:pacha% phuyu N ;       ! "neblina"
+pallar:pallar N ;       ! "frijol, alubia"
+palta:palta N ;     ! "aguacate"
+pana%-tura:pana%-tura N ;       ! "hermano"
+panpa:panpa N ;     ! "llanura, suelo, plaza"
+panpa% warmi:panpa% warmi N ;       ! "prostituta"
+panta:panta N ;     ! "error"
+papa:papa N ;       ! "patata"
+papa% wayk%'u:papa% wayk%'u N ;     ! "papas sancochadas"
+paqu:paqu N ;       ! "chamán"
+paqucha:paqucha N ;     ! "alpaca"
+para:para N ;       ! "lluvia"
+pariwana:pariwana N ;       ! "flamenco"
+parwa:parwa N ;     ! "flor de maíz"
+parya:parya N ;     ! "gorrión"
+patara:patara N ;       ! "pliegue", "libro"
+pawqar:pawqar N ;       ! "color"
+pawqar% pata:pawqar% pata N ;       ! "jardín, prado"
+phaka:phaka N ;     ! "entrepierna"
+phaka% kuchu:phaka% kuchu N ;       ! "ingle"
+phaqcha:phaqcha N ;     ! "cascada"
+phaqma:phaqma N ;       ! "parte"
+phatma:phatma N ;       ! "parte"
+phatmi:phatmi N ;       ! "parte"
+phuru:phuru N ;     ! "pluma"
+phuska:phuska N ;       ! "rueca"
+phuspu:phuspu N ;       ! "habas cocidas"
+phusuqu:phusuqu N ;     ! "espuma"
+phuti:phuti N ;     ! "tristeza"
+phuyu:phuyu N ;     ! "nube"
+pichinku:pichinku N ;       ! "gorrión"
+pichitanka:pichitanka N ;       ! "gorrión"
+pikchu:pikchu N ;       ! "pico, pirámide"
+piki:piki N ;       ! "pulga"
+pillpintu:pillpintu N ;     ! "mariposa"
+pillu:pillu N ;     ! "corona"
+pinchinchu:pinchinchu N ;       ! "pájaro"
+pinkullu:pinkullu N ;       ! "flauta"
+pinkuyllu:pinkuyllu N ;     ! "flauta"
+pirqa:pirqa N ;     ! "muro, pared"
+pirqa% kamayuq:pirqa% kamayuq N ;       ! "albañil"
+pirwa:pirwa N ;     ! "granero, troje"
+pisqu:pisqu N ;     ! "pájaro, ave"
+puchu:puchu N ;     ! "resto"
+pukara:pukara N ;       ! "fortaleza, castillo"
+pukyu:pukyu N ;     ! "fuente, manantial"
+puma:puma N ;       ! "puma"
+puna:puna N ;       ! "puna"
+punchu:punchu N ;       ! "poncho"
+punku:punku N ;     ! "puerta"
+puñuna% wasi:puñuna% wasi N ;       ! "dormitorio"
+pupu:pupu N ;       ! "ombligo"
+puputi:puputi N ;       ! "ombligo"
+purutu:purutu N ;       ! "frijol"
+puska:puska N ;     ! "rueca, huso"
+pututu:pututu N ;       ! "trompeta"
+
+
 qilqa:qilqa N ;     ! texto, escrito
 quqa:quqa N ;       ! "coca"
 runa:runa N ; ! "gente"
@@ -1054,8 +1131,11 @@ María:María NP-ANT-F ;
 Daniele:Daniele NP-ANT-F ;
 Huñunakusqa% Nacionkuna%<np%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
 Huñunakusqa% Llaqtakuna%<np%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
-Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
-Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
+Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;       ! Naciones Unidas
+Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Naciones Unidas
+Pacha% Mama:Pacha% Mama NP-ANT-F ;  ! "Madre Tierra"
+pachamama:pachamama NP-ANT-F ;      ! "Pachamama"
+Pachamama:Pachamama NP-ANT-F ;      ! "Pachamama"
 
 
 
