@@ -430,9 +430,9 @@ LEXICON V-IMP
 
 LEXICON V-Nom
 ! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
-%<pp%>:sqa N-FLEX-Caso ;
-%<pf%>:na N-FLEX-Caso ;
-%<ag%>:q N-FLEX-POS ;
+%<pp%>:%>sqa  N-FLEX-POS ;
+%<pf%>:%>na  N-FLEX-POS ;
+%<ag%>:%>q N-FLEX-POS ;
 N-FLEX-lla-Caso ;
 N-FLEX-Caso-lla ;
 
@@ -452,6 +452,7 @@ V-IMP ;
 %<ger%>:%>spa CLIT-puni ;  ! provisional, hay que poner las personas
 ! -su-spa, -spa-su, -su-qti poner @P.su.pres@
 V-INF ;
+V-Nom ;
 !! -na-su (-su-na), -su-sqa, -sqa-su, -su-q
 ! poner las formas que toman -lla después en otro lexicon
 
@@ -1165,6 +1166,7 @@ quyllur:quyllur N ;     ! "estrella, lucero, Venus"
 
 raka:raka N ;       ! "vagina, coño"
 raka% k%'akara:raka% k%'akara N ;       ! "clítoris"
+raka% t%'uqu:raka% t%'uqu N ;       ! "vagina"
 
 runa:runa N ; ! "gente"
 runamasi:runamasi N ;       ! prójimo
@@ -1214,6 +1216,7 @@ José:José NP-ANT-M ;
 Jaime:Jaime NP-ANT-M ;
 María:María NP-ANT-F ;
 Daniele:Daniele NP-ANT-F ;
+Catalina:Catalina NP-ANT-F ;
 Huñunakusqa% Nacionkuna%<np%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
 Huñunakusqa% Llaqtakuna%<np%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
 Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;       ! Naciones Unidas
