@@ -1,3 +1,5 @@
+#hfst-expand-equivalences -a ...acx -i input.hfst -o output.hfst should work
+
 LANG1=quz
 LANG2=spa
 BASENAME=apertium-quz-spa

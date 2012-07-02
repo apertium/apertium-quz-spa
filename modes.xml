@@ -111,7 +111,8 @@
       <program name="hfst-proc -w">
         <file name="quz-spa.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
         <file name="quz-spa.rlx.bin"/>
       </program>
     </pipeline>
