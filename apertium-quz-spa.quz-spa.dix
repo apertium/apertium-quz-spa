@@ -599,8 +599,6 @@
     <e><p><l>awarank'u<s n="n"/></l><r>telar<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>awki<s n="n"/></l><r>anciano<s n="n"/></r></p></e>
     <e><p><l>awki<s n="n"/></l><r>auqui<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>awkilla<s n="n"/></l><r>bisabuela<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>awkillu<s n="n"/></l><r>bisabuelo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>awqa<s n="n"/></l><r>enemigo<s n="n"/></r></p></e>
     <e><p><l>awqalli<s n="n"/></l><r>guerrero<s n="n"/></r></p></e>
     <e><p><l>awqalli<s n="n"/></l><r>soldado<s n="n"/><s n="mf"/></r></p></e>
@@ -627,6 +625,7 @@
     <e><p><l>ayñi<s n="n"/></l><r>incompatibilidad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ayu<s n="n"/></l><r>adúltero<s n="n"/></r></p></e>    
     <e><p><l>awki<s n="n"/></l><r>príncipe<s n="n"/><s n="m"/></r></p></e>
+    
     <e><p><l>ch'aki<s n="n"/></l><r>sed<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ch'alla<s n="n"/></l><r>brindis<s n="n"/><s n="m"/><s n="sp"/></r></p></e>
     <e><p><l>ch'apu<s n="n"/></l><r>barba<s n="n"/><s n="f"/></r></p></e>
@@ -681,8 +680,8 @@
     <e><p><l>chapi<s n="n"/></l><r>estaño<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>charapa<s n="n"/></l><r>tortuga<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chaski<b/>wasi<s n="n"/></l><r>correo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>chhawa<s n="n"/></l><r>saúco<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chikchi<s n="n"/></l><r>granizo<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>china<s n="n"/></l><r>hembra<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chincha<s n="n"/></l><r>norte<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>chiqa<s n="n"/></l><r>verdad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chiqaq<s n="n"/></l><r>verdad<s n="n"/><s n="f"/></r></p></e>
@@ -703,10 +702,11 @@
     <e><p><l>chuqllu<s n="n"/></l><r>choclo<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>chuqllu<s n="n"/></l><r>maíz<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chuqllu<s n="n"/></l><r>mazorca<g><b/>de<b/>maíz</g><s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>churi<s n="n"/><s n="m"/></l><r>hijo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chuwa<s n="n"/></l><r>plato<s n="n"/><s n="m"/></r></p></e>
+    
     <e><p><l>Dios<s n="n"/></l><r>Dios<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>Dyus<s n="n"/></l><r>Dios<s n="n"/><s n="m"/></r></p></e>
+    
     <e r="LR"><p><l>hallp'a<s n="n"/></l><r>tierra<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hallp'a<b/>q'usñi<s n="n"/></l><r>polvo<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>hallp'aqa<s n="n"/></l><r>alpaca<s n="n"/><s n="f"/></r></p></e>
@@ -747,6 +747,8 @@
     <e><p><l>huk'ucha<s n="n"/></l><r>ratón<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>humint'a<s n="n"/></l><r>tamal<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>hunp'i<s n="n"/></l><r>sudor<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>husut'a<s n="n"/></l><r>ojota<s n="n"/><s n="f"/></r></p></e>
+    
     <e><p><l>ichhu<s n="n"/></l><r>paja<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>illapa<s n="n"/></l><r>rayo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>illapa<s n="n"/></l><r>relámpago<s n="n"/><s n="m"/></r></p></e>
@@ -763,6 +765,7 @@
     <e><p><l>ipa<s n="n"/><s n="f"/></l><r>tío<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>irqi<s n="n"/></l><r>niño<s n="n"/></r></p></e>
     <e><p><l>ispa<s n="n"/></l><r>orina<s n="n"/><s n="f"/></r></p></e>
+    
     <e><p><l>k'ancha<s n="n"/></l><r>brillo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>k'anka<s n="n"/></l><r>gallo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>k'aspi<s n="n"/></l><r>barra<s n="n"/><s n="f"/></r></p></e>
@@ -828,6 +831,7 @@
     <e><p><l>kiwña<s n="n"/></l><r>quinua<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kuka<s n="n"/></l><r>coca<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kukupin<s n="n"/></l><r>hígado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kulli<b/>aqha<s n="n"/></l><r>chicha<g><b/>morada</g><s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kunan<b/>pacha<s n="n"/></l><r>actualidad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kunan<b/>pacha<s n="n"/></l><r>presente<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kunka<s n="n"/></l><r>cuello<s n="n"/><s n="m"/></r></p></e>
@@ -855,8 +859,9 @@
     <e><p><l>kuti<s n="n"/></l><r>vez<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>kuti<s n="n"/></l><r>ocasión<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kutichiku<s n="n"/></l><r>respuesta<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>kututu<s n="n"/></l><r>cobaya<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>kututu<s n="n"/></l><r>cobaya<s n="n"/><s n="mf"/></r></p></e>
     <e r="LR"><p><l>kututu<s n="n"/></l><r>cuy<s n="n"/><s n="m"/></r></p></e>
+    
     <e><p><l>lachiwa<s n="n"/></l><r>abeja<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>lachiwa<s n="n"/></l><r>avispa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>lachiwa<s n="n"/></l><r>miel<s n="n"/><s n="f"/></r></p></e>
@@ -870,6 +875,9 @@
     <e r="LR"><p><l>lawa<s n="n"/></l><r>sopa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>layqa<s n="n"/></l><r>brujo<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>layqa<s n="n"/></l><r>hechicero<s n="n"/></r></p></e>
+    <e><p><l>lukma<s n="n"/></l><r>lúcuma<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>luritu<s n="n"/></l><r>loro<s n="n"/><s n="m"/></r></p></e>
+    
     <e><p><l>llaki<s n="n"/></l><r>problema<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>llalli<s n="n"/></l><r>victoria<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>llama<s n="n"/></l><r>llama<s n="n"/><s n="f"/></r></p></e>
@@ -890,6 +898,7 @@
     <e><p><l>llulla<s n="n"/></l><r>mentira<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>lluychu<s n="n"/></l><r>ciervo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>luychu<s n="n"/></l><r>ciervo<s n="n"/><s n="m"/></r></p></e>
+    
     <e><p><l>mach'aqway<s n="n"/></l><r>serpiente<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mach'ay<s n="n"/></l><r>cueva<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>mak'a<s n="n"/></l><r>antebrazo<s n="n"/><s n="m"/></r></p></e>
@@ -981,8 +990,10 @@
     <e><p><l>muyu<b/>muyu<s n="n"/></l><r>esfera<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>muyuq<b/>wayra<s n="n"/></l><r>torbellino<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>muyuqi<s n="n"/></l><r>espiral<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>muyuqin<s n="n"/></l><r>duodeno<s n="n"/><s n="m"/></r></p></e>    
+    <e><p><l>muyuqin<s n="n"/></l><r>duodeno<s n="n"/><s n="m"/></r></p></e>
+    
     <e><p><l>nina<s n="n"/></l><r>fuego<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ninri<s n="n"/></l><r>oreja<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>nuna<s n="n"/></l><r>alma<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>nuna<s n="n"/></l><r>ánima<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>nuna<s n="n"/></l><r>espíritu<s n="n"/><s n="m"/></r></p></e>
@@ -1001,6 +1012,7 @@
     <e><p><l>ñusqhun<s n="n"/></l><r>cerebro<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ñusqhun<s n="n"/></l><r>seso<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ñust'a<s n="n"/></l><r>princesa<s n="n"/><s n="f"/></r></p></e>
+    
     <e><p><l>p'acha<s n="n"/></l><r>ropa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>p'aqucha<s n="n"/></l><r>alpaca<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>p'isqu<s n="n"/></l><r>pájaro<s n="n"/><s n="m"/></r></p></e>
@@ -1018,7 +1030,6 @@
     <e r="RL"><p><l>pallar<s n="n"/></l><r>alubia<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pallar<s n="n"/></l><r>frijol<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>palta<s n="n"/></l><r>aguacate<s n="n"/><s n="m"/></r></p></e>
-    <e r="LR"><p><l>pana-tura<s n="n"/></l><r>hermano<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>llanura<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>piso<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>plaza<s n="n"/><s n="f"/></r></p></e>
@@ -1126,7 +1137,6 @@
     <e><p><l>qhapaq<b/>ñan<s n="n"/></l><r>camino<g><b/>inca</g><s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>qhaqya<s n="n"/></l><r>trueno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhaqya<b/>unquy<s n="n"/></l><r>tuberculosis<s n="n"/><s n="f"/><s n="sp"/></r></p></e>
-    <e><p><l>qhari-warmi<s n="n"/></l><r>esposo<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e><p><l>qharmin<s n="n"/></l><r>paletilla<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>qharqa<b/>unquy<s n="n"/></l><r>asma<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhasqu<s n="n"/></l><r>pecho<s n="n"/><s n="m"/></r></p></e>
@@ -1183,19 +1193,39 @@
     <e><p><l>qurpachana<b/>wasi<s n="n"/></l><r>alojamiento<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qurpaq<b/>wasi<s n="n"/></l><r>alojamiento<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qutu<s n="n"/></l><r>montón<s n="n"/><s n="m"/></r></p></e>
-    <e r="RL"><p><l>quwi<s n="n"/></l><r>cobaya<s n="n"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>quwi<s n="n"/></l><r>conejillo<g><b/>de<b/>indias</g><s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>quwi<s n="n"/></l><r>cobaya<s n="n"/><s n="mf"/></r></p></e>
+    <e r="RL"><p><l>quwi<s n="n"/></l><r>conejillo<g><b/>de<b/>Indias</g><s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>quwi<s n="n"/></l><r>conejo<s n="n"/><s n="m"/></r></p></e>
-    <e r="RL"><p><l>quwi<s n="n"/></l><r>conejo<g><b/>de<b/>indias</g><s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>quwi<s n="n"/></l><r>conejo<g><b/>de<b/>Indias</g><s n="n"/><s n="m"/></r></p></e>
     <e><p><l>quwi<s n="n"/></l><r>cuy<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>quyllur<s n="n"/></l><r>estrella<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>quyllur<s n="n"/></l><r>lucero<s n="n"/><s n="m"/></r></p></e>
+    
     <e r="RL"><p><l>raka<s n="n"/></l><r>coño<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>raka<s n="n"/></l><r>vagina<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>raka<s n="n"/></l><r>vulva<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>raka<b/>k'akara<s n="n"/></l><r>clítoris<s n="n"/><s n="m"/><s n="sp"/></r></p></e>
+    <e><p><l>raka<b/>llika<s n="n"/></l><r>himen<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>raka<b/>t'uqu<s n="n"/></l><r>vagina<s n="n"/><s n="f"/></r></p></e>
-    
+    <e r="LR"><p><l>raki<s n="n"/></l><r>cántaro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ranti<s n="n"/></l><r>cambio<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>rap'a<s n="n"/></l><r>hoja<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>raphi<s n="n"/></l><r>hoja<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rapra<s n="n"/></l><r>ala<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>raqch'i<s n="n"/></l><r>cerámica<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>raqra<s n="n"/></l><r>rajadura<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>ratu<s n="n"/></l><r>momento<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ratu<s n="n"/></l><r>rato<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rawanu<s n="n"/></l><r>rábano<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>raymi<s n="n"/></l><r>fiesta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rikra<s n="n"/></l><r>hombro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rinri<s n="n"/></l><r>oreja<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rit'i<s n="n"/></l><r>nieve<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rit'i<b/>urqu<s n="n"/></l><r>nevado<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>ruk'a<s n="n"/></l><r>dedo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ruk'ana<s n="n"/></l><r>dedo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rumi<s n="n"/></l><r>piedra<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rumu<s n="n"/></l><r>yuca<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>gente<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>hombre<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>runa<s n="n"/></l><r>persona<s n="n"/><s n="f"/></r></p></e>
@@ -1204,16 +1234,284 @@
     <e><p><l>runa<b/>masi<s n="n"/></l><r>prójimo<s n="n"/></r></p></e>
     <e><p><l>runasimi<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>runa<b/>simi<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>runtu<s n="n"/></l><r>huevo<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>runtu<s n="n"/></l><r>testículo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ruqutu<s n="n"/></l><r>rocoto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ruru<s n="n"/></l><r>fruto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rurun<s n="n"/></l><r>riñón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rutuchikuy<s n="n"/></l><r>fiesta<g><b/>de<b/>corte<b/>de<b/>pelo</g><s n="n"/><s n="m"/></r></p></e>
+
     <e><p><l>sach'a<s n="n"/></l><r>árbol<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>sach'a<s n="n"/></l><r>arbusto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sach'a<b/>khuchi<s n="n"/></l><r>pecarí<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sach'a<b/>khuchi<s n="n"/></l><r>saíno<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sach'a<b/>sach'a<s n="n"/></l><r>bosque<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sach'a<b/>sach'a<s n="n"/></l><r>selva<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sach'a<b/>waka<s n="n"/></l><r>tapir<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>salqa<s n="n"/></l><r>páramo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sama<s n="n"/></l><r>aliento<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sami<s n="n"/></l><r>dicha<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sami<s n="n"/></l><r>felicidad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sami<s n="n"/></l><r>fortuna<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>samincha<s n="n"/></l><r>bendición<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sankha<s n="n"/></l><r>abismo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sankha<s n="n"/></l><r>barranco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sankhay<b/>wasi<s n="n"/></l><r>cárcel<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sankhu<s n="n"/></l><r>mazamorra<g><b/>de<b/>harina</g><s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sanqa<s n="n"/></l><r>barranco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sanqa<b/>wasi<s n="n"/></l><r>cárcel<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sansa<s n="n"/></l><r>brasa<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sapallu<s n="n"/></l><r>zapallo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>saphi<s n="n"/></l><r>raíz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>saqma<s n="n"/></l><r>puño<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>saqra<s n="n"/></l><r>diablo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sara<s n="n"/></l><r>maíz<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sara<b/>hank'a<s n="n"/></l><r>maíz<g><b/>tostado</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sawa<s n="n"/></l><r>boda<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sawa<s n="n"/></l><r>matrimonio<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>sawku<s n="n"/></l><r>saúco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sawna<s n="n"/></l><r>almohada<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sayri<s n="n"/></l><r>tabaco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>saywa<s n="n"/></l><r>hito<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>saywiti<s n="n"/></l><r>mapa<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>siki<s n="n"/></l><r>culo<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>siki<s n="n"/></l><r>nalga<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>siki<s n="n"/></l><r>poto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siki<s n="n"/></l><r>trasero<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siki<b/>t'uqu<s n="n"/></l><r>ano<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>siksi<s n="n"/></l><r>brasa<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siku<s n="n"/></l><r>zampoña<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sikuri<s n="n"/></l><r>sicuri<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sikuwa<s n="n"/></l><r>paja<g><b/>brava</g><s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sillu<s n="n"/></l><r>uña<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>simi<s n="n"/></l><r>boca<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>simi<s n="n"/></l><r>lengua<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>simi<s n="n"/></l><r>idioma<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>simi<b/>taqi<s n="n"/></l><r>diccionario<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>simi<b/>taqi<s n="n"/></l><r>vocabulario<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sinp'a<s n="n"/></l><r>trenza<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sinqa<s n="n"/></l><r>nariz<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>sip'uti<s n="n"/></l><r>ano<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siq'i<s n="n"/></l><r>letra<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siq'i<s n="n"/></l><r>línea<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siq'i<s n="n"/></l><r>raya<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siqsi<s n="n"/></l><r>comezón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siqsi<s n="n"/></l><r>escozor<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sira<b/>sira<s n="n"/></l><r>alacrán<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siraka<s n="n"/></l><r>alacrán<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sirara<s n="n"/></l><r>alacrán<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>sirk'a<s n="n"/></l><r>arteria<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sirk'a<s n="n"/></l><r>vena<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sisa<s n="n"/></l><r>flor<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sisi<s n="n"/></l><r>hormiga<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siwar<s n="n"/></l><r>turquesa<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siwar<b/>q'inti<s n="n"/></l><r>picaflor<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siwara<s n="n"/></l><r>cebada<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siwi<s n="n"/></l><r>anillo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>siwi<s n="n"/></l><r>sortija<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>siyaru<s n="n"/></l><r>cigarrillo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>such'i<s n="n"/></l><r>suche<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sukha<s n="n"/></l><r>atardecer<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sukha<s n="n"/></l><r>tarde<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sunkha<s n="n"/></l><r>barba<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sunqu<s n="n"/></l><r>corazón<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>suntur<s n="n"/></l><r>institución<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>suntur<s n="n"/></l><r>rotonda<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>supay<s n="n"/></l><r>demonio<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>supi<s n="n"/></l><r>pedo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suq'a<s n="n"/></l><r>azote<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suq'a<s n="n"/></l><r>látigo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suq'a<s n="n"/></l><r>reuma<s n="n"/><s n="mf"/></r></p></e>
+    <e><p><l>suq'a<s n="n"/></l><r>soga<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>suri<s n="n"/></l><r>avestruz<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suri<s n="n"/></l><r>ñandú<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>surk'an<s n="n"/></l><r>pulmón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>surq'an<s n="n"/></l><r>pulmón<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>suru<s n="n"/></l><r>ceguera<g><b/>por<b/>la<b/>nieve</g><s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>suruchi<s n="n"/></l><r>mal<g><b/>de<b/>altura</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>surunpi<s n="n"/></l><r>deslumbramiento<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>surunpi<s n="n"/></l><r>surumpe<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>suruqch'i<s n="n"/></l><r>mal<g><b/>de<b/>altura</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suruqchi<s n="n"/></l><r>mal<g><b/>de<b/>altura</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suruqchi<s n="n"/></l><r>soroche<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>suti<s n="n"/></l><r>nombre<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sut'i<s n="n"/></l><r>realidad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sut'i<s n="n"/></l><r>verdad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sut'in<s n="n"/></l><r>verdad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>suti<b/>masi<s n="n"/></l><r>tocayo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suwa<s n="n"/></l><r>ladrón<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>suwa<b/>q'ara<s n="n"/></l><r>gallinazo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suwi<b/>q'ara<s n="n"/></l><r>buitre<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suwi<b/>q'ara<s n="n"/></l><r>gallinazo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suyt'u<s n="n"/></l><r>hocico<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>suyu<s n="n"/></l><r>país<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suyu<s n="n"/></l><r>estado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>suyu<s n="n"/></l><r>región<s n="n"/><s n="f"/></r></p></e>
+    
+    <e><p><l>t'ankar<s n="n"/></l><r>táncar<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'anta<s n="n"/></l><r>pan<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'anta<b/>churana<s n="n"/></l><r>panera<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>t'apsa<s n="n"/></l><r>pico<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'aqa<s n="n"/></l><r>grupo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'aqa<s n="n"/></l><r>parte<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>t'aqlla<s n="n"/></l><r>palma<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>t'aqlla<s n="n"/></l><r>palmazo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'ika<s n="n"/></l><r>flor<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>t'inpu<s n="n"/></l><r>puchero<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>t'iqsi<s n="n"/></l><r>base<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>t'ira<s n="n"/></l><r>mellizo<s n="n"/></r></p></e>
+    <e><p><l>t'uqllu<s n="n"/></l><r>calavera<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>t'uqtu<s n="n"/></l><r>chicharrón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'uqu<s n="n"/></l><r>agujero<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'uqu<s n="n"/></l><r>hueco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'uqu<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>t'uru<s n="n"/></l><r>barro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'uru<s n="n"/></l><r>lodo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'utura<s n="n"/></l><r>junco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>t'utura<s n="n"/></l><r>totora<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>taka<s n="n"/></l><r>golpe<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>taki<s n="n"/></l><r>canción<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>taki<b/>unquy<s n="n"/></l><r>baile<g><b/>de<b/>San<b/>Vito</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>taklla<s n="n"/></l><r>arado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tanpu<s n="n"/></l><r>posada<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tanpu<s n="n"/></l><r>tambo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tanta<s n="n"/></l><r>junta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>taqi<s n="n"/></l><r>depósito<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tarka<s n="n"/></l><r>tarca<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tarqa<s n="n"/></l><r>tarca<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>taruka<s n="n"/></l><r>ciervo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>taruka<s n="n"/></l><r>taruca<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>tarwi<s n="n"/></l><r>altramuz<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tarwi<s n="n"/></l><r>chocho<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tarwi<s n="n"/></l><r>tarhui<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>Tawantinsuyu<s n="n"/></l><r>imperio<g><b/>inca</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tawna<s n="n"/></l><r>bastón<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>tawna<s n="n"/></l><r>muleta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tawqa<s n="n"/></l><r>montón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>thamin<s n="n"/></l><r>placenta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>thanta<s n="n"/></l><r>trapo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>thaski<s n="n"/></l><r>paso<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>thuqa<s n="n"/></l><r>saliva<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>thuta<s n="n"/></l><r>polilla<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tika<s n="n"/></l><r>adobe<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tikti<s n="n"/></l><r>verruga<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tinku<s n="n"/></l><r>encuentro<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>tinya<s n="n"/></l><r>tambor<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tinya<s n="n"/></l><r>tamboril<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tiqni<s n="n"/></l><r>cadera<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tiqsi<s n="n"/></l><r>base<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tiqsi<s n="n"/></l><r>cimiento<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tiqsi<b/>muyu<s n="n"/></l><r>mundo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tiqsi<b/>muyu<s n="n"/></l><r>planeta<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>tiqsi<b/>muyu<s n="n"/></l><r>universo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tiqti<s n="n"/></l><r>chicha<g><b/>de<b/>quinua</g><s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>titi<s n="n"/></l><r>estaño<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>titi<s n="n"/></l><r>plomo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>trigu<s n="n"/></l><r>trigo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tukapu<s n="n"/></l><r>bordado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tukapu<s n="n"/></l><r>tocapo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tuku<s n="n"/></l><r>búho<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tuku<s n="n"/></l><r>lechuza<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tullpa<s n="n"/></l><r>hogar<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tullpu<s n="n"/></l><r>color<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tullpu<s n="n"/></l><r>tinta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tullu<s n="n"/></l><r>hueso<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tullu<b/>unquy<s n="n"/></l><r>reuma<s n="n"/><s n="mf"/></r></p></e>
+    <e r="RL"><p><l>tullu<b/>unquy<s n="n"/></l><r>reúma<s n="n"/><s n="mf"/></r></p></e>
+    <e r="LR"><p><l>tumi<s n="n"/></l><r>cuchillo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tuna<s n="n"/></l><r>tuna<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tunas<s n="n"/></l><r>tuna<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tunqur<s n="n"/></l><r>garganta<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>tunqur<b/>muqu<s n="n"/></l><r>nuez<g><b/>de<b/>la<b/>garganta</g><s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>tunquri<s n="n"/></l><r>garganta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tunta<s n="n"/></l><r>chuño<g><b/>blanco</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tunta<s n="n"/></l><r>tunta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tupu<s n="n"/></l><r>medida<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tupu<s n="n"/></l><r>prendedor<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tuqtu<s n="n"/></l><r>clueca<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>turu<s n="n"/></l><r>toro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tuta<s n="n"/></l><r>noche<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tuta<b/>mikhuy<s n="n"/></l><r>cena<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tuta<b/>tuta<s n="n"/></l><r>oscuridad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tutu<s n="n"/></l><r>ubre<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>tutura<s n="n"/></l><r>junco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tuya<s n="n"/></l><r>alondra<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tuyru<s n="n"/></l><r>marca<s n="n"/><s n="f"/></r></p></e>
+
+    <e><p><l>uchu<s n="n"/></l><r>ají<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uchu<b/>kuta<s n="n"/></l><r>salsa<g><b/>de<b/>ají</g><s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uhu<s n="n"/></l><r>tos<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>ukati<s n="n"/></l><r>hurón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ukhu<s n="n"/></l><r>interior<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>ukhu<s n="n"/></l><r>tronco<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ukhu<b/>pacha<s n="n"/></l><r>infierno<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>ukhumari<s n="n"/></l><r>oso<s n="n"/></r></p></e>
+    <e><p><l>ukhuna<s n="n"/></l><r>ropa<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>ukhuncha<s n="n"/></l><r>camisa<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>ukuku<s n="n"/></l><r>oso<s n="n"/></r></p></e>
+    <e r="LR"><p><l>ukumari<s n="n"/></l><r>oso<s n="n"/></r></p></e>
+    <e><p><l>ullu<s n="n"/></l><r>pene<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>ullu<s n="n"/></l><r>verga<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>ulluku<s n="n"/></l><r>melloco<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>ulluku<s n="n"/></l><r>olluco<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>ulluku<s n="n"/></l><r>papa<g><b/>lisa</g><s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>ulluku<s n="n"/></l><r>papalisa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>uma<s n="n"/></l><r>cabeza<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uma<b/>muyuy<s n="n"/></l><r>mareo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>umiña<s n="n"/></l><r>joya<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>umu<s n="n"/></l><r>sacerdote<s n="n"/><s n="mf"/></r></p></e>
+    <e><p><l>unancha<s n="n"/></l><r>bandera<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>unkhu<s n="n"/></l><r>túnica<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>unkhuña<s n="n"/></l><r>uncuña<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>unku<s n="n"/></l><r>túnica<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>unqu<s n="n"/></l><r>enfermedad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>unquy<s n="n"/></l><r>enfermedad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unu<s n="n"/></l><r>agua<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>unu<b/>pacha<s n="n"/></l><r>mar<s n="n"/><s n="mf"/></r></p></e>
+    <e><p><l>uña<s n="n"/></l><r>cría<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uña<b/>alqu<s n="n"/></l><r>cachorro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uña<b/>waka<s n="n"/></l><r>ternera<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>upi<s n="n"/></l><r>mosto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uqa<s n="n"/></l><r>oca<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uqhu<s n="n"/></l><r>ciénaga<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uqhu<s n="n"/></l><r>pantano<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uquti<s n="n"/></l><r>ano<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>uquti<s n="n"/></l><r>ojete<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uquti<s n="n"/></l><r>recto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uquti<b/>unquy<s n="n"/></l><r>hemorroides<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>ura<s n="n"/></l><r>hora<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uritu<s n="n"/></l><r>loro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uritu<s n="n"/></l><r>papagayo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>urpi<s n="n"/></l><r>paloma<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>urpila<s n="n"/></l><r>paloma<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>urqu<s n="n"/></l><r>cerro<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>urqu<s n="n"/></l><r>montaña<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uru<s n="n"/></l><r>araña<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uru<s n="n"/></l><r>insecto<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>uruya<s n="n"/></l><r>andarivel<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>uruya<s n="n"/></l><r>funicular<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uruya<s n="n"/></l><r>oroya<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>usa<s n="n"/></l><r>piojo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uskhu<s n="n"/></l><r>algodón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>usnu<s n="n"/></l><r>trono<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uspha<s n="n"/></l><r>ceniza<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>usuta<s n="n"/></l><r>chancleta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>usuta<s n="n"/></l><r>ojota<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>usuta<s n="n"/></l><r>sandalia<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uta<s n="n"/></l><r>uta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uti<s n="n"/></l><r>cansancio<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>utkhu<s n="n"/></l><r>algodón<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>uturunku<s n="n"/></l><r>jaguar<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>uturunku<s n="n"/></l><r>otorongo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uturunku<s n="n"/></l><r>tigre<s n="n"/></r></p></e>
+    <e r="RL"><p><l>uturunku<s n="n"/></l><r>yaguar<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uwas<s n="n"/></l><r>uva<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>uya<s n="n"/></l><r>cara<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>uya<s n="n"/></l><r>rostro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uywa<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uywa<s n="n"/></l><r>ganado<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>uywa<s n="n"/></l><r>res<s n="n"/><s n="f"/></r></p></e>
+    
     <e><p><l>wakcha<s n="n"/></l><r>huérfano<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>wasi<s n="n"/></l><r>casa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wawa<s n="n"/></l><r>niño<s n="n"/></r></p></e>
@@ -1275,6 +1573,9 @@
     <e><p><l>mama<s n="n"/><s n="f"/></l><r>madre<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>tayta<s n="n"/><s n="m"/></l><r>señor<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>mama<s n="n"/><s n="f"/></l><r>señor<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>taytacha<s n="n"/><s n="m"/></l><r>Cristo<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- sin número -->
+    <e><p><l>mamacha<s n="n"/><s n="m"/></l><r>Virgen<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tayta-mama<s n="n"/></l><r>padre<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e><p><l>machu<s n="n"/><s n="m"/></l><r>viejo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>paya<s n="n"/><s n="f"/></l><r>viejo<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wayqi<s n="n"/><s n="m"/></l><r>hermano<s n="n"/><s n="m"/></r></p></e>
@@ -1282,15 +1583,23 @@
     <e><p><l>pana<s n="n"/><s n="f"/></l><r>hermano<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>pani<s n="n"/><s n="f"/></l><r>hermano<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>ñaña<s n="n"/><s n="f"/></l><r>hermano<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>pana-tura<s n="n"/></l><r>hermano<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e r="LR"><p><l>qhari<b/>irqi<s n="n"/><s n="m"/></l><r>niño<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>warmi<b/>irqi<s n="n"/><s n="f"/></l><r>niño<s n="n"/><s n="f"/></r></p></e>    
     <e r="LR"><p><l>qhari<b/>wawa<s n="n"/><s n="m"/></l><r>hijo<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>warmi<b/>wawa<s n="n"/><s n="f"/></l><r>hijo<s n="n"/><s n="f"/></r></p></e>    
     <e><p><l>qhari<s n="n"/><s n="m"/></l><r>hombre<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>warmi<s n="n"/><s n="f"/></l><r>mujer<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>qhari-warmi<s n="n"/></l><r>esposo<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+    <e><p><l>urqu<s n="n"/><s n="m"/></l><r>macho<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>china<s n="n"/><s n="f"/></l><r>hembra<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>churi<s n="n"/><s n="m"/></l><r>hijo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ususi<s n="n"/><s n="f"/></l><r>hijo<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>anpullu<s n="n"/><s n="f"/></l><r>bisnieta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>apucha<s n="n"/><s n="f"/></l><r>abuelo<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>apuchi<s n="n"/><s n="m"/></l><r>tatarabuelo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>awkilla<s n="n"/><s n="f"/></l><r>bisabuela<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>awkillu<s n="n"/><s n="m"/></l><r>bisabuelo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>aqi<s n="n"/><s n="f"/></l><r>suegra<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>awalla<s n="n"/><s n="f"/></l><r>gemelo<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wispalla<s n="n"/><s n="f"/></l><r>gemelo<s n="n"/><s n="f"/></r></p></e>    
@@ -1320,6 +1629,14 @@
     <e><p><l>qusa<s n="n"/><s n="m"/></l><r>esposo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qusa<s n="n"/><s n="m"/></l><r>marido<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>quya<s n="n"/><s n="f"/></l><r>reina<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>sapa<b/>inka<s n="n"/><s n="m"/></l><r>inca<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>Sapay<b/>Inka<s n="n"/><s n="m"/></l><r>inca<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>sapay<b/>quya<s n="n"/><s n="f"/></l><r>reina<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sispa<b/>ñaña<s n="n"/><s n="f"/></l><r>primo<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sispa<b/>pana<s n="n"/><s n="f"/></l><r>primo<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>sispa<b/>tura<s n="n"/><s n="m"/></l><r>primo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>sispa<b/>wayqi<s n="n"/><s n="m"/></l><r>primo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>tullka<s n="n"/><s n="m"/></l><r>yerno<s n="n"/><s n="m"/></r></p></e>
 
     </section>
     
@@ -1340,6 +1657,7 @@
     <e r="LR"><p><l>pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>Pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>quyllur<s n="n"/></l><r>Venus<s n="np"/><s n="loc"/><s n="m"/></r></p></e>
+    <e><p><l>Tawantinsuyu<s n="np"/></l><r>Tahuantinsuyo<s n="np"/><s n="loc"/><s n="m"/><s n="sg"/></r></p></e>
     
     </section>
     
