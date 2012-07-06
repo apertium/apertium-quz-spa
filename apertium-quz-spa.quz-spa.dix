@@ -623,7 +623,7 @@
     <e><p><l>ayllu<b/>kawsay<s n="n"/></l><r>tradición<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ayllu<b/>suti<s n="n"/></l><r>apellido<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ayma<s n="n"/></l><r>procesión<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>ayni<s n="n"/></l><r>trabajo<b/>comunal<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>ayni<s n="n"/></l><r>trabajo<g><b/>comunal</g><s n="n"/><s n="m"/></r></p></e>
     <e><p><l>ayñi<s n="n"/></l><r>incompatibilidad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>ayu<s n="n"/></l><r>adúltero<s n="n"/></r></p></e>    
     <e><p><l>awki<s n="n"/></l><r>príncipe<s n="n"/><s n="m"/></r></p></e>
@@ -885,7 +885,7 @@
     <e><p><l>llant'a<s n="n"/></l><r>leña<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>llanthu<s n="n"/></l><r>sombra<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>llanthuna<s n="n"/></l><r>sombrilla<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>llaqulla<s n="n"/></l><r>mantón<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>llaqulla<s n="n"/></l><r>manto<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>llaqta<s n="n"/></l><r>pueblo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>llaqta<s n="n"/></l><r>ciudad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>llaqta<b/>masi<s n="n"/></l><r>compatriota<s n="n"/><s n="mf"/></r></p></e>
@@ -1683,7 +1683,7 @@
     <e><p><l>yapa<s n="n"/></l><r>aumento<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>yapa<s n="n"/></l><r>yapa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>yaqa<b/>wat'a<s n="n"/></l><r>península<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>yaqulla<s n="n"/></l><r>mantón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>yaqulla<s n="n"/></l><r>manto<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>yaqulla<s n="n"/></l><r>yacolla<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>yarawi<s n="n"/></l><r>poema<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>yarina<s n="n"/></l><r>tagua<s n="n"/><s n="f"/></r></p></e>
@@ -1873,23 +1873,40 @@
     <e r="RL"><p><l>kay<s n="vbex"/></l><r>hay<s n="vblex"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
     <e><p><l>kay<s n="vbcop"/></l><r>ser<s n="vbser"/></r></p></e>
     <e><p><l>pachaña<b/>kay<s n="vbex"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
+    <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>munay<s n="vblex"/></l><r>querer<s n="vbmod"/></r></p></e>
     
-
     </section>
+    
+    <section id="VERBOS_HISPANISMOS" type="standard">
+      
+    <e><p><l>liyiy<s n="vblex"/></l><r>leer<s n="vblex"/></r></p></e>
+    
+    </section>
+    
+    <section id="VERBOS_DE_COMUNICACION" type="standard">
+      
+    <e><p><l>kutichiy<s n="vblex"/></l><r>contestar<s n="vblex"/></r></p></e>
+    <e><p><l>niy<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>parlay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
+    <e><p><l>qapariy<s n="vblex"/></l><r>gritar<s n="vblex"/></r></p></e>
+    <e><p><l>tapuy<s n="vblex"/></l><r>preguntar<s n="vblex"/></r></p></e>
+    
+    </section>    
     
     <section id="VERBOS_DE_MOVIMIENTO" type="standard">
     <!-- SECCIÓN: Verbos de movimiento -->
     <!-- porque de esto dependerá el caso que en español tienen la misma forma para ubicación y mov. -->
     
-    <e><p><l>achhuykuy<s n="vblex"/><s n="vm"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
-    <e><p><l>chayay<s n="vblex"/><s n="vm"/></l><r>llegar<s n="vblex"/></r></p></e>
-    <e><p><l>hamuy<s n="vblex"/><s n="vm"/></l><r>venir<s n="vblex"/></r></p></e>
-    <e><p><l>haykuy<s n="vblex"/><s n="vm"/></l><r>entrar<s n="vblex"/></r></p></e>
-    <e><p><l>phaway<s n="vblex"/><s n="vm"/></l><r>correr<s n="vblex"/></r></p></e>
-    <e><p><l>puriy<s n="vblex"/><s n="vm"/></l><r>caminar<s n="vblex"/></r></p></e>
-    <e><p><l>riy<s n="vblex"/><s n="vm"/></l><r>ir<s n="vblex"/></r></p></e>
-    <e><p><l>ripuy<s n="vblex"/><s n="vm"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>achhuykuy<s n="vblex"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>chayay<s n="vblex"/>></l><r>llegar<s n="vblex"/></r></p></e>
+    <e><p><l>hamuy<s n="vblex"/></l><r>venir<s n="vblex"/></r></p></e>
+    <e><p><l>haykuy<s n="vblex"/></l><r>entrar<s n="vblex"/></r></p></e>
+    <e><p><l>phaway<s n="vblex"/></l><r>correr<s n="vblex"/></r></p></e>
+    <e><p><l>puriy<s n="vblex"/></l><r>caminar<s n="vblex"/></r></p></e>
+    <e><p><l>riy<s n="vblex"/></l><r>ir<s n="vblex"/></r></p></e>
+    <e><p><l>ripuy<s n="vblex"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
     
     </section>
     
@@ -1908,14 +1925,16 @@
     <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/></l><r>ordenar<s n="vblex"/><s n="tv"/></r></p></e>
     <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/></l><r>decretar<s n="vblex"/><s n="tv"/></r></p></e>
     <e r="LR"><p><l>kapuy<s n="vblex"/></l><r>tener<s n="vblex"/></r></p></e>
-    <e><p><l>kutichiy<s n="vblex"/></l><r>contestar<s n="vblex"/></r></p></e>
     <e><p><l>llank'ay<s n="vblex"/></l><r>trabajar<s n="vblex"/></r></p></e>
     <e><p><l>maskhay<s n="vblex"/></l><r>buscar<s n="vblex"/></r></p></e>
     <e><p><l>millp'uy<s n="vblex"/></l><r>tomar<s n="vblex"/></r></p></e>
-    <e><p><l>munay<s n="vblex"/></l><r>querer<s n="vblex"/></r></p></e>
+    <e><p><l>munay<s n="vblex"/></l><r>querer<s n="vblex"/></r></p></e> 
+    <e r="RL"><p><l>munay<s n="vblex"/></l><r>desear<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>munakuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>    
     <e r="LR"><p><l>munaykuy<s n="vblex"/></l><r>gustar<s n="vblex"/></r></p></e>
-    <e><p><l><g>sinchita<b/></g>munakuy<s n="vblex"/></l><r>encantar<s n="vblex"/></r></p></e>
+    <e><p><l><g>sinchita<b/></g>munakuy<s n="vblex"/></l><r>encantar<s n="vblex"/></r></p></e>   
+    <e><p><l>nanay<s n="vblex"/></l><r>doler<s n="vblex"/></r></p></e>
+    
     <e><p><l>pakay<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
     <e><p><l>qispiy<s n="vblex"/><s n="caus"/></l><r>librar<s n="vblex"/></r></p></e>
     <e><p><l>quy<s n="vblex"/></l><r>dar<s n="vblex"/></r></p></e>
@@ -1925,14 +1944,13 @@
     <e><p><l>respetay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>rispitay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
     <e><p><l>rikuy<s n="vblex"/></l><r>ver<s n="vblex"/></r></p></e>
-    <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/></l><r>acordar<s n="vblex"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/><s n="rec"/></l><r>acordar<s n="vblex"/></r></p></e>
     <e><p><l>riqsiy<s n="vblex"/></l><r>conocer<s n="vblex"/></r></p></e>
     <e><p><l>riqsiy<s n="vblex"/></l><r>reconocer<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>ruray<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
     <e><p><l>ruway<s n="vblex"/></l><r>hacer<s n="vblex"/></r></p></e>
     <e><p><l>saruy<s n="vblex"/></l><r>pisar<s n="vblex"/></r></p></e>
     <e><p><l>sarunchay<s n="vblex"/></l><r>pisotear<s n="vblex"/></r></p></e>
-    <e><p><l>tapuy<s n="vblex"/></l><r>preguntar<s n="vblex"/></r></p></e>
     <e><p><l>tariy<s n="vblex"/></l><r>encontrar<s n="vblex"/></r></p></e>
     <e><p><l>taripay<s n="vblex"/></l><r>alcanzar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>uyariy<s n="vblex"/></l><r>escuchar<s n="vblex"/></r></p></e>
@@ -1949,39 +1967,32 @@
     <section id="VERBOS_INTRANSITIVOS" type="standard">
     <!-- SECCIÓN: Verbos "intransitivos" en español y otros -->
     
+    <e><p><l>achiy<s n="vblex"/></l><r>estornudar<s n="vblex"/></r></p></e>    
     <e><p><l>asiy<s n="vblex"/></l><r>reír<s n="vblex"/></r></p></e>
     <e><p><l>atiy<s n="vblex"/></l><r>poder<s n="vbmod"/></r></p></e>
-    <e><p><l>chirimuy<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>    
     <e><p><l>imanay<s n="vblex"/></l><r>qué<b/>hacer<s n="vblex"/></r></p></e>
     <e><p><l>hinay<s n="vblex"/></l><r>hacer<s n="vblex"/><g><b/>así</g></r></p></e>
-    <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
     <e><p><l>kawsay<s n="vblex"/></l><r>vivir<s n="vblex"/></r></p></e>
     <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
     <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
+    
     <e><p><l>pakakuy<s n="vblex"/></l><r>esconderse<s n="vblex"/><s n="pron"/></r></p></e>
     <e><p><l>paqariy<s n="vblex"/></l><r>nacer<s n="vblex"/></r></p></e>
+    <e><p><l>pisiy<s n="vblex"/></l><r>faltar<s n="vblex"/></r></p></e>
     <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>    
     <e r="LR"><p><l>pukllakuy<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
     <e><p><l>puñuy<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>
     <e><p><l>qispiy<s n="vblex"/></l><r>librar<s n="vblex"/><s n="pron"/></r></p></e>
-    <e><p><l>rimay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
-    <e><p><l>ruphamuy<s n="vblex"/></l><r>hacer<g><b/>calor</g><s n="vblex"/></r></p></e>
+    <e><p><l>sayay<s n="vblex"/></l><r>estar<g><b/>de<b/>pie</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>sayay<s n="vblex"/></l><r>estar<g><b/>parado</g><s n="vblex"/></r></p></e>
     <e><p><l>tiyay<s n="vblex"/></l><r>sentar<s n="vblex"/></r></p></e>
     <e><p><l>tiyay<s n="vblex"/></l><r>vivir<s n="vblex"/></r></p></e>
     <e><p><l>tukuy<s n="vblex"/></l><r>terminar<s n="vblex"/></r></p></e>
     <e><p><l>ukyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>upyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
     <e><p><l>uyarichikuy<s n="vblex"/></l><r>oírse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>waqay<s n="vblex"/></l><r>llorar<s n="vblex"/></r></p></e>
     <e><p><l>yanay<s n="vblex"/></l><r>servir<s n="vblex"/></r></p></e>
-    
-    </section>
-    
-    <section id="VERBOS_DE_COMUNICACION" type="standard">
-    <e><p><l>niy<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
-    </section>
-    
-    <section id="VERBOS_HISPANISMOS" type="standard">
-    <e><p><l>liyiy<s n="vblex"/></l><r>leer<s n="vblex"/></r></p></e>
     
     </section>
     
