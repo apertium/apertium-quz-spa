@@ -1891,15 +1891,32 @@ yanay:yana V-IV ;   ! servir
 
 
 LEXICON VerbosMov
-achhuykuy:achhuyku V-VM ; ! "acercarse"  - poner %{U%}
-chayay:chaya V-VM ;     ! llegar
-hamuy:hamu V-VM ; ! "venir"              - poner %{bU%}
-haykuy:hayku V-VM ; ! "entrar"
-phaway:phawa V-VM ; ! "correr"
-puriy:puri V-VM ; ! "caminar"
-riy:ri V-VM ; ! "ir"
-ripuy:ripu V-VM ; ! "irse"
-
+! haku, hakuchis, hakuchu, hakuyá, hakuwá "vamos"
+achhuy:achhu V-VM;          ! "acercarse"
+achhuykuy:achhuyku V-VM ;   ! "acercarse"  - poner %{U%}
+anchhuykuy:anchhuyku V-VM;  ! "acercarse"  - poner %{U%}
+anchhuriy:anchhuri V-VM;    ! "apartarse"
+asuy:asu V-VM;          ! "acercarse"
+ch%'usay:ch%'usa V-VM;  ! "viajar, ausentarse, estar ausente"
+chayay:chaya V-VM ;     ! "llegar"
+chinpay:chinpa V-VM;    ! "cruzar, atravesar, vadear"
+hamuy:hamu V-VM ;       ! "venir"
+hampuy:hampu V-VM;      ! "volver/venir a casa"
+hanpuy:hanpu V-VM;      ! "volver a casa"
+haykuy:hayku V-VM ;     ! "entrar, caber, ingresar"
+kutiy:kuti V-VM;        ! "volver"
+lluqsiy:lluqsi V-VM;    ! "salir"
+pasay:pasa V-VM;        ! "pasar, ir"
+phalay:phala V-VM;      ! "volar"
+phaway:phawa V-VM ;     ! "correr"
+puriy:puri V-VM ;       ! "caminar, andar, marchar"
+riy:ri V-VM ;           ! "ir"
+ripuy:ripu V-VM ;       ! "irse"
+taskiy:taski V-VM;      ! "ir paso a paso"
+thaskiy:thaski V-VM;    ! "ir paso a paso"
+thatkiy:thatki V-VM;    ! "ir paso a paso"
+wichay:wicha V-VM;      ! "subir, ascender, escalar"
+yaykuy:yayku V-VM;      ! "entrar"
 
 LEXICON VerbosCom
 kutichiy:kutichi V-COM ; ! "contestar"

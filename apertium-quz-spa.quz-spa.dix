@@ -1896,17 +1896,48 @@
     </section>    
     
     <section id="VERBOS_DE_MOVIMIENTO" type="standard">
-    <!-- SECCIÓN: Verbos de movimiento -->
     <!-- porque de esto dependerá el caso que en español tienen la misma forma para ubicación y mov. -->
     
     <e><p><l>achhuykuy<s n="vblex"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
-    <e><p><l>chayay<s n="vblex"/>></l><r>llegar<s n="vblex"/></r></p></e>
+    <e><p><l>anchhuykuy<s n="vblex"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>achhuy<s n="vblex"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>anchhuriy<s n="vblex"/></l><r>apartarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>asuy<s n="vblex"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>ch'usay<s n="vblex"/></l><r>ausentarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>ch'usay<s n="vblex"/></l><r>estar<g><b/>ausente</g><s n="vblex"/></r></p></e>
+    <e><p><l>ch'usay<s n="vblex"/></l><r>viajar<s n="vblex"/></r></p></e>
+    <e><p><l>chayay<s n="vblex"/></l><r>llegar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>chinpay<s n="vblex"/></l><r>atravesar<s n="vblex"/></r></p></e>
+    <e><p><l>chinpay<s n="vblex"/></l><r>cruzar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>chinpay<s n="vblex"/></l><r>vadear<s n="vblex"/></r></p></e>
     <e><p><l>hamuy<s n="vblex"/></l><r>venir<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>hampuy<s n="vblex"/></l><r>venir<g><b/>a<b/>casa</g><s n="vblex"/></r></p></e>
+    <e><p><l>hampuy<s n="vblex"/></l><r>volver<g><b/>a<b/>casa</g><s n="vblex"/></r></p></e>
     <e><p><l>haykuy<s n="vblex"/></l><r>entrar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>hanpuy<s n="vblex"/></l><r>volver<g><b/>a<b/>casa</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>haykuy<s n="vblex"/></l><r>caber<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>haykuy<s n="vblex"/></l><r>ingresar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>haykuy<s n="vblex"/></l><r>penetrar<s n="vblex"/></r></p></e>
+    <e><p><l>kutiy<s n="vblex"/></l><r>regresar<s n="vblex"/></r></p></e>
+    <e><p><l>kutiy<s n="vblex"/></l><r>volver<s n="vblex"/></r></p></e>
+    <e><p><l>lluqsiy<s n="vblex"/></l><r>salir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>pasay<s n="vblex"/></l><r>ir<s n="vblex"/></r></p></e>
+    <e><p><l>pasay<s n="vblex"/></l><r>pasar<s n="vblex"/></r></p></e>
+    <e><p><l>phalay<s n="vblex"/></l><r>volar<s n="vblex"/></r></p></e>
     <e><p><l>phaway<s n="vblex"/></l><r>correr<s n="vblex"/></r></p></e>
     <e><p><l>puriy<s n="vblex"/></l><r>caminar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>puriy<s n="vblex"/></l><r>andar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>puriy<s n="vblex"/></l><r>marchar<s n="vblex"/></r></p></e>
     <e><p><l>riy<s n="vblex"/></l><r>ir<s n="vblex"/></r></p></e>
     <e><p><l>ripuy<s n="vblex"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>ripuy<s n="vblex"/></l><r>marcharse<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>taskiy<s n="vblex"/></l><r>ir<g><b/>paso<b/>a<b/>paso</g><s n="vblex"/></r></p></e>
+    <e><p><l>thaskiy<s n="vblex"/></l><r>ir<g><b/>paso<b/>a<b/>paso</g><s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>thatkiy<s n="vblex"/></l><r>ir<g><b/>paso<b/>a<b/>paso</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>wichay<s n="vblex"/></l><r>ascender<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>wichay<s n="vblex"/></l><r>escalar<s n="vblex"/></r></p></e>
+    <e><p><l>wichay<s n="vblex"/></l><r>subir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>yaykuy<s n="vblex"/></l><r>entrar<s n="vblex"/></r></p></e>
     
     </section>
     
