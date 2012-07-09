@@ -792,6 +792,7 @@
     <e><p><l>kallpa<s n="n"/></l><r>poder<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kamachi<s n="n"/></l><r>ley<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kamachi<s n="n"/></l><r>decreto<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kamayuq<s n="n"/></l><r>experto<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kancha<s n="n"/></l><r>cancha<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kancha<s n="n"/></l><r>corral<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kancha<s n="n"/></l><r>patio<s n="n"/><s n="m"/></r></p></e>
@@ -1879,9 +1880,105 @@
     </section>
     
     <section id="VERBOS_HISPANISMOS" type="standard">
-      
+        
+    <e r="RL"><p><l>apuray<s n="vblex"/></l><r>apresurarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>apuray<s n="vblex"/></l><r>darse<g><b/>prisa</g><s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>apuray<s n="vblex"/></l><r>apurarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>faltay<s n="vblex"/></l><r>faltar<s n="vblex"/></r></p></e>
+    <e><p><l>kasarakuy<s n="vblex"/></l><r>casarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>kasay<s n="vblex"/></l><r>casarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>kiday<s n="vblex"/></l><r>quedar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>kruschakuy<s n="vblex"/></l><r>santiguarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>kruschakuy<s n="vblex"/></l><r>cruzarse<s n="vblex"/><s n="pron"/></r></p></e>
     <e><p><l>liyiy<s n="vblex"/></l><r>leer<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>nasey<s n="vblex"/></l><r>nacer<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>nasiy<s n="vblex"/></l><r>nacer<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>phaltay<s n="vblex"/></l><r>faltar<s n="vblex"/></r></p></e>
     
+    </section>
+    
+    <section id="VERBOS_PRONOMINALES_en_castellano" type="standard">
+    <!-- los intransitivos; los demás en otras secciones -->
+    
+    <e><p><l>ch'akiy<s n="vblex"/></l><r>secarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>chichuyay<s n="vblex"/></l><r>preñarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>chichuyay<s n="vblex"/></l><r>quedarse<g><b/>embarazada</g><s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>chiriyay<s n="vblex"/></l><r>enfriarse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>hawkay<s n="vblex"/></l><r>recrearse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>ismuy<s n="vblex"/></l><r>pudrirse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>k'aspiy<s n="vblex"/></l><r>ponerse<g><b/>palo</g><s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>k'iray<s n="vblex"/></l><r>acostarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>k'umuy<s n="vblex"/></l><r>inclinarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>k'umuy<s n="vblex"/></l><r>agacharse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>k'uytuy<s n="vblex"/></l><r>acuclillarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>khatatatay<s n="vblex"/></l><r>estremecerse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>khutuy<s n="vblex"/></l><r>congelarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>kusiy<s n="vblex"/></l><r>alegrarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>kuyuy<s n="vblex"/></l><r>moverse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>lat'ay<s n="vblex"/></l><r>arrastrarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>lathay<s n="vblex"/></l><r>arrastrarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>lluskhay<s n="vblex"/></l><r>deslizarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>llusp'ay<s n="vblex"/></l><r>deslizarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>llusphay<s n="vblex"/></l><r>deslizarse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>machay<s n="vblex"/></l><r>emborracharse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>machay<s n="vblex"/></l><r>embriagarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>naq'iy<s n="vblex"/></l><r>marchitarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>ñaq'iy<s n="vblex"/></l><r>marchitarse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>p'achallikuy<s n="vblex"/></l><r>vestirse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>p'uchukay<s n="vblex"/></l><r>terminarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>p'usquy<s n="vblex"/></l><r>agriarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>pakakuy<s n="vblex"/></l><r>esconderse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>pantay<s n="vblex"/></l><r>equivocarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>phiñay<s n="vblex"/></l><r>cabrearse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>phiñay<s n="vblex"/></l><r>ofenderse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>phiñay<s n="vblex"/></l><r>enojarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>phutiy<s n="vblex"/></l><r>afligirse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>pisipay<s n="vblex"/></l><r>agotarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>punkiy<s n="vblex"/></l><r>inflamarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>punkiy<s n="vblex"/></l><r>hincharse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>q'alay<s n="vblex"/></l><r>desnudarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>q'uñiy<s n="vblex"/></l><r>calentarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>qispiy<s n="vblex"/></l><r>librarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>qispiy<s n="vblex"/></l><r>salvarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>qunquriy<s n="vblex"/></l><r>arrodillarse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>raqray<s n="vblex"/></l><r>agrietarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>raqray<s n="vblex"/></l><r>rajarse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>saksay<s n="vblex"/></l><r>hartarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>saksay<s n="vblex"/></l><r>saciarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="LR"><p><l>saqsay<s n="vblex"/></l><r>saciarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>saway<s n="vblex"/></l><r>casarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>sayk'uy<s n="vblex"/></l><r>cansarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>sink'ay<s n="vblex"/></l><r>emborracharse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>sinkay<s n="vblex"/></l><r>emborracharse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>such'uy<s n="vblex"/></l><r>deslizarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>suchuy<s n="vblex"/></l><r>deslizarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>susunkay<s n="vblex"/></l><r>adormecerse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>susunkhay<s n="vblex"/></l><r>adormecerse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>thallay<s n="vblex"/></l><r>echarse<g><b/>boca<b/>abajo</g><s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>thaniy<s n="vblex"/></l><r>calmarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>thaniy<s n="vblex"/></l><r>curarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>thantay<s n="vblex"/></l><r>gastarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>thuniy<s n="vblex"/></l><r>derrumbarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>thuñiy<s n="vblex"/></l><r>derrumbarse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>usqhay<s n="vblex"/></l><r>apresurarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>usqhay<s n="vblex"/></l><r>apurarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>usqhay<s n="vblex"/></l><r>darse<g><b/>prisa</g><s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>usqhay<s n="vblex"/></l><r>darse<g><b/>prisa</g><s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>uyarichikuy<s n="vblex"/></l><r>oírse<s n="vblex"/><s n="pron"/></r></p></e>
+    
+    <e><p><l>waksiy<s n="vblex"/></l><r>evaporarse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>wanay<s n="vblex"/></l><r>arrepentirse<s n="vblex"/><s n="pron"/></r></p></e>
+      
     </section>
     
     <section id="VERBOS_DE_COMUNICACION" type="standard">
@@ -1930,7 +2027,7 @@
     <e r="RL"><p><l>puriy<s n="vblex"/></l><r>marchar<s n="vblex"/></r></p></e>
     <e><p><l>riy<s n="vblex"/></l><r>ir<s n="vblex"/></r></p></e>
     <e><p><l>ripuy<s n="vblex"/></l><r>irse<s n="vblex"/><s n="pron"/></r></p></e>
-    <e r="RL"><p><l>ripuy<s n="vblex"/></l><r>marcharse<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>ripuy<s n="vblex"/></l><r>marcharse<s n="vblex"/><s n="pron"/></r></p></e>
     <e r="LR"><p><l>taskiy<s n="vblex"/></l><r>ir<g><b/>paso<b/>a<b/>paso</g><s n="vblex"/></r></p></e>
     <e><p><l>thaskiy<s n="vblex"/></l><r>ir<g><b/>paso<b/>a<b/>paso</g><s n="vblex"/></r></p></e>
     <e r="LR"><p><l>thatkiy<s n="vblex"/></l><r>ir<g><b/>paso<b/>a<b/>paso</g><s n="vblex"/></r></p></e>
@@ -1941,12 +2038,35 @@
     
     </section>
     
+    <section id="VERBOS_IMPERSONALES" type="standard">
+    
+    <e r="LR"><p><l>achikyay<s n="vblex"/></l><r>amanecer<s n="vblex"/></r></p></e>
+    <e><p><l>ch'akiy<s n="vblex"/></l><r>dar<g><b/>sed</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>ch'akiy<s n="vblex"/></l><r>tener<g><b/>sed</g><s n="vblex"/></r></p></e>
+    <e><p><l>chiriy<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>
+    <e><p><l>chiriy<s n="vblex"/></l><r>tener<g><b/>frío</g><s n="vblex"/></r></p></e>
+    <e><p><l>chirimuy<s n="vblex"/></l><r>hacer<g><b/>frío</g><s n="vblex"/></r></p></e>
+    <e><p><l>hisp'anayay<s n="vblex"/></l><r>dar<g><b/>ganas<b/>de<b/>orinar</g><s n="vblex"/></r></p></e>
+    <e><p><l>illariy<s n="vblex"/></l><r>amanecer<s n="vblex"/></r></p></e>
+    <e><p><l>paqariy<s n="vblex"/></l><r>amanecer<s n="vblex"/></r></p></e>
+    <e><p><l>paray<s n="vblex"/></l><r>llover<s n="vblex"/></r></p></e>
+    <e><p><l>qasay<s n="vblex"/></l><r>helar<s n="vblex"/></r></p></e>
+    <e><p><l>rit'iy<s n="vblex"/></l><r>nevar<s n="vblex"/></r></p></e>
+    <e><p><l>ruphamuy<s n="vblex"/></l><r>hacer<g><b/>calor</g><s n="vblex"/></r></p></e>
+    <e><p><l>wayray<s n="vblex"/></l><r>hacer<g><b/>viento</g><s n="vblex"/></r></p></e>
+    <e><p><l>yarqay<s n="vblex"/></l><r>dar<g><b/>hambre</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>yarqay<s n="vblex"/></l><r>tener<g><b/>hambre</g><s n="vblex"/></r></p></e>
+    
+    </section>
+    
     <section id="VERBOS_TRANSITIVOS" type="standard">
     <!-- SECCIÓN: Verbos "transitivos" en español (que requieren de un complemento) -->
     <!-- revisar, toda la vaina esa... -->
     
     <e><p><l>akllay<s n="vblex"/></l><r>elegir<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>akllay<s n="vblex"/><s n="tv"/><s n="ref"/></l><r>elegir<s n="vblex"/><s n="tv"/></r></p></e>
+    <e><p><l>amiy<s n="vblex"/></l><r>hartar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>amiy<s n="vblex"/></l><r>fastidiar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>atiy<s n="vblex"/></l><r>lograr<s n="vblex"/></r></p></e>
     <e><p><l>churay<s n="vblex"/></l><r>poner<s n="vblex"/></r></p></e>
     <e><p><l>hunt'ay<s n="vblex"/></l><r>llenar<s n="vblex"/></r></p></e>
@@ -1958,6 +2078,7 @@
     <e r="LR"><p><l>kapuy<s n="vblex"/></l><r>tener<s n="vblex"/></r></p></e>
     <e><p><l>llank'ay<s n="vblex"/></l><r>trabajar<s n="vblex"/></r></p></e>
     <e><p><l>maskhay<s n="vblex"/></l><r>buscar<s n="vblex"/></r></p></e>
+    <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
     <e><p><l>millp'uy<s n="vblex"/></l><r>tomar<s n="vblex"/></r></p></e>
     <e><p><l>munay<s n="vblex"/></l><r>querer<s n="vblex"/></r></p></e> 
     <e r="RL"><p><l>munay<s n="vblex"/></l><r>desear<s n="vblex"/></r></p></e>
@@ -1984,6 +2105,8 @@
     <e><p><l>sarunchay<s n="vblex"/></l><r>pisotear<s n="vblex"/></r></p></e>
     <e><p><l>tariy<s n="vblex"/></l><r>encontrar<s n="vblex"/></r></p></e>
     <e><p><l>taripay<s n="vblex"/></l><r>alcanzar<s n="vblex"/></r></p></e>
+    <e><p><l>ukyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>upyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>uyariy<s n="vblex"/></l><r>escuchar<s n="vblex"/></r></p></e>
     <e><p><l>uyariy<s n="vblex"/></l><r>oír<s n="vblex"/></r></p></e>
     <e><p><l>wisq'ay<s n="vblex"/></l><r>cerrar<s n="vblex"/></r></p></e>
@@ -1996,34 +2119,204 @@
     </section>
     
     <section id="VERBOS_INTRANSITIVOS" type="standard">
-    <!-- SECCIÓN: Verbos "intransitivos" en español y otros -->
+    <!-- SECCIÓN: Verbos "intransitivos" en español y otros -->    
     
-    <e><p><l>achiy<s n="vblex"/></l><r>estornudar<s n="vblex"/></r></p></e>    
+    <e><p><l>achhiy<s n="vblex"/></l><r>estornudar<s n="vblex"/></r></p></e> 
+    <e r="RL"><p><l>akulliy<s n="vblex"/></l><r>acullicar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>akulliy<s n="vblex"/></l><r>mascar<g><b/>coca</g><s n="vblex"/></r></p></e>
+    <e><p><l>akulliy<s n="vblex"/></l><r>masticar<g><b/>coca</g><s n="vblex"/></r></p></e>
+    <e><p><l>apuskachay<s n="vblex"/></l><r>ser<g><b/>altanero</g><s n="vblex"/></r></p></e>
+    <e><p><l>aqhay<s n="vblex"/></l><r>hacer<g><b/>chicha</g><s n="vblex"/></r></p></e>
+    <e><p><l>aqtuy<s n="vblex"/></l><r>vomitar<s n="vblex"/></r></p></e>
+    <e><p><l>askhayay<s n="vblex"/></l><r>aumentar<s n="vblex"/></r></p></e>   
     <e><p><l>asiy<s n="vblex"/></l><r>reír<s n="vblex"/></r></p></e>
+    <e><p><l>asnay<s n="vblex"/></l><r>apestar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>asnay<s n="vblex"/></l><r>oler<s n="vblex"/></r></p></e>
     <e><p><l>atiy<s n="vblex"/></l><r>poder<s n="vbmod"/></r></p></e>
-    <e><p><l>imanay<s n="vblex"/></l><r>qué<b/>hacer<s n="vblex"/></r></p></e>
-    <e><p><l>hinay<s n="vblex"/></l><r>hacer<s n="vblex"/><g><b/>así</g></r></p></e>
-    <e><p><l>kawsay<s n="vblex"/></l><r>vivir<s n="vblex"/></r></p></e>
-    <e><p><l>mikhuy<s n="vblex"/></l><r>comer<s n="vblex"/></r></p></e>
-    <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
+    <e><p><l>awqay<s n="vblex"/></l><r>luchar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>awqay<s n="vblex"/></l><r>pelear<s n="vblex"/></r></p></e>
+    <e><p><l>aypay<s n="vblex"/></l><r>alcanzar<s n="vblex"/></r></p></e>
+    <e><p><l>ayqiy<s n="vblex"/></l><r>escapar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>ayqiy<s n="vblex"/></l><r>huir<s n="vblex"/></r></p></e>
     
-    <e><p><l>pakakuy<s n="vblex"/></l><r>esconderse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>ch'achay<s n="vblex"/></l><r>ayunar<s n="vblex"/></r></p></e>
+    <e><p><l>ch'aqway<s n="vblex"/></l><r>alborotar<s n="vblex"/></r></p></e>
+    <e><p><l>ch'illmiy<s n="vblex"/></l><r>guiñar<s n="vblex"/></r></p></e>
+    <e><p><l>ch'inniy<s n="vblex"/></l><r>callar<s n="vblex"/></r></p></e>
+    <e><p><l>ch'inyay<s n="vblex"/></l><r>callar<s n="vblex"/></r></p></e>
+    <e><p><l>ch'ipikyay<s n="vblex"/></l><r>parpadear<s n="vblex"/></r></p></e>
+    <e><p><l>ch'ipipipiy<s n="vblex"/></l><r>parpadear<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>chaqchay<s n="vblex"/></l><r>chacchay<s n="vblex"/></r></p></e>
+    <e><p><l>chaqchay<s n="vblex"/></l><r>masticar<g><b/>coca</g><s n="vblex"/></r></p></e>
+        
+    <e r="LR"><p><l>hallpay<s n="vblex"/></l><r>masticar<g><b/>coca</g><s n="vblex"/></r></p></e>
+    <e><p><l>hamut'ay<s n="vblex"/></l><r>pensar<s n="vblex"/></r></p></e>
+    <e><p><l>hamut'ay<s n="vblex"/></l><r>razonar<s n="vblex"/></r></p></e>
+    <e><p><l>hamut'ay<s n="vblex"/></l><r>reflexionar<s n="vblex"/></r></p></e>
+    <e><p><l>hank'ay<s n="vblex"/></l><r>cojear<s n="vblex"/></r></p></e>
+    <e><p><l>hanllay<s n="vblex"/></l><r>abrir<g><b/>la<b/>boca</g><s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>hawkay<s n="vblex"/></l><r>descansar<s n="vblex"/></r></p></e>
+    <e><p><l>hik'iy<s n="vblex"/></l><r>hipar<s n="vblex"/></r></p></e>
+    <e><p><l>hik'iy<s n="vblex"/></l><r>tener<g><b/>hipo</g><s n="vblex"/></r></p></e>
+    <e><p><l>hinay<s n="vblex"/></l><r>hacer<s n="vblex"/><g><b/>así</g></r></p></e>
+    <e><p><l>huchallikuy<s n="vblex"/></l><r>cometer<g><b/>un<b/>delito</g><s n="vblex"/></r></p></e>
+    <e><p><l>huchallikuy<s n="vblex"/></l><r>delinquir<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>huchallikuy<s n="vblex"/></l><r>pecar<s n="vblex"/></r></p></e>
+    <e><p><l>hunp'iy<s n="vblex"/></l><r>sudar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>hunp'iy<s n="vblex"/></l><r>transpirar<s n="vblex"/></r></p></e>
+    
+    <e><p><l>ichiy<s n="vblex"/></l><r>dar<g><b/>pasitos</g><s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>illay<s n="vblex"/></l><r>brillar<s n="vblex"/></r></p></e>
+    <e><p><l>iskayyay<s n="vblex"/></l><r>dudar<s n="vblex"/></r></p></e>
+    <e><p><l>imanay<s n="vblex"/></l><r>qué<b/>hacer<s n="vblex"/></r></p></e>
+    
+    <e><p><l>k'achay<s n="vblex"/></l><r>eructar<s n="vblex"/></r></p></e>
+    <e><p><l>k'anchay<s n="vblex"/></l><r>alumbrar<s n="vblex"/></r></p></e>
+    <e><p><l>k'anchay<s n="vblex"/></l><r>brillar<s n="vblex"/></r></p></e>
+    <e><p><l>k'anchay<s n="vblex"/></l><r>dar<g><b/>luz</g><s n="vblex"/></r></p></e>
+    <e><p><l>k'anchay<s n="vblex"/></l><r>iluminar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>k'anchay<s n="vblex"/></l><r>inspirar<s n="vblex"/></r></p></e>
+    <e><p><l>k'anchay<s n="vblex"/></l><r>resplandecer<s n="vblex"/></r></p></e>
+    <e><p><l>k'ikuy<s n="vblex"/></l><r>menstruar<s n="vblex"/></r></p></e>
+    <e><p><l>k'intuy<s n="vblex"/></l><r>hacer<g><b/>un<b/>ramillete<b/>de<b/>coca</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>k'isuy<s n="vblex"/></l><r>raer<s n="vblex"/></r></p></e>
+    <e><p><l>k'isuy<s n="vblex"/></l><r>raspar<s n="vblex"/></r></p></e>
+    <e><p><l>kawsay<s n="vblex"/></l><r>vivir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>khapay<s n="vblex"/></l><r>eructar<s n="vblex"/></r></p></e>
+    <e><p><l>khasay<s n="vblex"/></l><r>eructar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>khatatatay<s n="vblex"/></l><r>palpitar<s n="vblex"/></r></p></e>
+    <e><p><l>khatatatay<s n="vblex"/></l><r>temblar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>khatatatay<s n="vblex"/></l><r>vibrar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>khatatay<s n="vblex"/></l><r>temblar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>kunununuy<s n="vblex"/></l><r>temblar<s n="vblex"/></r></p></e>
+    
+    <e><p><l>lipipipiy<s n="vblex"/></l><r>centellear<s n="vblex"/></r></p></e>
+    <e><p><l>lirq'uy<s n="vblex"/></l><r>bizquear<s n="vblex"/></r></p></e>
+    <e><p><l>lirq'uy<s n="vblex"/></l><r>bizcar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>lirq'uy<s n="vblex"/></l><r>mirar<g><b/>de<b/>soslayo</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>llakiy<s n="vblex"/></l><r>pasar<g><b/>sufrimiento</g><s n="vblex"/></r></p></e>
+    <e><p><l>llakiy<s n="vblex"/></l><r>sufrir<s n="vblex"/></r></p></e>
+    <e><p><l>llawsay<s n="vblex"/></l><r>babear<s n="vblex"/></r></p></e>
+    <e><p><l>lluqhay<s n="vblex"/></l><r>trepar<s n="vblex"/></r></p></e>
+    <e><p><l>lluskhay<s n="vblex"/></l><r>resbalar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>lluskhay<s n="vblex"/></l><r>esquiar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>lluskhay<s n="vblex"/></l><r>patinar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>llusp'iy<s n="vblex"/></l><r>resbalar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>llust'ay<s n="vblex"/></l><r>resbalar<s n="vblex"/></r></p></e>
+    
+    <e><p><l>miray<s n="vblex"/></l><r>aumentar<s n="vblex"/></r></p></e>
+    <e><p><l>mitk'ay<s n="vblex"/></l><r>tropezar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>muchuy<s n="vblex"/></l><r>padecer<s n="vblex"/></r></p></e>
+    <e><p><l>muchuy<s n="vblex"/></l><r>sufrir<s n="vblex"/></r></p></e>
+    <e><p><l>munapayay<s n="vblex"/></l><r>tratar<g><b/>de</g><s n="vblex"/></r></p></e>
+    <e><p><l>musk'ay<s n="vblex"/></l><r>tropezar<s n="vblex"/></r></p></e>
+    <e><p><l>musphay<s n="vblex"/></l><r>delirar<s n="vblex"/></r></p></e>
+    <e><p><l>musqhuy<s n="vblex"/></l><r>soñar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>musquy<s n="vblex"/></l><r>soñar<s n="vblex"/></r></p></e>
+    <e><p><l>muyuy<s n="vblex"/></l><r>girar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>muyuy<s n="vblex"/></l><r>rodar<s n="vblex"/></r></p></e>    
+    <e><p><l>ñuñuy<s n="vblex"/></l><r>mamar<s n="vblex"/></r></p></e>    
+    
+    <e r="LR"><p><l>p'inqay<s n="vblex"/></l><r>sentir<g><b/>vergüenza</g><s n="vblex"/></r></p></e>
+    <e><p><l>p'itay<s n="vblex"/></l><r>saltar<s n="vblex"/></r></p></e>
+    <e><p><l>pantay<s n="vblex"/></l><r>hacer<g><b/>errores</g><s n="vblex"/></r></p></e>
     <e><p><l>paqariy<s n="vblex"/></l><r>nacer<s n="vblex"/></r></p></e>
+    
+    <e r="LR"><p><l>parway<s n="vblex"/></l><r>florecer<s n="vblex"/></r></p></e>
+    <e><p><l>phaqchay<s n="vblex"/></l><r>chorrear<s n="vblex"/></r></p></e>
+    <e><p><l>phatay<s n="vblex"/></l><r>explotar<s n="vblex"/></r></p></e>
+    <e><p><l>phatay<s n="vblex"/></l><r>reventar<s n="vblex"/></r></p></e>
+    <e><p><l>phullpuy<s n="vblex"/></l><r>borbotear<s n="vblex"/></r></p></e>
+    <e><p><l>phuqchiy<s n="vblex"/></l><r>borbotear<s n="vblex"/></r></p></e>
+    <e><p><l>phusuquy<s n="vblex"/></l><r>espumar<s n="vblex"/></r></p></e>
+    <e><p><l>phutuy<s n="vblex"/></l><r>brotar<s n="vblex"/></r></p></e>
+    <e><p><l>phutuy<s n="vblex"/></l><r>germinar<s n="vblex"/></r></p></e>
+    <e><p><l>pikchay<s n="vblex"/></l><r>masticar<g><b/>coca</g><s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>pikchay<s n="vblex"/></l><r>picchar<s n="vblex"/></r></p></e>
+    <e><p><l>pisiy<s n="vblex"/></l><r>escasear<s n="vblex"/></r></p></e>
     <e><p><l>pisiy<s n="vblex"/></l><r>faltar<s n="vblex"/></r></p></e>
+    <e><p><l>puchuy<s n="vblex"/></l><r>sobrar<s n="vblex"/></r></p></e>
     <e><p><l>pukllay<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>    
     <e r="LR"><p><l>pukllakuy<s n="vblex"/></l><r>jugar<s n="vblex"/></r></p></e>
     <e><p><l>puñuy<s n="vblex"/></l><r>dormir<s n="vblex"/></r></p></e>
-    <e><p><l>qispiy<s n="vblex"/></l><r>librar<s n="vblex"/><s n="pron"/></r></p></e>
+    <e r="RL"><p><l>puquy<s n="vblex"/></l><r>fermentar<s n="vblex"/></r></p></e>
+    <e><p><l>puquy<s n="vblex"/></l><r>madurar<s n="vblex"/></r></p></e>
+    
+    <e><p><l>q'ichay<s n="vblex"/></l><r>tener<g><b/>diarrea</g><s n="vblex"/></r></p></e>
+    <e><p><l>q'uchuy<s n="vblex"/></l><r>gozar<s n="vblex"/></r></p></e>
+    <e><p><l>q'usñiy<s n="vblex"/></l><r>echar<g><b/>humo</g><s n="vblex"/></r></p></e>
+    <e><p><l>qasiy<s n="vblex"/></l><r>estar<g><b/>libre</g><s n="vblex"/></r></p></e>
+    <e><p><l>qayllay<s n="vblex"/></l><r>preceder<s n="vblex"/></r></p></e>
+    <e><p><l>qhaliy<s n="vblex"/></l><r>estar<g><b/>sano</g><s n="vblex"/></r></p></e>
+    <e><p><l>qhaqqiy<s n="vblex"/></l><r>saber<g><b/>como<b/>la<b/>hiel</g><s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>qhatqiy<s n="vblex"/></l><r>saber<g><b/>como<b/>la<b/>hiel</g><s n="vblex"/></r></p></e>
+    <e><p><l>qhipay<s n="vblex"/></l><r>demorar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>qhipay<s n="vblex"/></l><r>quedar<s n="vblex"/></r></p></e>
+    <e><p><l>qhurquy<s n="vblex"/></l><r>roncar<s n="vblex"/></r></p></e>
+    <e><p><l>qulluy<s n="vblex"/></l><r>desaparecer<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>qulluy<s n="vblex"/></l><r>fracasar<s n="vblex"/></r></p></e>
+    
+    <e r="LR"><p><l>rawray<s n="vblex"/></l><r>arder<s n="vblex"/></r></p></e>
+    <e><p><l>rikch'ay<s n="vblex"/></l><r>estar<g><b/>despierto</g><s n="vblex"/></r></p></e>
+    <e><p><l>rikhuriy<s n="vblex"/></l><r>aparecer<s n="vblex"/></r></p></e>
+    <e><p><l>ruphay<s n="vblex"/></l><r>quemar<s n="vblex"/></r></p></e>
+    <e><p><l>ruruy<s n="vblex"/></l><r>producir<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>samariy<s n="vblex"/></l><r>respirar<s n="vblex"/></r></p></e>
+    <e><p><l>samay<s n="vblex"/></l><r>descansar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>samay<s n="vblex"/></l><r>exhalar<s n="vblex"/></r></p></e>
     <e><p><l>sayay<s n="vblex"/></l><r>estar<g><b/>de<b/>pie</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>sayay<s n="vblex"/></l><r>estar<g><b/>parado</g><s n="vblex"/></r></p></e>
+    <e><p><l>sinq'ay<s n="vblex"/></l><r>inhalar<s n="vblex"/></r></p></e>
+    <e><p><l>siqay<s n="vblex"/></l><r>subir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>sirk'ay<s n="vblex"/></l><r>sangrar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>sisay<s n="vblex"/></l><r>florecer<s n="vblex"/></r></p></e>
+    <e><p><l>supiy<s n="vblex"/></l><r>echar<g><b/>un<b/>pedo</g><s n="vblex"/></r></p></e>
+    <e><p><l>supiy<s n="vblex"/></l><r>peer<s n="vblex"/></r></p></e>
+    <e><p><l>supiy<s n="vblex"/></l><r>tirar<g><b/>un<b/>pedo</g><s n="vblex"/></r></p></e>
+    <e><p><l>sut'uy<s n="vblex"/></l><r>gotear<s n="vblex"/></r></p></e>
+    
+    <e><p><l>t'aqllay<s n="vblex"/></l><r>palmear<s n="vblex"/></r></p></e>
+    <e><p><l>t'ikay<s n="vblex"/></l><r>florecer<s n="vblex"/></r></p></e>
+    <e><p><l>t'inpuy<s n="vblex"/></l><r>hervir<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>t'uqyay<s n="vblex"/></l><r>detonar<s n="vblex"/></r></p></e>
+    <e><p><l>t'uqyay<s n="vblex"/></l><r>estallar<s n="vblex"/></r></p></e>
+    <e><p><l>t'uqyay<s n="vblex"/></l><r>reventar<s n="vblex"/></r></p></e>
+    <e><p><l>t'uyuy<s n="vblex"/></l><r>remar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>thaniy<s n="vblex"/></l><r>cesar<s n="vblex"/></r></p></e>
+    <e><p><l>thawtiy<s n="vblex"/></l><r>babear<s n="vblex"/></r></p></e>
     <e><p><l>tiyay<s n="vblex"/></l><r>sentar<s n="vblex"/></r></p></e>
     <e><p><l>tiyay<s n="vblex"/></l><r>vivir<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>tiyay<s n="vblex"/></l><r>residir<s n="vblex"/></r></p></e>
     <e><p><l>tukuy<s n="vblex"/></l><r>terminar<s n="vblex"/></r></p></e>
-    <e><p><l>ukyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>upyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
-    <e><p><l>uyarichikuy<s n="vblex"/></l><r>oírse<s n="vblex"/><s n="pron"/></r></p></e>
+    <e><p><l>tuytuy<s n="vblex"/></l><r>flotar<s n="vblex"/></r></p></e>
+    
+    <e><p><l>uhuy<s n="vblex"/></l><r>toser<s n="vblex"/></r></p></e>
+    <e><p><l>unquy<s n="vblex"/></l><r>enfermar<s n="vblex"/></r></p></e>
+    <e><p><l>unquy<s n="vblex"/></l><r>estar<g><b/>enfermo</g><s n="vblex"/></r></p></e>
+    <e><p><l>upallay<s n="vblex"/></l><r>callar<s n="vblex"/></r></p></e>
+    <e><p><l>uray<s n="vblex"/></l><r>bajar<s n="vblex"/></r></p></e>
+    <e><p><l>uray<s n="vblex"/></l><r>descender<s n="vblex"/></r></p></e>
+    <e><p><l>urmay<s n="vblex"/></l><r>caer<s n="vblex"/></r></p></e>
+    
+    <e><p><l>wanay<s n="vblex"/></l><r>escarmentar<s n="vblex"/></r></p></e>
+    <e><p><l>wanp'uy<s n="vblex"/></l><r>flotar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>wanp'uy<s n="vblex"/></l><r>navegar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>wañuy<s n="vblex"/></l><r>fallecer<s n="vblex"/></r></p></e>
+    <e><p><l>wañuy<s n="vblex"/></l><r>morir<s n="vblex"/></r></p></e>
+    <e><p><l>wañuy<b/>p'itiy<s n="vblex"/></l><r>agonizar<s n="vblex"/></r></p></e>
     <e><p><l>waqay<s n="vblex"/></l><r>llorar<s n="vblex"/></r></p></e>
+    <e><p><l>warkuy<s n="vblex"/></l><r>colgar<s n="vblex"/></r></p></e>
+    <e><p><l>wawsay<s n="vblex"/></l><r>eyacular<s n="vblex"/></r></p></e>
+    <e><p><l>wayt'ay<s n="vblex"/></l><r>nadar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>waytay<s n="vblex"/></l><r>florecer<s n="vblex"/></r></p></e>
+    <e><p><l>wiñay<s n="vblex"/></l><r>crecer<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>wiqiy<s n="vblex"/></l><r>llorar<s n="vblex"/></r></p></e>
+    <e><p><l>wist'uy<s n="vblex"/></l><r>cojear<s n="vblex"/></r></p></e>
+    
     <e><p><l>yanay<s n="vblex"/></l><r>servir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>yawaray<s n="vblex"/></l><r>sangrar<s n="vblex"/></r></p></e>
+    <e><p><l>yawarchay<s n="vblex"/></l><r>sangrar<s n="vblex"/></r></p></e>
+    <e><p><l>yawray<s n="vblex"/></l><r>arder<s n="vblex"/></r></p></e>
     
     </section>
     
