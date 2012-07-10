@@ -1,6 +1,5 @@
 !!!  Q U E C H U A . lexc
 
-!! la última revisión antes de modificar las clases de palabra, etc.
 
 
 
@@ -132,7 +131,7 @@ Multichar_Symbols
 %<caus%>      ! causativo -chi
 %<bn%>        ! benefactivo -pu (aplicativo?)
 %<rec%>       ! recíproco (-na + -ku / -chi / -pu)
-%<refl%>         ! reflexivo -ku
+%<refl%>      ! reflexivo -ku
 
 %<pri%>       ! presente
 %<past%>       ! pasado -rqa
@@ -1592,10 +1591,10 @@ Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Na
 Pacha% Mama:Pacha% Mama NP-ANT-F ;  ! "Madre Tierra"
 pachamama:pachamama NP-ANT-F ;      ! "Pachamama"
 Pachamama:Pachamama NP-ANT-F ;      ! "Pachamama"
-Tawantinsuyu%<np%>:Tawantinsuyu N ; ! "imperio inca"
 
 
 LEXICON Topónimos
+Tawantinsuyu%<np%>:Tawantinsuyu N ; ! "imperio inca"
 
 
 
@@ -1782,6 +1781,7 @@ arí:arí ADV-Invar ; ! "sí"
 aswanta:aswanta ADV ; ! "más"
 kuska:kuska ADV-lla ; ! "junto"
 mana:mana ADV ; ! "no"
+ama:ama ADV ;       ! "no" (prohibitivo)
 manapuni%<adv%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
 ña:ña ADV ; ! "ya"
 tukuy% hinantinpi:tukuy% hinantinpi ADV ; ! "en todas partes"
@@ -1814,6 +1814,7 @@ ima:ima CONJ-Coord-Final ;          ! "y"
 
 LEXICON Interjeciones
 alaláw:alaláw Interj ;      ! "Qué frío!"
+añay:añay Interj ;          ! "gracias"
 
 
 
@@ -1826,15 +1827,156 @@ pachaña% kay:pachaña% ka V-EX ;   ! "ser hora de"
 
 
 LEXICON VerbosTrans
-amiy:ami V-TV ;          ! "fastidiar, hartar"
-atiy:ati V-TV ;         ! "lograr" ----------- ? BORRAR ???
-akllay:aklla V-TV ;     ! "elegir"
-churay:chura V-TV ;     ! "poner"
-hinay:hina V-TV ;       ! "hacer así"
-hunt%'ay:hunt%'a V-TV ; ! llenar
-huñuy:huñu V-TV ;       ! juntar, unir
+achuy:achu V-TV ;       ! "morder"
+akay:aka V-TV ;         ! "defecar, cagar"
+akllay:aklla V-TV ;     ! "elegir, escoger"
+allay:alla V-TV ;       ! "escarbar, cavar"
+allchay:allcha V-TV ;   ! "arreglar"
+allichay:allicha V-TV ;     ! "arreglar, reparar"
+allichiy:allichi V-TV ;     ! "corregir"
+allinchay:allincha V-TV ;   ! "arreglar"
+allqhuchay:allqhucha V-TV ; ! "deshonrar"
+allwiy:allwi V-TV ;         ! "urdir"
+alqhuchay:alqhucha V-TV ;   ! "deshonrar"
+alquchay:alqucha V-TV ;     ! "deshonrar, humillar, despreciar", "defender"
+amachay:amacha V-TV ;       ! "defender, proteger, amparar"
+amiy:ami V-TV ;             ! "fastidiar, aburrir", "hartar, saciar"
+anyay:anya V-TV ;           ! "reñir, advertir", "ladrar"
+añaychay:añaycha V-TV ;     ! "agradecer", "bendecir, alabar"
+apachimuy:apachimu V-TV ;   ! "importar"
+apachiy:apachi V-TV ;       ! "enviar", "exportar"
+apamuy:apamu V-TV ;         ! "traer"
+apay:apa V-TV ;             ! "llevar", "manejar, conducir"
+apaykachay:apaykacha V-TV ; ! "transportar"
+apaykuy:apayku V-TV ;       ! "meter, introducir"
+aranway:aranwa V-TV ;       ! "actuar, representar (papel)"
+arariway:arariwa V-TV ;     ! "guardar los campos"
+arawiy:arawi V-TV ;         ! "recitar"
+arí% niy:arí ni V-TV ;      ! "decir sí, asentir, confirmar, autorizar"
+ariniy:arini V-TV ;         ! "decir sí"
+armay:arma V-TV ;           ! "bañar"
+astay:asta V-TV ;           ! "trasladar"
+aswanchay:aswancha V-TV ;   ! "preferir"
+atipay:atipa V-TV ;         ! "ganar, vencer", "derrotar, conquistar"
+atiy:ati V-TV ;         ! "poder, ser capaz, atreverse", "vencer, lograr"
+atiykuy:atiyku V-TV ;   ! "intentar"
+away:awa V-TV ;         ! "tejer"
+awqayachiy:awqayachi V-TV ;     ! "conspirar"
+aymuray:aymura V-TV ;   ! "cosechar"
+ayniy:ayni V-TV ;       ! "ayudar"
+aypay:aypa V-TV ;       ! "comprender, entender"
+aysay:aysa V-TV ;       ! "jalar, tirar, arrastrar"
+
+baliy:bali V-TV ;       ! "valer"
+bawtisay:bawtisa V-TV ; ! "bautizar"
+bendey:bende V-TV ;     ! "vender"
+bindisiy:bindisi V-TV ; ! "bendecir"
+bindiy:bindi V-TV ;     ! "vender"
+
+ch%'allay:ch%'alla V-TV ;   ! "salpicar, rociar"
+ch%'apchiy:ch%'apchi V-TV ; ! "sacudir"
+ch%'aqlay:ch%'aqla V-TV ;   ! "dar una bofetada"
+ch%'aqway:ch%'aqwa V-TV ;   ! "alborotar"
+ch%'arway:ch%'arwa V-TV ;   ! "exprimir"
+ch%'away:ch%'awa V-TV ;     ! "ordeñar"
+ch%'ipuy:ch%'ipu V-TV ;     ! "cerrar"
+ch%'iqtay:ch%'iqta V-TV ;   ! "rajar, partir"
+ch%'irway:ch%'irwa V-TV ;   ! "exprimir"
+ch%'unqay:ch%'unqa V-TV ;   ! "chupar"
+ch%'uquy:ch%'uqu V-TV ;     ! "toser"
+ch%'ustiy:ch%'usti V-TV ;   ! "desnudar"
+ch%'utiy:ch%'uti V-TV ;     ! "desnudar"
+chakatay:chakata V-TV ;     ! "crucificar"
+chakmay:chakma V-TV ;       ! "barbechar"
+chakuy:chaku V-TV ;         ! "cazar"
+challpuy:challpu V-TV ;     ! "mojar"
+challway:challwa V-TV ;     ! "pescar"
+chaniy:chani V-TV ;         ! "valer, costar"
+chanqay:chanqa V-TV ;       ! "machacar", "lanzar"
+chapuy:chapu V-TV ;         ! "mojar, sumergir"
+chaqmay:chaqma V-TV ;       ! "barbechar"
+chaqruy:chaqru V-TV ;       ! "mezclar"
+chaskiy:chaski V-TV ;       ! "recibir, cobrar", "aceptar, reconocer"
+chawkay:chawka V-TV ;       ! "engañar"
+chhalay:chhala V-TV ;       ! "canjear, trocar"
+chhapchiy:chhapchi V-TV ;   ! "sacudir"
+chhullay:chhulla V-TV ;     ! "mojar"
+chhuruy:chhuru V-TV ;       ! "picar"
+chinkachiy:chinkachi V-TV ; ! "borrar"
+chinkay:chinka V-TV ;       ! "perder"
+chiqaqchay:chiqaqcha V-TV ; ! "atestiguar", "verificar, validar, certificar"
+chiqnikuy:chiqniku V-TV ;   ! "odiar"
+chiqniy:chiqni V-TV ;       ! "odiar, aborrecer"
+chiriyachiy:chiriyachi V-TV ;   ! "enfriar"
+chulluchiy:chulluchi V-TV ;     ! "remojar"
+churay:chura V-TV ;         ! "poner"
+chuqay:chuqa V-TV ;         ! "lanzar"
+chutay:chuta V-TV ;         ! "jalar, tirar, estirar"
+
+engañay:engaña V-TV ;       ! "engañar"
+entendey:entende V-TV ;     ! "entender"
+escribiy:escribi V-TV ;     ! "escribir"
+eskribiy:eskribi V-TV ;     ! "escribir"
+estudiay:estudia V-TV ;     ! "estudiar"
+gastay:gasta V-TV ;         ! "gastar"
+gustay:gusta V-TV ;         ! "gustar"
+
+hallmay:hallma V-TV ;       ! "aporcar"
+hank%'ay:hank%'a V-TV ;     ! "tostar"
+hanpiy:hanpi V-TV ;         ! "curar"
+hañay:haña V-TV ;           ! "engañar"
+hap%'ichiy:hap%'ichi V-TV ; ! "encender, prender"
+hap%'iy:hap%'i V-TV ;       ! "agarrar, coger, capturar", "grabar, registrar"
+harawiy:harawi V-TV ;       ! "recitar"
+hark%'ay:hark%'a V-TV ;     ! "detener, obstaculizar, restringir, impedir, prohibir, atajar"
+hasp%'iy:hasp%'i V-TV ;     ! "arañar"
+hat%'alliy:hat%'alli V-TV ; ! "tener"
+hatunchay:hatuncha V-TV ;   ! "ampliar, ensanchar"
+hawariy:hawari V-TV ;       ! "contar"
+hawiy:hawi V-TV ;           ! "ungir, untar"
+hayt%'ay:hayt%'a V-TV ;     ! "patear, chutar, dar un puntapié"
+haywariy:haywari V-TV ;     ! "brindar"
+hayway:haywa V-TV ;         ! "ofrecer"
+hayway:haywa V-TV ;         ! "pasar", "ofrecer"
+hich%'ay:hich%'a V-TV ;     ! "echar"
+hillp%'uy:hillp%'u V-TV ;   ! "envasar"
+hisp%'ay:hisp%'a V-TV ;     ! "orinar", "evacuar"
+huchachay:huchacha V-TV ;   ! "culpar, acusar"
+huchay:hucha V-TV ;         ! "culpar"
+hukllachiy:hukllachi V-TV ; ! "unificar"
+hukllay:huklla V-TV ;       ! "unir"
+hunt%'achiy:hunt%'achi V-TV ;   ! "llenar"
+hunt%'ay:hunt%'a V-TV ;     ! "llenar"
+huñuy:huñu V-TV ;           ! "juntar, unir"
+huq%'uchay:huq%'ucha V-TV ; ! "mojar"
+huray:hura V-TV ;           ! "jurar"
+hurquy:hurqu V-TV ;         ! "sacar, arrancar", "excluir"
+husk%'uy:husk%'u V-TV ;     ! "agujerear"
+hutk%'uy:hutk%'u V-TV ;     ! "agujerear", "taladrar"
+
+ichhuy:ichhu V-TV ;     ! "segar"
+ingañay:ingaña V-TV ;   ! "engañar"
+iniy:ini V-TV ;         ! "creer"
+intindiy:intindi V-TV ; ! "entender"
+iñiy:iñi V-TV ;         ! "creer"
+iray:ira V-TV ;         ! "trillar"
+irqichay:irqicha V-TV ;     ! "adoptar, ahijar"
+iskaychay:iskaycha V-TV ;   ! "doblar, duplicar"
+iskribiy:iskribi V-TV ;     ! "escribir"
+ispay:ispa V-TV ;           ! "orinar"
+istudiay:istudia V-TV ;     ! "estudiar"
+istudiyay:istudiya V-TV ;   ! "estudiar"
+istudyay:istudya V-TV ;     ! "estudiar"
+juray:jura V-TV ;           ! "jurar"
+
 kamay:kama V-TV ;           ! "crear"
 llank%'ay:llank%'a V-TV ;   ! trabajar
+
+mallwiy:mallwi V-TV ;   ! "menear"
+mawlliy:mawlli V-TV ;   ! "menear"
+mawmiy:mawmi V-TV ;     ! "menear"
+maymiy:maymi V-TV ;     ! "menear"
+maywiy:maywi V-TV ;     ! "menear, mecer"
 maskhay:maskha V-TV ;       ! "buscar"
 mikhuy:mikhu V-TV ;         ! "comer"
 millp%'uy:millp%'u V-TV ;   ! "tomar"
@@ -1844,6 +1986,7 @@ munakuy:munaku V-TV ;       ! "gustar"          - poner %{U%}
 munaykuy:munayku V-TV ;     ! "gustar, querer, amar"          - poner %{U%}
 sinchita% munakuy:sinchita% munaku V-TV ; ! "encantar"  - poner %{U%}
 nanay:nana V-TV ;           ! "doler"
+
 pakay:paka V-TV ;           ! "esconder"
 qhaway:qhawa V-TV ;         ! "mirar"
 qhawaykuy:qhawayku V-TV ;   ! "observar"    - poner %{U%}
@@ -1855,7 +1998,8 @@ rikuy:riku V-TV ;       ! "ver"
 riqsiy:riqsi V-TV ;     ! conocer, reconocer
 ruray:rura V-TV ;       ! "hacer"
 ruway:ruwa V-TV ;       ! "hacer"
-saruy:saru V-TV ;       ! pisar
+
+saruy:saru V-TV ;       ! "pisar"
 sarunchay:saruncha V-TV ;   ! pisar, pisotear
 tariy:tari V-TV ;       ! "encontrar"
 taripay:taripa V-TV ;   ! alcanzar, encontrar
@@ -1864,6 +2008,10 @@ ukyay:ukya V-TV ;       ! "beber"
 upiy:upi V-TV ;         ! "tomar sopa, sorber"
 upyay:upya V-TV ;       ! "beber"
 uyariy:uyari V-TV ;     ! "oír, escuchar"
+
+vendey:vende V-TV ;     ! "vender"
+waliy:wali V-TV ;       ! "valer, costar"
+windiy:windi V-TV ;     ! "vender"
 wisq%'ay:wisq%'a V-TV ; ! cerrar
 yachay:yacha V-TV ;     ! "saber, aprender"
 yanapay:yanapa V-TV ;   ! ayudar
@@ -1880,11 +2028,11 @@ apuray:apura V-IV ;          ! "apresurarse, apurarse, darse prisa"
 apuskachay:apuskacha V-IV ;  ! "ser altanero"
 aqhay:aqha V-IV ;            ! "hacer chicha"
 aqtuy:aqtu V-IV ;            ! "vomitar"
-asiy:asi V-IV ;             ! "reír"
+asiy:asi V-IV ;              ! "reír"
 askhayay:askhaya V-IV ;      ! "aumentar"
 asnay:asna V-IV ;            ! "apestar, oler"
-atiy:ati V-IV ;             ! "poder"
 awqay:awqa V-IV ;            ! "pelear, luchar"
+ayniy:ayni V-IV ;            ! "cooperar"
 aypay:aypa V-IV ;            ! "alcanzar"
 ayqiy:ayqi V-IV ;            ! "huir, escapar"
 
@@ -1905,12 +2053,16 @@ hallpay:hallpa V-IV ;        ! "masticar coca"
 hamut%'ay:hamut%'a V-IV ;    ! "pensar, razonar, reflexionar"
 hank%'ay:hank%'a V-IV ;      ! "cojear"
 hanllay:hanlla V-IV ;        ! "abrir la boca"
+hatariy:hatari V-IV ;        ! "levantarse", "rebelarse"
 hawkay:hawka V-IV ;          ! "descansar, recrearse"
+hayay:haya V-IV ;            ! "picar"
 hik%'iy:hik%'i V-IV ;        ! "tener hipo, hipar"
+hinay:hina V-IV ;            ! "hacer así"
 huchallikuy:huchalliku V-IV ;  ! "pecar, cometer un delito, delinquir"
 hunp%'iy:hunp%'i V-IV ;      ! "sudar"
 ichiy:ichi V-IV ;            ! "dar pasitos"
 illay:illa V-IV ;            ! "brillar"
+iskayay:iskaya V-IV ;        ! "dudar"
 iskayyay:iskayya V-IV ;      ! "dudar"
 ismuy:ismu V-IV ;            ! "pudrirse"
 
