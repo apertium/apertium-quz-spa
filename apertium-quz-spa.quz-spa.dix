@@ -14,6 +14,7 @@
     <sdef n="det"      c="Determinante"/>
     <sdef n="detnt"    c="Determinante neutro"/>
     <sdef n="num"      c="Numeral"/>
+    <sdef n="ord"      c="Numeral ordinal"/>
     <sdef n="pr"       c="Preposición"/>
     <sdef n="post"     c="Postposición"/>
     <sdef n="preadv"   c="Preadverbio"/>
@@ -183,11 +184,11 @@
     <e><p><l>ñuñu<s n="n"/></l><r>teta<s n="n"/><s n="f"/></r></p><par n="N"/></e>
   
     -->
-    
-  <section id="main" type="standard">
+   <!-- 
+     <section id="main" type="standard"> -->
     
     <!-- SECCIÓN: Clíticos -->		<!-- borrar - son sufijos -->
-    
+    <!--
     <e><p><l>mi<s n="af"/></l><r></r></p></e>
     <e><p><l>si<s n="rep"/></l><r>dizque<s n="adv"/></r></p></e>
     <e><p><l>chá<s n="cnj"/></l><r>tal<b/>vez<s n="adv"/></r></p></e>
@@ -196,14 +197,14 @@
     <e><p><l>ri<s n="rnd"/></l><r>y<s n="cnjcoo"/></r></p></e>
     <e><p><l>qa<s n="topi"/></l><r></r></p></e>
     <e><p><l>chu<s n="qst"/></l><r></r></p></e>
-    <e><p><l>taq<s n="contr"/></l><r></r></p></e> <!-- y<s n="cnjcoo"/> -->
+    <e><p><l>taq<s n="contr"/></l><r></r></p></e> y<s n="cnjcoo"/>
     <e><p><l>pas<s n="adt"/></l><r>también<s n="adv"/></r></p></e>
     <e><p><l>raq<s n="cnti"/></l><r>todavía<s n="adv"/></r></p></e>
     <e><p><l>ña<s n="dcnt"/></l><r>ya<s n="adv"/></r></p></e>
     <e><p><l>puni<s n="dfnt"/></l><r>siempre<s n="adv"/></r></p></e>
-    <!-- <e><p><l>lla<s n="lim"/></l><r>sólo<s n="adv"/></r></p></e> -->
+    <e><p><l>lla<s n="lim"/></l><r>sólo<s n="adv"/></r></p></e> 
     
-    </section>
+    </section> -->
   
     <section id="CONJUNCIONES__RELATIVOS" type="standard">     <!-- SECCIÓN: Conjunciones, relativos -->
     <e><p><l>chaymi<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e> <!-- talvez será necesario quitar -mi: != más evid -->
@@ -211,7 +212,8 @@
     <e><p><l>kanpis<s n="cnjadv"/></l>  <r>aunque<s n="cnjadv"/></r></p></e>
     <e><p><l>icha<s n="cnjcoo"/></l>    <r>o<s n="cnjcoo"/></r></p></e>
     <e><p><l>icha<s n="cnjcoo"/><s n="topi"/></l>  <r>pero<s n="cnjcoo"/></r></p></e>
-    <e><p><l>ima<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>    
+    <e><p><l>ima<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
+    <e><p><l>sichus<s n="cnjcoo"/></l>     <r>si<s n="cnjadv"/></r></p></e>
 
     
     </section>
@@ -235,6 +237,11 @@
     <e><p><l>as<s n="preadj"/></l><r>algo<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>aswan<s n="preadj"/></l><r>más<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>sinchi<s n="preadj"/></l><r>fuertemente<s n="adv"/></r></p></e>
+    
+    <e><p><l>askha<s n="adj"/></l><r>mucho<s n="det"/><s n="qnt"/></r></p></e>
+    <e><p><l>pisi<s n="adj"/></l><r>poco<s n="det"/><s n="qnt"/></r></p></e>
+    <e><p><l>llapa<s n="prn"/></l><r>cada<s n="det"/><s n="ind"/><s n="mf"/><s n="sg"/></r></p></e>
+    <e><p><l>llapan<s n="prn"/></l><r>cada<s n="det"/><s n="ind"/><s n="mf"/><s n="sg"/></r></p></e>
     
     </section>
     
@@ -429,6 +436,8 @@
     <e><p><l>aswanta<s n="adv"/></l><r>más<s n="adv"/></r></p></e>
     <e r="RL"><p><l>chaymanta<s n="adv"/></l><r>luego<s n="adv"/></r></p></e>
     <e><p><l>hukmanta<s n="adv"/></l><r>otra<b/>vez<s n="adv"/></r></p></e>
+    <e><p><l>hinallataq<s n="adv"/></l><r>asimismo<s n="adv"/></r></p></e>
+    <e><p><l>hinallataq<s n="adv"/></l><r>así<b/>mismo<s n="adv"/></r></p></e>
     <e><p><l>ichapas<s n="adv"/></l><r>probablemente<s n="adv"/></r></p></e>
     <e><p><l>kuska<s n="adv"/></l><r>junto<s n="adj"/><s n="GD"/><s n="pl"/></r></p></e>
     <e><p><l>mana<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
@@ -1057,6 +1066,7 @@
     <e><p><l>pacha<b/>phuyu<s n="n"/></l><r>neblina<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>pallar<s n="n"/></l><r>alubia<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pallar<s n="n"/></l><r>frijol<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>pallay<s n="n"/></l><r>dibujo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>palta<s n="n"/></l><r>aguacate<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>llanura<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>piso<s n="n"/><s n="m"/></r></p></e>
@@ -1489,8 +1499,8 @@
     <e><p><l>uma<b/>muyuy<s n="n"/></l><r>mareo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>umiña<s n="n"/></l><r>joya<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>umu<s n="n"/></l><r>sacerdote<s n="n"/><s n="mf"/></r></p></e>
-    <e><p><l>unancha<s n="n"/></l><r>bandera<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>unkhu<s n="n"/></l><r>túnica<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>unancha<s n="n"/></l><r>bandera<s n="n"/><s n="f"/></r></p></e> <!--
+    <e r="LR"><p><l>unkhu<s n="n"/></l><r>túnica<s n="n"/><s n="f"/></r></p></e> -->
     <e><p><l>unkhuña<s n="n"/></l><r>uncuña<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>unkhuña<s n="n"/></l><r>pañoleta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>unku<s n="n"/></l><r>túnica<s n="n"/><s n="f"/></r></p></e>
@@ -1884,6 +1894,7 @@
     <section id="NOMBRES_HISPANISMOS" type="standard">
       
     <e><p><l>animal<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>asnu<s n="n"/></l><r>asno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bulla<s n="n"/></l><r>ruido<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>colegio<s n="n"/><s n="f"/></l><r>colegio<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>clima<s n="n"/></l><r>clima<s n="n"/><s n="m"/></r></p></e>
@@ -1951,6 +1962,8 @@
     <e r="LR"><p><l>nasey<s n="vblex"/></l><r>nacer<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>nasiy<s n="vblex"/></l><r>nacer<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>phaltay<s n="vblex"/></l><r>faltar<s n="vblex"/></r></p></e>
+    <e><p><l>respetay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>rispitay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>vendey<s n="vblex"/></l><r>vender<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>waliy<s n="vblex"/></l><r>costar<s n="vblex"/></r></p></e>
     <e><p><l>waliy<s n="vblex"/></l><r>valer<s n="vblex"/></r></p></e>
@@ -2503,14 +2516,13 @@
     <e><p><l>nanay<s n="vblex"/></l><r>doler<s n="vblex"/></r></p></e>
     
     <e><p><l>pakay<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
+    <e><p><l>qallariy<s n="vblex"/></l><r>empezar<s n="vblex"/></r></p></e>
     <e><p><l>qispiy<s n="vblex"/><s n="caus"/></l><r>librar<s n="vblex"/></r></p></e>
     <e><p><l>quy<s n="vblex"/></l><r>dar<s n="vblex"/></r></p></e>
     <e><p><l>qhaway<s n="vblex"/></l><r>mirar<s n="vblex"/></r></p></e>
     <e><p><l>qhawaykuy<s n="vblex"/></l><r>observar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>qhituy<s n="vblex"/></l><r>friccionar<s n="vblex"/></r></p></e>
     <e><p><l>quchikuy<s n="vblex"/></l><r>obtener<s n="vblex"/></r></p></e>
-    <e><p><l>respetay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>rispitay<s n="vblex"/></l><r>respetar<s n="vblex"/></r></p></e>
     <e><p><l>rikuy<s n="vblex"/></l><r>ver<s n="vblex"/></r></p></e>
     <e><p><l>rimay<s n="vblex"/><s n="rec"/></l><r>acordar<s n="vblex"/></r></p></e>
     <e><p><l>riqsiy<s n="vblex"/></l><r>conocer<s n="vblex"/></r></p></e>
@@ -2526,6 +2538,7 @@
     <e r="LR"><p><l>uqariy<s n="vblex"/></l><r>levantar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>uyariy<s n="vblex"/></l><r>escuchar<s n="vblex"/></r></p></e>
     <e><p><l>uyariy<s n="vblex"/></l><r>oír<s n="vblex"/></r></p></e>
+    <e><p><l>wikch'uy<s n="vblex"/></l><r>tirar<s n="vblex"/></r></p></e>
     <e><p><l>willay<s n="vblex"/></l><r>contar<s n="vblex"/></r></p></e>
     <e><p><l>wisq'ay<s n="vblex"/></l><r>cerrar<s n="vblex"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/></l><r>saber<s n="vblex"/></r></p></e>

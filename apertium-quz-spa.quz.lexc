@@ -34,6 +34,7 @@ Multichar_Symbols
 %<preadj%>    ! preadjetivo
 %<adv%>       ! adverbio
 %<num%>       ! numeral
+%<ord%>         ! numeral ordinal
 %<post%>     ! posposición
 %<cnjcoo%>    ! -wan, -piwan, -puwan como conjunción "y", "con"
 %<cnjadv%>    ! conjunción adverbial
@@ -281,7 +282,7 @@ LEXICON CLIT-chu
 CLIT-Final ;
 
 LEXICON CLIT-taq
-%<contr%>:%>taq CLIT-chu # ;
+%<contr%>:%>taq CLIT-chu ;
 %<contr%>%<excl%>:%>táq # ;
 CLIT-chu ;
 
@@ -745,7 +746,10 @@ LEXICON NP-ANT-M
 %<np%>%<ant%>%<m%>: N-DER ; 
 
 LEXICON NP-ANT-F
-%<np%>%<ant%>%<f%>: N-DER ; 
+%<np%>%<ant%>%<f%>: N-DER ;
+
+LEXICON NP-TOP
+%<np%>%<top%>: N-DER ;
 
 LEXICON ADJ
 %<adj%>: ADJ-DER ;
@@ -775,7 +779,17 @@ LEXICON DIGITLEX  ! sólo para numeros en cifra
 %<num%>: CLIT-lla ; 
 
 LEXICON NUM
-%<num%>: CLIT-lla ;
+%<num%>: N-FLEX-Incl ;
+%<num%>%<ord%>:% ñiqi CLIT-lla ;
+%<num%>%<ord%>:% ñiqin CLIT-lla ;
+%<num%>%<ord%>:% ñaqi CLIT-lla ;
+%<num%>%<ord%>:% ñaqin CLIT-lla ;
+%<num%>%<ord%>:%>ñiqi CLIT-lla ;
+%<num%>%<ord%>:%>ñiqin CLIT-lla ;
+%<num%>%<ord%>:%>ñaqi CLIT-lla ;
+%<num%>%<ord%>:%>ñaqin CLIT-lla ;
+%<num%>%<ord%>:% kaq CLIT-lla ;
+%<num%>%<ord%>:%>kaq CLIT-lla ;
 ! puede tomar inclusivo, posesivo, caso...
 
 LEXICON ADV
@@ -990,6 +1004,7 @@ aricha:aricha N ;   ! prostituta
 arma:arma N ;       ! baño
 arwi:arwi N ;       ! enredo
 asnapa:asnapa N ;   ! hierba
+asnu:asnu N ;       ! "asno, burro"
 aswa:aswa N ;       ! chicha
 ataw:ataw N ;       ! fortuna
 atuq:atuq N ;       ! "zorro"
@@ -1179,6 +1194,7 @@ kunan% pacha:kunan% pacha N ;   ! "actualidad, presente"
 kunka:kunka N ;     ! "cuello, garganta, voz"
 kunti:kunti N ;     ! "occidente, oeste"
 kuntur:kuntur N ;   ! "cóndor"
+kura:kura N ;       ! "cura"
 kuraka:kuraka N ;   ! "cacique, curaca"
 kuri:kuri N ;       ! mellizo
 kurku:kurku N ;     ! "cuerpo, tronco"
@@ -1314,6 +1330,8 @@ pacha% kuyuy:pacha% kuyuy N ;       ! "terremoto"
 pacha% manka:pacha% manka N ;       ! "pachamanca"
 pacha% phuyu:pacha% phuyu N ;       ! "neblina"
 pallar:pallar N ;   ! "frijol, alubia"
+pallay:pallay N ;   ! "dibujo, diseño, bordado, pallay"
+palláy:palláy N ;   ! "dibujo, diseño, bordado, pallay"
 palta:palta N ;     ! "aguacate"
 panpa:panpa N ;     ! "llanura, suelo, plaza"
 panpa% warmi:panpa% warmi N ;       ! "prostituta"
@@ -1843,11 +1861,33 @@ Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Na
 Pacha% Mama:Pacha% Mama NP-ANT-F ;  ! "Madre Tierra"
 pachamama:pachamama NP-ANT-F ;      ! "Pachamama"
 Pachamama:Pachamama NP-ANT-F ;      ! "Pachamama"
+Tumas:Tumas NP-ANT-M ;              ! "Tomas"
+Tumasa:Tumasa NP-ANT-F ;            ! "Tomasa"
+Isicha:Isicha NP-ANT-M ;            ! "Isac" ???
+
+! poner aparte como hispanismos - pueden tomar plural -s
+política:política N ;
+política% de% estado:política% de% estado N ;
+estado:estado N ;
+politica:politica N ;
+politika:politika N ;
+democracia:democracia N ;
+nación:nación N ;
+nacion:nacion N ;
+nacional:nacional ADJ ;
+derecho:derecho N ;
+de%<pr%>:de # ;
+del%<pr%>:del # ;
+a%<pr%>:a # ;
+al%<pr%>:al # ;
+empresa:empresa N ;
+don:don N ;
+doña:doña N ;
 
 
 LEXICON Topónimos
-Tawantinsuyu%<np%>:Tawantinsuyu N ; ! "imperio inca"
-
+Tawantinsuyu%<np%>:Tawantinsuyu NP-TOP ; ! "imperio inca"
+Perú:Perú NP-TOP ;
 
 
 LEXICON AdjetivosGenero
@@ -1864,6 +1904,7 @@ warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 LEXICON Adjetivos
 
 allin:allin ADJ ;   ! "bueno"
+ch%'uya:ch%'uya ;   ! "puro, limpio"
 chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
@@ -1875,6 +1916,8 @@ musuq:musuq ADJ ;       ! nuevo
 puka:puka ADJ ;         ! "rojo"
 qasi:qasi ADJ ;         ! tranquilo
 qhapaq:qhapaq ADJ ;     ! rico
+q%'illu:q%'illu ADJ ;   ! "amarillo"
+q%'umir:q%'umir ADJ ;   ! "verde"
 q%'uñi:q%'uñi ADJ ; ! "cálido"
 sumaq:sumaq ADJ ; ! "agradable"
 tukuy:tukuy ADJ ;      ! todo, entero         - cambiar lex, categoría
@@ -1883,6 +1926,10 @@ yana:yana ADJ ; ! "negro"
 yuraq:yuraq ADJ ;       ! blanco
 
 upa:upa ADJ ;       ! "tonto, sonso"
+kuraq:kuraq ADJ ;   ! "mayor"
+sulk%'a:sullk%'a ADJ ;  ! "menor"
+chawpi%<adj%>:chawpi # ;    ! medio
+
 
 
 LEXICON AdjetivosDerivados
@@ -1896,6 +1943,7 @@ qhipa:qhipa Postp ; ! "detrás de"
 sispa:sispa Postp ;   ! "cerca de"
 ukhu:ukhu Postp ; ! "dentro de"
 uran:uran Postp ; ! "bajo"
+pata:pata Postp ;   ! "encima"
 
 
 LEXICON Preadjetivos
@@ -1904,10 +1952,9 @@ as:as Preadj ; ! "algo, un poco"
 aswan:aswan Preadj ; ! "más"
 sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
 
-! as:as ADJ-DET ; ! "un poco de"
-! askha:askha ADJ-DET ; ! "mucho"
-! huq:huq ADJ-DET ; ! "otro"
-! pisi:pisi ADJ-DET ; ! "poco"
+! as:as ADJ ; ! "un poco de"
+askha:askha ADJ ; ! "mucho"
+pisi:pisi ADJ ; ! "poco"
 
 
 LEXICON PronombresDemItg
@@ -1989,6 +2036,11 @@ huknin:huknin PRON ; ! "otro"
 iskayninku:iskayninku PRON ; ! "los dos, ambos"
 ! iskaynin:iskaynin ADJ-DET ; ! "ambos"
 tukuy:tukuy PRON ;      ! todo, entero         - cambiar lex, categoría
+imaymana:imaymana PRON ;     ! "todo"
+llapan:llapan PRON ;        ! "todo(s)"
+llapa:llapa PRON ;      ! "todo(s)"
+lliw:lliw PRON ;        ! "todo(s)"
+lluy:lluy PRON ;        ! "todo(s)"
 
 
 
@@ -2057,6 +2109,9 @@ hayk%'aqpis:hayk%'aqpis ADV-taq ; ! "alguna vez / nunca"
 hukmanta:hukmanta ADV ; ! "otra vez"
 ichapas:ichapas ADV-taq ; ! "probablemente"
 
+riki%<adv%>:riki # ;        ! "claro"
+hinallataq%<adv%>:hinallataq CLIT-Final ; ! "asimismo, así mismo"
+
 
 
 LEXICON Conjunciones
@@ -2066,11 +2121,20 @@ kanpis:kanpis CONJ-Adv ;            ! "aunque"
 icha:icha CONJ-Coord ;              ! "o"
 icha%<cnjcoo%>%<topi%>:ichaqa # ;          ! "pero"
 ima:ima CONJ-Coord-Final ;          ! "y"
+i%<cnjcoo%>:i # ;                   ! "y"
+y%<cnjcoo%>:y # ;                   ! "y"
+sichus%<cnjadv%>:sichus # ;         ! "si"
 
 
 LEXICON Interjeciones
 alaláw:alaláw Interj ;      ! "Qué frío!"
 añay:añay Interj ;          ! "gracias"
+yaw:yaw Interj ;            ! "oye", "hola"
+tatáy:tatáy Interj ;               ! "padrecito", "señor"
+papáy:papáy Interj ;               ! "padrecito", "señor"
+mamáy:mamáy Interj ;               ! "madrecita", "señora"
+karahu:karahu Interj ;
+carajo:carajo Interj ;
 
 
 
@@ -2309,6 +2373,7 @@ sinchita% munakuy:sinchita% munaku V-TV ; ! "encantar"  - poner %{U%}
 nanay:nana V-TV ;           ! "doler"
 
 pakay:paka V-TV ;           ! "esconder"
+qallariy:qallari V-TV ;     ! "empezar"
 qhaway:qhawa V-TV ;         ! "mirar"
 qhawaykuy:qhawayku V-TV ;   ! "observar"    - poner %{U%}
 qhituy:qhitu V-TV ;         ! "friccionar"
@@ -2334,6 +2399,7 @@ uyariy:uyari V-TV ;     ! "oír, escuchar"
 
 vendey:vende V-TV ;     ! "vender"
 waliy:wali V-TV ;       ! "valer, costar"
+wikch%'uy:wikch%'u V-TV ;   ! "tirar, botar, arrojar"
 willay:willa V-TV ;     ! "contar"
 windiy:windi V-TV ;     ! "vender"
 wisq%'ay:wisq%'a V-TV ; ! cerrar
