@@ -449,6 +449,13 @@
    
     </section>
     
+    <section id="INTERJECIONES" type="standard">
+    
+    <e><p><l>añay<s n="ij"/></l><r>gracias<s n="ij"/></r></p></e>
+    <e><p><l>yaw<s n="ij"/></l><r>hola<s n="ij"/></r></p></e>
+
+    </section>
+    
     <!-- SECCIÓN: Adjetivos -->
     
     <section id="ADJETIVOS__POSESIVOS" type="standard">
@@ -498,6 +505,7 @@
     <e><p><l>tukuy<s n="adj"/></l><r>entero<s n="adj"/></r></p></e>
 
     <e><p><l>allin<s n="adj"/></l><r>bueno<s n="adj"/></r></p></e>
+    <e><p><l>ch'uya<s n="adj"/></l><r>claro<s n="adj"/></r></p></e>
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>hatun<s n="adj"/></l><r>grande<s n="adj"/><s n="mf"/></r></p></e>

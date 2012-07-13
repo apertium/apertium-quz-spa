@@ -1904,7 +1904,7 @@ warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 LEXICON Adjetivos
 
 allin:allin ADJ ;   ! "bueno"
-ch%'uya:ch%'uya ;   ! "puro, limpio"
+ch%'uya:ch%'uya ;   ! "claro, limpio"
 chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
@@ -2131,6 +2131,7 @@ alaláw:alaláw Interj ;      ! "Qué frío!"
 añay:añay Interj ;          ! "gracias"
 yaw:yaw Interj ;            ! "oye", "hola"
 tatáy:tatáy Interj ;               ! "padrecito", "señor"
+taytáy:taytáy Interj ;               ! "padrecito", "señor"
 papáy:papáy Interj ;               ! "padrecito", "señor"
 mamáy:mamáy Interj ;               ! "madrecita", "señora"
 karahu:karahu Interj ;
