@@ -213,7 +213,7 @@
     <e><p><l>icha<s n="cnjcoo"/></l>    <r>o<s n="cnjcoo"/></r></p></e>
     <e><p><l>icha<s n="cnjcoo"/><s n="topi"/></l>  <r>pero<s n="cnjcoo"/></r></p></e>
     <e><p><l>ima<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
-    <e><p><l>sichus<s n="cnjcoo"/></l>     <r>si<s n="cnjadv"/></r></p></e>
+    <e><p><l>sichus<s n="cnjadv"/></l>     <r>si<s n="cnjadv"/></r></p></e>
 
     
     </section>
@@ -511,10 +511,12 @@
     <e><p><l>ñawpa<s n="adj"/></l><r>antiguo<s n="adj"/></r></p></e>
     <e><p><l>ñawpaq<s n="adj"/></l><r>primero<s n="adj"/></r></p></e>
     <e><p><l>puka<s n="adj"/></l><r>rojo<s n="adj"/></r></p></e>
+    <e><p><l>q'illu<s n="adj"/></l><r>amarillo<s n="adj"/></r></p></e>
     <e><p><l>qasi<s n="adj"/></l><r>tranquilo<s n="adj"/></r></p></e>
     <e><p><l>qhapaq<s n="adj"/></l><r>rico<s n="adj"/></r></p></e>
     <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
     <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
+    <e><p><l>q'umir<s n="adj"/></l><r>verde<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
     <e><p><l>upa<s n="adj"/></l><r>tonto<s n="adj"/></r></p></e>
