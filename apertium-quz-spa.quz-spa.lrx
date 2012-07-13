@@ -10,6 +10,12 @@
 
 <!-- 
 
+<rule>
+  <match  lemma="rikuy"  tags="vblex.tv.caus.*"/>
+       <select  lemma="show"/>
+  </match>
+</rule>
+
 algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
 adv = ^ + cha, lla (!= vše kromě: cha, lla, -niq, -pi, -man, -nta, -kama; -manta, -ta)
 adv: sólo con (cha)(lla) + (niq) + loc, term, dat, acc, abl, per

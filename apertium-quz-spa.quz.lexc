@@ -17,7 +17,7 @@ Multichar_Symbols
 %{bA%}        ! buffer A (en genitivo)
 %{bI%}         ! buffer I (en evidenciales)
 %{bnI%}         ! buffer I (en -ni)
-%{bN%}        ! buffer N en-ni delante ciertos sufijos desp. de consonante (N + bI)
+%{bN%}        ! buffer N en-ni delante de ciertos sufijos desp. de consonante (N + bI)
 %{bK%}        ! buffer "k" que puede desaparecer: -yku > -yu
 %{bQ%}        ! buffer "q" que puede desaparecer: -rqu > -ru
 %{bU%}        ! buffer "u" que desaparece delante de -mu (mu + pu > mpu)
@@ -27,6 +27,8 @@ Multichar_Symbols
 %<n%>         ! nombre
 %<np%>        ! nombre propio
 %<ant%>       ! antropónimo (np)
+%<top%>       ! topónimo
+%<al%>          ! no otro (altre)
 %<prn%>       ! pronombre
 %<adj%>       ! adjetivo
 %<preadj%>    ! preadjetivo
@@ -88,7 +90,7 @@ Multichar_Symbols
 %<xrel%>      ! relativo -n (allin, hatunnin, sapa killan, chawpin); en turco <rel> = -spa
 ! <honorífico><voc>:%>%{ni%}ll{a}y # ; + tayta + y > taytáy! (ver N-Flex)
 
-%<inter%>     ! interactivo (reciprocativo) -pura
+%<inter%>     ! interactivo (reciprocativo) -pura (recip = prn)
 
 ! casos
 %<nom%>       ! nominativo (nada)
@@ -130,34 +132,51 @@ Multichar_Symbols
 %<cont%>      ! progresivo (continuativo) -sha
 %<caus%>      ! causativo -chi
 %<bn%>        ! benefactivo -pu (aplicativo?)
-%<rec%>       ! recíproco (-na + -ku / -chi / -pu)
-%<refl%>      ! reflexivo -ku
+%<rec%>       ! recíproco (-na + -ku / -chi / -pu) (recip = prn)
+%<refl%>      ! reflexivo -ku (ref = reflexivo - pronombre, etc.)
+%<inc%>         ! inceptivo (incoativo) -ri
+%<rpnt%>        ! acción repentina (imprevisiva, puntual, urgente, ~ perfectiva) -r(q)U
+%<int%>         ! intensivo -y(k)U
+%<ctl%>         ! cis/translocativo -mu (-mu + -pu > -mpu)
+%<coop%>        ! asistivo (cooperativo) -ysi
+%<osc%>         ! oscilativo (iterativo) -ykacha
+%<frec%>        ! frecuentativo (participativo) -paya
+%<rpt%>         ! repetivo -pa
+%<dur%>         ! durativo -raya
+%<simul%>       ! simulativo -tiya (!= similativo -niraq)
+%<compl%>       ! completivo -rpari
+%<desid%>       ! desiderativo -naya
+%<trns%>        ! transformativo -ya
+%<fct%>         ! factitivo -cha (pero mejor en dix)
+! -ymana "insistencial", -na "reubicativo" para dix
+
+
 
 %<pri%>       ! presente
-%<past%>       ! pasado -rqa
-%<cond%>      ! condicional
+%<past%>      ! pasado -rqa
+%<cond%>      ! condicional (pot - potencial)
 %<evid%>      ! pasado evidencial -sqa
 %<imp%>       ! imperativo
 
 %<inf%>       ! infinitivo -y
 %<pp%>        ! participio pasado -sqa
-%<pf%>        ! participio futuro/obligativo -na
+%<pf%>        ! participio futuro/obligativo -na (oblig = tense)
 %<ag%>        ! agentivo -q
 %<ger%>       ! gerundio -spa
-! -qti
+! %<ger2%> -qti
 
 
 ! clíticos
 %<lim%>         ! limitativo -lla
 %<dfnt%>         ! definitivo -puni
 %<cnti%>         ! continuativo -raq
-! %<cnt%>         ! continuativo -raq
+! %<cnt%>         ! continuativo -raq (cnt = countable)
 %<dcnt%>        ! discontinuativo -ña
 %<adt%>         ! aditivo -pas, -pis
 %<topi%>        ! tópico, tema -qa
 %<rnd%>         ! reanudador -ri
 %<qst%>         ! interrogativo/negativo -chu
-%<contr%>       ! contrastivo
+%<contr%>       ! contrastivo -taq
 %<af%>          ! evidencial directo "afirmativo" -mi/-n
 %<rep%>         ! reportativo -si
 %<cnj%>         ! conjetural -chá
@@ -238,10 +257,23 @@ LEXICON CLIT-Final
 ! %<rnd%>:%>rí # ;
 %<af%>:%>%{M%}%{bI%} # ;
 %<rep%>:%>s%{bI%} # ;
+%<af%>:%>min # ;
+%<rep%>:%>sis # ;
 %<cnj%>:%>chá # ;
-%<enf%>:%>yá # ;
+%<enf%>:%>ya # ;
+%<enf%>%<excl%>:%>y%>á # ;
+%<af%>%<excl%>:%>m%>á # ;
+%<rep%>%<excl%>:%>s%>yá # ;
 %<dub%>:%>chus # ;
-!! má, sá, mari, sari, chari, yari, ari, chusmi, chusuna, chuqa(ya), taqri, churi
+%<dub%>:%>chusuna # ;
+%<dub%>:%>chusina # ;
+%<dub%>0:chus%>mi # ;
+%<dub%>:%>chus% hina # ;
+%<af%>%<excl%>:%>m%>ari # ;
+%<rep%>%<excl%>:%>s%>ari # ;
+%<cnj%>%<excl%>:%>ch%>ari # ;
+%<enf%>%<excl%>:%>y%>ari # ;
+!! (sá), ari, chuqa(ya), taqri, churi
 # ; 
 
 LEXICON CLIT-chu
@@ -443,12 +475,20 @@ LEXICON V-INF
 LEXICON V-TMSub
 %<pri%>: V-PERS ;
 %<past%>:%>rqa V-PERS ;
-! %<evid%>:%>sqa ! sin -n 3suj. poner @P.sqa.pres@
+%<past%>:%>ra V-PERS ;
+%<evid%>:%>sqa CLIT-puni ; ! sin -n 3suj. poner @P.sqa.pres@
+%<evid%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>sqa@D.wa@ CLIT-puni ;
+%<evid%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>sqaku@D.wa@ CLIT-puni ;
+%<evid%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>sqa@R.wa.pres@ CLIT-puni ;
+%<evid%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>sqaku@R.wa.pres@ CLIT-puni ;
 ! FUT
 V-IMP ;
 ! HAB
 ! COND
-%<ger%>:%>spa CLIT-puni ;  ! provisional, hay que poner las personas
+%<ger%>:%>spa N-FLEX-POS ;  ! provisional, hay que poner las personas
+%<ger%>%<lim%>:%>spa%>lla N-FLEX-POS ;  ! provisional, hay que poner las personas
+%<ger%>:%>qti N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
+%<ger%>%<lim%>:%>qti%>lla N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
 ! -su-spa, -spa-su, -su-qti poner @P.su.pres@
 V-INF ;
 V-Nom ;
@@ -467,14 +507,226 @@ LEXICON V-Progr
 %<cont%>:%>sha V-LIM ;
 V-LIM ;
 
-LEXICON V-DER
-%<refl%>:ku V-Progr ;        ! !!!! reflexivo = pronombre :-(
-%<caus%>:chi V-Progr ;
-%<caus%>%<ref%>:chiku V-Progr ;
-%<rec%>:naku V-Progr ; 
+
+LEXICON V-DER-mu
+%<ctl%>:%>mu V-Progr ;              ! m%{bU%}
+%<ctl%>%<bn%>:%>m%>pu V-Progr ;     ! m%{bU%} + p%{U%}
 V-Progr ;
 
+LEXICON V-DER-ku
+%<refl%>:%>ku V-Progr ;                       ! k%{U%}
+%<refl%>%<ctl%>:%>ka%>mu V-Progr ;            ! k%{U%} + m%{bU%}
+%<refl%>%<ctl%>%<bn%>:%>ka%>m%>pu V-Progr ;   ! k%{U%} + m%{bU%} + p%{U%}
+V-DER-mu ;
 
+LEXICON V-DER-pu
+%<bn%>:%>pu V-Progr ;                           ! p%{U%} + 
+%<bn%>%<ctl%>:%>pa%>mu V-Progr ;                ! p%{U%} + m%{bU%}
+%<bn%>%<refl%>:%>pa%>ku V-Progr ;               ! p%{U%} + k%{U%}
+%<bn%>%<refl%>%<ctl%>:%>pa%>ka%>mu V-Progr ;    ! p%{U%} + k%{U%} + m%{bU%}
+V-DER-ku ;
+
+LEXICON V-DER-ysi
+%<coop%>:%>ysi V-DER-pu ;
+%<coop%>%<inc%>:%>ysi%>ri V-DER-pu ;
+V-DER-pu ;
+
+LEXICON V-DER-chi
+%<caus%>:%>chi V-DER-ysi ;
+V-DER-ysi ;
+
+LEXICON V-DER-RECIP
+! yKa, ri-yKa, yKa-ri, yKa-rQa-ri y rQari vienen de antes
+!el orden indicado es el preferido... no se han puesto todas las formas posibles
+
+! naKU
+! - sin -ysi, -chi
+! en cualquier orden de: yKU-na-ri-rQU-kU-pU, excepto rQUyKU, kUna, kUri, rQUna
+
+%<rec%>0:%>na%>ku V-Progr ;
+!! no naku + chi = nachi, *nakuysi = ysinaku
+%<rec%>0%<rpnt%>:%>na%>ku%>rqu V-Progr ;
+%<rec%>0%<int%>:%>na%>ku%>yku V-Progr ;
+%<rec%>%<inc%>0:%>na%>ri%>ku V-Progr ;
+! nakapu nakamu nakampu
+! nakarqapu nakarqamu nakarqampu
+! nakaykapu nakaykamu nakaykampu
+! napuku napakamu
+! nariku narikapu narikam(p)u naripaku narikapu narikapamu
+! narirQuku narirQakam(p)u narQukU narQakam(p)u
+! narikuyKUrQU nayKarirQuku nayKarirQakam(p)u, etc.
+
+! nachi
+! - en cualquier orden de: yKU-na-ri-rQU-kU-chi-ysi-pU, excepto ^
+! nachi = nakuchi
+! + nakarQachi
+%<rec%>%<caus%>:%>na%>chi V-DER-ysi ;         ! = + nachipu, nachipa
+%<rec%>0%<caus%>:%>na%>ku%>chi V-DER-ysi ;   ! probablemente no nakuchiku
+%<rec%>%<caus%>%<bn%>:%>chi%>na%>pu V-Progr ;
+
+! chinakU
+! en cualquier orden de: yKU-ri-chi-na-rQU-kU-pU, excepto ^ y chiri
+! chinakU = nachikU = nachinakU
+! + (ri)-*y*-chi-na-(ri)-ku-rqu-ku-pu < (ri)- chi-na-(ri)-*y*ku-rqu-ku-pu
+%<caus%>%<rec%>0:%>chi%>na%>ku V-Progr ;
+0%<caus%>%<rec%>:%>na%>chi%>ku V-Progr ;
+0%<caus%>%<rec%>0:%>na%>chi%>na%>%>ku V-Progr ;
+
+! ysinaku
+! - en cualquier orden: yKU-ysina-ri-rQU-kU-pU (ysina juntos)
+! ysinariku, ysinaku, ysinarikuyku
+%<coop%>%<rec%>0:%>ysi%>na%>ku V-Progr ;
+%<coop%>%<rec%>%<inc%>0:%>ysi%>na%>ri%>ku V-Progr ;
+%<coop%>%<rec%>%<inc%>0%<int%>:%>ysi%>na%>ri%>ku%>yku V-Progr ;
+%<coop%>%<rec%>%<inc%>0%<int%>:%>ysi%>na%>ri%>ku%>yu V-Progr ;
+
+
+V-DER-chi ;
+
+
+LEXICON V-DER-ASP
+! -ykacha "oscilativo", -yKU "intensivo", -rQU "repentino" + combinaciones
+
+! yKU = y%{bK%}%{U%}
+%<int%>:%>yku V-Progr ;
+%<int%>:%>yu V-Progr ;
+%<int%>%<refl%>:%>yku%>ku V-Progr ;
+%<int%>%<refl%>:%>yu%>ku V-Progr ;
+%<refl%>%<int%>:%>ku%>yku V-Progr ;
+%<refl%>%<int%>:%>ku%>yu V-Progr ;
+%<int%>%<caus%>:%>yka%>chi V-DER-ysi ;
+%<int%>%<caus%>:%>ya%>chi V-DER-ysi ;
+%<int%>%<coop%>:%>yka%>ysi V-DER-pu ;
+%<int%>%<coop%>:%>ya%>ysi V-DER-pu ;
+%<int%>%<bn%>:%>yka%>pu V-Progr ;
+%<int%>%<bn%>:%>ya%>pu V-Progr ;
+%<int%>%<bn%>%<refl%>:%>yka%>pa%>ku V-Progr ;
+%<int%>%<bn%>%<refl%>:%>ya%>pa%>ku V-Progr ;
+%<int%>%<ctl%>:%>yka%>mu V-Progr ;
+%<int%>%<ctl%>:%>ya%>mu V-Progr ;
+%<int%>%<refl%>%<ctl%>:%>yka%>ka%>mu V-Progr ;
+%<int%>%<refl%>%<ctl%>:%>ya%>ka%>mu V-Progr ;
+%<int%>%<refl%>%<ctl%>%<bn%>:%>yka%>ka%>m%>pu V-Progr ;
+%<int%>%<refl%>%<ctl%>%<bn%>:%>ya%>ka%>m%>pu V-Progr ;
+%<int%>%<ctl%>%<bn%>:%>yka%>m%>pu V-Progr ;
+%<int%>%<ctl%>%<bn%>:%>ya%>m%>pu V-Progr ;
+%<int%>%<inc%>:%>yka%>ri V-DER-RECIP ;
+%<int%>%<inc%>:%>ya%>ri V-DER-RECIP ;
+%<int%>:%>yka V-DER-RECIP ;   ! tiene que seguir cualquiera de los sufijos -ri, -na (rec), -chi, -ysi, -pu o -mu
+%<int%>:%>ya V-DER-RECIP ;   ! tiene que seguir cualquiera de los sufijos -ri, -na (rec), -chi, -ysi, -pu o -mu
+! o talvez poner todas las formas sin recip como con rQU y poner algo para que ^ tenga que salir con -na
+
+
+! rQU + yKU no existe, tampoco yKU + rQU + na (recip)
+%<int%>%<rpnt%>:%>yku%>rqu V-Progr ;
+%<int%>%<rpnt%>:%>yku%>ru V-Progr ;
+%<int%>%<rpnt%>:%>yu%>rqu V-Progr ;
+%<int%>%<rpnt%>:%>yu%>ru V-Progr ;
+%<int%>%<rpnt%>%<refl%>:%>yku%>rqu%>ku V-Progr ;
+%<int%>%<rpnt%>%<refl%>:%>yku%>ru%>ku V-Progr ;
+%<int%>%<rpnt%>%<refl%>:%>yu%>rqu%>ku V-Progr ;
+%<int%>%<rpnt%>%<refl%>:%>yu%>ru%>ku V-Progr ;
+%<int%>%<rpnt%>%<caus%>:%>yka%>rqa%>chi V-DER-ysi ;
+%<int%>%<rpnt%>%<caus%>:%>yka%>ra%>chi V-DER-ysi ;
+%<int%>%<rpnt%>%<caus%>:%>ya%>rqa%>chi V-DER-ysi ;
+%<int%>%<rpnt%>%<caus%>:%>ya%>ra%>chi V-DER-ysi ;
+%<int%>%<rpnt%>%<coop%>:%>yka%>rqa%>ysi V-DER-pu ;
+%<int%>%<rpnt%>%<coop%>:%>yka%>ra%>ysi V-DER-pu ;
+%<int%>%<rpnt%>%<coop%>:%>yka%>rqa%>ysi V-DER-pu ;
+%<int%>%<rpnt%>%<coop%>:%>yka%>ra%>ysi V-DER-pu ;
+%<int%>%<rpnt%>%<bn%>:%>yka%>rqa%>pu V-Progr ;
+%<int%>%<rpnt%>%<bn%>:%>yka%>ra%>pu V-Progr ;
+%<int%>%<rpnt%>%<bn%>:%>ya%>rqa%>pu V-Progr ;
+%<int%>%<rpnt%>%<bn%>:%>ya%>ra%>pu V-Progr ;
+%<int%>%<rpnt%>%<bn%>%<refl%>:%>yka%>rqa%>pa%>ku V-Progr ;
+%<int%>%<rpnt%>%<bn%>%<refl%>:%>yka%>ra%>pa%>ku V-Progr ;
+%<int%>%<rpnt%>%<bn%>%<refl%>:%>ya%>rqa%>pa%>ku V-Progr ;
+%<int%>%<rpnt%>%<bn%>%<refl%>:%>ya%>ra%>pa%>ku V-Progr ;
+%<int%>%<rpnt%>%<ctl%>:%>yka%>rqa%>mu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>:%>yka%>ra%>mu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>:%>ya%>rqa%>mu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>:%>ya%>ra%>mu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>:%>yka%>rqa%>ka%>mu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>:%>yka%>qa%>ka%>mu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>:%>ya%>rqa%>ka%>mu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>:%>ya%>qa%>ka%>mu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>yka%>rqa%>ka%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>yka%>ra%>ka%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ya%>rqa%>ka%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ya%>ra%>ka%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>%<bn%>:%>yka%>rqa%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>%<bn%>:%>yka%>ra%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>%<bn%>:%>ya%>rqa%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<ctl%>%<bn%>:%>ya%>ra%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<inc%>:%>yka%>rqa%>ri V-DER-RECIP ;
+%<int%>%<rpnt%>%<inc%>:%>yka%>ra%>ri V-DER-RECIP ;
+%<int%>%<rpnt%>%<inc%>:%>ya%>rqa%>ri V-DER-RECIP ;
+%<int%>%<rpnt%>%<inc%>:%>ya%>ra%>ri V-DER-RECIP ;
+
+! rQU = r%{bQ%}%{U%}
+%<rpnt%>:%>rqu V-Progr ;
+%<rpnt%>:%>ru V-Progr ;
+%<rpnt%>%<refl%>:%>rqu%>ku V-Progr ;
+%<rpnt%>%<refl%>:%>ru%>ku V-Progr ;
+%<refl%>%<rpnt%>:%>ku%>rqu V-Progr ;
+%<refl%>%<rpnt%>:%>ku%>ru V-Progr ;
+%<refl%>%<rpnt%>%<bn%>:%>ka%>rqa%>pu V-Progr ;
+%<refl%>%<rpnt%>%<bn%>:%>ka%>ra%>pu V-Progr ;
+%<refl%>%<rpnt%>%<bn%>%<ctl%>:%>ka%>rqa%>pa%>mu V-Progr ;
+%<refl%>%<rpnt%>%<bn%>%<ctl%>:%>ka%>ra%>pa%>mu V-Progr ;
+%<rpnt%>%<caus%>:%>rqa%>chi V-DER-ysi ;
+%<rpnt%>%<caus%>:%>ra%>chi V-DER-ysi ;
+%<rpnt%>%<coop%>:%>rqa%>ysi V-DER-pu ;
+%<rpnt%>%<coop%>:%>ra%>ysi V-DER-pu ;
+%<rpnt%>%<bn%>:%>rqa%>pu V-Progr ;
+%<rpnt%>%<bn%>:%>ra%>pu V-Progr ;
+%<rpnt%>%<bn%>%<refl%>:%>rqa%>pa%>ku V-Progr ;
+%<rpnt%>%<bn%>%<refl%>:%>ra%>pa%>ku V-Progr ;
+%<rpnt%>%<ctl%>:%>rqa%>mu V-Progr ;
+%<rpnt%>%<ctl%>:%>ra%>mu V-Progr ;
+%<rpnt%>%<refl%>%<ctl%>:%>rqa%>ka%>mu V-Progr ;
+%<rpnt%>%<refl%>%<ctl%>:%>qa%>ka%>mu V-Progr ;
+%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>rqa%>ka%>m%>pu V-Progr ;
+%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ra%>ka%>m%>pu V-Progr ;
+%<rpnt%>%<ctl%>%<bn%>:%>rqa%>m%>pu V-Progr ;
+%<rpnt%>%<ctl%>%<bn%>:%>ra%>m%>pu V-Progr ;
+%<rpnt%>%<inc%>:%>rqa%>ri V-DER-RECIP ;
+%<rpnt%>%<inc%>:%>ra%>ri V-DER-RECIP ;
+!!! rQU + recip no existe, sólo recip + rQU o (yKa)-rQa-ri
+
+! -ykacha
+%<osc%>:%>ykacha V-DER-RECIP ;
+%<osc%>:%>kacha V-DER-RECIP ;
+%<osc%>%<inc%>:%>ykacha%>ri V-DER-RECIP ;
+%<osc%>%<inc%>:%>kacha%>ri V-DER-RECIP ;
+%<osc%>%<caus%>:%>ykacha%>chi V-DER-ysi ;
+%<osc%>%<caus%>:%>kacha%>chi V-DER-ysi ;
+%<osc%>%<ctl%>:%>ykacha%>ku V-Progr ;
+%<osc%>%<ctl%>:%>kacha%>ku V-Progr ;
+%<osc%>%<rpnt%>:%>ykacha%>rqu V-Progr ;
+%<osc%>%<rpnt%>:%>kacha%>rqu V-Progr ;
+%<osc%>%<rpnt%>:%>ykacha%>ru V-Progr ;
+%<osc%>%<rpnt%>:%>kacha%>ru V-Progr ;
+! + yku, pUku, mu, ysi... ?
+
+V-DER-RECIP ;
+
+
+LEXICON V-DER-ri
+%<inc%>:%>ri V-DER-ASP ;
+%<inc%>:%>riri V-DER-ASP ;
+V-DER-ASP ;
+
+
+LEXICON V-DER
+%<rpt%>:%>pa V-DER-ri ;
+%<rpt%>:%>papa V-DER-ri ;
+%<frec%>:%>paya V-DER-ri ;
+%<dur%>:%>raya V-DER-ri ;
+%<simul%>:%>tiya V-DER-ri ;
+%<compl%>:%>rpari V-DER-ASP ;
+%<compl%>:%>ypari V-DER-ASP ;
+V-DER-ri ;
 
 
 !!!! LEXICONES DE CLASE DE PALABRA, GÉNERO, etc.
@@ -1620,6 +1872,7 @@ millay:millay ADJ ;     ! feo, malo
 musuq:musuq ADJ ;       ! nuevo
 ñawpaq:ñawpaq ADJ ;     ! primero, antiguo
 ñawpa:ñawpa ADJ ;       ! antiguo, anterior
+puka:puka ADJ ;         ! "rojo"
 qasi:qasi ADJ ;         ! tranquilo
 qhapaq:qhapaq ADJ ;     ! rico
 q%'uñi:q%'uñi ADJ ; ! "cálido"
@@ -1628,6 +1881,8 @@ tukuy:tukuy ADJ ;      ! todo, entero         - cambiar lex, categoría
 wakcha:wakcha ADJ ; ! pobre, huérfano
 yana:yana ADJ ; ! "negro"
 yuraq:yuraq ADJ ;       ! blanco
+
+upa:upa ADJ ;       ! "tonto, sonso"
 
 
 LEXICON AdjetivosDerivados
@@ -1738,6 +1993,7 @@ tukuy:tukuy PRON ;      ! todo, entero         - cambiar lex, categoría
 
 
 LEXICON Numerales
+huq:huq NUM ;   ! "uno"
 huk:huk NUM ; ! "uno"
 iskay:iskay NUM ; ! "dos"
 kinsa:kinsa NUM ; ! "tres"
@@ -1852,7 +2108,7 @@ apaykuy:apayku V-TV ;       ! "meter, introducir"
 aranway:aranwa V-TV ;       ! "actuar, representar (papel)"
 arariway:arariwa V-TV ;     ! "guardar los campos"
 arawiy:arawi V-TV ;         ! "recitar"
-arí% niy:arí ni V-TV ;      ! "decir sí, asentir, confirmar, autorizar"
+arí% niy:arí%ni V-TV ;      ! "decir sí, asentir, confirmar, autorizar"
 ariniy:arini V-TV ;         ! "decir sí"
 armay:arma V-TV ;           ! "bañar"
 astay:asta V-TV ;           ! "trasladar"
@@ -1950,6 +2206,8 @@ hunt%'achiy:hunt%'achi V-TV ;   ! "llenar"
 hunt%'ay:hunt%'a V-TV ;     ! "llenar"
 huñuy:huñu V-TV ;           ! "juntar, unir"
 huq%'uchay:huq%'ucha V-TV ; ! "mojar"
+huqariy:huqari V-TV ;       ! "levantar, lazar", "recoger"
+huqhariy:huqhari V-TV ;     ! "levantar"
 huray:hura V-TV ;           ! "jurar"
 hurquy:hurqu V-TV ;         ! "sacar, arrancar", "excluir"
 husk%'uy:husk%'u V-TV ;     ! "agujerear"
@@ -2071,10 +2329,12 @@ tukuy:tuku V-TV ;       ! "terminar" (también IV)
 ukyay:ukya V-TV ;       ! "beber"
 upiy:upi V-TV ;         ! "tomar sopa, sorber"
 upyay:upya V-TV ;       ! "beber"
+uqariy:uqari V-TV ;         ! "levantar"
 uyariy:uyari V-TV ;     ! "oír, escuchar"
 
 vendey:vende V-TV ;     ! "vender"
 waliy:wali V-TV ;       ! "valer, costar"
+willay:willa V-TV ;     ! "contar"
 windiy:windi V-TV ;     ! "vender"
 wisq%'ay:wisq%'a V-TV ; ! cerrar
 yachay:yacha V-TV ;     ! "saber, aprender"

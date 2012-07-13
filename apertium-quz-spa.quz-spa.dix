@@ -5,6 +5,7 @@
     <sdef n="np"       c="Nombre propio"/>
     <sdef n="adj"      c="Adjetivo"/>
     <sdef n="ant"      c="Antróponimo"/>
+    <sdef n="top"      c="Topónimo"/>
     <sdef n="al"       c="NP otro"/>
     <sdef n="adv"      c="Adverbio / (Relativo) adverbial"/>
     <sdef n="cnjadv"   c="Conjunción adverbial"/>
@@ -74,6 +75,7 @@
     <sdef n="dis"       c="Distributivo (-nka)" />
     <sdef n="prox"      c="Proximativo (-niq)"/>
     <sdef n="posic"     c="Posicional (-npa)" />
+    <sdef n="sim"       c="Similativo (-niraq)"/>
     
     <sdef n="pers"     c="Personal"/>
     <sdef n="tn"       c="Tónico"/>
@@ -99,6 +101,7 @@
     <sdef n="ag"       c="Agentivo (-q)"/>
     <sdef n="inf"      c="Infinitivo"/>
     <sdef n="ger"      c="Gerundio"/>
+    <sdef n="ger2"     c="Gerundio -qti (sujetos diferentes)"/>
     <sdef n="pri"      c="Presente de indicativo"/>
     <sdef n="prs"      c="Presente de subjuntivo"/>
     <sdef n="pii"      c="Pretérito imperfecto de indicativo"/>
@@ -110,29 +113,46 @@
     <sdef n="imp"      c="Imperativo"/>
     
     <!-- derivativos verbales -->
-    <sdef n="caus"      c="Causativo"/>
-    <sdef n="refl"      c="Reflexivo"/>
-    <sdef n="rec"       c="Recíproco"/>
+    <sdef n="cont"      c="Continuativo (progresivo) -sha   "/>
+    <sdef n="caus"      c="Causativo        -chi    "/>
+    <sdef n="refl"      c="Reflexivo        -ku     "/>
+    <sdef n="rec"       c="Recíproco        -na + -ku/chi/pu    "/>
+    <sdef n="bn"        c="Benefactivo      -pu     "/>
+    <sdef n="inc"       c="Inceptivo        -ri     "/>
+    <sdef n="rpnt"      c="Repentino        -rqu    "/>
+    <sdef n="int"       c="Intensivo        -yku    "/>
+    <sdef n="ctl"       c="Cis/translocativo    -mu         "/>
+    <sdef n="coop"      c="Asistivo (cooperatio)    -ysi    "/>
+    <sdef n="osc"       c="Oscilativo (iterativo)   -ykacha "/>
+    <sdef n="frec"      c="Frecuentativo    -paya   "/>
+    <sdef n="rpt"       c="Repetivo         -pa     "/>
+    <sdef n="dur"       c="Durativo         -raya   "/>
+    <sdef n="simul"     c="Simulativo       -tiya   "/>
+    <sdef n="compl"     c="Completivo       -rpari  "/>
+    <sdef n="desid"     c="Desiderativo     -naya   "/>
+    <sdef n="trns"      c="Transformacional -ya     "/>
+    <sdef n="fct"       c="Factitivo        -cha    "/>
     
     <!-- derivativos nominales -->
     <sdef n="poss"      c="Posesivo -yuq"/>
     <sdef n="incl"      c="Inclusivo -ntin"/>
-
-    <sdef n="af"        c="afirmativo -mi"/>
-    <sdef n="rep"       c="reportativo -si"/>
-    <sdef n="cnj"       c="conjetural -chá"/>
-    <sdef n="enf"       c="enfático -yá"/>
-    <sdef n="dub"       c="dubitativo -chus"/>
-    <sdef n="rnd"       c="reanudador -ri"/>
-    <sdef n="topi"      c="tópico -qa"/>
+    
+    <!-- clíticos -->
+    <sdef n="af"        c="afirmativo   -mi     "/>
+    <sdef n="rep"       c="reportativo  -si     "/>
+    <sdef n="cnj"       c="conjetural   -chá    "/>
+    <sdef n="enf"       c="enfático     -yá     "/>
+    <sdef n="dub"       c="dubitativo   -chus   "/>
+    <sdef n="rnd"       c="reanudador   -ri     "/>
+    <sdef n="topi"      c="tópico       -qa     "/>
     <sdef n="qst"       c="interrogativo/negativo -chu"/>
-    <sdef n="contr"     c="contrastivo -taq"/>
-    <sdef n="adt"       c="aditivo -pas"/>
-    <sdef n="cnti"      c="continuativo -raq"/>
-    <sdef n="dcnt"      c="discontinuativo -ña"/>
-    <sdef n="dfnt"      c="definitivo -puni"/>
-    <sdef n="lim"       c="limitativo -lla"/>
-    <sdef n="dim"       c="diminutivo -cha"/>
+    <sdef n="contr"     c="contrastivo  -taq    "/>
+    <sdef n="adt"       c="aditivo      -pas    "/>
+    <sdef n="cnti"      c="continuativo -raq    "/>
+    <sdef n="dcnt"      c="discontinuativo -ña  "/>
+    <sdef n="dfnt"      c="definitivo   -puni   "/>
+    <sdef n="lim"       c="limitativo   -lla    "/>
+    <sdef n="dim"       c="diminutivo   -cha    "/>
 
     <sdef n="apos" />
     <sdef n="guio" />
@@ -222,6 +242,8 @@
     <!-- SECCIÓN: Numerales -->
     <e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
+    <e r="RL"><p><l>huq<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
+    <e r="LR"><p><l>huq<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
     <e><p><l>iskay<s n="num"/></l><r>dos<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>kinsa<s n="num"/></l><r>tres<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>tawa<s n="num"/></l><r>cuatro<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -479,12 +501,15 @@
     <e><p><l>millay<s n="adj"/></l><r>malo<s n="adj"/></r></p></e>
     <e><p><l>ñawpa<s n="adj"/></l><r>antiguo<s n="adj"/></r></p></e>
     <e><p><l>ñawpaq<s n="adj"/></l><r>primero<s n="adj"/></r></p></e>
+    <e><p><l>puka<s n="adj"/></l><r>rojo<s n="adj"/></r></p></e>
     <e><p><l>qasi<s n="adj"/></l><r>tranquilo<s n="adj"/></r></p></e>
     <e><p><l>qhapaq<s n="adj"/></l><r>rico<s n="adj"/></r></p></e>
     <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
     <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
     <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
+    <e><p><l>upa<s n="adj"/></l><r>tonto<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>upa<s n="adj"/></l><r>sordo<s n="adj"/></r></p></e>
     <e><p><l>wakcha<s n="adj"/></l><r>pobre<s n="adj"/><s n="mf"/></r></p></e>
     <e r="RL"><p><l>wakcha<s n="n"/></l><r>huérfano<s n="adj"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
@@ -2326,6 +2351,10 @@
     <e><p><l>huñuy<s n="vblex"/></l><r>unir<s n="vblex"/></r></p></e>
     <e><p><l>huñuy<s n="vblex"/></l><r>juntar<s n="vblex"/></r></p></e>
     <e><p><l>huq'uchay<s n="vblex"/></l><r>mojar<s n="vblex"/></r></p></e>
+    <e><p><l>huqariy<s n="vblex"/></l><r>levantar<s n="vblex"/></r></p></e>
+    <e><p><l>huqariy<s n="vblex"/></l><r>recoger<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>huqariy<s n="vblex"/></l><r>alzar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>huqhariy<s n="vblex"/></l><r>levantar<s n="vblex"/></r></p></e>
     <e><p><l>hurquy<s n="vblex"/></l><r>arrancar<s n="vblex"/></r></p></e>
     <e><p><l>hurquy<s n="vblex"/></l><r>sacar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>hurquy<s n="vblex"/></l><r>excluir<s n="vblex"/></r></p></e>
@@ -2494,8 +2523,10 @@
     <e><p><l>taripay<s n="vblex"/></l><r>alcanzar<s n="vblex"/></r></p></e>
     <e><p><l>ukyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>upyay<s n="vblex"/></l><r>beber<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>uqariy<s n="vblex"/></l><r>levantar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>uyariy<s n="vblex"/></l><r>escuchar<s n="vblex"/></r></p></e>
     <e><p><l>uyariy<s n="vblex"/></l><r>oír<s n="vblex"/></r></p></e>
+    <e><p><l>willay<s n="vblex"/></l><r>contar<s n="vblex"/></r></p></e>
     <e><p><l>wisq'ay<s n="vblex"/></l><r>cerrar<s n="vblex"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/></l><r>saber<s n="vblex"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="caus"/></l><r>enseñar<s n="vblex"/></r></p></e>
