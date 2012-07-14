@@ -17,6 +17,10 @@
       <cat-item tags="np.*"/> -->
     </def-cat>
     
+    <def-cat n="np">
+      <cat-item tags="np.*"/>
+    </def-cat>
+    
     <def-cat n="np-ant">
       <cat-item tags="np.ant.*"/>
     </def-cat>
@@ -93,6 +97,7 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
       <attr-item tags="np.ant"/>
+      <attr-item tags="np.loc"/>
     </def-attr>
     
     <def-attr n="a_adj">
@@ -1139,18 +1144,18 @@
 </action>
 </rule>
 
-<rule comment="ANTROPÓNIMO">
+<rule comment="NOMBRE_PROPIO">
 <pattern>
-	<pattern-item n="np-ant"/>
+	<pattern-item n="np"/>
 </pattern>
 <action>
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
 <call-macro n="pon-sg"><with-param pos="1"/></call-macro>
 <call-macro n="quita-nom"><with-param pos="1"/></call-macro>
 <out>
-<chunk name="SNant" case="caseFirstWord">
+<chunk name="SNprop" case="caseFirstWord">
 		<tags>
-			<tag><lit-tag v="SNant"/></tag>
+			<tag><lit-tag v="SNprop"/></tag>
 			<tag><clip pos="1" side="tl" part="gen"/></tag>
 			<tag><var n="numero"/></tag>
 			<tag><var n="caso"/></tag>
@@ -1280,16 +1285,17 @@
 	<pattern-item n="adj"/>
 	<pattern-item n="nom"/>
 </pattern>
-<action>
-<call-macro n="firstWord">
-  <with-param pos="1"/></call-macro>
+<action>  
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="2"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="2"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <call-macro n="f_concord2">
   <with-param pos="2"/><with-param pos="1"/></call-macro>
 <!-- <call-macro n="pon-sg"><with-param pos="2"/></call-macro>
 <call-macro n="pon-m"><with-param pos="2"/></call-macro> -->
-<call-macro n="quita-nom">
-  <with-param pos="2"/></call-macro>
-<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <choose>
 <when>
   <test><equal>
@@ -1382,18 +1388,22 @@
 	<pattern-item n="nom"/>
 </pattern>
 <action>
-<call-macro n="firstWord">
-  <with-param pos="1"/></call-macro>
-<call-macro n="f_concord2">
+
+  
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="2"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="3"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="2"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="3"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="2"/></call-macro>
+<call-macro n="f_concord2"><with-param pos="3"/><with-param pos="1"/></call-macro>
   <!--<with-param pos="3"/><with-param pos="2"/><with-param pos="1"/></call-macro>-->
-  <with-param pos="3"/><with-param pos="1"/></call-macro>
-<call-macro n="f_concord2">
-  <with-param pos="3"/><with-param pos="2"/></call-macro>
+<call-macro n="f_concord2"><with-param pos="3"/><with-param pos="2"/></call-macro>
 <!-- <call-macro n="pon-sg"><with-param pos="2"/></call-macro>
 <call-macro n="pon-m"><with-param pos="2"/></call-macro> -->
-<call-macro n="quita-nom">
-  <with-param pos="3"/></call-macro>
-<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
 <choose>
 <when>
   <test><equal>

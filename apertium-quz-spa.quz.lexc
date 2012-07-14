@@ -465,19 +465,17 @@ LEXICON V-Nom
 %<pp%>:%>sqa  N-FLEX-POS ;
 %<pf%>:%>na  N-FLEX-POS ;
 %<ag%>:%>q N-FLEX-POS ;
-N-FLEX-lla-Caso ;
-N-FLEX-Caso-lla ;
 
 LEXICON V-INF
-%<inf%>%<po3sp%>@D.wa@:%>y@D.wa@ V-Nom ;
-%<inf%>%<po2sp%>@D.wa@:%>y@D.wa@ V-Nom ;
-%<inf%>%<po1sp%>@R.wa.pres@:%>y@R.wa.pres@ V-Nom ;
+%<inf%>%<po3sp%>@D.wa@:%>y@D.wa@ N-FLEX-POS ;
+%<inf%>%<po2sp%>@D.wa@:%>y@D.wa@ N-FLEX-POS ;
+%<inf%>%<po1sp%>@R.wa.pres@:%>y@R.wa.pres@ N-FLEX-POS ;
 
 LEXICON V-TMSub
 %<pri%>: V-PERS ;
 %<past%>:%>rqa V-PERS ;
 %<past%>:%>ra V-PERS ;
-%<evid%>:%>sqa CLIT-puni ; ! sin -n 3suj. poner @P.sqa.pres@
+! %<evid%>:%>sqa CLIT-puni ; ! sin -n 3suj. poner @P.sqa.pres@
 %<evid%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>sqa@D.wa@ CLIT-puni ;
 %<evid%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>sqaku@D.wa@ CLIT-puni ;
 %<evid%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>sqa@R.wa.pres@ CLIT-puni ;
@@ -506,6 +504,14 @@ LEXICON V-Progr
 %<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
 %<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;
 %<cont%>:%>sha V-LIM ;
+! formas ayacuchanas
+%<cont%>@P.wa.pres@:%>wa%>chka@P.wa.pres@ V-LIM ;
+%<cont%>@P.wa.pres@:%>chka%>wa@P.wa.pres@ V-LIM ;
+%<cont%>:%>chka V-LIM ;
+%<cont%>@P.wa.pres@:%>wa%>shka@P.wa.pres@ V-LIM ;
+%<cont%>@P.wa.pres@:%>shka%>wa@P.wa.pres@ V-LIM ;
+%<cont%>:%>shka V-LIM ;
+
 V-LIM ;
 
 
@@ -1075,6 +1081,8 @@ chanin:chanin N ;       ! "precio, valor"
 chanin:chanin N ;       ! precio
 chanka:chanka N ;       ! "muslo, pierna"
 chapi:chapi N ;         ! "estaño"
+charangu:charangu N ;   ! "charango" (intrumento de cuerdas)
+charango:charango N ;   ! "charango" (intrumento de cuerdas)
 charapa:charapa N ;     ! "tortuga"
 chaski% wasi:chaski% wasi N ;       ! "correo"
 chhawa:chhawa N ;       ! "saúco"
@@ -1378,6 +1386,8 @@ pukyu:pukyu N ;     ! "fuente, manantial"
 puma:puma N ;       ! "puma"
 puna:puna N ;       ! "puna"
 punchu:punchu N ;       ! "poncho"
+poncho:poncho N ;       ! "poncho"
+ponchito:ponchito N ;   ! "ponchito"
 punku:punku N ;     ! "puerta"
 puñuna% wasi:puñuna% wasi N ;       ! "dormitorio"
 pupu:pupu N ;       ! "ombligo"
@@ -1883,11 +1893,15 @@ al%<pr%>:al # ;
 empresa:empresa N ;
 don:don N ;
 doña:doña N ;
+birrete:birrete N ;
+carnaval:carnaval N ;
+coro:coro N ;
 
 
 LEXICON Topónimos
 Tawantinsuyu%<np%>:Tawantinsuyu NP-TOP ; ! "imperio inca"
 Perú:Perú NP-TOP ;
+Tambobamba:Tambobamba NP-TOP ;
 
 
 LEXICON AdjetivosGenero
@@ -1900,6 +1914,9 @@ warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 
 ! nombres de lugar/tiempo donde -ntin = todo: hinantin, mundontin, tiqsimuyuntin, p'unchaynintin, pachantin... - en lista en trasferencia
 ! hisp'anismos nom + plural en -s, -es, adj + m/f -o/a + pl -s, -es
+
+tambobambino:tambobambino ADJ-M ; ! "tambobambino" (de Tambobamba, Apurímac)
+tambobambino:tambobambina ADJ-F ; ! "tambobambina"
 
 LEXICON Adjetivos
 
@@ -2400,6 +2417,7 @@ uyariy:uyari V-TV ;     ! "oír, escuchar"
 
 vendey:vende V-TV ;     ! "vender"
 waliy:wali V-TV ;       ! "valer, costar"
+waylluy:wayllu V-TV ;   ! "amar"
 wikch%'uy:wikch%'u V-TV ;   ! "tirar, botar, arrojar"
 willay:willa V-TV ;     ! "contar"
 windiy:windi V-TV ;     ! "vender"
