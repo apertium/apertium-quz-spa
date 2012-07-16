@@ -533,6 +533,7 @@ LEXICON V-DER-pu
 %<bn%>:%>pu V-Progr ;                           ! p%{U%} + 
 %<bn%>%<ctl%>:%>pa%>mu V-Progr ;                ! p%{U%} + m%{bU%}
 %<bn%>%<refl%>:%>pa%>ku V-Progr ;               ! p%{U%} + k%{U%}
+%<refl%>%<bn%>:%>ka%>pu V-Progr ;               ! k%{U%} + p%{U%}
 %<bn%>%<refl%>%<ctl%>:%>pa%>ka%>mu V-Progr ;    ! p%{U%} + k%{U%} + m%{bU%}
 V-DER-ku ;
 
@@ -1161,6 +1162,7 @@ k%'ikllu:k%'ikllu N ;       ! "calle"
 k%'iraw:k%'iraw N ;         ! "cuna"
 k%'iri:k%'iri N ;           ! "herida"
 k%'iski:k%'iski N ;         ! "estreñimiento"
+k%'uchu:k%'uchu N ;         ! "esquina, rincón, ángulo"
 k%'usillu:k%'usillu N ;     ! "mono"
 k%'uychi:k%'uychi N ;       ! "arco iris"
 k%'uyka:k%'uyka N ;         ! "lombriz"
@@ -2381,6 +2383,7 @@ kwiday:kwida V-TV ;         ! "cuidar"
 laq%'ay:laq%'a V-TV ;   ! "pegar una"
 laq%'ay:laq%'a V-TV ;   ! "emplastar (barro en la pared, etc.)", "pegar una (bofetada)"
 layqay:layqa V-TV ;     ! "embrujar, hechizar"
+liyi:liyiy V-TV ;       ! "leer"
 luluy:lulu V-TV ;       ! "acariciar"
 lutiy:luti V-TV ;       ! "calumniar"
 luyluy:luylu V-TV ;     ! "acariciar"
