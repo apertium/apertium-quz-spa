@@ -70,7 +70,7 @@
     <sdef n="ter"       c="Terminativo (limitativo) (-kama)" />
     <sdef n="per"       c="Perlativo (-nta)" />
     <sdef n="abl"       c="Ablativo (-manta)" />
-    <sdef n="loc"       c="Locativo (-pi)" />   <!-- = Location en ES - cambiar?) -->
+    <sdef n="loc"       c="Locativo (-pi)" />   <!-- loc "Location" en ES - cambiado para top) -->
     <sdef n="ins"       c="Instrumental (comitativo) (-wan)" />
     <sdef n="csal"      c="Causal (causativo) (-rayku)" />
     <sdef n="dis"       c="Distributivo (-nka)" />
@@ -213,7 +213,9 @@
     <e><p><l>icha<s n="cnjcoo"/></l>    <r>o<s n="cnjcoo"/></r></p></e>
     <e><p><l>icha<s n="cnjcoo"/><s n="topi"/></l>  <r>pero<s n="cnjcoo"/></r></p></e>
     <e><p><l>ima<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
+    <e><p><l>i<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
     <e><p><l>sichus<s n="cnjadv"/></l>     <r>si<s n="cnjadv"/></r></p></e>
+    <e r="LR"><p><l>y<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
 
     
     </section>
@@ -223,6 +225,8 @@
     <e r="RL"><p><l>chinpa<s n="post"/></l><r>en<b/>frente<b/>de<s n="pr"/></r></p></e>
     <e><p><l>chinpa<s n="post"/></l><r>frente<b/>a<s n="pr"/></r></p></e>
     <e r="LR"><p><l>niq<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
+    <e><p><l>pata<s n="post"/></l><r>sobre<s n="pr"/></r></p></e>
+    <e><p><l>pata<s n="post"/></l><r>encima<b/>de<s n="pr"/></r></p></e>
     <e><p><l>qhipa<s n="post"/></l><r>detrás<b/>de<s n="pr"/></r></p></e>
     <e><p><l>sispa<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
     <e><p><l>ukhu<s n="post"/></l><r>dentro<b/>de<s n="pr"/></r></p></e>
@@ -383,6 +387,15 @@
 
     </section>
     
+    <section id="HISP__CLASES_CERRADAS" type="standard">
+    
+    <e><p><l>el<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>la<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
+    <e><p><l>los<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="pl"/></r></p></e>
+    <e><p><l>las<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="pl"/></r></p></e>
+    
+    </section>
+    
     <!-- SECCIÓN: Adverbios -->
     
     <section id="ADVERBIOS_SUSTANTIVALES" type="standard">
@@ -449,6 +462,7 @@
     <e><p><l>manapuni<s n="adv"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
     <e><p><l>ña<s n="adv"/></l><r>ya<s n="adv"/></r></p></e>
     <e><p><l>pisillata<s n="adv"/></l><r>poco<s n="adv"/></r></p></e>
+    <e><p><l>riki<s n="adv"/></l><r>pues<s n="adv"/></r></p></e>
     <e><p><l>usqhaylla<s n="adv"/></l><r>rápidamente<s n="adv"/></r></p></e>
 
    
@@ -458,6 +472,13 @@
     
     <e><p><l>añay<s n="ij"/></l><r>gracias<s n="ij"/></r></p></e>
     <e><p><l>yaw<s n="ij"/></l><r>hola<s n="ij"/></r></p></e>
+    <e><p><l>carajo<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
+    <e><p><l>karahu<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
+    <e><p><l>alaláw<s n="ij"/></l><r>qué<b/>frío<s n="ij"/></r></p></e>
+    <e><p><l>taytáy<s n="ij"/></l><r>papito<s n="ij"/></r></p></e>
+    <e r="LR"><p><l>tatáy<s n="ij"/></l><r>papito<s n="ij"/></r></p></e>
+    <e><p><l>papáy<s n="ij"/></l><r>papito<s n="ij"/></r></p></e>
+    <e><p><l>mamáy<s n="ij"/></l><r>mamita<s n="ij"/></r></p></e>
 
     </section>
     
@@ -511,10 +532,13 @@
 
     <e><p><l>allin<s n="adj"/></l><r>bueno<s n="adj"/></r></p></e>
     <e><p><l>ch'uya<s n="adj"/></l><r>claro<s n="adj"/></r></p></e>
+    <e><p><l>ch'uya<s n="adj"/></l><r>limpio<s n="adj"/></r></p></e>
+    <e><p><l>chawpi<s n="adj"/></l><r>medio<s n="adj"/></r></p></e>
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>hatun<s n="adj"/></l><r>grande<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>huch'uy<s n="adj"/></l><r>pequeño<s n="adj"/></r></p></e>
+    <e><p><l>kuraq<s n="adj"/></l><r>mayor<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>kusi<s n="adj"/></l><r>feliz<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>machu<s n="adj"/></l><r>viejo<s n="adj"/></r></p></e>
     <e><p><l>mana<b/>allin<s n="adj"/></l><r>malo<s n="adj"/></r></p></e>
@@ -525,12 +549,13 @@
     <e><p><l>ñawpaq<s n="adj"/></l><r>primero<s n="adj"/></r></p></e>
     <e><p><l>puka<s n="adj"/></l><r>rojo<s n="adj"/></r></p></e>
     <e><p><l>q'illu<s n="adj"/></l><r>amarillo<s n="adj"/></r></p></e>
+    <e><p><l>q'umir<s n="adj"/></l><r>verde<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>qasi<s n="adj"/></l><r>tranquilo<s n="adj"/></r></p></e>
     <e><p><l>qhapaq<s n="adj"/></l><r>rico<s n="adj"/></r></p></e>
     <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
     <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
-    <e><p><l>q'umir<s n="adj"/></l><r>verde<s n="adj"/><s n="mf"/></r></p></e>
-    <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
+    <e><p><l>sullk'a<s n="adj"/></l><r>menor<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
     <e><p><l>tambobambino<s n="adj"/></l><r>tambobambino<s n="adj"/></r></p></e>
     <e><p><l>upa<s n="adj"/></l><r>tonto<s n="adj"/></r></p></e>
@@ -560,6 +585,8 @@
     <section id="ADJETIVOS_HISPANISMOS" type="standard">
       
     <e><p><l>libre<s n="adj"/></l><r>libre<s n="adj"/></r></p></e>
+    <e><p><l>nacional<s n="adj"/></l><r>nacional<s n="adj"/><s n="mf"/></r></p></e>
+    <e r="LR"><p><l>nashunal<s n="adj"/></l><r>nacional<s n="adj"/><s n="mf"/></r></p></e>
     
     </section>
     
@@ -641,6 +668,8 @@
     <e r="LR"><p><l>arma<s n="n"/></l><r>baño<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>arwi<s n="n"/></l><r>enredo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>asnapa<s n="n"/></l><r>hierba<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>asnapa<s n="n"/></l><r>asno<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>asnu<s n="n"/></l><r>burro<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>asnapa<s n="n"/></l><r>orégano<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>aswa<s n="n"/></l><r>chicha<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>ataw<s n="n"/></l><r>dicha<s n="n"/><s n="f"/></r></p></e>
@@ -895,6 +924,7 @@
     <e><p><l>kunti<s n="n"/></l><r>occidente<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kunti<s n="n"/></l><r>oeste<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kuntur<s n="n"/></l><r>cóndor<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kura<s n="n"/></l><r>cura<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kuraka<s n="n"/></l><r>cacique<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kuraka<s n="n"/></l><r>curaca<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>kuri<s n="n"/></l><r>mellizo<s n="n"/></r></p></e>
@@ -1086,6 +1116,9 @@
     <e r="RL"><p><l>pallar<s n="n"/></l><r>alubia<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pallar<s n="n"/></l><r>frijol<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>pallay<s n="n"/></l><r>dibujo<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>palláy<s n="n"/></l><r>dibujo<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>pallay<s n="n"/></l><r>diseño<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>pallay<s n="n"/></l><r>pallay<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>palta<s n="n"/></l><r>aguacate<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>llanura<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>panpa<s n="n"/></l><r>piso<s n="n"/><s n="m"/></r></p></e>
@@ -1899,6 +1932,11 @@
     <e><p><l>Jaime<s n="np"/><s n="ant"/></l><r>Jaime<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>José<s n="np"/><s n="ant"/></l><r>José<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>María<s n="np"/><s n="ant"/></l><r>María<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Tomás<s n="np"/><s n="ant"/></l><r>Tomás<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Tumas<s n="np"/><s n="ant"/></l><r>Tomás<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Tomasa<s n="np"/><s n="ant"/></l><r>Tomasa<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Tumasa<s n="np"/><s n="ant"/></l><r>Tomasa<s n="np"/><s n="ant"/></r></p></e>
+    <e><p><l>Isicha<s n="np"/><s n="ant"/></l><r>Isicha<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Huñunakusqa<b/>Nacionkuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>Huñunakusqa<b/>Llaqtakuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>Hukllasqa<b/>Nacionkuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
@@ -1907,23 +1945,36 @@
     <e><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>Pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>quyllur<s n="n"/></l><r>Venus<s n="np"/><s n="loc"/><s n="m"/></r></p></e>
-    <e><p><l>Tambobamba<s n="np"/><s n="top"/></l><r>Tambobamba<s n="np"/><s n="loc"/><s n="f"/><s n="sg"/></r></p></e>
-    <e><p><l>Tawantinsuyu<s n="np"/><s n="top"/></l><r>Tahuantinsuyo<s n="np"/><s n="loc"/><s n="m"/><s n="sg"/></r></p></e>
+    <e r="RL"><p><l>quyllur<s n="n"/></l><r>Venus<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Tambobamba<s n="np"/><s n="top"/></l><r>Tambobamba<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
+    <e><p><l>Tawantinsuyu<s n="np"/><s n="top"/></l><r>Tahuantinsuyo<s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>Perú<s n="np"/><s n="top"/></l><r>Perú<s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
     
     </section>
     
     <section id="NOMBRES_HISPANISMOS" type="standard">
       
     <e><p><l>animal<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>carnaval<s n="n"/></l><r>carnaval<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>asnu<s n="n"/></l><r>asno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>birrete<s n="n"/></l><r>birrete<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>bulla<s n="n"/></l><r>ruido<s n="n"/><s n="m"/></r></p></e>
-    <e r="RL"><p><l>colegio<s n="n"/><s n="f"/></l><r>colegio<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>coro<s n="n"/></l><r>coro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>carnaval<s n="n"/></l><r>carnaval<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>clima<s n="n"/></l><r>clima<s n="n"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>colegio<s n="n"/><s n="m"/></l><r>colegio<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>coro<s n="n"/></l><r>coro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>democracia<s n="n"/></l><r>democracia<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>derecho<s n="n"/></l><r>derecho<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>don<s n="n"/></l><r>don<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>doña<s n="n"/></l><r>doña<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>empresa<s n="n"/></l><r>empresa<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>estado<s n="n"/></l><r>estado<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mesa<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>nación<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>nacion<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>nashun<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>politica<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>politika<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
     
     </section>
     
@@ -2542,6 +2593,7 @@
     
     <e><p><l>pakay<s n="vblex"/></l><r>esconder<s n="vblex"/></r></p></e>
     <e><p><l>qallariy<s n="vblex"/></l><r>empezar<s n="vblex"/></r></p></e>
+    <e><p><l>qallariy<s n="vblex"/></l><r>comenzar<s n="vblex"/></r></p></e>
     <e><p><l>qispiy<s n="vblex"/><s n="caus"/></l><r>librar<s n="vblex"/></r></p></e>
     <e><p><l>quy<s n="vblex"/></l><r>dar<s n="vblex"/></r></p></e>
     <e><p><l>qhaway<s n="vblex"/></l><r>mirar<s n="vblex"/></r></p></e>
@@ -2565,6 +2617,7 @@
     <e><p><l>uyariy<s n="vblex"/></l><r>oír<s n="vblex"/></r></p></e>
     <e><p><l>waylluy<s n="vblex"/></l><r>amar<s n="vblex"/></r></p></e>
     <e><p><l>wikch'uy<s n="vblex"/></l><r>tirar<s n="vblex"/></r></p></e>
+    <e><p><l>wikch'uy<s n="vblex"/></l><r>botar<s n="vblex"/></r></p></e>
     <e><p><l>willay<s n="vblex"/></l><r>contar<s n="vblex"/></r></p></e>
     <e><p><l>wisq'ay<s n="vblex"/></l><r>cerrar<s n="vblex"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/></l><r>saber<s n="vblex"/></r></p></e>

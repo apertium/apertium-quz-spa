@@ -39,6 +39,8 @@ Multichar_Symbols
 %<cnjcoo%>    ! -wan, -piwan, -puwan como conjunción "y", "con"
 %<cnjadv%>    ! conjunción adverbial
 %<ij%>        ! interjeción
+%<pr%>          ! preposición (hispanismos)
+%<det%>         ! determinante (hispanismos)
 
 %<pers%>      ! personal (pronombre)
 %<itg%>       ! interrogativo (pronombre, adverbio)
@@ -221,6 +223,7 @@ NombresGenero ;
 NombresDerivados ;
 NombresPropios ;
 Topónimos ;
+NombresHisp ;
 Adjetivos ;
 AdjetivosGenero ;
 AdjetivosDerivados ;
@@ -1872,19 +1875,27 @@ Pacha% Mama:Pacha% Mama NP-ANT-F ;  ! "Madre Tierra"
 pachamama:pachamama NP-ANT-F ;      ! "Pachamama"
 Pachamama:Pachamama NP-ANT-F ;      ! "Pachamama"
 Tumas:Tumas NP-ANT-M ;              ! "Tomas"
+Tomás:Tomás NP-ANT-M ;              ! "Tomas"
 Tumasa:Tumasa NP-ANT-F ;            ! "Tomasa"
-Isicha:Isicha NP-ANT-M ;            ! "Isac" ???
+Tomasa:Tomasa NP-ANT-F ;            ! "Tomasa"
+Isicha:Isicha NP-ANT-M ;            ! "Isac", "Isidor" ???
 
+
+LEXICON Topónimos
+Tawantinsuyu:Tawantinsuyu NP-TOP ; ! "Tahuantinsuyo (el imperio inca)"
+Perú:Perú NP-TOP ;
+Tambobamba:Tambobamba NP-TOP ;
+
+LEXICON NombresHisp
 ! poner aparte como hispanismos - pueden tomar plural -s
 política:política N ;
-política% de% estado:política% de% estado N ;
 estado:estado N ;
 politica:politica N ;
 politika:politika N ;
 democracia:democracia N ;
 nación:nación N ;
 nacion:nacion N ;
-nacional:nacional ADJ ;
+nashun:nashun N ;
 derecho:derecho N ;
 de%<pr%>:de # ;
 del%<pr%>:del # ;
@@ -1896,12 +1907,13 @@ doña:doña N ;
 birrete:birrete N ;
 carnaval:carnaval N ;
 coro:coro N ;
+el%<det%>:el # ;
+la%<det%>:la # ;
+los%<det%>:los # ;
+las%<det%>:las # ;
 
-
-LEXICON Topónimos
-Tawantinsuyu%<np%>:Tawantinsuyu NP-TOP ; ! "imperio inca"
-Perú:Perú NP-TOP ;
-Tambobamba:Tambobamba NP-TOP ;
+nacional:nacional ADJ ;
+nashunal:nashunal ADJ ;
 
 
 LEXICON AdjetivosGenero
@@ -1970,8 +1982,8 @@ aswan:aswan Preadj ; ! "más"
 sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
 
 ! as:as ADJ ; ! "un poco de"
-askha:askha ADJ ; ! "mucho"
-pisi:pisi ADJ ; ! "poco"
+askha:askha ADJ ; ! "mucho"       - corregir todo (adj/prn), no está en bidix
+pisi:pisi ADJ ; ! "poco"       - corregir todo (adj/prn), no está en bidix
 
 
 LEXICON PronombresDemItg
@@ -2053,11 +2065,11 @@ huknin:huknin PRON ; ! "otro"
 iskayninku:iskayninku PRON ; ! "los dos, ambos"
 ! iskaynin:iskaynin ADJ-DET ; ! "ambos"
 tukuy:tukuy PRON ;      ! todo, entero         - cambiar lex, categoría
-imaymana:imaymana PRON ;     ! "todo"
-llapan:llapan PRON ;        ! "todo(s)"
-llapa:llapa PRON ;      ! "todo(s)"
-lliw:lliw PRON ;        ! "todo(s)"
-lluy:lluy PRON ;        ! "todo(s)"
+imaymana:imaymana PRON ;     ! "todo"       - corregir todo (adj/prn), no está en bidix
+llapan:llapan PRON ;        ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
+llapa:llapa PRON ;      ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
+lliw:lliw PRON ;        ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
+lluy:lluy PRON ;        ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
 
 
 
@@ -2126,7 +2138,7 @@ hayk%'aqpis:hayk%'aqpis ADV-taq ; ! "alguna vez / nunca"
 hukmanta:hukmanta ADV ; ! "otra vez"
 ichapas:ichapas ADV-taq ; ! "probablemente"
 
-riki%<adv%>:riki # ;        ! "claro"
+riki%<adv%>:riki # ;        ! "pues"
 hinallataq%<adv%>:hinallataq CLIT-Final ; ! "asimismo, así mismo"
 
 
