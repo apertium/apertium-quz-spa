@@ -1,4 +1,14 @@
-!!!  Q U E C H U A . lexc
+
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  !!!                                                               !!!
+  !!!                                                               !!!
+  !!!                  Q U E C H U A (Cuzco)                        !!!
+  !!!                                                               !!!
+  !!!                                                               !!!
+  !!!                                                               !!!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
@@ -34,6 +44,7 @@ Multichar_Symbols
 %<preadj%>    ! preadjetivo
 %<adv%>       ! adverbio
 %<num%>       ! numeral
+%<numM%>        ! numeral (múltiplos: 10, 100, 1000 ...)
 %<ord%>         ! numeral ordinal
 %<post%>     ! posposición
 %<cnjcoo%>    ! -wan, -piwan, -puwan como conjunción "y", "con"
@@ -249,11 +260,12 @@ Puntuación ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!                    M O R P H O T A C T I C S
-
-
+!!                    M O R P H O T A C T I C S                    !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!                   C L Í T I C O S
+
+
+!!!!!       C L Í T I C O S
+
 
 LEXICON CLIT-Final
 %<topi%>:%>qa # ;
@@ -311,7 +323,7 @@ LEXICON CLIT-lla
 CLIT-puni ;
 
 
-!!!! FLEXIÓN NOMINAL
+!!!!!       F L E X I Ó N   N O M I N A L
 
 LEXICON N-POSTcaso-kama
 ! kama - <ter>×<distrib> - otro significado, distributivo: "todos así" o sin trad.
@@ -428,8 +440,32 @@ LEXICON ADJ-DER
 %<dim%>:%>cha ADJ-PL ;
 ADJ-PL ;
 
+LEXICON NUM-Ord
+:% ñiqi N-DER ;
+:% ñiqin N-DER ;
+:% ñaqi N-DER ;
+:% ñaqin N-DER ;
+:%>ñiqi N-DER ;
+:%>ñiqin N-DER ;
+:%>ñaqi N-DER ;
+:%>ñaqin N-DER ;
+:% kaq N-DER ;
+:%>kaq N-DER ;
 
-!!!! FLEXIÓN VERBAL
+LEXICON NUM-Poss
+N-DER ;
+%<poss%>:%>%{bN%}%{bnI%}yuq N-DER ;
+%<ord%>: NUM-Ord ;
+%<ord%>%<poss%>:%>%{bN%}%{bnI%}yuq NUM-Ord ;
+! con limitativo????
+
+LEXICON NUM-Rel
+%<xrel%>:%>%{bN%}%{bnI%}n NUM-Poss ;
+NUM-Poss ;
+! con limitativo????
+
+
+!!!!!       F L E X I Ó N   V E R B A L
 
 LEXICON V-PERS
 ! tal vez poner algo para que no salgan las formas "reflexivas"
@@ -500,9 +536,11 @@ V-Nom ;
 LEXICON V-LIM
 %<lim%>:%>lla V-TMSub ;
 V-TMSub ;
+! lla-wa-y   quykapullaway
 
 
 LEXICON V-Progr
+! Cusihuamán: wa-sha-rqa-su-
 @P.wa.pres@:%>wa@P.wa.pres@ V-LIM ;
 %<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
 %<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;
@@ -517,6 +555,8 @@ LEXICON V-Progr
 
 V-LIM ;
 
+
+!!!!!       D E R I V A C I Ó N   V E R B A L
 
 LEXICON V-DER-mu
 %<ctl%>:%>mu V-Progr ;              ! m%{bU%}
@@ -739,8 +779,9 @@ LEXICON V-DER
 %<compl%>:%>ypari V-DER-ASP ;
 V-DER-ri ;
 
-
-!!!! LEXICONES DE CLASE DE PALABRA, GÉNERO, etc.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!          LEXICONES DE CLASE DE PALABRA, GÉNERO, etc.            !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON N
 %<n%>: N-DER ;
@@ -789,18 +830,10 @@ LEXICON DIGITLEX  ! sólo para numeros en cifra
 %<num%>: CLIT-lla ; 
 
 LEXICON NUM
-%<num%>: N-FLEX-Incl ;
-%<num%>%<ord%>:% ñiqi CLIT-lla ;
-%<num%>%<ord%>:% ñiqin CLIT-lla ;
-%<num%>%<ord%>:% ñaqi CLIT-lla ;
-%<num%>%<ord%>:% ñaqin CLIT-lla ;
-%<num%>%<ord%>:%>ñiqi CLIT-lla ;
-%<num%>%<ord%>:%>ñiqin CLIT-lla ;
-%<num%>%<ord%>:%>ñaqi CLIT-lla ;
-%<num%>%<ord%>:%>ñaqin CLIT-lla ;
-%<num%>%<ord%>:% kaq CLIT-lla ;
-%<num%>%<ord%>:%>kaq CLIT-lla ;
-! puede tomar inclusivo, posesivo, caso...
+%<num%>: NUM-Poss ;
+
+LEXICON NUM-Mult
+%<numM%>: NUM-Rel ;
 
 LEXICON ADV
 %<adv%>: CLIT-puni ;
@@ -864,7 +897,8 @@ LEXICON V-IMPERS
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!                    L E X I C O N   R A Í C E S
+!!             L E X I C O N   R A Í C E S  /  T E M A S           !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NombresGenero
 ! y de parentesco, edad, etc.
@@ -1082,7 +1116,7 @@ chakra:chakra N ;       ! "sementera"
 challwa:challwa N ;     ! "pescado, pez"
 chani:chani N ;         ! "valor"
 chanin:chanin N ;       ! "precio, valor"
-chanin:chanin N ;       ! precio
+chanin:chanin N ;       ! "precio"
 chanka:chanka N ;       ! "muslo, pierna"
 chapi:chapi N ;         ! "estaño"
 charangu:charangu N ;   ! "charango" (intrumento de cuerdas)
@@ -2087,7 +2121,16 @@ suqta:suqta NUM ; ! "seis"
 qanchis:qanchis NUM ; ! "siete"
 pusaq:pusaq NUM ; ! "ocho"
 isqun:isqun NUM ; ! "nueve"
-chunka:chunka NUM ; ! "diez"
+ch%'usaq:ch%'usaq NUM ;  ! "cero"
+
+chunka:chunka NUM-Mult ; ! "diez"
+pachak:pachak NUM-Mult ; ! "cien"
+waranqa:waranqa NUM-Mult ; ! "mil"
+hunu:hunu NUM-Mult ; ! "diez mil - millón ???"
+lluna:lluna NUM-Mult ; ! "millón"
+millun:millun NUM-Mult ; ! "millón"
+millon:millon NUM-Mult ; ! "millón"
+millón:millón NUM-Mult ; ! "millón"
 
 
 
@@ -2386,7 +2429,7 @@ kwiday:kwida V-TV ;         ! "cuidar"
 
 laq%'ay:laq%'a V-TV ;   ! "emplastar (barro en la pared, etc.)", "pegar una (bofetada)"
 layqay:layqa V-TV ;     ! "embrujar, hechizar"
-liyi:liyiy V-TV ;       ! "leer"
+liyiy:liyi V-TV ;       ! "leer"
 luluy:lulu V-TV ;       ! "acariciar"
 lutiy:luti V-TV ;       ! "calumniar"
 luyluy:luylu V-TV ;     ! "acariciar"

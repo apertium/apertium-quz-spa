@@ -14,6 +14,7 @@
     <sdef n="det"      c="Determinante"/>
     <sdef n="detnt"    c="Determinante neutro"/>
     <sdef n="num"      c="Numeral"/>
+    <sdef n="numM"     c="Numeral (Múltiplos: 10, 100 ...)"/>
     <sdef n="ord"      c="Numeral ordinal"/>
     <sdef n="pr"       c="Preposición"/>
     <sdef n="post"     c="Postposición"/>
@@ -96,6 +97,7 @@
     <sdef n="px1ex"    c="Primera persona plural exclusiva posesiva"/>
     <sdef n="px2pl"    c="Segunda persona plural posesiva"/>
     <sdef n="px3pl"    c="Tercera persona plural posesiva"/>
+    <sdef n="pxrel"    c="Relativo (-n)"/>
     
     <sdef n="pp"       c="Participio pasado (-sqa/-do)"/>
     <sdef n="pf"       c="Participio futuro (-na)"/>
@@ -268,7 +270,16 @@
     <e><p><l>qanchis<s n="num"/></l><r>siete<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pusaq<s n="num"/></l><r>ocho<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>isqun<s n="num"/></l><r>nueve<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>chunka<s n="num"/></l><r>diez<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><p><l>ch'usaq<s n="num"/></l><r>cero<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    
+    <e><p><l>chunka<s n="numM"/></l><r>diez<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><p><l>pachak<s n="numM"/></l><r>cien<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><p><l>waranqa<s n="numM"/></l><r>mil<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>hunu<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>lluna<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>millón<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>millun<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>millon<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     
 
     </section>
@@ -471,7 +482,7 @@
     <section id="INTERJECIONES" type="standard">
     
     <e><p><l>añay<s n="ij"/></l><r>gracias<s n="ij"/></r></p></e>
-    <e><p><l>yaw<s n="ij"/></l><r>hola<s n="ij"/></r></p></e>
+    <e><p><l>yaw<s n="ij"/></l><r>oye<s n="ij"/></r></p></e>
     <e><p><l>carajo<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
     <e><p><l>karahu<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
     <e><p><l>alaláw<s n="ij"/></l><r>qué<b/>frío<s n="ij"/></r></p></e>
