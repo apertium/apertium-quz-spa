@@ -390,10 +390,21 @@ LEXICON N-FLEX-Inter
 !! revisar, poner de otra manera
 N-FLEX-Gen ;
 
+LEXICON N-FLEX-POS-Oblig
+! después del inclusivo -nti, obligatorio, sin plural -kuna
+! sólo para los numerales, el resto siempre tiene -nti-n (o -ntin-ku)
+%<px1in%>:%>nchis N-FLEX-Incl ;
+%<px1ex%>:%>yku N-FLEX-Incl ;
+%<px2pl%>:%>ykichis N-FLEX-Incl ;
+%<px3pl%>:%>nku N-FLEX-Incl ;
+%<px3sg%>:%>n N-FLEX-Incl ;  ! excepcionalmente
+
+
 LEXICON N-FLEX-Incl
-! se excluye con los posesivos, pero para no complicarlo, lo dejamos
-%<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Inter ;
+%<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Inter ;     ! + nti-n-ku
 %<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Inter ;
+%<incl%>:%>%{bN%}%{bnI%}ntinku N-FLEX-Inter ;     ! excepcionalmente con animados
+%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llanku@D.lim@ N-FLEX-Inter ;
 N-FLEX-Inter ;
 
 LEXICON N-FLEX-Plural
@@ -458,9 +469,11 @@ N-DER ;
 %<ord%>: NUM-Ord ;
 %<ord%>%<poss%>:%>%{bN%}%{bnI%}yuq NUM-Ord ;
 ! con limitativo????
+%<incl%>:%>%{bN%}%{bnI%}nti N-FLEX-POS-Oblig ;
+%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>lla@D.lim@ N-FLEX-POS-Oblig ;
 
 LEXICON NUM-Rel
-%<xrel%>:%>%{bN%}%{bnI%}n NUM-Poss ;
+%<xrel%>:%>%{bN%}%{bnI%}n NUM-Poss ;    ! o mejor NUM-Ord + N-DER?
 NUM-Poss ;
 ! con limitativo????
 
@@ -2115,6 +2128,7 @@ huq:huq NUM ;   ! "uno"
 huk:huk NUM ; ! "uno"
 iskay:iskay NUM ; ! "dos"
 kinsa:kinsa NUM ; ! "tres"
+kimsa:kimsa NUM ;   ! "tres"
 tawa:tawa NUM ; ! "cuatro"
 pisqa:pisqa NUM ; ! "cinco"
 suqta:suqta NUM ; ! "seis"
@@ -2132,6 +2146,22 @@ millun:millun NUM-Mult ; ! "millón"
 millon:millon NUM-Mult ; ! "millón"
 millón:millón NUM-Mult ; ! "millón"
 
+ñawpaq% ñiqin%<num%>%<ord%>:ñawpaq% ñiqin N-DER ;     ! "primero"
+ñawpaq% ñiqi%<num%>%<ord%>:ñawpaq% ñiqi N-DER ;
+ñawpaq% ñaqin%<num%>%<ord%>:ñawpaq% ñaqin N-DER ;
+ñawpaq% ñaqi%<num%>%<ord%>:ñawpaq% ñaqi N-DER ;
+ñawpaq% kaq%<num%>%<ord%>:ñawpaq% kaq N-DER ;
+ñawpaqñiqin%<num%>%<ord%>:ñawpaqñiqin N-DER ;
+ñawpaqñiqi%<num%>%<ord%>:ñawpaqñiqi N-DER ;
+ñawpaqñaqin%<num%>%<ord%>:ñawpaqñaqin N-DER ;
+ñawpaqñaqi%<num%>%<ord%>:ñawpaqñaqi N-DER ;
+ñawpaqkaq%<num%>%<ord%>:ñawpaqkaq N-DER ;
+! ñawpaq = primero, anterior, antes (adj./postp.)
+! qhipa, qhipaq = último, de atrás, después... (adj./postp.)
+qhipa% kaq%<num%>%<ord%>:qhipa% kaq N-DER ;     ! "último"
+qhipakaq%<num%>%<ord%>:qhipakaq N-DER ;
+
+! chiqtan, kuskan...
 
 
 LEXICON Adverbios-Subst

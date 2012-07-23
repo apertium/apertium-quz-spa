@@ -264,6 +264,7 @@
     <e r="LR"><p><l>huq<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
     <e><p><l>iskay<s n="num"/></l><r>dos<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>kinsa<s n="num"/></l><r>tres<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e r="LR"><p><l>kimsa<s n="num"/></l><r>tres<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>tawa<s n="num"/></l><r>cuatro<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pisqa<s n="num"/></l><r>cinco<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>suqta<s n="num"/></l><r>seis<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -281,6 +282,54 @@
     <e><p><l>millun<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>millon<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     
+    <e><p><l>qhipa<b/>kaq<s n="num"/><s n="ord"/></l><r>último<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>qhipakaq<s n="num"/><s n="ord"/></l><r>último<s n="det"/><s n="ord"/></r></p></e>
+    
+    <e><p><l>ñawpaq<b/>ñiqin<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>ñiqi<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>ñaqin<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>ñaqi<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>kaq<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>ñawpaqñiqin<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqñiqi<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqñaqin<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqñaqi<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqkaq<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>ñawpaq<b/>ñiqin<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>ñiqi<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>ñaqin<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>ñaqi<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaq<b/>kaq<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e><p><l>ñawpaqñiqin<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqñiqi<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqñaqin<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqñaqi<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>ñawpaqkaq<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    
+    <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>primero<s n="adj"/></r></p></e>
+    
+    <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>undécimo<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>undécimo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>iskay<s n="num"/><s n="ord"/></l><r>segundo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>iskay<s n="num"/><s n="ord"/><s n="poss"/></l><r>segundo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>iskay<s n="num"/><s n="ord"/><s n="poss"/></l><r>duodécimo<s n="det"/><s n="ord"/></r></p></e>
+    
+    <e><p><l>kinsa<s n="num"/><s n="ord"/></l><r>tercer<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>kinsa<s n="num"/><s n="ord"/></l><r>tercero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>kimsa<s n="num"/><s n="ord"/></l><r>tercer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>kimsa<s n="num"/><s n="ord"/></l><r>tercero<s n="adj"/></r></p></e>
+    <e><p><l>tawa<s n="num"/><s n="ord"/></l><r>cuarto<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>pisqa<s n="num"/><s n="ord"/></l><r>quinto<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>suqta<s n="num"/><s n="ord"/></l><r>sexto<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>qanchis<s n="num"/><s n="ord"/></l><r>séptimo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>pusaq<s n="num"/><s n="ord"/></l><r>octavo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>isqun<s n="num"/><s n="ord"/></l><r>noveno<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>chunka<s n="numM"/><s n="ord"/></l><r>décimo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>pachak<s n="numM"/><s n="ord"/></l><r>centésimo<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>waranqa<s n="numM"/><s n="ord"/></l><r>milésimo<s n="det"/><s n="ord"/></r></p></e>
 
     </section>
     
