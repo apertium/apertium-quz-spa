@@ -306,6 +306,10 @@
     <e r="LR"><p><l>ñawpaqñaqi<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
     <e r="LR"><p><l>ñawpaqkaq<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
     
+    <e><p><l>huk<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e><p><l>huk<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
+    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
     <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primero<s n="adj"/></r></p></e>
     <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
