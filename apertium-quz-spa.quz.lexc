@@ -168,9 +168,10 @@ Multichar_Symbols
 
 %<pri%>       ! presente
 %<past%>      ! pasado -rqa
-%<cond%>      ! condicional (pot - potencial)
+%<cond%>      ! condicional (pot - potencial) - cni ? - pot ?
 %<evid%>      ! pasado evidencial -sqa
 %<imp%>       ! imperativo
+%<fti%>         ! futuro
 
 %<inf%>       ! infinitivo -y
 %<pp%>        ! participio pasado -sqa
@@ -289,7 +290,7 @@ LEXICON CLIT-Final
 %<rep%>%<excl%>:%>s%>ari # ;
 %<cnj%>%<excl%>:%>ch%>ari # ;
 %<enf%>%<excl%>:%>y%>ari # ;
-!! (sá), ari, chuqa(ya), taqri, churi
+!! (sá), ari, á, chuqa(ya), taqri, churi, suna, sina, qá, rí, táq
 # ; 
 
 LEXICON CLIT-chu
@@ -440,6 +441,8 @@ N-FLEX-POS ;
 LEXICON N-DER
 %<poss%>:%>%{bN%}%{bnI%}yuq N-DER-Dim ;
 %<lim%>%<poss%>@P.lim.pres@:%>%{bN%}%{bnI%}llayuq@P.lim.pres@ N-DER-Dim ;
+! sapa, sapayuq
+! ya, cha?, naya, raya
 N-DER-Dim ;
 
 
@@ -452,16 +455,16 @@ LEXICON ADJ-DER
 ADJ-PL ;
 
 LEXICON NUM-Ord
-:% ñiqi N-DER ;
+:% ñiqi N-DER ;     ! Dir/LR
 :% ñiqin N-DER ;
-:% ñaqi N-DER ;
-:% ñaqin N-DER ;
-:%>ñiqi N-DER ;
+:% ñaqi N-DER ;     ! Dir/LR
+:% ñaqin N-DER ;    ! Dir/LR
+:%>ñiqi N-DER ;     ! Dir/LR
 :%>ñiqin N-DER ;
-:%>ñaqi N-DER ;
-:%>ñaqin N-DER ;
-:% kaq N-DER ;
-:%>kaq N-DER ;
+:%>ñaqi N-DER ;     ! Dir/LR
+:%>ñaqin N-DER ;    ! Dir/LR
+:% kaq N-DER ;      ! Dir/LR
+:%>kaq N-DER ;      ! Dir/LR
 
 LEXICON NUM-Poss
 N-DER ;
@@ -485,20 +488,20 @@ LEXICON V-PERS
 
 ! objeto 3a persona
 %<p1%>%<sg%>%<po3sp%>@D.wa@:%>ni@D.wa@ CLIT-puni ;
-%<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-puni ;
-%<p3%>%<sg%>%<po3sp%>@D.wa@:%>n@D.wa@ CLIT-puni ;
-%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>nchis@D.wa@ CLIT-puni ;
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>yku@D.wa@ CLIT-puni ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-puni ;
 %<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@:%>n@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>nku@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>nchis@D.wa@ CLIT-puni ;
 
 ! objeto 1a persona
 %<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>nki@R.wa.pres@ CLIT-puni ;
 %<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>nkiku@R.wa.pres@ CLIT-puni ;
 %<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>nkichis@R.wa.pres@ CLIT-puni ;
 %<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>n@R.wa.pres@ CLIT-puni ;
-%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>nchis@R.wa.pres@ CLIT-puni ;
 %<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>nku@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>nchis@R.wa.pres@ CLIT-puni ;
 
 ! objeto 2a persona
 %<p1%>%<sg%>%<po2sg%>:%>yki CLIT-puni ;
@@ -508,9 +511,63 @@ LEXICON V-PERS
 %<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-puni ;
 %<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
 
+
+LEXICON V-FUT
+
+! objeto 3a persona
+%<p1%>%<sg%>%<po3sp%>@D.wa@:%>saq@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>saqku@D.wa@ CLIT-puni ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@:%>nqa@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>nqaku@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sun@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sunchis@D.wa@ CLIT-puni ;
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>nki@R.wa.pres@ CLIT-puni ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>nkiku@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>nkichis@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>nqa@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>nqaku@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sun@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunchis@R.wa.pres@ CLIT-puni ;
+
+! objeto 2a persona
+%<p1%>%<sg%>%<po2sg%>:%>sqayki CLIT-puni ;
+%<p1%>%<sg%>%<po2sg%>:%>sayki CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>:%>sqaykiku CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>:%>saykiku CLIT-puni ;
+%<p1%>%<sg%>%<po2pl%>:%>sqaykichis CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p1%>%<sg%>%<po2pl%>:%>saykichis CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p3%>%<sg%>%<po2sg%>:%>sunki CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
+
+
 LEXICON V-IMP
-%<imp%>%<p2%>%<sg%>%<po3sp%>@D.wa@:%>y@D.wa@ CLIT-puni ;
-%<imp%>%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>y@R.wa.pres@ CLIT-puni ;
+! objeto 3a persona
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>y@D.wa@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>ychis@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@:%>chun@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>chunku@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sun@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sunchis@D.wa@ CLIT-puni ;
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>y@R.wa.pres@ CLIT-puni ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>yku@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>ychis@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>chun@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>chunku@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sun@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunchis@R.wa.pres@ CLIT-puni ;
+
+! objeto 2a persona
+%<p3%>%<sg%>%<po2sg%>:%>sunki CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
+
 
 LEXICON V-Nom
 ! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
@@ -525,17 +582,24 @@ LEXICON V-INF
 
 LEXICON V-TMSub
 %<pri%>: V-PERS ;
+%<imp%>: V-IMP ;
+%<fti%>: V-FUT ;
+! COND-pot <cni> - <pot> ?
+! COND-POT pasado
+! HAB
+
 %<past%>:%>rqa V-PERS ;
 %<past%>:%>ra V-PERS ;
-! %<evid%>:%>sqa CLIT-puni ; ! sin -n 3suj. poner @P.sqa.pres@
+%<past%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>rqa@D.wa@ CLIT-puni ;         ! Dir/LR
+%<past%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>rqaku@D.wa@ CLIT-puni ;       ! Dir/LR
+%<past%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>rqa@R.wa.pres@ CLIT-puni ;   ! Dir/LR
+%<past%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>rqaku@R.wa.pres@ CLIT-puni ; ! Dir/LR
+%<evid%>:%>sqa V-PERS ; ! sin -n 3suj. poner @P.sqa.pres@ ?
 %<evid%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>sqa@D.wa@ CLIT-puni ;
 %<evid%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>sqaku@D.wa@ CLIT-puni ;
 %<evid%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>sqa@R.wa.pres@ CLIT-puni ;
 %<evid%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>sqaku@R.wa.pres@ CLIT-puni ;
-! FUT
-V-IMP ;
-! HAB
-! COND
+
 %<ger%>:%>spa N-FLEX-POS ;  ! provisional, hay que poner las personas
 %<ger%>%<lim%>:%>spa%>lla N-FLEX-POS ;  ! provisional, hay que poner las personas
 %<ger%>:%>qti N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
@@ -556,15 +620,15 @@ LEXICON V-Progr
 ! Cusihuamán: wa-sha-rqa-su-
 @P.wa.pres@:%>wa@P.wa.pres@ V-LIM ;
 %<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
-%<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;
+%<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;    ! Dir/LR
 %<cont%>:%>sha V-LIM ;
 ! formas ayacuchanas
-%<cont%>@P.wa.pres@:%>wa%>chka@P.wa.pres@ V-LIM ;
-%<cont%>@P.wa.pres@:%>chka%>wa@P.wa.pres@ V-LIM ;
-%<cont%>:%>chka V-LIM ;
-%<cont%>@P.wa.pres@:%>wa%>shka@P.wa.pres@ V-LIM ;
-%<cont%>@P.wa.pres@:%>shka%>wa@P.wa.pres@ V-LIM ;
-%<cont%>:%>shka V-LIM ;
+%<cont%>@P.wa.pres@:%>wa%>chka@P.wa.pres@ V-LIM ;   ! Dir/LR
+%<cont%>@P.wa.pres@:%>chka%>wa@P.wa.pres@ V-LIM ;   ! Dir/LR
+%<cont%>:%>chka V-LIM ;                             ! Dir/LR
+%<cont%>@P.wa.pres@:%>wa%>shka@P.wa.pres@ V-LIM ;   ! Dir/LR
+%<cont%>@P.wa.pres@:%>shka%>wa@P.wa.pres@ V-LIM ;   ! Dir/LR
+%<cont%>:%>shka V-LIM ;                             ! Dir/LR
 
 V-LIM ;
 

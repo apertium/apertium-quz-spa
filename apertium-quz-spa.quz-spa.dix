@@ -114,6 +114,7 @@
     <sdef n="fts"      c="Futuro de subjuntivo"/>
     <sdef n="cni"      c="Condicional"/>
     <sdef n="imp"      c="Imperativo"/>
+    <sdef n="evid"     c="Pasado evidencial -sqa"/>
     
     <!-- derivativos verbales -->
     <sdef n="cont"      c="Continuativo (progresivo) -sha   "/>
