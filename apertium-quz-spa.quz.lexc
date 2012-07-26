@@ -701,7 +701,7 @@ LEXICON V-TMSub
 ! COND-POT pasado - mejor no, porque los clíticos entran antes del aux:
 ! riswanchu karqan, riswanpaschá karqan
 ! lo mismo vale para el habitual (rikuqchu kanki)
-%<hab%>:%>q V-HAB ;
+%<hab%>: V-HAB ;
 
 %<past%>:%>rqa V-PERS ;
 %<past%>:%>ra V-PERS ;
