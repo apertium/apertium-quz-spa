@@ -1291,7 +1291,7 @@
 <call-macro n="quita-nom"><with-param pos="2"/></call-macro>
 <call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
 <call-macro n="pon-GD-ND"><with-param pos="2"/></call-macro>
-<call-macro n="adj-pos"><with-param pos="1"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="2"/></call-macro>
 <call-macro n="f_concord2">
   <with-param pos="2"/><with-param pos="1"/></call-macro>
 <!-- <call-macro n="pon-sg"><with-param pos="2"/></call-macro>
