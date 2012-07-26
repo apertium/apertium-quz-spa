@@ -116,6 +116,7 @@
     <sdef n="cni_pas"  c="Condicional pasado"/>
     <sdef n="imp"      c="Imperativo"/>
     <sdef n="evid"     c="Pasado evidencial -sqa"/>
+    <sdef n="hab"      c="Habitual -q + AUX ka-"/>
     
     <!-- derivativos verbales -->
     <sdef n="cont"      c="Continuativo (progresivo) -sha   "/>

@@ -174,6 +174,7 @@ Multichar_Symbols
 %<evid%>      ! pasado evidencial -sqa
 %<imp%>       ! imperativo
 %<fti%>         ! futuro
+%<hab%>         ! habitual (-q + AUX ka-)
 
 %<inf%>       ! infinitivo -y
 %<pp%>        ! participio pasado -sqa
@@ -549,6 +550,7 @@ LEXICON V-FUT
 
 
 LEXICON V-POT
+! el potencial pasado (+ karqan) no se puede poner, porque los clíticos van antes
 
 ! objeto 3a persona
 %<p1%>%<sg%>%<po3sp%>@D.wa@:%>yman@D.wa@ CLIT-puni ;
@@ -626,11 +628,65 @@ LEXICON V-IMP
 %<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
 
 
+LEXICON V-HAB
+! estas formas habrá que desambiguarlas en la CG
+! en la mayoría de los casos depende de la forma del auxiliar ka- que sigue
+! sin embargo, no se pueden poner las formas completas, porque los clíticos van antes
+! las únicas formas que se pueden desambiguar sólo según la presencia o ausencia del aux:
+! -q-ku: 3pl>3sp (sin auxiliar), pero -q con el auxiliar (karqanku, kasqanku)
+! -wa-q-ku: 3sp>1sp (sin auxiliar), pero -wa-q con el auxiliar (karqanku, kasqanku)
+! el resto depende de la forma del aux (o su ausencia - con sujeto de 3sp)
+! sin embargo, todas las formas con -wa son con obj. de 1a pers., y viceversa
+! -q-ku: sólo 3pl>3sp (pero -q + aux)
+! -wa-q-ku: sólo 3sp>1sp (pero -wa-q + aux)
+! -wa-q: todas las posibles formas con objeto de 1a persona (pero 3sp>1sp sin aux = -wa-q-ku)
+! -q: todas las posibles formas con objeto de 2a o 3a persona (pero 3pl>3sp sin aux = -q-ku)
+! el auxiliar es ka- + transición, excepto -wa (va antes de -q), y sin las formas kan, kanku
+! el auxiliar está en presente, pasado -rqa o evidencial -sqa
+! si falta el auxiliar (kan, kanku), -ku se añade a -q (sólo 3pl>3sp, 3pl>1sg y 3sp>1ex)
+! (-wa-q-ku también pudiera ser 2sp>1ex, por lo menos en el Ayacuchano) (+ aux kanki(chis))
+! las formas -su-q o -q-POS son siempre con el participio -sqa (y nunca el habitual)
+! las formas -su-q como habitual aparecen en el ayacuchano
+! las demás formas son habitual si sigue el aux (pero con 3a suj. el aux falta en el habitual)
+! las formas sin marca de persona de objeto y con kay (pero sin -sha o -lla)
+!     pueden ser también nombres agentivos con cópula (llank'aq kani = soy trabajador / solía trabajar)
+
+! objeto 3a persona
+%<p1%>%<sg%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>q@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>qku@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>q@R.wa.pres@ CLIT-puni ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>q@R.wa.pres@ CLIT-puni ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>qku@R.wa.pres@ CLIT-puni ;   ! wa-q-ku ka-nki probabl. sólo AyQ
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>q@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>qku@R.wa.pres@ CLIT-puni ;   ! wa-q-ku ka-nki probabl. sólo AyQ
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>q@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>q@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>qku@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>q@R.wa.pres@ CLIT-puni ;
+
+! objeto 2a persona
+%<p1%>%<sg%>%<po2sg%>:%>q CLIT-puni ;
+%<p1%>%<sg%>%<po2pl%>:%>q CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>:%>q CLIT-puni ;
+%<p3%>%<sg%>%<po2sg%>:%>q CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>:%>q CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>:%>q CLIT-puni ;
+
+
 LEXICON V-Nom
 ! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
 %<pp%>:%>sqa  N-FLEX-POS ;
 %<pf%>:%>na  N-FLEX-POS ;
 %<ag%>:%>q N-FLEX-POS ;
+! su-q
 
 LEXICON V-INF
 %<inf%>%<po3sp%>@D.wa@:%>y@D.wa@ N-FLEX-POS ;
@@ -645,7 +701,7 @@ LEXICON V-TMSub
 ! COND-POT pasado - mejor no, porque los clíticos entran antes del aux:
 ! riswanchu karqan, riswanpaschá karqan
 ! lo mismo vale para el habitual (rikuqchu kanki)
-! HAB
+%<hab%>:%>q V-HAB ;
 
 %<past%>:%>rqa V-PERS ;
 %<past%>:%>ra V-PERS ;
