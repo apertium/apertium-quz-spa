@@ -113,6 +113,7 @@
     <sdef n="fti"      c="Futuro de indicativo"/>
     <sdef n="fts"      c="Futuro de subjuntivo"/>
     <sdef n="cni"      c="Condicional"/>
+    <sdef n="cni_pas"  c="Condicional pasado"/>
     <sdef n="imp"      c="Imperativo"/>
     <sdef n="evid"     c="Pasado evidencial -sqa"/>
     

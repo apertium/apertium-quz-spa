@@ -168,7 +168,9 @@ Multichar_Symbols
 
 %<pri%>       ! presente
 %<past%>      ! pasado -rqa
-%<cond%>      ! condicional (pot - potencial) - cni ? - pot ?
+! %<cond%>      ! condicional (pot - potencial) - cni ? - pot ?
+%<cni%>         ! condicional/potencial (-man)
+%<cni_pas%>     ! condicional/potencial pasado (-man karqan)
 %<evid%>      ! pasado evidencial -sqa
 %<imp%>       ! imperativo
 %<fti%>         ! futuro
@@ -489,6 +491,7 @@ LEXICON V-PERS
 ! objeto 3a persona
 %<p1%>%<sg%>%<po3sp%>@D.wa@:%>ni@D.wa@ CLIT-puni ;
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>yku@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>niku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-puni ;
 %<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@R.wa.pres@ CLIT-puni ;
 %<p3%>%<sg%>%<po3sp%>@D.wa@:%>n@D.wa@ CLIT-puni ;
@@ -545,6 +548,60 @@ LEXICON V-FUT
 %<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
 
 
+LEXICON V-POT
+
+! objeto 3a persona
+%<p1%>%<sg%>%<po3sp%>@D.wa@:%>yman@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>ykuman@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>ymanku@D.wa@ CLIT-puni ;        ! Dir/LR (AyQ)
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>waq@D.wa@ CLIT-puni ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@:%>nkiman@D.wa@ CLIT-puni ;          ! Dir/LR
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>waqchis@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichisman@R.wa.pres@ CLIT-puni ; ! Dir/LR
+%<p3%>%<sg%>%<po3sp%>@D.wa@:%>nman@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>nkuman@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@:%>nmanku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>swan@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>swanman@D.wa@ CLIT-puni ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>swanchis@D.wa@ CLIT-puni ;  ! Dir/LR
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>shwan@D.wa@ CLIT-puni ;     ! Dir/LR
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>chwan@D.wa@ CLIT-puni ;     ! Dir/LR (AyQ)
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>nchisman@D.wa@ CLIT-puni ;  ! Dir/LR
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sunman@D.wa@ CLIT-puni ;    ! Dir/LR
+%<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sunchisman@D.wa@ CLIT-puni ;    ! Dir/LR
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>nkiman@R.wa.pres@ CLIT-puni ;
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@:%>waq@R.wa.pres@ CLIT-puni ;       ! Dir/LR
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>nkikuman@R.wa.pres@ CLIT-puni ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>nkimanku@R.wa.pres@ CLIT-puni ;  ! Dir/LR (AyQ)
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>waqkuman@R.wa.pres@ CLIT-puni ;  ! Dir/LR
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@:%>waqmanku@R.wa.pres@ CLIT-puni ;  ! Dir/LR (AyQ)
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>nkichisman@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@:%>waqchis@R.wa.pres@ CLIT-puni ;   ! Dir/LR
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>nman@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>nkuman@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>nmanku@R.wa.pres@ CLIT-puni ;        ! Dir/LR (AyQ)
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>swan@R.wa.pres@ CLIT-puni ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>swanchis@R.wa.pres@ CLIT-puni ;      ! Dir/LR
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>shwan@R.wa.pres@ CLIT-puni ;         ! Dir/LR
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>chwan@R.wa.pres@ CLIT-puni ;         ! Dir/LR (AyQ)
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>swanman@R.wa.pres@ CLIT-puni ;       ! Dir/LR
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>nchisman@R.wa.pres@ CLIT-puni ;      ! Dir/LR
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunman@R.wa.pres@ CLIT-puni ;        ! Dir/LR
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunchisman@R.wa.pres@ CLIT-puni ;    ! Dir/LR
+
+! objeto 2a persona
+%<p1%>%<sg%>%<po2sg%>:%>ykiman CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>:%>ykikuman CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>:%>ykimanku CLIT-puni ;      ! Dir/LR (AyQ)
+%<p1%>%<sg%>%<po2pl%>:%>ykichisman CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p3%>%<sg%>%<po2sg%>:%>sunkiman CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>:%>sunkichisman CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>:%>sunkikuman CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>:%>sunkimanku CLIT-puni ;      ! Dir/LR (AyQ)
+
+
 LEXICON V-IMP
 ! objeto 3a persona
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>y@D.wa@ CLIT-puni ;
@@ -584,8 +641,10 @@ LEXICON V-TMSub
 %<pri%>: V-PERS ;
 %<imp%>: V-IMP ;
 %<fti%>: V-FUT ;
-! COND-pot <cni> - <pot> ?
-! COND-POT pasado
+%<cni%>: V-POT ;
+! COND-POT pasado - mejor no, porque los clíticos entran antes del aux:
+! riswanchu karqan, riswanpaschá karqan
+! lo mismo vale para el habitual (rikuqchu kanki)
 ! HAB
 
 %<past%>:%>rqa V-PERS ;
