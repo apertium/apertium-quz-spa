@@ -494,7 +494,7 @@ LEXICON V-PERS
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>yku@D.wa@ CLIT-puni ;
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>niku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-puni ;
-%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@D.wa@ CLIT-puni ;
 %<p3%>%<sg%>%<po3sp%>@D.wa@:%>n@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>nku@D.wa@ CLIT-puni ;
 %<p1in%>%<pl%>%<po3sp%>@D.wa@:%>nchis@D.wa@ CLIT-puni ;
@@ -522,7 +522,7 @@ LEXICON V-FUT
 %<p1%>%<sg%>%<po3sp%>@D.wa@:%>saq@D.wa@ CLIT-puni ;
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>saqku@D.wa@ CLIT-puni ;
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>nki@D.wa@ CLIT-puni ;
-%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichis@D.wa@ CLIT-puni ;
 %<p3%>%<sg%>%<po3sp%>@D.wa@:%>nqa@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>nqaku@D.wa@ CLIT-puni ;
 %<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sun@D.wa@ CLIT-puni ;
@@ -558,8 +558,8 @@ LEXICON V-POT
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>ymanku@D.wa@ CLIT-puni ;        ! Dir/LR (AyQ)
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>waq@D.wa@ CLIT-puni ;
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>nkiman@D.wa@ CLIT-puni ;          ! Dir/LR
-%<p2%>%<pl%>%<po3sp%>@D.wa@:%>waqchis@R.wa.pres@ CLIT-puni ;
-%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichisman@R.wa.pres@ CLIT-puni ; ! Dir/LR
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>waqchis@D.wa@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>nkichisman@D.wa@ CLIT-puni ; ! Dir/LR
 %<p3%>%<sg%>%<po3sp%>@D.wa@:%>nman@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>nkuman@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>nmanku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
@@ -607,7 +607,7 @@ LEXICON V-POT
 LEXICON V-IMP
 ! objeto 3a persona
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>y@D.wa@ CLIT-puni ;
-%<p2%>%<pl%>%<po3sp%>@D.wa@:%>ychis@R.wa.pres@ CLIT-puni ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>ychis@D.wa@ CLIT-puni ;
 %<p3%>%<sg%>%<po3sp%>@D.wa@:%>chun@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>chunku@D.wa@ CLIT-puni ;
 %<p1in%>%<pl%>%<po3sp%>@D.wa@:%>sun@D.wa@ CLIT-puni ;
@@ -655,7 +655,7 @@ LEXICON V-HAB
 %<p1%>%<sg%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;           ! + kani, karqani, kasqani
 %<p1ex%>%<pl%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;         ! + kayku, karqayku, kasqayku
 %<p2%>%<sg%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;           ! + kanki, karqanki, kasqanki
-%<p2%>%<pl%>%<po3sp%>@D.wa@:%>q@R.wa.pres@ CLIT-puni ;      ! + kankichis, karqankichis, kasqankichis
+%<p2%>%<pl%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;      ! + kankichis, karqankichis, kasqankichis
 %<p3%>%<sg%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;           ! + 0, karqan, kasqa
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>q@D.wa@ CLIT-puni ;           ! + karqanku, kasqaku (* 0)
 %<p3%>%<pl%>%<po3sp%>@D.wa@:%>qku@D.wa@ CLIT-puni ;         ! + 0 (* karqan(ku), kasqa(ku))
