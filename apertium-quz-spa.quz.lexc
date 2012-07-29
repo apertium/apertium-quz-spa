@@ -219,6 +219,7 @@ Multichar_Symbols
 
 @P.lim.pres@      ! para controlar que el limitativo salga sólo una vez (en la primera posición)
 @D.lim@           ! aunque eso probablemente no aparecerá en quechua y traduciendo del esp. se controlará por reglas
+@R.lim.pres@        ! sólo para las subordinaciones (por ahora?)
 
 @P.gen.pres@      ! para controlar que no salga <gen><nom>
 @D.gen@
@@ -228,6 +229,9 @@ Multichar_Symbols
 @D.wa@
 @R.wa.pres@
 
+@P.su.pres@         ! para la formas con -su (-su-SUB-yki × -SUB-su-yki, etc.)
+@D.su@
+@R.su.pres@
 
 
 
@@ -323,6 +327,7 @@ LEXICON CLIT-puni
 CLIT-raq-na ;
 
 LEXICON CLIT-lla
+! sólo para los verbos y "partículas" (el limitativo de los nombres entra en la flexión nominal)
 %<lim%>:%>lla CLIT-puni ;
 CLIT-puni ;
 
@@ -508,12 +513,12 @@ LEXICON V-PERS
 %<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>nchis@R.wa.pres@ CLIT-puni ;
 
 ! objeto 2a persona
-%<p1%>%<sg%>%<po2sg%>:%>yki CLIT-puni ;
-%<p1%>%<sg%>%<po2pl%>:%>ykichis CLIT-puni ;   ! podría ser también p1ex>po2pl
-%<p1ex%>%<pl%>%<po2sp%>:%>ykiku CLIT-puni ;
-%<p3%>%<sg%>%<po2sg%>:%>sunki CLIT-puni ;
-%<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-puni ;
-%<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
+%<p1%>%<sg%>%<po2sg%>@D.wa@:%>yki@D.wa@ CLIT-puni ;
+%<p1%>%<sg%>%<po2pl%>@D.wa@:%>ykichis@D.wa@ CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>ykiku@D.wa@ CLIT-puni ;
+%<p3%>%<sg%>%<po2sg%>@D.wa@:%>sunki@D.wa@ CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@:%>sunkichis@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@:%>sunkiku@D.wa@ CLIT-puni ;
 
 
 LEXICON V-FUT
@@ -538,15 +543,15 @@ LEXICON V-FUT
 %<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunchis@R.wa.pres@ CLIT-puni ;
 
 ! objeto 2a persona
-%<p1%>%<sg%>%<po2sg%>:%>sqayki CLIT-puni ;
-%<p1%>%<sg%>%<po2sg%>:%>sayki CLIT-puni ;
-%<p1ex%>%<pl%>%<po2sp%>:%>sqaykiku CLIT-puni ;
-%<p1ex%>%<pl%>%<po2sp%>:%>saykiku CLIT-puni ;
-%<p1%>%<sg%>%<po2pl%>:%>sqaykichis CLIT-puni ;   ! podría ser también p1ex>po2pl
-%<p1%>%<sg%>%<po2pl%>:%>saykichis CLIT-puni ;   ! podría ser también p1ex>po2pl
-%<p3%>%<sg%>%<po2sg%>:%>sunki CLIT-puni ;
-%<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-puni ;
-%<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
+%<p1%>%<sg%>%<po2sg%>@D.wa@:%>sqayki@D.wa@ CLIT-puni ;
+%<p1%>%<sg%>%<po2sg%>@D.wa@:%>sayki@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>sqaykiku@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>saykiku@D.wa@ CLIT-puni ;
+%<p1%>%<sg%>%<po2pl%>@D.wa@:%>sqaykichis@D.wa@ CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p1%>%<sg%>%<po2pl%>@D.wa@:%>saykichis@D.wa@ CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p3%>%<sg%>%<po2sg%>@D.wa@:%>sunki@D.wa@ CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@:%>sunkichis@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@:%>sunkiku@D.wa@ CLIT-puni ;
 
 
 LEXICON V-POT
@@ -594,14 +599,14 @@ LEXICON V-POT
 %<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunchisman@R.wa.pres@ CLIT-puni ;    ! Dir/LR
 
 ! objeto 2a persona
-%<p1%>%<sg%>%<po2sg%>:%>ykiman CLIT-puni ;
-%<p1ex%>%<pl%>%<po2sp%>:%>ykikuman CLIT-puni ;
-%<p1ex%>%<pl%>%<po2sp%>:%>ykimanku CLIT-puni ;      ! Dir/LR (AyQ)
-%<p1%>%<sg%>%<po2pl%>:%>ykichisman CLIT-puni ;   ! podría ser también p1ex>po2pl
-%<p3%>%<sg%>%<po2sg%>:%>sunkiman CLIT-puni ;
-%<p3%>%<sp%>%<po2pl%>:%>sunkichisman CLIT-puni ;
-%<p3%>%<pl%>%<po2sg%>:%>sunkikuman CLIT-puni ;
-%<p3%>%<pl%>%<po2sg%>:%>sunkimanku CLIT-puni ;      ! Dir/LR (AyQ)
+%<p1%>%<sg%>%<po2sg%>@D.wa@:%>ykiman@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>ykikuman@D.wa@ CLIT-puni ;
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>ykimanku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
+%<p1%>%<sg%>%<po2pl%>@D.wa@:%>ykichisman@D.wa@ CLIT-puni ;   ! podría ser también p1ex>po2pl
+%<p3%>%<sg%>%<po2sg%>@D.wa@:%>sunkiman@D.wa@ CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@:%>sunkichisman@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@:%>sunkikuman@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@:%>sunkimanku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
 
 
 LEXICON V-IMP
@@ -623,9 +628,9 @@ LEXICON V-IMP
 %<p3%>%<sp%>%<po1in%>@R.wa.pres@:%>sunchis@R.wa.pres@ CLIT-puni ;
 
 ! objeto 2a persona
-%<p3%>%<sg%>%<po2sg%>:%>sunki CLIT-puni ;
-%<p3%>%<sp%>%<po2pl%>:%>sunkichis CLIT-puni ;
-%<p3%>%<pl%>%<po2sg%>:%>sunkiku CLIT-puni ;
+%<p3%>%<sg%>%<po2sg%>@D.wa@:%>sunki@D.wa@ CLIT-puni ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@:%>sunkichis@D.wa@ CLIT-puni ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@:%>sunkiku@D.wa@ CLIT-puni ;
 
 
 LEXICON V-HAB
@@ -674,32 +679,85 @@ LEXICON V-HAB
 ! + posiblemente formas @D.wa@ -q + ka-wa-SUJeto ???? (rikuq kawanki...)
 
 ! objeto 2a persona
-%<p1%>%<sg%>%<po2sg%>:%>q CLIT-puni ;   ! + kayki, karqayki, kasqayki
-%<p1%>%<sg%>%<po2pl%>:%>q CLIT-puni ;   ! + kaykichis, karqaykichis, kasqaykichis (podría ser también p1ex>po2pl)
-%<p1ex%>%<pl%>%<po2sp%>:%>q CLIT-puni ; ! + kaykiku, karqaykiku, kasqaykiku (??? -qku kaykichis 1ex>2pl ???)
-%<p3%>%<sg%>%<po2sg%>:%>q CLIT-puni ;   ! + kasunki, karqasunki, kasqasunki
-%<p3%>%<sp%>%<po2pl%>:%>q CLIT-puni ;   ! + kasunkichis, karqasunkichis, kasqasunkichis (??? -qku -sunkichis 3pl)
-%<p3%>%<pl%>%<po2sg%>:%>q CLIT-puni ;   ! + kasunkiku, karqasunkiku, kasqasunkiku (AyQ ??? -qku kasunki ???)
+%<p1%>%<sg%>%<po2sg%>@D.wa@:%>q@D.wa@ CLIT-puni ;   ! + kayki, karqayki, kasqayki
+%<p1%>%<sg%>%<po2pl%>@D.wa@:%>q@D.wa@ CLIT-puni ;   ! + kaykichis, karqaykichis, kasqaykichis
+! (podría ser también p1ex>po2pl)
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>q@D.wa@ CLIT-puni ; ! + kaykiku, karqaykiku, kasqaykiku
+! (??? -qku kaykichis 1ex>2pl ???)
+%<p3%>%<sg%>%<po2sg%>@D.wa@:%>q@D.wa@ CLIT-puni ;   ! + kasunki, karqasunki, kasqasunki
+%<p3%>%<sp%>%<po2pl%>@D.wa@:%>q@D.wa@ CLIT-puni ;   ! + kasunkichis, karqasunkichis, kasqasunkichis
+! (??? -qku -sunkichis 3pl)
+%<p3%>%<pl%>%<po2sg%>@D.wa@:%>q@D.wa@ CLIT-puni ;   ! + kasunkiku, karqasunkiku, kasqasunkiku
+! (AyQ ??? -qku kasunki ???)
 ! + AyQ -su-q + AUX: -suq kanki, -suqku kanki 3sg,pl > 2sg, pero no kasunki...
 
 
-LEXICON V-Nom
-! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso (por ahora sin genitivo y perlativo)
-%<pp%>:%>sqa  N-FLEX-POS ;
-%<pp%>%<po2sp%>:%>su%>sqa N-FLEX-POS ;
-! -wa-sqa po1sp, po1in
-%<pf%>:%>na  N-FLEX-POS ;
-%<pf%>%<po2sp%>:%>su%>na N-FLEX-POS ;
-! -wa
-%<ag%>:%>q N-FLEX-POS ;
-%<ag%>%<po2sp%>:%>su%>q N-FLEX-POS ;
-! -wa
+LEXICON V-Nom   ! borrar
+! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso
 
 LEXICON V-INF
-%<inf%>%<po3sp%>@D.wa@:%>y@D.wa@ N-FLEX-POS ;
-%<inf%>%<po2sp%>@D.wa@:%>y@D.wa@ N-FLEX-POS ;
-%<inf%>%<po1sp%>@R.wa.pres@:%>y@R.wa.pres@ N-FLEX-POS ;
-! + po1in
+%<po1sp%>@R.wa.pres@@D.su@:%>@R.wa.pres@@D.su@ N-FLEX-POS ;  ! -wa-y
+%<po1in%>@R.wa.pres@@D.su@:%>@R.wa.pres@@D.su@ N-FLEX-POS ;  ! -wa-y
+
+%<po3sp%>@D.wa@@D.su@:%>@D.wa@@D.su@ N-FLEX-POS ;            ! -y
+%<po2sp%>@D.wa@@D.su@:%>@D.wa@@D.su@ N-FLEX-POS ;            ! -y
+%<po2sp%>@D.wa@@R.su.pres@:@D.wa@@R.su.pres@ N-FLEX-Caso ;   ! Dir/LR - AyQ -su-y
+
+! formas -(su)-y-ki-(chis) - usadas muy raramente
+! las formas sin -su sólo con acusativo, para no tener que desambiguar con las transiciones 1>2pres
+%<po2sg%>%<acc%>@D.wa@@D.su@:%>ki%>ta@D.wa@@D.su@ N-POSTcaso ;      ! Dir/LR - -y-ki = 1>2pres
+%<po2pl%>%<acc%>@D.wa@@D.su@:%>kichis%>ta@D.wa@@D.su@ N-POSTcaso ;  ! Dir/LR - -y-ki-chis
+! %<po2sg%>@D.wa@@D.su@:%>ki@D.wa@@D.su@ N-FLEX-Caso ;              ! Dir/LR - -y-ki = 1>2pres
+! %<po2pl%>@D.wa@@D.su@:%>kichis@D.wa@@D.su@ N-FLEX-Caso ;          ! Dir/LR - -y-ki-chis
+%<po2sg%>@D.wa@@R.su.pres@:%>ki@D.wa@@R.su.pres@ N-FLEX-Caso ;      ! Dir/LR - -su-y-ki
+%<po2pl%>@D.wa@@R.su.pres@:%>kichis@D.wa@@R.su.pres@ N-FLEX-Caso ;  ! Dir/LR - -su-y-ki-chis
+
+
+LEXICON V-na-sqa
+
+! objeto 3a persona
+%<p1%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-SUB ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-SUB ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-SUB ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-SUB ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>n@D.wa@@D.su@ V-lla-SUB ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nku@D.wa@@D.su@ V-lla-SUB ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nchis@D.wa@@D.su@ V-lla-SUB ;
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>yki@R.wa.pres@@D.su@ V-lla-SUB ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@@D.su@:%>ykiku@R.wa.pres@@D.su@ V-lla-SUB ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@@D.su@:%>ykichis@R.wa.pres@@D.su@ V-lla-SUB ;
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>n@R.wa.pres@@D.su@ V-lla-SUB ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@@D.su@:%>nku@R.wa.pres@@D.su@ V-lla-SUB ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@@D.su@:%>nchis@R.wa.pres@@D.su@ V-lla-SUB ;
+
+! objeto 2a persona
+! %<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-SUB ;   ! esta forma la evitan (= 1>fut, 2>3 pp/pf)
+%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-SUB ;   ! podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>ykiku@D.wa@@D.su@ V-lla-SUB ;
+
+%<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-SUB ;   ! + qan(kuna)ta
+%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-SUB ;   ! Dir/LR - podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-SUB ;   ! Dir/LR + qan(kuna)ta
+
+%<p3%>%<sg%>%<po2sg%>@D.wa@@R.su.pres@:%>yki@D.wa@@R.su.pres@ V-lla-SUB ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@@R.su.pres@:%>ykichis@D.wa@@R.su.pres@ V-lla-SUB ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@@R.su.pres@:%>ykiku@D.wa@@R.su.pres@ V-lla-SUB ;
+
+%<p3%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>suyki@D.wa@@D.su@ V-lla-SUB ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@@D.su@:%>suykichis@D.wa@@D.su@ V-lla-SUB ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>suykiku@D.wa@@D.su@ V-lla-SUB ;
+
+%<p3%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>sunki@D.wa@@D.su@ V-lla-SUB ;       ! Dir/LR
+%<p3%>%<sp%>%<po2pl%>@D.wa@@D.su@:%>sunkichis@D.wa@@D.su@ V-lla-SUB ;   ! Dir/LR
+%<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>sunkiku@D.wa@@D.su@ V-lla-SUB ;     ! Dir/LR
+
+
+LEXICON V-lla-SUB
+! para poner la etiqueta del limitativo en las subordinaciones después de las de persona
+%<lim%>@R.lim.pres@:@R.lim.pres@ N-FLEX-Plural ;
+@D.lim@:@D.lim@ N-FLEX-Plural ;
 
 LEXICON V-TMSub
 %<pri%>: V-PERS ;
@@ -728,15 +786,34 @@ LEXICON V-TMSub
 %<ger%>:%>qti N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
 %<ger%>%<lim%>:%>qti%>lla N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
 ! -su-spa, -spa-su, -su-qti poner @P.su.pres@
-V-INF ;
-V-Nom ;
+
+%<inf%>:y V-INF ;
+%<inf%>@P.su.pres@:su%>y@P.su.pres@ V-INF ;
+%<inf%>%<lim%>@D.wa@:%>ylla@D.wa@ CLIT-puni ;     ! uso adverbial (tapylla tapuwashan...)
+
+%<pf%>@D.wa@:%>na@D.wa@ N-FLEX-Plural ;     ! para las formas no personales (nominalizaciones.. pero sin posesivos)
+%<pf%>:%>na V-na-sqa ;
+%<pf%>@P.lim.pres@:%>na%>lla@P.lim.pres@ V-na-sqa ;
+%<pf%>@P.su.pres@:%>su%>na@P.su.pres@ V-na-sqa ;
+%<pf%>@P.su.pres@@P.lim.pres@:%>su%>na%>lla@P.su.pres@@P.lim.pres@ V-na-sqa ;
+
+%<pp%>@D.wa@:%>sqa@D.wa@ N-FLEX-Plural ;    ! para las formas no personales (nominalizaciones.. pero sin posesivos)
+%<pp%>:%>sqa V-na-sqa ;
+%<pp%>@P.lim.pres@:%>sqa%>lla@P.lim.pres@ V-na-sqa ;
+%<pp%>@P.su.pres@:%>su%>sqa@P.su.pres@ V-na-sqa ;
+%<pp%>@P.su.pres@@P.lim.pres@:%>su%>sqa%>lla@P.su.pres@@P.lim.pres@ V-na-sqa ;
 !! -na-su (-su-na), -su-sqa, -sqa-su, -su-q
 ! poner las formas que toman -lla después en otro lexicon
 
+%<ag%>:%>q N-FLEX-POS ;
+%<ag%>%<po2sp%>:%>su%>q N-FLEX-POS ;
+! -wa
+
 LEXICON V-LIM
-%<lim%>:%>lla V-TMSub ;
+%<lim%>:%>lla V-TMSub ;     ! con las subordinaciones podría salir dos veces: *-lla-sqa-lla-yki, etc.
 V-TMSub ;
 ! lla-wa-y   quykapullaway
+! suya-sha-wa-y - ok (LR)
 
 
 LEXICON V-Progr
@@ -752,6 +829,7 @@ LEXICON V-Progr
 %<cont%>@P.wa.pres@:%>wa%>shka@P.wa.pres@ V-LIM ;   ! Dir/LR
 %<cont%>@P.wa.pres@:%>shka%>wa@P.wa.pres@ V-LIM ;   ! Dir/LR
 %<cont%>:%>shka V-LIM ;                             ! Dir/LR
+! AyQ -su-chka-, -su-rqa-, -su-sqa
 
 V-LIM ;
 
@@ -1097,7 +1175,7 @@ LEXICON V-IMPERS
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!             L E X I C O N   R A Í C E S  /  T E M A S           !!
+!!      L E X I C O N E S   D E   R A Í C E S  /  T E M A S        !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NombresGenero
