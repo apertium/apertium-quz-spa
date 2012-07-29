@@ -695,10 +695,7 @@ LEXICON V-HAB
 ! + AyQ -su-q + AUX: -suq kanki, -suqku kanki 3sg,pl > 2sg, pero no kasunki...
 
 
-LEXICON V-Nom   ! borrar
-! las nominalizaciones (-y, -na, -sqa, -q) pueden tener caso
-
-LEXICON V-INF
+LEXICON V-SUB-y
 %<po1sp%>@R.wa.pres@@D.su@:%>@R.wa.pres@@D.su@ N-FLEX-POS ;  ! -wa-y
 %<po1in%>@R.wa.pres@@D.su@:%>@R.wa.pres@@D.su@ N-FLEX-POS ;  ! -wa-y
 
@@ -716,7 +713,7 @@ LEXICON V-INF
 %<po2pl%>@D.wa@@R.su.pres@:%>kichis@D.wa@@R.su.pres@ N-FLEX-Caso ;  ! Dir/LR - -su-y-ki-chis
 
 
-LEXICON V-na-sqa
+LEXICON V-SUB-na-sqa
 
 ! objeto 3a persona
 %<p1%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-NOM ;
@@ -757,7 +754,7 @@ LEXICON V-na-sqa
 %<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>sunkiku@D.wa@@D.su@ V-lla-NOM ;     ! Dir/LR
 
 
-LEXICON V-spa-qti
+LEXICON V-SUB-spa-qti
 
 ! objeto 3a persona
 %<p1%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-ADV ;
@@ -818,14 +815,13 @@ LEXICON V-TMSub
 %<fti%>: V-FUT ;
 %<cni%>: V-POT ;
 %<hab%>: V-HAB ;
-! COND-POT pasado - mejor no, porque los clíticos entran antes del aux:
-! riswanchu karqan, riswanpaschá karqan
-! lo mismo vale para el habitual (rikuqchu kanki)
+! COND-POT pasado, HAB - mejor no, porque los clíticos entran antes del aux:
+! riswanchu karqan, riswanpaschá karqan; rikuqchu kanki
 
 %<past%>:%>rqa V-PERS ;
 %<past%>:%>ra V-PERS ;
-%<past%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>rqa@D.wa@ CLIT-puni ;         ! Dir/LR
-%<past%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>rqaku@D.wa@ CLIT-puni ;       ! Dir/LR
+%<past%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>rqa@D.wa@ CLIT-puni ;             ! Dir/LR
+%<past%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>rqaku@D.wa@ CLIT-puni ;           ! Dir/LR
 %<past%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>rqa@R.wa.pres@ CLIT-puni ;   ! Dir/LR
 %<past%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>rqaku@R.wa.pres@ CLIT-puni ; ! Dir/LR
 
@@ -835,43 +831,44 @@ LEXICON V-TMSub
 %<evid%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>sqa@R.wa.pres@ CLIT-puni ;
 %<evid%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>sqaku@R.wa.pres@ CLIT-puni ;
 
-%<ger%>:%>spa CLIT-lla ;                                ! formas sin marcas personales
-%<ger%>:%>spa V-spa-qti ;                               ! formas con marcas personales
-%<ger%>@P.su.pres@:%>su%>spa@P.su.pres@ V-spa-qti ;     ! formas con marcas personales
-%<ger%>@P.lim.pres@:%>spa%>lla@P.lim.pres@ V-spa-qti ;  ! formas con marcas personales
-%<ger%>@P.su.pres@@P.lim.pres@:%>su%>spa%>lla@P.su.pres@@P.lim.pres@ V-spa-qti ;  ! formas con marcas personales
+! SUBORDINACIONES ADVERBIALES
+%<ger%>:%>spa CLIT-lla ;                                    ! formas sin marcas personales
+%<ger%>:%>spa V-SUB-spa-qti ;                               ! formas con marcas personales
+%<ger%>@P.su.pres@:%>su%>spa@P.su.pres@ V-SUB-spa-qti ;     ! formas con marcas personales
+%<ger%>@P.lim.pres@:%>spa%>lla@P.lim.pres@ V-SUB-spa-qti ;  ! formas con marcas personales
+%<ger%>@P.su.pres@@P.lim.pres@:%>su%>spa%>lla@P.su.pres@@P.lim.pres@ V-SUB-spa-qti ;  ! formas con m.p.
 
 ! cambiar etiqueta - ger2, sub...
-%<ger%>@P.qti.pres@:%>qti@P.qti.pres@ V-spa-qti ;
-%<ger%>@P.qti.pres@@P.su.pres@:%>su%>qti@P.qti.pres@@P.su.pres@ V-spa-qti ;
-%<ger%>@P.qti.pres@@P.lim.pres@:%>qti%>lla@P.qti.pres@@P.lim.pres@ V-spa-qti ;
-%<ger%>@P.qti.pres@@P.su.pres@@P.lim.pres@:%>su%>qti%>lla@P.qti.pres@@P.su.pres@@P.lim.pres@ V-spa-qti ;
+%<ger%>@P.qti.pres@:%>qti@P.qti.pres@ V-SUB-spa-qti ;
+%<ger%>@P.qti.pres@@P.su.pres@:%>su%>qti@P.qti.pres@@P.su.pres@ V-SUB-spa-qti ;
+%<ger%>@P.qti.pres@@P.lim.pres@:%>qti%>lla@P.qti.pres@@P.lim.pres@ V-SUB-spa-qti ;
+%<ger%>@P.qti.pres@@P.su.pres@@P.lim.pres@:%>su%>qti%>lla@P.qti.pres@@P.su.pres@@P.lim.pres@ V-SUB-spa-qti ;
 
 ! consecutivo (la acción sigue desp. de la del verbo principal), pero en AyQ gerundio simultáneo
 %<cons%>:%>stin CLIT-puni ;
 %<cons%>%<lim%>:%>stillan CLIT-puni ;
 
-%<inf%>:y V-INF ;
-%<inf%>@P.su.pres@:su%>y@P.su.pres@ V-INF ;
+! SUBORDINACIONES NOMINALES
+%<inf%>:y V-SUB-y ;
+%<inf%>@P.su.pres@:su%>y@P.su.pres@ V-SUB-y ;
 %<inf%>%<lim%>@D.wa@:%>ylla@D.wa@ CLIT-puni ;     ! uso adverbial (tapylla tapuwashan...)
 
+%<pf%>:%>na V-SUB-na-sqa ;
+%<pf%>@P.lim.pres@:%>na%>lla@P.lim.pres@ V-SUB-na-sqa ;
+%<pf%>@P.su.pres@:%>su%>na@P.su.pres@ V-SUB-na-sqa ;
+%<pf%>@P.su.pres@@P.lim.pres@:%>su%>na%>lla@P.su.pres@@P.lim.pres@ V-SUB-na-sqa ;
 %<pf%>@D.wa@:%>na@D.wa@ N-FLEX-Plural ;     ! para las formas no personales (nominalizaciones.. pero sin posesivos)
-%<pf%>:%>na V-na-sqa ;
-%<pf%>@P.lim.pres@:%>na%>lla@P.lim.pres@ V-na-sqa ;
-%<pf%>@P.su.pres@:%>su%>na@P.su.pres@ V-na-sqa ;
-%<pf%>@P.su.pres@@P.lim.pres@:%>su%>na%>lla@P.su.pres@@P.lim.pres@ V-na-sqa ;
 
+%<pp%>:%>sqa V-SUB-na-sqa ;
+%<pp%>@P.lim.pres@:%>sqa%>lla@P.lim.pres@ V-SUB-na-sqa ;
+%<pp%>@P.su.pres@:%>su%>sqa@P.su.pres@ V-SUB-na-sqa ;
+%<pp%>@P.su.pres@@P.lim.pres@:%>su%>sqa%>lla@P.su.pres@@P.lim.pres@ V-SUB-na-sqa ;
 %<pp%>@D.wa@:%>sqa@D.wa@ N-FLEX-Plural ;    ! para las formas no personales (nominalizaciones.. pero sin posesivos)
-%<pp%>:%>sqa V-na-sqa ;
-%<pp%>@P.lim.pres@:%>sqa%>lla@P.lim.pres@ V-na-sqa ;
-%<pp%>@P.su.pres@:%>su%>sqa@P.su.pres@ V-na-sqa ;
-%<pp%>@P.su.pres@@P.lim.pres@:%>su%>sqa%>lla@P.su.pres@@P.lim.pres@ V-na-sqa ;
-!! -na-su (-su-na), -su-sqa, -sqa-su, -su-q
-! poner las formas que toman -lla después en otro lexicon
 
-%<ag%>:%>q N-FLEX-POS ;
+%<ag%>:%>q N-FLEX-POS ; ! V-SUB-q
 %<ag%>%<po2sp%>:%>su%>q N-FLEX-POS ;
 ! -wa
+
 
 LEXICON V-LIM
 %<lim%>:%>lla V-TMSub ;     ! con las subordinaciones podría salir dos veces: *-lla-sqa-lla-yki, etc.
@@ -926,6 +923,7 @@ V-DER-pu ;
 
 LEXICON V-DER-chi
 %<caus%>:%>chi V-DER-ysi ;
+%<caus%>%<caus%>:%>chi%>chi V-DER-ysi ;
 V-DER-ysi ;
 
 LEXICON V-DER-RECIP

@@ -105,6 +105,7 @@
     <sdef n="inf"      c="Infinitivo"/>
     <sdef n="ger"      c="Gerundio"/>
     <sdef n="ger2"     c="Gerundio -qti (sujetos diferentes)"/>
+    <sdef n="cons"     c="Consecutivo -stin"/>
     <sdef n="pri"      c="Presente de indicativo"/>
     <sdef n="prs"      c="Presente de subjuntivo"/>
     <sdef n="pii"      c="Pretérito imperfecto de indicativo"/>
@@ -113,7 +114,7 @@
     <sdef n="fti"      c="Futuro de indicativo"/>
     <sdef n="fts"      c="Futuro de subjuntivo"/>
     <sdef n="cni"      c="Condicional"/>
-    <sdef n="cni_pas"  c="Condicional pasado"/>
+    <sdef n="cni_pas"  c="Condicional pasado = condicional + AUX kar(q)an"/>
     <sdef n="imp"      c="Imperativo"/>
     <sdef n="evid"     c="Pasado evidencial -sqa"/>
     <sdef n="hab"      c="Habitual -q + AUX ka-"/>
