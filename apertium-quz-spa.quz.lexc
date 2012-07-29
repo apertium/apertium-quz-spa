@@ -170,7 +170,7 @@ Multichar_Symbols
 %<past%>      ! pasado -rqa
 ! %<cond%>      ! condicional (pot - potencial) - cni ? - pot ?
 %<cni%>         ! condicional/potencial (-man)
-%<cni_pas%>     ! condicional/potencial pasado (-man karqan)
+%<cni_pas%>     ! condicional/potencial pasado (-man karqan) - no usado
 %<evid%>      ! pasado evidencial -sqa
 %<imp%>       ! imperativo
 %<fti%>         ! futuro
@@ -180,8 +180,9 @@ Multichar_Symbols
 %<pp%>        ! participio pasado -sqa
 %<pf%>        ! participio futuro/obligativo -na (oblig = tense)
 %<ag%>        ! agentivo -q
-%<ger%>       ! gerundio -spa
-! %<ger2%> -qti
+%<ger%>       ! gerundio -spa = de sujetos idénticos
+%<ger2%>        ! gerundio -qti = de sujetos diferentes (<sub> ?)
+%<cons%>        ! consecutivo -sti (pero AyQ gerundio... = subordinador simultáneo de sujetos idénticos)
 
 
 ! clíticos
@@ -193,7 +194,7 @@ Multichar_Symbols
 %<adt%>         ! aditivo -pas, -pis
 %<topi%>        ! tópico, tema -qa
 %<rnd%>         ! reanudador -ri
-%<qst%>         ! interrogativo/negativo -chu
+%<qst%>         ! interrogativo/negativo -chu   = no-asertivo
 %<contr%>       ! contrastivo -taq
 %<af%>          ! evidencial directo "afirmativo" -mi/-n
 %<rep%>         ! reportativo -si
@@ -201,8 +202,6 @@ Multichar_Symbols
 %<enf%>         ! enfático -yá
 %<dub%>         ! dubitativo -chus
 %<excl%>        ! exclamativo (ari, á o acento)
-
-! interrogativo
 
 
 ! Puntuación
@@ -220,6 +219,7 @@ Multichar_Symbols
 @P.lim.pres@      ! para controlar que el limitativo salga sólo una vez (en la primera posición)
 @D.lim@           ! aunque eso probablemente no aparecerá en quechua y traduciendo del esp. se controlará por reglas
 @R.lim.pres@        ! sólo para las subordinaciones (por ahora?)
+! y en las subordinaciones, para que salga la etiqueta después de las de persona
 
 @P.gen.pres@      ! para controlar que no salga <gen><nom>
 @D.gen@
@@ -233,6 +233,9 @@ Multichar_Symbols
 @D.su@
 @R.su.pres@
 
+@P.qti.pres@        ! para controlar que salga sólo -su-qti-yki(chis/ku), y no -qti-suyki (pero sí spa-suyki)
+@D.qti@
+@R.qti.pres@        ! no usado
 
 
 LEXICON Root
@@ -716,58 +719,108 @@ LEXICON V-INF
 LEXICON V-na-sqa
 
 ! objeto 3a persona
-%<p1%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-SUB ;
-%<p1ex%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-SUB ;
-%<p2%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-SUB ;
-%<p2%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-SUB ;
-%<p3%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>n@D.wa@@D.su@ V-lla-SUB ;
-%<p3%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nku@D.wa@@D.su@ V-lla-SUB ;
-%<p1in%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nchis@D.wa@@D.su@ V-lla-SUB ;
+%<p1%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-NOM ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-NOM ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-NOM ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-NOM ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>n@D.wa@@D.su@ V-lla-NOM ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nku@D.wa@@D.su@ V-lla-NOM ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nchis@D.wa@@D.su@ V-lla-NOM ;
 
 ! objeto 1a persona
-%<p2%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>yki@R.wa.pres@@D.su@ V-lla-SUB ;
-%<p2%>%<sg%>%<po1ex%>@R.wa.pres@@D.su@:%>ykiku@R.wa.pres@@D.su@ V-lla-SUB ;
-%<p2%>%<pl%>%<po1sp%>@R.wa.pres@@D.su@:%>ykichis@R.wa.pres@@D.su@ V-lla-SUB ;
-%<p3%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>n@R.wa.pres@@D.su@ V-lla-SUB ;
-%<p3%>%<sp%>%<po1sp%>@R.wa.pres@@D.su@:%>nku@R.wa.pres@@D.su@ V-lla-SUB ;
-%<p3%>%<sp%>%<po1in%>@R.wa.pres@@D.su@:%>nchis@R.wa.pres@@D.su@ V-lla-SUB ;
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>yki@R.wa.pres@@D.su@ V-lla-NOM ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@@D.su@:%>ykiku@R.wa.pres@@D.su@ V-lla-NOM ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@@D.su@:%>ykichis@R.wa.pres@@D.su@ V-lla-NOM ;
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>n@R.wa.pres@@D.su@ V-lla-NOM ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@@D.su@:%>nku@R.wa.pres@@D.su@ V-lla-NOM ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@@D.su@:%>nchis@R.wa.pres@@D.su@ V-lla-NOM ;
 
 ! objeto 2a persona
-! %<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-SUB ;   ! esta forma la evitan (= 1>fut, 2>3 pp/pf)
-%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-SUB ;   ! podría ser también p1ex>po2pl
-%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>ykiku@D.wa@@D.su@ V-lla-SUB ;
+! %<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-NOM ;   ! esta forma la evitan (= 1>fut, 2>3 pp/pf)
+%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-NOM ;   ! podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>ykiku@D.wa@@D.su@ V-lla-NOM ;
 
-%<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-SUB ;   ! + qan(kuna)ta
-%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-SUB ;   ! Dir/LR - podría ser también p1ex>po2pl
-%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-SUB ;   ! Dir/LR + qan(kuna)ta
+%<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-NOM ;   ! + qan(kuna)ta
+%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-NOM ;   ! Dir/LR - podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-NOM ;   ! Dir/LR + qan(kuna)ta
 
-%<p3%>%<sg%>%<po2sg%>@D.wa@@R.su.pres@:%>yki@D.wa@@R.su.pres@ V-lla-SUB ;
-%<p3%>%<sp%>%<po2pl%>@D.wa@@R.su.pres@:%>ykichis@D.wa@@R.su.pres@ V-lla-SUB ;
-%<p3%>%<pl%>%<po2sg%>@D.wa@@R.su.pres@:%>ykiku@D.wa@@R.su.pres@ V-lla-SUB ;
+%<p3%>%<sg%>%<po2sg%>@D.wa@@R.su.pres@:%>yki@D.wa@@R.su.pres@ V-lla-NOM ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@@R.su.pres@:%>ykichis@D.wa@@R.su.pres@ V-lla-NOM ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@@R.su.pres@:%>ykiku@D.wa@@R.su.pres@ V-lla-NOM ;
 
-%<p3%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>suyki@D.wa@@D.su@ V-lla-SUB ;
-%<p3%>%<sp%>%<po2pl%>@D.wa@@D.su@:%>suykichis@D.wa@@D.su@ V-lla-SUB ;
-%<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>suykiku@D.wa@@D.su@ V-lla-SUB ;
+%<p3%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>suyki@D.wa@@D.su@ V-lla-NOM ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@@D.su@:%>suykichis@D.wa@@D.su@ V-lla-NOM ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>suykiku@D.wa@@D.su@ V-lla-NOM ;
 
-%<p3%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>sunki@D.wa@@D.su@ V-lla-SUB ;       ! Dir/LR
-%<p3%>%<sp%>%<po2pl%>@D.wa@@D.su@:%>sunkichis@D.wa@@D.su@ V-lla-SUB ;   ! Dir/LR
-%<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>sunkiku@D.wa@@D.su@ V-lla-SUB ;     ! Dir/LR
+%<p3%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>sunki@D.wa@@D.su@ V-lla-NOM ;       ! Dir/LR
+%<p3%>%<sp%>%<po2pl%>@D.wa@@D.su@:%>sunkichis@D.wa@@D.su@ V-lla-NOM ;   ! Dir/LR
+%<p3%>%<pl%>%<po2sg%>@D.wa@@D.su@:%>sunkiku@D.wa@@D.su@ V-lla-NOM ;     ! Dir/LR
 
 
-LEXICON V-lla-SUB
-! para poner la etiqueta del limitativo en las subordinaciones después de las de persona
+LEXICON V-spa-qti
+
+! objeto 3a persona
+%<p1%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-ADV ;
+%<p1ex%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-ADV ;
+%<p2%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-ADV ;
+%<p2%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-ADV ;
+%<p3%>%<sg%>%<po3sp%>@D.wa@@D.su@:%>n@D.wa@@D.su@ V-lla-ADV ;
+%<p3%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nku@D.wa@@D.su@ V-lla-ADV ;
+%<p1in%>%<pl%>%<po3sp%>@D.wa@@D.su@:%>nchis@D.wa@@D.su@ V-lla-ADV ;
+
+! objeto 1a persona
+%<p2%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>yki@R.wa.pres@@D.su@ V-lla-ADV ;
+%<p2%>%<sg%>%<po1ex%>@R.wa.pres@@D.su@:%>ykiku@R.wa.pres@@D.su@ V-lla-ADV ;
+%<p2%>%<pl%>%<po1sp%>@R.wa.pres@@D.su@:%>ykichis@R.wa.pres@@D.su@ V-lla-ADV ;
+%<p3%>%<sg%>%<po1sg%>@R.wa.pres@@D.su@:%>n@R.wa.pres@@D.su@ V-lla-ADV ;
+%<p3%>%<sp%>%<po1sp%>@R.wa.pres@@D.su@:%>nku@R.wa.pres@@D.su@ V-lla-ADV ;
+%<p3%>%<sp%>%<po1in%>@R.wa.pres@@D.su@:%>nchis@R.wa.pres@@D.su@ V-lla-ADV ;
+
+! objeto 2a persona
+%<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>yki@D.wa@@D.su@ V-lla-ADV ;     ! esta forma la evitan (= 2>3)
+%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>ykichis@D.wa@@D.su@ V-lla-ADV ; ! podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>ykiku@D.wa@@D.su@ V-lla-ADV ; ! = 2>1ex
+
+%<p1%>%<sg%>%<po2sg%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-ADV ;   ! + qan(kuna)ta
+%<p1%>%<sg%>%<po2pl%>@D.wa@@D.su@:%>y@D.wa@@D.su@ V-lla-ADV ;   ! Dir/LR - podría ser también p1ex>po2pl
+%<p1ex%>%<pl%>%<po2sp%>@D.wa@@D.su@:%>yku@D.wa@@D.su@ V-lla-ADV ;   ! Dir/LR + qan(kuna)ta
+
+%<p3%>%<sg%>%<po2sg%>@D.wa@@R.su.pres@:%>yki@D.wa@@R.su.pres@ V-lla-ADV ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@@R.su.pres@:%>ykichis@D.wa@@R.su.pres@ V-lla-ADV ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@@R.su.pres@:%>ykiku@D.wa@@R.su.pres@ V-lla-ADV ;
+
+%<p3%>%<sg%>%<po2sg%>@D.wa@@D.qti@@D.su@:%>suyki@D.wa@@D.qti@@D.su@ V-lla-ADV ;
+%<p3%>%<sp%>%<po2pl%>@D.wa@@D.qti@@D.su@:%>suykichis@D.wa@@D.qti@@D.su@ V-lla-ADV ;
+%<p3%>%<pl%>%<po2sg%>@D.wa@@D.qti@@D.su@:%>suykiku@D.wa@@D.su@ V-lla-ADV ;
+
+%<p3%>%<sg%>%<po2sg%>@D.wa@@D.qti@@D.su@:%>sunki@D.wa@@D.qti@@D.su@ V-lla-ADV ;       ! Dir/LR
+%<p3%>%<sp%>%<po2pl%>@D.wa@@D.qti@@D.su@:%>sunkichis@D.wa@@D.qti@@D.su@ V-lla-ADV ;   ! Dir/LR
+%<p3%>%<pl%>%<po2sg%>@D.wa@@D.qti@@D.su@:%>sunkiku@D.wa@@D.qti@@D.su@ V-lla-ADV ;     ! Dir/LR
+
+
+LEXICON V-lla-NOM
+! para poner en las subordinaciones nominales la etiqueta del limitativo después de las de persona
 %<lim%>@R.lim.pres@:@R.lim.pres@ N-FLEX-Plural ;
 @D.lim@:@D.lim@ N-FLEX-Plural ;
+! el limitativo puede entrar todavía después del plural
+
+
+LEXICON V-lla-ADV
+! para poner en las subordinaciones adverbiales la etiqueta del limitativo después de las de persona
+%<lim%>@R.lim.pres@:@R.lim.pres@ CLIT-puni ;
+%<lim%>@D.lim@:%>lla@D.lim@ CLIT-puni ;       ! posiblemente formas como -spa-y-lla
+@D.lim@:@D.lim@ CLIT-puni ;
+
 
 LEXICON V-TMSub
 %<pri%>: V-PERS ;
 %<imp%>: V-IMP ;
 %<fti%>: V-FUT ;
 %<cni%>: V-POT ;
+%<hab%>: V-HAB ;
 ! COND-POT pasado - mejor no, porque los clíticos entran antes del aux:
 ! riswanchu karqan, riswanpaschá karqan
 ! lo mismo vale para el habitual (rikuqchu kanki)
-%<hab%>: V-HAB ;
 
 %<past%>:%>rqa V-PERS ;
 %<past%>:%>ra V-PERS ;
@@ -775,17 +828,28 @@ LEXICON V-TMSub
 %<past%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>rqaku@D.wa@ CLIT-puni ;       ! Dir/LR
 %<past%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>rqa@R.wa.pres@ CLIT-puni ;   ! Dir/LR
 %<past%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>rqaku@R.wa.pres@ CLIT-puni ; ! Dir/LR
+
 %<evid%>:%>sqa V-PERS ; ! sin -n 3suj. poner @P.sqa.pres@ ?
 %<evid%>%<p3%>%<sg%>%<po3sp%>@D.wa@:%>sqa@D.wa@ CLIT-puni ;
 %<evid%>%<p3%>%<pl%>%<po3sp%>@D.wa@:%>sqaku@D.wa@ CLIT-puni ;
 %<evid%>%<p3%>%<sg%>%<po1sg%>@R.wa.pres@:%>sqa@R.wa.pres@ CLIT-puni ;
 %<evid%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>sqaku@R.wa.pres@ CLIT-puni ;
 
-%<ger%>:%>spa N-FLEX-POS ;  ! provisional, hay que poner las personas
-%<ger%>%<lim%>:%>spa%>lla N-FLEX-POS ;  ! provisional, hay que poner las personas
-%<ger%>:%>qti N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
-%<ger%>%<lim%>:%>qti%>lla N-FLEX-POS ; ! provisional, cambiar etiqueta !!!
-! -su-spa, -spa-su, -su-qti poner @P.su.pres@
+%<ger%>:%>spa CLIT-lla ;                                ! formas sin marcas personales
+%<ger%>:%>spa V-spa-qti ;                               ! formas con marcas personales
+%<ger%>@P.su.pres@:%>su%>spa@P.su.pres@ V-spa-qti ;     ! formas con marcas personales
+%<ger%>@P.lim.pres@:%>spa%>lla@P.lim.pres@ V-spa-qti ;  ! formas con marcas personales
+%<ger%>@P.su.pres@@P.lim.pres@:%>su%>spa%>lla@P.su.pres@@P.lim.pres@ V-spa-qti ;  ! formas con marcas personales
+
+! cambiar etiqueta - ger2, sub...
+%<ger%>@P.qti.pres@:%>qti@P.qti.pres@ V-spa-qti ;
+%<ger%>@P.qti.pres@@P.su.pres@:%>su%>qti@P.qti.pres@@P.su.pres@ V-spa-qti ;
+%<ger%>@P.qti.pres@@P.lim.pres@:%>qti%>lla@P.qti.pres@@P.lim.pres@ V-spa-qti ;
+%<ger%>@P.qti.pres@@P.su.pres@@P.lim.pres@:%>su%>qti%>lla@P.qti.pres@@P.su.pres@@P.lim.pres@ V-spa-qti ;
+
+! consecutivo (la acción sigue desp. de la del verbo principal), pero en AyQ gerundio simultáneo
+%<cons%>:%>stin CLIT-puni ;
+%<cons%>%<lim%>:%>stillan CLIT-puni ;
 
 %<inf%>:y V-INF ;
 %<inf%>@P.su.pres@:su%>y@P.su.pres@ V-INF ;
