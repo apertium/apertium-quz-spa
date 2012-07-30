@@ -851,6 +851,8 @@ LEXICON V-TMSub
 %<cons%>%<lim%>@D.wa@:%>stillan@D.wa@ CLIT-puni ;
 %<cons%>%<po1sp%>@R.wa.pres@:%>stin@R.wa.pres@ CLIT-puni ;
 %<cons%>%<po1sp%>%<lim%>@R.wa.pres@:%>stillan@R.wa.pres@ CLIT-puni ;
+%<cons%>%<po1in%>@R.wa.pres@:%>stin@R.wa.pres@ CLIT-puni ;
+%<cons%>%<po1in%>%<lim%>@R.wa.pres@:%>stillan@R.wa.pres@ CLIT-puni ;
 
 ! SUBORDINACIONES NOMINALES
 %<inf%>:y V-SUB-y ;
