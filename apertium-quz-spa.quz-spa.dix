@@ -63,6 +63,13 @@
     <sdef n="subst"    c="Substantival (adverbio)"/>
     <sdef n="temp"     c="Temporal (adverbio)"/>
     
+    <sdef n="pers"     c="Personal"/>
+    <sdef n="tn"       c="Tónico"/>
+    <sdef n="enc"      c="Enclítico"/>
+    <sdef n="pro"      c="Proclítico"/>
+    <sdef n="ref"      c="Reflexivo"/>
+    
+    <!-- casos -->
     <sdef n="nom"       c="Nominativo (nada)" />
     <sdef n="gen"       c="Genitivo (-q/pa)" />
     <sdef n="ben"       c="Benefactivo (-paq)" />
@@ -79,33 +86,43 @@
     <sdef n="posic"     c="Posicional (-npa)" />
     <sdef n="sim"       c="Similativo (-niraq)"/>
     
-    <sdef n="pers"     c="Personal"/>
-    <sdef n="tn"       c="Tónico"/>
-    <sdef n="enc"      c="Enclítico"/>
-    <sdef n="pro"      c="Proclítico"/>
-    <sdef n="ref"      c="Reflexivo"/>
-    
+    <!-- marcas de persona -->
     <sdef n="p1"       c="Primera persona"/>
     <sdef n="p2"       c="Segunda persona"/>
     <sdef n="p3"       c="Tercera persona"/>
     <sdef n="p1in"     c="Primera persona plural inclusiva"/>
     <sdef n="p1ex"     c="Primera persona plural exclusiva"/>
-    <sdef n="px1"      c="Primera persona posesiva"/>
-    <sdef n="px2"      c="Segunda persona posesiva"/>
-    <sdef n="px3"      c="Tercera persona posesiva"/>
+    
+    <sdef n="po1sg"    c="Primera persona singular objeto"/>
+    <sdef n="po2sg"    c="Segunda persona singular objeto"/>
+    <sdef n="po3sg"    c="Tercera persona singular objeto"/>
+    <sdef n="po1in"    c="Primera persona plural inclusiva objeto"/>
+    <sdef n="po1ex"    c="Primera persona plural exclusiva objeto"/>
+    <sdef n="po1sp"    c="Primera persona singular o plural exclusiva objeto"/>
+    <sdef n="po2pl"    c="Segunda persona plural objeto"/>
+    <sdef n="po2sp"    c="Segunda persona singular o plural objeto"/>
+    <sdef n="po3pl"    c="Tercera persona plural objeto"/>
+    <sdef n="po3sp"    c="Tercera persona singular o plural objeto"/>
+    
+    <sdef n="px1sg"    c="Primera persona singular posesiva"/>
+    <sdef n="px2sg"    c="Segunda persona singular posesiva"/>
+    <sdef n="px3sg"    c="Tercera persona singular posesiva"/>
     <sdef n="px1in"    c="Primera persona plural inclusiva posesiva"/>
     <sdef n="px1ex"    c="Primera persona plural exclusiva posesiva"/>
     <sdef n="px2pl"    c="Segunda persona plural posesiva"/>
     <sdef n="px3pl"    c="Tercera persona plural posesiva"/>
     <sdef n="pxrel"    c="Relativo (-n)"/>
     
-    <sdef n="pp"       c="Participio pasado (-sqa/-do)"/>
-    <sdef n="pf"       c="Participio futuro (-na)"/>
-    <sdef n="ag"       c="Agentivo (-q)"/>
-    <sdef n="inf"      c="Infinitivo"/>
-    <sdef n="ger"      c="Gerundio"/>
-    <sdef n="ger2"     c="Gerundio -qti (sujetos diferentes)"/>
-    <sdef n="cons"     c="Consecutivo -stin"/>
+    <!-- subordinaciones -->
+    <sdef n="pp"       c="Participio pasado     -sqa (spa: /-do)    "/>
+    <sdef n="pf"       c="Participio futuro     -na                 "/>
+    <sdef n="ag"       c="Agentivo      -q              "/>
+    <sdef n="inf"      c="Infinitivo    -y              "/>
+    <sdef n="ger"      c="Gerundio      -spa (sujetos idénticos)    "/>
+    <sdef n="ger2"     c="Gerundio      -qti (sujetos diferentes)   "/>
+    <sdef n="cons"     c="Consecutivo   -stin   "/>
+    
+    <!-- tiempo/modo -->
     <sdef n="pri"      c="Presente de indicativo"/>
     <sdef n="prs"      c="Presente de subjuntivo"/>
     <sdef n="pii"      c="Pretérito imperfecto de indicativo"/>

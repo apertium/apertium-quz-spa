@@ -142,6 +142,8 @@ Multichar_Symbols
 %<po2pl%>     ! segunda persona plural objeto
 %<po2sp%>     ! segunda persona singular/plural objeto
 %<po3sp%>     ! tercera persona singular/plural objeto
+%<po3sg%>       ! con -q (-n) ?
+%<po3pl%>       ! con -q (-nku)
 
 %<cont%>      ! progresivo (continuativo) -sha
 %<caus%>      ! causativo -chi
@@ -1083,7 +1085,7 @@ LEXICON V-DER-ASP
 %<rpnt%>%<ctl%>:%>rqa%>mu V-Progr ;
 %<rpnt%>%<ctl%>:%>ra%>mu V-Progr ;
 %<rpnt%>%<refl%>%<ctl%>:%>rqa%>ka%>mu V-Progr ;
-%<rpnt%>%<refl%>%<ctl%>:%>qa%>ka%>mu V-Progr ;
+%<rpnt%>%<refl%>%<ctl%>:%>ra%>ka%>mu V-Progr ;
 %<rpnt%>%<refl%>%<ctl%>%<bn%>:%>rqa%>ka%>m%>pu V-Progr ;
 %<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ra%>ka%>m%>pu V-Progr ;
 %<rpnt%>%<ctl%>%<bn%>:%>rqa%>m%>pu V-Progr ;
