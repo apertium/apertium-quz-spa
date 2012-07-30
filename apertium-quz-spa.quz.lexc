@@ -797,11 +797,28 @@ LEXICON V-SUB-spa-qti
 %<p3%>%<pl%>%<po2sg%>@D.wa@@D.qti@@D.su@:%>sunkiku@D.wa@@D.qti@@D.su@ V-lla-ADV ;     ! Dir/LR
 
 
+LEXICON V-SUB-q
+! objeto 3a persona
+%<po3sg%>@D.wa@@D.su@:%>n@D.wa@@D.su@ V-lla-NOM ;   ! Dir/LR - -q-ni-n (es preferible sólo -q)
+%<po3pl%>@D.wa@@D.su@:%>nku@D.wa@@D.su@ V-lla-NOM ; ! Dir/LR - -q-ni-n-ku (es preferible sólo -q-(ni-n))
+
+! objeto 1a persona
+%<po1sg%>@D.su@:%>y@D.su@ V-lla-NOM ;           ! -(wa)-q-ni-(lla)-y
+%<po1ex%>@D.su@:%>yku@D.su@ V-lla-NOM ;         ! -(wa)-q-ni-(lla)-y-ku
+%<po1in%>@D.su@:%>nchis@D.su@ V-lla-NOM ;       ! -(wa)-q-ni-(lla)-nchis
+
+! objeto 2a persona
+%<po2sg%>@D.wa@:%>yki@D.wa@ V-lla-NOM ;         ! -(su)-q-ni-(lla)-yki
+%<po2pl%>@D.wa@:%>ykichis@D.wa@ V-lla-NOM ;     ! -(su)-q-ni-(lla)-yki-chis
+! las formas con -su probablemente más frecuentes, sobre todo para 3>2
+
+
 LEXICON V-lla-NOM
 ! para poner en las subordinaciones nominales la etiqueta del limitativo después de las de persona
 %<lim%>@R.lim.pres@:@R.lim.pres@ N-FLEX-Plural ;
 @D.lim@:@D.lim@ N-FLEX-Plural ;
 ! el limitativo puede entrar todavía después del plural
+! después de las formas con -ku no debe haber plural :-(
 
 
 LEXICON V-lla-ADV
@@ -873,10 +890,17 @@ LEXICON V-TMSub
 %<pp%>@P.su.pres@@P.lim.pres@:%>su%>sqa%>lla@P.su.pres@@P.lim.pres@ V-SUB-na-sqa ;
 %<pp%>@D.wa@:%>sqa@D.wa@ N-FLEX-Plural ;    ! para las formas no personales (nominalizaciones.. pero sin posesivos)
 
-%<ag%>:%>q N-FLEX-POS ; ! V-SUB-q
-%<ag%>%<po2sp%>:%>su%>q N-FLEX-POS ;
-! -wa
+%<ag%>@D.wa@:%>q@D.wa@ N-FLEX-Plural ;                  ! para las formas sin posesivo (objeto: 3sp)
+%<ag%>%<po1sp%>@R.wa.pres@:%>q@R.wa.pres@ N-FLEX-Plural ;       ! Dir/LR
+%<ag%>%<po1in%>@R.wa.pres@:%>q@R.wa.pres@ N-FLEX-Plural ;       ! Dir/LR
+%<ag%>%<po1ex%>@R.wa.pres@:%>q%>ku@R.wa.pres@ N-FLEX-Plural ;   ! Dir/LR - talvez posible
+%<ag%>%<po2sp%>@D.wa@:%>su%>q@D.wa@ N-FLEX-Plural ;     ! Dir/LR - tal vez posible en AyQ?
+%<ag%>:%>q%>ni V-SUB-q ;
+%<ag%>@P.lim.pres@:%>q%>ni%>lla@P.lim.pres@ V-SUB-q ;
+%<ag%>@P.su.pres@:%>su%>q%>ni@P.su.pres@ V-SUB-q ;
+%<ag%>@P.su.pres@@P.lim.pres@:%>su%>q%>ni%>lla@P.su.pres@@P.lim.pres@ V-SUB-q ;
 
+! todas las nominalizaciones sin marca de persona, tal vez mejor pasarlos a N-DER ???
 
 LEXICON V-LIM
 %<lim%>:%>lla V-TMSub ;     ! con las subordinaciones podría salir dos veces: *-lla-sqa-lla-yki, etc.
@@ -889,17 +913,36 @@ V-TMSub ;
 LEXICON V-Progr
 ! Cusihuamán: wa-sha-rqa-su-
 @P.wa.pres@:%>wa@P.wa.pres@ V-LIM ;
-%<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
-%<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;    ! Dir/LR
+%<lim%>@P.wa.pres@:%>lla%>wa@P.wa.pres@ V-TMSub ;   ! Dir/LR - talvez posible en algunas formas (-lla-wa-y 2>1imp)
+
 %<cont%>:%>sha V-LIM ;
-! formas ayacuchanas
+%<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
+%<cont%>@P.wa.pres@:%>sha%>wa@P.wa.pres@ V-LIM ;                ! Dir/LR
+
+%<cont%>%<lim%>:%>lla%>sha V-TMSub ;                            ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>wa%>lla%>sha@P.wa.pres@ V-TMSub ;  ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>lla%>wa%>sha@P.wa.pres@ V-TMSub ;  ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>sha%>lla%>wa@P.wa.pres@ V-TMSub ;  ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>lla%>sha%>wa@P.wa.pres@ V-TMSub ;  ! Dir/LR
+
+! formas ayacuchanas (apurimeñas)
+%<cont%>:%>chka V-LIM ;                             ! Dir/LR
 %<cont%>@P.wa.pres@:%>wa%>chka@P.wa.pres@ V-LIM ;   ! Dir/LR
 %<cont%>@P.wa.pres@:%>chka%>wa@P.wa.pres@ V-LIM ;   ! Dir/LR
-%<cont%>:%>chka V-LIM ;                             ! Dir/LR
+
+%<cont%>%<lim%>:%>lla%>chka V-TMSub ;                           ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>wa%>lla%>chka@P.wa.pres@ V-TMSub ; ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>lla%>wa%>chka@P.wa.pres@ V-TMSub ; ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>chka%>lla%>wa@P.wa.pres@ V-TMSub ; ! Dir/LR
+%<cont%>%<lim%>@P.wa.pres@:%>lla%>chka%>wa@P.wa.pres@ V-TMSub ; ! Dir/LR
+
+%<cont%>:%>shka V-LIM ;                             ! Dir/LR
+%<cont%>%<lim%>:%>lla%>shka V-TMSub ;               ! Dir/LR
 %<cont%>@P.wa.pres@:%>wa%>shka@P.wa.pres@ V-LIM ;   ! Dir/LR
 %<cont%>@P.wa.pres@:%>shka%>wa@P.wa.pres@ V-LIM ;   ! Dir/LR
-%<cont%>:%>shka V-LIM ;                             ! Dir/LR
 ! AyQ -su-chka-, -su-rqa-, -su-sqa
+
+! BoQ -sa
 
 V-LIM ;
 
