@@ -1028,7 +1028,7 @@ V-DER-chi ;
 
 
 LEXICON V-DER-ASP
-! -ykacha "oscilativo", -yKU "intensivo", -rQU "repentino" + combinaciones
+! -ykacha "oscilativo", -yKU "intensivo", -rQU "repentino" + la myyoría de las combinaciones
 
 ! yKU = y%{bK%}%{U%}
 %<int%>:%>yku V-Progr ;
@@ -1049,6 +1049,8 @@ LEXICON V-DER-ASP
 %<int%>%<ctl%>:%>ya%>mu V-Progr ;
 %<int%>%<refl%>%<ctl%>:%>yka%>ka%>mu V-Progr ;
 %<int%>%<refl%>%<ctl%>:%>ya%>ka%>mu V-Progr ;
+%<int%>%<refl%>%<bn%>:%>yka%>ka%>pu V-Progr ;
+%<int%>%<refl%>%<bn%>:%>ya%>ka%>pu V-Progr ;
 %<int%>%<refl%>%<ctl%>%<bn%>:%>yka%>ka%>m%>pu V-Progr ;
 %<int%>%<refl%>%<ctl%>%<bn%>:%>ya%>ka%>m%>pu V-Progr ;
 %<int%>%<ctl%>%<bn%>:%>yka%>m%>pu V-Progr ;
@@ -1097,6 +1099,10 @@ LEXICON V-DER-ASP
 %<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>yka%>ra%>ka%>m%>pu V-Progr ;
 %<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ya%>rqa%>ka%>m%>pu V-Progr ;
 %<int%>%<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ya%>ra%>ka%>m%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<bn%>:%>yka%>rqa%>ka%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<bn%>:%>yka%>ra%>ka%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<bn%>:%>ya%>rqa%>ka%>pu V-Progr ;
+%<int%>%<rpnt%>%<refl%>%<bn%>:%>ya%>ra%>ka%>pu V-Progr ;
 %<int%>%<rpnt%>%<ctl%>%<bn%>:%>yka%>rqa%>m%>pu V-Progr ;
 %<int%>%<rpnt%>%<ctl%>%<bn%>:%>yka%>ra%>m%>pu V-Progr ;
 %<int%>%<rpnt%>%<ctl%>%<bn%>:%>ya%>rqa%>m%>pu V-Progr ;
@@ -1131,6 +1137,8 @@ LEXICON V-DER-ASP
 %<rpnt%>%<refl%>%<ctl%>:%>ra%>ka%>mu V-Progr ;
 %<rpnt%>%<refl%>%<ctl%>%<bn%>:%>rqa%>ka%>m%>pu V-Progr ;
 %<rpnt%>%<refl%>%<ctl%>%<bn%>:%>ra%>ka%>m%>pu V-Progr ;
+%<rpnt%>%<refl%>%<bn%>:%>rqa%>ka%>pu V-Progr ;
+%<rpnt%>%<refl%>%<bn%>:%>ra%>ka%>pu V-Progr ;
 %<rpnt%>%<ctl%>%<bn%>:%>rqa%>m%>pu V-Progr ;
 %<rpnt%>%<ctl%>%<bn%>:%>ra%>m%>pu V-Progr ;
 %<rpnt%>%<inc%>:%>rqa%>ri V-DER-RECIP ;
