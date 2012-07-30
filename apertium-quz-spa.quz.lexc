@@ -91,7 +91,7 @@ Multichar_Symbols
 %<dim%>       ! diminutivo -cha (y otros?)
 
 
-%<incl%>      ! inclusivo -nti-
+%<incl%>      ! inclusivo -nti-(n)
 
 %<px1sg%>     ! posesivo 1a persona singular
 %<px2sg%>     ! posesivo 2a persona singular
@@ -454,8 +454,12 @@ N-FLEX-POS ;
 LEXICON N-DER
 %<poss%>:%>%{bN%}%{bnI%}yuq N-DER-Dim ;
 %<lim%>%<poss%>@P.lim.pres@:%>%{bN%}%{bnI%}llayuq@P.lim.pres@ N-DER-Dim ;
-! sapa, sapayuq
-! ya, cha?, naya, raya
+%<pl%>%<poss%>:%>kuna%>yuq N-FLEX-Inter ;
+%<dim%>%<poss%>:%>cha%>yuq N-FLEX-Inter ;
+%<dim%>%<pl%>%<poss%>:%>cha%>kuna%>yuq N-FLEX-Inter ;
+%<pond%>:%>sapa N-FLEX-Inter ;
+%<pond%>%<poss%>:%>sapa%>yuq N-FLEX-Inter ;
+! ya, cha?, naya, (raya)
 N-DER-Dim ;
 
 
@@ -877,18 +881,22 @@ LEXICON V-TMSub
 %<inf%>:y V-SUB-y ;
 %<inf%>@P.su.pres@:su%>y@P.su.pres@ V-SUB-y ;
 %<inf%>%<lim%>@D.wa@:%>ylla@D.wa@ CLIT-puni ;     ! uso adverbial (tapylla tapuwashan...)
+%<inf%>%<dem%>%<lim%>@D.wa@:%>y%>cha%>lla@D.wa@ CLIT-puni ;     ! uso adverbial (usqhaychalla...)
+! %<inf%>@D.wa@:y@D.wa@ N-DER ;
 
 %<pf%>:%>na V-SUB-na-sqa ;
 %<pf%>@P.lim.pres@:%>na%>lla@P.lim.pres@ V-SUB-na-sqa ;
 %<pf%>@P.su.pres@:%>su%>na@P.su.pres@ V-SUB-na-sqa ;
 %<pf%>@P.su.pres@@P.lim.pres@:%>su%>na%>lla@P.su.pres@@P.lim.pres@ V-SUB-na-sqa ;
 %<pf%>@D.wa@:%>na@D.wa@ N-FLEX-Plural ;     ! para las formas no personales (nominalizaciones.. pero sin posesivos)
+! %<pf%>@D.wa@:%>na@D.wa@ N-DER ;
 
 %<pp%>:%>sqa V-SUB-na-sqa ;
 %<pp%>@P.lim.pres@:%>sqa%>lla@P.lim.pres@ V-SUB-na-sqa ;
 %<pp%>@P.su.pres@:%>su%>sqa@P.su.pres@ V-SUB-na-sqa ;
 %<pp%>@P.su.pres@@P.lim.pres@:%>su%>sqa%>lla@P.su.pres@@P.lim.pres@ V-SUB-na-sqa ;
 %<pp%>@D.wa@:%>sqa@D.wa@ N-FLEX-Plural ;    ! para las formas no personales (nominalizaciones.. pero sin posesivos)
+! %<pp%>@D.wa@:%>sqa@D.wa@ N-DER ;
 
 %<ag%>@D.wa@:%>q@D.wa@ N-FLEX-Plural ;                  ! para las formas sin posesivo (objeto: 3sp)
 %<ag%>%<po1sp%>@R.wa.pres@:%>q@R.wa.pres@ N-FLEX-Plural ;       ! Dir/LR
@@ -899,21 +907,21 @@ LEXICON V-TMSub
 %<ag%>@P.lim.pres@:%>q%>ni%>lla@P.lim.pres@ V-SUB-q ;
 %<ag%>@P.su.pres@:%>su%>q%>ni@P.su.pres@ V-SUB-q ;
 %<ag%>@P.su.pres@@P.lim.pres@:%>su%>q%>ni%>lla@P.su.pres@@P.lim.pres@ V-SUB-q ;
+! %<ag%>@D.wa@:%>q@D.wa@ N-DER ;
 
 ! todas las nominalizaciones sin marca de persona, tal vez mejor pasarlos a N-DER ???
+
 
 LEXICON V-LIM
 %<lim%>:%>lla V-TMSub ;     ! con las subordinaciones podría salir dos veces: *-lla-sqa-lla-yki, etc.
 V-TMSub ;
-! lla-wa-y   quykapullaway
-! suya-sha-wa-y - ok (LR)
-! tapu-lla-wa-q-(niy) - tapu-wa-lla-q-(niy) - tapu-wa-q-nillay - tapu-wa-q-niy-lla ???
 
 
 LEXICON V-Progr
 ! Cusihuamán: wa-sha-rqa-su-
 @P.wa.pres@:%>wa@P.wa.pres@ V-LIM ;
 %<lim%>@P.wa.pres@:%>lla%>wa@P.wa.pres@ V-TMSub ;   ! Dir/LR - talvez posible en algunas formas (-lla-wa-y 2>1imp)
+! tapu-lla-wa-q-(niy) - tapu-wa-lla-q-(niy) - tapu-wa-q-nillay - tapu-wa-q-niy-lla ???
 
 %<cont%>:%>sha V-LIM ;
 %<cont%>@P.wa.pres@:%>wa%>sha@P.wa.pres@ V-LIM ;
@@ -943,6 +951,10 @@ LEXICON V-Progr
 ! AyQ -su-chka-, -su-rqa-, -su-sqa
 
 ! BoQ -sa
+! %<cont%>:%>sa V-LIM ;                             ! Dir/LR - pero ambig. -sa-q × -saq
+! %<cont%>%<lim%>:%>lla%>sa V-TMSub ;               ! Dir/LR
+! %<cont%>@P.wa.pres@:%>wa%>sa@P.wa.pres@ V-LIM ;   ! Dir/LR
+%<cont%>@P.wa.pres@:%>sa%>wa@P.wa.pres@ V-LIM ;   ! Dir/LR
 
 V-LIM ;
 
