@@ -832,7 +832,9 @@ LEXICON V-TMSub
 %<evid%>%<p3%>%<sp%>%<po1sp%>@R.wa.pres@:%>sqaku@R.wa.pres@ CLIT-puni ;
 
 ! SUBORDINACIONES ADVERBIALES
-%<ger%>:%>spa CLIT-lla ;                                    ! formas sin marcas personales
+%<ger%>@D.wa@:%>spa@D.wa@ CLIT-lla ;                        ! formas sin marcas personales
+%<ger%>%<po1sp%>@R.wa.pres@:%>spa@R.wa.pres@ CLIT-lla ;     ! formas sin marcas personales
+%<ger%>%<po1in%>@R.wa.pres@:%>spa@R.wa.pres@ CLIT-lla ;     ! formas sin marcas personales
 %<ger%>:%>spa V-SUB-spa-qti ;                               ! formas con marcas personales
 %<ger%>@P.su.pres@:%>su%>spa@P.su.pres@ V-SUB-spa-qti ;     ! formas con marcas personales
 %<ger%>@P.lim.pres@:%>spa%>lla@P.lim.pres@ V-SUB-spa-qti ;  ! formas con marcas personales
@@ -845,8 +847,10 @@ LEXICON V-TMSub
 %<ger%>@P.qti.pres@@P.su.pres@@P.lim.pres@:%>su%>qti%>lla@P.qti.pres@@P.su.pres@@P.lim.pres@ V-SUB-spa-qti ;
 
 ! consecutivo (la acción sigue desp. de la del verbo principal), pero en AyQ gerundio simultáneo
-%<cons%>:%>stin CLIT-puni ;
-%<cons%>%<lim%>:%>stillan CLIT-puni ;
+%<cons%>@D.wa@:%>stin@D.wa@ CLIT-puni ;
+%<cons%>%<lim%>@D.wa@:%>stillan@D.wa@ CLIT-puni ;
+%<cons%>%<po1sp%>@R.wa.pres@:%>stin@R.wa.pres@ CLIT-puni ;
+%<cons%>%<po1sp%>%<lim%>@R.wa.pres@:%>stillan@R.wa.pres@ CLIT-puni ;
 
 ! SUBORDINACIONES NOMINALES
 %<inf%>:y V-SUB-y ;
@@ -875,6 +879,7 @@ LEXICON V-LIM
 V-TMSub ;
 ! lla-wa-y   quykapullaway
 ! suya-sha-wa-y - ok (LR)
+! tapu-lla-wa-q-(niy) - tapu-wa-lla-q-(niy) - tapu-wa-q-nillay - tapu-wa-q-niy-lla ???
 
 
 LEXICON V-Progr
