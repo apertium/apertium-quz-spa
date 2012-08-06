@@ -10,6 +10,14 @@ all: $(PREFIX1).automorf.hfst $(PREFIX2).autogen.hfst $(PREFIX1).rlx.bin $(PREFI
 	$(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).autogen.bin $(PREFIX2).automorf.bin \
 	$(PREFIX1).autopgen.bin $(PREFIX1).lrx.bin
 
+debug: .deps/$(LANG1).LR-debug.hfst
+
+.deps/$(LANG1).LR-debug.hfst: $(BASENAME).$(LANG1).lexc .deps/$(LANG1).twol.hfst
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG1).LR-debug.lexc
+	hfst-lexc --format foma .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst
+	hfst-compose-intersect -1 .deps/$(LANG1).LR-debug.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
+
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-twolc $< -o $@
