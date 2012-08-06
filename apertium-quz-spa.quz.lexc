@@ -52,6 +52,9 @@ Multichar_Symbols
 %<ij%>        ! interjeción
 %<pr%>          ! preposición (hispanismos)
 %<det%>         ! determinante (hispanismos)
+%<def%>         ! determinante definido
+%<ind%>         ! determinante indefinido
+%<qnt%>         ! determinante cuantitativo
 
 %<pers%>      ! personal (pronombre)
 %<itg%>       ! interrogativo (pronombre, adverbio)
@@ -239,6 +242,14 @@ Multichar_Symbols
 @D.qti@
 @R.qti.pres@        ! no usado
 
+@P.POS.oblig@       ! posesivo (sg y pl) obligatorio para la pronombres sapa- y kiki-
+@D.POS@
+@R.POS.oblig@       ! no usado
+
+@P.POSpl.opc@       ! posesivo plural (y -n) opcional para los pronombres sapanka, wakiq, wakin, waki(cha)lla
+@D.POSpl@           ! no usado
+@R.POSpl.opc@
+
 
 LEXICON Root
 
@@ -316,15 +327,14 @@ CLIT-chu ;
 
 LEXICON CLIT-pas
 %<adt%>:%>pas CLIT-taq ;
-%<adt%>:%>pis CLIT-taq ;
+%<adt%>:%>pis CLIT-taq ;    ! Dir/LR
 CLIT-taq ;
 
 
 LEXICON CLIT-raq-na
-! %<cnt%>:%>raq CLIT-pas ;
 %<cnti%>:%>raq CLIT-pas ;
 %<dcnt%>:%>ña CLIT-pas ;
-! %<adt%>%<cnti%>:%>pas%>raq CLIT-taq ;
+%<adt%>%<cnti%>:%>pas%>raq CLIT-taq ;   ! Dir/LR
 CLIT-pas ;
 
 LEXICON CLIT-puni
@@ -405,17 +415,18 @@ LEXICON N-FLEX-Inter
 N-FLEX-Gen ;
 
 LEXICON N-FLEX-POS-Oblig
-! después del inclusivo -nti, obligatorio, sin plural -kuna
-! sólo para los numerales, el resto siempre tiene -nti-n (o -ntin-ku)
-%<px1in%>:%>nchis N-FLEX-Incl ;
-%<px1ex%>:%>yku N-FLEX-Incl ;
-%<px2pl%>:%>ykichis N-FLEX-Incl ;
-%<px3pl%>:%>nku N-FLEX-Incl ;
-%<px3sg%>:%>n N-FLEX-Incl ;  ! excepcionalmente
+! obligatorio después del inclusivo -nti y algunos pronombres, sin plural -kuna
+! -nti- sólo para los numerales, el resto siempre tiene -nti-n (o -ntin-ku)
+%<px1in%>:%>%{bN%}%{bnI%}nchis N-FLEX-Incl ;
+%<px1ex%>:%>%{bN%}%{bnI%}yku N-FLEX-Incl ;
+%<px2pl%>:%>%{bN%}%{bnI%}ykichis N-FLEX-Incl ;
+%<px3pl%>:%>%{bN%}%{bnI%}nku N-FLEX-Incl ;
+%<px3sg%>:%>%{bN%}%{bnI%}n N-FLEX-Incl ;  ! excepcionalmente
+@R.POSpl.opc@:@R.POSpl.opc@ N-FLEX-Incl ;
 
 
 LEXICON N-FLEX-Incl
-%<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Inter ;     ! + nti-n-ku
+%<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Inter ;
 %<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Inter ;
 %<incl%>:%>%{bN%}%{bnI%}ntinku N-FLEX-Inter ;     ! excepcionalmente con animados
 %<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llanku@D.lim@ N-FLEX-Inter ;
@@ -443,7 +454,7 @@ LEXICON N-FLEX-POS
 %<px3pl%>:%>%{bN%}%{bnI%}nku N-FLEX-Incl ;
 %<lim%>%<px3pl%>@D.lim@:%>%{bN%}%{bnI%}lla%>nku@D.lim@ N-FLEX-Incl ;
 
-N-FLEX-Plural ;
+@D.POS@:@D.POS@ N-FLEX-Plural ;
 
 
 LEXICON N-DER-Dim
@@ -463,7 +474,7 @@ LEXICON N-DER
 N-DER-Dim ;
 
 
-LEXICON ADJ-PL
+LEXICON ADJ-PL  ! + posesivos
 %<pl%>:%>kuna N-FLEX-Gen ;
  N-FLEX-Gen ;
 
@@ -1230,7 +1241,13 @@ LEXICON Preadj
 %<preadj%>: N-FLEX-Caso ;
 
 LEXICON PRON
-%<prn%>: N-FLEX-Inter ;
+%<prn%>: N-DER ;
+
+LEXICON DET-Ind
+%<det%>%<ind%>: # ;
+
+LEXICON DET-Cuant
+%<det%>%<qnt%>: # ;
 
 LEXICON PronDem
 %<prn%>%<dem%>: N-DER ;
@@ -2343,6 +2360,7 @@ politika:politika N ;
 democracia:democracia N ;
 nación:nación N ;
 nacion:nacion N ;
+! nasion, nasyon, nasiyun, nasiyon, naciun
 nashun:nashun N ;
 derecho:derecho N ;
 de%<pr%>:de # ;
@@ -2433,6 +2451,7 @@ sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
 ! as:as ADJ ; ! "un poco de"
 askha:askha ADJ ; ! "mucho"       - corregir todo (adj/prn), no está en bidix
 pisi:pisi ADJ ; ! "poco"       - corregir todo (adj/prn), no está en bidix
+! chika tan - chika sumaq tan bonito (tb. irónico - = feo)
 
 
 LEXICON PronombresDemItg
@@ -2507,19 +2526,66 @@ yku%<prn%>%<pers%>%<p1ex%>%<pl%>%<dim%>%<lim%>:challayku N-FLEX-Inter ;
 
 
 LEXICON Pronombres
-!! + gen, pos, gen, dem N-FLEX-Inter
 
 ! poner como numerales, pasar los numerales a un lex. de posesivos
-huknin:huknin PRON ; ! "otro"
-iskayninku:iskayninku PRON ; ! "los dos, ambos"
+! huknin:huknin PRON ; ! "otro"  ???
+! iskayninku:iskayninku PRON ; ! "los dos, ambos" -   poner en bidix y en la transferencia, 2-POSpl (3sg)
 ! iskaynin:iskaynin ADJ-DET ; ! "ambos"
-tukuy:tukuy PRON ;      ! todo, entero         - cambiar lex, categoría
-imaymana:imaymana PRON ;     ! "todo"       - corregir todo (adj/prn), no está en bidix
-llapan:llapan PRON ;        ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
-llapa:llapa PRON ;      ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
-lliw:lliw PRON ;        ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
-lluy:lluy PRON ;        ! "todo(s)"       - corregir todo (adj/prn), no está en bidix
 
+! los que toman derivativos (-yuq...), a veces plural...
+imaymana:imaymana PRON ;    ! "todas las cosas", "de todo"
+tukuy:tukuy PRON ;          ! "todo" (más bien abstracto, singular)
+! wak, waq PRON "otro, diferente" - como adjetivo
+lliw:lliw PRON ;            ! "todo", "todos"
+lluy:lluy PRON ;            ! "todo", "todos"
+q%'ala:q%'ala PRON ;        ! "todo" (pleno, desnudo)
+
+! con llapa/llipi son preferibles las formas con posesivo, sobre todo si se refieren a personas
+llapa%<prn%>:llapa N-FLEX-Inter ;  ! Dir/LR "todo" ("todos" - pref. con POS)
+llipi%<prn%>:llipi N-FLEX-Inter ;  ! Dir/LR "todo" ("todos" - pref. con POS)
+llapa%<prn%>%<incl%>:llapantin N-FLEX-Inter ;
+llipi%<prn%>%<incl%>:llipintin N-FLEX-Inter ;
+
+! cf. waki(lla)nku "algunos de ellos"
+wakinkuna%<prn%>:wakinkuna N-FLEX-Incl ;    ! "los otros, los demás, los restantes"
+
+! posesivo (sg y pl) siempre obligatorio
+kikin%<prn%>@P.POS.oblig@:kiki@P.POS.oblig@ N-DER-Dim ;      ! "mismo"
+sapan%<prn%>@P.POS.oblig@:sapa@P.POS.oblig@ N-DER-Dim ;      ! "solo"
+
+! posesivo plural (o -n) opcional
+sapanka%<prn%>@P.POSpl.opc@:sapanka@P.POSpl.opc@ N-FLEX-POS-Oblig ;     ! "cada uno"
+wakin%<prn%>@P.POSpl.opc@:wakin@P.POSpl.opc@ N-FLEX-POS-Oblig ;         ! "algunos (de...)"
+wakiq%<prn%>@P.POSpl.opc@:wakiq@P.POSpl.opc@ N-FLEX-POS-Oblig ;         ! "algunos (de...)"
+wakilla%<prn%>@P.POSpl.opc@:wakilla@P.POSpl.opc@ N-FLEX-POS-Oblig ;     ! "unos (pocos), algunos (de...)"
+wakilla%<prn%>%<dim%>@P.POSpl.opc@:wakichalla@P.POSpl.opc@ N-FLEX-POS-Oblig ;     ! "unos (pocos), algunos (de...)"
+! wakicha%<prn%>%<dim%>@P.POSpl.opc@:wakicha@P.POSpl.opc@ N-FLEX-POS-Oblig ;
+wakin%<prn%>%<px3pl%>@P.POSpl.opc@:wakinku@P.POSpl.opc@ N-FLEX-POS-Oblig ;  ! Dir/LR - AyQ
+
+! posesivo plural (o -n) obligatorio (con llapa/llipi sin inclusivo preferible a las formas sin posesivo)
+llapa%<prn%>:llapa N-FLEX-POS-Oblig ;                       ! "todo", "todos"
+llipi%<prn%>:llipi N-FLEX-POS-Oblig ;                       ! "todo", "todos"
+llapa%<prn%>%<lim%>:llapalla N-FLEX-POS-Oblig ;             ! "todo", "todos"
+llipi%<prn%>%<lim%>:llipilla N-FLEX-POS-Oblig ;             ! "todo", "todos"
+llapa%<prn%>%<dim%>%<lim%>:llapachalla N-FLEX-POS-Oblig ;   ! "todo", "todos"
+llipi%<prn%>%<dim%>%<lim%>:llipichalla N-FLEX-POS-Oblig ;   ! "todo", "todos"
+llapa%<prn%>%<dim%>:llapacha N-FLEX-POS-Oblig ;             ! "todo", "todos"
+llipi%<prn%>%<dim%>:llipicha N-FLEX-POS-Oblig ;             ! "todo", "todos"
+
+! determinantes (algunas formas difieren de las de los pronombres)
+imaymana:imaymana DET-Ind ; ! "de todo tipo"
+llapa:llapa DET-Ind ;       ! "todo", "todos los..."
+llapan:llapan DET-Ind ;     ! "todo", "todos los..."
+llipi:llipi DET-Ind ;       ! "todo", "todos los..."
+llipin:llipin DET-Ind ;     ! "todo", "todos los..."
+lliw:lliw DET-Ind ;         ! "todo", "todos los..."
+lluy:lluy DET-Ind ;         ! "todo", "todos los..."
+q%'ala:q%'ala DET-Ind ;     ! "todo", "todos los..."
+tukuy:tukuy DET-Ind ;       ! "todo", "todos los..."
+sapa:sapa DET-Ind ;         ! "cada"
+sapanka:sapanka DET-Ind ;   ! "cada"
+wakin:wakin DET-Ind ;       ! "algunos"
+wakillan:wakillan DET-Ind ; ! "unos (pocos), algunos"
 
 
 LEXICON Numerales

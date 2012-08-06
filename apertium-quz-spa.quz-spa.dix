@@ -38,17 +38,6 @@
     <sdef n="vcm"      c="Verbo de comunicación"/>
     <sdef n="vimp"     c="Verbo impersonal"/>
     <sdef n="pron"     c="Verbo pronominal (reflexivo)"/>
-
-    <sdef n="f"        c="Feminino"/>
-    <sdef n="m"        c="Masculino"/>
-    <sdef n="nt"       c="Neutro"/>
-    <sdef n="mf"       c="Masculino/femenino"/>
-    <sdef n="GD"       c="Género por determinar"/>  
-    
-    <sdef n="sg"       c="Singular"/>
-    <sdef n="pl"       c="Plural"/>
-    <sdef n="sp"       c="Singular/plural"/>
-    <sdef n="ND"       c="Número por determinar"/>  
     
     <sdef n="def"      c="Definido"/>
     <sdef n="ind"      c="Indefinido"/>
@@ -68,6 +57,17 @@
     <sdef n="enc"      c="Enclítico"/>
     <sdef n="pro"      c="Proclítico"/>
     <sdef n="ref"      c="Reflexivo"/>
+
+    <sdef n="f"        c="Feminino"/>
+    <sdef n="m"        c="Masculino"/>
+    <sdef n="nt"       c="Neutro"/>
+    <sdef n="mf"       c="Masculino/femenino"/>
+    <sdef n="GD"       c="Género por determinar"/>
+    
+    <sdef n="sg"       c="Singular"/>
+    <sdef n="pl"       c="Plural"/>
+    <sdef n="sp"       c="Singular/plural"/>
+    <sdef n="ND"       c="Número por determinar"/>
     
     <!-- casos -->
     <sdef n="nom"       c="Nominativo (nada)" />
@@ -158,8 +158,9 @@
     <sdef n="fct"       c="Factitivo        -cha    "/>
     
     <!-- derivativos nominales -->
-    <sdef n="poss"      c="Posesivo -yuq"/>
-    <sdef n="incl"      c="Inclusivo -ntin"/>
+    <sdef n="poss"      c="Posesivo     -yuq    "/>
+    <sdef n="pond"      c="Ponderativo  -sapa   "/>
+    <sdef n="incl"      c="Inclusivo    -ntin   "/>
     
     <!-- clíticos -->
     <sdef n="af"        c="afirmativo   -mi     "/>
