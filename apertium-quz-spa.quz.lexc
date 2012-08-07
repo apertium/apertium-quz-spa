@@ -297,8 +297,8 @@ LEXICON CLIT-Final
 ! %<rnd%>:%>rí # ;
 %<af%>:%>%{M%}%{bI%} # ;
 %<rep%>:%>s%{bI%} # ;
-%<af%>:%>min # ;
-%<rep%>:%>sis # ;
+%<af%>:%>min # ;        ! Dir/LR
+%<rep%>:%>sis # ;       ! Dir/LR
 %<cnj%>:%>chá # ;
 %<enf%>:%>ya # ;
 %<enf%>%<excl%>:%>y%>á # ;
@@ -309,10 +309,10 @@ LEXICON CLIT-Final
 %<dub%>:%>chusina # ;
 %<dub%>0:chus%>mi # ;
 %<dub%>:%>chus% hina # ;
-%<af%>%<excl%>:%>m%>ari # ;
-%<rep%>%<excl%>:%>s%>ari # ;
-%<cnj%>%<excl%>:%>ch%>ari # ;
-%<enf%>%<excl%>:%>y%>ari # ;
+%<af%>%<excl%>:%>m%>ari # ;         ! Dir/LR
+%<rep%>%<excl%>:%>s%>ari # ;        ! Dir/LR
+%<cnj%>%<excl%>:%>ch%>ari # ;       ! Dir/LR
+%<enf%>%<excl%>:%>y%>ari # ;        ! Dir/LR
 !! (sá), ari, á, chuqa(ya), taqri, churi, suna, sina, qá, rí, táq
 # ; 
 
