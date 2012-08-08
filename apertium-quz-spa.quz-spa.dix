@@ -2087,6 +2087,7 @@
     
     <section id="NOMBRES_HISPANISMOS" type="standard">
       
+    <e><p><l>nacionalidad<s n="n"/></l><r>nacionalidad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>animal<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>asnu<s n="n"/></l><r>asno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>birrete<s n="n"/></l><r>birrete<s n="n"/><s n="m"/></r></p></e>
@@ -2103,11 +2104,7 @@
     <e><p><l>estado<s n="n"/></l><r>estado<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mesa<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>nación<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>nacion<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>nashun<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>politica<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>politika<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
     
     </section>
     

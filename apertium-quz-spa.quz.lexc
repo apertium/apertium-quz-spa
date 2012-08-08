@@ -2353,15 +2353,16 @@ Tambobamba:Tambobamba NP-TOP ;
 
 LEXICON NombresHisp
 ! poner aparte como hispanismos - pueden tomar plural -s
-política:política N ;
 estado:estado N ;
-politica:politica N ;
-politika:politika N ;
+política:política N ;
+política:politica N ; ! Dir/LR
+política:politika N ; ! Dir/LR
 democracia:democracia N ;
 nación:nación N ;
-nacion:nacion N ;
+nación:nacion N ; ! Dir/LR
+nación:nashun N ; ! Dir/LR
+nacionalidad:nacionalidad N ;
 ! nasion, nasyon, nasiyun, nasiyon, naciun
-nashun:nashun N ;
 derecho:derecho N ;
 de%<pr%>:de # ;
 del%<pr%>:del # ;
