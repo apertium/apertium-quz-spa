@@ -7,13 +7,20 @@ LIST N = n ;
 LIST A = adj ;
 LIST Prop = (np ant) ; 
 LIST Vmov = vm ;
+LIST V = vblex ;
 
 LIST Gen = gen ; 
 LIST Acc = acc ; 
 LIST Per = per ;
 LIST P3acc = (px3sg acc) ;
+LIST Inf = (vblex inf) ;
+LIST N-Acc = (n acc) ;
 
-## animados = np, madre, padre, n-genero, pay, etc.
+LIST Anim = "irqi" "wawa" "wamra" "warma" "willka" 
+        "tayta-mama" "mama-tayta" "qhari-warmi" "warmi-qhari" 
+        "pana-tura" "wayqi-pana" "ñaña-tura"        
+        (n m) (n f) (np ant) ;
+## animados
 
 SECTION
 
@@ -23,8 +30,18 @@ SELECT A IF (-1 A) (1C N);
 REMOVE Per IF (NOT *0 Vmov) (0 P3acc) ;
 		## Mamanta rikun.
 		
-## REMOVE Per IF (0 Prop) ;
+REMOVE Per IF (0 Anim LINK 0 P3acc) ;
+        # es más probable un movimiento hacia una persona que por una persona (aunque: la lanza pasó por...)
 
+
+REMOVE ("riy" refl) IF  (0 ("rikuy")) ;
+    ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl"
+
+SELECT Inf IF (0 N-Acc LINK *0 V) ;
+# ( N | INF ) Acc + vblex tv --> INF
 
 ## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
-## algo para quitar gen.nom
+## algo para quitar gen.nom - no necesario (añadido un flag diacritic)
+
+
+          ## AND = LINK 0
