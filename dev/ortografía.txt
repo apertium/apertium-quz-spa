@@ -1,0 +1,276 @@
+CAMBIO DE ORTOGRAFÍA PARA TEXTOS EN EL QUECHUA SUREÑO (CUZCO-BOLIVIA)
+*********************************************************************
+
+LEYENDA Y COMENTARIOS GENERALES
+
+en general hay dos tipos de escribir el quechua:
+
+- ortografías fonémicas, con algunas variantes (esto se puede convertir +/- fácilmente)
+- la manera de escribir de los que no han aprendido a escribir el quechua
+(es más bien ortografía española adaptada para el quechua; en tal caso pueden escribir
+una palabra particular de varias maneras diferentes, incluso la misma persona)
+
+aparte de ello aparecen frecuentemente palabras o frases españolas, que dificultan
+una conversión automática
+
+
+V = vocal
+(a, e, i, o, u, á, é...)
+talvez también <y> entre consonantes, algunos escriben como cochinos: rykui = rikuy - y --> i   / C __ C)
+
+C = el resto, incluyendo fin de palabra # (pausa)
+(donde C no incluya #, se notará explícitamente)
+
+di(trí)grafos:
+ph, th, chh, kh, qh y p', t', ch', k', q' y sh
+
+
+grafemas (letras) usadas en quechua:
+A, I, U; Á, Í, Ú (las vocales acentuadas sólo en la última sílaba)
+P, T, K, Q, CH; P', T', K', Q', CH'; PH, TH, KH, QH, CHH (ver arriba di(trí)grafos)
+H, L, LL, M, N, Ñ, R, S, SH, W, Y
+en algunos préstamos B, D, G
+las demás letras más bien sólo en hispanismos no incorporados u ortografías no fonémicas
+(hay ortografías fonémicas que usan 5 vocales, las abiertas sólo cerca de Q, QH, Q')
+
+
+secuencias vocálicas - no se permiten
+secuencias consonánticas - sólo de dos y en el medio de palabra; <y> y <w> cuentan como consonantes
+(C)-V-[(C)-C-V]n×-(C)  (= *VV, *CCC, *#CC, *CC#)
+
+en cuanto a donde puede ocurrir <e> y <o>, fonéticamente las vocales abiertas [e], [o] en quechua
+aparecen solamente cerca de la consonante uvular /q/, /qh/ o /q'/,
+entre la /q/ y la vocal puede entrar una consonante no oclusiva: sinqa [senqa]...
+
+(a veces pongo los grafemas (las letras) entre paréntesis angulares, pero no siempre:
+<grafema>, /fonema/, [fono/sonido]...
+y * = forma agramatical, imposible, o "histórca")
+
+(*hisp*) = aparece sobre todo en las ortografías hispanas, es decir donde habría más problemas
+
+
+CAMBIOS TIPOGRÁFICOS (apóstrofe)
+
+cambiar todos tipos de apóstrofes en apóstrofes normales (U+0027)
+ver: http://www.languagegeek.com/typography/apostrophes.html
+lo mejor sería si en la entrada se pudieran convertir todos en U+0027
+(lo usado en lexc y bidix) y en la salida para U+2019
+habría que ver si no son comillas simples
+en quechua se usa sólo en: p', t', ch', k', q' y tiene que seguir una V
+
+
+
+HISPANISMOS
+
+no estoy seguro de qué hacer con ellos (ver más abajo)
+pues esto es más bien como alguna info sobre el asunto...
+además muchas reglas para el quechua no se pueden aplicar a los hispanismos,
+entonces habría que tener alguna manera para distinguir entre ellos
+(sobre todo si tenemos en cuenta que en alguna ortografía quechua pueden
+aparecer letras y combinaciones que no es usan en quechua pero sí en español
+(en realidad es la ortografía española usada para el quechua) y además hay palabras
+españolas en las que aparecen sólo las letras compratidas con el quechua)
+
+hay tres tipos de hisp'anismos en quechua:
+
+1) préstamos antiguos, que se escriben siempre con la orto quechua
+(waka < vaca, uysha < ovexa [oveša] (> oveja), tupa- < topar(se)
+- estos no presenterán ningún problema
+
+2) palabras y frases enteras en español intercaladas en el texto quechua (code switching)
+- esto es más o menos frecuente, depende del tipo del texto... 
+- generalmente tiene ortografía española
+- por un lado se podría analizar el texto como si fuera castellano
+(apertium es-algo-morph) y pasarlo otra vez para generarlo en castellano,
+pero por otro lado al final pueden aparecer sufijos quechuas y hay que
+incorporarlo de alguna manera en la oración en quechua
+- las palabras aisladas y frases cortas suelen estar seguidas por la palabra
+nisqa "(el) llamado, dicho"
+
+3) hispanismos parcialmente incorporados al quechua, relativamente frecuentes
+(también depende del tipo de texto)
+- aquí la ortografía depende del autor... algunos prefieren escribirlo con la orto qu,
+otros con la ortografía castellana... y en muchos casos depende también de si lo consideran
+quechua (préstamo más o menos antiguo) o castellano
+caballo - kawallu, buynus diyas - buenos días, nashun - nashon - nasyon - nasiyun - nación...
+istudiyay - istudyay - estudyay - estudiay... vendey - bendey - windiy - bindiy - vindiy...
+Perú - Piruw... tía - tiya - tia (incluso tya)
+
+esto será probablemente lo más difícil.. poner lo más posible en el quechua y en el bidix
+y en cuanto al resto de las formas no reconocidas ver si no es castellano????
+
+otra cosa es que como los hispanismos son más o menos frecuentes, no se pueden aplicar fácilmente
+las reglas para corregir la ortografía de las palabras quechuas... 
+
+tal vez se pudieran buscar y excluir todas las palabras que tienen caracteres que no se usan en quechua:
+b, d, g, c, f, v, x, z, ó, é
+(+ qu+V, hu+V - y otros, pero estos sí pueden aparecer en una ortografía más hispanizada: quiru --> kiru)
+(si un texto en quechua está más hisp'anizado, como ricui = rikuy, quiro = kiru, no será posible convertirlo fácilmente, hay mucha ambigüedad)
+
+también se me ocurre que primero se podría analizar el texto y ver qué ortografía
+(y talvez dialecto) se usa y según ello aplicar diferentes reglas
+
+
+**************************************
+
+primero trataría <hu> --> <w>
+después, si se puede, <j> --> <k>|<q> (etc.), según si va con <e>, <o> o <i>, <u>
+
+
+
+VOCALES
+
+los convertiría después de cambiar lo que puede ser <q>, <qh> o <q'>
+porque pueden servir para distinguir entre /q/ <q> y /k/ <k>, etc. (si se puede)
+
+e --> i
+o --> u
+las vocales <e> y <o> deben ser <i> y <u> en todos los casos (excepto hispanismos)
+
+secuencias vocálicas (au, ai, ia, ua, pero no ui, iu):
+
+
+u --> w   / V __ C
+u --> w   / C __ V
+i --> y   / V __ C
+i --> y   / C __ V
+donde V no es  <i> o <u> (secuencia <ui> o <iu> - ver más abajo)
+(kausai --> kawsay)
+la secuencia <au> es bastante frecuente, <ai> menos (y otros mucho menos)
+
+
+u --> w   / V __ V
+i --> y   / V __ V
+donde V no es  <i> o <u> (secuencia <ui> o <iu> - ver más abajo)
+(pero /w/ escribirían más bien <hu> entre vocales)
+
+
+ia --> iya   / C __ C
+ua --> uwa   / C __ C
+ai --> ayi   / C __ C   (infrecuente)
+au --> awu   / C __ C   (infrecuente)
+donde la C antes de i/u o la C después de i/u no es comienzo/fin de palabra (sería como C __ V o V __ C)
+(ruay --> ruway, tiay --> tiyay) (pero: iahuar > yawar)
+
+ui, iu - puede ser wi, uy; yu, iw :-(
+pero seguramente:
+ui --> uy   / CC __
+iu --> iw   / CC __
+ui --> wi   / __ CC
+iu --> yu   / __ CC
+(CC en el medio de palabra = no incluye comienzo/fin de palabra)
+pero esto sería solamente en las ortografías hispanas donde habría más problemas
+
+
+CONSONANTES
+
+(*hisp*)
+hu --> w   / __V
+gu --> w   / __V
+gü --> w   / __V
+(huahua, guagua --> wawa)
+h en quechua sólo aparece al principio de palabra, en casos contados
+(uhu, waha-) entre vocales; pero excepto hu+V debería estar bien siempre...
+por otro lado, hay ortografías donde <h> debe ser <q> en algunos casos :-(
+además marca la aspiración en ph, th, chh, kh y qh
+
+
+j --> h   / # __ V
+(jatun --> hatun) (frecuente en Bolivia)
+
+(*hisp*)
+j --> h   / p|t|k|q|ch __ V
+(por si escribieran las consonantes aspiradas así: pjaway --> phaway)
+
+jj --> q   / __ C
+(así lo escriben a veces en Bolivia; michijj --> michiq...)
+
+
+llq --> lq
+siempre... pero tal vez lo cambie para llq
+(pero también tendría que cambiar las raíces -l # en -ll #: ch'unchul > ch'unchull?)
+(el cambio /llq/ > /lq/ parece que no está concluido en CuQ,
+pero por otro lado no sé como está en cuanto al cambio /ll/ > /l/   / __ # en CuQ)
+
+
+mp --> np (muy frecuente)
+y en general:
+m --> n   / __ C
+(kimsa --> kinsa, llamk'ay --> llank'ay)
+(pampa --> panpa, tampupi --> tanpupi)
+- excepto la secuencia mpu+C (C sólo consonante, no fin de palabra = __ CV, __ CCV)
+donde -mpu es un sufijo particular (< -mu + -pu)
+(kutinpunki --> kutimpunki)
+sería siempre por lo menos la tercera sílaba ( con excepción de la raíz hampu- < *ha- + -mu + -pu)
+creo que es casi seguro que en tercera, cuarta... sílaba solo podría ser -mpu-..
+o lo podría cambiar para que se pudiera convertir en la entrada cualquier <mp> en <np>
+y en la generación en quechua se generara siempre -mpu para este sufijo
+(esta es una de las reglas que interferiría con los hispanismos donde /n/ + /p/ se escribe siempre <mp>)
+
+
+sh --> s   / __ C
+(ashwan --> aswan, pushka --> puska)
+
+
+ph --> p   / __ C
+f  --> p   / __ C
+(raphra, rafra --> rapra)
+
+f --> ph   / __ V
+no muy frecuente (wifala --> wiphala, faway --> phaway)
+
+
+
+CON UNA LISTA DE EXCEPCIONES (o de CASOS PARA APLICAR)
+
+ñi --> ni
+excepto contadas excepciones en las raíces (1a o 2a sílaba)
+(kañiwa.. pero también iñiñi- (etimológicamente i + ñi + ñi))
+
+awq --> ayq (w --> y   / __ C)
+sólo algunos casos: wawqi --> wayqi, p'unchaw --> p'unchay (pero no: awqa...)
+creo que esto lo pondría más bien en lexc, serán unos casos contados...
+
+
+
+LO QUE NO SERÁ NADA FÁCIL
+= no se puede predecir o depende del tipo de ortografía usada
+(+ talvez npu -- mpu, ver arriba)
+
+
+ch --> s   / __ C
+- pero a veces chk --> skh - poner una lista de excepciones?
+- sufijo -chka- --> -sha- en la ortografía unificada
+(exc. achka --> askha, kachkan --> kashan)
+- también otras ortografías del sufijo -sha: -sya, -sia... (pero aparte de esto sí existe la secuencia <sy>)
+
+j --> q   / __ C
+j --> k   / __ C
+(no se puede predecir, aunque en las ortografías de 5 vocales:
+ej --> iq   / __ C
+oj --> uq   / __ C
+ij --> ik   / __ C
+uj --> uk   / __ C
+pero aunque escribieran 5 vocales, lo pueden escribir de cualquier manera
+y si antecede <q>, <qh>  o <q'>, será ambiguo también)
+
+jj --> qh   / __ V
+jj --> qy   / __ V
+j --> kh    / __ V
+(probablemente.. no sé si lo escribirían así)
+- de todas maneras sería ambiguo... talvez una lista (wajay --> waqyay....)
+
+h --> qy   / V __ V
+h --> qh   / V __ V
+excepto algunos casos (uhu, muhu...) - una lista?
+
+(t --> s, pero parece que no siempre.. pues mejor nada..)
+tv. una lista de lo más frecuente: utqa- --> usqha- ...
+
+ui, iu - puede ser wi, uy; yu, iw
+<ui> probablemente --> <uy>, <wi> escribirían más bien <hui>, <güi>
+pero esto sería solamente en las ortografías hispanas donde habría más problemas
+
+en las ortografías hispanas aparecen también <tt>, <pp>, etc., en vez de <t'>, <p'>...
+pero a veces usan <k> para <q>, a veces para <k'> y <q'>...
+
