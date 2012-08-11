@@ -2660,14 +2660,15 @@ sapa% kuti:sapa% kuti ADV-Temp ;          ! "siempre"
 LEXICON Adverbios
 !! los que toman sólo los clíticos
 
+arí:arí ADV-Invar ; ! "sí"
+ama:ama ADV ;       ! "no" (prohibitivo)
+mana:mana ADV ; ! "no"
+mana%<adv%>%<dfnt%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
+
 alli% allillanta:alli% allillanta ADV ; ! "con atención"
 allillamanta:allillamanta ADV ; ! "lentamente"
-arí:arí ADV-Invar ; ! "sí"
 aswanta:aswanta ADV ; ! "más"
 kuska:kuska ADV-lla ; ! "junto"
-mana:mana ADV ; ! "no"
-ama:ama ADV ;       ! "no" (prohibitivo)
-manapuni%<adv%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
 ña:ña ADV ; ! "ya"
 tukuy% hinantinpi:tukuy% hinantinpi ADV ; ! "en todas partes"
 usqhaylla:usqhaylla ADV ; ! "rápidamente"
@@ -2697,6 +2698,7 @@ hinaspa:hinaspa CONJ-Adv-Final ;    ! "entonces"
 kanpis:kanpis CONJ-Adv ;            ! "aunque"
 icha:icha CONJ-Coord ;              ! "o"
 icha%<cnjcoo%>%<topi%>:ichaqa # ;          ! "pero"
+icha%<cnjcoo%>%<contr%>:ichataq # ;     ! "pero"
 ima:ima CONJ-Coord-Final ;          ! "y"
 i%<cnjcoo%>:i # ;                   ! "y"
 y%<cnjcoo%>:y # ;                   ! "y"
