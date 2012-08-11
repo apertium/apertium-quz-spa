@@ -22,6 +22,11 @@ LIST Anim = "irqi" "wawa" "wamra" "warma" "willka"
         (n m) (n f) (np ant) ;
 ## animados
 
+LIST Clit-NoImp = dfnt contr topi rnd af rep cnj dub ;
+# clíticos no usados con el imperativo - pero ???  cnti dcnt adt (raq ña pas), contr (taq) ?? dfnt (puni)?
+
+LIST Clit = contr topi rnd qst af rep cnj dub enf ; # clíticos oracionales (sin los independientes)
+
 SECTION
 
 SELECT A IF (-1 A) (1C N);
@@ -39,6 +44,18 @@ REMOVE ("riy" refl) IF  (0 ("rikuy")) ;
 
 SELECT Inf IF (0 N-Acc LINK *0 V) ;
 # ( N | INF ) Acc + vblex tv --> INF
+
+
+# IMPERATIVO | INF + NOM
+REMOVE (imp) IF (0 Clit-NoImp) ;
+REMOVE (imp) IF (1* ("<?>")) ;
+REMOVE (imp) IF (0* ("mana") LINK 0 Clit) ; # + puni dfnt ? (excluir neg. de palabra, subord)
+SELECT (imp) IF (-1* ("ama")) (0 (qst)) ; # BARRIER (imp) ???
+SELECT (imp) IF (0 (enf)) ;
+SELECT (imp) IF (1 ("<!>")) ;
+# select (imp) si es la única palabra en la oración
+# select imp if not 0* (mi/si/chá/chu..?) y hay por lo menos n palabras ???
+
 
 ## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
 
@@ -61,6 +78,5 @@ SELECT Inf IF (0 N-Acc LINK *0 V) ;
 # PERO vm sin caus !!! - desp. ambivalente !!! (-ta)
 # prn - tiene referente anafórico... pero..???
 
-# remove imp si sigue clít. exc. -yá
 
           ## AND = LINK 0
