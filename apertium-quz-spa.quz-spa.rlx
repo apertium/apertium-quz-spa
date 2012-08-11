@@ -41,7 +41,26 @@ SELECT Inf IF (0 N-Acc LINK *0 V) ;
 # ( N | INF ) Acc + vblex tv --> INF
 
 ## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
-## algo para quitar gen.nom - no necesario (añadido un flag diacritic)
 
+# chaymi "por eso":
+# - al prinicpio, desp. de comilla o espacio
+# "eso, ese" = sujeto, objeto, pred. nominal
+# ??? X qhawashan = "ese"/"por" eso mira :-(
+
+# chay, kay, haqay - prn.dem/adv.subst.dem/(det.dem)
+# nom = prn.dem o cnjadv (chaymi) -> remove adv
+# caso no loc (man, manta, kama, pi, nta, ta?) -> remove adv
+# pero siempre puede ser prn/adv :-(
+# man, manta, kama, nta + vm -> adv (pero sacar de allí.. = de eso?)
+# pi - + kay, tiyay, puñuy.... (mucho :( )
+# manta - + vm --> adv
+# kama - + vm --> adv
+# nta - + vm = adv
+# man - + vm --> adv
+# ta - + vm --> adv, pero tb. uso adverbial
+# PERO vm sin caus !!! - desp. ambivalente !!! (-ta)
+# prn - tiene referente anafórico... pero..???
+
+# remove imp si sigue clít. exc. -yá
 
           ## AND = LINK 0

@@ -597,6 +597,7 @@
     
     <section id="INTERJECIONES" type="standard">
     
+    <e><p><l>ay<s n="ij"/></l><r>ay<s n="ij"/></r></p></e>
     <e><p><l>añay<s n="ij"/></l><r>gracias<s n="ij"/></r></p></e>
     <e><p><l>yaw<s n="ij"/></l><r>oye<s n="ij"/></r></p></e>
     <e><p><l>carajo<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
@@ -1377,6 +1378,7 @@
     <e r="LR"><p><l>qhiñipa<s n="n"/></l><r>ceja<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>qhipa<b/>pacha<s n="n"/></l><r>futuro<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>qhiswa<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>qhiswa<b/>simi<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhiswa<s n="n"/></l><r>valle<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhuña<s n="n"/></l><r>moco<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>qhupa<s n="n"/></l><r>escarcha<s n="n"/><s n="f"/></r></p></e>
