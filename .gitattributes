@@ -15,6 +15,7 @@ dev/apertium-quz-spa.quz.lexc-OLD -text
 dev/cuento.quz-var.txt -text
 dev/cuento.quz.txt -text
 dev/inconsistency.sh -text
+dev/np-top.xml -text
 dev/ortografía.txt -text
 dev/udhr.quz-original.txt -text
 dev/udhr.quz.txt -text
