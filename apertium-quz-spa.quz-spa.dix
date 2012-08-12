@@ -5,6 +5,7 @@
     <sdef n="np"       c="Nombre propio"/>
     <sdef n="adj"      c="Adjetivo"/>
     <sdef n="ant"      c="Antróponimo"/>
+    <sdef n="cog"      c="Apellido"/>
     <sdef n="top"      c="Topónimo"/>
     <sdef n="al"       c="NP otro"/>
     <sdef n="adv"      c="Adverbio / (Relativo) adverbial"/>
@@ -653,7 +654,7 @@
     
     </section>  
     
-    <section id="ADJETIVOS__DETERMINANTES" type="standard">
+    <section id="ADJETIVOS_y_DETERMINANTES" type="standard">
     
     <e><p><l>as<s n="adj"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>askha<s n="adj"/></l><r>mucho<s n="det"/><s n="qnt"/></r></p></e>
@@ -667,6 +668,7 @@
     <e><p><l>ch'unpi<s n="adj"/></l><r>marrón<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>ch'uya<s n="adj"/></l><r>claro<s n="adj"/></r></p></e>
     <e><p><l>ch'uya<s n="adj"/></l><r>limpio<s n="adj"/></r></p></e>
+    <e><p><l>chanka<s n="adj"/></l><r>chanca<s n="adj"/></r></p></e>
     <e><p><l>chawpi<s n="adj"/></l><r>medio<s n="adj"/></r></p></e>
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
@@ -696,6 +698,7 @@
     <e r="RL"><p><l>upa<s n="adj"/></l><r>sordo<s n="adj"/></r></p></e>
     <e><p><l>wakcha<s n="adj"/></l><r>pobre<s n="adj"/><s n="mf"/></r></p></e>
     <e r="RL"><p><l>wakcha<s n="n"/></l><r>huérfano<s n="adj"/></r></p></e>
+    <e><p><l>wanka<s n="adj"/></l><r>huanca<s n="adj"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
     <e><p><l>yuraq<s n="adj"/></l><r>blanco<s n="adj"/></r></p></e>
 
@@ -890,6 +893,7 @@
     <e><p><l>chani<s n="n"/></l><r>valor<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chanin<s n="n"/></l><r>precio<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>chanin<s n="n"/></l><r>valor<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>chanka<s n="n"/></l><r>chanca<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>chanka<s n="n"/></l><r>muslo<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>chanka<s n="n"/></l><r>pierna<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>chapi<s n="n"/></l><r>estaño<s n="n"/><s n="m"/></r></p></e>
@@ -1774,6 +1778,7 @@
     <e><p><l>wank'a<s n="n"/></l><r>roca<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wank'alli<s n="n"/></l><r>menhir<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>wank'ar<s n="n"/></l><r>bombo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>wanka<s n="n"/></l><r>huanca<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>wanka<s n="n"/></l><r>canto<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>wanka<s n="n"/></l><r>estatua<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wankar<s n="n"/></l><r>bombo<s n="n"/><s n="m"/></r></p></e>
@@ -1962,7 +1967,9 @@
     <e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>qilqaq<s n="n"/></l><r>escritor<s n="n"/></r></p></e>
     <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rimaq<s n="n"/></l><r>hablante<s n="n"/><s n="mf"/></r></p></e>
     <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
     <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
@@ -2075,16 +2082,59 @@
     <e><p><l>Tomasa<s n="np"/><s n="ant"/></l><r>Tomasa<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Tumasa<s n="np"/><s n="ant"/></l><r>Tomasa<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Isicha<s n="np"/><s n="ant"/></l><r>Isicha<s n="np"/><s n="ant"/></r></p></e>
-    <e r="RL"><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Madre<b/>Tierra<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
-    <e><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>Pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>Pacha<b/>Mama<s n="np"/><s n="ant"/><s n="f"/></l><r>Madre<b/>Tierra<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Pacha<b/>Mama<s n="np"/><s n="ant"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>pachamama<s n="np"/><s n="ant"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>Pachamama<s n="np"/><s n="ant"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
     
+    <e><p><l>Alan<s n="np"/><s n="ant"/><s n="m"/></l><r>Alan<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Alberto<s n="np"/><s n="ant"/><s n="m"/></l><r>Alberto<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Alejandro<s n="np"/><s n="ant"/><s n="m"/></l><r>Alejandro<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Alejandro<b/>Toledo<s n="np"/><s n="ant"/><s n="m"/></l><r>Alejandro<b/>Toledo<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Alfredo<s n="np"/><s n="ant"/><s n="m"/></l><r>Alfredo<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Alvarado<s n="np"/><s n="ant"/><s n="mf"/></l><r>Alvarado<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Anastasia<s n="np"/><s n="ant"/><s n="f"/></l><r>Anastasia<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Cerrón<s n="np"/><s n="ant"/><s n="mf"/></l><r>Cerrón<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Cerrón-Palomino<s n="np"/><s n="ant"/><s n="mf"/></l><r>Cerrón-Palomino<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Diego<s n="np"/><s n="ant"/><s n="m"/></l><r>Diego<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Domingo<b/>de<b/>Santo<b/>Tomás<s n="np"/><s n="ant"/><s n="m"/></l><r>Domingo<b/>de<b/>Santo<b/>Tomás<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Evo<s n="np"/><s n="ant"/><s n="m"/></l><r>Evo<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Fray<b/>Domingo<b/>de<b/>Santo<b/>Tomás<s n="np"/><s n="ant"/><s n="m"/></l><r>Fray<b/>Domingo<b/>de<b/>Santo<b/>Tomás<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Fujimori<s n="np"/><s n="ant"/><s n="mf"/></l><r>Fujimori<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>García<s n="np"/><s n="ant"/><s n="mf"/></l><r>García<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Gary<s n="np"/><s n="ant"/><s n="m"/></l><r>Gary<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>González<s n="np"/><s n="ant"/><s n="mf"/></l><r>González<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Holguín<s n="np"/><s n="ant"/><s n="mf"/></l><r>Holguín<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Humala<s n="np"/><s n="ant"/><s n="mf"/></l><r>Humala<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Juan<s n="np"/><s n="ant"/><s n="m"/></l><r>Juan<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Manrique<s n="np"/><s n="ant"/><s n="m"/></l><r>Manrique<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Manrique<s n="np"/><s n="ant"/><s n="mf"/></l><r>Manrique<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Miguel<s n="np"/><s n="ant"/><s n="m"/></l><r>Miguel<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Morales<s n="np"/><s n="ant"/><s n="mf"/></l><r>Morales<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Ollanta<s n="np"/><s n="ant"/><s n="m"/></l><r>Ollanta<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Parker<s n="np"/><s n="ant"/><s n="mf"/></l><r>Parker<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Pizarro<s n="np"/><s n="ant"/><s n="mf"/></l><r>Pizarro<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Rosablanca<s n="np"/><s n="ant"/><s n="f"/></l><r>Rosa<b/>Blanca<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Santiago<s n="np"/><s n="ant"/><s n="m"/></l><r>Santiago<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Susana<s n="np"/><s n="ant"/><s n="f"/></l><r>Susana<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Torero<s n="np"/><s n="ant"/><s n="mf"/></l><r>Torero<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Velasco<s n="np"/><s n="ant"/><s n="mf"/></l><r>Velasco<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Victor<s n="np"/><s n="ant"/><s n="m"/></l><r>Victor<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     
-    <e><p><l>Huñunakusqa<b/>Nacionkuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
-    <e><p><l>Huñunakusqa<b/>Llaqtakuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
-    <e><p><l>Hukllasqa<b/>Nacionkuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
-    <e><p><l>Hukllasqa<b/>Llaqtakuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
+    </section>
+    
+    <section id="NP__OTROS" type="standard">
+    
+    <e><p><l>Huñunakusqa<b/>Nacionkuna<s n="np"/><s n="al"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>Huñunakusqa<b/>Llaqtakuna<s n="np"/><s n="al"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>Hukllasqa<b/>Nacionkuna<s n="np"/><s n="al"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>Hukllasqa<b/>Llaqtakuna<s n="np"/><s n="al"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
+    <e><p><l>SIL<s n="np"/><s n="al"/></l><r>SIL<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>SIL<b/>International<s n="np"/><s n="al"/></l><r>SIL<b/>International<s n="np"/><s n="al"/><s n="m"/></r></p></e>
+    <e><p><l>Qhiswa<b/>Simi<b/>Hamut'ana<b/>Kuraq<b/>Suntur<s n="np"/><s n="al"/></l><r>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/></l><r>Academia<b/>Mayor<b/>de<b/>la<b/>Lengua<b/>Quechua<s n="np"/><s n="al"/><s n="f"/></r></p></e>
+    <e><p><l>QSHKS<s n="np"/><s n="al"/></l><r>AMLQ<s n="np"/><s n="al"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>AMLQ<s n="np"/><s n="al"/></l><r>AMLQ<s n="np"/><s n="al"/><s n="f"/></r></p></e>
     
     </section>
     
@@ -2162,7 +2212,9 @@
     <e r="RL"><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Cusco<s n="np"/><s n="top"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Qusqu<s n="np"/><s n="top"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Qosqo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Lima<s n="np"/><s n="top"/></l><r>Lima<s n="np"/><s n="top"/><s n="f"/></r></p></e>
     <e><p><l>Tambobamba<s n="np"/><s n="top"/></l><r>Tambobamba<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Toledo<s n="np"/><s n="top"/></l><r>Toledo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
     
     </section>
     
@@ -2186,6 +2238,8 @@
     <e><p><l>mesa<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>nación<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>español<s n="n"/></l><r>español<s n="n"/></r></p></e>
+    <e><p><l>español<s n="n"/></l><r>español<s n="adj"/></r></p></e>
     
     </section>
     

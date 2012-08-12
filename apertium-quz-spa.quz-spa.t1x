@@ -97,7 +97,9 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
       <attr-item tags="np.ant"/>
-      <attr-item tags="np.loc"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="np.top"/>
+      <attr-item tags="np.al"/>
     </def-attr>
     
     <def-attr n="a_adj">

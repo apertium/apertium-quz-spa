@@ -38,7 +38,7 @@ Multichar_Symbols
 %<np%>        ! nombre propio
 %<ant%>       ! antropónimo (np)
 %<top%>       ! topónimo
-%<al%>          ! no otro (altre)
+%<al%>        ! no otro (altre)
 %<prn%>       ! pronombre
 %<adj%>       ! adjetivo
 %<preadj%>    ! preadjetivo
@@ -78,6 +78,7 @@ Multichar_Symbols
 ! género, número
 %<m%>         ! masculino
 %<f%>         ! femenino
+%<mf%>          ! masculino-femenino (apellidos, hispanismos)
 %<GD%>        ! género no definido
 
 %<sg%>        ! singular - tal vez no usar, sólo <ND>
@@ -257,6 +258,7 @@ Nombres ;
 NombresGenero ;
 NombresDerivados ;
 NombresPropios ;
+NombresPropOtros ;
 Topónimos ;
 NombresHisp ;
 Adjetivos ;
@@ -1222,8 +1224,14 @@ LEXICON NP-ANT-M
 LEXICON NP-ANT-F
 %<np%>%<ant%>%<f%>: N-DER ;
 
+LEXICON NP-ANT-MF
+%<np%>%<ant%>%<mf%>: N-DER ;
+
 LEXICON NP-TOP
 %<np%>%<top%>: N-DER ;
+
+LEXICON NP-AL
+%<np%>%<al%>: N-DER ;
 
 LEXICON ADJ
 %<adj%>: ADJ-DER ;
@@ -2322,6 +2330,8 @@ LEXICON NombresDerivados
 kawsay:kawsay N ;   ! vida
 pukllay:pukllay N ; ! "juego"
 qhawana:qhawana N ; ! "ventana"
+qilqaq:qilqaq N ;   ! "escritor"
+rimaq:rimaq N ;     ! "hablante"
 tapusqa:tapusqa N ; ! "pregunta"
 tiyana:tiyana N ; ! "silla"
 tukukuy:tukukuy N ;     ! fin
@@ -2331,6 +2341,7 @@ yuyay:yuyay N ;     ! opinión
 
 
 LEXICON NombresPropios
+! apellidos - MF (cog en spa.dix)
 
 José:José NP-ANT-M ;
 Jaime:Jaime NP-ANT-M ;
@@ -2346,10 +2357,56 @@ Tumasa:Tumasa NP-ANT-F ;            ! "Tomasa"
 Tomasa:Tomasa NP-ANT-F ;            ! "Tomasa"
 Isicha:Isicha NP-ANT-M ;            ! "Isac", "Isidor" ???
 
-Huñunakusqa% Nacionkuna%<np%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
-Huñunakusqa% Llaqtakuna%<np%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
-Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;       ! Naciones Unidas
-Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Naciones Unidas
+Alan:Alan NP-ANT-M ;
+Alberto:Alberto NP-ANT-M ;
+Alejandro% Toledo:Alejandro% Toledo NP-ANT-M ;
+Alejandro:Alejandro NP-ANT-M ;
+Alfredo:Alfredo NP-ANT-M ;
+Alvarado:Alvarado NP-ANT-MF ;
+Anastasia:Anastasia NP-ANT-F ;
+Cerrón-Palomino:Cerrón-Palomino NP-ANT-MF ;
+Cerrón:Cerrón NP-ANT-MF ;
+Diego:Diego NP-ANT-M ;
+Domingo% de% Santo% Tomás:Domingo% de% Santo% Tomás NP-ANT-M ;
+Evo:Evo NP-ANT-M ;
+Fray% Domingo% de% Santo% Tomás:Fray% Domingo% de% Santo% Tomás NP-ANT-M ;
+Fujimori:Fujimori NP-ANT-MF ;
+García:García NP-ANT-MF ;
+Gary:Gary NP-ANT-M ;
+González:González NP-ANT-MF ;
+Holguín:Holguín NP-ANT-MF ;
+Humala:Humala NP-ANT-MF ;
+Juan:Juan NP-ANT-M ;
+Manrique:Manrique NP-ANT-M ;
+Manrique:Manrique NP-ANT-MF ;
+Miguel:Miguel NP-ANT-M ;
+Morales:Morales NP-ANT-MF ;
+Ollanta:Ollanta NP-ANT-M ;
+Parker:Parker NP-ANT-MF ;
+Pizarro:Pizarro NP-ANT-MF ;
+Rosablanca:Rosablanca NP-ANT-F ;        ! "Rosa Blanca"
+Santiago:Santiago NP-ANT-M ;
+Susana:Susana NP-ANT-F ;
+Torero:Torero NP-ANT-MF ;
+Velasco:Velasco NP-ANT-MF ;
+Victor:Victor NP-ANT-M ;
+
+
+LEXICON NombresPropOtros
+Huñunakusqa% Nacionkuna%<np%>%<al%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
+Huñunakusqa% Llaqtakuna%<np%>%<al%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
+Hukllasqa% Nacionkuna%<np%>%<al%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;       ! Naciones Unidas
+Hukllasqa% Llaqtakuna%<np%>%<al%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Naciones Unidas
+SIL:SIL NP-AL ;
+SIL:SIL%- NP-AL ;   ! Dir/LR
+SIL% International:SIL% International NP-AL ;
+Qhiswa% Simi% Hamut%'ana% Kuraq% Suntur:Qhiswa% Simi% Hamut%'ana% Kuraq% Suntur NP-AL ;     ! AMLQ
+Qhiswa% Simi% Hamut%'ana% Kuraq% Suntur:Qhiswa% Simi% Hamut%'ana% Kurak% Suntur NP-AL ;     ! Dir/LR - AMLQ
+Academia% Mayor% de% la% Lengua% Quechua:Academia% Mayor% de% la% Lengua% Quechua NP-AL ;   ! AMLQ
+QSHKS:QSHKS NP-AL ;     ! "AMLQ"
+QSHKS:QSHKS%- NP-AL ;   ! Dir/LR - "AMLQ"
+AMLQ:AMLQ NP-AL ;       ! "AMLQ"
+AMLQ:AMLQ%- NP-AL ;       ! Dir/LR - "AMLQ"
 
 
 LEXICON Topónimos
@@ -2419,6 +2476,10 @@ EE.% UU.:EE.% UU. NP-TOP ;  ! "EE. UU."
 EE.% UU.:EE.UU. NP-TOP ;    ! Dir/LR - "EE. UU."
 EE.% UU.:USA NP-TOP ;       ! Dir/LR - "EE. UU."
 EE.% UU.:HAS NP-TOP ;       ! Dir/LR - "EE. UU."
+EE.% UU.:EE.% UU.%- NP-TOP ;  ! Dir/LR - "EE. UU."
+EE.% UU.:EE.UU.%- NP-TOP ;    ! Dir/LR - "EE. UU."
+EE.% UU.:USA%- NP-TOP ;       ! Dir/LR - "EE. UU."
+EE.% UU.:HAS%- NP-TOP ;       ! Dir/LR - "EE. UU."
 Estados% Unidos:Estados% Unidos NP-TOP ;        ! "Estados Unidos"
 Estados% Unidos% de% América:Estados% Unidos% de% América NP-TOP ;          ! "Estados Unidos de América"
 Hukllachasqa% América% Suyukuna:Hukllachasqa% América% Suyukuna NP-TOP ;    ! "Estados Unidos de América"
@@ -2486,6 +2547,9 @@ Qusqu:Qosqo NP-TOP ;        ! Dir/LR - "Cuzco"
 Cuzco:Cuzco NP-TOP ;        ! Dir/LR - "Cuzco"
 Cuzco:Cusco NP-TOP ;        ! Dir/LR - "Cuzco"
 Tambobamba:Tambobamba NP-TOP ;
+Lima:Lima NP-TOP ;
+Lima:Rimaq NP-TOP ;     ! Dir/LR - "Lima"
+Toledo:Toledo NP-TOP ;
 
 LEXICON NombresHisp
 ! poner aparte como hispanismos - pueden tomar plural -s
@@ -2516,7 +2580,12 @@ los%<det%>:los # ;
 las%<det%>:las # ;
 
 nacional:nacional ADJ ;
-nashunal:nashunal ADJ ;
+nacional:nashunal ADJ ;     ! Dir/LR
+
+español:español N ;
+español:ispañul N ;     ! Dir/LR
+español:español ADJ ;
+español:ispañul ADJ ;     ! Dir/LR
 
 
 LEXICON AdjetivosGenero
@@ -2538,6 +2607,7 @@ LEXICON Adjetivos
 allin:allin ADJ ;   ! "bueno"
 ch%'unpi:ch%'unpi ADJ ;     ! "castaño, marrón, pardo"
 ch%'uya:ch%'uya ADJ ;   ! "claro, limpio"
+chanka:chanka ADJ ;     ! "chanca" (de Ayacucho)
 chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
@@ -2555,6 +2625,7 @@ q%'uñi:q%'uñi ADJ ; ! "cálido"
 sumaq:sumaq ADJ ; ! "agradable"
 tukuy:tukuy ADJ ;      ! todo, entero         - cambiar lex, categoría
 wakcha:wakcha ADJ ; ! pobre, huérfano
+wanka:wanka ADJ ;       ! "huanca" (de Huancayo)
 yana:yana ADJ ; ! "negro"
 yuraq:yuraq ADJ ;       ! blanco
 
