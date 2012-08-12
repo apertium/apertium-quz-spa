@@ -2337,10 +2337,6 @@ Jaime:Jaime NP-ANT-M ;
 María:María NP-ANT-F ;
 Daniele:Daniele NP-ANT-F ;
 Catalina:Catalina NP-ANT-F ;
-Huñunakusqa% Nacionkuna%<np%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
-Huñunakusqa% Llaqtakuna%<np%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
-Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;       ! Naciones Unidas
-Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Naciones Unidas
 Pacha% Mama:Pacha% Mama NP-ANT-F ;  ! "Madre Tierra"
 pachamama:pachamama NP-ANT-F ;      ! "Pachamama"
 Pachamama:Pachamama NP-ANT-F ;      ! "Pachamama"
@@ -2350,10 +2346,145 @@ Tumasa:Tumasa NP-ANT-F ;            ! "Tomasa"
 Tomasa:Tomasa NP-ANT-F ;            ! "Tomasa"
 Isicha:Isicha NP-ANT-M ;            ! "Isac", "Isidor" ???
 
+Huñunakusqa% Nacionkuna%<np%>%<pl%>:Huñunakusqa% Nacionkuna N-FLEX-Incl ;   ! Naciones Unidas
+Huñunakusqa% Llaqtakuna%<np%>%<pl%>:Huñunakusqa% Llaqtakuna N-FLEX-Incl ;   ! Naciones Unidas
+Hukllasqa% Nacionkuna%<np%>%<pl%>:Hukllasqa% Nacionkuna N-FLEX-Incl ;       ! Naciones Unidas
+Hukllasqa% Llaqtakuna%<np%>%<pl%>:Hukllasqa% Llaqtakuna N-FLEX-Incl ;       ! Naciones Unidas
+
 
 LEXICON Topónimos
-Tawantinsuyu:Tawantinsuyu NP-TOP ; ! "Tahuantinsuyo (el imperio inca)"
-Perú:Perú NP-TOP ;
+Tawantinsuyu:Tawantinsuyu NP-TOP ;      ! "Tahuantinsuyo (el imperio inca)"
+Tawantinsuyu:Tahuantinsuyo NP-TOP ;     ! Dir/LR - "Tahuantinsuyo (el imperio inca)"
+Tawantinsuyu:Tawantin% Suyu NP-TOP ;    ! Dir/LR - "Tahuantinsuyo (el imperio inca)"
+
+Abya% Yala:Abya% Yala NP-TOP ;      ! "Abya Yala"
+Abya% Yala:Awya% Yala NP-TOP ;      ! Dir/LR - "Abya Yala"
+Abya% Yala:Awyala NP-TOP ;          ! Dir/LR - "Abya Yala"
+América:América NP-TOP ;            ! "América"
+América:Amerika NP-TOP ;            ! Dir/LR - "América"
+América:Amirika NP-TOP ;            ! Dir/LR - "América"
+
+! AMÉRICA DEL SUR
+Sudamérica:Sudamérica NP-TOP ;          ! "Sudamérica"
+Suramérica:Suramérica NP-TOP ;          ! "Suramérica"
+América% del% Sur:América% del% Sur NP-TOP ;    ! "América del Sur"
+Urin% América:Urin% América NP-TOP ;            ! "América del Sur"
+Urin% América:Urin% Amirika NP-TOP ;            ! Dir/LR - "América del Sur"
+Urin% América:Urin% Amerika NP-TOP ;            ! Dir/LR - "América del Sur"
+Urin% Abya% Yala:Urin% Abya% Yala NP-TOP ;      ! "América del Sur"
+Urin% Abya% Yala:Urin% Awya% Yala NP-TOP ;      ! Dir/LR - "América del Sur"
+Urin% Abya% Yala:Urin% Awyala NP-TOP ;          ! Dir/LR - "América del Sur"
+Perú:Perú NP-TOP ;          ! "Perú"
+Perú:Piruw NP-TOP ;         ! Dir/LR - "Perú"
+Bolivia:Bolivia NP-TOP ;    ! "Bolivia"
+Bolivia:Buliwya NP-TOP ;    ! Dir/LR - "Bolivia"
+Bolivia:Wuliwya NP-TOP ;    ! Dir/LR - "Bolivia"
+Bolivia:Wuliwiya NP-TOP ;   ! Dir/LR - "Bolivia"
+Bolivia:Buliwiya NP-TOP ;   ! Dir/LR - "Bolivia"
+Argentina:Argentina NP-TOP ;    ! "Argentina"
+Argentina:Arhintina NP-TOP ;    ! Dir/LR - "Argentina"
+Ecuador:Ecuador NP-TOP ;        ! "Ecuador"
+Ecuador:Ikwadur NP-TOP ;        ! Dir/LR - "Ecuador"
+Chile:Chile NP-TOP ;            ! "Chile"
+Chile:Chili NP-TOP ;            ! Dir/LR - "Chile"
+Colombia:Colombia NP-TOP ;      ! "Colombia"
+Colombia:Kulumbya NP-TOP ;      ! Dir/LR - "Colombia"
+Colombia:Kulumbiya NP-TOP ;     ! Dir/LR - "Colombia"
+Brasil:Brasil NP-TOP ;          ! "Brasil"
+Paraguay:Paraguay NP-TOP ;      ! "Paraguay"
+Paraguay:Paraway NP-TOP ;       ! Dir/LR - "Paraguay"
+Venezuela:Venezuela NP-TOP ;    ! "Venezuela"
+Venezuela:Winisuyla NP-TOP ;    ! Dir/LR - "Venezuela"
+Surinam:Surinam NP-TOP ;        ! "Surinam"
+Uruguay:Uruguay NP-TOP ;        ! "Uruguay"
+Uruguay:Uruwayi NP-TOP ;        ! Dir/LR - "Uruguay"
+Uruguay:Uruway NP-TOP ;         ! Dir/LR - "Uruguay"
+
+! AMÉRICA DEL NORTE
+Chinchay% Abya% Yala:Chinchay% Abya% Yala NP-TOP ;      ! "América del Norte"
+Chinchay% Abya% Yala:Chinchay% Awya% Yala NP-TOP ;      ! Dir/LR - "América del Norte"
+Chinchay% Abya% Yala:Chinchay% Awyala NP-TOP ;          ! Dir/LR - "América del Norte"
+Chinchay% América:Chinchay% América NP-TOP ;        ! "América del Norte"
+Chinchay% América:Chinchay% Amirika NP-TOP ;        ! Dir/LR - "América del Norte"
+Chinchay% América:Chinchay% Amerika NP-TOP ;        ! Dir/LR - "América del Norte"
+América% del% Norte:América% del% Norte NP-TOP ;    ! "América del Norte"
+Norteamérica:Norteamérica NP-TOP ;                  ! "Norteamérica"
+México:México NP-TOP ;      ! "México"
+México:Mihiku NP-TOP ;      ! Dir/LR - "México"
+México:Mishiku NP-TOP ;     ! Dir/LR - "México"
+México:Méjico NP-TOP ;      ! Dir/LR - "Méjico"
+Canadá:Canadá NP-TOP ;      ! Dir/LR - "Canadá"
+Canadá:Kanada NP-TOP ;      ! Dir/LR - "Canadá"
+EE.% UU.:EE.% UU. NP-TOP ;  ! "EE. UU."
+EE.% UU.:EE.UU. NP-TOP ;    ! Dir/LR - "EE. UU."
+EE.% UU.:USA NP-TOP ;       ! Dir/LR - "EE. UU."
+EE.% UU.:HAS NP-TOP ;       ! Dir/LR - "EE. UU."
+Estados% Unidos:Estados% Unidos NP-TOP ;        ! "Estados Unidos"
+Estados% Unidos% de% América:Estados% Unidos% de% América NP-TOP ;          ! "Estados Unidos de América"
+Hukllachasqa% América% Suyukuna:Hukllachasqa% América% Suyukuna NP-TOP ;    ! "Estados Unidos de América"
+Hukllachasqa% América% Suyukuna:Hukllachasqa% Amirika% Suyukuna NP-TOP ;    ! Dir/LR - "Estados Unidos de América"
+
+! AMÉRICA CENTRAL
+Chawpi% Abya% Yala:Chawpi% Abya% Yala NP-TOP ;      ! "América Central"
+Chawpi% Abya% Yala:Chawpi% Awya% Yala NP-TOP ;      ! Dir/LR - "América Central"
+Chawpi% Abya% Yala:Chawpi% Awyala NP-TOP ;          ! Dir/LR - "América Central"
+Chawpi% América:Chawpi% América NP-TOP ;        ! "América Central"
+Chawpi% América:Chawpi% Amerika NP-TOP ;        ! Dir/LR - "América Central"
+Chawpi% América:Chawpi% Amirika NP-TOP ;        ! Dir/LR - "América Central"
+América% Central:América% Central NP-TOP ;      ! "América Central"
+Centroamérica:Centroamérica NP-TOP ;            ! "Centroamérica"
+Belice:Belice NP-TOP ;              ! "Belice"
+Belice:Bilisi NP-TOP ;              ! Dir/LR - "Belice"
+Costa% Rica:Costa% Rica NP-TOP ;    ! "Costa Rica"
+Costa% Rica:Kusta% Rika NP-TOP ;    ! Dir/LR - "Costa Rica"
+Costa% Rica:Kustarika NP-TOP ;      ! Dir/LR - "Costa Rica"
+Guatemala:Guatemala NP-TOP ;    ! "Guatemala"
+Guatemala:Watimala NP-TOP ;     ! Dir/LR - "Guatemala"
+Honduras:Honduras NP-TOP ;      !  "Honduras"
+Honduras:Unduras NP-TOP ;       ! Dir/LR - "Honduras"
+Nicaragua:Nicaragua NP-TOP ;    ! "Nicaragua"
+Nicaragua:Nikarawa NP-TOP ;     ! Dir/LR - "Nicaragua"
+Panamá:Panamá NP-TOP ;          ! "Panamá"
+Panamá:Panama NP-TOP ;          ! Dir/LR - "Panamá"
+El% Salvador:El% Salvador NP-TOP ;      ! "El Salvador"
+Cuba:Cuba NP-TOP ;          ! "Cuba"
+Cuba:Kuwa NP-TOP ;          ! Dir/LR - "Cuba"
+Cuba:Kuba NP-TOP ;          ! Dir/LR - "Cuba"
+
+! EUROPA
+Europa:Europa NP-TOP ;      ! "Europa"
+Europa:Iwrupa NP-TOP ;      ! Dir/LR - "Europa"
+Europa:Yurupa NP-TOP ;      ! Dir/LR - "Europa"
+España:Ispaña NP-TOP ;      ! "España"
+España:España NP-TOP ;      ! Dir/LR - "España"
+Rusia:Rusia NP-TOP ;        ! "Rusia"
+Rusia:Rusya NP-TOP ;        ! Dir/LR - "Rusia"
+Rusia:Rusiya NP-TOP ;       ! Dir/LR - "Rusia"
+
+! ASIA
+Asia:Asia NP-TOP ;      ! "Asia"
+Asia:Asiya NP-TOP ;     ! Dir/LR - "Asia"
+Asia:Asya NP-TOP ;      ! Dir/LR - "Asia"
+China:China NP-TOP ;        ! "China"
+Japón:Japón NP-TOP ;        ! "Japón"
+Japón:Hapun NP-TOP ;        ! Dir/LR - "Japón"
+Japón:Nihun NP-TOP ;        ! Dir/LR - "Japón"
+
+! ÁFRICA - AUSTRALIA
+África:África NP-TOP ;      ! "África"
+África:Afrika NP-TOP ;      ! Dir/LR - "África"
+África:Aprika NP-TOP ;      ! Dir/LR - "África"
+África:Awrika NP-TOP ;      ! Dir/LR - "África"
+África:Aphrika NP-TOP ;     ! Dir/LR - "África"
+Australia:Australia NP-TOP ;    ! "Australia"
+Australia:Awstralya NP-TOP ;    ! Dir/LR - "Australia"
+Australia:Awstraliya NP-TOP ;   ! Dir/LR - "Australia"
+
+! CIUDADES PERÚ
+Qusqu:Qusqu NP-TOP ;        ! "Cuzco"
+Qusqu:Qosqo NP-TOP ;        ! Dir/LR - "Cuzco"
+Cuzco:Cuzco NP-TOP ;        ! Dir/LR - "Cuzco"
+Cuzco:Cusco NP-TOP ;        ! Dir/LR - "Cuzco"
 Tambobamba:Tambobamba NP-TOP ;
 
 LEXICON NombresHisp
@@ -2665,6 +2796,9 @@ ama:ama ADV ;       ! "no" (prohibitivo)
 mana:mana ADV ; ! "no"
 mana%<adv%>%<dfnt%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
 
+riki%<adv%>:riki # ;        ! "pues"
+yaqa:yaqa ADV-lla ;         ! "casi" + yaqa(cha)(lla)(manta|pi)
+
 alli% allillanta:alli% allillanta ADV ; ! "con atención"
 allillamanta:allillamanta ADV ; ! "lentamente"
 aswanta:aswanta ADV ; ! "más"
@@ -2687,7 +2821,6 @@ hayk%'aqpis:hayk%'aqpis ADV-taq ; ! "alguna vez / nunca"
 hukmanta:hukmanta ADV ; ! "otra vez"
 ichapas:ichapas ADV-taq ; ! "probablemente"
 
-riki%<adv%>:riki # ;        ! "pues"
 hinallataq%<adv%>:hinallataq CLIT-Final ; ! "asimismo, así mismo"
 
 

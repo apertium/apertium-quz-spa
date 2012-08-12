@@ -571,6 +571,7 @@
     <e><p><l>ama<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
     <e><p><l>mana<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
     <e><p><l>mana<s n="adv"/><s n="dfnt"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
+    <e><p><l>yaqa<s n="adv"/></l><r>casi<s n="adv"/></r></p></e>
     
     <e r="LR"><p><l>hawapi<s n="adv"/></l><r>afuera<s n="adv"/></r></p></e>  
     <e><p><l>muyuyninpi<s n="adv"/></l><r>alrededor<s n="adv"/></r></p></e>
@@ -2074,18 +2075,94 @@
     <e><p><l>Tomasa<s n="np"/><s n="ant"/></l><r>Tomasa<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Tumasa<s n="np"/><s n="ant"/></l><r>Tomasa<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Isicha<s n="np"/><s n="ant"/></l><r>Isicha<s n="np"/><s n="ant"/></r></p></e>
+    <e r="RL"><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Madre<b/>Tierra<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>Pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    
+    
     <e><p><l>Huñunakusqa<b/>Nacionkuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>Huñunakusqa<b/>Llaqtakuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>Hukllasqa<b/>Nacionkuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>Hukllasqa<b/>Llaqtakuna<s n="np"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
-    <e r="RL"><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Madre<b/>Tierra<s n="np"/><s n="f"/></r></p></e>
-    <e><p><l>Pacha<b/>Mama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
-    <e r="LR"><p><l>pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>Pachamama<s n="np"/><s n="f"/></l><r>Pachamama<s n="np"/><s n="f"/></r></p></e>
+    
+    </section>
+    
+    <section id="TOPONIMOSOS" type="standard">
+    
     <e r="RL"><p><l>quyllur<s n="n"/></l><r>Venus<s n="np"/><s n="top"/><s n="m"/></r></p></e>
-    <e><p><l>Tambobamba<s n="np"/><s n="top"/></l><r>Tambobamba<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
-    <e><p><l>Tawantinsuyu<s n="np"/><s n="top"/></l><r>Tahuantinsuyo<s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
-    <e><p><l>Perú<s n="np"/><s n="top"/></l><r>Perú<s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>Tawantinsuyu<s n="np"/><s n="top"/></l><r>Tahuantinsuyo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    
+    <e><p><l>Abya<b/>Yala<s n="np"/><s n="top"/></l><r>Abya<b/>Yala<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>América<s n="np"/><s n="top"/></l><r>América<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    
+    <!-- AMÉRICA DEL SUR -->
+    <e><p><l>América<b/>del<b/>Sur<s n="np"/><s n="top"/></l><r>América<b/>del<b/>Sur<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Sudamérica<s n="np"/><s n="top"/></l><r>Sudamérica<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Suramérica<s n="np"/><s n="top"/></l><r>Suramérica<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>Urin<b/>América<s n="np"/><s n="top"/></l><r>América<b/>del<b/>Sur<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>Urin<b/>Abya<b/>Yala<s n="np"/><s n="top"/></l><r>América<b/>del<b/>Sur<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Perú<s n="np"/><s n="top"/></l><r>Perú<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Bolivia<s n="np"/><s n="top"/></l><r>Bolivia<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Argentina<s n="np"/><s n="top"/></l><r>Argentina<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Ecuador<s n="np"/><s n="top"/></l><r>Ecuador<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Chile<s n="np"/><s n="top"/></l><r>Chile<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Colombia<s n="np"/><s n="top"/></l><r>Colombia<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Brasil<s n="np"/><s n="top"/></l><r>Brasil<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Paraguay<s n="np"/><s n="top"/></l><r>Paraguay<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Venezuela<s n="np"/><s n="top"/></l><r>Venezuela<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Surinam<s n="np"/><s n="top"/></l><r>Surinam<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Uruguay<s n="np"/><s n="top"/></l><r>Uruguay<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    
+    <!-- AMÉRICA DEL NORTE -->
+    <e r="LR"><p><l>Chinchay<b/>Abya<b/>Yala<s n="np"/><s n="top"/></l><r>América<b/>del<b/>Norte<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>Chinchay<b/>América<s n="np"/><s n="top"/></l><r>América<b/>del<b/>Norte<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>América<b/>del<b/>Norte<s n="np"/><s n="top"/></l><r>América<b/>del<b/>Norte<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Norteamérica<s n="np"/><s n="top"/></l><r>Norteamérica<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>México<s n="np"/><s n="top"/></l><r>México<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>México<s n="np"/><s n="top"/></l><r>Méjico<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Canadá<s n="np"/><s n="top"/></l><r>Canadá<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>EE.<b/>UU.<s n="np"/><s n="top"/></l><r>EE.<b/>UU.<s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
+    <e r="RL"><p><l>EE.<b/>UU.<s n="np"/><s n="top"/></l><r>EE.UU.<s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
+    <e r="LR"><p><l>Hukllachasqa<b/>América<b/>Suyukuna<s n="np"/><s n="top"/></l><r>Estados<b/>Unidos<b/>de<b/>América<s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
+    <e><p><l>Estados<b/>Unidos<b/>de<b/>América<s n="np"/><s n="top"/></l><r>Estados<b/>Unidos<b/>de<b/>América<s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
+    <e><p><l>Estados<b/>Unidos<s n="np"/><s n="top"/></l><r>Estados<b/>Unidos<s n="np"/><s n="top"/><s n="m"/><s n="pl"/></r></p></e>
+    
+    <!-- AMÉRICA CENTRAL -->
+    <e r="LR"><p><l>Chawpi<b/>Abya<b/>Yala<s n="np"/><s n="top"/></l><r>América<b/>Central<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e r="LR"><p><l>Chawpi<b/>América<s n="np"/><s n="top"/></l><r>América<b/>Central<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>América<b/>Central<s n="np"/><s n="top"/></l><r>América<b/>Central<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Centroamérica<s n="np"/><s n="top"/></l><r>Centroamérica<s n="np"/><s n="top"/><s n="f"/></r></p></e>    
+    <e><p><l>Belice<s n="np"/><s n="top"/></l><r>Belice<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Costa<b/>Rica<s n="np"/><s n="top"/></l><r>Costa<b/>Rica<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Guatemala<s n="np"/><s n="top"/></l><r>Guatemala<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Honduras<s n="np"/><s n="top"/></l><r>Honduras<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Nicaragua<s n="np"/><s n="top"/></l><r>Nicaragua<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Panamá<s n="np"/><s n="top"/></l><r>Panamá<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>El<b/>Salvador<s n="np"/><s n="top"/></l><r>El<b/>Salvador<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Cuba<s n="np"/><s n="top"/></l><r>Cuba<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    
+    <!-- EUROPA -->
+    <e><p><l>Europa<s n="np"/><s n="top"/></l><r>Europa<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>España<s n="np"/><s n="top"/></l><r>España<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Rusia<s n="np"/><s n="top"/></l><r>Rusia<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    
+    <!-- ASIA -->
+    <e><p><l>Asia<s n="np"/><s n="top"/></l><r>Asia<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Japón<s n="np"/><s n="top"/></l><r>Japón<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>China<s n="np"/><s n="top"/></l><r>China<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    
+    <!-- ÁFRICA - AUSTRALIA -->
+    <e><p><l>África<s n="np"/><s n="top"/></l><r>África<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    <e><p><l>Australia<s n="np"/><s n="top"/></l><r>Australia<s n="np"/><s n="top"/><s n="f"/></r></p></e>
+    
+    <!-- CIUDADES PERÚ -->
+    <e><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Cuzco<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>Cuzco<s n="np"/><s n="top"/></l><r>Cuzco<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Cusco<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Qusqu<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e r="RL"><p><l>Qusqu<s n="np"/><s n="top"/></l><r>Qosqo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+    <e><p><l>Tambobamba<s n="np"/><s n="top"/></l><r>Tambobamba<s n="np"/><s n="top"/><s n="f"/></r></p></e>
     
     </section>
     
