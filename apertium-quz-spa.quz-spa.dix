@@ -551,6 +551,7 @@
     
     <e><p><l>hina<s n="adv"/><s n="subst"/></l><r>así<s n="adv"/></r></p></e>
     <e><p><l>hawa<s n="adv"/><s n="subst"/></l><r>afuera<s n="adv"/></r></p></e>
+    <e><p><l>karu<s n="adv"/><s n="subst"/></l><r>lejos<s n="adv"/></r></p></e>
 
     </section>
     
@@ -581,6 +582,7 @@
     
     <e><p><l>alli<b/>allillanta<s n="adv"/></l><r>con<b/>atención<s n="adv"/></r></p></e>
     <e><p><l>allillamanta<s n="adv"/></l><r>lentamente<s n="adv"/></r></p></e>
+    <e><p><l>alli<b/>allillamanta<s n="adv"/></l><r>poco<b/>a<b/>poco<s n="adv"/></r></p></e>
     <e><p><l>allinta<s n="adv"/></l><r>bien<s n="adv"/></r></p></e>
     <e><p><l>anchata<s n="adv"/></l><r>mucho<s n="adv"/></r></p></e>
     <e><p><l>asllata<s n="adv"/></l><r>un<b/>poco<s n="adv"/></r></p></e>
@@ -661,6 +663,8 @@
     <e><p><l>pisi<s n="adj"/></l><r>poco<s n="det"/><s n="qnt"/></r></p></e>
     <e><p><l>tukuy<s n="adj"/></l><r>todo<s n="predet"/></r></p></e>
     <e><p><l>tukuy<s n="adj"/></l><r>entero<s n="adj"/></r></p></e>
+    <e><p><l>huklla<s n="adj"/></l><r>único<s n="adj"/></r></p></e>
+    <e><p><l>karu<s n="adj"/></l><r>lejano<s n="adj"/></r></p></e>
 
     <e><p><l>allin<s n="adj"/></l><r>bueno<s n="adj"/></r></p></e>
     <e><p><l>ch'unpi<s n="adj"/></l><r>castaño<s n="adj"/></r></p></e>
@@ -693,6 +697,7 @@
     <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
     <e><p><l>sullk'a<s n="adj"/></l><r>menor<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
+    <e><p><l>t'ukri<s n="adj"/></l><r>oficial<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>tambobambino<s n="adj"/></l><r>tambobambino<s n="adj"/></r></p></e>
     <e><p><l>upa<s n="adj"/></l><r>tonto<s n="adj"/></r></p></e>
     <e r="RL"><p><l>upa<s n="adj"/></l><r>sordo<s n="adj"/></r></p></e>
@@ -723,7 +728,10 @@
       
     <e><p><l>libre<s n="adj"/></l><r>libre<s n="adj"/></r></p></e>
     <e><p><l>nacional<s n="adj"/></l><r>nacional<s n="adj"/><s n="mf"/></r></p></e>
-    <e r="LR"><p><l>nashunal<s n="adj"/></l><r>nacional<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>español<s n="adj"/></l><r>español<s n="adj"/></r></p></e>
+    <e><p><l>kastillanu<s n="adj"/></l><r>castellano<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>castellano<s n="adj"/></l><r>castellano<s n="adj"/></r></p></e>
+    <e><p><l>indígena<s n="adj"/></l><r>indígena<s n="adj"/><s n="mf"/></r></p></e>
     
     </section>
     
@@ -755,6 +763,7 @@
     <e r="LR"><p><l>akupana<s n="n"/></l><r>arrebol<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>allachu<s n="n"/></l><r>azada<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>allin<b/>ch'itikay<s n="n"/></l><r>vivacidad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>allin<b/>qilqay<s n="n"/></l><r>ortografía<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>allin<b/>ruway<s n="n"/></l><r>beneficio<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>allin<b/>supay<s n="n"/></l><r>ángel<b/>bueno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>allin<b/>yuyay<s n="n"/></l><r>conciencia<s n="n"/><s n="f"/></r></p></e>
@@ -938,6 +947,7 @@
     <e><p><l>hanaq<b/>pacha<s n="n"/></l><r>cielo<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>hanaqpacha<s n="n"/></l><r>cielo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>hank'a<s n="n"/></l><r>tostado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>hanllalli<s n="n"/></l><r>vocal<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hanp'ara<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hanp'atu<s n="n"/></l><r>rana<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>hanp'atu<s n="n"/></l><r>sapo<s n="n"/><s n="m"/></r></p></e>
@@ -979,6 +989,7 @@
     <e><p><l>inchis<s n="n"/></l><r>cacahuate<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>inchis<s n="n"/></l><r>cacahuete<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>inchis<s n="n"/></l><r>maní<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>indígena<s n="n"/></l><r>indígena<s n="n"/><s n="mf"/></r></p></e>
     <e><p><l>inka<s n="n"/><s n="m"/></l><r>inca<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>Inka<s n="n"/><s n="m"/></l><r>rey<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>inkill<s n="n"/></l><r>jardín<s n="n"/><s n="m"/></r></p></e>
@@ -997,6 +1008,7 @@
     <e><p><l>k'iri<s n="n"/></l><r>herida<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>k'iri<s n="n"/></l><r>lesión<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>k'iski<s n="n"/></l><r>estreñimiento<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>k'iti<b/>rimay<s n="n"/></l><r>dialecto<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>k'uchu<s n="n"/></l><r>esquina<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>k'uchu<s n="n"/></l><r>rincón<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>k'uchu<s n="n"/></l><r>ángulo<s n="n"/><s n="m"/></r></p></e>
@@ -1025,6 +1037,7 @@
     <e><p><l>kaqlla<b/>simi<s n="n"/></l><r>sinónimo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>karpa<s n="n"/></l><r>carpa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>karpa<s n="n"/></l><r>toldo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kastilla<b/>simi<s n="n"/></l><r>castellano<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>katari<s n="n"/></l><r>víbora<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kawitu<s n="n"/></l><r>catre<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kawitu<s n="n"/></l><r>hamaca<s n="n"/><s n="f"/></r></p></e>
@@ -1062,6 +1075,8 @@
     <e><p><l>kunka<s n="n"/></l><r>cuello<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kunka<s n="n"/></l><r>garganta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kunka<s n="n"/></l><r>voz<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>kunkalla<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>kunkawaki<s n="n"/></l><r>consonante<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kunti<s n="n"/></l><r>occidente<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kunti<s n="n"/></l><r>oeste<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kuntur<s n="n"/></l><r>cóndor<s n="n"/><s n="m"/></r></p></e>
@@ -1254,6 +1269,8 @@
     <e><p><l>pacha<b/>kuyuy<s n="n"/></l><r>terremoto<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>pacha<b/>manka<s n="n"/></l><r>pachamanca<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pacha<b/>phuyu<s n="n"/></l><r>neblina<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>pachak<b/>wata<s n="n"/></l><r>siglo<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>palay<s n="n"/></l><r>arroz<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>pallar<s n="n"/></l><r>alubia<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>pallar<s n="n"/></l><r>frijol<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>pallay<s n="n"/></l><r>dibujo<s n="n"/><s n="m"/></r></p></e>
@@ -1378,6 +1395,8 @@
     <e r="RL"><p><l>qhata<s n="n"/></l><r>tejado<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>qhatu<s n="n"/></l><r>comercio<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhatu<s n="n"/></l><r>mercado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>qhatuna<b/>simi<s n="n"/></l><r>lingua<g><b/>franca</g><s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>qhatuna<b/>simi<s n="n"/><s n="pl"/></l><r>lingua<g><b/>francas</g><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>qhichincha<s n="n"/></l><r>hollín<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhichipra<s n="n"/></l><r>ceja<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>qhichipra<s n="n"/></l><r>pestaña<s n="n"/><s n="f"/></r></p></e>
@@ -1454,6 +1473,8 @@
     <e r="LR"><p><l>rawra<s n="n"/></l><r>llama<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>raymi<s n="n"/></l><r>fiesta<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>rikra<s n="n"/></l><r>hombro<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rimay<b/>huñu<s n="n"/></l><r>grupo<g><b/>dialectal</g><s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>rimay<b/>huñu<s n="n"/><s n="pl"/></l><r>grupo<g><b/>dialectales</g><s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     <e><p><l>rinri<s n="n"/></l><r>oreja<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>rit'i<s n="n"/></l><r>nieve<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>rit'i<b/>urqu<s n="n"/></l><r>nevado<s n="n"/><s n="m"/></r></p></e>
@@ -1522,8 +1543,12 @@
     <e><p><l>simi<s n="n"/></l><r>boca<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>simi<s n="n"/></l><r>lengua<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>simi<s n="n"/></l><r>idioma<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>simi<b/>kamachiy<s n="n"/></l><r>gramática<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>simi<b/>kamayuq<s n="n"/></l><r>lingüista<s n="n"/><s n="mf"/></r></p></e>
+    <e r="LR"><p><l>simi<b/>qulqa<s n="n"/></l><r>diccionario<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>simi<b/>taqi<s n="n"/></l><r>diccionario<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>simi<b/>taqi<s n="n"/></l><r>vocabulario<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>simi<b/>yachaq<s n="n"/></l><r>lingüista<s n="n"/><s n="mf"/></r></p></e>
     <e><p><l>sinp'a<s n="n"/></l><r>trenza<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>sinqa<s n="n"/></l><r>nariz<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>sip'uti<s n="n"/></l><r>ano<s n="n"/><s n="m"/></r></p></e>
@@ -1744,6 +1769,7 @@
     <e><p><l>uwas<s n="n"/></l><r>uva<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>uya<s n="n"/></l><r>cara<s n="n"/><s n="f"/></r></p></e>
     <e r="RL"><p><l>uya<s n="n"/></l><r>rostro<s n="n"/><s n="m"/></r></p></e>
+    <e r="LR"><p><l>uyaywa<s n="n"/></l><r>vocal<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>uywa<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>uywa<s n="n"/></l><r>ganado<s n="n"/><s n="m"/></r></p></e>
     <e r="RL"><p><l>uywa<s n="n"/></l><r>res<s n="n"/><s n="f"/></r></p></e>    
@@ -1879,7 +1905,8 @@
     <e><p><l>wincha<s n="n"/></l><r>vincha<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>winku<s n="n"/></l><r>cucharón<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>wiñapu<s n="n"/></l><r>jora<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>wiñay<b/>kawsay<s n="n"/></l><r>vida<g><b/>eterna</g><s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>wiñay<b/>kawsay<s n="n"/></l><r>historia<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>wiñay<b/>kawsay<s n="n"/></l><r>vida<g><b/>eterna</g><s n="n"/><s n="f"/></r></p></e>
     <e><p><l>wiñay<b/>pacha<s n="n"/></l><r>eternidad<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>wiphala<s n="n"/></l><r>bandera<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>wiq'ar<s n="n"/></l><r>cintura<s n="n"/><s n="f"/></r></p></e>
@@ -1968,6 +1995,8 @@
     <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>qilqaq<s n="n"/></l><r>escritor<s n="n"/></r></p></e>
+    <e><p><l>rimay<s n="n"/></l><r>lengua<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>rimay<s n="n"/></l><r>habla<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>rimaq<s n="n"/></l><r>hablante<s n="n"/><s n="mf"/></r></p></e>
     <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
@@ -2239,7 +2268,6 @@
     <e><p><l>nación<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>español<s n="n"/></l><r>español<s n="n"/></r></p></e>
-    <e><p><l>español<s n="n"/></l><r>español<s n="adj"/></r></p></e>
     
     </section>
     

@@ -262,6 +262,7 @@ NombresPropOtros ;
 Topónimos ;
 NombresHisp ;
 Adjetivos ;
+AdjetivosHisp ;
 AdjetivosGenero ;
 AdjetivosDerivados ;
 Pronombres ;
@@ -1446,6 +1447,7 @@ akupana:akupana N ;         ! arrebol
 allachu:allachu N ;         ! azada
 allin% ch%'itikay:allin% ch%'itikay N ;     ! vivacidad
 allin% ruway:allin% ruway N ;       ! beneficio
+allin% qilqay:allin% qilqay N ;     ! "ortografía"
 allin% supay:allin% supay N ;       ! ángel bueno
 allin% yuyay:allin% yuyay N ;       ! conciencia
 allpa:allpa N ;         ! "tierra"
@@ -1591,6 +1593,7 @@ hanan% pacha:hanan% pacha N ;       ! "cielo"
 hanaq% pacha:hanaq% pacha N ;       ! "cielo"
 hanaqpacha:hanaqpacha N ;           ! "cielo"
 hank%'a:hank%'a N ;         ! "tostado"
+hanllalli:hanllalli N ;     ! "vocal"
 hanp%'ara:hanp%'ara N ;     ! "mesa"
 hanp%'atu:hanp%'atu N ;     ! "rana, sapo"
 hanpi% kamayuq:hanpi% kamayuq N ;       ! "médico"
@@ -1634,6 +1637,7 @@ k%'ikllu:k%'ikllu N ;       ! "calle"
 k%'iraw:k%'iraw N ;         ! "cuna"
 k%'iri:k%'iri N ;           ! "herida"
 k%'iski:k%'iski N ;         ! "estreñimiento"
+k%'iti% rimay:k%'iti% rimay N ;     ! "dialecto"
 k%'uchu:k%'uchu N ;         ! "esquina, rincón, ángulo"
 k%'usillu:k%'usillu N ;     ! "mono"
 k%'uychi:k%'uychi N ;       ! "arco iris"
@@ -1652,6 +1656,7 @@ kanka:kanka N ;         ! "asado"
 kapuli:kapuli N ;       ! "cereza capulí"
 kaqlla% simi:kaqlla% simi N ;   ! "sinónimo"
 karpa:karpa N ;         ! "carpa, toldo"
+kastilla% simi:kastilla% simi N ;       ! "castellano"
 katari:katari N ;       ! "víbora"
 kawitu:kawitu N ;       ! "catre, hamaca"
 khachu:khachu N ;       ! "mordisco"
@@ -1677,6 +1682,9 @@ kukupin:kukupin N ;     ! "hígado"
 kulli% aqha:kulli% aqha N ;     ! "chicha morada"
 kunan% pacha:kunan% pacha N ;   ! "actualidad, presente"
 kunka:kunka N ;     ! "cuello, garganta, voz"
+kunka% waki:kunka% waki N ;     ! "consonante" - Dir/LR
+kunka% waki:kunkawaki N ;     ! "consonante"
+kunkalla:kunkalla N ;       ! "sonido"
 kunti:kunti N ;     ! "occidente, oeste"
 kuntur:kuntur N ;   ! "cóndor"
 kura:kura N ;       ! "cura"
@@ -1814,6 +1822,9 @@ pacha:pacha N ;         ! "tiempo, espacio, mundo, universo"
 pacha% kuyuy:pacha% kuyuy N ;       ! "terremoto"
 pacha% manka:pacha% manka N ;       ! "pachamanca"
 pacha% phuyu:pacha% phuyu N ;       ! "neblina"
+pachak% wata:pachak% wata N ;       ! "siglo"
+pachak% wata:pachakwata N ;         ! "siglo" - Dir/LR
+palay:palay N ;     ! "arroz"
 pallar:pallar N ;   ! "frijol, alubia"
 pallay:pallay N ;   ! "dibujo, diseño, bordado, pallay"
 palláy:palláy N ;   ! "dibujo, diseño, bordado, pallay"
@@ -1909,6 +1920,7 @@ qhasqu:qhasqu N ;       ! "pecho"
 qhaswa:qhaswa N ;       ! "danza"
 qhata:qhata N ;         ! "techo, tejado"
 qhatu:qhatu N ;         ! "mercado, comercio"
+qhatuna% simi:qhatuna% simi N ;     ! "lingua franca"
 qhichincha:qhichincha N ;   ! "hollín"
 qhichipra:qhichipra N ;     ! "ceja", "pestaña"
 qhilli:qhilli N ;       ! "suciedad"
@@ -1965,6 +1977,7 @@ rawanu:rawanu N ;       ! "rábano"
 rawra:rawra N ;         ! "llama"
 raymi:raymi N ;         ! "fiesta"
 rikra:rikra N ;         ! "hombro"
+rimay% huñu:rimay% huñu N ;     ! "grupo dialectal"
 rinri:rinri N ;         ! "oreja"
 rit%'i:rit%'i N ;       ! "nieve"
 rit%'i% urqu:rit%'i% urqu N ;   ! "nevado"
@@ -2016,7 +2029,11 @@ sikuri:sikuri N ;       ! "sicuri"
 sikuwa:sikuwa N ;       ! "paja brava"
 sillu:sillu N ;         ! "uña"
 simi:simi N ;           ! "boca", "lengua"
-simi% taqi:simi% taqi N ;    ! "diccionario"
+simi% kamachiy:simi% kamachiy N ;   ! "gramática"
+simi% kamayuq:simi% kamayuq N ;     ! "lingüista"
+simi% qulqa:simi% qulqa N ;         ! "diccionario"
+simi% taqi:simi% taqi N ;           ! "diccionario"
+simi% yachaq:simi% yachaq N ;       ! "lingüista"
 sinp%'a:sinp%'a N ;     ! "trenza"
 sinqa:sinqa N ;         ! "nariz"
 sip%'uti:sip%'uti N ;   ! "ano"
@@ -2177,6 +2194,7 @@ utkhu:utkhu N ;     ! "algodón"
 uturunku:uturunku N ;       ! "jaguar, otorongo, tigre"
 uwas:uwas N ;       ! "uva"
 uya:uya N ;         ! "cara, rostro"
+uyaywa:uyaywa N ;   ! "vocal"
 uywa:uywa N ;       ! "animal (doméstico), ganado, res"
 
 wach%'i:wach%'i N ;     ! "flecha"
@@ -2277,7 +2295,7 @@ willma:willma N ;       ! "lana"
 wincha:wincha N ;       ! "vincha, cinta"
 winku:winku N ;         ! "cucharón"
 wiñapu:wiñapu N ;       ! "jora"
-wiñay% kawsay:wiñay% kawsay N ;     ! "vida eterna"
+wiñay% kawsay:wiñay% kawsay N ;     ! "historia", "vida eterna"
 wiñay% pacha:wiñay% pacha N ;       ! "eternidad"
 wiphala:wiphala N ;     ! "bandera"
 wiq%'ar:wiq%'ar N ;     ! "cintura"
@@ -2332,6 +2350,7 @@ pukllay:pukllay N ; ! "juego"
 qhawana:qhawana N ; ! "ventana"
 qilqaq:qilqaq N ;   ! "escritor"
 rimaq:rimaq N ;     ! "hablante"
+rimay:rimay N ;     ! "lengua"
 tapusqa:tapusqa N ; ! "pregunta"
 tiyana:tiyana N ; ! "silla"
 tukukuy:tukukuy N ;     ! fin
@@ -2552,7 +2571,8 @@ Lima:Rimaq NP-TOP ;     ! Dir/LR - "Lima"
 Toledo:Toledo NP-TOP ;
 
 LEXICON NombresHisp
-! poner aparte como hispanismos - pueden tomar plural -s
+! pueden tomar plural -s, pero algunos también o más bien -kuna
+! algunos también pueden formar femeninos (-a)
 estado:estado N ;
 política:política N ;
 política:politica N ; ! Dir/LR
@@ -2579,13 +2599,11 @@ la%<det%>:la # ;
 los%<det%>:los # ;
 las%<det%>:las # ;
 
-nacional:nacional ADJ ;
-nacional:nashunal ADJ ;     ! Dir/LR
 
 español:español N ;
 español:ispañul N ;     ! Dir/LR
-español:español ADJ ;
-español:ispañul ADJ ;     ! Dir/LR
+indígena:indígena N ;     ! "indígena"
+indígena:indihina N ;     ! "indígena" - Dir/LR
 
 
 LEXICON AdjetivosGenero
@@ -2597,10 +2615,6 @@ qhari:qhari ADJ ;   ! "macho, masculino, hombre"
 warmi:warmi ADJ ; ! "hembra, femenino, mujer"
 
 ! nombres de lugar/tiempo donde -ntin = todo: hinantin, mundontin, tiqsimuyuntin, p'unchaynintin, pachantin... - en lista en trasferencia
-! hisp'anismos nom + plural en -s, -es, adj + m/f -o/a + pl -s, -es
-
-tambobambino:tambobambino ADJ-M ; ! "tambobambino" (de Tambobamba, Apurímac)
-tambobambino:tambobambina ADJ-F ; ! "tambobambina"
 
 LEXICON Adjetivos
 
@@ -2621,19 +2635,43 @@ qasi:qasi ADJ ;         ! tranquilo
 qhapaq:qhapaq ADJ ;     ! rico
 q%'illu:q%'illu ADJ ;   ! "amarillo"
 q%'umir:q%'umir ADJ ;   ! "verde"
-q%'uñi:q%'uñi ADJ ; ! "cálido"
-sumaq:sumaq ADJ ; ! "agradable"
-tukuy:tukuy ADJ ;      ! todo, entero         - cambiar lex, categoría
-wakcha:wakcha ADJ ; ! pobre, huérfano
+q%'uñi:q%'uñi ADJ ;     ! "cálido"
+sumaq:sumaq ADJ ;       ! "agradable"
+t%'ukri:tukri ADJ ;     ! "oficial" - Dir/LR
+t%'ukri:t%'ukri ADJ ;   ! "oficial"
+tukuy:tukuy ADJ ;       ! todo, entero         - cambiar lex, categoría
+wakcha:wakcha ADJ ;     ! pobre, huérfano
 wanka:wanka ADJ ;       ! "huanca" (de Huancayo)
-yana:yana ADJ ; ! "negro"
-yuraq:yuraq ADJ ;       ! blanco
+yana:yana ADJ ;         ! "negro"
+yuraq:yuraq ADJ ;       ! "blanco"
 
 upa:upa ADJ ;       ! "tonto, sonso"
 kuraq:kuraq ADJ ;   ! "mayor"
 sulk%'a:sullk%'a ADJ ;  ! "menor"
 chawpi%<adj%>:chawpi # ;    ! medio
+huklla:huklla ADJ ;     ! "único"
+karu:karu ADJ ;         ! "lejano"
+karu:kharu ADJ ;         ! "lejano" Dir/LR
 
+
+LEXICON AdjetivosHisp
+! plural -s, femenino -a...
+! o los que pueden tener femenino en AdjetivosGenero ???
+! hisp'anismos nom + plural en -s, -es, adj + m/f -o/a + pl -s, -es
+
+tambobambino:tambobambino ADJ-M ; ! "tambobambino" (de Tambobamba, Apurímac)
+tambobambino:tambobambina ADJ-F ; ! "tambobambina"
+
+español:español ADJ ;
+español:ispañul ADJ ;     ! Dir/LR
+castellano:castellano ADJ ;     ! "castellano"
+kastillanu:kastillanu ADJ ;     ! "castellano"
+indígena:indígena ADJ ;     ! "indígena"
+indígena:indihina ADJ ;     ! "indígena" - Dir/LR
+
+nacional:nacional ADJ ;
+nacional:nashunal ADJ ;     ! Dir/LR
+libre:libre ADJ ;
 
 
 LEXICON AdjetivosDerivados
@@ -2846,6 +2884,8 @@ haqay:haqay ADV-Subst-Dem ; ! "allí"
 
 hawa:hawa ADV-Subst ;   ! "afuera"
 hina:hina ADV-Subst ;   ! "así"
+karu:karu ADV-Subst ;  ! "lejos"
+karu:kharu ADV-Subst ;  ! "lejos" Dir/LR
 
 
 LEXICON Adverbios-Temp
@@ -2871,7 +2911,8 @@ riki%<adv%>:riki # ;        ! "pues"
 yaqa:yaqa ADV-lla ;         ! "casi" + yaqa(cha)(lla)(manta|pi)
 
 alli% allillanta:alli% allillanta ADV ; ! "con atención"
-allillamanta:allillamanta ADV ; ! "lentamente"
+alli% allillamanta:alli% allillamanta ADV ; ! "poco a poco"
+alli% allillamanta:alli%-allillamanta ADV ; ! "poco a poco"
 aswanta:aswanta ADV ; ! "más"
 kuska:kuska ADV-lla ; ! "junto"
 ña:ña ADV ; ! "ya"

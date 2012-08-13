@@ -9,6 +9,11 @@
   </rule>
  
   <rule>
+    <match lemma="qhiswa"><select lemma="quechua"/></match>
+    <match lemma="rimay"/>
+  </rule>
+  
+  <rule>
     <match lemma="simi"><select lemma="lengua"/></match>
   </rule>
   
