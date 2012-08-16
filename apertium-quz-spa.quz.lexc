@@ -1258,8 +1258,12 @@ LEXICON DET-Ind
 LEXICON DET-Cuant
 %<det%>%<qnt%>: # ;
 
+LEXICON DET-Itg
+%<det%>%<itg%>: # ;
+
 LEXICON PronDem
 %<prn%>%<dem%>: N-DER ;
+%<det%>%<dem%>: # ;
 
 LEXICON PronItg
 %<prn%>%<itg%>: N-DER ;
@@ -1564,6 +1568,7 @@ charango:charango N ;   ! "charango" (intrumento de cuerdas)
 charapa:charapa N ;     ! "tortuga"
 chaski% wasi:chaski% wasi N ;       ! "correo"
 chhawa:chhawa N ;       ! "saúco"
+chhikan:chhikan N ;     ! "pedazo, trozo"
 chikchi:chikchi N ;     ! "granizo"
 chincha:chincha N ;     ! "norte"
 chiqa:chiqa N ;         ! "verdad"
@@ -2177,6 +2182,7 @@ uqhu:uqhu N ;       ! "ciénaga, pantano"
 uquti:uquti N ;     ! "ano, recto, ojete"
 uquti% unquy:uquti% unquy N ;   ! "hemorroides"
 ura:ura N ;         ! "hora"
+ura:hora N ;        ! "hora" - Dir/LR
 uritu:uritu N ;     ! "loro, papagayo"
 urpi:urpi N ;       ! "paloma"
 urpila:urpila N ;   ! "paloma"
@@ -2375,6 +2381,8 @@ Tomás:Tomás NP-ANT-M ;              ! "Tomas"
 Tumasa:Tumasa NP-ANT-F ;            ! "Tomasa"
 Tomasa:Tomasa NP-ANT-F ;            ! "Tomasa"
 Isicha:Isicha NP-ANT-M ;            ! "Isac", "Isidor" ???
+Siskucha:Siskucha NP-ANT-M ;        ! "Francisco"
+
 
 Alan:Alan NP-ANT-M ;
 Alberto:Alberto NP-ANT-M ;
@@ -2388,6 +2396,8 @@ Cerrón:Cerrón NP-ANT-MF ;
 Diego:Diego NP-ANT-M ;
 Domingo% de% Santo% Tomás:Domingo% de% Santo% Tomás NP-ANT-M ;
 Evo:Evo NP-ANT-M ;
+Francis:Francis NP-ANT-M ;
+Francisco:Francisco NP-ANT-M ;
 Fray% Domingo% de% Santo% Tomás:Fray% Domingo% de% Santo% Tomás NP-ANT-M ;
 Fujimori:Fujimori NP-ANT-MF ;
 García:García NP-ANT-MF ;
@@ -2407,6 +2417,7 @@ Rosablanca:Rosablanca NP-ANT-F ;        ! "Rosa Blanca"
 Santiago:Santiago NP-ANT-M ;
 Susana:Susana NP-ANT-F ;
 Torero:Torero NP-ANT-MF ;
+Tyers:Tyers NP-ANT-MF ;
 Velasco:Velasco NP-ANT-MF ;
 Victor:Victor NP-ANT-M ;
 
@@ -2626,6 +2637,7 @@ chiri:chiri ADJ ; ! "frío"
 hatun:hatun ADJ ; ! "grande"
 huch%'uy:huch%'uy ADJ ; ! "pequeño"
 kusi:kusi ADJ ;         ! alegre, feliz
+manchay:manchay ADJ ;   ! "terrible"
 millay:millay ADJ ;     ! feo, malo
 musuq:musuq ADJ ;       ! nuevo
 ñawpaq:ñawpaq ADJ ;     ! primero, antiguo
@@ -2636,6 +2648,7 @@ qhapaq:qhapaq ADJ ;     ! rico
 q%'illu:q%'illu ADJ ;   ! "amarillo"
 q%'umir:q%'umir ADJ ;   ! "verde"
 q%'uñi:q%'uñi ADJ ;     ! "cálido"
+sinchi:sinchi ADJ ;     ! "fuerte"
 sumaq:sumaq ADJ ;       ! "agradable"
 t%'ukri:tukri ADJ ;     ! "oficial" - Dir/LR
 t%'ukri:t%'ukri ADJ ;   ! "oficial"
@@ -2644,14 +2657,23 @@ wakcha:wakcha ADJ ;     ! pobre, huérfano
 wanka:wanka ADJ ;       ! "huanca" (de Huancayo)
 yana:yana ADJ ;         ! "negro"
 yuraq:yuraq ADJ ;       ! "blanco"
+waliq:waliq ADJ ;       ! "valiente", valiqlla "bien"
 
 upa:upa ADJ ;       ! "tonto, sonso"
 kuraq:kuraq ADJ ;   ! "mayor"
-sulk%'a:sullk%'a ADJ ;  ! "menor"
+sullk%'a:sullk%'a ADJ ;  ! "menor"
 chawpi%<adj%>:chawpi # ;    ! medio
 huklla:huklla ADJ ;     ! "único"
 karu:karu ADJ ;         ! "lejano"
 karu:kharu ADJ ;         ! "lejano" Dir/LR
+
+
+as% allin:as% allin ADJ ;               ! "regular"
+aswan% allin:aswan% allin ADJ ;         ! "mejor"
+aswan% hatun:aswan% hatun ADJ ;         ! "mayor"
+aswan% huch%'uy:aswan% huch%'uy ADJ ;   ! "menor"
+aswan% mana% allin:aswan% mana% allin ADJ ;     ! "peor"
+aswan% millay:aswan% millay ADJ ;       ! "peor"
 
 
 LEXICON AdjetivosHisp
@@ -2679,6 +2701,9 @@ kusisqa:kusisqa ADJ ; ! "feliz"
 
 
 LEXICON Postposiciones
+! asta:asta # ;     ! la única preposicón (tomada del espaol), a veces con -kama (no siempre)
+!asta:hasta # ;      ! Dir/LR
+
 chinpa:chinpa Postp ; ! "en frente de, frente a"
 niq%<post%>:niq N-FLEX-Caso ; ! "cerca de"
 qhipa:qhipa Postp ; ! "detrás de"
@@ -2686,33 +2711,147 @@ sispa:sispa Postp ;   ! "cerca de"
 ukhu:ukhu Postp ; ! "dentro de"
 uran:uran Postp ; ! "bajo"
 pata:pata Postp ;   ! "encima"
+! hawa, ñawpaq, qhipa
 
 
 LEXICON Preadjetivos
-ancha:ancha Preadj ; ! "muy, mucho"
-as:as Preadj ; ! "algo, un poco"
-aswan:aswan Preadj ; ! "más"
-sinchi:sinchi Preadj ; ! "muy, fuerte(mente)"
+! preadjetivos, pronombres y determinantes cuantitativos
 
-! as:as ADJ ; ! "un poco de"
-askha:askha ADJ ; ! "mucho"       - corregir todo (adj/prn), no está en bidix
-pisi:pisi ADJ ; ! "poco"       - corregir todo (adj/prn), no está en bidix
-! chika tan - chika sumaq tan bonito (tb. irónico - = feo)
+allin:allin Preadj ;        ! "bien"
+ancha:ancha Preadj ;        ! "muy"
+as:as Preadj ;              ! "algo, un poco"
+aswan:aswan Preadj ;        ! "más"
+aswan% askha:aswan% askha Preadj ;      ! "más"
+aswan% pisi:aswan% pisi Preadj ;        ! "menos"
+chhika:chhika Preadj ;      ! "poco, no muy" (chika sumaq tan bonito (tb. irónico - = feo))
+chhikan:chhikan Preadj ;    ! "poco, no muy"
+chhika:chika Preadj ;       ! "poco, no muy" - Dir/LR
+chhikan:chikan Preadj ;     ! "poco, no muy" - Dir/LR
+kapas:kapas Preadj ;        ! "muy"
+khuway:khuway Preadj ;      ! "demasiado"
+khuway:khuyay Preadj ;      ! "demasiado" - Dir/LR
+llunpaq:llunpaq Preadj ;        ! "demasiado"
+llunpay:llunpay Preadj ;        ! "demasiado"
+manchay:manchay Preadj ;        ! "muy"
+may% chhika:may% chhika Preadj ;    ! "tan"
+may% chhika:may% chika Preadj ;     ! "tan" - Dir/LR
+nishu:nishu Preadj ;        ! "demasiado"
+nishu:nishiw Preadj ;       ! "demasiado" - Dir/LR
+nishu:nisiw Preadj ;        ! "demasiado" - Dir/LR
+nishu:nisyu Preadj ;        ! "demasiado" - Dir/LR
+pisi:pisi Preadj ;          ! "poco"
+sinchi:sinchi Preadj ;      ! "bastante, tan"
+tunpa:tunpa Preadj ;        ! "algo, un poco"
+
+! determinantes
+ancha:ancha DET-Cuant ;     ! "mucho"
+askha:askha DET-Cuant ;     ! "mucho, harto"
+as:as DET-Cuant ;           ! "un poco de"
+aswan:aswan DET-Cuant ;     ! "más"
+aswan% askha:aswan% askha DET-Cuant ;   ! "más"
+aswan% pisi:aswan% pisi DET-Cuant ;     ! "menos"
+chhika:chhika DET-Cuant ;       ! "un poco de"
+chhikan:chhikan DET-Cuant ;     ! "un poco de"
+! chika:chika DET-Cuant ;         ! "un poco de" (× chika "chica")
+! chikan:chikan DET-Cuant ;       ! "un poco de"
+khuway:khuway DET-Cuant ;       ! "demasiado"
+khuway:khuyay DET-Cuant ;       ! "demasiado" - Dir/LR
+llasaq:llasaq DET-Cuant ;       ! "harto, bastante"
+may% chhika:may% chhika DET-Cuant ;     ! "tanto"
+may% chhikan:may% chhikan DET-Cuant ;   ! "tanto"
+may% chhika:may% chika DET-Cuant ;      ! "tanto" - Dir/LR
+may% chhikan:may% chikan DET-Cuant ;    ! "tanto" - Dir/LR
+nishu% askha:nishu% askha DET-Cuant ;   ! "demasiado"
+nishu:nishu DET-Cuant ;     ! "demasiado"
+nishu:nishiw DET-Cuant ;    ! "demasiado" - Dir/LR
+nishu:nisiw DET-Cuant ;     ! "demasiado" - Dir/LR
+nishu:nisyu DET-Cuant ;     ! "demasiado" - Dir/LR
+pisi:pisi DET-Cuant ;       ! "poco"
+tunpa:tunpa DET-Cuant ;     ! "un poco de"
+waliq:waliq DET-Cuant ;     ! "harto"
+
+! pronombres cuantitativos
+ancha:ancha PRON ;      ! "mucho"
+as:as PRON ;            ! "un poco"
+! as:as PRON ;          ! "más" - + WAN
+askha:askha PRON ;      ! "mucho"
+astawan:astawan PRON ;  ! "más"
+aswan:aswan PRON ;      ! "más"
+aswan% askha:aswan% askha PRON ;        ! "más"
+aswan% pisi:aswan% pisi PRON ;          ! "menos"
+chhika:chhika PRON ;        ! "un poco"
+chhikan:chhikan PRON ;      ! "un poco"
+! chika:chika PRON ;        ! "un poco" - no (pos el substantivo "chika" - "chica")
+! chikan:chikan PRON ;      ! "un poco"
+chay% chhika:chay% chhika PRON ;        ! "ese tanto"
+chay% chhikan:chay% chhikan PRON ;      ! "ese tanto"
+kay% chhika:kay% chhika PRON ;          ! "este tanto"
+kay% chhikan:kay% chhikan PRON ;        ! "este tanto"
+khuway:khuway PRON ;        ! "demasiado"
+khuway:khuyay PRON ;        ! "demasiado" - Dir/LR
+llasaq:llasaq PRON ;        ! "harto"
+llunpaq:llunpaq PRON ;      ! "demasiado"
+llunpay:llunpay PRON ;      ! "demasiado"
+nishu:nishu PRON ;      ! "demasiado"
+nishu:nishiw PRON ;     ! "demasiado" - Dir/LR
+nishu:nisiw PRON ;      ! "demasiado" - Dir/LR
+nishu:nisyu PRON ;      ! "demasiado" - Dir/LR
+nishu% askha:nishu% askha PRON ;        ! "demasiado"
+pisi:pisi PRON ;        ! "poco"
+sinchi:sinchi PRON ;    ! "mucho"
+tunpa:tunpa PRON ;      ! "poco"
+waliq:waliq PRON ;      ! "harto"
 
 
 LEXICON PronombresDemItg
 !! + gen, pos, dim itg = N-DER
-kay:kay PronDem ; ! "este, esto"
-chay:chay PronDem ; ! "ese, eso, ello"
-haqay:haqay PronDem ; ! "aquel, aquello"
+! pasan como prn.dem y también det.dem
+
+kay:kay PronDem ;           ! "este, esto"
+chay:chay PronDem ;         ! "ese, eso, ello"
+haqay:haqay PronDem ;       ! "aquel, aquello"
+haqay:chhaqay PronDem ;     ! "aquel, aquello" - Dir/LR
+haqay:chaqay PronDem ;      ! "aquel, aquello" - Dir/LR
+kay:ankay PronDem ;         ! "este, esto" - Dir/LR - formas enfáticas
+chay:anchay PronDem ;       ! "este, esto" - Dir/LR
+haqay:anchhaqay PronDem ;   ! "este, esto" - Dir/LR
+haqay:anchaqay PronDem ;    ! "este, esto" - Dir/LR
+akna:akna ADV-lla ;         ! "así, de este modo, de esta manera"
+akna:aqna ADV-lla ;         ! "así, de este modo" - Dir/LR
+khayna:khayna ADV-lla ;     ! "así, de este modo" - Dir/LR
+chhayna:chhayna ADV-lla ;   ! "así, de ese modo"
+chhayna:chayna ADV-lla ;    ! "así, de ese modo" - Dir/LR
+chhaynaniraq:chhaynaniraq ADV ; ! "así" (det/adv) (así de grande, tanto..)
+! + (lla) (ta) etc.
+! kayniraq... chhaynaniraq - adv (de esta..), det (así)
 
 ima:ima PronItg ; ! "qué"
+ima:ima DET-Itg ; ! "qué"
 pi:pi PronItg ; ! "quién"
+pi:pi DET-Itg ; ! "quién"
 pi%<prn%>%<itg%>%<gen%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
+pi%<det%>%<itg%>%<gen%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
+mayqin:mayqin PronItg ;     ! "cuál"
+mayqin:mayqin DET-Itg ;     ! "qué" (cuál)
+mayqin:mayqan PronItg ;     ! "cuál" - Dir/LR
+mayqin:mayqan DET-Itg ;     ! "qué" (cuál) - Dir/LR
+
+! adverbios
 hayk%'a:hayk%'a PronItg ;	! "cuánto", genitivo = "cuándo"
-! hayk%'aq = LR hayk%'ap cuándo
+! hayk%'aq = hayk%'ap cuándo - pasado como hayk'a+gen
 may:may PronItg ;       ! "dónde"
+may:may DET-Itg ;       ! "qué" (lugar)
 imayna:imayna PronItg ;     ! "cómo"
+imay%ura:imay%ura PronItg ;     ! "qué hora"
+imay%ura:imay%hora PronItg ;     ! "qué hora" - Dir/LR
+! mayna
+
+!may chhika runa hamusqa qué cantidad de.., cuánta.., may chhika kutin
+may% chhika:may% chhika DET-Itg ;       ! "cuánto"
+may% chhikan:may% chhikan DET-Itg ;     ! "cuánto"
+may% chhika:may% chika DET-Itg ;        ! "cuánto" - Dir/LR
+may% chhikan:may% chikan DET-Itg ;      ! "cuánto" - Dir/LR
+
 
 
 LEXICON PronombresPersonales
@@ -2774,10 +2913,12 @@ yku%<prn%>%<pers%>%<p1ex%>%<pl%>%<dim%>%<lim%>:challayku N-FLEX-Inter ;
 
 LEXICON Pronombres
 
-! poner como numerales, pasar los numerales a un lex. de posesivos
-! huknin:huknin PRON ; ! "otro"  ???
+! los siguientes poner como numerales, pasar los numerales a un lex. de posesivos
+! huknin:huknin PRON ; ! "otro"  - puesto como num.px3sg/pl
 ! iskayninku:iskayninku PRON ; ! "los dos, ambos" -   poner en bidix y en la transferencia, 2-POSpl (3sg)
 ! iskaynin:iskaynin ADJ-DET ; ! "ambos"
+
+! pronombres indefinidos
 
 ! los que toman derivativos (-yuq...), a veces plural...
 imaymana:imaymana PRON ;    ! "todas las cosas", "de todo"
@@ -2833,7 +2974,9 @@ sapa:sapa DET-Ind ;         ! "cada"
 sapanka:sapanka DET-Ind ;   ! "cada"
 wakin:wakin DET-Ind ;       ! "algunos"
 wakillan:wakillan DET-Ind ; ! "unos (pocos), algunos"
+pasaq:pasaq DET-Ind ;       ! "cada"
 
+! pronombres y determinantes cuantitativos en LEX Preadjetivos
 
 LEXICON Numerales
 huq:huq NUM ;   ! "uno"
@@ -2909,21 +3052,17 @@ mana%<adv%>%<dfnt%>:manapuni CLIT-raq-na ;    ! "de ninguna manera"
 
 riki%<adv%>:riki # ;        ! "pues"
 yaqa:yaqa ADV-lla ;         ! "casi" + yaqa(cha)(lla)(manta|pi)
+kuska:kuska ADV-lla ; ! "junto"
+ña:ña ADV ; ! "ya"
 
 alli% allillanta:alli% allillanta ADV ; ! "con atención"
 alli% allillamanta:alli% allillamanta ADV ; ! "poco a poco"
 alli% allillamanta:alli%-allillamanta ADV ; ! "poco a poco"
-aswanta:aswanta ADV ; ! "más"
-kuska:kuska ADV-lla ; ! "junto"
-ña:ña ADV ; ! "ya"
 tukuy% hinantinpi:tukuy% hinantinpi ADV ; ! "en todas partes"
 usqhaylla:usqhaylla ADV ; ! "rápidamente"
 
 allinta:allinta ADV ; ! "bien"
 
-anchata:anchata ADV ; ! "mucho"
-asllata:asllata ADV ; ! "un poco"
-pisillata:pisillata ADV ; ! "poco"
 
 hawapi:hawapi ADV ; ! "afuera"
 muyuyninpi:muyuyninpi ADV ; ! "alrededor"
@@ -2935,6 +3074,85 @@ ichapas:ichapas ADV-taq ; ! "probablemente"
 
 hinallataq%<adv%>:hinallataq CLIT-Final ; ! "asimismo, así mismo"
 
+
+! adverbios derivados de preadjetivos
+
+anchata:anchata ADV ;       ! "mucho"
+askhata:askhata ADV ;       ! "mucho, harto"
+
+as% aschallamanta:as% aschallamanta ADV ;   ! "poco a poco"
+as% asllamanta:as% asllamanta ADV ;         ! "poco a poco"
+as% asmanta:as% asmanta ADV ;       ! "poco a poco, paulatinamente"
+aschallamanta:aschallamanta ADV ;   ! "por los pelos, por poco"
+aschallata:aschallata ADV ;         ! "poco"
+asllamanta:asllamanta ADV ;         ! "por poco"
+asllata:asllata ADV ;       ! "(un) poco"
+asmanta:asmanta ADV ;       ! "por poco"
+! asta:asta ADV ;           ! "un poco" - no (infrecuente, más bien será "asta" < es. hasta)
+asllata:asllata ADV ;       ! "un poco"
+aschallata:aschallata ADV ; ! "un poco"
+aswan:aswan ADV ;           ! "más bien, mejor"
+aswanta:aswanta ADV ;       ! "más"
+aswan% askhata:aswan% askhata ADV ;     ! "más"
+aswan% astawan:aswan% astawan ADV ;     ! "a más no poder"
+aswan% pisita:aswan% pisita ADV ;       ! "menos"
+aswanpas:aswanpas ADV-taq ;             ! "más bien"
+aswanpas:aswanpas ADV-taq ;             ! "a pesar de que" (? con -spa, -qti- ???)
+aswanraq%<adv%>:aswanraq CLIT-pas ;     ! "más bien"
+
+chhika% chhikallamanta:chhika% chhikallamanta ADV ;     ! "poco a poco"
+chhika% chhikallamanta:chika% chikallamanta ADV ;       ! "poco a poco" - Dir/LR
+chhika% chhikallanta:chhika% chhikallanta ADV ;     ! "poco a poco"
+chhika% chhikallanta:chika% chikallanta ADV ;       ! "poco a poco" - Dir/LR
+chhika% chhikallata:chhika% chhikallata ADV ;       ! "poco a poco"
+chhika% chhikallata:chika% chikallata ADV ;         ! "poco a poco" - Dir/LR
+chhika% chhikamanta:chhika% chhikamanta ADV ;       ! "poco a poco"
+chhika% chhikamanta:chika% chikamanta ADV ;         ! "poco a poco" - Dir/LR
+chhikachallanta:chhikachallanta ADV ;       ! "un poquito"
+chhikachallanta:chikachallanta ADV ;        ! "un poquito" - Dir/LR
+chhikachallata:chhikachallata ADV ;         ! "un poquito"
+chhikachallata:chikachallata ADV ;          ! "un poquito" - Dir/LR
+chhikallanta:chhikallanta ADV ;         ! "un poquito"
+chhikallata:chhikallata ADV ;           ! "un poquito"
+! chhikallanta:chikallanta ADV ;        ! "un poquito" - Dir/LR - mejor no, para no confundir con "chica"
+! chhikallata:chikallata ADV ;          ! "un poquito" - Dir/LR - mejor no, para no confundir con "chica"
+
+kapasta:kapasta ADV ;       ! "mucho"
+khuwayta:khuwayta ADV ;     ! "demasiado"
+khuwayta:khuyayta ADV ;     ! "demasiado" - Dir/LR
+llasaqta:llasaqta ADV ;     ! "harto"
+llunpaqta:llunpaqta ADV ;       ! "demasiado"
+llunpayta:llunpayta ADV ;       ! "demasiado"
+llunpayllaña%<adv%>:llunpayllaña CLIT-pas ;     ! "apenas"
+manchayta:manchayta ADV ;       ! "terriblemente"
+
+nishuta:nishuta ADV ;       ! "demasiado"
+nishuta:nishiwta ADV ;      ! "demasiado" - Dir/LR
+nishuta:nisiwta ADV ;       ! "demasiado" - Dir/LR
+nisuuta:nisyuta ADV ;       ! "demasiado" - Dir/LR
+nishu% askhata:nishu% askhata ADV ;     ! "demasiado"
+
+pasaq% kuti:pasaq% kuti ADV-lla ;   ! "varias veces"
+pasaqlla:pasaqlla ADV ;             ! "frecuentemente, a menudo"
+pasaqllaña%<adv%>:pasaqllaña CLIT-pas ;     ! "por demás"
+pasaqllata:pasaqllata ADV ;         ! "varias veces"
+pasaqpi:pasaqpi ADV ;       ! "en todas partes"
+pasaqta:pasaqta ADV ;       ! "varias veces"
+
+pisi% pisichallamanta:pisi% pisichallamanta ADV ;       ! "poco a poco"
+pisi% pisillamanta:pisi% pisillamanta ADV ;             ! "poco a poco"
+pisi% pisimanta:pisi% pisimanta ADV ;       ! "poco a poco"
+pisita:pisita ADV ;                 ! "poco, un poco"
+pisillata:pisillata ADV ;           ! "poco, un poco"
+pisichallata:pisichallata ADV ;     ! "poco, un poco"
+
+sinchikama:sinchikama ADV ;         ! "tremendamente"
+sinchinkama:sinchinkama ADV ;       ! "por demás"
+sinchita:sinchita ADV ;             ! "muchísimo, mucho, harto, tanto"
+tunpallapas:tunpallapas ADV-taq ;   ! "por si acaso"
+tunpallata:tunpallata ADV ;         ! "un poco"
+tunpata:tunpata ADV ;       ! "un poco"
+waliqta:waliqta ADV ;       ! "harto"
 
 
 LEXICON Conjunciones
@@ -2962,6 +3180,12 @@ karahu:karahu Interj ;
 carajo:carajo Interj ;
 ay:ay Interj ;
 
+allillanchu:allillanchu Interj ;    ! "hola, qué tal?"
+imaynalla:imaynalla Interj ;        ! "hola, qué tal?"
+imaynallan:imaynallan Interj ;      ! "hola, qué tal?"
+askama:askama Interj ;          ! "hasta pronto"
+askamalla:askamalla Interj ;    ! "hasta pronto"
+askamayá:askamayá Interj ;      ! "hasta pronto"
 
 
 LEXICON Verbos
@@ -3967,5 +4191,6 @@ LEXICON Puntuación
 
 
 <[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ 
+<[M | C | D | X | L | V | I]+>  DIGITLEX ; ! Use/Circ 
 
 END

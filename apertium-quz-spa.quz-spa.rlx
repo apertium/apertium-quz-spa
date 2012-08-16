@@ -58,6 +58,11 @@ SELECT (imp) IF (1 ("<!>")) ;
 
 
 ## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
+#select (det dem) if (0 (prn dem)) ( (1 N) or (1 ADJ) (2 N) or (1 ADJ) (2 ADJ) (1 N) )
+# = select (prn dem nom)
+
+# "<asta>": select "asta" (no "as" (acc))
+
 
 # chaymi "por eso":
 # - al prinicpio, desp. de comilla o espacio
