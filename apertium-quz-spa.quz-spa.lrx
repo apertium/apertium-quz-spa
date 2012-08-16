@@ -3,7 +3,7 @@
     <match lemma="runa"><select lemma="gente"/></match>
   </rule>
   
-  <rule> <!-- borrar después de poner una regla en la CG -- YA!! -->
+  <rule> <!-- borrar después de poner una regla en la CG - - YA!! -->
     <match lemma="pi" tags="prn.itg.nom"><remove lemma="qué"/></match>
     <match lemma="*" tags="vblex.*" />
   </rule>
