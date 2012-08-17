@@ -69,6 +69,10 @@ SELECT (imp) IF (1 ("<!>")) ;
 # select imp if not 0* (mi/si/chá/chu..?) y hay por lo menos n palabras ???
 
 
+  # pero: tukuy N --> det, prn (no adj o N-px1sg)
+REMOVE ("tuku") IF (0 ("tukuy")) ;  # desbuhando
+SELECT ("tukuy" det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
+
 SELECT A IF (0 N LINK 0 (nom) LINK 1C N) ;
   # wira runa - "hombre gordo", y no "hombre de grasa"
 
@@ -122,7 +126,7 @@ SELECT (det qnt) IF (1C N) ;
 # algunos son también ADJ - sinchi (+ nom), manchay, waliq
 # otros verbos nominalizados - pasaq, llasaq, khuyay, tunpa(n)
 # distinguir as(lla) "poco" de as+...+wan "más" (poner as "más" como aswan?)
-# asta - prep
+# asta - prep, tukuy
 
 
 # para los nominalizadores (si existe N) select nom si va con det
