@@ -360,7 +360,7 @@ CLIT-puni ;
 LEXICON N-POSTcaso-wan
 %<cnjcoo%>:%>wan CLIT-puni ;
 !! %<cnjcoo%>:%>puwan N-POSTcaso ;     ! como conjunción "y", "con"
-!! %<cnjcoo%>:%>piwan N-POSTcaso ;
+!! %<cnjcoo%>:%>piwan N-POSTcaso ;      ! talvez otra etiqueta (ins-coord)
 CLIT-puni ;
 
 LEXICON N-POSTcaso
@@ -1247,7 +1247,7 @@ LEXICON Postp
 %<post%>: N-FLEX-POS ;
 
 LEXICON Preadj
-%<preadj%>: N-FLEX-Caso ;
+%<preadj%>: # ;
 
 LEXICON PRON
 %<prn%>: N-DER ;
@@ -1493,7 +1493,7 @@ arma:arma N ;       ! baño
 arwi:arwi N ;       ! enredo
 asnapa:asnapa N ;   ! hierba
 asnu:asnu N ;       ! "asno, burro"
-aswa:aswa N ;       ! chicha
+aswa:aswa N ;       ! "chicha"
 ataw:ataw N ;       ! fortuna
 atuq:atuq N ;       ! "zorro"
 awa:awa N ;         ! tela
@@ -2802,6 +2802,8 @@ sinchi:sinchi PRON ;    ! "mucho"
 tunpa:tunpa PRON ;      ! "poco"
 waliq:waliq PRON ;      ! "harto"
 
+! adverbios en LEX Adverbios
+
 
 LEXICON PronombresDemItg
 !! + gen, pos, dim itg = N-DER
@@ -2825,10 +2827,14 @@ chhaynaniraq:chhaynaniraq ADV ; ! "así" (det/adv) (así de grande, tanto..)
 ! + (lla) (ta) etc.
 ! kayniraq... chhaynaniraq - adv (de esta..), det (así)
 
+
+! interrogativos - no todos como det
+
 ima:ima PronItg ; ! "qué"
 ima:ima DET-Itg ; ! "qué"
 pi:pi PronItg ; ! "quién"
 pi:pi DET-Itg ; ! "quién"
+! pini:pini + POS oblig (sg/pl)
 pi%<prn%>%<itg%>%<gen%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
 pi%<det%>%<itg%>%<gen%>:piqpa N-FLEX-Caso ;    ! "de quién, cuyo"
 mayqin:mayqin PronItg ;     ! "cuál"
@@ -2837,7 +2843,8 @@ mayqin:mayqan PronItg ;     ! "cuál" - Dir/LR
 mayqin:mayqan DET-Itg ;     ! "qué" (cuál) - Dir/LR
 
 ! adverbios
-hayk%'a:hayk%'a PronItg ;	! "cuánto", genitivo = "cuándo"
+hayk%'a:hayk%'a PronItg ;   ! "cuánto", genitivo = "cuándo"
+hayk%'a:hayk%'a DET-Itg ;   ! "cuánto"
 ! hayk%'aq = hayk%'ap cuándo - pasado como hayk'a+gen
 may:may PronItg ;       ! "dónde"
 may:may DET-Itg ;       ! "qué" (lugar)

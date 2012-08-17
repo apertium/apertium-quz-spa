@@ -9,11 +9,11 @@ LIST Prop = (np ant) ;
 LIST Vmov = vm ;
 LIST V = vblex ;
 
-LIST Gen = gen ; 
-LIST Acc = acc ; 
-LIST Per = per ;
-LIST P3acc = (px3sg acc) ;
-LIST Inf = (vblex inf) ;
+LIST Gen = gen ; # -q/pa
+LIST Acc = acc ; # -ta
+LIST Per = per ; # -nta
+LIST P3acc = (px3sg acc) ; # -n-ta
+LIST Inf = (vblex inf) ; # -y
 LIST N-Acc = (n acc) ;
 
 LIST Anim = "irqi" "wawa" "wamra" "warma" "willka" 
@@ -23,9 +23,11 @@ LIST Anim = "irqi" "wawa" "wamra" "warma" "willka"
 ## animados
 
 LIST Clit-NoImp = dfnt contr topi rnd af rep cnj dub ;
+#                -puni -taq -qa  -ri -mi -si -chá -chus
 # clíticos no usados con el imperativo - pero ???  cnti dcnt adt (raq ña pas), contr (taq) ?? dfnt (puni)?
 
 LIST Clit = contr topi rnd qst af rep cnj dub enf ; # clíticos oracionales (sin los independientes)
+#          -taq   -qa -ri -chu -mi -si -chá -chus -ya
 
 SECTION
 
@@ -56,6 +58,17 @@ SELECT (imp) IF (1 ("<!>")) ;
 # select (imp) si es la única palabra en la oración
 # select imp if not 0* (mi/si/chá/chu..?) y hay por lo menos n palabras ???
 
+# chaymi (antes de select prn.dem)
+# SELECT ("chaymi") IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
+SELECT ("chaymi") IF (1C* V BARRIER ("<,>")) ;
+
+# pronombres demostrativos - determinantes - adverbios
+REMOVE (adv subst dem) IF (0 (det dem)) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (det dem) IF (0 (prn dem) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
+SELECT (prn dem) IF (0 (det dem) OR (adv subst dem) LINK 0 Clit) ;
 
 ## algo para prn.dem × adv × conj (prn.dem × adj/det.dem)
 #select (det dem) if (0 (prn dem)) ( (1 N) or (1 ADJ) (2 N) or (1 ADJ) (2 ADJ) (1 N) )
@@ -64,7 +77,7 @@ SELECT (imp) IF (1 ("<!>")) ;
 # "<asta>": select "asta" (no "as" (acc))
 
 
-# chaymi "por eso":
+# chaymi "por eso": selec si no sige verbo en 3sg/pl
 # - al prinicpio, desp. de comilla o espacio
 # "eso, ese" = sujeto, objeto, pred. nominal
 # ??? X qhawashan = "ese"/"por" eso mira :-(
@@ -83,5 +96,40 @@ SELECT (imp) IF (1 ("<!>")) ;
 # PERO vm sin caus !!! - desp. ambivalente !!! (-ta)
 # prn - tiene referente anafórico... pero..???
 
+# lemas por desambiguar:
+# "aswan" "aswa" select aswan
+# lluychu "venado" vs. lluy-chu "todo<qst>"
+# kay - dem, vbcop/vbes + imp/inf
+# chay-mi - chaymi
+# huk/huq(nin)
+# waki - "otros, algunos" prn/det vs. "parte" N
+# tukuy - "todo" det/prn, "entero" ADJ, "mi buho" N, "terminar" vblex
+# pasaq - det/prn, "pasar" vblex+ag (adv: + (lla) ña|pi)
+# q'ala - "todo" prn/det, "calato" ADJ
+# llasaq - prn/det/adv, "pesar" ag (llasaqta)
+# allin - preadj, "bueno" adj
+# sinchi - "fuerte" adj, "bastante" det/prn/preadj/adv
+# manchay - "terrible" preadj/adj, "espantar/tener miedo" vblex
+# aswan - "chicha" + -n, "más" prn + acc / adv
+# waliq - "valer" vblex ag, "bueno" (lla) adj, "harto" det/prn
+# tunpa(n) - "mostrar, indicar" vblex + -n..., "poco" prn/det/adv
+# khuyay - "conmoverse" vblex inf/imp (qa, mi), "demasiado" prn/det/preadj/adv
+# asta - "poco" prn + acc, "hasta" prep
+# as - aswan - "un poco" sin wan, "más" con wan, a veces ambos :-(
+# ima - "qué" prn, (+ ima sumaq preadj), "y" cnjcoo
+# pi-cha - "barrer" vblex imp/inf, "quien" prn dim/conj - + (n..) POS --> verbo
+# may-lla - "llavar", "dónde" = --^ (adv - sólo algunos casos)
+# pi - + POS mejor pini-
 
-          ## AND = LINK 0
+
+
+# NULL-SECTION
+# no se ejecuta
+
+          ## AND = LINK 0, o + (+, -, OR = sets; link = entre tests)
+          # (test) AND (test) AND (test) = (test LINK test LINK test)
+          # (test) (test) = (test) AND (test)
+          # ??? (test) OR (test)
+          # (tag) (tag) = (tag) OR (tag)
+          # (tag) + (tag) = (tag) AND (tag)
+          # SELECT ("<wordform>"i) + (tag) ; ( "<wordform>"i SELECT (tag) ; - no funciona)

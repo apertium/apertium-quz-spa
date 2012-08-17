@@ -414,6 +414,7 @@
 <section id="ADJ__DET__POSESIVOS" type="standard">
 
 <!-- las formas con doble genitivo = -q-pa, probablemente se va a cambiar (gen.gen2) -->
+<!-- hay que añadir formas con (dim) (lim) y personayki y qan - de usted(es) -->
 <e><p><l>ñuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l>
   <r>mío<s n="adj"/><s n="pos"/></r></p></e>
 <e r="LR"><p><l>nuqa<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l>
@@ -498,6 +499,7 @@
 
 <e><p><l>hayk'a<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
 <e><p><l>hayk'a<s n="prn"/><s n="itg"/></l><r>cuánto<s n="prn"/><s n="itg"/></r></p></e>
+<e><p><l>hayk'a<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
 
 <e><p><l>may<b/>chhika<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
 <e r="LR"><p><l>may<b/>chhikan<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
