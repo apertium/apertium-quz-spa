@@ -54,7 +54,7 @@ Multichar_Symbols
 %<det%>         ! determinante (hispanismos)
 %<def%>         ! determinante definido
 %<ind%>         ! determinante indefinido
-%<qnt%>         ! determinante cuantitativo
+%<qnt%>         ! determinante/pron cuantitativo
 
 %<pers%>      ! personal (pronombre)
 %<itg%>       ! interrogativo (pronombre, adverbio)
@@ -2653,11 +2653,13 @@ sumaq:sumaq ADJ ;       ! "agradable"
 t%'ukri:tukri ADJ ;     ! "oficial" - Dir/LR
 t%'ukri:t%'ukri ADJ ;   ! "oficial"
 tukuy:tukuy ADJ ;       ! todo, entero         - cambiar lex, categoría
+tullu:tullu ADJ ;       ! "flaco, esbelto"
 wakcha:wakcha ADJ ;     ! pobre, huérfano
 wanka:wanka ADJ ;       ! "huanca" (de Huancayo)
 yana:yana ADJ ;         ! "negro"
 yuraq:yuraq ADJ ;       ! "blanco"
 waliq:waliq ADJ ;       ! "valiente", valiqlla "bien"
+wira:wira ADJ ;         ! "gordo"
 
 upa:upa ADJ ;       ! "tonto, sonso"
 kuraq:kuraq ADJ ;   ! "mayor"

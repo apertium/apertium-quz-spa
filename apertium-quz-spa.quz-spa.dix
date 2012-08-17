@@ -863,6 +863,9 @@
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
     <e><p><l>t'ukri<s n="adj"/></l><r>oficial<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>tambobambino<s n="adj"/></l><r>tambobambino<s n="adj"/></r></p></e>
+    <e><p><l>tullu<s n="adj"/></l><r>flaco<s n="adj"/></r></p></e>
+    <e><p><l>tullu<s n="adj"/></l><r>esbelto<s n="adj"/></r></p></e>
+    <e><p><l>tullu<s n="adj"/></l><r>delgado<s n="adj"/></r></p></e>
     <e><p><l>upa<s n="adj"/></l><r>tonto<s n="adj"/></r></p></e>
     <e r="RL"><p><l>upa<s n="adj"/></l><r>sordo<s n="adj"/></r></p></e>
     <e><p><l>wakcha<s n="adj"/></l><r>pobre<s n="adj"/><s n="mf"/></r></p></e>
@@ -870,6 +873,7 @@
     <e><p><l>waliq<s n="adj"/></l><r>valiente<s n="adj"/><s n="mf"/></r></p></e>
     <e r="RL"><p><l>waliq<s n="adj"/><s n="lim"/></l><r>bien<s n="adv"/></r></p></e>
     <e><p><l>wanka<s n="adj"/></l><r>huanca<s n="adj"/></r></p></e>
+    <e><p><l>wira<s n="adj"/></l><r>gordo<s n="adj"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
     <e><p><l>yuraq<s n="adj"/></l><r>blanco<s n="adj"/></r></p></e>
 
