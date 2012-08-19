@@ -17,16 +17,15 @@ LIST P3acc = (px3sg acc) ;      # -n-ta
 LIST Inf = inf ;        # -y
 LIST N-Acc = (n acc) ;
 LIST Nomin = inf ag pp pf ;     # nominalizadores -y, -q, -sqa, -na
-LIST Caso = acc gen ben dat ter per abl loc ins csal dis prox posic ;   # son nominativo
+LIST Caso = acc gen ben dat ter per abl loc ins csal dis prox posic ;   # sin nominativo
 
 LIST Clit-NoImp = dfnt contr topi rnd af rep cnj dub ;
 #                -puni -taq -qa  -ri -mi -si -chá -chus
-# clíticos no usados con el imperativo - pero ???  cnti dcnt adt (raq ña pas), contr (taq) ?? dfnt (puni)?
+# clíticos no usados con el imperativo - pero ???  cnti dcnt adit (raq ña pas), contr (taq) ?? dfnt (puni)?
 
 
 LIST Clit = contr topi rnd qst af rep cnj dub enf ; # clíticos oracionales (sin los independientes)
 #          -taq   -qa -ri -chu -mi -si -chá -chus -ya
-
 
 
 LIST Anim = "irqi" "wawa" "wamra" "warma" "willka" 
@@ -57,7 +56,6 @@ REMOVE ("riy" refl) IF  (0 ("rikuy")) ;
 SELECT Inf IF (0 N-Acc LINK *0 V) ;
 # ( N | INF ) Acc + vblex tv --> INF
 
-
 # IMPERATIVO | INF + NOM
 REMOVE (imp) IF (0 Clit-NoImp) ;
 REMOVE (imp) IF (1* ("<?>")) ;
@@ -75,11 +73,13 @@ SELECT ("tukuy" det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
 
 SELECT A IF (0 N LINK 0 (nom) LINK 1C N) ;
   # wira runa - "hombre gordo", y no "hombre de grasa"
+  
+SELECT N IF (0 A LINK 0 Caso) ;
+  # warmita "mujer", no "hembra"
 
 # chaymi (antes de select prn/det.dem)
 # SELECT ("chaymi") IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
 SELECT ("chaymi") IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>
-
 
 # pronombres demostrativos - determinantes - adverbios
 REMOVE (adv subst dem) IF (0 (det dem)) ;
@@ -128,6 +128,10 @@ SELECT (det qnt) IF (1C N) ;
 # distinguir as(lla) "poco" de as+...+wan "más" (poner as "más" como aswan?)
 # asta - prep, tukuy
 
+REMOVE (evid) IF (1* V) ;
+# revisar, talvez BARRIER ("<,>")
+
+SELECT N IF (0 (ag) LINK -1 A OR (det)) ; # -1C ?
 
 # para los nominalizadores (si existe N) select nom si va con det
 # SELECT N IF (0 Inf OR (imp) LINK -1C (det) ; # - ojo, revisar para subord, tipos de det..
@@ -136,7 +140,7 @@ SELECT (det qnt) IF (1C N) ;
 # o remove (af) if (0 (px3sg) LINK *0C Clit) ;
 
 
-
+END
 
 # ---------------------------------------------------
 
@@ -199,7 +203,7 @@ SELECT (det qnt) IF (1C N) ;
           ## AND = LINK 0, o + (+, -, OR = sets; link = entre tests)
           # (test) AND (test) AND (test) = (test LINK test LINK test)
           # (test) (test) = (test) AND (test)
-          # ??? (test) OR (test)
+          # ??? (test) OR (test) - ok (= varios tests: sel blah, sel blaj...)
           # (tag) (tag) = (tag) OR (tag)
           # (tag) + (tag) = (tag) AND (tag)
           # SELECT ("<wordform>"i) + (tag) ; ( "<wordform>"i SELECT (tag) ; - no funciona)

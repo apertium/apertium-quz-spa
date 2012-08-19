@@ -173,7 +173,7 @@
     <sdef n="topi"      c="tópico       -qa     "/>
     <sdef n="qst"       c="interrogativo/negativo -chu"/>
     <sdef n="contr"     c="contrastivo  -taq    "/>
-    <sdef n="adt"       c="aditivo      -pas    "/>
+    <sdef n="adit"      c="aditivo      -pas    "/>
     <sdef n="cnti"      c="continuativo -raq    "/>
     <sdef n="dcnt"      c="discontinuativo -ña  "/>
     <sdef n="dfnt"      c="definitivo   -puni   "/>
@@ -204,7 +204,7 @@
     <e><p><l>qa<s n="topi"/></l><r></r></p></e>
     <e><p><l>chu<s n="qst"/></l><r></r></p></e>
     <e><p><l>taq<s n="contr"/></l><r></r></p></e> y<s n="cnjcoo"/>
-    <e><p><l>pas<s n="adt"/></l><r>también<s n="adv"/></r></p></e>
+    <e><p><l>pas<s n="adit"/></l><r>también<s n="adv"/></r></p></e>
     <e><p><l>raq<s n="cnti"/></l><r>todavía<s n="adv"/></r></p></e>
     <e><p><l>ña<s n="dcnt"/></l><r>ya<s n="adv"/></r></p></e>
     <e><p><l>puni<s n="dfnt"/></l><r>siempre<s n="adv"/></r></p></e>
@@ -333,6 +333,7 @@
     <e><p><l>añay<s n="ij"/></l><r>gracias<s n="ij"/></r></p></e>
     <e><p><l>yaw<s n="ij"/></l><r>oye<s n="ij"/></r></p></e>
     <e><p><l>carajo<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
+    <e><p><l>chucha<s n="ij"/></l><r>chucha<s n="ij"/></r></p></e>
     <e><p><l>karahu<s n="ij"/></l><r>carajo<s n="ij"/></r></p></e>
     <e><p><l>alaláw<s n="ij"/></l><r>qué<b/>frío<s n="ij"/></r></p></e>
     <e><p><l>taytáy<s n="ij"/></l><r>papito<s n="ij"/></r></p></e>
@@ -882,6 +883,7 @@
 <section id="ADJETIVOS_DERIVADOS" type="standard">    
     
     <e><p><l>kusisqa<s n="adj"/></l><r>alegre<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>machasqa<s n="adj"/></l><r>borracho<s n="adj"/></r></p></e>
     <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>universal<s n="adj"/></r></p></e>
     <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>mundial<s n="adj"/></r></p></e>
     <e><p><l>pacha<s n="n"/><s n="incl"/></l><r>de<b/>todo<b/>el<b/>mundo<s n="adj"/></r></p></e>
@@ -1225,7 +1227,7 @@
     <e r="LR"><p><l>kichwa<s n="n"/></l><r>quechua<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>killa<s n="n"/></l><r>luna<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>killa<s n="n"/></l><r>mes<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>killa<b/>unquy<s n="n"/></l><r>menstrución<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>killa<b/>unquy<s n="n"/></l><r>menstruación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>killa<b/>wañuy<s n="n"/></l><r>eclipse<g><b/>de<b/>la<b/>luna</g><s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>kinuwa<s n="n"/></l><r>quinua<s n="n"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>kinwa<s n="n"/></l><r>quinua<s n="n"/><s n="f"/></r></p></e>
@@ -2275,7 +2277,6 @@
     <e><p><l>Francis<s n="np"/><s n="ant"/></l><r>Francis<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Francisco<s n="np"/><s n="ant"/></l><r>Francisco<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Jaime<s n="np"/><s n="ant"/></l><r>Jaime<s n="np"/><s n="ant"/></r></p></e>
-    <e><p><l>José<s n="np"/><s n="ant"/></l><r>José<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>María<s n="np"/><s n="ant"/></l><r>María<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Tomás<s n="np"/><s n="ant"/></l><r>Tomás<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Tumas<s n="np"/><s n="ant"/></l><r>Tomás<s n="np"/><s n="ant"/></r></p></e>
@@ -2295,6 +2296,7 @@
     <e><p><l>Alfredo<s n="np"/><s n="ant"/><s n="m"/></l><r>Alfredo<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Alvarado<s n="np"/><s n="ant"/><s n="mf"/></l><r>Alvarado<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Anastasia<s n="np"/><s n="ant"/><s n="f"/></l><r>Anastasia<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Antonio<s n="np"/><s n="ant"/><s n="m"/></l><r>Antonio<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Cerrón<s n="np"/><s n="ant"/><s n="mf"/></l><r>Cerrón<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Cerrón-Palomino<s n="np"/><s n="ant"/><s n="mf"/></l><r>Cerrón-Palomino<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Diego<s n="np"/><s n="ant"/><s n="m"/></l><r>Diego<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
@@ -2307,14 +2309,21 @@
     <e><p><l>González<s n="np"/><s n="ant"/><s n="mf"/></l><r>González<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Holguín<s n="np"/><s n="ant"/><s n="mf"/></l><r>Holguín<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Humala<s n="np"/><s n="ant"/><s n="mf"/></l><r>Humala<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>José<s n="np"/><s n="ant"/><s n="m"/></l><r>José<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Juan<s n="np"/><s n="ant"/><s n="m"/></l><r>Juan<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Manrique<s n="np"/><s n="ant"/><s n="m"/></l><r>Manrique<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Manrique<s n="np"/><s n="ant"/><s n="mf"/></l><r>Manrique<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Miguel<s n="np"/><s n="ant"/><s n="m"/></l><r>Miguel<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Mila<s n="np"/><s n="ant"/><s n="f"/></l><r>Mila<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+    <e><p><l>Mocho<s n="np"/><s n="ant"/><s n="mf"/></l><r>Mocho<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mono<s n="np"/><s n="ant"/><s n="mf"/></l><r>Mono<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Morales<s n="np"/><s n="ant"/><s n="mf"/></l><r>Morales<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Mosho<s n="np"/><s n="ant"/><s n="mf"/></l><r>Mosho<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Ollanta<s n="np"/><s n="ant"/><s n="m"/></l><r>Ollanta<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Parker<s n="np"/><s n="ant"/><s n="mf"/></l><r>Parker<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Pato<s n="np"/><s n="ant"/><s n="m"/></l><r>Patricio<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Pizarro<s n="np"/><s n="ant"/><s n="mf"/></l><r>Pizarro<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
+    <e><p><l>Rosa<s n="np"/><s n="ant"/><s n="f"/></l><r>Rosa<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
     <e><p><l>Rosablanca<s n="np"/><s n="ant"/><s n="f"/></l><r>Rosa<b/>Blanca<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
     <e><p><l>Santiago<s n="np"/><s n="ant"/><s n="m"/></l><r>Santiago<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Susana<s n="np"/><s n="ant"/><s n="f"/></l><r>Susana<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
@@ -2424,6 +2433,7 @@
 <section id="NOMBRES_HISPANISMOS" type="standard">
       
     <e><p><l>nacionalidad<s n="n"/></l><r>nacionalidad<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>alcalde<s n="n"/></l><r>alcalde<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>animal<s n="n"/></l><r>animal<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>asnu<s n="n"/></l><r>asno<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>birrete<s n="n"/></l><r>birrete<s n="n"/><s n="m"/></r></p></e>
@@ -2438,6 +2448,7 @@
     <e><p><l>doña<s n="n"/></l><r>doña<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>empresa<s n="n"/></l><r>empresa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>estado<s n="n"/></l><r>estado<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>estanco<s n="n"/></l><r>estanco<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>mesa<s n="n"/></l><r>mesa<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>nación<s n="n"/></l><r>nación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>

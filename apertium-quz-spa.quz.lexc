@@ -197,7 +197,7 @@ Multichar_Symbols
 %<cnti%>         ! continuativo -raq
 ! %<cnt%>         ! continuativo -raq (cnt = countable)
 %<dcnt%>        ! discontinuativo -ña
-%<adt%>         ! aditivo -pas, -pis
+%<adit%>         ! aditivo -pas, -pis
 %<topi%>        ! tópico, tema -qa
 %<rnd%>         ! reanudador -ri
 %<qst%>         ! interrogativo/negativo -chu   = no-asertivo
@@ -296,31 +296,35 @@ Puntuación ;
 
 LEXICON CLIT-Final
 %<topi%>:%>qa # ;
+%<topi%>%<excl%>:%>qá # ;
 %<rnd%>:%>ri # ;
-! %<rnd%>:%>rí # ;
+%<rnd%>%<excl%>:%>rí # ;
 %<af%>:%>%{M%}%{bI%} # ;
-%<rep%>:%>s%{bI%} # ;
 %<af%>:%>min # ;        ! Dir/LR
+%<af%>%<excl%>:%>m%>á # ;
+%<af%>%<excl%>:%>m%>ari # ;         ! Dir/LR
+%<rep%>:%>s%{bI%} # ;
 %<rep%>:%>sis # ;       ! Dir/LR
-%<cnj%>:%>chá # ;
+%<rep%>%<excl%>:%>s%>yá # ;
+%<rep%>%<excl%>:%>s%>ari # ;        ! Dir/LR
+%<cnj%>:%>chá # ;                   ! forma (casi) siempre enfática en el cuzqueño (-cha más bien dim)
+! talvez -cha con itg
+%<cnj%>%<excl%>:%>ch%>ari # ;       ! Dir/LR
 %<enf%>:%>ya # ;
 %<enf%>%<excl%>:%>y%>á # ;
-%<af%>%<excl%>:%>m%>á # ;
-%<rep%>%<excl%>:%>s%>yá # ;
+%<enf%>%<excl%>:%>y%>ari # ;        ! Dir/LR
 %<dub%>:%>chus # ;
 %<dub%>:%>chusuna # ;
 %<dub%>:%>chusina # ;
 %<dub%>0:chus%>mi # ;
 %<dub%>:%>chus% hina # ;
-%<af%>%<excl%>:%>m%>ari # ;         ! Dir/LR
-%<rep%>%<excl%>:%>s%>ari # ;        ! Dir/LR
-%<cnj%>%<excl%>:%>ch%>ari # ;       ! Dir/LR
-%<enf%>%<excl%>:%>y%>ari # ;        ! Dir/LR
-!! (sá), ari, á, chuqa(ya), taqri, churi, suna, sina, qá, rí, táq
+! suna, sina - dub
+!! (sá), ari, á, 
 # ; 
 
 LEXICON CLIT-chu
 %<qst%>:%>chu # ;
+! -chu-qa(ya), -chu-ri ??? (ayacuchano?)
 CLIT-Final ;
 
 LEXICON CLIT-taq
@@ -329,15 +333,15 @@ LEXICON CLIT-taq
 CLIT-chu ;
 
 LEXICON CLIT-pas
-%<adt%>:%>pas CLIT-taq ;
-%<adt%>:%>pis CLIT-taq ;    ! Dir/LR
+%<adit%>:%>pas CLIT-taq ;
+%<adit%>:%>pis CLIT-taq ;    ! Dir/LR
 CLIT-taq ;
 
 
 LEXICON CLIT-raq-na
 %<cnti%>:%>raq CLIT-pas ;
 %<dcnt%>:%>ña CLIT-pas ;
-%<adt%>%<cnti%>:%>pas%>raq CLIT-taq ;   ! Dir/LR
+%<adit%>%<cnti%>:%>pas%>raq CLIT-taq ;   ! Dir/LR
 CLIT-pas ;
 
 LEXICON CLIT-puni
@@ -358,9 +362,9 @@ LEXICON N-POSTcaso-kama
 CLIT-puni ;
 
 LEXICON N-POSTcaso-wan
-%<cnjcoo%>:%>wan CLIT-puni ;
-!! %<cnjcoo%>:%>puwan N-POSTcaso ;     ! como conjunción "y", "con"
-!! %<cnjcoo%>:%>piwan N-POSTcaso ;      ! talvez otra etiqueta (ins-coord)
+%<cnjcoo%>:%>wan CLIT-puni ;            ! otra etiqueta?, -wan-kama ??
+%<cnjcoo%>:%>puwan CLIT-puni ;     ! como conjunción "y", "con" - Dir/LR
+%<cnjcoo%>:%>piwan CLIT-puni ;      ! talvez otra etiqueta (ins-coord) - Dir/LR
 CLIT-puni ;
 
 LEXICON N-POSTcaso
@@ -375,14 +379,14 @@ LEXICON N-FLEX-Caso-lla
 %<ter%>:%>kama N-lla-POSTcaso ;
 !! %<prox%>%<ter%>:%>niqkama  N-lla-POSTcaso ; ! ni-lla-q-kama??? niq-kama-lla???
 %<csal%>:%>rayku N-lla-POSTcaso ;
-!! %<dis%>:%>%{bN%}%{bnI%}nka N-lla-POSTcaso ;
+%<dis%>:%>%{bN%}%{bnI%}nka N-lla-POSTcaso ;     ! sólo en oraciones distributivas, con numerales...
 !! combinaciones: rayku(lla)wan, rayku(lla)pi, rayku(lla)paq
 
 
 LEXICON N-FLEX-lla-Caso
 %<nom%>@D.gen@:@D.gen@ N-POSTcaso ;
 @R.gen.pres@:@R.gen.pres@ N-POSTcaso ;
-!! %<gen%>:%>%{P%}%{bA%} ! segundo genitivo
+!! %<gen2%>@R.gen.pres@:%>%{P%}%{bA%}@R.gen.pres@ ! segundo genitivo
 %<acc%>:%>ta N-POSTcaso ;
 %<ben%>:%>paq N-POSTcaso ;
 %<dat%>:%>man N-POSTcaso ;
@@ -392,29 +396,31 @@ LEXICON N-FLEX-lla-Caso
 !! <posic> - posicional
 !! ni-(lla)-npa                      ! - ojo, tb. pos3-gen
 !! ni-(lla)-npa-manta
-!! <prox> - proximativo -niq (-ni-lla-q????)
+!! <prox> - proximativo -niq (-ni-lla-q????) - puesto como postposición
 !! -niq-ni-(lla)-nta                     - diccionario ?
 !! -(lla)-niq + manta, -man, -pi, -ta    - diccionario ?
 
 LEXICON N-FLEX-Caso
 %<lim%>:%>lla N-FLEX-lla-Caso ;
-%<lim%>%<per%>:%>%{bN%}%{bnI%}lla%>nta N-POSTcaso ;
 %<per%>:%>%{bN%}%{bnI%}nta N-POSTcaso ;   ! - ojo, tb. pos3-acc (<per> con ciertos verbos: mov., mirar, etc.)
+%<lim%>%<per%>:%>%{bN%}%{bnI%}lla%>nta N-POSTcaso ;
 N-FLEX-lla-Caso ;
 N-FLEX-Caso-lla ;
 
 LEXICON N-FLEX-Gen
 %<gen%>@P.gen.pres@:%>%{P%}%{bA%}@P.gen.pres@ N-FLEX-Caso ;
 N-FLEX-Caso ;
-! poner algo para que salga -lla-q, y no -q-lla
+! poner algo para que salga -lla-q ???, y no -q-lla, pero sí ??? -pa-lla
 
 LEXICON N-FLEX-Inter
 %<inter%>:%>pura CLIT-puni ;
 %<inter%>%<lim%>:%>pura%>lla CLIT-puni ;
-! %<inter%>%<lim%>%<acc%>:%>purallata CLIT-puni ;
-! %<inter%>%<acc%>:%>purata CLIT-puni ; ! (acciones recíprocas)
-! %<inter%>%<ins%>:%>purawan CLIT-puni ; !(("entre" uno por otro (cambiar, etc.))
-!! revisar, poner de otra manera
+%<inter%>%<acc%>:%>pura%>ta CLIT-puni ;         ! (acciones transitivas recíprocas)
+%<inter%>%<lim%>%<acc%>:%>pura%>lla%>ta CLIT-puni ;
+%<inter%>%<ins%>:%>pura%>wan CLIT-puni ;        ! (("entre" uno por otro (cambiar, etc.))
+%<inter%>%<lim%>%<ins%>:%>pura%>lla%>wan CLIT-puni ;
+!! revisar, tv. poner de otra manera
+
 N-FLEX-Gen ;
 
 LEXICON N-FLEX-POS-Oblig
@@ -429,10 +435,11 @@ LEXICON N-FLEX-POS-Oblig
 
 
 LEXICON N-FLEX-Incl
+! aquí, porque sigue al plural (wasikunantin)
 %<incl%>:%>%{bN%}%{bnI%}ntin N-FLEX-Inter ;
-%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Inter ;
+%<lim%>%<incl%>@D.lim@:%>%{bN%}%{bnI%}nti%>llan@D.lim@ N-FLEX-Inter ;
 %<incl%>:%>%{bN%}%{bnI%}ntinku N-FLEX-Inter ;     ! excepcionalmente con animados
-%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>llanku@D.lim@ N-FLEX-Inter ;
+%<lim%>%<incl%>@D.lim@:%>%{bN%}%{bnI%}nti%>llanku@D.lim@ N-FLEX-Inter ;
 N-FLEX-Inter ;
 
 LEXICON N-FLEX-Plural
@@ -1002,6 +1009,7 @@ V-DER-pu ;
 LEXICON V-DER-chi
 %<caus%>:%>chi V-DER-ysi ;
 %<caus%>%<caus%>:%>chi%>chi V-DER-ysi ;
+! -ysi-chi ???
 V-DER-ysi ;
 
 LEXICON V-DER-RECIP
@@ -1054,7 +1062,7 @@ V-DER-chi ;
 
 
 LEXICON V-DER-ASP
-! -ykacha "oscilativo", -yKU "intensivo", -rQU "repentino" + la myyoría de las combinaciones
+! -ykacha "oscilativo", -yKU "intensivo", -rQU "repentino" + la mayoría de las combinaciones
 
 ! yKU = y%{bK%}%{U%}
 %<int%>:%>yku V-Progr ;
@@ -1191,18 +1199,18 @@ V-DER-RECIP ;
 
 LEXICON V-DER-ri
 %<inc%>:%>ri V-DER-ASP ;
-%<inc%>:%>riri V-DER-ASP ;
+%<inc%>:%>riri V-DER-ASP ;      ! Dir/LR
 V-DER-ASP ;
 
 
 LEXICON V-DER
 %<rpt%>:%>pa V-DER-ri ;
-%<rpt%>:%>papa V-DER-ri ;
+%<rpt%>:%>papa V-DER-ri ;   ! Dir/LR
 %<frec%>:%>paya V-DER-ri ;
 %<dur%>:%>raya V-DER-ri ;
 %<simul%>:%>tiya V-DER-ri ;
 %<compl%>:%>rpari V-DER-ASP ;
-%<compl%>:%>ypari V-DER-ASP ;
+%<compl%>:%>ypari V-DER-ASP ;   ! Dir/LR
 V-DER-ri ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1238,10 +1246,10 @@ LEXICON ADJ
 %<adj%>: ADJ-DER ;
 
 LEXICON ADJ-M
-%<adj%>: ADJ-DER ;
+%<adj%>%<m%>: ADJ-DER ;
 
 LEXICON ADJ-F
-%<adj%>: ADJ-DER ;
+%<adj%>%<f%>: ADJ-DER ;
 
 LEXICON Postp
 %<post%>: N-FLEX-POS ;
@@ -2369,6 +2377,7 @@ LEXICON NombresPropios
 ! apellidos - MF (cog en spa.dix)
 
 José:José NP-ANT-M ;
+José:Husiy NP-ANT-M ;   ! Dir/LR
 Jaime:Jaime NP-ANT-M ;
 María:María NP-ANT-F ;
 Daniele:Daniele NP-ANT-F ;
@@ -2391,6 +2400,7 @@ Alejandro:Alejandro NP-ANT-M ;
 Alfredo:Alfredo NP-ANT-M ;
 Alvarado:Alvarado NP-ANT-MF ;
 Anastasia:Anastasia NP-ANT-F ;
+Antonio:Antonio NP-ANT-M ;
 Cerrón-Palomino:Cerrón-Palomino NP-ANT-MF ;
 Cerrón:Cerrón NP-ANT-MF ;
 Diego:Diego NP-ANT-M ;
@@ -2409,10 +2419,18 @@ Juan:Juan NP-ANT-M ;
 Manrique:Manrique NP-ANT-M ;
 Manrique:Manrique NP-ANT-MF ;
 Miguel:Miguel NP-ANT-M ;
+Mila:Mila NP-ANT-F ;
+Mocho:Mocho NP-ANT-MF ;
+Mono:Mono NP-ANT-MF ;
 Morales:Morales NP-ANT-MF ;
+Mosho:Mosho NP-ANT-MF ;
 Ollanta:Ollanta NP-ANT-M ;
+Pato:Pato NP-ANT-M ;
+Pato:Patu NP-ANT-M ;    ! Dir/LR
 Parker:Parker NP-ANT-MF ;
 Pizarro:Pizarro NP-ANT-MF ;
+Rosa:Rosa NP-ANT-F ;
+Rosa:Rusa NP-ANT-F ;    ! Dir/LR
 Rosablanca:Rosablanca NP-ANT-F ;        ! "Rosa Blanca"
 Santiago:Santiago NP-ANT-M ;
 Susana:Susana NP-ANT-F ;
@@ -2605,6 +2623,10 @@ doña:doña N ;
 birrete:birrete N ;
 carnaval:carnaval N ;
 coro:coro N ;
+estanco:estanco N ;
+estanco:istanku N ; ! Dir/LR
+alcalde:alcalde N ;
+
 el%<det%>:el # ;
 la%<det%>:la # ;
 los%<det%>:los # ;
@@ -2700,6 +2722,7 @@ libre:libre ADJ ;
 
 LEXICON AdjetivosDerivados
 kusisqa:kusisqa ADJ ; ! "feliz"
+machasqa:machasqa ADJ ; ! "borracho"
 
 
 LEXICON Postposiciones
@@ -2713,7 +2736,7 @@ sispa:sispa Postp ;   ! "cerca de"
 ukhu:ukhu Postp ; ! "dentro de"
 uran:uran Postp ; ! "bajo"
 pata:pata Postp ;   ! "encima"
-! hawa, ñawpaq, qhipa
+! hawa, ñawpaq, qhipa, wasa, niraq, niray (huk niraykunaman)
 
 
 LEXICON Preadjetivos
@@ -2928,6 +2951,7 @@ LEXICON Pronombres
 ! iskaynin:iskaynin ADJ-DET ; ! "ambos"
 
 ! pronombres indefinidos
+! falta: llapa-lla-ntin, tv. llapa-nti-(lla)-yku
 
 ! los que toman derivativos (-yuq...), a veces plural...
 imaymana:imaymana PRON ;    ! "todas las cosas", "de todo"
@@ -3188,6 +3212,7 @@ mamáy:mamáy Interj ;               ! "madrecita", "señora"
 karahu:karahu Interj ;
 carajo:carajo Interj ;
 ay:ay Interj ;
+chucha:chucha Interj ;
 
 allillanchu:allillanchu Interj ;    ! "hola, qué tal?"
 imaynalla:imaynalla Interj ;        ! "hola, qué tal?"
