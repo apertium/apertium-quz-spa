@@ -251,6 +251,12 @@ Multichar_Symbols
 @D.POSpl@           ! no usado
 @R.POSpl.opc@
 
+@P.NUMxrel.pres@    ! con los numerales, para poner la etiqueta del relativo después de la del ordinal
+@P.NUMxrel.tag@
+@D.NUMxrel@
+@D.NUMxrel.pres@
+@R.NUMxrel.pres@
+
 
 LEXICON Root
 
@@ -486,7 +492,9 @@ N-DER-Dim ;
 
 LEXICON ADJ-PL  ! + posesivos
 %<pl%>:%>kuna N-FLEX-Gen ;
- N-FLEX-Gen ;
+%<xrel%>:%>%{bN%}%{bnI%}n N-FLEX-Gen ;
+N-FLEX-Gen ;
+! sumaqniyki - infrecuente, +xrel - frec.
 
 LEXICON ADJ-DER
 %<dim%>:%>cha ADJ-PL ;
@@ -505,16 +513,21 @@ LEXICON NUM-Ord
 :%>kaq N-DER ;      ! Dir/LR
 
 LEXICON NUM-Poss
-N-DER ;
-%<poss%>:%>%{bN%}%{bnI%}yuq N-DER ;
-%<ord%>: NUM-Ord ;
-%<ord%>%<poss%>:%>%{bN%}%{bnI%}yuq NUM-Ord ;
+@D.NUMxrel.pres@:@D.NUMxrel.pres@ N-DER ;
+%<poss%>@D.NUMxrel.pres@:%>%{bN%}%{bnI%}yuq@D.NUMxrel.pres@ N-DER ;
+%<incl%>@D.NUMxrel.pres@:%>%{bN%}%{bnI%}nti@D.NUMxrel.pres@ N-FLEX-POS-Oblig ;
+%<incl%>%<lim%>@P.lim.pres@@D.NUMxrel.pres@:%>%{bN%}%{bnI%}nti%>lla@P.lim.pres@@D.NUMxrel.pres@ N-FLEX-POS-Oblig ;
+
+%<ord%>@D.NUMxrel@:@D.NUMxrel@ NUM-Ord ;
+%<ord%>%<poss%>@D.NUMxrel@:%>%{bN%}%{bnI%}yuq@D.NUMxrel@ NUM-Ord ;
+%<ord%>%<xrel%>@R.NUMxrel.pres@:@R.NUMxrel.pres@ NUM-Ord ;
+%<ord%>%<xrel%>%<poss%>@P.NUMxrel.pres@:%>%{bN%}%{bnI%}yuq@P.NUMxrel.pres@ NUM-Ord ;
 ! con limitativo????
-%<incl%>:%>%{bN%}%{bnI%}nti N-FLEX-POS-Oblig ;
-%<incl%>%<lim%>@D.lim@:%>%{bN%}%{bnI%}nti%>lla@D.lim@ N-FLEX-POS-Oblig ;
+
 
 LEXICON NUM-Rel
-%<xrel%>:%>%{bN%}%{bnI%}n NUM-Poss ;    ! o mejor NUM-Ord + N-DER?
+%<xrel%>@P.NUMxrel.tag@:%>%{bN%}%{bnI%}n@P.NUMxrel.tag@ NUM-Poss ;    ! o mejor NUM-Ord + N-DER?
+@P.NUMxrel.pres@:%>%{bN%}%{bnI%}n@P.NUMxrel.pres@ NUM-Poss ;
 NUM-Poss ;
 ! con limitativo????
 
@@ -630,9 +643,9 @@ LEXICON V-POT
 
 ! objeto 2a persona
 %<p1%>%<sg%>%<po2sg%>@D.wa@:%>ykiman@D.wa@ CLIT-puni ;
+%<p1%>%<sg%>%<po2pl%>@D.wa@:%>ykichisman@D.wa@ CLIT-puni ;   ! podría ser también p1ex>po2pl
 %<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>ykikuman@D.wa@ CLIT-puni ;
 %<p1ex%>%<pl%>%<po2sp%>@D.wa@:%>ykimanku@D.wa@ CLIT-puni ;      ! Dir/LR (AyQ)
-%<p1%>%<sg%>%<po2pl%>@D.wa@:%>ykichisman@D.wa@ CLIT-puni ;   ! podría ser también p1ex>po2pl
 %<p3%>%<sg%>%<po2sg%>@D.wa@:%>sunkiman@D.wa@ CLIT-puni ;
 %<p3%>%<sp%>%<po2pl%>@D.wa@:%>sunkichisman@D.wa@ CLIT-puni ;
 %<p3%>%<pl%>%<po2sg%>@D.wa@:%>sunkikuman@D.wa@ CLIT-puni ;
@@ -824,6 +837,8 @@ LEXICON V-SUB-spa-qti
 
 LEXICON V-SUB-q
 ! objeto 3a persona
+!%<po3sp%>@D.wa@@D.su@:@D.wa@@D.su@ V-lla-NOM ;   ! Dir/LR - -q (es la forma preferida)
+! pero -q según el tipo de construcción puede ser cualquier persona
 %<po3sg%>@D.wa@@D.su@:%>n@D.wa@@D.su@ V-lla-NOM ;   ! Dir/LR - -q-ni-n (es preferible sólo -q)
 %<po3pl%>@D.wa@@D.su@:%>nku@D.wa@@D.su@ V-lla-NOM ; ! Dir/LR - -q-ni-n-ku (es preferible sólo -q-(ni-n))
 
@@ -884,7 +899,7 @@ LEXICON V-TMSub
 %<ger%>@P.lim.pres@:%>spa%>lla@P.lim.pres@ V-SUB-spa-qti ;  ! formas con marcas personales
 %<ger%>@P.su.pres@@P.lim.pres@:%>su%>spa%>lla@P.su.pres@@P.lim.pres@ V-SUB-spa-qti ;  ! formas con m.p.
 
-! cambiar etiqueta - ger2, sub...
+! cambiar etiqueta - ger2, ger_sd, sub...
 %<ger%>@P.qti.pres@:%>qti@P.qti.pres@ V-SUB-spa-qti ;
 %<ger%>@P.qti.pres@@P.su.pres@:%>su%>qti@P.qti.pres@@P.su.pres@ V-SUB-spa-qti ;
 %<ger%>@P.qti.pres@@P.lim.pres@:%>qti%>lla@P.qti.pres@@P.lim.pres@ V-SUB-spa-qti ;
@@ -920,6 +935,7 @@ LEXICON V-TMSub
 ! %<pp%>@D.wa@:%>sqa@D.wa@ N-DER ;
 
 %<ag%>@D.wa@:%>q@D.wa@ N-FLEX-Plural ;                  ! para las formas sin posesivo (objeto: 3sp)
+! + %<po3sp%> ???
 %<ag%>%<po1sp%>@R.wa.pres@:%>q@R.wa.pres@ N-FLEX-Plural ;       ! Dir/LR
 %<ag%>%<po1in%>@R.wa.pres@:%>q@R.wa.pres@ N-FLEX-Plural ;       ! Dir/LR
 %<ag%>%<po1ex%>@R.wa.pres@:%>q%>ku@R.wa.pres@ N-FLEX-Plural ;   ! Dir/LR - talvez posible
@@ -2870,16 +2886,17 @@ mayqin:mayqan DET-Itg ;     ! "qué" (cuál) - Dir/LR
 ! adverbios
 hayk%'a:hayk%'a PronItg ;   ! "cuánto", genitivo = "cuándo"
 hayk%'a:hayk%'a DET-Itg ;   ! "cuánto"
+! hayk'ayki kashan "cuántos tuyos están allí?", "cuántos tienes?"
 ! hayk%'aq = hayk%'ap cuándo - pasado como hayk'a+gen
 may:may PronItg ;       ! "dónde"
 may:may DET-Itg ;       ! "qué" (lugar)
 imayna:imayna PronItg ;     ! "cómo"
 imay%ura:imay%ura PronItg ;     ! "qué hora"
 imay%ura:imay%hora PronItg ;     ! "qué hora" - Dir/LR
-! mayna
+! mayna, may-tukuy = may-chhika, imanaqtin (imanaspa(n), imanispa(n) EcQ), (imarayku)
 
 !may chhika runa hamusqa qué cantidad de.., cuánta.., may chhika kutin
-may% chhika:may% chhika DET-Itg ;       ! "cuánto"
+may% chhika:may% chhika DET-Itg ;       ! "cuánto, qué cantidad"
 may% chhikan:may% chhikan DET-Itg ;     ! "cuánto"
 may% chhika:may% chika DET-Itg ;        ! "cuánto" - Dir/LR
 may% chhikan:may% chikan DET-Itg ;      ! "cuánto" - Dir/LR

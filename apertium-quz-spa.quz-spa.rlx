@@ -49,6 +49,11 @@ REMOVE Per IF (NOT *0 Vmov) (0 P3acc) ;
 REMOVE Per IF (0 Anim LINK 0 P3acc) ;
         # es más probable un movimiento hacia una persona que por una persona (aunque: la lanza pasó por...)
 
+REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (numM)) ;
+REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (num) LINK -1 (numM)) ;
+# chunkan, pachaknin, waranqan? - 110, 1010, 1100, 1040, 140, 1400, 1444000...
+# pero mejor seleccionar xrel siempre que anteceda un multiplicador mayor
+# (hay ambigüedad también con el afirmativo)
 
 REMOVE ("riy" refl) IF  (0 ("rikuy")) ;
     ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl" (pero: ri....chi- ???)
