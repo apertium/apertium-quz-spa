@@ -42,9 +42,10 @@
     
     <sdef n="def"      c="Definido"/>
     <sdef n="ind"      c="Indefinido"/>
-    <sdef n="dem"      c="Demostrativo"/>
     <sdef n="itg"      c="Interrogativo"/>
+    <sdef n="neg"      c="Negativo"/>
     <sdef n="qnt"      c="Cuantitativo"/>
+    <sdef n="dem"      c="Demostrativo"/>
     <sdef n="pos"      c="Posesivo"/>
     <sdef n="sup"      c="Superlativo"/>
     <sdef n="aa"       c="Animado"/>
@@ -480,33 +481,84 @@
 
 <e><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 <e><p><l>ima<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-<e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-<e><p><l>pi<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-<e><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-<e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-<e><p><l>mayqin<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-<e><p><l>mayqin<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+<e><p><l>imapas<s n="prn"/><s n="ind"/></l><r>algo<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>imapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
+<e><p><l>imapas<s n="prn"/><s n="neg"/></l><r>nada<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>imapas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 
-<e><p><l>imayna<s n="prn"/><s n="itg"/></l><r>cómo<s n="adv"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-<e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
+<e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
+<e r="LR"><p><l>pi<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+<e><p><l>pipas<s n="prn"/><s n="ind"/></l><r>alguien<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>pipas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
+<e><p><l>pipas<s n="prn"/><s n="neg"/></l><r>nadie<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e r="LR"><p><l>pipas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
+
+<e><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
+<e r="RL"><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="prn"/><s n="itg"/></r></p></e>
+<e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
+<e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="det"/><s n="itg"/></r></p></e>
+<e><p><l>pipas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>pipas<s n="det"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>pipas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>pipas<s n="det"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+
+<e><p><l>mayqin<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
+<e><p><l>mayqin<s n="det"/><s n="itg"/></l><r>cuál<s n="det"/><s n="itg"/><s n="mf"/></r></p></e>
+<e><p><l>mayqinpas<s n="prn"/><s n="ind"/></l><r>cualquiera<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
+<e><p><l>mayqinpas<s n="det"/><s n="ind"/></l><r>cualquiera<s n="det"/><s n="ind"/><s n="mf"/></r></p></e>
+<e r="LR"><p><l>mayqinpas<s n="prn"/><s n="neg"/></l><r>ninguno<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>mayqinpas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
+
+<e><p><l>hayk'a<s n="prn"/><s n="itg"/></l><r>cuánto<s n="prn"/><s n="itg"/></r></p></e>
+<e><p><l>hayk'a<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
+<e r="LR"><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>unos<b/>cuantos<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>unos<b/>cuantos<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>unos<b/>cuantos<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+<e><p><l>hayk'apas<s n="prn"/><s n="ind"/></l><r>alguno<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>hayk'apas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
+<e r="LR"><p><l>hayk'apas<s n="det"/><s n="ind"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
+<e><p><l>hayk'apas<s n="prn"/><s n="neg"/></l><r>ninguno<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>hayk'apas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
+
+<e><p><l>hayk'a<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
+<e><p><l>hayk'apas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>algún<b/>día<s n="adv"/></r></p></e>
+<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>alguna<b/>vez<s n="adv"/></r></p></e>
+<e><p><l>hayk'apas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>nunca<s n="adv"/></r></p></e>
+<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>jamás<s n="adv"/></r></p></e>
 
 <e><p><l>may<s n="prn"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
 <e><p><l>may<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/><s n="dub"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="acc"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="abl"/><s n="dub"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
+<e><p><l>maypas<s n="prn"/><s n="ind"/></l><r>algún<b/>lugar<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="prn"/><s n="ind"/></l><r>algún<b/>sitio<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="prn"/><s n="ind"/></l><r>alguna<b/>parte<s n="adv"/></r></p></e>
+<e r="LR"><p><l>maypas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="prn"/><s n="neg"/></l><r>ningún<b/>lugar<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="prn"/><s n="neg"/></l><r>ningún<b/>sitio<s n="adv"/></r></p></e>
+<e><p><l>maypas<s n="prn"/><s n="neg"/></l><r>ninguna<b/>parte<s n="adv"/></r></p></e>
+<e r="LR"><p><l>maypas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 
-<e><p><l>hayk'a<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
-<e><p><l>hayk'a<s n="prn"/><s n="itg"/></l><r>cuánto<s n="prn"/><s n="itg"/></r></p></e>
-<e><p><l>hayk'a<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
+<e><p><l>imayna<s n="prn"/><s n="itg"/></l><r>cómo<s n="adv"/><s n="itg"/></r></p></e>
+<e r="LR"><p><l>imayna<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+<e><p><l>imaynapas<s n="prn"/><s n="ind"/></l><r>de<b/>algún<b/>modo<s n="adv"/></r></p></e>
+<e><p><l>imaynapas<s n="prn"/><s n="ind"/></l><r>de<b/>alguna<b/>manera<s n="adv"/></r></p></e>
+<e r="LR"><p><l>imaynapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
+<e><p><l>imaynapas<s n="prn"/><s n="neg"/></l><r>de<b/>ningún<b/>modo<s n="adv"/></r></p></e>
+<e r="LR"><p><l>imaynapas<s n="prn"/><s n="neg"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
+<e r="LR"><p><l>imaynapas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 
 <e><p><l>may<b/>chhika<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
 <e r="LR"><p><l>may<b/>chhikan<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
 <e><p><l>imay<b/>ura<s n="prn"/><s n="itg"/></l><r>qué<b/>hora<s n="adv"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 
-<!-- + alguien, alguno, nadie, ninguno, algo, nada, cualquiera, nunca... -->
+<!-- borrar ??? (regla para may .. dónde) -->
+<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+<e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
+
+<!-- relativos -->
+<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/><s n="dub"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
+<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="acc"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
+<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
+<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="abl"/><s n="dub"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
 
 </section>
 

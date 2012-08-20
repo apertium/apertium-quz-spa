@@ -122,6 +122,7 @@ SELECT (det ind) IF (0 (prn) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
 SELECT (det ind) IF (0 (prn) LINK 1 NumDet LINK 1 N) ;
 SELECT (det ind) IF (0 (prn) LINK 1 NumDet LINK 1 A LINK 1 N) ;
 SELECT (det ind) IF (0 (prn) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
+# ojo con los ind de prn.itg (IF 0 (prn !itg) ...) ???
 
 
 # pronombres cuantitativos - determinantes - preadjetivos - adverbios

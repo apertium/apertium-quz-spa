@@ -51,10 +51,11 @@ Multichar_Symbols
 %<cnjadv%>    ! conjunción adverbial
 %<ij%>        ! interjeción
 %<pr%>          ! preposición (hispanismos)
-%<det%>         ! determinante (hispanismos)
-%<def%>         ! determinante definido
-%<ind%>         ! determinante indefinido
-%<qnt%>         ! determinante/pron cuantitativo
+%<det%>         ! determinante
+%<def%>         ! determinante definido (hisp.)
+%<ind%>         ! prn/det indefinido (de los interrogativos y lo de Pron)
+%<qnt%>         ! prn/det cuantitativo (de los preadjetivos)
+%<neg%>         ! prn/det negativo (de los interrogativos)
 
 %<pers%>      ! personal (pronombre)
 %<itg%>       ! interrogativo (pronombre, adverbio)
@@ -1273,24 +1274,32 @@ LEXICON Postp
 LEXICON Preadj
 %<preadj%>: # ;
 
+LEXICON DET-Cuant
+%<det%>%<qnt%>: # ;
+
 LEXICON PRON
 %<prn%>: N-DER ;
 
 LEXICON DET-Ind
 %<det%>%<ind%>: # ;
 
-LEXICON DET-Cuant
-%<det%>%<qnt%>: # ;
+LEXICON PronItg
+%<prn%>%<itg%>: N-DER ;
+! %<prn%>%<ind%>: N-DER ;
+! %<prn%>%<neg%>: N-DER ;
+pas%<prn%>%<ind%>: N-DER ;
+pas%<prn%>%<neg%>: N-DER ;
 
 LEXICON DET-Itg
 %<det%>%<itg%>: # ;
+! %<det%>%<ind%>: # ;
+! %<det%>%<neg%>: # ;
+pas%<det%>%<ind%>: # ;
+pas%<det%>%<neg%>: # ;
 
 LEXICON PronDem
 %<prn%>%<dem%>: N-DER ;
 %<det%>%<dem%>: # ;
-
-LEXICON PronItg
-%<prn%>%<itg%>: N-DER ;
 
 LEXICON DIGITLEX  ! sólo para numeros en cifra 
 %<num%>: CLIT-lla ; 
@@ -2870,6 +2879,8 @@ chhaynaniraq:chhaynaniraq ADV ; ! "así" (det/adv) (así de grande, tanto..)
 
 
 ! interrogativos - no todos como det
+! todos pasado también como ind y det (pi...(N)...pas, mana pi...(N)...pas)
+! como relativos? +chus, +cha... ???
 
 ima:ima PronItg ; ! "qué"
 ima:ima DET-Itg ; ! "qué"
@@ -2900,6 +2911,7 @@ may% chhika:may% chhika DET-Itg ;       ! "cuánto, qué cantidad"
 may% chhikan:may% chhikan DET-Itg ;     ! "cuánto"
 may% chhika:may% chika DET-Itg ;        ! "cuánto" - Dir/LR
 may% chhikan:may% chikan DET-Itg ;      ! "cuánto" - Dir/LR
+! como prn?
 
 
 
