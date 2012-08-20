@@ -102,6 +102,15 @@ SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
 
 # ima "y" antes de sel. pron/det.itg
 
+# pronombres itg/ind/neg
+REMOVE (prn itg) IF (0 (prn ind adit)) ; # imapas no es itg, imaraq tampoco?
+# SELECT (prn itg) IF (0 Clit + (raq) ) ; # + raq, -ña ?, -lla?, -puni
+# pero: piraq mayraq?, talvez piraq = ind = alguien
+SELECT (prn ind) IF (NOT -1* ("mana")) ;
+# SELECT (det neg) IF (-1 ("<mana>") ; # - ojo, en las subordinaciones...
+# mana < neg/ind > -chu = neg
+# mana < neg/ind > !-chu = ind - pero: chay mana allin runari, imatapas saqinchu?
+
 
 # pronombres interrogativos -determinantes (indef/neg ?) (ADV.itg ?)
 SELECT (det itg) IF (0 (prn itg) LINK 1 N) ;
@@ -113,16 +122,18 @@ SELECT (det itg) IF (0 (prn itg) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
 # det.itg que no son prn.itg - no hace falta desambiguar
 
 
-# pronombres indefinidos - determinantes
-SELECT (det ind) IF (0 (prn) LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 A LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 A LINK 1 A LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 NumDet LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 NumDet LINK 1 A LINK 1 N) ;
-SELECT (det ind) IF (0 (prn) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
-# ojo con los ind de prn.itg (IF 0 (prn !itg) ...) ???
+# pronombres indefinidos - determinantes (wakin, sapa, imapas)
+# sirve también para los prn.itg/ind/neg
+# REMOVE (prn) IF (0 (det ind) LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 N) ;                   # OK?
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 N) ;
+SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
+# mejor remove, porque det sale primero, o las dos reglas
 
 
 # pronombres cuantitativos - determinantes - preadjetivos - adverbios
@@ -133,6 +144,8 @@ SELECT (det qnt) IF (1C N) ;
 # otros verbos nominalizados - pasaq, llasaq, khuyay, tunpa(n)
 # distinguir as(lla) "poco" de as+...+wan "más" (poner as "más" como aswan?)
 # asta - prep, tukuy
+
+
 
 REMOVE (evid) IF (1* V) ;
 # revisar, talvez BARRIER ("<,>")
