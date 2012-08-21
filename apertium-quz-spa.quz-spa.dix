@@ -351,6 +351,15 @@
 
 </section>
 
+<section id="HISP__CLASES_CERRADAS" type="standard">
+    
+    <e><p><l>el<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>la<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
+    <e><p><l>los<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="pl"/></r></p></e>
+    <e><p><l>las<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="pl"/></r></p></e>
+    
+</section>
+
     <!-- PRONOMBRES y DETERMINANTES -->
 
 <section id="PRONOMBRES__PERSONALES" type="standard">
@@ -717,15 +726,6 @@
 <e r="LR"><p><l>tunpa<s n="prn"/></l><r>poco<s n="prn"/><s n="tn"/></r></p></e>
 <e r="LR"><p><l>waliq<s n="prn"/></l><r>harto<s n="prn"/><s n="tn"/></r></p></e>
 
-</section>
-
-<section id="HISP__CLASES_CERRADAS" type="standard">
-    
-    <e><p><l>el<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
-    <e><p><l>la<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
-    <e><p><l>los<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="pl"/></r></p></e>
-    <e><p><l>las<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="pl"/></r></p></e>
-    
 </section>
     
     <!-- ADVERBIOS -->
@@ -2401,7 +2401,7 @@
     
 </section>
     
-<section id="TOPONIMOSOS" type="standard">
+<section id="TOPONIMOS" type="standard">
     
     <e r="RL"><p><l>quyllur<s n="n"/></l><r>Venus<s n="np"/><s n="top"/><s n="m"/></r></p></e>
     <e><p><l>Tawantinsuyu<s n="np"/><s n="top"/></l><r>Tahuantinsuyo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
@@ -4313,7 +4313,8 @@
     <e c=""><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
     <e c=""><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
 
-<e>       <re>%?[0-9]+([.,][0-9]+)*[.,]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
+<e><re>%?[0-9]+([.,][0-9]+)*[.,]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
+<e><re>%?[MCDXLVI]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
 
 
 </section>
