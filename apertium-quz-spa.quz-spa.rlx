@@ -16,8 +16,12 @@ LIST Per = per ;    # -nta
 LIST P3acc = (px3sg acc) ;      # -n-ta
 LIST Inf = inf ;        # -y
 LIST N-Acc = (n acc) ;
-LIST Nomin = inf ag pp pf ;     # nominalizadores -y, -q, -sqa, -na
 LIST Caso = acc gen ben dat ter per abl loc ins csal dis prox posic ;   # sin nominativo
+
+LIST Pers3 = (p3 sg) (p3 pl) ;
+LIST TM = pri past evid imp fti cni hab ;
+LIST Nomin = inf ag pp pf ;     # nominalizadores -y, -q, -sqa, -na
+LIST SubAdv = ger ger2 ger_sd cons ;
 
 LIST Clit-NoImp = dfnt contr topi rnd af rep cnj dub ;
 #                -puni -taq -qa  -ri -mi -si -chá -chus
@@ -28,14 +32,15 @@ LIST Clit = contr topi rnd qst af rep cnj dub enf ; # clíticos oracionales (sin
 #          -taq   -qa -ri -chu -mi -si -chá -chus -ya
 
 
-LIST Anim = "irqi" "wawa" "wamra" "warma" "willka" 
-        "tayta-mama" "mama-tayta" "qhari-warmi" "warmi-qhari" 
-        "pana-tura" "wayqi-pana" "ñaña-tura"        
+LIST Anim = "irqi"i "wawa"i "wamra"i "warma"i "willka"i 
+        "tayta-mama"i "mama-tayta"i "qhari-warmi"i "warmi-qhari"i 
+        "pana-tura"i "wayqi-pana"i "ñaña-tura"i        
         (n m) (n f) (np ant) ;
 ## animados
 
-SET  NumDet = Num + (nom) - Clit - Caso ;
-SET  NominN = Nomin - (wa) ;    # también -su.. cuando no puede ser verbo subordinado
+SET NumDet = Num + (nom) - Clit - Caso ;
+SET NominN = Nomin - (wa) ;    # también -su.. cuando no puede ser verbo subordinado
+SET VFin = V + TM ;
 
 
 SECTION
@@ -55,7 +60,7 @@ REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (num) LINK -1 (numM)) ;
 # pero mejor seleccionar xrel siempre que anteceda un multiplicador mayor
 # (hay ambigüedad también con el afirmativo)
 
-REMOVE ("riy" refl) IF  (0 ("rikuy")) ;
+REMOVE ("riy"i refl) IF  (0 ("rikuy"i)) ;
     ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl" (pero: ri....chi- ???)
 
 SELECT Inf IF (0 N-Acc LINK *0 V) ;
@@ -64,8 +69,8 @@ SELECT Inf IF (0 N-Acc LINK *0 V) ;
 # IMPERATIVO | INF + NOM
 REMOVE (imp) IF (0 Clit-NoImp) ;
 REMOVE (imp) IF (1* ("<?>")) ;
-REMOVE (imp) IF (0* ("mana") LINK 0 Clit) ; # + puni dfnt ? (excluir neg. de palabra, subord)
-SELECT (imp) IF (-1* ("ama")) (0 (qst)) ; # BARRIER (imp) ???
+REMOVE (imp) IF (0* ("mana"i) LINK 0 Clit) ; # + puni dfnt ? (excluir neg. de palabra, subord)
+SELECT (imp) IF (-1* ("ama"i)) (0 (qst)) ; # BARRIER (imp) ???
 SELECT (imp) IF (0 (enf)) ;
 SELECT (imp) IF (1 ("<!>")) ;
 # select (imp) si es la única palabra en la oración
@@ -73,8 +78,8 @@ SELECT (imp) IF (1 ("<!>")) ;
 
 
   # pero: tukuy N --> det, prn (no adj o N-px1sg)
-REMOVE ("tuku") IF (0 ("tukuy")) ;  # desbuhando
-SELECT ("tukuy" det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
+REMOVE ("tuku"i) IF (0 ("tukuy"i)) ;  # desbuhando
+SELECT ("tukuy"i det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
 
 SELECT A IF (0 N LINK 0 (nom) LINK 1C N) ;
   # wira runa - "hombre gordo", y no "hombre de grasa"
@@ -83,8 +88,12 @@ SELECT N IF (0 A LINK 0 Caso) ;
   # warmita "mujer", no "hembra"
 
 # chaymi (antes de select prn/det.dem)
-# SELECT ("chaymi") IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
-SELECT ("chaymi") IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>
+# SELECT ("chaymi"i) IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
+SELECT ("chaymi"i) IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>  LINK NOT 0 Pers3 ???
+# chaymi "por eso": selec si no sige verbo en 3sg/pl
+# - al prinicpio, desp. de comilla o espacio
+# "eso, ese" = sujeto, objeto, pred. nominal
+# ??? X qhawashan = "ese"/"por" eso mira :-( 
 
 # pronombres demostrativos - determinantes - adverbios
 REMOVE (adv subst dem) IF (0 (det dem)) ;
@@ -101,13 +110,27 @@ SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
 
 
 # ima "y" antes de sel. pron/det.itg
+# if 0 NOT Case LINK -1 N LINK -1 N
+
 
 # pronombres itg/ind/neg
 REMOVE (prn itg) IF (0 (prn ind adit)) ; # imapas no es itg, imaraq tampoco?
-# SELECT (prn itg) IF (0 Clit + (raq) ) ; # + raq, -ña ?, -lla?, -puni
+REMOVE (det itg) IF (0 (det neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+SELECT (prn itg) IF (0 Clit OR (cnti) ) ; # + raq, -ña ?, -lla?, -puni
 # pero: piraq mayraq?, talvez piraq = ind = alguien
-SELECT (prn ind) IF (NOT -1* ("mana")) ;
-# SELECT (det neg) IF (-1 ("<mana>") ; # - ojo, en las subordinaciones...
+SELECT (det itg) IF (0 (det neg) LINK 1* N + Clit BARRIER N OR Clit LINK NOT 0 (adit)) ;
+SELECT (ind) IF (0 (neg) LINK NOT -1* ("mana"i) BARRIER Clit) ;
+SELECT (ind) IF (0 (neg) LINK -1* ("mana"i qst) BARRIER Clit) ; # manachu pipas hamun? no vino alguien?
+SELECT (neg) IF (0 (ind) LINK -1* ("mana"i) - (qst) BARRIER N LINK 1* (qst) CBARRIER VFin) ;
+SELECT (det) IF (0 (prn ind) OR (prn neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+# revisar porque sale mal para subordinaciones
+
+# remove neg if -1* ("mana"i Clit) BARRIER ("mana"i) LINK self 1* Vsubordinado OR Clit)
+# select prn.itg - pin hamun?
+# select prn.itg if Clit + (raq)
+# + mana(n) pipas, sin verbo (>>>)
+
+# SELECT (det neg) IF (-1 ("<mana>"i) ; # - ojo, en las subordinaciones...
 # mana < neg/ind > -chu = neg
 # mana < neg/ind > !-chu = ind - pero: chay mana allin runari, imatapas saqinchu?
 
@@ -158,6 +181,9 @@ SELECT N IF (0 (ag) LINK -1 A OR (det)) ; # -1C ?
 # select (af) if (0 (px3sg) LINK NOT *0C Clit) ;
 # o remove (af) if (0 (px3sg) LINK *0C Clit) ;
 
+# AFTER-SECTIONS
+# poner las últimas cosas por desambiguar (lo más frecuente)?
+
 
 END
 
@@ -167,13 +193,10 @@ END
 #select (det dem) if (0 (prn dem)) ( (1 N) or (1 ADJ) (2 N) or (1 ADJ) (2 ADJ) (1 N) )
 # = select (prn dem nom)
 
-# "<asta>": select "asta" (no "as" (acc))
+# "<asta>"i: select "asta" (no "as" (acc))
 
 
-# chaymi "por eso": selec si no sige verbo en 3sg/pl
-# - al prinicpio, desp. de comilla o espacio
-# "eso, ese" = sujeto, objeto, pred. nominal
-# ??? X qhawashan = "ese"/"por" eso mira :-(
+
 
 # chay, kay, haqay - prn.dem/adv.subst.dem/(det.dem)
 # nom = prn.dem o cnjadv (chaymi) -> remove adv
