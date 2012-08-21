@@ -125,7 +125,12 @@ SELECT (ind) IF (0 (neg) LINK -1* ("mana"i qst) BARRIER Clit) ; # manachu pipas 
 SELECT (neg) IF (0 (ind) LINK -1* ("mana"i) - (qst) BARRIER N OR V LINK 1* (qst) CBARRIER VFin) ;
 SELECT (det) IF (0 (prn ind) OR (prn neg) LINK 1* (n adit) BARRIER N OR Clit) ;
 SELECT (neg) IF (-1* ("mana"i) LINK NOT 0 (qst) LINK 1*x VSub BARRIER VFin LINK NOT 1*x (qst)) ;
-# revisar porque sale mal para subordinaciones
+# revisar porque sale mal para subordinaciones:
+# Manan yachanichu pi hamusqanta. Manan pi hamusqanta yachanichu.
+# Manachu pi hamusqanta yachanki? Pi hamusqanta yachankichu?
+# Manan yachanichu pi runa hamusqanta. Manan pi runa hamusqanta yachanichu.
+# Manachu pi runa hamusqanta yachanki? Pi runa hamusqanta yachankichu?
+# + poner también ("ni"i)
 
 # remove neg if -1* ("mana"i Clit) BARRIER ("mana"i) LINK self 1* Vsubordinado OR Clit)
 # select prn.itg - pin hamun?
