@@ -77,6 +77,8 @@ SELECT (imp) IF (1 ("<!>")) ;
 # select (imp) si es la única palabra en la oración
 # select imp if not 0* (mi/si/chá/chu..?) y hay por lo menos n palabras ???
 
+# -SQA
+# select evid if -1* af.excl not 0C* VFin
 
   # pero: tukuy N --> det, prn (no adj o N-px1sg)
 REMOVE ("tuku"i) IF (0 ("tukuy"i)) ;  # desbuhando

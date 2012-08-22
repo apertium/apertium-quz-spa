@@ -3226,7 +3226,7 @@ icha%<cnjcoo%>%<topi%>:ichaqa # ;          ! "pero"
 icha%<cnjcoo%>%<contr%>:ichataq # ;     ! "pero"
 ima:ima CONJ-Coord-Final ;          ! "y"
 i%<cnjcoo%>:i # ;                   ! "y"
-y%<cnjcoo%>:y # ;                   ! "y"
+i%<cnjcoo%>:y # ;                   ! "y" - Dir/LR
 sichus%<cnjadv%>:sichus # ;         ! "si"
 
 
@@ -4227,7 +4227,7 @@ LEXICON Puntuación
 
 
 ! exkl ! = +yá! en vez de sent
-! %<qst%>! ? = +chu? en vez de sent
+! %<q.s.t%>! ? = +chu? en vez de sent
 
 .%<sent%>:. # ;
 ..%<sent%>:.. # ;

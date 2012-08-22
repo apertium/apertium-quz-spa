@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- -*- nxml -*- -->
 <transfer default="chunk">
-<section-def-cats>
+<section-def-cats>   
+    
+    <!--     <def-cat n="xxx">
+      <cat-item lemma="xxx" tags="pr"/>
+      <cat-item lemma="xxx" tags="adv"/>
+    </def-cat> -->
   
     <def-cat n="all">
       <cat-item tags="*"/>
@@ -33,7 +38,12 @@
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
       <cat-item tags="adj"/>
-      <cat-item tags="prn.dem.nom"/>
+      <cat-item tags="prn.dem.nom"/> <!-- borrar ? -->
+    </def-cat>
+    
+    <def-cat n="det">
+      <cat-item tags="det.*"/>
+      <cat-item tags="det"/>
     </def-cat>
     
     <def-cat n="prn-itg">
@@ -58,12 +68,7 @@
     <def-cat n="post">
       <cat-item tags="post.*"/>
       <cat-item tags="post"/>
-    </def-cat>    
-    
-    <!--     <def-cat n="xxx">
-      <cat-item lemma="xxx" tags="pr"/>
-      <cat-item lemma="xxx" tags="adv"/>
-    </def-cat> -->
+    </def-cat> 
     
     <def-cat n="conj">
       <cat-item tags="cnjcoo"/>
@@ -93,6 +98,64 @@
   </section-def-cats>  
 <section-def-attrs>
   
+    <def-attr n="clas_nom"> <!-- todas las clases de palabra nominales -->
+      <attr-item tags="n"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.top"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="adj"/> <!-- subtipos en spa -->
+      <attr-item tags="prn.pers"/>
+      <attr-item tags="prn.ind"/>
+      <attr-item tags="prn.neg"/>
+      <attr-item tags="prn.dem"/>
+      <attr-item tags="prn.tn"/> <!-- sólo spa + refl, pos -->
+      <attr-item tags="prn.enc"/> <!-- sólo spa -->
+      <attr-item tags="prn.pro"/> <!-- sólo spa + refl -->
+      <attr-item tags="prn"/> <!-- ojo -->
+      <attr-item tags="det"/> <!-- ojo -->
+      <attr-item tags="det.itg"/>
+      <attr-item tags="det.ind"/>
+      <attr-item tags="det.neg"/>
+      <attr-item tags="det.dem"/>
+      <attr-item tags="det.qnt"/>
+      <attr-item tags="det.def"/> <!-- sólo spa -->
+      <attr-item tags="det.pos"/> <!-- sólo spa -->
+      <attr-item tags="detnt"/> <!-- sólo spa -->
+      <attr-item tags="predet"/> <!-- sólo spa -->
+      <attr-item tags="preadj"/>
+      <attr-item tags="preadv"/> <!-- sólo spa -->
+      <attr-item tags="num"/>
+      <attr-item tags="num.ord"/>
+      <attr-item tags="numM"/>
+      <attr-item tags="numM.ord"/>
+      <attr-item tags="adv"/> <!-- ojo -->
+      <attr-item tags="adv.subst"/>
+      <attr-item tags="adv.subst.dem"/> <!-- ojo -->
+      <attr-item tags="adv.temp"/>
+      <attr-item tags="ij"/>
+      <attr-item tags="post"/>
+      <attr-item tags="cnjcoo"/>
+      <attr-item tags="cnjadv"/>
+      <attr-item tags="cnjsub"/> <!-- sólo spa -->
+      <attr-item tags="pr"/>
+      <attr-item tags="rel"/> <!-- sólo spa - adv, aa, nn, an -->
+    </def-attr>
+    
+    <def-attr n="clas_verb"> <!-- todas las clases de palabra verbales -->
+      <attr-item tags="vbcop"/>
+      <attr-item tags="vbex"/>
+      <attr-item tags="vblex.iv"/>
+      <attr-item tags="vblex.tv"/>
+      <attr-item tags="vblex.vm"/>
+      <attr-item tags="vblex.vcm"/>
+      <attr-item tags="vblex.vimp"/>
+      <attr-item tags="vbser"/> <!-- sólo spa -->
+      <attr-item tags="vbhaver"/> <!-- sólo spa -->
+      <attr-item tags="vbmod"/> <!-- sólo spa -->
+      <attr-item tags="vbaux"/> <!-- sólo spa -->
+    </def-attr>
+    
     <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
@@ -100,6 +163,23 @@
       <attr-item tags="np.cog"/>
       <attr-item tags="np.top"/>
       <attr-item tags="np.al"/>
+    </def-attr>
+    
+    <def-attr n="a_det">
+      <attr-item tags="det.itg"/>
+      <attr-item tags="det.neg"/>
+      <attr-item tags="det.ind"/>
+      <attr-item tags="det.qnt"/>
+      <attr-item tags="det.dem"/>
+      <attr-item tags="det.def"/>
+      <attr-item tags="det.pos"/>
+      <attr-item tags="detnt"/>
+      <attr-item tags="predet"/>
+    </def-attr>
+    
+    <def-attr n="adj_prn-itg"> <!-- sólo para el det "piqpa" que pasa como prn.tn "de quién" -->
+      <attr-item tags="prn.itg"/>
+      <attr-item tags="adj"/>
     </def-attr>
     
     <def-attr n="a_adj">
@@ -193,7 +273,7 @@
     
     <def-attr n="aspect">
       <attr-item tags="cont"/>
-      <!-- <attr-item tags="sufijo-rqu"/> -->
+      <!-- <attr-item tags="sufijo-rqu = rpnt"/> -->
     </def-attr>
     
     <def-attr n="pers">
@@ -264,15 +344,6 @@
       <attr-item tags="preadv"/>
       <attr-item tags="adv"/> <!--
       <attr-item tags="det.qnt.mf.sp"/> - se pondrán etiquetas de caso y género por variables --> 
-      <attr-item tags="det.qnt"/>
-    </def-attr>
-    
-    <def-attr n="a_det">
-      <attr-item tags="det.def"/>
-      <attr-item tags="det.pos"/>
-      <attr-item tags="det.dem"/>
-      <attr-item tags="det.ind"/>
-      <attr-item tags="det.itg"/>
       <attr-item tags="det.qnt"/>
     </def-attr>
     
@@ -502,7 +573,7 @@
 </def-macro>
 
 <def-macro n="pon-GD-ND" npar="1">
-<!-- pone GD y/o ND a la palabra si no tiene nada -->
+<!-- pone GD y/o ND a la palabra en TL si no tiene nada -->
 <choose>
 	<when>
 	  <test><equal> <!-- si no tiene número -->
@@ -948,6 +1019,7 @@
 </def-macro>
 
 <def-macro n="adj-pos" npar="1">
+ <!-- crea una variable que contiene un determinante posesivo (no chunk) -->
 <let><var n="posesivo"/><lit v=""/></let>
 <choose><when>
 	<test><equal>
@@ -1279,6 +1351,107 @@
 	</lu>
 </chunk>
 </out>
+</action>
+</rule>
+
+<rule comment="DET N">
+<pattern>
+    <pattern-item n="det"/>
+    <pattern-item n="nom"/>
+</pattern>
+<action>  
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="2"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="2"/></call-macro>
+<call-macro n="adj-pos"><with-param pos="2"/></call-macro>
+<call-macro n="f_concord2">
+  <with-param pos="2"/><with-param pos="1"/></call-macro>
+<!-- <call-macro n="pon-sg"><with-param pos="2"/></call-macro>
+<call-macro n="pon-m"><with-param pos="2"/></call-macro> -->
+<choose>
+<when>
+  <test><equal>
+    <clip pos="1" side="tl" part="clas_nom"/>
+    <clip pos="1" side="tl" part="a_det"/>
+  </equal></test>
+  <out>
+  <chunk name="det-n" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SN"/></tag>
+        <tag><var n="gen_chunk"/></tag>
+        <tag><var n="nbr_chunk"/></tag>
+        <tag><var n="caso"/></tag> <!-- revisar si necesario, mejor clip "" -->
+        <tag><clip pos="2" side="sl" part="pers_pos"/></tag> <!-- + otros tags -->
+      </tags>
+        <var n="posesivo"/>
+    <lu><get-case-from pos ="1">
+      <clip pos="1" side="tl" part="lemh"/></get-case-from>
+      <clip pos="1" side="tl" part="a_det"/>
+      <clip pos="1" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="1" side="tl" part="gen-mf"/>
+      <clip pos="1" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="1" side="tl" part="nbr-sp"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+    <b pos="1"/>     <!-- si es predet, + artículo? todo el día, todos los días, todo hombre -->
+    <lu><get-case-from pos ="2">
+      <clip pos="2" side="tl" part="lemh"/></get-case-from>     
+      <clip pos="2" side="tl" part="a_nom"/>
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <!-- <clip pos="2" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="2" side="tl" part="gen-mf"/>
+      <clip pos="2" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <lit-tag v="3"/>
+      <clip pos="2" side="tl" part="nbr-sp"/> --> <!--
+      <var n="caso"/>
+      <clip pos="2" side="tl" part="pers_pos"/>    -->
+      <clip pos="2" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</when>
+<otherwise> <!-- de alguien, de nadie, de todo tipo; OJO "casa de quién" -->
+  <out>
+  <chunk name="n-adj" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SN"/></tag>
+        <tag><var n="gen_chunk"/></tag>
+        <tag><var n="nbr_chunk"/></tag>
+        <tag><var n="caso"/></tag>
+        <tag><clip pos="2" side="sl" part="pers_pos"/></tag> <!-- + otros tags -->
+      </tags>
+        <var n="posesivo"/>
+    <lu><get-case-from pos ="1">
+      <clip pos="2" side="tl" part="lemh"/></get-case-from>     
+      <clip pos="2" side="tl" part="a_nom"/>
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <!-- <clip pos="2" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="2" side="tl" part="gen-mf"/>
+      <clip pos="2" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <lit-tag v="3"/>
+      <clip pos="2" side="tl" part="nbr-sp"/> --> <!--
+      <var n="caso"/>
+      <clip pos="2" side="tl" part="pers_pos"/>    -->
+      <clip pos="2" side="tl" part="lemq"/>
+    </lu>
+    <b pos="1"/>      
+    <lu><get-case-from pos ="2">
+      <clip pos="1" side="tl" part="lemh"/></get-case-from>
+      <clip pos="1" side="tl" part="adj_prn-itg"/>
+      <clip pos="1" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="1" side="tl" part="gen-mf"/>
+      <clip pos="1" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="1" side="tl" part="nbr-sp"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</otherwise>
+</choose>
 </action>
 </rule>
 

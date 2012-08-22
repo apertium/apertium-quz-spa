@@ -224,7 +224,6 @@
     <e><p><l>ima<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
     <e><p><l>i<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
     <e><p><l>sichus<s n="cnjadv"/></l>     <r>si<s n="cnjadv"/></r></p></e>
-    <e r="LR"><p><l>y<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
 
 </section>
     
@@ -239,16 +238,12 @@
     <e><p><l>sispa<s n="post"/></l><r>cerca<b/>de<s n="pr"/></r></p></e>
     <e><p><l>ukhu<s n="post"/></l><r>dentro<b/>de<s n="pr"/></r></p></e>
     <e><p><l>uran<s n="post"/></l><r>bajo<s n="pr"/></r></p></e>
-    
-    <e><p><l>a<s n="pr"/></l><r>a<s n="pr"/></r></p></e>
-    <e><p><l>al<s n="pr"/></l><r>a<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
-    <e><p><l>de<s n="pr"/></l><r>de<s n="pr"/></r></p></e>
-    <e><p><l>del<s n="pr"/></l><r>de<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
 
 </section>    
      
 <section id="NUMERALES" type="standard">
   
+    <!-- también en PRON__DET_INDEF - como det.ind o prn.tn -->
     <e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
     <e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
     <e r="RL"><p><l>huq<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
@@ -357,6 +352,11 @@
     <e><p><l>la<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
     <e><p><l>los<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="pl"/></r></p></e>
     <e><p><l>las<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="pl"/></r></p></e>
+    
+    <e><p><l>a<s n="pr"/></l><r>a<s n="pr"/></r></p></e>
+    <e><p><l>al<s n="pr"/></l><r>a<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
+    <e><p><l>de<s n="pr"/></l><r>de<s n="pr"/></r></p></e>
+    <e><p><l>del<s n="pr"/></l><r>de<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
     
 </section>
 
@@ -506,10 +506,10 @@
 <e r="RL"><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="prn"/><s n="itg"/></r></p></e>
 <e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 <e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="det"/><s n="itg"/></r></p></e>
-<e><p><l>pipas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<e><p><l>pipas<s n="det"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<e><p><l>pipas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<e><p><l>pipas<s n="det"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>pipas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
+<e><p><l>pipas<s n="det"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
+<e><p><l>pipas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
+<e><p><l>pipas<s n="det"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 
 <e><p><l>mayqin<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 <e><p><l>mayqin<s n="det"/><s n="itg"/></l><r>cuál<s n="det"/><s n="itg"/><s n="mf"/></r></p></e>
@@ -2202,6 +2202,21 @@
     
     <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>pecador<s n="n"/></r></p></e>
     <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>culpable<s n="n"/><s n="mf"/></r></p></e>
+    <e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>qilqaq<s n="n"/></l><r>escritor<s n="n"/></r></p></e>
+    <e><p><l>rimay<s n="n"/></l><r>lengua<s n="n"/><s n="f"/></r></p></e>
+    <e r="RL"><p><l>rimay<s n="n"/></l><r>habla<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>rimaq<s n="n"/></l><r>hablante<s n="n"/><s n="mf"/></r></p></e>
+    <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>tukukuy<s n="n"/></l><r>fin<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>uyarikuy<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
+    <e><p><l>yarqay<s n="n"/></l><r>hambre<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>yuyay<s n="n"/></l><r>opinión<s n="n"/><s n="f"/></r></p></e>
+    <e><p><l>yuyay<s n="n"/></l><r>razón<s n="n"/><s n="f"/></r></p></e>
+    
     <e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>reunión<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>huñuy<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>asociación<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="ag"/></l><r>jefe<s n="n"/></r></p></e>
@@ -2216,25 +2231,13 @@
     <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>regla<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>decreto<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>kamay<s n="vblex"/><s n="tv"/><s n="caus"/><s n="refl"/><s n="inf"/></l><r>organización<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>kawsay<s n="n"/></l><r>vida<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>pukllay<s n="n"/></l><r>juego<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>qhawana<s n="n"/></l><r>ventana<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>qilqaq<s n="n"/></l><r>escritor<s n="n"/></r></p></e>
-    <e><p><l>rimay<s n="n"/></l><r>lengua<s n="n"/><s n="f"/></r></p></e>
-    <e r="RL"><p><l>rimay<s n="n"/></l><r>habla<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>rimay<s n="vblex"/><s n="tv"/><s n="rec"/><s n="inf"/></l><r>acuerdo<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>rimaq<s n="n"/></l><r>hablante<s n="n"/><s n="mf"/></r></p></e>
-    <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
-    <e><p><l>tapusqa<s n="n"/></l><r>pregunta<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>tiyana<s n="n"/></l><r>silla<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>tukukuy<s n="n"/></l><r>fin<s n="n"/><s n="m"/></r></p></e>
-    <e><p><l>uyarikuy<s n="n"/></l><r>sonido<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>saber<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/></l><r>conocimiento<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="n"/></r></p></e>
-    <e><p><l>yarqay<s n="n"/></l><r>hambre<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>yuyay<s n="n"/></l><r>opinión<s n="n"/><s n="f"/></r></p></e>
-    <e><p><l>yuyay<s n="n"/></l><r>razón<s n="n"/><s n="f"/></r></p></e>
+    
+    <!-- no funciona -->
+    <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
       
 </section>
     
