@@ -887,7 +887,7 @@
     <e><p><l>ch'unpi<s n="adj"/></l><r>marrón<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>ch'uya<s n="adj"/></l><r>claro<s n="adj"/></r></p></e>
     <e><p><l>ch'uya<s n="adj"/></l><r>limpio<s n="adj"/></r></p></e>
-    <e><p><l>chanka<s n="adj"/></l><r>chanca<s n="adj"/></r></p></e>
+    <e><p><l>chanka<s n="adj"/></l><r>chanca<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>chawpi<s n="adj"/></l><r>medio<s n="adj"/></r></p></e>
     <e><p><l>chiri<s n="adj"/></l><r>frío<s n="adj"/></r></p></e>
     <e r="RL"><p><l>hatun<s n="adj"/></l><r>gran<s n="adj"/><s n="mf"/></r></p></e>
@@ -909,8 +909,8 @@
     <e><p><l>q'uñi<s n="adj"/></l><r>cálido<s n="adj"/></r></p></e>
     <e><p><l>qasi<s n="adj"/></l><r>tranquilo<s n="adj"/></r></p></e>
     <e><p><l>qhapaq<s n="adj"/></l><r>rico<s n="adj"/></r></p></e>
-    <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/></r></p></e>
-    <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/></r></p></e>
+    <e><p><l>qhari<s n="adj"/></l><r>macho<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><p><l>warmi<s n="adj"/></l><r>hembra<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>sinchi<s n="adj"/></l><r>fuerte<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>sullk'a<s n="adj"/></l><r>menor<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
@@ -925,7 +925,7 @@
     <e r="RL"><p><l>wakcha<s n="n"/></l><r>huérfano<s n="adj"/></r></p></e>
     <e><p><l>waliq<s n="adj"/></l><r>valiente<s n="adj"/><s n="mf"/></r></p></e>
     <e r="RL"><p><l>waliq<s n="adj"/><s n="lim"/></l><r>bien<s n="adv"/></r></p></e>
-    <e><p><l>wanka<s n="adj"/></l><r>huanca<s n="adj"/></r></p></e>
+    <e><p><l>wanka<s n="adj"/></l><r>huanca<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>wira<s n="adj"/></l><r>gordo<s n="adj"/></r></p></e>
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
     <e><p><l>yuraq<s n="adj"/></l><r>blanco<s n="adj"/></r></p></e>
