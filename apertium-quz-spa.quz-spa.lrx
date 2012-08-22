@@ -17,6 +17,10 @@
     <match lemma="simi"><select lemma="lengua"/></match>
   </rule>
   
+  <rule>
+    <match lemma="aka"><select lemma="mierda"/></match>
+  </rule>
+  
 </rules>
 
 <!-- 

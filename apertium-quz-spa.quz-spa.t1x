@@ -35,10 +35,10 @@
       <cat-item tags="np.ant.*.ins.*"/>
     </def-cat>
     
-    <def-cat n="adj">
+    <def-cat n="adj"> <!-- borrar prn.dem.nom ? -->
       <cat-item tags="adj.*"/>
       <cat-item tags="adj"/>
-      <cat-item tags="prn.dem.nom"/> <!-- borrar ? -->
+      <cat-item tags="prn.dem.nom"/>
     </def-cat>
     
     <def-cat n="det">
@@ -81,7 +81,7 @@
       <cat-item tags="adv.*"/>
     </def-cat>
     
-    <def-cat n="preadj">
+    <def-cat n="preadj"> <!-- BORRAR + borrar la regla -->
       <cat-item tags="preadj"/>
       <cat-item tags="preadj.*"/>
     </def-cat>
@@ -1789,7 +1789,7 @@
 </action>
 </rule>
 
-<rule comment="PREADJ - PREADV, DET.QNT">
+<rule comment="PREADJ - PREADV, DET.QNT">  <!-- BORRAR det.qnt + no debería salir nunca -->
 <pattern>
 	<pattern-item n="preadj"/>
 </pattern>

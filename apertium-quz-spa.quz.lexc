@@ -20,6 +20,7 @@ Multichar_Symbols
 %>            ! Morpheme boundary
 % 
 %-
+%/
 
 ! morfofonémica
 %{M%}         ! m/n en evidencial (-mi/-n) (M + bI)
@@ -4235,10 +4236,12 @@ LEXICON Puntuación
 %;%<sent%>:%; # ;
 %:%<sent%>:%: # ;
 %!%<sent%>:%! # ;
+%¡%<sent%>:%¡ # ;
 %-%<guio%>:%- # ;
 %—%<guio%>:%— # ;
 ,%<cm%>:, # ;
 %?%<sent%>:%? # ;
+%¿%<sent%>:%¿ # ;
 %'%<apos%>:%' # ;
 %"%<sent%>:%" # ;
 %«%<lquot%>:%« # ;
@@ -4250,7 +4253,7 @@ LEXICON Puntuación
 %[%<lpar%>:%[ # ;
 %)%<rpar%>:%) # ;
 \%<sent%>:\ # ;
-/%<sent%>:/ # ;
+%/%<sent%>:%/ # ;
 
 
 <[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ 

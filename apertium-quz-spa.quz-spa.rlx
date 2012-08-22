@@ -170,8 +170,10 @@ SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 A LI
 
 # pronombres cuantitativos - determinantes - preadjetivos - adverbios
 # es difícil distinguir si es ADV o PRN+acc :-(
-SELECT (preadj) IF (1C A) ;
-SELECT (det qnt) IF (1C N) ;
+SELECT (preadj) IF (0 (det qnt) LINK 1C A) ;
+SELECT (det qnt) IF (0 (preadj) LINK 1C N) ;
+REMOVE (preadj) IF (0 (det qnt) LINK NOT 1C A) ; # ojo si se cambia en lexc para que preadj pueda llevar caso
+# REMOVE (det qnt) IF (NOT 1C N) ;  -  no quitar, si no sigue ni A ni N, mejor DET que preadj
 # algunos son también ADJ - sinchi (+ nom), manchay, waliq
 # otros verbos nominalizados - pasaq, llasaq, khuyay, tunpa(n)
 # distinguir as(lla) "poco" de as+...+wan "más" (poner as "más" como aswan?)
