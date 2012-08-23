@@ -22,6 +22,8 @@ LIST Pers3 = (p3 sg) (p3 pl) ;
 LIST TM = pri past evid imp fti cni hab ;
 LIST Nomin = inf ag pp pf ;     # nominalizadores -y, -q, -sqa, -na
 LIST SubAdv = ger ger2 ger_sd cons ;
+LIST Trans =  caus ; # transitivizadores + ? bn, coop, rec... ?
+LIST Detrans = refl ; # detransitivizadores
 
 LIST Clit-NoImp = dfnt contr topi rnd af rep cnj dub ;
 #                -puni -taq -qa  -ri -mi -si -chá -chus
@@ -34,7 +36,7 @@ LIST Clit = contr topi rnd qst af rep cnj dub enf ; # clíticos oracionales (sin
 
 LIST Anim = "irqi"i "wawa"i "wamra"i "warma"i "willka"i 
         "tayta-mama"i "mama-tayta"i "qhari-warmi"i "warmi-qhari"i 
-        "pana-tura"i "wayqi-pana"i "ñaña-tura"i        
+        "pana-tura"i "wayqi-pana"i "ñaña-tura"i "runa"i
         (n m) (n f) (np ant) ;
 ## animados
 
@@ -49,11 +51,13 @@ SECTION
 SELECT A IF (-1 A) (1C N);
     # Jaimeqa usqhaylla phawashan hatun machu sach'aman, Maríamantan pakakushan.
 
-REMOVE Per IF (NOT *0 Vmov) (0 P3acc) ;
-		# Mamanta rikun.
-		
+SELECT Per IF (0 P3acc LINK 0 ("qhawana"i n) OR ("t'uqu"i) LINK 0C* ("rikuy"i vblex) OR ("qhaway"i vblex)) ;
+REMOVE Per IF (0 P3acc LINK NOT 0x ("qhawana"i n) OR ("t'uqu"i) LINK NOT -1* Vmov BARRIER (cm)) 
+              (0 P3acc LINK NOT 0x ("qhawana"i n) OR ("t'uqu"i) LINK NOT 1* Vmov BARRIER (cm)) ;
+		# Mamanta rikun. Acchuykuspan, mamaykita qhawananta rikun.		
 REMOVE Per IF (0 Anim LINK 0 P3acc) ;
-        # es más probable un movimiento hacia una persona que por una persona (aunque: la lanza pasó por...)
+# es más probable un movimiento hacia una persona que por una persona (aunque: la lanza pasó por...)
+# + AFTER-SECTIONS
 
 REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (numM)) ;
 REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (num) LINK -1 (numM)) ;
@@ -80,9 +84,14 @@ SELECT (imp) IF (1 ("<!>")) ;
 # -SQA
 # select evid if -1* af.excl not 0C* VFin
 
+# SELECCIÓN DE LEMAS
   # pero: tukuy N --> det, prn (no adj o N-px1sg)
 REMOVE ("tuku"i) IF (0 ("tukuy"i)) ;  # desbuhando
 SELECT ("tukuy"i det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
+REMOVE ("aswa"i) IF (0 ("aswan"i)) ;
+SELECT ("sinchi"i adj) IF (0 (nom) LINK 1 Anim) ;
+
+
 
 SELECT A IF (0 N LINK 0 (nom) LINK 1C N) ;
   # wira runa - "hombre gordo", y no "hombre de grasa"
@@ -121,6 +130,8 @@ REMOVE (prn itg) IF (0 (prn ind adit)) ; # imapas no es itg, imaraq tampoco?
 REMOVE (det itg) IF (0 (det neg) LINK 1* (n adit) BARRIER N OR Clit) ;
 SELECT (prn itg) IF (0 Clit OR (cnti) ) ; # + raq, -ña ?, -lla?, -puni
 # pero: piraq mayraq?, talvez piraq = ind = alguien
+REMOVE (det) IF (1 (sent)) ;
+# REMOVE (det) IF (NOT 1 N OR A OR (prn) OR (num) OR NumM OR (np) OR (det) OR VSub OR (preadj)) ;
 SELECT (det itg) IF (0 (det neg) LINK 1* N + Clit BARRIER N OR Clit LINK NOT 0 (adit)) ;
 SELECT (ind) IF (0 (neg) LINK NOT -1* ("mana"i) BARRIER Clit OR V) ;
 SELECT (ind) IF (0 (neg) LINK -1* ("mana"i qst) BARRIER Clit) ; # manachu pipas hamun? no vino alguien?
@@ -172,7 +183,9 @@ SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 A LI
 # es difícil distinguir si es ADV o PRN+acc :-(
 SELECT (preadj) IF (0 (det qnt) LINK 1C A) ;
 SELECT (det qnt) IF (0 (preadj) LINK 1C N) ;
-REMOVE (preadj) IF (0 (det qnt) LINK NOT 1C A) ; # ojo si se cambia en lexc para que preadj pueda llevar caso
+SELECT (preadj) IF (0 ("ancha"i) LINK 1 A) ;
+SELECT (adv) IF (0 (prn)) ; # LINK NOT 1* (vblex tv) - Detrans)
+REMOVE (preadj) IF (0 (det qnt) LINK NOT 0 ("ancha"i) LINK NOT 1C A) ; # ojo si se cambia en lexc para que preadj pueda llevar caso
 # REMOVE (det qnt) IF (NOT 1C N) ;  -  no quitar, si no sigue ni A ni N, mejor DET que preadj
 # algunos son también ADJ - sinchi (+ nom), manchay, waliq
 # otros verbos nominalizados - pasaq, llasaq, khuyay, tunpa(n)
@@ -192,8 +205,15 @@ SELECT N IF (0 (ag) LINK -1 A OR (det)) ; # -1C ?
 # select (af) if (0 (px3sg) LINK NOT *0C Clit) ;
 # o remove (af) if (0 (px3sg) LINK *0C Clit) ;
 
-# AFTER-SECTIONS
+AFTER-SECTIONS
 # poner las últimas cosas por desambiguar (lo más frecuente)?
+SELECT Per IF (0 ("ñan"i) LINK 0* Vmov) ; # agregar a la lista
+REMOVE Per IF (0 P3acc LINK NOT 0 ("ñan"i) LINK NOT 0* Vmov BARRIER (cm)) ;
+# SELECT Per IF (0 P3acc LINK NOT 0 Anim LINK *0 Vmov BARRIER (cm) OR V - Vmov) 
+#              (0 P3acc LINK NOT 0 Anim LINK 1* P3acc OR Per BARRIER V - Vmov LINK 1* Vmov ) ;
+# chakranta rishan / rishan chakranta / chakranta, urqunta rishan
+# pero: wasinta rishan :-( mejor una lista de lo que puede ser con Per (ñanninta, X patanta (post?)...)
+
 
 
 END
