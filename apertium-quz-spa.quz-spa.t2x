@@ -36,6 +36,8 @@
     <def-cat n="SV">
       <cat-item tags="SV"/>
       <cat-item tags="SV.*"/>
+      <cat-item tags="SV-ger"/>
+      <cat-item tags="SV-ger.*"/>
     </def-cat>
     
     <def-cat n="SP">

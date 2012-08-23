@@ -2245,6 +2245,40 @@
         <lit-tag v="3"/>
         <lit-tag v="4"/>
         <lit-tag v="5"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
+  <when>
+    <test>
+        <equal>
+          <clip pos="1" side="sl" part="TMS"/>
+          <lit-tag v="ger"/>
+        </equal>
+    </test>
+    <out>
+    <chunk name="verbo-ger" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV-ger"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="Subord"/></tag>
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <clip pos="1" side="tl" part="lemq"/>
       </lu>
     </chunk>
     </out>
