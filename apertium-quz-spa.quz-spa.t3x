@@ -8,9 +8,8 @@
       <cat-item name="punt"/>
     </def-cat>
     
-    <def-cat n="verbo-pp">
-      <cat-item name="SV-pp"/>
-      <cat-item name="SV-pp.*"/>
+    <def-cat n="verbo-partp">
+      <cat-item name="Verbo-pp"/>
     </def-cat>
     
   </section-def-cats>
@@ -160,14 +159,14 @@
 </choose>
 </def-macro>
   
-<def-macro n="quita-GD-ND" npar="1"> <!-- por ahora sólo sustituye GD y ND -->
+<def-macro n="quita-GD-ND" npar="1"> <!-- sólo sustituye GD y ND -->
 <choose>
   <when>
     <test>
       <equal>
         <clip pos="1" part="gen"/>
         <lit-tag v="GD"/>
-        </equal>
+      </equal>
     </test>
       <let>
         <clip pos="1" part="gen"/>
@@ -210,7 +209,7 @@
     
     <rule comment="CHUNK: SV-pp">
       <pattern>
-        <pattern-item n="verbo-pp"/>
+        <pattern-item n="verbo-partp"/>
       </pattern>
       <action>
         <call-macro n="quita-GD-ND">
