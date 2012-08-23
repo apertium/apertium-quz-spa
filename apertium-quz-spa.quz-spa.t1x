@@ -150,6 +150,8 @@
       <attr-item tags="vblex.vm"/>
       <attr-item tags="vblex.vcm"/>
       <attr-item tags="vblex.vimp"/>
+      <attr-item tags="vblex"/> <!-- sólo spa -->
+      <attr-item tags="vblex.pron"/> <!-- sólo spa -->
       <attr-item tags="vbser"/> <!-- sólo spa -->
       <attr-item tags="vbhaver"/> <!-- sólo spa -->
       <attr-item tags="vbmod"/> <!-- sólo spa -->
@@ -197,11 +199,32 @@
       <attr-item tags="vblex.pron"/>
       <attr-item tags="vbex"/>
       <attr-item tags="vbcop"/>
-      <attr-item tags="vblex"/>
       <attr-item tags="vbmod"/>
       <attr-item tags="vbaux"/>
       <attr-item tags="vbser"/>
       <attr-item tags="vbhaver"/>
+    </def-attr>
+    
+    <def-attr n="verb-sin-pron">
+      <attr-item tags="vblex"/>
+      <attr-item tags="vbex"/>
+      <attr-item tags="vbcop"/>
+      <attr-item tags="vbmod"/>
+      <attr-item tags="vbaux"/>
+      <attr-item tags="vbser"/>
+      <attr-item tags="vbhaver"/>
+    </def-attr>
+    
+    <def-attr n="verb-pron">
+      <attr-item tags="pron"/>
+    </def-attr>
+    
+    <def-attr n="q_verb-tipo">
+      <attr-item tags="iv"/>
+      <attr-item tags="tv"/>
+      <attr-item tags="vm"/>
+      <attr-item tags="vcm"/>
+      <attr-item tags="vimp"/>
     </def-attr>
     
     <def-attr n="gen">
@@ -256,8 +279,10 @@
       <attr-item tags="incl"/>
     </def-attr>
     
-    <def-attr n="temps">
+    <def-attr n="TMS">
       <attr-item tags="past"/>
+      <attr-item tags="evid"/>
+      <attr-item tags="hab"/>
       <attr-item tags="pri"/>
       <attr-item tags="prs"/>
       <attr-item tags="pii"/>
@@ -271,9 +296,126 @@
       <attr-item tags="inf"/>
     </def-attr>
     
+    <def-attr n="TmpMod">
+      <attr-item tags="past"/>
+      <attr-item tags="evid"/>
+      <attr-item tags="hab"/>
+      <attr-item tags="pri"/>
+      <attr-item tags="prs"/>
+      <attr-item tags="pii"/>
+      <attr-item tags="pis"/>
+      <attr-item tags="fti"/>
+      <attr-item tags="fts"/>
+      <attr-item tags="ifi"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="cni"/>
+    </def-attr>
+    
+    <def-attr n="Subord">
+      <attr-item tags="pp"/>
+      <attr-item tags="pf"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="ag"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="ger2"/>
+      <attr-item tags="cons"/>
+    </def-attr>
+    
+    <def-attr n="q_verb-rec">
+      <attr-item tags="rec"/>
+      <attr-item tags="rec.caus"/>
+      <attr-item tags="caus.rec"/>
+      <attr-item tags="coop.rec"/>
+    </def-attr>
+    
+    <def-attr n="q_verb-gr1">
+      <attr-item tags="caus"/>
+      <attr-item tags="caus.caus"/>
+      <attr-item tags="coop"/>
+      <attr-item tags="caus.coop"/>
+      <attr-item tags="caus.caus.coop"/>
+    </def-attr>
+    
+    <def-attr n="q_verb-gr2">
+      <attr-item tags="bn"/>
+      <attr-item tags="refl"/>
+      <attr-item tags="ctl"/>
+      <attr-item tags="bn.refl"/>
+      <attr-item tags="refl.bn"/>
+      <attr-item tags="ctl.bn"/>
+      <attr-item tags="bn.ctl"/>
+      <attr-item tags="refl.ctl"/>
+      <attr-item tags="refl.ctl.bn"/>
+      <attr-item tags="bn.refl.ctl"/>
+    </def-attr>
+    
+    <def-attr n="clit-indep">
+      <attr-item tags="lim"/>
+      <attr-item tags="dfnt"/>
+      <attr-item tags="dcnt"/>
+      <attr-item tags="cnti"/>
+      <attr-item tags="adit"/>
+      <attr-item tags="dfnt.dcnt"/>
+      <attr-item tags="dfnt.cnti"/>
+      <attr-item tags="dfnt.adit"/>
+      <attr-item tags="dcnt.adit"/>
+      <attr-item tags="cnti.adit"/>
+      <attr-item tags="adit.cnti"/>
+      <attr-item tags="dfnt.dcnt.adit"/>
+      <attr-item tags="dfnt.cnti.adit"/>
+      <attr-item tags="dfnt.adit.cnti"/>
+      <attr-item tags="lim.dfnt"/>
+      <attr-item tags="lim.dcnt"/>
+      <attr-item tags="lim.cnti"/>
+      <attr-item tags="lim.adit"/>
+      <attr-item tags="lim.dfnt.dcnt"/>
+      <attr-item tags="lim.dfnt.cnti"/>
+      <attr-item tags="lim.dfnt.adit"/>
+      <attr-item tags="lim.dcnt.adit"/>
+      <attr-item tags="lim.cnti.adit"/>
+      <attr-item tags="lim.adit.cnti"/>
+      <attr-item tags="lim.dfnt.dcnt.adit"/>
+      <attr-item tags="lim.dfnt.cnti.adit"/>
+      <attr-item tags="lim.dfnt.adit.cnti"/>
+    </def-attr>
+    
+    <def-attr n="clit-orac">
+      <attr-item tags="qst"/>
+      <attr-item tags="contr.qst"/>
+      <attr-item tags="dub"/>
+      <attr-item tags="contr.dub"/>
+      <attr-item tags="contr"/>
+      <attr-item tags="topi"/>
+      <attr-item tags="rnd"/>
+      <attr-item tags="af"/>
+      <attr-item tags="rep"/>
+      <attr-item tags="cnj"/>
+      <attr-item tags="enf"/>
+      <attr-item tags="contr.excl"/>
+      <attr-item tags="topi.excl"/>
+      <attr-item tags="rnd.excl"/>
+      <attr-item tags="af.excl"/>
+      <attr-item tags="rep.excl"/>
+      <attr-item tags="cnj.excl"/>
+      <attr-item tags="enf.excl"/>
+      <attr-item tags="contr.topi"/>
+      <attr-item tags="contr.rnd"/>
+      <attr-item tags="contr.af"/>
+      <attr-item tags="contr.rep"/>
+      <attr-item tags="contr.cnj"/>
+      <attr-item tags="contr.enf"/>
+      <attr-item tags="contr.topi.excl"/>
+      <attr-item tags="contr.rnd.excl"/>
+      <attr-item tags="contr.af.excl"/>
+      <attr-item tags="contr.rep.excl"/>
+      <attr-item tags="contr.cnj.excl"/>
+      <attr-item tags="contr.enf.excl"/>
+    </def-attr>
+    
     <def-attr n="aspect">
-      <attr-item tags="cont"/>
-      <!-- <attr-item tags="sufijo-rqu = rpnt"/> -->
+      <attr-item tags="cont"/> <!-- -sha -->
+      <attr-item tags="dur"/> <!-- -raya -->
+      <attr-item tags="rpnt"/> <!-- -rqu -->
     </def-attr>
     
     <def-attr n="pers">
@@ -1096,6 +1238,92 @@
   <let><var n="posesivo"/><lit v=""/></let>
 </otherwise>
 </choose>
+</def-macro>
+
+<def-macro n="remplaza-tiempo" npar="1">
+  <choose>
+<when>
+<test>
+  <and><or>
+    <equal>
+      <clip pos="1" side="sl" part="TMS"/>
+      <lit-tag v="past"/>
+    </equal>
+    <equal>
+      <clip pos="1" side="sl" part="TMS"/>
+      <lit-tag v="evid"/>
+    </equal></or>
+    <not>
+      <equal>
+        <clip pos="1" side="sl" part="aspect"/>
+        <lit-tag v="cont"/>
+      </equal>
+    </not>
+  </and>
+</test>
+<let>
+  <clip pos="1" side="tl" part="TMS"/>
+  <lit-tag v="ifi"/>
+</let>
+</when>
+<when>
+<test>
+  <and><or>
+    <equal>
+      <clip pos="1" side="sl" part="TMS"/>
+      <lit-tag v="past"/>
+    </equal>
+    <equal>
+      <clip pos="1" side="sl" part="TMS"/>
+      <lit-tag v="evid"/>
+    </equal></or>
+    <equal>
+      <clip pos="1" side="sl" part="aspect"/>
+      <lit-tag v="cont"/>
+    </equal>
+  </and>
+</test>
+<let>
+  <clip pos="1" side="tl" part="TMS"/>
+  <lit-tag v="pii"/>
+</let>
+</when>
+<when>
+<test>
+  <equal>
+    <clip pos="1" side="sl" part="TMS"/>
+    <lit-tag v="hab"/>
+  </equal>
+</test>
+<let>
+  <clip pos="1" side="tl" part="TMS"/>
+  <lit-tag v="pii"/>
+</let>
+</when>
+</choose> 
+</def-macro>
+
+<def-macro n="remplaza-p1in-ex" npar="1">
+<choose>
+<when>
+<test>
+  <or>
+    <equal>
+      <clip pos="1" side="sl" part="pers"/>
+      <lit-tag v="p1in"/>
+    </equal>
+    <equal>
+      <clip pos="1" side="sl" part="pers"/>
+      <lit-tag v="p1ex"/>
+    </equal>
+  </or>
+</test>
+<let>
+  <clip pos="1" side="tl" part="pers"/>
+  <lit-tag v="p1"/>
+</let>
+</when>
+</choose> 
 </def-macro>
 
 <def-macro n="firstWord" npar="1" c="modified by mginesti 11/nov/10">
@@ -1982,60 +2210,46 @@
 </pattern>
 <action>
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="remplaza-tiempo"><with-param pos="1"/></call-macro>
+<call-macro n="remplaza-p1in-ex"><with-param pos="1"/></call-macro>
 <choose>
-<when>
-<test>
-  <and>
-    <equal>
-      <clip pos="1" side="sl" part="temps"/>
-      <lit-tag v="past"/>
-    </equal>
-    <not>
-      <equal>
-        <clip pos="1" side="sl" part="aspect"/>
-        <lit-tag v="cont"/>
-      </equal>
-    </not>
-  </and>
-</test>
-<let>
-  <clip pos="1" side="tl" part="temps"/>
-  <lit-tag v="ifi"/>
-</let>
-</when>
-<when>
-<test>
-  <and>
-    <equal>
-      <clip pos="1" side="sl" part="temps"/>
-      <lit-tag v="past"/>
-    </equal>
-    <equal>
-      <clip pos="1" side="sl" part="aspect"/>
-      <lit-tag v="cont"/>
-    </equal>
-  </and>
-</test>
-<let>
-  <clip pos="1" side="tl" part="temps"/>
-  <lit-tag v="pii"/>
-</let>
-</when>
+  <when>
+    <test>
+      <not>
+        <equal>
+          <clip pos="1" side="sl" part="TMS"/>
+          <clip pos="1" side="sl" part="Subord"/>
+        </equal>
+      </not>
+    </test>
+    <out>
+    <chunk name="verbo" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="TmpMod"/></tag>
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <lit-tag v="4"/>
+        <lit-tag v="5"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
 </choose>
-<out>
-<chunk name="verbo" case="caseFirstWord">
-		<tags><tag><lit-tag v="SV"/></tag></tags>
-  <lu>
-    <clip pos="1" side="tl" part="lemh"/>
-    <clip pos="1" side="tl" part="a_verb"/>
-    <clip pos="1" side="tl" part="temps"/>
-    <clip pos="1" side="tl" part="pers"/>
-    <clip pos="1" side="tl" part="gen"/>
-    <clip pos="1" side="tl" part="nbr"/>
-    <clip pos="1" side="tl" part="lemq"/>
-  </lu>
-</chunk>
-</out>
 </action>
 </rule>
 
