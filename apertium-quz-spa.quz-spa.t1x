@@ -327,6 +327,11 @@
       <attr-item tags="cons"/>
     </def-attr>
     
+    <def-attr n="inf-lim">
+      <attr-item tags="inf.lim"/>
+      <attr-item tags="inf.dem.lim"/>
+    </def-attr>
+    
     <def-attr n="q_verb-rec">
       <attr-item tags="rec"/>
       <attr-item tags="rec.caus"/>
@@ -2408,10 +2413,16 @@
   </when>
   <when>          <!-- INFINITIVO -->
     <test>
+      <and>
         <equal>
           <clip pos="1" side="sl" part="TMS"/>
           <lit-tag v="inf"/>
         </equal>
+        <equal>
+          <clip pos="1" side="sl" part="inf-lim"/>
+          <lit v=""/>
+        </equal>
+      </and>
     </test>
     <out>
     <chunk name="verbo-inf" case="caseFirstWord">
@@ -2419,6 +2430,47 @@
         <tag><lit-tag v="SV-inf"/></tag>
         <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
         <tag><lit-tag v="inf"/></tag>          <!-- POR AHORA - ? - nombre ? -->
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
+  <when>          <!-- INFINITIVO - uso adverbial -->
+    <test>
+      <and>
+        <equal>
+          <clip pos="1" side="sl" part="TMS"/>
+          <lit-tag v="inf"/>
+        </equal>
+        <not>
+          <equal>
+            <clip pos="1" side="sl" part="inf-lim"/>
+            <lit v=""/>
+          </equal>
+        </not>
+      </and>
+    </test>
+    <out>
+    <chunk name="verbo-ger" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV-ger"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><lit-tag v="ger"/></tag>          <!-- waqaylla - llorando -->
         <tag><clip pos="1" side="tl" part="pers"/></tag>
         <tag><clip pos="1" side="tl" part="nbr"/></tag>
         <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
