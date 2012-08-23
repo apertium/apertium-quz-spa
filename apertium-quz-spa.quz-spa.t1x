@@ -263,20 +263,21 @@
       <attr-item tags="sp"/>
     </def-attr>
     
-    <def-attr n="cas">
-      <attr-item tags="nom"/>
-      <attr-item tags="acc"/>
-      <attr-item tags="dat"/>
+    <def-attr n="cas">    <!-- + combinaciones con el genitivo y otras -->
+      <attr-item tags="incl"/>
+      <attr-item tags="inter"/>
       <attr-item tags="gen"/>
+      <attr-item tags="nom"/>
+      <attr-item tags="per"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="ben"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="abl"/>
       <attr-item tags="loc"/>
       <attr-item tags="ins"/>
-      <attr-item tags="abl"/>
-      <attr-item tags="ben"/>
       <attr-item tags="ter"/>
-      <attr-item tags="per"/>
       <attr-item tags="csal"/>
       <attr-item tags="dis"/>
-      <attr-item tags="incl"/>
     </def-attr>
     
     <def-attr n="TMS">
@@ -293,7 +294,12 @@
       <attr-item tags="imp"/>
       <attr-item tags="cni"/>
       <attr-item tags="ger"/>
+      <attr-item tags="ger2"/>
+      <attr-item tags="cons"/>
       <attr-item tags="inf"/>
+      <attr-item tags="ag"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="pf"/>
     </def-attr>
     
     <def-attr n="TmpMod">
@@ -2213,7 +2219,7 @@
 <call-macro n="remplaza-tiempo"><with-param pos="1"/></call-macro>
 <call-macro n="remplaza-p1in-ex"><with-param pos="1"/></call-macro>
 <choose>
-  <when>
+  <when>          <!-- TIEMPOS, CONDICIONAL, IMPERATIVO -->
     <test>
       <not>
         <equal>
@@ -2250,7 +2256,7 @@
     </chunk>
     </out>
   </when>
-  <when>
+  <when>          <!-- GERUNDIO (sujetos idénticos) -->
     <test>
         <equal>
           <clip pos="1" side="sl" part="TMS"/>
@@ -2262,7 +2268,7 @@
       <tags>
         <tag><lit-tag v="SV-ger"/></tag>
         <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
-        <tag><clip pos="1" side="tl" part="Subord"/></tag>
+        <tag><clip pos="1" side="tl" part="Subord"/></tag>          <!-- POR AHORA (andinismo) - cuando, si -->
         <tag><clip pos="1" side="tl" part="pers"/></tag>
         <tag><clip pos="1" side="tl" part="nbr"/></tag>
         <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
@@ -2278,6 +2284,123 @@
         <clip pos="1" side="tl" part="lemh"/>
         <clip pos="1" side="tl" part="a_verb"/>
         <lit-tag v="3"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
+  <when>          <!-- CONSECUTIVO -->
+    <test>
+        <equal>
+          <clip pos="1" side="sl" part="TMS"/>
+          <lit-tag v="cons"/>
+        </equal>
+    </test>
+    <out>
+    <chunk name="verbo-ger" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV-ger"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><lit-tag v="ger"/></tag>          <!-- POR AHORA - mejor par + inf? -->
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
+  <when>          <!-- GERUNDIO (sujetos diferentes) -->
+    <test>
+        <equal>
+          <clip pos="1" side="sl" part="TMS"/>
+          <lit-tag v="ger2"/>
+        </equal>
+    </test>
+    <out>
+    <chunk name="verbo-ger" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV-ger"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><lit-tag v="ger"/></tag>          <!-- POR AHORA - cuando, si -->
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </when>
+  <when>          <!-- PARTICIPIO PASADO -->
+    <test>
+        <equal>
+          <clip pos="1" side="sl" part="TMS"/>
+          <lit-tag v="pp"/>
+        </equal>
+    </test>
+    <choose>
+      <when> <!-- poner número sg. si pasa sin personas, género no pasa nunca - GD -->
+        <test>
+          <equal>
+            <clip pos="1" side="sl" part="nbr"/>
+            <lit v=""/>
+          </equal>
+        </test>
+        <let>
+          <clip pos="1" side="tl" part="nbr"/>
+          <lit-tag v="sg"/>          <!-- pero es según el objeto, o concordancia con N -->
+        </let>
+      </when>
+    </choose>
+    <out>
+    <chunk name="verbo-pp" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV-pp"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><lit-tag v="pp"/></tag>          <!-- POR AHORA - también or. subord -->
+        <tag><lit-tag v="GD"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="cas"/></tag>
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <lit-tag v="4"/>
+        <lit-tag v="5"/>
         <clip pos="1" side="tl" part="lemq"/>
       </lu>
     </chunk>
