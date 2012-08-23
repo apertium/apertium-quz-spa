@@ -2491,6 +2491,33 @@
     </chunk>
     </out>
   </when>
+  <otherwise>          <!-- por ahora (serán oraciones subordinadas) -->
+    <out>
+    <chunk name="verbo-ger" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SV-ger"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
+        <tag><lit-tag v="ger"/></tag>
+        <tag><clip pos="1" side="tl" part="pers"/></tag>
+        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
+        <tag><clip pos="1" side="tl" part="verb-pron"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-tipo"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-rec"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr1"/></tag>
+        <tag><clip pos="1" side="tl" part="q_verb-gr2"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-indep"/></tag>
+        <tag><clip pos="1" side="tl" part="clit-orac"/></tag>
+      </tags>
+      <lu>
+        <clip pos="1" side="tl" part="lemh"/>
+        <clip pos="1" side="tl" part="a_verb"/>
+        <lit-tag v="3"/>
+        <clip pos="1" side="tl" part="lemq"/>
+      </lu>
+    </chunk>
+    </out>
+  </otherwise>
 </choose>
 </action>
 </rule>
