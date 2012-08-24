@@ -12,6 +12,12 @@
     <match lemma="qhiswa"><select lemma="quechua"/></match>
     <match lemma="rimay"/>
   </rule>
+ 
+  <rule>
+    <match lemma="niy" tags="vblex.vcm.ger"/>
+    <match lemma="kutichiy" tags="vblex.vcm.*">
+      <remove lemma="devolver" tags="vblex.*"/></match>
+  </rule>
   
   <rule>
     <match lemma="simi"><select lemma="lengua"/></match>
@@ -41,6 +47,6 @@ chaymanta: de ahí, sobre eso
 
 match lemma "aswanpas" - select "a pesar de que" - si sigue vblex/aux + ger, ger1 (???)
 prn "as" + lla - select "un poco"
-prn "as" + wan - select "más"
+prn "as" + wan - select "más" - CG
 
 -->

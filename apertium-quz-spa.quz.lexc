@@ -3042,11 +3042,11 @@ pasaq:pasaq DET-Ind ;       ! "cada"
 ! pronombres y determinantes cuantitativos en LEX Preadjetivos
 
 LEXICON Numerales
-huq:huq NUM ;   ! "uno"
 huk:huk NUM ; ! "uno"
+huk:huq NUM ;   ! "uno" - Dir/LR
 iskay:iskay NUM ; ! "dos"
 kinsa:kinsa NUM ; ! "tres"
-kimsa:kimsa NUM ;   ! "tres"
+kinsa:kimsa NUM ;   ! "tres" - Dir/LR
 tawa:tawa NUM ; ! "cuatro"
 pisqa:pisqa NUM ; ! "cinco"
 suqta:suqta NUM ; ! "seis"

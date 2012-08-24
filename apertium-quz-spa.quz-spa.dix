@@ -243,25 +243,37 @@
      
 <section id="NUMERALES" type="standard">
   
-    <!-- también en PRON__DET_INDEF - como det.ind o prn.tn -->
-    <e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
-    <e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
-    <e r="RL"><p><l>huq<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
-    <e r="LR"><p><l>huq<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
-    <e><p><l>iskay<s n="num"/></l><r>dos<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+<!-- huk, iskay - pasan como num -→ det.ind y prn.tn -->
+<e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
+<e><p><l>huk<s n="num"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
+<e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e> <!-- borrar dir ???  -->
+<e><p><l>huk<s n="num"/><s n="px3sg"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>huk<s n="num"/><s n="px3sg"/></l><r>el<b/>otro<s n="prn"/><s n="tn"/></r></p></e>
+<e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
+<e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
+
+<e><p><l>iskay<s n="num"/></l><r>dos<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+<e r="LR"><p><l>iskay<s n="num"/><s n="px3sg"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>iskay<s n="num"/><s n="px3sg"/></l><r>ambos<s n="det"/><s n="ind"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
+
     <e><p><l>kinsa<s n="num"/></l><r>tres<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e r="LR"><p><l>kimsa<s n="num"/></l><r>tres<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>tawa<s n="num"/></l><r>cuatro<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pisqa<s n="num"/></l><r>cinco<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>suqta<s n="num"/></l><r>seis<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>qanchis<s n="num"/></l><r>siete<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pusaq<s n="num"/></l><r>ocho<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>isqun<s n="num"/></l><r>nueve<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-    <e><p><l>ch'usaq<s n="num"/></l><r>cero<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
-    
+    <e><p><l>isqun<s n="num"/></l><r>nueve<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>   
     <e><p><l>chunka<s n="numM"/></l><r>diez<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pachak<s n="numM"/></l><r>cien<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>waranqa<s n="numM"/></l><r>mil<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
+    <e><p><l>ch'usaq<s n="num"/></l><r>cero<s n="num"/><s n="mf"/><s n="sp"/></r></p></e> 
+    
     <e r="LR"><p><l>hunu<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>lluna<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>millón<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
@@ -294,23 +306,15 @@
     
     <e><p><l>huk<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>huk<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
-    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/></l><r>primero<s n="adj"/></r></p></e>
     <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
-    <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primero<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>primer<s n="det"/><s n="ord"/></r></p></e>
-    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>primero<s n="adj"/></r></p></e>
-    
+    <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>primero<s n="adj"/></r></p></e>    
     <e><p><l>huk<s n="num"/><s n="ord"/><s n="poss"/></l><r>undécimo<s n="det"/><s n="ord"/></r></p></e>
-    <e r="LR"><p><l>huq<s n="num"/><s n="ord"/><s n="poss"/></l><r>undécimo<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>iskay<s n="num"/><s n="ord"/></l><r>segundo<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>iskay<s n="num"/><s n="ord"/><s n="poss"/></l><r>segundo<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>iskay<s n="num"/><s n="ord"/><s n="poss"/></l><r>duodécimo<s n="det"/><s n="ord"/></r></p></e>
     
     <e><p><l>kinsa<s n="num"/><s n="ord"/></l><r>tercer<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>kinsa<s n="num"/><s n="ord"/></l><r>tercero<s n="adj"/></r></p></e>
-    <e r="LR"><p><l>kimsa<s n="num"/><s n="ord"/></l><r>tercer<s n="det"/><s n="ord"/></r></p></e>
-    <e r="LR"><p><l>kimsa<s n="num"/><s n="ord"/></l><r>tercero<s n="adj"/></r></p></e>
     <e><p><l>tawa<s n="num"/><s n="ord"/></l><r>cuarto<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>pisqa<s n="num"/><s n="ord"/></l><r>quinto<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>suqta<s n="num"/><s n="ord"/></l><r>sexto<s n="det"/><s n="ord"/></r></p></e>
@@ -478,6 +482,9 @@
 <e><p><l>chay<s n="det"/><s n="dem"/></l><r>ese<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>haqay<s n="det"/><s n="dem"/></l><r>aquel<s n="det"/><s n="dem"/></r></p></e>
 
+<!-- además pasan como adv.subst.dem -→ adv (adverbios sustantivales) -->
+
+<!-- adverbios derivados de los demostrativos -->
 <e><p><l>akna<s n="adv"/></l><r>así<s n="adv"/></r></p></e>
 <e><p><l>khayna<s n="adv"/></l><r>así<s n="adv"/></r></p></e>
 <e r="RL"><p><l>khayna<s n="adv"/></l><r>de<b/>este<b/>modo<s n="adv"/></r></p></e>
@@ -487,6 +494,12 @@
 </section>
 
 <section id="PRON__DET__INTERROGATIVOS_y_REL" type="standard">
+
+<!-- prn.itg -→ prn.itg, prn.ind -→ prn.tn,  prn.neg -→ prn.ind -->
+<!-- det.itg -→ det.itg, det.ind -→ det.ind, det.neg -→ det.ind -->
+<!-- excepción: los adverbiales son prn.itg -→ adv.itg, prn.ind/neg -→ adv o det.ind  -->
+<!-- excepción PI(pas): prn.itg.gen -→ prn.itg, det.ind -→ prn.itg, prn/det.ind/neg -→ adj -->
+<!-- excepción MAY: prn.itg.caso.dub -→ rel.adv -->
 
 <e><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 <e><p><l>ima<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -559,11 +572,11 @@
 <e r="LR"><p><l>may<b/>chhikan<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
 <e><p><l>imay<b/>ura<s n="prn"/><s n="itg"/></l><r>qué<b/>hora<s n="adv"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 
-<!-- borrar ??? (regla para may .. dónde) -->
+<!-- BORRAR ??? (regla para may .. dónde) -->
 <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
 <e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
 
-<!-- relativos -->
+<!-- RELATIVOS -->
 <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/><s n="dub"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
 <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="acc"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
 <e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
@@ -572,25 +585,11 @@
 </section>
 
 <section id="PRON__DET__INDEFINIDOS" type="standard">
+<!-- ver también en HUK, ISKAY en Numerales - pasan como num.(ord), det.ind o prn.tn -->
 
-<!-- los (derivados) de numerales -->
-<e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
-<e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
-<e><p><l>huk<s n="num"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
-<e r="LR"><p><l>huq<s n="num"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
-<e><p><l>huk<s n="num"/><s n="px3sg"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>huq<s n="num"/><s n="px3sg"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
-<e><p><l>huk<s n="num"/><s n="px3sg"/></l><r>el<b/>otro<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>huq<s n="num"/><s n="px3sg"/></l><r>el<b/>otro<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>iskay<s n="num"/><s n="px3sg"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
-<e r="LR"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
-<e r="LR"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="GD"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
-<e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
-
-<!-- determinantes -->
+<!-- DETERMINANTES -->              <!-- det.ind -→ det.ind  -->
+                                    <!-- excepción TODO det.ind -→ predet  -->
+<!-- det.ind tb. de los itg  -->    <!-- excepción IMAYMANA det.ind -→ adj  -->
 <e><p><l>imaymana<s n="det"/><s n="ind"/></l><r>de<b/>todo<b/>tipo<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 <e><p><l>llapa<s n="det"/><s n="ind"/></l><r>todo<s n="predet"/></r></p></e>
 <e r="LR"><p><l>llapan<s n="det"/><s n="ind"/></l><r>todo<s n="predet"/></r></p></e>
@@ -619,7 +618,8 @@
 <e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>pocos<s n="det"/><s n="qnt"/><s n="f"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>cuantos<s n="det"/><s n="qnt"/><s n="f"/><s n="pl"/></r></p></e>
 
-<!-- pronombres -->
+<!-- PRONOMBRES -->                 <!-- prn -→ prn.tn  -->
+                                    <!-- excepción KIKIN, SAPAN prn -→ adj  -->
 <e><p><l>imaymana<s n="prn"/></l><r>de<b/>todo<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>imaymana<s n="prn"/></l><r>todas<b/>las<b/>cosas<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 <e><p><l>kikin<s n="prn"/></l><r>mismo<s n="adj"/></r></p></e>
@@ -653,7 +653,7 @@
 
 <section id="PREADJETIVOS__PREADV___PRON__DET_CUANTITATIVOS" type="standard">
 
-<!-- preadjetivos - preadverbios -->
+<!-- PREADJETIVOS -->           <!-- preadj -→ preadv (todos) -->
 <e><p><l>allin<s n="preadj"/></l><r>bien<s n="preadv"/></r></p></e>
 <e><p><l>ancha<s n="preadj"/></l><r>muy<s n="preadv"/></r></p></e>
 <e><p><l>as<s n="preadj"/></l><r>algo<s n="preadv"/></r></p></e>
@@ -676,7 +676,7 @@
 <e r="RL"><p><l>sinchi<s n="preadj"/></l><r>tan<s n="preadv"/></r></p></e>
 <e r="LR"><p><l>tunpa<s n="preadj"/></l><r>algo<s n="preadv"/></r></p></e>
 
-<!-- determinantes -->
+<!-- DETERMINANTES -->          <!-- det.qnt -→ det.qnt (todos) -->
 <e r="LR"><p><l>ancha<s n="det"/><s n="qnt"/></l><r>mucho<s n="det"/><s n="qnt"/></r></p></e>
 <e><p><l>as<s n="det"/><s n="qnt"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 <e r="RL"><p><l>askha<s n="det"/><s n="qnt"/></l><r>harto<s n="det"/><s n="qnt"/></r></p></e>
@@ -698,7 +698,7 @@
 <e r="LR"><p><l>tunpa<s n="det"/><s n="qnt"/></l><r>un<b/>poco<b/>de<s n="det"/><s n="qnt"/><s n="mf"/><s n="sp"/></r></p></e>
 <e r="LR"><p><l>waliq<s n="det"/><s n="qnt"/></l><r>harto<s n="det"/><s n="qnt"/></r></p></e>
 
-<!-- pronmbres cuantitativos -->
+<!-- PRONMBRES CUANTITATIVOS -->            <!-- prn -→ prn.tn (todos) -->
 <e r="LR"><p><l>ancha<s n="prn"/></l><r>mucho<s n="prn"/><s n="tn"/></r></p></e>
 <e><p><l>as<s n="prn"/></l><r>un<b/>poco<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e r="LR"><p><l>as<s n="prn"/></l><r>más<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
@@ -725,6 +725,8 @@
 <e r="LR"><p><l>sinchi<s n="prn"/></l><r>bastante<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
 <e r="LR"><p><l>tunpa<s n="prn"/></l><r>poco<s n="prn"/><s n="tn"/></r></p></e>
 <e r="LR"><p><l>waliq<s n="prn"/></l><r>harto<s n="prn"/><s n="tn"/></r></p></e>
+
+<!-- la mayoría pasan también con algún caso o clítico como adverbios -->
 
 </section>
     
@@ -2724,16 +2726,16 @@
     
 <section id="VERBOS_DE_COMUNICACION" type="standard">
       
-    <e><p><l>kutichiy<s n="vblex"/></l><r>contestar<s n="vblex"/></r></p></e>
-    <e><p><l>kutichiy<s n="vblex"/></l><r>responder<s n="vblex"/></r></p></e>
-    <e><p><l>niy<s n="vblex"/></l><r>decir<s n="vblex"/></r></p></e>
-    <e r="LR"><p><l>parlay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
-    <e><p><l>rimay<s n="vblex"/></l><r>hablar<s n="vblex"/></r></p></e>
-    <e><p><l>qapariy<s n="vblex"/></l><r>gritar<s n="vblex"/></r></p></e>
-    <e><p><l>tapuy<s n="vblex"/></l><r>preguntar<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>tapuy<s n="vblex"/></l><r>encuestar<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>tapuy<s n="vblex"/></l><r>entrevistar<s n="vblex"/></r></p></e>
-    <e r="RL"><p><l>tapuy<s n="vblex"/></l><r>interrogar<s n="vblex"/></r></p></e>
+    <e><p><l>kutichiy<s n="vblex"/><s n="vcm"/></l><r>contestar<s n="vblex"/></r></p></e>
+    <e><p><l>kutichiy<s n="vblex"/><s n="vcm"/></l><r>responder<s n="vblex"/></r></p></e>
+    <e><p><l>niy<s n="vblex"/><s n="vcm"/></l><r>decir<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>parlay<s n="vblex"/><s n="vcm"/></l><r>hablar<s n="vblex"/></r></p></e>
+    <e><p><l>rimay<s n="vblex"/><s n="vcm"/></l><r>hablar<s n="vblex"/></r></p></e>
+    <e><p><l>qapariy<s n="vblex"/><s n="vcm"/></l><r>gritar<s n="vblex"/></r></p></e>
+    <e><p><l>tapuy<s n="vblex"/><s n="vcm"/></l><r>preguntar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>tapuy<s n="vblex"/><s n="vcm"/></l><r>encuestar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>tapuy<s n="vblex"/><s n="vcm"/></l><r>entrevistar<s n="vblex"/></r></p></e>
+    <e r="RL"><p><l>tapuy<s n="vblex"/><s n="vcm"/></l><r>interrogar<s n="vblex"/></r></p></e>
     
 </section>    
     
