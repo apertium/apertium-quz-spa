@@ -1,3 +1,5 @@
+<!-- no funciona si el lema en LF es ambiguo (por ej. sin diferenciar tv-iv-vcm) -->
+
 <rules>
   <rule>
     <match lemma="runa"><select lemma="gente"/></match>

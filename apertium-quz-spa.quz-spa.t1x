@@ -43,6 +43,10 @@
     <def-cat n="det">
       <cat-item tags="det.*"/>
       <cat-item tags="det"/>
+      <cat-item tags="num.*"/>
+      <cat-item tags="num"/>
+      <cat-item tags="numM.*"/>
+      <cat-item tags="numM"/>
     </def-cat>
     
     <def-cat n="prn-itg">
@@ -243,7 +247,8 @@
       <attr-item tags="det.def"/>
       <attr-item tags="det.pos"/>
       <attr-item tags="detnt"/>
-      <attr-item tags="predet"/>
+      <attr-item tags="num"/>
+      <attr-item tags="det.ord"/>
     </def-attr>
     
     <def-attr n="adj_prn-itg"> <!-- sólo para el det "piqpa" que pasa como prn.tn "de quién" -->
@@ -1584,8 +1589,8 @@
 </action>
 </rule>
 
-<rule comment="DET N">
-<pattern>
+<rule comment="DET N"> <!-- OJO: falta millón = sustantivo, 1 y 2 también prn.tn (sin + N...) -->
+<pattern>       <!-- OJO: + plural con algunos (num, qnt...) -->
     <pattern-item n="det"/>
     <pattern-item n="nom"/>
 </pattern>
@@ -1604,7 +1609,7 @@
 <when>
   <test><equal>
     <clip pos="1" side="tl" part="clas_nom"/>
-    <clip pos="1" side="tl" part="a_det"/>
+    <clip pos="1" side="tl" part="a_det"/> <!-- OJO: "huk, iskay" también -→ prn.tn -->
   </equal></test>
   <out>
   <chunk name="det-n" case="caseFirstWord">
@@ -1642,9 +1647,9 @@
     </lu>
   </chunk>
   </out>
-</when>
+</when>         <!-- OJO: falta millón = sustantivo, 1, 2 también prn.tn -->
 <otherwise> <!-- de alguien, de nadie, de todo tipo; OJO "casa de quién" -->
-  <out>
+  <out>                                     <!-- OJO: 1°, 3° también adj -->
   <chunk name="n-adj" case="caseFirstWord">
       <tags>
         <tag><lit-tag v="SN"/></tag>
@@ -1828,7 +1833,7 @@
       <clip pos="1" side="tl" part="nbr-sp"/>
       <clip pos="1" side="tl" part="lemq"/>
     </lu>
-    <b pos="3"/>     <!-- si es predet; ? + artículo? todo el día, todos los días, todo hombre -->
+    <b pos="2"/>     <!-- si es predet; ? + artículo? todo el día, todos los días, todo hombre -->
     <lu><get-case-from pos ="3">
       <clip pos="3" side="tl" part="lemh"/></get-case-from>     
       <clip pos="3" side="tl" part="a_nom"/>

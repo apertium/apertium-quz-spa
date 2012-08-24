@@ -243,7 +243,7 @@
      
 <section id="NUMERALES" type="standard">
   
-<!-- huk, iskay - pasan como num -→ det.ind y prn.tn -->
+<!-- huk, iskay - pasan como num -→ det.ind y prn.tn (+ 2 -→ num) -->
 <e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
 <e><p><l>huk<s n="num"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e> <!-- borrar dir ???  -->
@@ -262,6 +262,7 @@
 <e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="m"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>iskay<s n="num"/><s n="px3pl"/></l><r>ambos<s n="det"/><s n="ind"/><s n="f"/><s n="pl"/></r></p></e>
 
+    <!-- num, numM -→ num.mf.sp -->
     <e><p><l>kinsa<s n="num"/></l><r>tres<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>tawa<s n="num"/></l><r>cuatro<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>pisqa<s n="num"/></l><r>cinco<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -274,12 +275,14 @@
     <e><p><l>waranqa<s n="numM"/></l><r>mil<s n="num"/><s n="mf"/><s n="sp"/></r></p></e>
     <e><p><l>ch'usaq<s n="num"/></l><r>cero<s n="num"/><s n="mf"/><s n="sp"/></r></p></e> 
     
+    <!-- numM -→ n.m -->
     <e r="LR"><p><l>hunu<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>lluna<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>millón<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>millun<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     <e r="LR"><p><l>millon<s n="numM"/></l><r>millón<s n="n"/><s n="m"/></r></p></e>
     
+    <!-- ORDINALES -->             <!-- num.ord, numM.ord -→ det.ord --> <!-- exc.: 1°, 3° tb. -→ adj -->
     <e><p><l>qhipa<b/>kaq<s n="num"/><s n="ord"/></l><r>último<s n="det"/><s n="ord"/></r></p></e>
     <e r="LR"><p><l>qhipakaq<s n="num"/><s n="ord"/></l><r>último<s n="det"/><s n="ord"/></r></p></e>
     
