@@ -22,7 +22,7 @@
   </rule>
   
   <rule>
-    <match lemma="simi"><select lemma="lengua"/></match>
+    <match lemma="simi" tags="n.*"><select lemma="lengua" tags="n.f.*"/></match>
   </rule>
   
   <rule>
