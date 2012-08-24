@@ -91,6 +91,7 @@ SELECT ("tukuy"i det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
 REMOVE ("aswa"i) IF (0 ("aswan"i)) ;
 SELECT ("sinchi"i adj) IF (0 (nom) LINK 1 Anim) ;
 SELECT ("kutichiy"i vcm) IF (NOT 0 (bn) LINK -1 ("niy"i ger)) ;
+SELECT ("uran"i post) IF (0 ("ura"i n) LINK -1 N) ;
 
 
 
