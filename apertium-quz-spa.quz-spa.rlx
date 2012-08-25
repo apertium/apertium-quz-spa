@@ -17,6 +17,7 @@ LIST P3acc = (px3sg acc) ;      # -n-ta
 LIST Inf = inf ;        # -y
 LIST N-Acc = (n acc) ;
 LIST Caso = acc gen ben dat ter per abl loc ins csal dis prox posic ;   # sin nominativo
+LIST POS = px1sg px2sg px3sg px1in px1ex px2pl px3pl ;
 
 LIST Pers3 = (p3 sg) (p3 pl) ;
 LIST TM = pri past evid imp fti cni hab ;
@@ -44,6 +45,7 @@ SET NumDet = Num + (nom) - Clit - Caso ;
 SET NominN = Nomin - (wa) ;    # también -su.. cuando no puede ser verbo subordinado
 SET VFin = V + TM ;
 SET VSub = V - TM ; # = V - TM
+SET POSsin3 = POS - (px3sg) ;
 
 
 SECTION
@@ -92,6 +94,14 @@ REMOVE ("aswa"i) IF (0 ("aswan"i)) ;
 SELECT ("sinchi"i adj) IF (0 (nom) LINK 1 Anim) ;
 SELECT ("kutichiy"i vcm) IF (NOT 0 (bn) LINK -1 ("niy"i ger)) ;
 SELECT ("uran"i post) IF (0 ("ura"i n) LINK -1 N) ;
+SELECT ("huklla"i adj) IF (0 ("huk"i lim) LINK 1 N) (0 ("huk"i lim) LINK 1 A LINK 1 N) ;
+SELECT ("sapa"i adj) IF (0 (lim) LINK NOT 0 POSsin3 );
+SELECT ("wakilla" adv) IF (0 (nom) LINK NOT 1 N) ;
+SELECT ("wakpi"i adv) IF (0 ("wak"i loc)) ;
+SELECT ("wakmanta"i adv) IF (0 ("wak"i abl)) ;
+SELECT ("hukmanta"i adv) IF (0 ("huk"i abl)) ;
+SELECT ("musuqmanta"i adv) IF (0 ("musuq"i abl)) ;
+SELECT ("usqhaylla"i adv) IF (0 ("usqhay"i inf lim)) ;
 
 
 

@@ -245,9 +245,9 @@
   
 <!-- huk, iskay - pasan como num -→ det.ind y prn.tn (+ 2 -→ num) -->
 <e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
-<e><p><l>huk<s n="num"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
+<e r="LR"><p><l>huk<s n="num"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
 <e r="RL"><p><l>huk<s n="num"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e> <!-- borrar dir ???  -->
-<e><p><l>huk<s n="num"/><s n="px3sg"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
+<e r="LR"><p><l>huk<s n="num"/><s n="px3sg"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
 <e><p><l>huk<s n="num"/><s n="px3sg"/></l><r>el<b/>otro<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>huk<s n="num"/></l><r>alguno<s n="det"/><s n="ind"/><s n="f"/><s n="sg"/></r></p></e>
@@ -592,7 +592,7 @@
 
 <!-- DETERMINANTES -->              <!-- det.ind -→ det.ind  -->
                                     <!-- excepción TODO det.ind -→ predet  -->
-<!-- det.ind tb. de los itg  -->    <!-- excepción IMAYMANA det.ind -→ adj  -->
+<!-- det.ind tb. de los itg  -->    <!-- excepción IMAYMANA, WAK det.ind -→ adj  -->
 <e><p><l>imaymana<s n="det"/><s n="ind"/></l><r>de<b/>todo<b/>tipo<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 <e><p><l>llapa<s n="det"/><s n="ind"/></l><r>todo<s n="predet"/></r></p></e>
 <e r="LR"><p><l>llapan<s n="det"/><s n="ind"/></l><r>todo<s n="predet"/></r></p></e>
@@ -605,6 +605,11 @@
 <e r="LR"><p><l>sapanka<s n="det"/><s n="ind"/></l><r>cada<s n="det"/><s n="ind"/><s n="mf"/><s n="sg"/></r></p></e>
 <e><p><l>tukuy<s n="det"/><s n="ind"/></l><r>todo<s n="predet"/></r></p></e>
 <e r="LR"><p><l>pasaq<s n="det"/><s n="ind"/></l><r>cada<s n="det"/><s n="ind"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e><p><l>wak<s n="det"/><s n="ind"/></l><r>otro<s n="det"/><s n="ind"/></r></p></e>
+<e r="RL"><p><l>wak<s n="det"/><s n="ind"/></l><r>diferente<s n="adj"/><s n="mf"/></r></p></e>
+<e r="RL"><p><l>wak<s n="det"/><s n="ind"/></l><r>distinto<s n="adj"/></r></p></e>
+<e r="RL"><p><l>wak<s n="det"/><s n="ind"/></l><r>separado<s n="adj"/></r></p></e>
 
 <e r="LR"><p><l>wakin<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/><s n="GD"/><s n="pl"/></r></p></e>
 <e r="LR"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/><s n="GD"/><s n="pl"/></r></p></e>
@@ -622,7 +627,7 @@
 <e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>cuantos<s n="det"/><s n="qnt"/><s n="f"/><s n="pl"/></r></p></e>
 
 <!-- PRONOMBRES -->                 <!-- prn -→ prn.tn  -->
-                                    <!-- excepción KIKIN, SAPAN prn -→ adj  -->
+                                    <!-- excepción KIKIN, SAPAN, WAK (tb.) prn -→ adj  -->
 <e><p><l>imaymana<s n="prn"/></l><r>de<b/>todo<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>imaymana<s n="prn"/></l><r>todas<b/>las<b/>cosas<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 <e><p><l>kikin<s n="prn"/></l><r>mismo<s n="adj"/></r></p></e>
@@ -635,22 +640,29 @@
 <e r="LR"><p><l>q'ala<s n="prn"/></l><r>todo<s n="prn"/><s n="tn"/></r></p></e>
 <e><p><l>sapan<s n="prn"/></l><r>solo<s n="adj"/></r></p></e>
 <e><p><l>tukuy<s n="prn"/></l><r>todo<s n="prn"/><s n="tn"/></r></p></e>
+<e><p><l>wak<s n="prn"/></l><r>otro<s n="prn"/><s n="tn"/></r></p></e>
+<e r="RL"><p><l>wak<s n="prn"/></l><r>diferente<s n="adj"/><s n="mf"/></r></p></e>
+<e r="RL"><p><l>wak<s n="prn"/></l><r>distinto<s n="adj"/></r></p></e>
+<e r="RL"><p><l>wak<s n="prn"/></l><r>separado<s n="adj"/></r></p></e>
 <e r="RL"><p><l>wakilla<s n="prn"/></l><r>uno<s n="prn"/><s n="tn"/></r></p></e>
-<e r="LR"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>demás<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
-<e r="LR"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>restantes<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
-<e r="LR"><p><l>wakiq<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
 <e><p><l>wakilla<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>wakiq<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
 
 <e r="LR"><p><l>sapanka<s n="prn"/></l><r>cada<b/>uno<s n="prn"/><s n="tn"/><s n="GD"/><s n="sg"/></r></p></e>
 <e r="LR"><p><l>wakin<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
 <e r="LR"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>otros<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
+<e r="LR"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>demás<s n="prn"/><s n="tn"/><s n="GD"/><s n="pl"/></r></p></e>
 
 <e r="RL"><p><l>sapanka<s n="prn"/></l><r>cada<b/>uno<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>wakin<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>otros<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>demás<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>restantes<s n="prn"/><s n="tn"/><s n="m"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>sapanka<s n="prn"/></l><r>cada<b/>uno<s n="prn"/><s n="tn"/><s n="f"/><s n="sg"/></r></p></e>
 <e r="RL"><p><l>wakin<s n="prn"/></l><r>alguno<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>otros<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>demás<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
+<e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>restantes<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 
 </section>
 
@@ -796,6 +808,11 @@
     
     <e r="RL"><p><l>chaymanta<s n="adv"/></l><r>luego<s n="adv"/></r></p></e>
     <e><p><l>hukmanta<s n="adv"/></l><r>otra<b/>vez<s n="adv"/></r></p></e>
+    <e><p><l>wakmanta<s n="adv"/></l><r>otra<b/>vez<s n="adv"/></r></p></e>
+    <e><p><l>wakmanta<s n="adv"/></l><r>de<b/>nuevo<s n="adv"/></r></p></e>
+    <e><p><l>wakpi<s n="adv"/></l><r>en<b/>otro<b/>lugar<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>wakilla<s n="adv"/></l><r>juntamente<s n="adv"/></r></p></e>
+    <e r="RL"><p><l>musuqmanta<s n="adv"/></l><r>de<b/>nuevo<s n="adv"/></r></p></e>
     <e><p><l>hinallataq<s n="adv"/></l><r>asimismo<s n="adv"/></r></p></e>
     <e><p><l>hinallataq<s n="adv"/></l><r>así<b/>mismo<s n="adv"/></r></p></e>
     <e><p><l>ichapas<s n="adv"/></l><r>probablemente<s n="adv"/></r></p></e>
@@ -919,6 +936,12 @@
     <e><p><l>sinchi<s n="adj"/></l><r>fuerte<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>sullk'a<s n="adj"/></l><r>menor<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>sumaq<s n="adj"/></l><r>lindo<s n="adj"/></r></p></e>
+    <e><p><l>sapa<s n="adj"/></l><r>solo<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>sapa<s n="adj"/></l><r>soltero<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>sapa<s n="adj"/></l><r>viudo<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>sapa<s n="adj"/></l><r>aislado<s n="adj"/></r></p></e>
+    <e r="RL"><p><l>sapa<s n="adj"/></l><r>singular<s n="adj"/><s n="mf"/></r></p></e>
+    <e><p><l>sapaq<s n="adj"/></l><r>solo<s n="adj"/></r></p></e>
     <e><p><l>t'ukri<s n="adj"/></l><r>oficial<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>tambobambino<s n="adj"/></l><r>tambobambino<s n="adj"/></r></p></e>
     <e><p><l>tullu<s n="adj"/></l><r>flaco<s n="adj"/></r></p></e>

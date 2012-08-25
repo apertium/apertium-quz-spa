@@ -2696,6 +2696,8 @@ qhapaq:qhapaq ADJ ;     ! rico
 q%'illu:q%'illu ADJ ;   ! "amarillo"
 q%'umir:q%'umir ADJ ;   ! "verde"
 q%'uñi:q%'uñi ADJ ;     ! "cálido"
+sapa:sapa ADJ ;         ! "solo, soltero, viudo" (+lla)
+sapaq:sapaq ADJ ;       ! "solo"
 sinchi:sinchi ADJ ;     ! "fuerte"
 sumaq:sumaq ADJ ;       ! "agradable"
 t%'ukri:tukri ADJ ;     ! "oficial" - Dir/LR
@@ -2986,7 +2988,8 @@ LEXICON Pronombres
 ! los que toman derivativos (-yuq...), a veces plural...
 imaymana:imaymana PRON ;    ! "todas las cosas", "de todo"
 tukuy:tukuy PRON ;          ! "todo" (más bien abstracto, singular)
-! wak, waq PRON "otro, diferente" - como adjetivo
+wak:wak PRON ;              ! "otro, distinto, diferente, separado"
+wak:waq PRON ;              ! "otro" - Dir/LR
 lliw:lliw PRON ;            ! "todo", "todos"
 lluy:lluy PRON ;            ! "todo", "todos"
 q%'ala:q%'ala PRON ;        ! "todo" (pleno, desnudo)
@@ -3035,6 +3038,8 @@ q%'ala:q%'ala DET-Ind ;     ! "todo", "todos los..."
 tukuy:tukuy DET-Ind ;       ! "todo", "todos los..."
 sapa:sapa DET-Ind ;         ! "cada"
 sapanka:sapanka DET-Ind ;   ! "cada"
+wak:wak DET-Ind ;           ! "otro, distinto, diferente, separado"
+wak:waq DET-Ind ;           ! "otro" - Dir/LR
 wakin:wakin DET-Ind ;       ! "algunos"
 wakillan:wakillan DET-Ind ; ! "unos (pocos), algunos"
 pasaq:pasaq DET-Ind ;       ! "cada"
@@ -3118,13 +3123,22 @@ yaqa:yaqa ADV-lla ;         ! "casi" + yaqa(cha)(lla)(manta|pi)
 kuska:kuska ADV-lla ; ! "junto"
 ña:ña ADV ; ! "ya"
 
+allinta:allinta ADV ; ! "bien"
+allillamanta:allillamanta ADV ;     ! "lentamente"
 alli% allillanta:alli% allillanta ADV ; ! "con atención"
 alli% allillamanta:alli% allillamanta ADV ; ! "poco a poco"
-alli% allillamanta:alli%-allillamanta ADV ; ! "poco a poco"
+alli% allillamanta:alli%-allillamanta ADV ; ! "poco a poco" - Dir/LR
 tukuy% hinantinpi:tukuy% hinantinpi ADV ; ! "en todas partes"
 usqhaylla:usqhaylla ADV ; ! "rápidamente"
 
-allinta:allinta ADV ; ! "bien"
+wakilla:wakilla ADV ;       ! "juntos, juntamente" = "algunos" prn.nom
+wakpi:wakpi ADV ;           ! "en otro lugar"
+wakpi:waqpi ADV ;           ! "en otro lugar" - Dir/LR
+wakmanta:wakmanta ADV ;     ! "de nuevo, otra vez"
+wakmanta:waqmanta ADV ;     ! Dir/LR
+hukmanta:hukmanta ADV ;     ! "de nuevo, otra vez"
+hukmanta:huqmnta ADV ;      ! "de nuevo" - Dir/LR
+musuqmanta:musuqmanta ADV ;     ! "de nuevo" (calco hisp.)
 
 
 hawapi:hawapi ADV ; ! "afuera"
@@ -3132,7 +3146,6 @@ muyuyninpi:muyuyninpi ADV ; ! "alrededor"
 qhipamanta:qhipamanta ADV ; ! "de atrás"
 
 hayk%'aqpis:hayk%'aqpis ADV-taq ; ! "alguna vez / nunca"
-hukmanta:hukmanta ADV ; ! "otra vez"
 ichapas:ichapas ADV-taq ; ! "probablemente"
 
 hinallataq%<adv%>:hinallataq CLIT-Final ; ! "asimismo, así mismo"
