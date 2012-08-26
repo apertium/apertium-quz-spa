@@ -5,6 +5,7 @@ SETS
 
 LIST N = n ; 
 LIST A = adj ;
+LIST Post = post ;
 LIST Prop = (np ant) ; 
 LIST Vmov = vm ;
 LIST V = vblex ;
@@ -47,6 +48,43 @@ SET VFin = V + TM ;
 SET VSub = V - TM ; # = V - TM
 SET POSsin3 = POS - (px3sg) ;
 
+BEFORE-SECTIONS
+# SELECCIÓN DE LEMAS
+  # pero: tukuy N --> det, prn (no adj o N-px1sg)
+REMOVE ("tuku"i) IF (0 ("tukuy"i)) ;  # desbuhando
+SELECT ("tukuy"i det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
+REMOVE ("aswa"i) IF (0 ("aswan"i)) ;
+SELECT ("sinchi"i adj) IF (0 (nom) LINK 1 Anim) ;
+SELECT ("kutichiy"i vcm) IF (NOT 0 (bn) LINK -1 ("niy"i ger)) ;
+SELECT ("uran"i post) IF (0 ("ura"i n) LINK -1 N) ;
+SELECT ("huklla"i adj) IF (0 ("huk"i lim) LINK 1 N) ;
+SELECT ("huklla"i adj) IF (0 ("huk"i lim) LINK 1 A LINK 1 N) ;
+SELECT ("sapa"i adj) IF (0 (lim) LINK NOT 0 POSsin3 );
+SELECT ("wakilla" adv) IF (0 (nom) LINK NOT 1 N) ;
+SELECT ("wakpi"i adv) IF (0 ("wak"i loc)) ;
+SELECT ("wakmanta"i adv) IF (0 ("wak"i abl)) ;
+SELECT ("hukmanta"i adv) IF (0 ("huk"i abl)) ;
+SELECT ("musuqmanta"i adv) IF (0 ("musuq"i abl)) ;
+SELECT ("usqhaylla"i adv) IF (0 ("usqhay"i inf lim)) ;
+REMOVE ("riy"i refl) IF  (0 ("rikuy"i)) ;
+    ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl" (pero: ri....chi- ???)
+
+SELECT ("ima"i cnjcoo) IF (-1 N LINK -1 N) ;
+SELECT ("ima"i cnjcoo) IF (-1 Post LINK -1 N LINK -1 Post LINK -1 N) ;
+SELECT ("ima"i cnjcoo) IF (-1 N LINK -1 A LINK -1 N LINK -1 A) ;
+# etc.; tv.: -1 X LINK -1* &&SAMEX BARRIER no-Verb OR no-Subst según X
+# ima "y" antes de sel. pron/det.itg
+# if 0 NOT Case LINK -1 N LINK -1 N
+
+# chaymi (antes de select prn/det.dem)
+# SELECT ("chaymi"i) IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
+SELECT ("chaymi"i) IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>  LINK NOT 0 Pers3 ???
+# chaymi "por eso": selec si no sige verbo en 3sg/pl
+# - al prinicpio, desp. de comilla o espacio
+# "eso, ese" = sujeto, objeto, pred. nominal
+# ??? X qhawashan = "ese"/"por" eso mira :-( 
+
+
 
 SECTION
 
@@ -54,9 +92,9 @@ SELECT A IF (-1 A) (1C N);
     # Jaimeqa usqhaylla phawashan hatun machu sach'aman, Maríamantan pakakushan.
 
 SELECT Per IF (0 P3acc LINK 0 ("qhawana"i n) OR ("t'uqu"i) LINK 0C* ("rikuy"i vblex) OR ("qhaway"i vblex)) ;
-REMOVE Per IF (0 P3acc LINK NOT 0x ("qhawana"i n) OR ("t'uqu"i) LINK NOT -1* Vmov BARRIER (cm)) 
-              (0 P3acc LINK NOT 0x ("qhawana"i n) OR ("t'uqu"i) LINK NOT 1* Vmov BARRIER (cm)) ;
-		# Mamanta rikun. Acchuykuspan, mamaykita qhawananta rikun.		
+REMOVE Per IF (0 P3acc LINK NOT 0 ("qhawana"i n) OR ("t'uqu"i) LINK NOT -1* Vmov BARRIER V OR (cm))
+              (0 P3acc LINK NOT 0 ("qhawana"i n) OR ("t'uqu"i) LINK NOT 1* Vmov BARRIER V OR (cm)) ;
+		# Mamanta rikun. Achhuykuspan, mamaykita qhawananta rikun.		
 REMOVE Per IF (0 Anim LINK 0 P3acc) ;
 # es más probable un movimiento hacia una persona que por una persona (aunque: la lanza pasó por...)
 # + AFTER-SECTIONS
@@ -67,8 +105,6 @@ REMOVE (px3sg) IF (0 (xrel) LINK 0 (numM) LINK -1 (num) LINK -1 (numM)) ;
 # pero mejor seleccionar xrel siempre que anteceda un multiplicador mayor
 # (hay ambigüedad también con el afirmativo)
 
-REMOVE ("riy"i refl) IF  (0 ("rikuy"i)) ;
-    ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl" (pero: ri....chi- ???)
 
 SELECT Inf IF (0 N-Acc LINK *0 V) ;
 # ( N | INF ) Acc + vblex tv --> INF
@@ -86,22 +122,6 @@ SELECT (imp) IF (1 ("<!>")) ;
 # -SQA
 # select evid if -1* af.excl not 0C* VFin
 
-# SELECCIÓN DE LEMAS
-  # pero: tukuy N --> det, prn (no adj o N-px1sg)
-REMOVE ("tuku"i) IF (0 ("tukuy"i)) ;  # desbuhando
-SELECT ("tukuy"i det) IF (1 N) ; # + adj.. ver excepc. (+pos..), verbo inf..
-REMOVE ("aswa"i) IF (0 ("aswan"i)) ;
-SELECT ("sinchi"i adj) IF (0 (nom) LINK 1 Anim) ;
-SELECT ("kutichiy"i vcm) IF (NOT 0 (bn) LINK -1 ("niy"i ger)) ;
-SELECT ("uran"i post) IF (0 ("ura"i n) LINK -1 N) ;
-SELECT ("huklla"i adj) IF (0 ("huk"i lim) LINK 1 N) (0 ("huk"i lim) LINK 1 A LINK 1 N) ;
-SELECT ("sapa"i adj) IF (0 (lim) LINK NOT 0 POSsin3 );
-SELECT ("wakilla" adv) IF (0 (nom) LINK NOT 1 N) ;
-SELECT ("wakpi"i adv) IF (0 ("wak"i loc)) ;
-SELECT ("wakmanta"i adv) IF (0 ("wak"i abl)) ;
-SELECT ("hukmanta"i adv) IF (0 ("huk"i abl)) ;
-SELECT ("musuqmanta"i adv) IF (0 ("musuq"i abl)) ;
-SELECT ("usqhaylla"i adv) IF (0 ("usqhay"i inf lim)) ;
 
 
 
@@ -111,13 +131,6 @@ SELECT A IF (0 N LINK 0 (nom) LINK 1C N) ;
 SELECT N IF (0 A LINK 0 Caso) ;
   # warmita "mujer", no "hembra"
 
-# chaymi (antes de select prn/det.dem)
-# SELECT ("chaymi"i) IF (-1 (<<<) LINK 1C* V BARRIER ("<,>")) ; - no funciona <<<
-SELECT ("chaymi"i) IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>  LINK NOT 0 Pers3 ???
-# chaymi "por eso": selec si no sige verbo en 3sg/pl
-# - al prinicpio, desp. de comilla o espacio
-# "eso, ese" = sujeto, objeto, pred. nominal
-# ??? X qhawashan = "ese"/"por" eso mira :-( 
 
 # pronombres demostrativos - determinantes - adverbios
 REMOVE (adv subst dem) IF (0 (det dem)) ;
@@ -132,9 +145,6 @@ SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
 # SELECT (adv subst dem) IF (0 (det dem) OR (prn dem)) ; # LINK 0 Clit) ; # con algunos casos sólo
 # + numerales compuestos
 
-
-# ima "y" antes de sel. pron/det.itg
-# if 0 NOT Case LINK -1 N LINK -1 N
 
 
 # pronombres itg/ind/neg
@@ -220,11 +230,12 @@ SELECT N IF (0 (ag) LINK -1 A OR (det)) ; # -1C ?
 AFTER-SECTIONS
 # poner las últimas cosas por desambiguar (lo más frecuente)?
 SELECT Per IF (0 ("ñan"i) LINK 0* Vmov) ; # agregar a la lista
-REMOVE Per IF (0 P3acc LINK NOT 0 ("ñan"i) LINK NOT 0* Vmov BARRIER (cm)) ;
+REMOVE Per IF (0 P3acc LINK NOT 0 ("ñan"i) LINK NOT 0* Vmov BARRIER V OR (cm)) ;
 # SELECT Per IF (0 P3acc LINK NOT 0 Anim LINK *0 Vmov BARRIER (cm) OR V - Vmov) 
 #              (0 P3acc LINK NOT 0 Anim LINK 1* P3acc OR Per BARRIER V - Vmov LINK 1* Vmov ) ;
 # chakranta rishan / rishan chakranta / chakranta, urqunta rishan
 # pero: wasinta rishan :-( mejor una lista de lo que puede ser con Per (ñanninta, X patanta (post?)...)
+# REMOVE (hab) IF (0 (ag) LINK 1C* Vfin) ;
 
 
 
@@ -288,7 +299,7 @@ END
           ## AND = LINK 0, o + (+, -, OR = sets; link = entre tests)
           # (test) AND (test) AND (test) = (test LINK test LINK test)
           # (test) (test) = (test) AND (test)
-          # ??? (test) OR (test) - ok (= varios tests: sel blah, sel blaj...)
+          # ??? (test) OR (test) - NOT WORKING !!! (= varios tests: sel blah, sel blaj...)
           # (tag) (tag) = (tag) OR (tag)
           # (tag) + (tag) = (tag) AND (tag)
           # SELECT ("<wordform>"i) + (tag) ; ( "<wordform>"i SELECT (tag) ; - no funciona)
