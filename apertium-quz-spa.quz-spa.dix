@@ -496,11 +496,11 @@
 
 </section>
 
-<section id="PRON__DET__INTERROGATIVOS_y_REL" type="standard">
+<section id="PRON__ADV__DET__INTERROGATIVOS_y_REL" type="standard">
 
 <!-- prn.itg -→ prn.itg, prn.ind -→ prn.tn,  prn.neg -→ prn.ind -->
+<!-- adv.itg -→ adv.itg, adv.ind -→ adv,  adv.neg -→ adv -->
 <!-- det.itg -→ det.itg, det.ind -→ det.ind, det.neg -→ det.ind -->
-<!-- excepción: los adverbiales son prn.itg -→ adv.itg, prn.ind/neg -→ adv o det.ind  -->
 <!-- excepción PI(pas): prn.itg.gen -→ prn.itg, det.ind -→ prn.itg, prn/det.ind/neg -→ adj -->
 <!-- excepción MAY: prn.itg.caso.dub -→ rel.adv -->
 
@@ -510,6 +510,7 @@
 <e><p><l>imapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
 <e><p><l>imapas<s n="prn"/><s n="neg"/></l><r>nada<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>imapas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
+<e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="prn"/><s n="itg"/></r></p></e><!-- ? -->
 
 <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 <e r="LR"><p><l>pi<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -545,45 +546,43 @@
 <e><p><l>hayk'apas<s n="prn"/><s n="neg"/></l><r>ninguno<s n="prn"/><s n="tn"/></r></p></e>
 <e r="LR"><p><l>hayk'apas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 
-<e><p><l>hayk'a<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
-<e><p><l>hayk'apas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>algún<b/>día<s n="adv"/></r></p></e>
-<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>alguna<b/>vez<s n="adv"/></r></p></e>
-<e><p><l>hayk'apas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>nunca<s n="adv"/></r></p></e>
-<e r="RL"><p><l>hayk'apas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>jamás<s n="adv"/></r></p></e>
+<e><p><l>hayk'aq<s n="adv"/><s n="itg"/></l><r>cuándo<s n="adv"/><s n="itg"/></r></p></e>
+<e><p><l>hayk'aqpas<s n="adv"/><s n="ind"/></l><r>algún<b/>día<s n="adv"/></r></p></e>
+<e r="RL"><p><l>hayk'aqpas<s n="adv"/><s n="ind"/></l><r>alguna<b/>vez<s n="adv"/></r></p></e>
+<e><p><l>hayk'aqpas<s n="adv"/><s n="neg"/></l><r>nunca<s n="adv"/></r></p></e>
+<e r="RL"><p><l>hayk'aqpas<s n="adv"/><s n="neg"/></l><r>jamás<s n="adv"/></r></p></e>
 
-<e><p><l>may<s n="prn"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
+<e><p><l>imay<b/>ura<s n="adv"/><s n="itg"/></l><r>qué<b/>hora<s n="adv"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
+
+<e><p><l>may<s n="adv"/><s n="itg"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
 <e><p><l>may<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-<e><p><l>maypas<s n="prn"/><s n="ind"/></l><r>algún<b/>lugar<s n="adv"/></r></p></e>
-<e r="RL"><p><l>maypas<s n="prn"/><s n="ind"/></l><r>algún<b/>sitio<s n="adv"/></r></p></e>
-<e r="RL"><p><l>maypas<s n="prn"/><s n="ind"/></l><r>alguna<b/>parte<s n="adv"/></r></p></e>
+<e><p><l>maypas<s n="adv"/><s n="ind"/></l><r>algún<b/>lugar<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="adv"/><s n="ind"/></l><r>algún<b/>sitio<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="adv"/><s n="ind"/></l><r>alguna<b/>parte<s n="adv"/></r></p></e>
 <e r="LR"><p><l>maypas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
-<e r="RL"><p><l>maypas<s n="prn"/><s n="neg"/></l><r>ningún<b/>lugar<s n="adv"/></r></p></e>
-<e r="RL"><p><l>maypas<s n="prn"/><s n="neg"/></l><r>ningún<b/>sitio<s n="adv"/></r></p></e>
-<e><p><l>maypas<s n="prn"/><s n="neg"/></l><r>ninguna<b/>parte<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="adv"/><s n="neg"/></l><r>ningún<b/>lugar<s n="adv"/></r></p></e>
+<e r="RL"><p><l>maypas<s n="adv"/><s n="neg"/></l><r>ningún<b/>sitio<s n="adv"/></r></p></e>
+<e><p><l>maypas<s n="adv"/><s n="neg"/></l><r>ninguna<b/>parte<s n="adv"/></r></p></e>
 <e r="LR"><p><l>maypas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 
-<e><p><l>imayna<s n="prn"/><s n="itg"/></l><r>cómo<s n="adv"/><s n="itg"/></r></p></e>
+<e><p><l>imayna<s n="adv"/><s n="itg"/></l><r>cómo<s n="adv"/><s n="itg"/></r></p></e>
 <e r="LR"><p><l>imayna<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
-<e><p><l>imaynapas<s n="prn"/><s n="ind"/></l><r>de<b/>algún<b/>modo<s n="adv"/></r></p></e>
-<e><p><l>imaynapas<s n="prn"/><s n="ind"/></l><r>de<b/>alguna<b/>manera<s n="adv"/></r></p></e>
+<e><p><l>imaynapas<s n="adv"/><s n="ind"/></l><r>de<b/>algún<b/>modo<s n="adv"/></r></p></e>
+<e><p><l>imaynapas<s n="adv"/><s n="ind"/></l><r>de<b/>alguna<b/>manera<s n="adv"/></r></p></e>
 <e r="LR"><p><l>imaynapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
-<e><p><l>imaynapas<s n="prn"/><s n="neg"/></l><r>de<b/>ningún<b/>modo<s n="adv"/></r></p></e>
-<e r="LR"><p><l>imaynapas<s n="prn"/><s n="neg"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
+<e><p><l>imaynapas<s n="adv"/><s n="neg"/></l><r>de<b/>ningún<b/>modo<s n="adv"/></r></p></e>
+<e r="LR"><p><l>imaynapas<s n="adv"/><s n="neg"/></l><r>de<b/>ninguna<b/>manera<s n="adv"/></r></p></e>
 <e r="LR"><p><l>imaynapas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 
 <e><p><l>may<b/>chhika<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
 <e r="LR"><p><l>may<b/>chhikan<s n="det"/><s n="itg"/></l><r>cuánto<s n="det"/><s n="itg"/></r></p></e>
-<e><p><l>imay<b/>ura<s n="prn"/><s n="itg"/></l><r>qué<b/>hora<s n="adv"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>
 
-<!-- BORRAR ??? (regla para may .. dónde) -->
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/></l><r>dónde<s n="adv"/><s n="itg"/></r></p></e>
-<e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="adv"/><s n="itg"/></r></p></e>
-
-<!-- RELATIVOS -->
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="loc"/><s n="dub"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="acc"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
-<e r="LR"><p><l>may<s n="prn"/><s n="itg"/><s n="abl"/><s n="dub"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
+<!-- RELATIVOS -->          <!-- + quien, que, cuyo, cuanto, el/lo que/cual -->
+<!-- PERO: no son rel, son itg: no sé dónde está = itg+dub × déjalo donde está = subordinación -->
+<e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="loc"/><s n="dub"/></l><r>donde<s n="rel"/><s n="adv"/></r></p></e>
+<e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="acc"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
+<e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
+<e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="abl"/><s n="dub"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
 
 </section>
 
@@ -627,7 +626,7 @@
 <e r="RL"><p><l>wakillan<s n="det"/><s n="ind"/></l><r>unos<b/>cuantos<s n="det"/><s n="qnt"/><s n="f"/><s n="pl"/></r></p></e>
 
 <!-- PRONOMBRES -->                 <!-- prn -→ prn.tn  -->
-                                    <!-- excepción KIKIN, SAPAN, WAK (tb.) prn -→ adj  -->
+                                    <!-- excepción KIKIN, SAPAN, prn -→ adj (WAK sólo RL) -->
 <e><p><l>imaymana<s n="prn"/></l><r>de<b/>todo<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>imaymana<s n="prn"/></l><r>todas<b/>las<b/>cosas<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 <e><p><l>kikin<s n="prn"/></l><r>mismo<s n="adj"/></r></p></e>
@@ -781,7 +780,7 @@
     <e><p><l>kunan<b/>p'unchay<s n="adv"/><s n="temp"/></l><r>hoy<s n="adv"/></r></p></e>
     <e><p><l>qaynunchay<s n="adv"/><s n="temp"/></l><r>ayer<s n="adv"/></r></p></e>
     <e><p><l>sapa<b/>kuti<s n="adv"/><s n="temp"/></l><r>siempre<s n="adv"/></r></p></e>
-    <e r="LR"><p><l>hayk'aqpis<s n="adv"/></l><r>nunca<s n="adv"/></r></p></e>
+    <e r="LR"><p><l>hayk'aqpis<s n="adv"/></l><r>nunca<s n="adv"/></r></p></e> <!-- BORRAR -->
 
 </section>
     
@@ -799,7 +798,7 @@
     <e r="LR"><p><l>hawapi<s n="adv"/></l><r>afuera<s n="adv"/></r></p></e>  
     <e><p><l>muyuyninpi<s n="adv"/></l><r>alrededor<s n="adv"/></r></p></e>
     <e><p><l>qhipamanta<s n="adv"/></l><r>de<b/>atrás<s n="adv"/></r></p></e>
-    <e><p><l>tukuy<b/>hinantinpi<s n="adv"/></l><r>en<b/>todas<b/>partes<s n="adv"/></r></p></e>
+    <e><p><l>tukuy<b/>hinantinpi<s n="adv"/></l><r>en<b/>todas<b/>partes<s n="adv"/></r></p></e><!-- CASO -->
     
     <e><p><l>allinta<s n="adv"/></l><r>bien<s n="adv"/></r></p></e>
     <e><p><l>alli<b/>allillanta<s n="adv"/></l><r>con<b/>atención<s n="adv"/></r></p></e>

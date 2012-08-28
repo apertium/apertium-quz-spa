@@ -75,8 +75,11 @@
     
     <def-cat n="conj">
       <cat-item tags="cnjcoo"/>
+      <cat-item tags="cnjcoo.*"/>
       <cat-item tags="cnjsub"/>
+      <cat-item tags="cnjsub.*"/>
       <cat-item tags="cnjadv"/>
+      <cat-item tags="cnjadv.*"/>
     </def-cat>
     
     <def-cat n="adv">

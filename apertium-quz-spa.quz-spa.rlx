@@ -10,6 +10,7 @@ LIST Prop = (np ant) ;
 LIST Vmov = vm ;
 LIST V = vblex ;
 LIST Num = num ;    # posiblemente (num nom) o num.ord, num.px3sg/pl
+LIST Itg = (prn itg) (adv itg) ;    # sin determinantes
 
 LIST Gen = gen ;    # -q/pa
 LIST Acc = acc ;    # -ta
@@ -68,12 +69,12 @@ SELECT ("musuqmanta"i adv) IF (0 ("musuq"i abl)) ;
 SELECT ("usqhaylla"i adv) IF (0 ("usqhay"i inf lim)) ;
 REMOVE ("riy"i refl) IF  (0 ("rikuy"i)) ;
     ## para seleccionar riku-y "ver" en vez de ri-ku-y "ir" + "refl" (pero: ri....chi- ???)
+SELECT ("hayk'aq"i adv) IF (0 ("hayk'a"i gen)) ;
 
 SELECT ("ima"i cnjcoo) IF (-1 N LINK -1 N) ;
 SELECT ("ima"i cnjcoo) IF (-1 Post LINK -1 N LINK -1 Post LINK -1 N) ;
 SELECT ("ima"i cnjcoo) IF (-1 N LINK -1 A LINK -1 N LINK -1 A) ;
 # etc.; tv.: -1 X LINK -1* &&SAMEX BARRIER no-Verb OR no-Subst según X
-# ima "y" antes de sel. pron/det.itg
 # if 0 NOT Case LINK -1 N LINK -1 N
 
 # chaymi (antes de select prn/det.dem)
@@ -132,8 +133,8 @@ SELECT N IF (0 A LINK 0 Caso) ;
   # warmita "mujer", no "hembra"
 
 
-# pronombres demostrativos - determinantes - adverbios
-REMOVE (adv subst dem) IF (0 (det dem)) ;
+# DEMOSTRATIVOS: pronombres - determinantes - adverbios
+REMOVE (adv subst dem) IF (0 (det dem)) ;       # los adverbios de este tipo siempre llevan caso
 SELECT (det dem) IF (0 (prn dem) LINK 1 N) ;
 SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 N) ;
 SELECT (det dem) IF (0 (prn dem) LINK 1 A LINK 1 A LINK 1 N) ;
@@ -147,10 +148,10 @@ SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
 
 
 
-# pronombres itg/ind/neg
-REMOVE (prn itg) IF (0 (prn ind adit)) ; # imapas no es itg, imaraq tampoco?
+# ITG/IND/NEG - pronombres y adverbios
+REMOVE Itg IF (0 Itg + (adit)) ; # imapas no es itg, imaraq tampoco?
 REMOVE (det itg) IF (0 (det neg) LINK 1* (n adit) BARRIER N OR Clit) ;
-SELECT (prn itg) IF (0 Clit OR (cnti) ) ; # + raq, -ña ?, -lla?, -puni
+SELECT Itg IF (0 Clit OR (cnti) ) ; # + raq, -ña ?, -lla?, -puni
 # pero: piraq mayraq?, talvez piraq = ind = alguien
 REMOVE (det) IF (1 (sent)) ;
 # REMOVE (det) IF (NOT 1 N OR A OR (prn) OR (num) OR NumM OR (np) OR (det) OR VSub OR (preadj)) ;
@@ -159,6 +160,7 @@ SELECT (ind) IF (0 (neg) LINK NOT -1* ("mana"i) BARRIER Clit OR V) ;
 SELECT (ind) IF (0 (neg) LINK -1* ("mana"i qst) BARRIER Clit) ; # manachu pipas hamun? no vino alguien?
 SELECT (neg) IF (0 (ind) LINK -1* ("mana"i) - (qst) BARRIER N OR V LINK 1* (qst) CBARRIER VFin) ;
 SELECT (det) IF (0 (prn ind) OR (prn neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+SELECT (det) IF (0 (adv ind) OR (adv neg) LINK 1* (n adit) BARRIER N OR Clit) ;
 SELECT (neg) IF (-1* ("mana"i) LINK NOT 0 (qst) LINK 1*x VSub BARRIER VFin LINK NOT 1*x (qst)) ;
 # revisar porque sale mal para subordinaciones:
 # Manan yachanichu pi hamusqanta. Manan pi hamusqanta yachanichu.
@@ -177,17 +179,17 @@ SELECT (neg) IF (-1* ("mana"i) LINK NOT 0 (qst) LINK 1*x VSub BARRIER VFin LINK 
 # mana < neg/ind > !-chu = ind - pero: chay mana allin runari, imatapas saqinchu?
 
 
-# pronombres interrogativos -determinantes (indef/neg ?) (ADV.itg ?)
-SELECT (det itg) IF (0 (prn itg) LINK 1 N) ;
-SELECT (det itg) IF (0 (prn itg) LINK 1 A LINK 1 N) ;
-SELECT (det itg) IF (0 (prn itg) LINK 1 A LINK 1 A LINK 1 N) ;
-SELECT (det itg) IF (0 (prn itg) LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
-SELECT (det itg) IF (0 (prn itg) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
+# DETERMINANTES INTERROGATIVOS VS. pronombres y adverbios interrogativos (indef/neg ?)
+SELECT (det itg) IF (0 Itg LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 A LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 A LINK 1 ("<,>") LINK 1 A LINK 1 N) ;
+SELECT (det itg) IF (0 Itg LINK 1 (preadj) LINK 1 A LINK 1 N) ;
 # con numerales???
 # det.itg que no son prn.itg - no hace falta desambiguar
 
 
-# pronombres indefinidos - determinantes (wakin, sapa, imapas)
+# INDEFINIDOS: pronombres - determinantes (wakin, sapa, imapas)
 # sirve también para los prn.itg/ind/neg
 # REMOVE (prn) IF (0 (det ind) LINK 1 N) ;
 SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 N) ;                   # OK?
@@ -201,12 +203,12 @@ SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 A LI
 # mejor remove, porque det sale primero, o las dos reglas
 
 
-# pronombres cuantitativos - determinantes - preadjetivos - adverbios
+# CUANTITATIVOS: pronombres - determinantes - preadjetivos - adverbios
 # es difícil distinguir si es ADV o PRN+acc :-(
 SELECT (preadj) IF (0 (det qnt) LINK 1C A) ;
 SELECT (det qnt) IF (0 (preadj) LINK 1C N) ;
 SELECT (preadj) IF (0 ("ancha"i) LINK 1 A) ;
-SELECT (adv) IF (0 (prn)) ; # LINK NOT 1* (vblex tv) - Detrans)
+SELECT (adv) IF (0 (prn) LINK NOT 0 (itg)) ; # LINK NOT 1* (vblex tv) - Detrans)
 REMOVE (preadj) IF (0 (det qnt) LINK NOT 0 ("ancha"i) LINK NOT 1C A) ; # ojo si se cambia en lexc para que preadj pueda llevar caso
 # REMOVE (det qnt) IF (NOT 1C N) ;  -  no quitar, si no sigue ni A ni N, mejor DET que preadj
 # algunos son también ADJ - sinchi (+ nom), manchay, waliq

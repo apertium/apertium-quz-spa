@@ -1286,10 +1286,13 @@ LEXICON DET-Ind
 
 LEXICON PronItg
 %<prn%>%<itg%>: N-DER ;
-! %<prn%>%<ind%>: N-DER ;
-! %<prn%>%<neg%>: N-DER ;
 pas%<prn%>%<ind%>: N-DER ;
 pas%<prn%>%<neg%>: N-DER ;
+
+LEXICON AdvItg
+%<adv%>%<itg%>: N-DER ;     ! tal vez sufi. N-FLEX-Caso, pero: maykunallapi, imay uraschallapi
+pas%<adv%>%<ind%>: N-DER ;
+pas%<adv%>%<neg%>: N-DER ;
 
 LEXICON DET-Itg
 %<det%>%<itg%>: # ;
@@ -2858,7 +2861,7 @@ waliq:waliq PRON ;      ! "harto"
 ! adverbios en LEX Adverbios
 
 
-LEXICON PronombresDemItg
+LEXICON PronombresDemItg  ! + adverbios itg
 !! + gen, pos, dim itg = N-DER
 ! pasan como prn.dem y también det.dem
 
@@ -2882,8 +2885,8 @@ chhaynaniraq:chhaynaniraq ADV ; ! "así" (det/adv) (así de grande, tanto..)
 
 
 ! interrogativos - no todos como det
-! todos pasado también como ind y det (pi...(N)...pas, mana pi...(N)...pas)
-! como relativos? +chus, +cha... ???
+! todos pasados también como ind y det (pi...(N)...pas, mana pi...(N)...pas)
+! como relativos? +chus, +cha... ??? - no son relativos (rel = subord)
 
 ima:ima PronItg ; ! "qué"
 ima:ima DET-Itg ; ! "qué"
@@ -2896,17 +2899,20 @@ mayqin:mayqin PronItg ;     ! "cuál"
 mayqin:mayqin DET-Itg ;     ! "qué" (cuál)
 mayqin:mayqan PronItg ;     ! "cuál" - Dir/LR
 mayqin:mayqan DET-Itg ;     ! "qué" (cuál) - Dir/LR
-
-! adverbios
 hayk%'a:hayk%'a PronItg ;   ! "cuánto", genitivo = "cuándo"
 hayk%'a:hayk%'a DET-Itg ;   ! "cuánto"
 ! hayk'ayki kashan "cuántos tuyos están allí?", "cuántos tienes?"
-! hayk%'aq = hayk%'ap cuándo - pasado como hayk'a+gen
-may:may PronItg ;       ! "dónde"
-may:may DET-Itg ;       ! "qué" (lugar)
-imayna:imayna PronItg ;     ! "cómo"
-imay%ura:imay%ura PronItg ;     ! "qué hora"
-imay%ura:imay%hora PronItg ;     ! "qué hora" - Dir/LR
+
+! adverbios
+may:may AdvItg ;                ! "dónde"
+may:may DET-Itg ;               ! "qué" (lugar)
+hayk%'aq:hayk%'aq AdvItg ;      ! "cuándo" + det?
+hayk%'aq:hayk%'ap AdvItg ;      ! Dir/LR
+imayna:imayna AdvItg ;          ! "cómo" + det?
+imay%ura:imay%ura AdvItg ;      ! "qué hora"
+imay%ura:imay%hora AdvItg ;     ! "qué hora" - Dir/LR
+imay%ura:imay%uras AdvItg ;     ! "qué hora" - Dir/LR
+imay%ura:imay%horas AdvItg ;    ! "qué hora" - Dir/LR
 ! mayna, may-tukuy = may-chhika, imanaqtin (imanaspa(n), imanispa(n) EcQ), (imarayku)
 
 !may chhika runa hamusqa qué cantidad de.., cuánta.., may chhika kutin
