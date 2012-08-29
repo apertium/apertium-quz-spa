@@ -3019,8 +3019,8 @@ wakin%<prn%>@P.POSpl.opc@:wakin@P.POSpl.opc@ N-FLEX-POS-Oblig ;         ! "algun
 wakiq%<prn%>@P.POSpl.opc@:wakiq@P.POSpl.opc@ N-FLEX-POS-Oblig ;         ! "algunos (de...)"
 wakilla%<prn%>@P.POSpl.opc@:wakilla@P.POSpl.opc@ N-FLEX-POS-Oblig ;     ! "unos (pocos), algunos (de...)"
 wakilla%<prn%>%<dim%>@P.POSpl.opc@:wakichalla@P.POSpl.opc@ N-FLEX-POS-Oblig ;     ! "unos (pocos), algunos (de...)"
-! wakicha%<prn%>%<dim%>@P.POSpl.opc@:wakicha@P.POSpl.opc@ N-FLEX-POS-Oblig ;
-wakin%<prn%>%<px3pl%>@P.POSpl.opc@:wakinku@P.POSpl.opc@ N-FLEX-POS-Oblig ;  ! Dir/LR - AyQ
+! ??? wakicha%<prn%>%<dim%>@P.POSpl.opc@:wakicha@P.POSpl.opc@ N-FLEX-POS-Oblig ;
+wakin%<prn%>%<px3pl%>@P.POSpl.opc@:wakinku@P.POSpl.opc@ N-FLEX-Incl ;  ! Dir/LR - AyQ
 
 ! posesivo plural (o -n) obligatorio (con llapa/llipi sin inclusivo preferible a las formas sin posesivo)
 llapa%<prn%>:llapa N-FLEX-POS-Oblig ;                       ! "todo", "todos"

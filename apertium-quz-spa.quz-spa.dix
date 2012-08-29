@@ -509,8 +509,8 @@
 <e><p><l>imapas<s n="prn"/><s n="ind"/></l><r>algo<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>imapas<s n="det"/><s n="ind"/></l><r>alguno<s n="det"/><s n="ind"/></r></p></e>
 <e><p><l>imapas<s n="prn"/><s n="neg"/></l><r>nada<s n="prn"/><s n="tn"/><s n="m"/><s n="sg"/></r></p></e>
-<e><p><l>imapas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
-<e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="prn"/><s n="itg"/></r></p></e><!-- ? -->
+<e><p><l>imapas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e><!-- 
+<e><p><l>ima<s n="prn"/><s n="itg"/><s n="abl"/></l><r>por<b/>qué<s n="prn"/><s n="itg"/></r></p></e> = de qué ? -->
 
 <e><p><l>pi<s n="prn"/><s n="itg"/></l><r>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 <e r="LR"><p><l>pi<s n="det"/><s n="itg"/></l><r>qué<s n="det"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>

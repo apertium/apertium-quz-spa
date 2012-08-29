@@ -85,6 +85,9 @@ SELECT ("chaymi"i) IF (1C* V BARRIER ("<,>")) ; # primera palabra o desp. de <,>
 # "eso, ese" = sujeto, objeto, pred. nominal
 # ??? X qhawashan = "ese"/"por" eso mira :-( 
 
+# ITG/IND/NEG - pronombres y adverbios
+# - poner algunos aquí??
+
 
 
 SECTION
@@ -143,6 +146,7 @@ SELECT (det dem) IF (0 (prn dem) LINK 1 (preadj) LINK 1 A LINK 1 N) ;
 SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 N) ;
 SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 N) ;
 SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
+SELECT (prn dem) IF (0 (acc) LINK 1* (vblex tv)) ;
 # SELECT (adv subst dem) IF (0 (det dem) OR (prn dem)) ; # LINK 0 Clit) ; # con algunos casos sólo
 # + numerales compuestos
 
@@ -151,6 +155,10 @@ SELECT (det dem) IF (0 (prn dem) LINK 1 NumDet LINK 1 A LINK 1 A LINK 1 N) ;
 # ITG/IND/NEG - pronombres y adverbios
 REMOVE Itg IF (0 Itg + (adit)) ; # imapas no es itg, imaraq tampoco?
 REMOVE (det itg) IF (0 (det neg) LINK 1* (n adit) BARRIER N OR Clit) ;
+REMOVE (det ind) IF (0 (det itg) LINK NOT 1* (n adit) BARRIER N OR Clit) ;
+REMOVE (det neg) IF (0 (det itg) LINK NOT 1* (n adit) BARRIER N OR Clit) ;
+REMOVE (prn ind) IF (NOT 0 (adit)) ;
+REMOVE (prn neg) IF (NOT 0 (adit)) ;
 SELECT Itg IF (0 Clit OR (cnti) ) ; # + raq, -ña ?, -lla?, -puni
 # pero: piraq mayraq?, talvez piraq = ind = alguien
 REMOVE (det) IF (1 (sent)) ;
@@ -208,7 +216,7 @@ SELECT (det ind) IF (0 (prn) LINK NOT 0 (itg) LINK 1 NumDet LINK 1 A LINK 1 A LI
 SELECT (preadj) IF (0 (det qnt) LINK 1C A) ;
 SELECT (det qnt) IF (0 (preadj) LINK 1C N) ;
 SELECT (preadj) IF (0 ("ancha"i) LINK 1 A) ;
-SELECT (adv) IF (0 (prn) LINK NOT 0 (itg)) ; # LINK NOT 1* (vblex tv) - Detrans)
+SELECT (adv) IF (0 (prn) LINK NOT 0 (itg) OR (dem)) ; # LINK NOT 1* (vblex tv) - Detrans)
 REMOVE (preadj) IF (0 (det qnt) LINK NOT 0 ("ancha"i) LINK NOT 1C A) ; # ojo si se cambia en lexc para que preadj pueda llevar caso
 # REMOVE (det qnt) IF (NOT 1C N) ;  -  no quitar, si no sigue ni A ni N, mejor DET que preadj
 # algunos son también ADJ - sinchi (+ nom), manchay, waliq
@@ -292,6 +300,7 @@ END
 # pi-cha - "barrer" vblex imp/inf, "quien" prn dim/conj - + (n..) POS --> verbo
 # may-lla - "llavar", "dónde" = --^ (adv - sólo algunos casos)
 # pi - + POS mejor pini-
+# sapa - sapan: adj/prn - ambos traducen como adj "solo", det sapa > cada
 
 
 

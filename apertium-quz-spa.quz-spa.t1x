@@ -49,14 +49,22 @@
       <cat-item tags="numM"/>
     </def-cat>
     
-    <def-cat n="prn-itg">
-      <cat-item tags="prn.itg.*"/>
-      <cat-item tags="prn.itg"/>
-    </def-cat>
-    
-    <def-cat n="prn-pers">
+    <def-cat n="prn-pers"> <!-- incl. prn.pers...gen -→ adj.pos  -->
       <cat-item tags="prn.pers.*"/>
       <cat-item tags="prn.pers"/>
+    </def-cat>
+    
+    <def-cat n="prn"> <!-- todo excepto prn.pers + ojo: prn.* -->
+      <cat-item tags="prn.itg.*"/>
+      <cat-item tags="prn.itg"/>
+      <cat-item tags="prn.ind.*"/>
+      <cat-item tags="prn.ind"/>
+      <cat-item tags="prn.neg.*"/>
+      <cat-item tags="prn.neg"/>
+      <cat-item tags="prn.dem.*"/>
+      <cat-item tags="prn.dem"/>
+      <cat-item tags="prn.*"/>
+      <cat-item tags="prn"/>
     </def-cat>
     
     <def-cat n="verb">
@@ -254,7 +262,7 @@
       <attr-item tags="det.ord"/>
     </def-attr>
     
-    <def-attr n="adj_prn-itg"> <!-- sólo para el det "piqpa" que pasa como prn.tn "de quién" -->
+    <def-attr n="adj_prn-itg"> <!-- sólo para el prn y det "piqpa" que pasa como prn.tn "de quién" -->
       <attr-item tags="prn.itg"/>
       <attr-item tags="adj"/>
     </def-attr>
@@ -262,6 +270,15 @@
     <def-attr n="a_adj">
       <attr-item tags="adj"/>
       <attr-item tags="adj.pos"/>
+    </def-attr>
+    
+    <def-attr n="a_prn-tn-itg">
+      <attr-item tags="prn.itg"/>
+      <attr-item tags="prn.tn"/>
+    </def-attr>
+    
+    <def-attr n="a_prn-pers">
+      <attr-item tags="prn.tn"/>
     </def-attr>
     
     <def-attr n="a_preadv">
@@ -282,14 +299,6 @@
       <attr-item tags="adv.subst"/>
       <attr-item tags="adv.subst.dem"/>
       <attr-item tags="adv.temp"/>
-    </def-attr>
-    
-    <def-attr n="a_prn-itg">
-      <attr-item tags="prn.itg"/>
-    </def-attr>
-    
-    <def-attr n="a_prn-pers">
-      <attr-item tags="prn.tn"/>
     </def-attr>
     
     <def-attr n="a_verb">
@@ -493,6 +502,14 @@
       <attr-item tags="px3pl"/>
     </def-attr>
     
+    <def-attr n="pers_pos-pl">    <!-- para los prn que como obj.dir toman la prep. "a" -->
+      <attr-item tags="px1in"/>
+      <attr-item tags="px1ex"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3pl"/>
+      <!-- <attr-item tags="px3sg"/> - mejor no -->
+    </def-attr>
+    
     <def-attr n="a_post">
       <attr-item tags="post"/>
     </def-attr>
@@ -522,12 +539,31 @@
     <def-var n="EOS" v="true"/>
 </section-def-vars>
 
-<!-- <section-def-lists>
-<def-list n="adv_neg">
-      <list-item v="not"/>
-      <list-item v="never"/>
+<section-def-lists>
+   
+<def-list n="prn-anim_es">    <!-- los que como obj.dir toman la prep. "a" -->
+      <list-item v="quién"/>
+      <list-item v="alguien"/>
+      <list-item v="nadie"/>
+      <list-item v="todo el mundo"/>
+      <list-item v="cada uno"/>
 </def-list>
-</section-def-lists> -->
+   
+<def-list n="prn-anim_qu">    <!-- + px1/2/3pl + acc se traducen con la prep. "a" -->
+      <list-item v="wakin"/>  <!-- + si son PRN, no det -->
+      <list-item v="wakiq"/>
+      <list-item v="wakilla"/>
+      <list-item v="llapa"/>
+      <list-item v="llipi"/>
+      <list-item v="sapanka"/>
+</def-list>
+   
+<def-list n="sapan-kikin">    <!-- siempre mejor traducir con la prep. "a" -->
+      <list-item v="sapan"/>
+      <list-item v="kikin"/>    <!-- kikin + px3sg - tv. mejor sólo en pay kikin? -->
+</def-list>
+
+</section-def-lists> 
   
 <section-def-macros>
 
@@ -554,7 +590,7 @@
 	<otherwise>
 		<let>
 			<var n="caso"/>
-			<clip pos="1" side="sl" part="cas"/>
+			<clip pos="1" side="tl" part="cas"/>
 		</let>
 	</otherwise>
 </choose>
@@ -576,7 +612,7 @@
 	<otherwise>
 		<let>
 			<var n="caso"/>
-			<clip pos="1" side="sl" part="cas"/>
+			<clip pos="1" side="tl" part="cas"/>
 		</let>
 	</otherwise>
 </choose>
@@ -1651,7 +1687,7 @@
   </chunk>
   </out>
 </when>         <!-- OJO: falta millón = sustantivo, 1, 2 también prn.tn -->
-<otherwise> <!-- de alguien, de nadie, de todo tipo; OJO "casa de quién" -->
+<otherwise> <!-- casa de alguien, de nadie, de todo tipo; OJO "casa de quién" -->
   <out>                                     <!-- OJO: 1°, 3° también adj -->
   <chunk name="n-adj" case="caseFirstWord">
       <tags>
@@ -1812,7 +1848,7 @@
 <call-macro n="f_concord2"><with-param pos="3"/><with-param pos="2"/></call-macro>
 <call-macro n="det-pos"><with-param pos="3"/></call-macro>
 <choose>
-<when>
+<when> <!-- esta casa grande -->
   <test><equal>
     <clip pos="1" side="tl" part="clas_nom"/>
     <clip pos="1" side="tl" part="a_det"/>
@@ -1864,7 +1900,7 @@
   </chunk>
   </out>
 </when>
-<otherwise> <!-- de alguien, de nadie, de todo tipo; OJO "casa de quién" -->
+<otherwise> <!-- casa grande de alguien, de nadie, de todo tipo; OJO "casa de quién" -->
   <out>
   <chunk name="n-adj-adj" case="caseFirstWord"> <!-- OJO: cambiar nombre, si hay posesivo -->
       <tags>
@@ -2168,57 +2204,11 @@
 </out>
 </action>
 </rule>
- 
-<rule comment="PRONOMBRE INTERROGATIVO">
-<pattern>
-	<pattern-item n="prn-itg"/>
-</pattern>
-<action>
-<call-macro n="firstWord"><with-param pos="1"/></call-macro>
-<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
-<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
-<choose><when>
-    <test><not><equal caseless="yes">
-			<clip pos="1" side="tl" part="lem"/>
-			<lit v="quién"/>
-		</equal></not></test>
-      <call-macro n="quita-acc"><with-param pos="1"/></call-macro>
-    </when>
-	<otherwise>
-		<let>
-			<var n="caso"/>
-			<clip pos="1" side="sl" part="cas"/>
-		</let>
-	</otherwise>
-</choose>
-<out>
-<chunk name="prn-itg" case="caseFirstWord">
-		<tags>
-			<tag><lit-tag v="SPRN-itg"/></tag>
-			<tag><clip pos="1" side="tl" part="gen"/></tag>
-			<tag><clip pos="1" side="tl" part="nbr"/></tag>
-			<tag><var n="caso"/></tag>
-			<tag><clip pos="1" side="sl" part="pers_pos"/></tag>
-		</tags>
-	<lu>
-		<clip pos="1" side="tl" part="lemh"/>
-		<clip pos="1" side="tl" part="a_prn-itg"/>
-		<!-- <clip pos="1" side="tl" part="gen" link-to="2"/>
-		<clip pos="1" side="tl" part="nbr" link-to="3"/> -->
-    <lit-tag v="2"/>
-    <lit-tag v="3"/>
-		<!-- <var n="caso"/> -->
-		<clip pos="1" side="tl" part="lemq"/>
-	</lu>
-</chunk>
-</out>
-</action>
-</rule>
 
-<!-- poner una regla para cambiar p1in y p1ex por p1 (pl) -->
+<!-- poner una regla para cambiar p1in y p1ex por p1 (pl) + adj posesivos-->
 <rule comment="PRONOMBRE PERSONAL">
 <pattern>
-	<pattern-item n="prn-pers"/>
+    <pattern-item n="prn-pers"/>
 </pattern>
 <action>
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
@@ -2226,8 +2216,8 @@
 <call-macro n="pon-sg"><with-param pos="1"/></call-macro>
 <call-macro n="quita-nom"><with-param pos="1"/></call-macro>
 <choose>
-	<when>
-		<test><and>
+    <when>
+        <test><and>
         <not><equal>
           <clip pos="1" side="sl" part="cas"/>
           <lit-tag v="nom"/>
@@ -2275,24 +2265,138 @@
 </choose>
 <out>
 <chunk name="prn-pers" case="caseFirstWord">
-		<tags>
-			<tag><lit-tag v="SPRN-pers"/></tag>
-			<tag><clip pos="1" side="tl" part="pers"/></tag>
-			<tag><clip pos="1" side="tl" part="gen"/></tag>
-			<tag><clip pos="1" side="tl" part="nbr"/></tag>
-			<tag><var n="caso"/></tag>
-			<!-- <tag><clip pos="1" side="sl" part="pers_pos"/></tag> refuerzo nuqa(lla)y -->
-		</tags>
-	<lu>
-		<clip pos="1" side="tl" part="lemh"/>
+        <tags>
+            <tag><lit-tag v="SPRN-pers"/></tag>
+            <tag><clip pos="1" side="tl" part="pers"/></tag>
+            <tag><clip pos="1" side="tl" part="gen"/></tag>
+            <tag><clip pos="1" side="tl" part="nbr"/></tag>
+            <tag><var n="caso"/></tag>
+            <!-- <tag><clip pos="1" side="sl" part="pers_pos"/></tag> refuerzo nuqa(lla)y -->
+        </tags>
+    <lu>
+        <clip pos="1" side="tl" part="lemh"/>
     <lit-tag v="prn.tn"/>
     <lit-tag v="2"/>
     <lit-tag v="3"/>
     <lit-tag v="4"/>
-		<clip pos="1" side="tl" part="lemq"/>
-	</lu>
+        <clip pos="1" side="tl" part="lemq"/>
+    </lu>
 </chunk>
 </out>
+</action>
+</rule>
+ 
+<rule comment="PRONOMBRE"> <!-- sin prn.pers -->
+<pattern>
+	<pattern-item n="prn"/>
+</pattern>
+<action>
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<choose> <!-- quita acc si el prn no es de los que toman la prep. "a" -->
+  <when>
+    <test>
+      <not>
+        <or> <!-- AND ??? -->
+            <in caseless="yes">
+                <clip pos="1" side="tl" part="lem"/>
+                <list n="prn-anim_es"/>
+            </in>
+            <in caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <list n="sapan-kikin"/>
+            </in>
+            <and>
+                <in caseless="yes">
+                    <clip pos="1" side="sl" part="lem"/>
+                    <list n="prn-anim_qu"/>
+                </in>
+                <or>
+                    <equal>
+                        <clip pos="1" side="sl" part="pers_pos"/>
+                        <clip pos="1" side="sl" part="pers_pos-pl"/>
+                    </equal>
+                    <not>
+                        <equal>
+                            <clip pos="1" side="sl" part="pers_pos"/>
+                            <lit v=""/>
+                        </equal>
+                    </not>
+                </or>
+            </and>
+        </or>
+      </not>
+    </test>
+    <call-macro n="quita-acc"><with-param pos="1"/></call-macro>
+  </when>
+  <otherwise>
+    <let>
+        <var n="caso"/>
+        <clip pos="1" side="sl" part="cas"/>
+    </let>
+  </otherwise>
+</choose>
+<choose>
+  <when>
+    <test>
+      <or>
+          <in caseless="yes">
+              <clip pos="1" side="sl" part="lem"/>
+              <list n="sapan-kikin"/>
+          </in>
+          <and>
+              <equal caseless="yes">
+                  <clip pos="1" side="sl" part="lem"/>
+                  <lit v="pipas"/>
+              </equal>
+              <equal>
+                  <clip pos="1" side="sl" part="cas"/>
+                  <lit-tag v="gen"/>
+              </equal>
+          </and>
+      </or>
+    </test>
+    <out>
+      <chunk name="adj" case="caseFirstWord">
+          <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><var n="caso"/></tag>
+              <tag><clip pos="1" side="tl" part="pers_pos"/></tag>
+          </tags>
+          <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_adj"/>
+              <lit-tag v="2"/>
+              <lit-tag v="3"/>
+              <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+      </chunk>
+    </out>
+  </when>
+  <otherwise>
+    <out>
+      <chunk name="prn" case="caseFirstWord">
+          <tags>
+              <tag><lit-tag v="SN"/></tag>
+              <tag><clip pos="1" side="tl" part="gen"/></tag>
+              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+              <tag><var n="caso"/></tag>
+              <tag><clip pos="1" side="tl" part="pers_pos"/></tag>
+          </tags>
+          <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_prn-tn-itg"/>
+              <lit-tag v="2"/>
+              <lit-tag v="3"/>
+              <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+      </chunk>
+    </out>
+  </otherwise>
+</choose>
 </action>
 </rule>
  
