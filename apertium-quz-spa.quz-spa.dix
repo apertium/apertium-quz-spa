@@ -522,7 +522,7 @@
 <e><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 <e r="RL"><p><l>pi<s n="prn"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="prn"/><s n="itg"/></r></p></e>
 <e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>de<b/>quién<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
-<e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="det"/><s n="itg"/></r></p></e>
+<!-- <e><p><l>pi<s n="det"/><s n="itg"/><s n="gen"/></l><r>cúyo<s n="det"/><s n="itg"/></r></p></e> -->
 <e><p><l>pipas<s n="prn"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 <e><p><l>pipas<s n="det"/><s n="ind"/><s n="gen"/></l><r>de<b/>alguien<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
 <e><p><l>pipas<s n="prn"/><s n="neg"/><s n="gen"/></l><r>de<b/>nadie<s n="adj"/><s n="mf"/><s n="sp"/></r></p></e>
@@ -531,7 +531,7 @@
 <e><p><l>mayqin<s n="prn"/><s n="itg"/></l><r>cuál<s n="prn"/><s n="itg"/><s n="mf"/></r></p></e>
 <e><p><l>mayqin<s n="det"/><s n="itg"/></l><r>cuál<s n="det"/><s n="itg"/><s n="mf"/></r></p></e>
 <e><p><l>mayqinpas<s n="prn"/><s n="ind"/></l><r>cualquiera<s n="prn"/><s n="tn"/><s n="mf"/></r></p></e>
-<e><p><l>mayqinpas<s n="det"/><s n="ind"/></l><r>cualquiera<s n="det"/><s n="ind"/><s n="mf"/></r></p></e>
+<e><p><l>mayqinpas<s n="det"/><s n="ind"/></l><r>cualquier<s n="det"/><s n="ind"/><s n="mf"/></r></p></e>
 <e r="LR"><p><l>mayqinpas<s n="prn"/><s n="neg"/></l><r>ninguno<s n="prn"/><s n="tn"/></r></p></e>
 <e r="LR"><p><l>mayqinpas<s n="det"/><s n="neg"/></l><r>ninguno<s n="det"/><s n="ind"/></r></p></e>
 

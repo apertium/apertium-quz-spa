@@ -439,7 +439,7 @@
 	</chunk><b/>
 </out>
 <choose><when>
-	<test><equal>
+	<test><equal> <!-- REVISAR -->
 		<clip pos="1" part="pers_pos"/><lit v=""/>
 	</equal></test>
 	<out>
