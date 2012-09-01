@@ -501,7 +501,7 @@
 <!-- prn.itg -→ prn.itg, prn.ind -→ prn.tn,  prn.neg -→ prn.ind -->
 <!-- adv.itg -→ adv.itg, adv.ind -→ adv,  adv.neg -→ adv -->
 <!-- det.itg -→ det.itg, det.ind -→ det.ind, det.neg -→ det.ind -->
-<!-- excepción PI(pas): prn.itg.gen -→ prn.itg, det.ind -→ prn.itg, prn/det.ind/neg -→ adj -->
+<!-- excepción PI(pas): prn.itg.gen -→ prn.itg, det.itg -→ prn.itg, prn/det.ind/neg -→ adj -->
 <!-- excepción MAY: prn.itg.caso.dub -→ rel.adv -->
 
 <e><p><l>ima<s n="prn"/><s n="itg"/></l><r>qué<s n="prn"/><s n="itg"/><s n="mf"/><s n="sp"/></r></p></e>

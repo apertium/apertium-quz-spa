@@ -260,6 +260,7 @@
       <attr-item tags="detnt"/>
       <attr-item tags="num"/>
       <attr-item tags="det.ord"/>
+      <attr-item tags="predet"/>
     </def-attr>
     
     <def-attr n="a_adj">
@@ -1669,7 +1670,7 @@
       <clip pos="1" side="tl" part="nbr-sp"/>
       <clip pos="1" side="tl" part="lemq"/>
     </lu>
-    <b pos="1"/>     <!-- si es predet, + artículo? todo el día, todos los días, todo hombre -->
+    <b pos="1"/>     <!-- + artículo? - si es predet: todo el día, todos los días, todo hombre -->
     <lu><get-case-from pos ="2">
       <clip pos="2" side="tl" part="lemh"/></get-case-from>     
       <clip pos="2" side="tl" part="a_nom"/>
@@ -1713,6 +1714,232 @@
       <clip pos="2" side="tl" part="lemq"/>
     </lu>
     <b pos="1"/>      
+    <lu><get-case-from pos ="1">
+      <clip pos="1" side="tl" part="lemh"/></get-case-from>
+      <clip pos="1" side="tl" part="adj_prn-itg"/>
+      <clip pos="1" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="1" side="tl" part="gen-mf"/>
+      <clip pos="1" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="1" side="tl" part="nbr-sp"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</otherwise>
+</choose>
+</action>
+</rule>
+
+<rule comment="DET DET N"> <!-- OJO: falta millón = sustantivo, 1 y 2 también prn.tn (sin + N...) -->
+<pattern>       <!-- OJO: + plural con algunos (num, qnt...) -->
+    <pattern-item n="det"/>
+    <pattern-item n="det"/>
+    <pattern-item n="nom"/>
+</pattern>
+<action>  
+<call-macro n="firstWord"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="1"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="2"/></call-macro>
+<call-macro n="quita-nom"><with-param pos="3"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="2"/></call-macro>
+<call-macro n="pon-GD-ND"><with-param pos="3"/></call-macro>
+<call-macro n="det-pos"><with-param pos="3"/></call-macro>
+<call-macro n="f_concord2"><with-param pos="3"/><with-param pos="1"/></call-macro>
+<call-macro n="f_concord2"><with-param pos="3"/><with-param pos="2"/></call-macro>
+<choose>
+<when>
+  <test>
+    <and>
+      <equal>
+          <clip pos="1" side="tl" part="clas_nom"/>
+          <clip pos="1" side="tl" part="a_det"/> <!-- OJO: "huk, iskay" también -→ prn.tn -->
+      </equal>
+      <equal>
+          <clip pos="2" side="tl" part="clas_nom"/>
+          <clip pos="2" side="tl" part="a_det"/>
+      </equal>
+    </and>
+  </test>
+  <out> <!-- estas tres casas -->
+  <chunk name="det-det-n" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SN"/></tag>
+        <tag><var n="gen_chunk"/></tag>
+        <tag><var n="nbr_chunk"/></tag>
+        <tag><var n="caso"/></tag> <!-- revisar si necesario, mejor clip "" -->
+        <tag><clip pos="3" side="tl" part="pers_pos"/></tag> <!-- + otros tags -->
+      </tags>
+        <var n="posesivo"/>
+    <lu><get-case-from pos ="1">
+      <clip pos="1" side="tl" part="lemh"/></get-case-from>
+      <clip pos="1" side="tl" part="a_det"/>
+      <clip pos="1" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="1" side="tl" part="gen-mf"/>
+      <clip pos="1" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="1" side="tl" part="nbr-sp"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+    <b pos="1"/>
+    <lu><get-case-from pos ="2">
+      <clip pos="2" side="tl" part="lemh"/></get-case-from>
+      <clip pos="2" side="tl" part="a_det"/>
+      <clip pos="2" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="2" side="tl" part="gen-mf"/>
+      <clip pos="2" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="2" side="tl" part="nbr-sp"/>
+      <clip pos="2" side="tl" part="lemq"/>
+    </lu>
+    <b pos="2"/>     <!-- + artículo? - si es predet: todo el día, todos los días, todo hombre -->
+    <lu><get-case-from pos ="3">
+      <clip pos="3" side="tl" part="lemh"/></get-case-from>     
+      <clip pos="3" side="tl" part="a_nom"/>
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <clip pos="3" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</when>
+<when>
+  <test>
+    <and>
+      <equal>
+          <clip pos="2" side="tl" part="clas_nom"/>
+          <clip pos="2" side="tl" part="a_det"/> <!-- OJO: "huk, iskay" también -→ prn.tn -->
+      </equal>
+      <not>
+        <equal>
+            <clip pos="1" side="tl" part="clas_nom"/>
+            <clip pos="1" side="tl" part="a_det"/>
+        </equal>
+      </not>
+    </and>
+  </test>
+  <out> <!-- tres/estas casas de alguien -->
+  <chunk name="det-n-adj" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SN"/></tag>
+        <tag><var n="gen_chunk"/></tag>
+        <tag><var n="nbr_chunk"/></tag>
+        <tag><var n="caso"/></tag> <!-- revisar si necesario, mejor clip "" -->
+        <tag><clip pos="3" side="tl" part="pers_pos"/></tag> <!-- + otros tags -->
+      </tags>
+        <var n="posesivo"/>
+    <lu><get-case-from pos ="2">
+      <clip pos="2" side="tl" part="lemh"/></get-case-from>
+      <clip pos="2" side="tl" part="a_det"/>
+      <clip pos="2" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="2" side="tl" part="gen-mf"/>
+      <clip pos="2" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="2" side="tl" part="nbr-sp"/>
+      <clip pos="2" side="tl" part="lemq"/>
+    </lu>
+    <b pos="2"/>
+    <lu><get-case-from pos ="3">
+      <clip pos="3" side="tl" part="lemh"/></get-case-from>     
+      <clip pos="3" side="tl" part="a_nom"/>
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <clip pos="3" side="tl" part="lemq"/>
+    </lu>
+    <b pos="1"/>
+    <lu><get-case-from pos ="1">
+      <clip pos="1" side="tl" part="lemh"/></get-case-from>
+      <clip pos="1" side="tl" part="adj_prn-itg"/>
+      <clip pos="1" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="1" side="tl" part="gen-mf"/>
+      <clip pos="1" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="1" side="tl" part="nbr-sp"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</when>
+<when>
+  <test>
+    <and>
+      <equal>
+          <clip pos="1" side="tl" part="clas_nom"/>
+          <clip pos="1" side="tl" part="a_det"/> <!-- OJO: "huk, iskay" también -→ prn.tn -->
+      </equal>
+      <not>
+        <equal>
+            <clip pos="2" side="tl" part="clas_nom"/>
+            <clip pos="2" side="tl" part="a_det"/>
+        </equal>
+      </not>
+    </and>
+  </test>
+  <out> <!-- estas casas de todo tipo -->
+  <chunk name="det-n-adj" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SN"/></tag>
+        <tag><var n="gen_chunk"/></tag>
+        <tag><var n="nbr_chunk"/></tag>
+        <tag><var n="caso"/></tag> <!-- revisar si necesario, mejor clip "" -->
+        <tag><clip pos="3" side="tl" part="pers_pos"/></tag> <!-- + otros tags -->
+      </tags>
+        <var n="posesivo"/>
+    <lu><get-case-from pos ="1">
+      <clip pos="1" side="tl" part="lemh"/></get-case-from>
+      <clip pos="1" side="tl" part="a_det"/>
+      <clip pos="1" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="1" side="tl" part="gen-mf"/>
+      <clip pos="1" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="1" side="tl" part="nbr-sp"/>
+      <clip pos="1" side="tl" part="lemq"/>
+    </lu>
+    <b pos="2"/>
+    <lu><get-case-from pos ="3">
+      <clip pos="3" side="tl" part="lemh"/></get-case-from>     
+      <clip pos="3" side="tl" part="a_nom"/>
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <clip pos="3" side="tl" part="lemq"/>
+    </lu>
+    <b pos="1"/>
+    <lu><get-case-from pos ="2">
+      <clip pos="2" side="tl" part="lemh"/></get-case-from>
+      <clip pos="2" side="tl" part="adj_prn-itg"/>
+      <clip pos="2" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="2" side="tl" part="gen-mf"/>
+      <clip pos="2" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="2" side="tl" part="nbr-sp"/>
+      <clip pos="2" side="tl" part="lemq"/>
+    </lu>
+  </chunk>
+  </out>
+</when>         <!-- OJO: falta millón = sustantivo, 1, 2 también prn.tn -->
+<otherwise> <!-- casas de todo tipo de alguien; OJO "casa de quién" -->
+  <out>                                     <!-- OJO: 1°, 3° también adj -->
+  <chunk name="n-adj-adj" case="caseFirstWord">
+      <tags>
+        <tag><lit-tag v="SN"/></tag>
+        <tag><var n="gen_chunk"/></tag>
+        <tag><var n="nbr_chunk"/></tag>
+        <tag><var n="caso"/></tag>
+        <tag><clip pos="3" side="sl" part="pers_pos"/></tag> <!-- + otros tags -->
+      </tags>
+        <var n="posesivo"/>
+    <lu><get-case-from pos ="3">
+      <clip pos="3" side="tl" part="lemh"/></get-case-from>     
+      <clip pos="3" side="tl" part="a_nom"/>
+      <lit-tag v="2"/>
+      <lit-tag v="3"/>
+      <clip pos="3" side="tl" part="lemq"/>
+    </lu>
+    <b pos="1"/>      
+    <lu><get-case-from pos ="2">
+      <clip pos="2" side="tl" part="lemh"/></get-case-from>
+      <clip pos="2" side="tl" part="adj_prn-itg"/>
+      <clip pos="2" side="tl" part="gen-sin-mf" link-to="2"/>
+      <clip pos="2" side="tl" part="gen-mf"/>
+      <clip pos="2" side="tl" part="nbr-sin-sp" link-to="3"/>
+      <clip pos="2" side="tl" part="nbr-sp"/>
+      <clip pos="2" side="tl" part="lemq"/>
+    </lu>
+    <b pos="2"/>      
     <lu><get-case-from pos ="1">
       <clip pos="1" side="tl" part="lemh"/></get-case-from>
       <clip pos="1" side="tl" part="adj_prn-itg"/>
