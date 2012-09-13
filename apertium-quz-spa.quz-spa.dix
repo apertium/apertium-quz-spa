@@ -2545,7 +2545,7 @@
     
     <e r="RL"><p><l>kay<s n="vbex"/></l><r>hay<s n="vblex"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
     <e><p><l>kay<s n="vbcop"/></l><r>ser<s n="vbser"/></r></p></e>
-    <e r="LR"><p><l>kapuy<s n="vblex"/></l><r>tener<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>kapuy<s n="vbex"/></l><r>tener<s n="vblex"/></r></p></e>
     <e><p><l>pachaña<b/>kay<s n="vbex"/></l><r>ser<g><b/>hora<b/>de</g><s n="vbser"/></r></p></e>
     <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>munay<s n="vblex"/></l><r>querer<s n="vbmod"/></r></p></e>
@@ -4262,6 +4262,7 @@
     <e><p><l>ruphay<s n="vblex"/></l><r>quemar<s n="vblex"/></r></p></e>
     <e><p><l>ruruy<s n="vblex"/></l><r>producir<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>samariy<s n="vblex"/></l><r>respirar<s n="vblex"/></r></p></e>
+    <e r="LR"><p><l>samariy<s n="vblex"/></l><r>descansar<s n="vblex"/></r></p></e>
     <e><p><l>samay<s n="vblex"/></l><r>descansar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>samay<s n="vblex"/></l><r>exhalar<s n="vblex"/></r></p></e>
     <e><p><l>sayay<s n="vblex"/></l><r>estar<g><b/>de<b/>pie</g><s n="vblex"/></r></p></e>
