@@ -2957,18 +2957,24 @@
         </equal>
     </test>
     <choose>
-      <when> <!-- poner número sg. si pasa sin personas, género no pasa nunca - GD -->
-        <test>
+      <when> <!-- poner número ND si pasa sin personas, género no pasa nunca - GD -->
+        <test>           <!-- pero es según el objeto, o concordancia con N -->
           <equal>
             <clip pos="1" side="sl" part="nbr"/>
             <lit v=""/>
           </equal>
         </test>
         <let>
-          <clip pos="1" side="tl" part="nbr"/>
-          <lit-tag v="sg"/>          <!-- pero es según el objeto, o concordancia con N -->
+            <var n="numero"/>
+            <lit-tag v="ND"/>
         </let>
       </when>
+      <otherwise>
+        <let>
+            <var n="numero"/>
+            <clip pos="1" side="tl" part="nbr"/>
+        </let>
+      </otherwise>
     </choose>
     <out>
     <chunk name="verbo-pp" case="caseFirstWord">
@@ -2977,7 +2983,7 @@
         <tag><clip pos="1" side="tl" part="verb-sin-pron"/></tag>
         <tag><lit-tag v="pp"/></tag>          <!-- POR AHORA - también or. subord -->
         <tag><lit-tag v="GD"/></tag>
-        <tag><clip pos="1" side="tl" part="nbr"/></tag>
+        <tag><var n="numero"/></tag>
         <tag><clip pos="1" side="tl" part="cas"/></tag>
         <tag><clip pos="1" side="tl" part="pers"/></tag>
         <tag><clip pos="1" side="tl" part="pers_obj"/></tag>
@@ -3080,7 +3086,7 @@
     </chunk>
     </out>
   </when>
-  <otherwise>          <!-- por ahora (serán oraciones subordinadas) -->
+  <otherwise>          <!-- = part. fut -na; por ahora (serán oraciones subordinadas) -->
     <out>
     <chunk name="verbo-ger" case="caseFirstWord">
       <tags>
