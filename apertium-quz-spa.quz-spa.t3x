@@ -9,7 +9,7 @@
     </def-cat>
     
     <def-cat n="verbo-partp">
-      <cat-item name="Verbo-pp"/>
+      <cat-item name="verbo-pp"/>
     </def-cat>
     
   </section-def-cats>
