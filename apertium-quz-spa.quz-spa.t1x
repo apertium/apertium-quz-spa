@@ -1638,6 +1638,7 @@
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
 <call-macro n="quita-nom"><with-param pos="1"/></call-macro>
 <call-macro n="pon-GD-ND"><with-param pos="1"/></call-macro>
+<call-macro n="det-pos"><with-param pos="1"/></call-macro>
 <let><var n="gen_chunk"/><lit-tag v="m"/></let> <!-- hay que poner GD/ND y luego intentar concordar en t2x ?-->
 <let><var n="nbr_chunk"/><lit-tag v="sg"/></let> 
   <out>
@@ -1647,7 +1648,7 @@
         <tag><var n="gen_chunk"/></tag>
         <tag><var n="nbr_chunk"/></tag>
         <tag><var n="caso"/></tag> <!-- revisar si necesario, mejor clip "" -->
-        <tag><clip pos="2" side="tl" part="pers_pos"/></tag> <!-- + otros tags -->
+        <tag><clip pos="1" side="tl" part="pers_pos"/></tag> <!-- + otros tags -->
       </tags>
         <var n="posesivo"/>
     <lu><get-case-from pos ="1">

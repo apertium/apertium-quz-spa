@@ -50,6 +50,9 @@
       <program name="lt-proc -b">
         <file name="quz-spa.autobil.bin"/>
       </program>
+      <program name="apertium-lrx-proc">
+        <file name="quz-spa.lrx.bin"/>
+      </program>
       <program name="apertium-transfer -b">
         <file name="apertium-quz-spa.quz-spa.t1x"/>
         <file name="quz-spa.t1x.bin"/>
