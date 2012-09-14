@@ -1,5 +1,10 @@
 * text=auto !eol
+/ACKNOWLEDGEMENTS -text
+/AUTHORS -text
+/COPYING -text
+/INSTALL -text
 /Makefile -text
+/README -text
 /apertium-quz-spa.post-spa.dix -text
 /apertium-quz-spa.quz-spa.dix -text
 /apertium-quz-spa.quz-spa.lrx -text

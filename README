@@ -1,0 +1,87 @@
+
+===============================================================================
+
+                        CUZCO QUECHUA AND SPANISH
+    
+                            apertium.quz-spa
+
+===============================================================================
+
+
+These are the linguistic data for the Apertium
+Cuzco Quechua - Spanish machine translator.
+It translates only in the direction Quechua-Spanish. 
+
+
+
+Requirements
+===============================================================================
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.2.0)
+* apertium (>= 3.2.0)
+* vislcg3 (>= 0.9.7.8188)
+* OpenFST
+* Foma
+* HFST3
+  
+For installation details see:
+http://wiki.apertium.org/wiki/Installation
+http://wiki.apertium.org/wiki/Apertium_and_Constraint_Grammar
+http://wiki.apertium.org/wiki/Hfst
+
+
+
+Compiling
+===============================================================================
+
+Given the requirements being installed, you should be able to just run:
+
+  $ ./configure [ --prefix=/path/to/your/dir ]
+  $ make
+  # make install
+
+If you're using a --prefix to ./configure, make sure it's the
+same one you used to install Apertium itself.
+
+A list of installed language pairs for Apertium may be obtained by running:
+
+  $ apertium -l
+
+After installing this language pair, you should get at least this one:
+quz-spa
+
+
+
+Testing
+===============================================================================
+
+If you are in the source directory after running make,
+the following command should work:
+
+  $  echo "Jaimeqa anchatan munan mamanta." | apertium -d . quz-spa
+  Jaime mucho quiere a su madre.
+
+After installing somewhere in $PATH, you should be able to do:
+
+  $  echo "Jaimeqa anchatan munan mamanta." | apertium quz-spa
+  Jaime mucho quiere a su madre.
+
+
+
+Help and support
+===============================================================================
+
+More information about this module (in Spanish) can be found at:
+
+http://wiki.apertium.org/wiki/Quechua_cuzqueño_y_castellano
+
+See also the Apertium Wiki: http://wiki.apertium.org
+
+If you need help using this language pair or data, you can contact:
+
+* Mailing list: apertium-stuff@lists.sourceforge.net
+* IRC: #apertium on irc.freenode.net
+
+See also the file AUTHORS included in this distribution.
