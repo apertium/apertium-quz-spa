@@ -103,8 +103,8 @@
 
   <mode name="quz-spa-gener">
     <pipeline>
-      <program name="hfst-proc -g">
-        <file name="quz-spa.autogen.hfst"/>
+      <program name="lt-proc -g">
+        <file name="quz-spa.autogen.bin"/>
       </program>
     </pipeline>
   </mode>
