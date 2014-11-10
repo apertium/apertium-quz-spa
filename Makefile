@@ -70,7 +70,7 @@ $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 	lt-comp lr $< $@
 
 $(PREFIX1).lrx.bin: $(BASENAME).$(PREFIX1).lrx
-	apertium-lrx-comp $< $@
+	lrx-comp $< $@
 
 $(PREFIX1).mode: modes.xml
 	apertium-validate-modes $<
