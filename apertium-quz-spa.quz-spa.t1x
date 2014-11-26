@@ -1373,6 +1373,24 @@
 </choose> 
 </def-macro>
 
+
+<def-macro n="remplaza-verb-sp" npar="1">
+<choose>
+<when>
+<test>
+    <equal>
+      <clip pos="1" side="sl" part="nbr"/>
+      <lit-tag v="sp"/>
+    </equal>
+</test>
+<let>
+  <clip pos="1" side="tl" part="nbr"/>
+  <lit-tag v="ND"/>
+</let>
+</when>
+</choose> 
+</def-macro>
+
 <def-macro n="firstWord" npar="1" c="modified by mginesti 11/nov/10">
 <choose>
 	<when> <!-- si no es nombre propio o acrónimo -->
@@ -2813,6 +2831,7 @@
 <call-macro n="firstWord"><with-param pos="1"/></call-macro>
 <call-macro n="remplaza-tiempo"><with-param pos="1"/></call-macro>
 <call-macro n="remplaza-p1in-ex"><with-param pos="1"/></call-macro>
+<call-macro n="remplaza-verb-sp"><with-param pos="1"/></call-macro>
 <choose>
   <when>          <!-- TIEMPOS, CONDICIONAL, IMPERATIVO -->
     <test>

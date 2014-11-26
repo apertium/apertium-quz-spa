@@ -12,6 +12,10 @@
       <cat-item name="verbo-pp"/>
     </def-cat>
     
+    <def-cat n="verbo-finito">
+      <cat-item name="verbo"/>
+    </def-cat>
+    
   </section-def-cats>
   
   <section-def-attrs>
@@ -210,6 +214,21 @@
     <rule comment="CHUNK: SV-pp">
       <pattern>
         <pattern-item n="verbo-partp"/>
+      </pattern>
+      <action>
+        <call-macro n="quita-GD-ND">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    <rule comment="CHUNK: SV">
+      <pattern>
+        <pattern-item n="verbo-finito"/>
       </pattern>
       <action>
         <call-macro n="quita-GD-ND">

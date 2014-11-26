@@ -241,6 +241,9 @@ AFTER-SECTIONS
 # poner las últimas cosas por desambiguar (lo más frecuente)?
 SELECT Per IF (0 ("ñan"i) LINK 0* Vmov) ; # agregar a la lista
 REMOVE Per IF (0 P3acc LINK NOT 0 ("ñan"i) LINK NOT 0* Vmov BARRIER V OR (cm)) ;
+REMOVE (vbex) IF (0 ("kay"i) LINK 0 (vbcop)); # quitar cuando haya una regla para kay vbex/vbcop y ver bidix (está con RL)
+
+
 # SELECT Per IF (0 P3acc LINK NOT 0 Anim LINK *0 Vmov BARRIER (cm) OR V - Vmov) 
 #              (0 P3acc LINK NOT 0 Anim LINK 1* P3acc OR Per BARRIER V - Vmov LINK 1* Vmov ) ;
 # chakranta rishan / rishan chakranta / chakranta, urqunta rishan
