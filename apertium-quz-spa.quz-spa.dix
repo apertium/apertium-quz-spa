@@ -192,7 +192,7 @@
 
   </sdefs>
 
-   <!--   <section id="main" type="standard">   -->
+<section id="main" type="standard">   
     
     <!-- SECCIÓN: Clíticos -->		<!-- borrar - son sufijos -->
     <!--
@@ -213,7 +213,7 @@
     
     </section> -->
   
-<section id="CONJUNCIONES" type="standard">
+<!--<section id="CONJUNCIONES" type="standard">-->
   
     <e><p><l>chaymi<s n="cnjadv"/></l>    <r>así<b/>que<s n="cnjadv"/></r></p></e> <!-- talvez será necesario quitar -mi: != más evid -->
     <e><p><l>hinaspa<s n="cnjadv"/></l> <r>entonces<s n="cnjadv"/></r></p></e>
@@ -225,9 +225,9 @@
     <e><p><l>i<s n="cnjcoo"/></l>     <r>y<s n="cnjcoo"/></r></p></e>
     <e><p><l>sichus<s n="cnjadv"/></l>     <r>si<s n="cnjadv"/></r></p></e>
 
-</section>
+<!--</section>-->
     
-<section id="POS__PREPOSICIONES" type="standard">
+<!--<section id="POS__PREPOSICIONES" type="standard">-->
   
     <e r="RL"><p><l>chinpa<s n="post"/></l><r>en<b/>frente<b/>de<s n="pr"/></r></p></e>
     <e><p><l>chinpa<s n="post"/></l><r>frente<b/>a<s n="pr"/></r></p></e>
@@ -239,9 +239,9 @@
     <e><p><l>ukhu<s n="post"/></l><r>dentro<b/>de<s n="pr"/></r></p></e>
     <e><p><l>uran<s n="post"/></l><r>bajo<s n="pr"/></r></p></e>
 
-</section>    
+<!--</section>    -->
      
-<section id="NUMERALES" type="standard">
+<!--<section id="NUMERALES" type="standard">-->
   
 <!-- huk, iskay - pasan como num -→ det.ind y prn.tn (+ 2 -→ num) -->
 <e><p><l>huk<s n="num"/></l><r>uno<s n="det"/><s n="ind"/></r></p></e>
@@ -328,9 +328,9 @@
     <e><p><l>pachak<s n="numM"/><s n="ord"/></l><r>centésimo<s n="det"/><s n="ord"/></r></p></e>
     <e><p><l>waranqa<s n="numM"/><s n="ord"/></l><r>milésimo<s n="det"/><s n="ord"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="INTERJECIONES" type="standard">
+<!--<section id="INTERJECIONES" type="standard">-->
     
     <e><p><l>ay<s n="ij"/></l><r>ay<s n="ij"/></r></p></e>
     <e><p><l>añay<s n="ij"/></l><r>gracias<s n="ij"/></r></p></e>
@@ -351,9 +351,9 @@
     <e><p><l>askamalla<s n="ij"/></l><r>hasta<b/>pronto<s n="ij"/></r></p></e>
     <e><p><l>askamayá<s n="ij"/></l><r>hasta<b/>pronto<s n="ij"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="HISP__CLASES_CERRADAS" type="standard">
+<!--<section id="HISP__CLASES_CERRADAS" type="standard">-->
     
     <e><p><l>el<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
     <e><p><l>la<s n="det"/></l><r>el<s n="det"/><s n="def"/><s n="f"/><s n="sg"/></r></p></e>
@@ -365,11 +365,11 @@
     <e><p><l>de<s n="pr"/></l><r>de<s n="pr"/></r></p></e>
     <e><p><l>del<s n="pr"/></l><r>de<s n="pr"/><j/>el<s n="det"/><s n="def"/><s n="m"/><s n="sg"/></r></p></e>
     
-</section>
+<!--</section>-->
 
     <!-- PRONOMBRES y DETERMINANTES -->
 
-<section id="PRONOMBRES__PERSONALES" type="standard">
+<!--<section id="PRONOMBRES__PERSONALES" type="standard">-->
     <!--
      explicación de las restricciones:
      formas básicas: para la 1a persona, las formas con ñ
@@ -427,9 +427,9 @@
 <e r="LR"><p><l>personaykichis<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l>
   <r>usted<s n="prn"/><s n="tn"/><s n="p3"/><s n="mf"/><s n="pl"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="ADJ__DET__POSESIVOS" type="standard">
+<!--<section id="ADJ__DET__POSESIVOS" type="standard">-->
 
 <!-- las formas con doble genitivo = -q-pa, probablemente se va a cambiar (gen.gen2) -->
 <!-- hay que añadir formas con (dim) (lim) y personayki y qan - de usted(es) -->
@@ -466,9 +466,9 @@
 <e r="LR"><p><l>pay<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/><s n="gen"/></l>
   <r>suyo<s n="adj"/><s n="pos"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="PRON__DET__DEMOSTRATIVOS" type="standard">
+<!--<section id="PRON__DET__DEMOSTRATIVOS" type="standard">-->
 
 <e><p><l>kay<s n="prn"/><s n="dem"/></l><r>este<s n="prn"/><s n="tn"/></r></p></e>
 <e r="RL"><p><l>kay<s n="prn"/><s n="dem"/></l><r>éste<s n="prn"/><s n="tn"/></r></p></e>
@@ -494,9 +494,9 @@
 <e><p><l>chhayna<s n="adv"/></l><r>así<s n="adv"/></r></p></e>
 <e><p><l>chhaynaniraq<s n="adv"/></l><r>así<s n="adv"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="PRON__ADV__DET__INTERROGATIVOS_y_REL" type="standard">
+<!--<section id="PRON__ADV__DET__INTERROGATIVOS_y_REL" type="standard">-->
 
 <!-- prn.itg -→ prn.itg, prn.ind -→ prn.tn,  prn.neg -→ prn.ind -->
 <!-- adv.itg -→ adv.itg, adv.ind -→ adv,  adv.neg -→ adv -->
@@ -584,9 +584,9 @@
 <e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="dat"/><s n="dub"/></l><r>adonde<s n="rel"/><s n="adv"/></r></p></e>
 <e r="LR"><p><l>may<s n="adv"/><s n="itg"/><s n="abl"/><s n="dub"/></l><r>de<b/>donde<s n="rel"/><s n="adv"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="PRON__DET__INDEFINIDOS" type="standard">
+<!--<section id="PRON__DET__INDEFINIDOS" type="standard">-->
 <!-- ver también en HUK, ISKAY en Numerales - pasan como num.(ord), det.ind o prn.tn -->
 
 <!-- DETERMINANTES -->              <!-- det.ind -→ det.ind  -->
@@ -663,9 +663,9 @@
 <e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>demás<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 <e r="RL"><p><l>wakinkuna<s n="prn"/></l><r>los<b/>restantes<s n="prn"/><s n="tn"/><s n="f"/><s n="pl"/></r></p></e>
 
-</section>
+<!--</section>-->
 
-<section id="PREADJETIVOS__PREADV___PRON__DET_CUANTITATIVOS" type="standard">
+<!--<section id="PREADJETIVOS__PREADV___PRON__DET_CUANTITATIVOS" type="standard">-->
 
 <!-- PREADJETIVOS -->           <!-- preadj -→ preadv (todos) -->
 <e><p><l>allin<s n="preadj"/></l><r>bien<s n="preadv"/></r></p></e>
@@ -742,11 +742,11 @@
 
 <!-- la mayoría pasan también con algún caso o clítico como adverbios -->
 
-</section>
+<!--</section>-->
     
     <!-- ADVERBIOS -->
     
-<section id="ADVERBIOS_SUSTANTIVALES" type="standard">
+<!--<section id="ADVERBIOS_SUSTANTIVALES" type="standard">-->
     
     <e><p><l>kay<s n="adv"/><s n="subst"/><s n="dem"/></l><r>aquí<s n="adv"/></r></p></e>
     <e><p><l>chay<s n="adv"/><s n="subst"/><s n="dem"/></l><r>ahí<s n="adv"/></r></p></e>
@@ -771,9 +771,9 @@
     <e><p><l>hawa<s n="adv"/><s n="subst"/></l><r>afuera<s n="adv"/></r></p></e>
     <e><p><l>karu<s n="adv"/><s n="subst"/></l><r>lejos<s n="adv"/></r></p></e>
 
-</section>
+<!--</section>-->
     
-<section id="ADVERBIOS_TEMPORALES" type="standard">
+<!--<section id="ADVERBIOS_TEMPORALES" type="standard">-->
 
     <e><p><l>chay<b/>pacha<s n="adv"/><s n="temp"/></l><r>entonces<s n="adv"/></r></p></e>
     <e><p><l>kunan<s n="adv"/><s n="temp"/></l><r>ahora<s n="adv"/></r></p></e>
@@ -782,9 +782,9 @@
     <e><p><l>sapa<b/>kuti<s n="adv"/><s n="temp"/></l><r>siempre<s n="adv"/></r></p></e>
     <e r="LR"><p><l>hayk'aqpis<s n="adv"/></l><r>nunca<s n="adv"/></r></p></e> <!-- BORRAR -->
 
-</section>
+<!--</section>-->
     
-<section id="OTROS_ADVERBIOS" type="standard">
+<!--<section id="OTROS_ADVERBIOS" type="standard">-->
         
     <e><p><l>arí<s n="adv"/></l><r>sí<s n="adv"/></r></p></e>
     <e><p><l>ama<s n="adv"/></l><r>no<s n="adv"/></r></p></e>
@@ -885,11 +885,11 @@
     <e r="LR"><p><l>tunpata<s n="adv"/></l><r>un<b/>poco<s n="adv"/></r></p></e>
     <e r="LR"><p><l>waliqta<s n="adv"/></l><r>harto<s n="adv"/></r></p></e>
    
-</section>
+<!--</section>-->
 
     <!-- ADJETIVOS -->
     
-<section id="ADJETIVOS" type="standard">
+<!--<section id="ADJETIVOS" type="standard">-->
     
     <e><p><l>tukuy<s n="adj"/></l><r>entero<s n="adj"/></r></p></e>
     <e><p><l>huklla<s n="adj"/></l><r>único<s n="adj"/></r></p></e>
@@ -960,9 +960,9 @@
     <e><p><l>yana<s n="adj"/></l><r>negro<s n="adj"/></r></p></e>
     <e><p><l>yuraq<s n="adj"/></l><r>blanco<s n="adj"/></r></p></e>
 
-</section>
+<!--</section>-->
     
-<section id="ADJETIVOS_DERIVADOS" type="standard">    
+<!--<section id="ADJETIVOS_DERIVADOS" type="standard">    -->
     
     <e><p><l>kusisqa<s n="adj"/></l><r>alegre<s n="adj"/><s n="mf"/></r></p></e>
     <e><p><l>machasqa<s n="adj"/></l><r>borracho<s n="adj"/></r></p></e>
@@ -976,9 +976,9 @@
     <e><p><l>yachay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>sabio<s n="adj"/></r></p></e>
     <e><p><l>yuyay<s n="vblex"/><s n="tv"/><s n="inf"/><s n="poss"/></l><r>razonable<s n="adj"/><s n="mf"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="ADJETIVOS_HISPANISMOS" type="standard">
+<!--<section id="ADJETIVOS_HISPANISMOS" type="standard">-->
       
     <e><p><l>libre<s n="adj"/></l><r>libre<s n="adj"/></r></p></e>
     <e><p><l>nacional<s n="adj"/></l><r>nacional<s n="adj"/><s n="mf"/></r></p></e>
@@ -987,11 +987,11 @@
     <e r="LR"><p><l>castellano<s n="adj"/></l><r>castellano<s n="adj"/></r></p></e>
     <e><p><l>indígena<s n="adj"/></l><r>indígena<s n="adj"/><s n="mf"/></r></p></e>
     
-</section>
+<!--</section>-->
     
     <!-- SUSTANTIVOS -->
     
-<section id="SUSTANTIVOS" type="standard">
+<!--<section id="SUSTANTIVOS" type="standard">-->
     
     <e><p><l>ahina<s n="n"/></l><r>ejemplo<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>achachi<s n="n"/><s n="m"/></l><r>anciano<s n="n"/><s n="m"/></r></p></e>
@@ -2226,9 +2226,9 @@
     <e r="LR"><p><l>Yus<s n="n"/></l><r>Dios<s n="n"/><s n="m"/></r></p></e>
     <e><p><l>yuyu<s n="n"/></l><r>nabo<s n="n"/><s n="m"/></r></p></e>
 
-</section>
+<!--</section>-->
     
-<section id="SUSTANTIVOS_DERIVADOS" type="standard">
+<!--<section id="SUSTANTIVOS_DERIVADOS" type="standard">-->
   <!-- ojo que con los verbos puede salir como nombre, pero con etiqueta de objeto, hay que desambiguar o quitar las etiquetas no sustantivales -->
     
     <e><p><l>hucha<s n="n"/><s n="poss"/></l><r>pecador<s n="n"/></r></p></e>
@@ -2270,9 +2270,9 @@
     <!-- no funciona -->
     <e><p><l>suti<s n="n"/><s n="poss"/></l><r>llamar<s n="vblex"/><s n="pp"/></r></p></e>
       
-</section>
+<!--</section>-->
     
-<section id="SUSTANTIVOS_CON_GENERO" type="standard">
+<!--<section id="SUSTANTIVOS_CON_GENERO" type="standard">-->
     <!-- SECCIÓN: Sustantivos con género, de parentesco, etc. -->
     
     <e><p><l>yaya<s n="n"/><s n="m"/></l><r>padre<s n="n"/><s n="m"/></r></p></e>
@@ -2356,9 +2356,9 @@
     <e><p><l>wispa<s n="n"/></l><r>gemelo<s n="n"/></r></p></e>
     <e><p><l>wiraqucha<s n="n"/><s n="m"/></l><r>señor<s n="n"/><s n="m"/></r></p></e>
 
-</section>
+<!--</section>-->
     
-<section id="NOMBRES_PROPIOS" type="standard">
+<!--<section id="NOMBRES_PROPIOS" type="standard">-->
     
     <e><p><l>Catalina<s n="np"/><s n="ant"/></l><r>Catalina<s n="np"/><s n="ant"/></r></p></e>
     <e><p><l>Daniele<s n="np"/><s n="ant"/></l><r>Daniele<s n="np"/><s n="ant"/></r></p></e>
@@ -2420,9 +2420,9 @@
     <e><p><l>Velasco<s n="np"/><s n="ant"/><s n="mf"/></l><r>Velasco<s n="np"/><s n="cog"/><s n="mf"/></r></p></e>
     <e><p><l>Victor<s n="np"/><s n="ant"/><s n="m"/></l><r>Victor<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     
-    </section>
+    <!--</section>-->
     
-<section id="NOMBRES_PROPIOS__OTROS" type="standard">
+<!--<section id="NOMBRES_PROPIOS__OTROS" type="standard">-->
     
     <e><p><l>Huñunakusqa<b/>Nacionkuna<s n="np"/><s n="al"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
     <e><p><l>Huñunakusqa<b/>Llaqtakuna<s n="np"/><s n="al"/><s n="pl"/></l><r>Naciones<b/>Unidas<s n="np"/><s n="al"/><s n="f"/><s n="pl"/></r></p></e>
@@ -2435,9 +2435,9 @@
     <e><p><l>QSHKS<s n="np"/><s n="al"/></l><r>AMLQ<s n="np"/><s n="al"/><s n="f"/></r></p></e>
     <e r="LR"><p><l>AMLQ<s n="np"/><s n="al"/></l><r>AMLQ<s n="np"/><s n="al"/><s n="f"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="TOPONIMOS" type="standard">
+<!--<section id="TOPONIMOS" type="standard">-->
     
     <e r="RL"><p><l>quyllur<s n="n"/></l><r>Venus<s n="np"/><s n="top"/><s n="m"/></r></p></e>
     <e><p><l>Tawantinsuyu<s n="np"/><s n="top"/></l><r>Tahuantinsuyo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
@@ -2516,9 +2516,9 @@
     <e><p><l>Tambobamba<s n="np"/><s n="top"/></l><r>Tambobamba<s n="np"/><s n="top"/><s n="f"/></r></p></e>
     <e><p><l>Toledo<s n="np"/><s n="top"/></l><r>Toledo<s n="np"/><s n="top"/><s n="m"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="NOMBRES_HISPANISMOS" type="standard">
+<!--<section id="NOMBRES_HISPANISMOS" type="standard">-->
       
     <e><p><l>nacionalidad<s n="n"/></l><r>nacionalidad<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>alcalde<s n="n"/></l><r>alcalde<s n="n"/><s n="m"/></r></p></e>
@@ -2542,11 +2542,11 @@
     <e><p><l>política<s n="n"/></l><r>política<s n="n"/><s n="f"/></r></p></e>
     <e><p><l>español<s n="n"/></l><r>español<s n="n"/></r></p></e>
     
-</section>
+<!--</section>-->
     
     <!-- VERBOS -->
     
-<section id="VERBOS" type="standard">
+<!--<section id="VERBOS" type="standard">-->
     <!-- SECCIÓN: Verbos modales, auxiliares, & sim. -->
     
     <e><p><l>kay<s n="vbex"/><s n="pri"/><s n="p3"/><s n="sg"/><s n="po3sp"/></l><r>hay<s n="vblex"/><s n="pri"/><s n="p3"/><s n="sg"/></r></p></e> <!-- verbo existencial! <s n="iv"/> -->
@@ -2558,9 +2558,9 @@
     <e><p><l>kashay<s n="vblex"/></l><r>estar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>munay<s n="vblex"/></l><r>querer<s n="vbmod"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="VERBOS_HISPANISMOS" type="standard">
+<!--<section id="VERBOS_HISPANISMOS" type="standard">-->
     
     <e r="RL"><p><l>apuray<s n="vblex"/></l><r>apresurarse<s n="vblex"/><s n="pron"/></r></p></e>
     <e r="RL"><p><l>apuray<s n="vblex"/></l><r>darse<g><b/>prisa</g><s n="vblex"/><s n="pron"/></r></p></e>
@@ -2637,9 +2637,9 @@
     <e><p><l>waliy<s n="vblex"/></l><r>valer<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>windiy<s n="vblex"/></l><r>vender<s n="vblex"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="VERBOS_PRONOMINALES_en_castellano" type="standard">
+<!--<section id="VERBOS_PRONOMINALES_en_castellano" type="standard">-->
     <!-- los intransitivos; los demás en otras secciones -->
     
     <e r="RL"><p><l>atiy<s n="vblex"/></l><r>atreverse<s n="vblex"/><s n="pron"/></r></p></e>
@@ -2756,9 +2756,9 @@
     <e><p><l>tukuy<s n="vblex"/></l><r>volver<s n="vblex"/></r></p></e>
     <e><p><l>yuyariy<s n="vblex"/></l><r>acordar<s n="vblex"/></r></p></e>
       
-</section>
+<!--</section>-->
     
-<section id="VERBOS_DE_COMUNICACION" type="standard">
+<!--<section id="VERBOS_DE_COMUNICACION" type="standard">-->
       
     <e><p><l>kutichiy<s n="vblex"/><s n="vcm"/></l><r>contestar<s n="vblex"/></r></p></e>
     <e><p><l>kutichiy<s n="vblex"/><s n="vcm"/></l><r>responder<s n="vblex"/></r></p></e>
@@ -2771,9 +2771,9 @@
     <e r="RL"><p><l>tapuy<s n="vblex"/><s n="vcm"/></l><r>entrevistar<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>tapuy<s n="vblex"/><s n="vcm"/></l><r>interrogar<s n="vblex"/></r></p></e>
     
-</section>    
+<!--</section>    -->
     
-<section id="VERBOS_DE_MOVIMIENTO" type="standard">
+<!--<section id="VERBOS_DE_MOVIMIENTO" type="standard">-->
     <!-- porque de esto dependerá el caso que en español tienen la misma forma para ubicación y mov. -->
     
     <e><p><l>achhuykuy<s n="vblex"/></l><r>acercarse<s n="vblex"/><s n="pron"/></r></p></e>
@@ -2817,9 +2817,9 @@
     <e><p><l>wichay<s n="vblex"/></l><r>subir<s n="vblex"/></r></p></e>
     <e r="LR"><p><l>yaykuy<s n="vblex"/></l><r>entrar<s n="vblex"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="VERBOS_IMPERSONALES" type="standard">
+<!--<section id="VERBOS_IMPERSONALES" type="standard">-->
     
     <e r="LR"><p><l>achikyay<s n="vblex"/></l><r>amanecer<s n="vblex"/></r></p></e>
     <e><p><l>ch'akiy<s n="vblex"/></l><r>dar<g><b/>sed</g><s n="vblex"/></r></p></e>
@@ -2838,9 +2838,9 @@
     <e><p><l>yarqay<s n="vblex"/></l><r>dar<g><b/>hambre</g><s n="vblex"/></r></p></e>
     <e r="RL"><p><l>yarqay<s n="vblex"/></l><r>tener<g><b/>hambre</g><s n="vblex"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="VERBOS_TRANSITIVOS" type="standard">
+<!--<section id="VERBOS_TRANSITIVOS" type="standard">-->
     <!-- SECCIÓN: Verbos "transitivos" en español (que requieren de un complemento) -->
     <!-- revisar, toda la vaina esa... -->
     
@@ -4117,9 +4117,9 @@
     <e><p><l>yuyaymanay<s n="vblex"/></l><r>inferir<s n="vblex"/></r></p></e>
     <e r="RL"><p><l>yuyaymanay<s n="vblex"/></l><r>filosofar<s n="vblex"/></r></p></e>    
     
-</section>
+<!--</section>-->
     
-<section id="VERBOS_INTRANSITIVOS" type="standard">
+<!--<section id="VERBOS_INTRANSITIVOS" type="standard">-->
     <!-- SECCIÓN: Verbos "intransitivos" en español y otros -->    
     
     <e><p><l>achhiy<s n="vblex"/></l><r>estornudar<s n="vblex"/></r></p></e> 
@@ -4335,9 +4335,9 @@
     <e><p><l>yawarchay<s n="vblex"/></l><r>sangrar<s n="vblex"/></r></p></e>
     <e><p><l>yawray<s n="vblex"/></l><r>arder<s n="vblex"/></r></p></e>
     
-</section>
+<!--</section>-->
     
-<section id="PUNTUACION__etc" type="standard">
+<!--<section id="PUNTUACION__etc" type="standard">-->
 
     <e c=""><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
     <e c=""><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
