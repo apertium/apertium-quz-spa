@@ -1,0 +1,10 @@
+{
+    "quz-spa": {
+        "input": "quz-spa-input.txt",
+        "mode": "quz-spa"
+    },
+    "spa-quz": {
+        "input": "spa-quz-input.txt",
+        "mode": "spa-quz"
+    }
+}

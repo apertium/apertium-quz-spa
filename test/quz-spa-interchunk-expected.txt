@@ -1,0 +1,8 @@
+[Jl_aF6NGEbFT#0] ^default<default>{^'<apos>$}$
+[/Jl_aF6NGEbFT]
+[MWgGnJEm34Fy#0] ^prep<SP><pr>{^con<pr>$}$ ^Snprop<SNprop><m><sg><ins>{^Abya Yala<np><top><2><3>$}$
+[/MWgGnJEm34Fy]
+[Tr4qjfsDeIbm#0] ^prep<SP><pr>{^por<pr>$}$ ^Nombre<SN><m><sg><csal><px3pl>{^suyo<det><pos><mf><3>$ ^dios<n><2><3>$}$
+[/Tr4qjfsDeIbm]
+[xMqNcU9ZmuFY#0] ^prep<SP><pr>{^para<pr>$}$ ^Adj<SN><m><sg><ben><px3sg>{^solo<adj><2><3>$}$
+[/xMqNcU9ZmuFY]

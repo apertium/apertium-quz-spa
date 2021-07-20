@@ -26,6 +26,7 @@ TARGETS_COMMON =		\
 	$(PREFIX2).autobil.bin	\
 	$(PREFIX2).autolex.bin	\
 	$(PREFIX2).autogen.hfst \
+	$(PREFIX2).autogen.bin \
 	$(PREFIX2).autopgen.bin	\
 	$(PREFIX2).t1x.bin	\
 	$(PREFIX2).t2x.bin	\
@@ -226,10 +227,4 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "house" | apertium -d . quz-spa | tee .test-mt
-	@echo "house" > .test-ref
-	@diff .test-ref .test-mt
-	echo "house" | apertium -d . spa-quz | tee .test-mt
-	@echo "house" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
+	apertium-regtest test
